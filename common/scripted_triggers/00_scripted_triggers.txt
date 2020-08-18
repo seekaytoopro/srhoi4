@@ -1,0 +1,163 @@
+is_border_conflict_defender_vs_FROM = {
+	has_variable = ROOT.defender_state_vs_@FROM
+}
+
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+enemy_has_equal_or_better_radar_tech_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
+		if = {
+			limit = {
+				ROOT = { 
+					has_tech = radio_detection 
+					NOT = {
+						has_tech = decimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = radio_detection 
+					has_tech = decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = decimetric_radar 
+					NOT = {
+						has_tech = improved_decimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = decimetric_radar 
+					has_tech = improved_decimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = improved_decimetric_radar 
+					NOT = {
+						has_tech = centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = improved_decimetric_radar 
+					has_tech = centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = centimetric_radar 
+					NOT = {
+						has_tech = improved_centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = centimetric_radar 
+					has_tech = improved_centimetric_radar
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = { 
+					has_tech = improved_centimetric_radar 
+					NOT = {
+						has_tech = advanced_centimetric_radar
+					}
+				} 
+			}
+			FROM = { 
+				OR = {
+					has_tech = improved_centimetric_radar 
+					has_tech = advanced_centimetric_radar
+				}
+			}
+		}
+		#no more steps needed because end of research tree is reached
+	}
+}
+
+stalin_line_states = {
+	OR = {
+	state = 192 
+	state = 197
+	state = 198
+	state = 199
+	state = 201
+	state = 202 
+	state = 203
+	state = 226
+	state = 196
+	state = 200
+	state = 137
+	state = 227
+	state = 221 
+	state = 259
+	state = 193 
+	is_core_of = ROM
+	is_core_of = POL 
+	state = 194 
+	state = 241
+	state = 204
+	state = 206
+	state = 207
+	state = 243
+	state = 207 
+	state = 210
+	state = 209
+	free_building_slots = {	building = infrastructure size < 3 }
+	
+	}
+	}
+	
+	atlantikwall_states = {
+	is_on_continent = europe
+	is_coastal = yes
+	AND = { 
+	is_owned_by = GER 
+	NOT = {
+	state = 144
+	state = 143
+	state = 142
+	state = 110
+	state = 188
+	state = 763
+	state = 5
+	state = 85
+	state = 63
+	state = 62
+	state = 61 
+	state = 37
+	}
+	NOT = { OR = { 
+	 is_core_of = GRE 
+	 is_core_of = ITA 
+	 is_core_of = EFR
+	 }  }
+	}
+	}

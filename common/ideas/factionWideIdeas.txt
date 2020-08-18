@@ -1,0 +1,782 @@
+ideas = {
+    country = {
+		
+		axis_victory_in_egypt = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			cancel={
+				NOT={
+					446={is_controlled_by_ROOT_or_ally = yes}
+					447={is_controlled_by_ROOT_or_ally = yes}
+					452={is_controlled_by_ROOT_or_ally = yes}
+				}
+			}
+			
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+				stability_factor = 0.15
+				consumer_goods_factor = -0.02
+
+			}
+		}
+
+		allies_defeat_in_egypt = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+
+			# allowed_civil_war = {
+			# 	NOT = {
+			# 		has_government = democratic
+			# 	}
+			# }
+
+			cancel={
+				446={is_controlled_by_ROOT_or_ally = yes}
+				447={is_controlled_by_ROOT_or_ally = yes}
+			}
+			
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				heat_attrition_factor = -0.50
+				acclimatization_hot_climate_gain_factor = 1.0
+				dig_in_speed = 0.20
+				army_speed_factor = 0.05
+				army_morale_factor = 0.05
+			}
+		}
+
+		refinery_pre_build_debuff = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_exploit_mines
+
+			cancel = { has_war_with = JAP }
+
+			# allowed_civil_war = {
+			# 	NOT = {
+			# 		has_government = democratic
+			# 	}
+			# }
+			
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				production_speed_synthetic_refinery_factor = -0.35
+			}
+		}
+
+		refinery_effort = {
+			allowed = {
+				always = no
+			}
+
+			picture = generic_exploit_mines
+
+			# allowed_civil_war = {
+			# 	NOT = {
+			# 		has_government = democratic
+			# 	}
+			# }
+			removal_cost = -1
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.30
+			}
+		}
+
+		weak_ai = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = -0.50
+			}
+		}
+
+		axis_lack_of_winter_equip = { 
+			
+			allowed = { 
+				always = no 
+			}
+			
+			cancel = {
+				GER = {
+					has_war_with = SOV 
+				}
+			}
+			removal_cost = -1 
+			
+			picture = scuffed_acclim
+			
+			modifier = { 
+				acclimatization_cold_climate_gain_factor = -0.75 
+			}
+		}
+
+		neutral_ai_nation = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				join_faction_tension = 1000
+				guarantee_tension = 1000
+				ai_join_ally_desire_factor = -10000
+
+			}
+		}
+
+		no_exports = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				min_export = -0.8
+			}
+		}
+
+		phoney_war = {
+			allowed = { 
+				always = no 
+			}
+			
+			cancel = {
+				OR = { 
+					has_war_with = ITA 
+					GER = { has_war_with = BEL }
+					FRA = { surrender_progress > 0.01 }
+					ENG = { surrender_progress > 0.01 }
+				}
+			}
+			
+			removal_cost = -1
+
+			picture = chi_incompetent_officers
+			
+			modifier = {
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+				army_core_attack_factor = 0.20
+				army_core_defence_factor = 0.20
+			}
+			
+		}
+
+		sr1942_latewar = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = 0.10
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				CAS_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}				
+				jet_tac_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_attack = 0.10
+					instant = yes
+				} 
+				cv_CAS_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				} 
+				cv_nav_bomber_equipment = {
+					air_attack = 0.10
+					instant = yes
+				} 
+				jet_fighter_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}
+				rocket_interceptor_equipment = {
+					air_attack = 0.10
+					instant = yes
+				}  
+			}
+		}
+
+		sr1943_latewar = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = 0.20
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				CAS_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}				
+				jet_tac_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_attack = 0.20
+					instant = yes
+				} 
+				cv_CAS_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				} 
+				cv_nav_bomber_equipment = {
+					air_attack = 0.20
+					instant = yes
+				} 
+				jet_fighter_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}
+				rocket_interceptor_equipment = {
+					air_attack = 0.20
+					instant = yes
+				}  
+			}
+		}
+
+		sr1944_latewar = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = 0.30
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				CAS_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}				
+				jet_tac_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_attack = 0.30
+					instant = yes
+				} 
+				cv_CAS_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				} 
+				cv_nav_bomber_equipment = {
+					air_attack = 0.30
+					instant = yes
+				} 
+				jet_fighter_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}
+				rocket_interceptor_equipment = {
+					air_attack = 0.30
+					instant = yes
+				}  
+			}
+		}
+
+		sr1945_latewar = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = 0.40
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				CAS_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				strat_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				jet_strat_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}				
+				jet_tac_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				cv_fighter_equipment = {
+					air_attack = 0.40
+					instant = yes
+				} 
+				cv_CAS_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				nav_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				} 
+				cv_nav_bomber_equipment = {
+					air_attack = 0.40
+					instant = yes
+				} 
+				jet_fighter_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}
+				rocket_interceptor_equipment = {
+					air_attack = 0.40
+					instant = yes
+				}  
+			}
+		}
+
+		prewar_training = { 
+			
+			picture = YUG_federal_defense_council
+			allowed = {
+				always = no
+			}
+			
+			# available = { AND = { has_war = no is_ai = no } }
+			available = { ROOT = { has_war = no } }
+			removal_cost = -1
+	
+			modifier = {
+				experience_gain_navy_unit_factor = 10
+				training_time_factor = -0.65
+			}
+		}
+
+		no_production = { 
+			
+			picture = chi_incompetent_officers
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = -10
+				industrial_capacity_factory = -10
+				industrial_capacity_dockyard = -10
+				consumer_goods_factor = 10
+			}
+		}
+
+		AST_Navy_Manpower1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}
+		AST_Navy_Manpower2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}	
+		AST_Navy_Manpower3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}	
+		AST_Navy_Manpower4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}
+		AST_Navy_Manpower5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}
+		AST_Navy_Manpower6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}
+		AST_Navy_Manpower7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}
+		AST_Navy_Manpower8 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.075
+			}
+		}	
+	
+		Commonwealth_Navy_Manpower1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		Commonwealth_Navy_Manpower2 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}	
+		Commonwealth_Navy_Manpower3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}	
+		Commonwealth_Navy_Manpower4 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		Commonwealth_Navy_Manpower5 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		Commonwealth_Navy_Manpower6 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		Commonwealth_Navy_Manpower7 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}		
+
+    }
+}

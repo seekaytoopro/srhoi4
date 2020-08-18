@@ -1,0 +1,65 @@
+﻿l_english:
+ britain.1333.t:0 "British Control of the Dutch Colonies"
+ britain.1333.d:0 "As a result of the Dutch capitulation we have arranged for our direct control of the Dutch colonies to better protect British interests, effective immediately."
+ britain.1333.a:0 "We must protect the rubber islands."
+ news.104.t:0 "The Fall of Kiev"
+ news.104.d:0 "Kiev, capital of the Ukrainian SSR, has been captured by the advancing German armies in the Soviet Union. \n\nThe capture of one of their most important cities is a serious blow to the Soviets, but the question still remains whether the Germans can keep up their momentum. Moments after the Germans had occupied the city, thousands of mines planted by the NKVD were apparently detonated in buildings along the Khreshchatyk main street, causing even more damage to the already ruined city.\n\nNow the invading forces look to the east."
+ news.336.t:0 "The Fall of Smolensk"
+ news.336.d:0 "Smolensk, a crucial fortress city protecting Moscow, has been captured by the advancing German armies in the soviet Union. \n\n The capture of one of their most important cities is a serious blow to the Soviets, but the question still remains whether the Germans can keep up their momentum. Moments after the Germans had occupied the city, thousands of mines planted by the NKVD were apparently detonated in buildings along the Central Square, causing even more damage to the already ruined city. \n\nNow the invading forces look to the east."
+ news.337.t:0 "The Fall of Rostov"
+ news.337.d:0 "Rostov, a city of major strategic importance as a railway junction and a river port accessing the Caucasus, has been captured by the advancing German armies in the soviet Union. \n\n The capture of one of their most important cities is a serious blow to the Soviets, but the question still remains whether the Germans can keep up their momentum. Moments after the Germans had occupied the city, thousands of mines planted by the NKVD were apparently detonated in buildings along the Central Square, causing even more damage to the already ruined city. \n\nNow the invading forces look to the east."
+ soviet.300.t:0 "Case of Trotskyist Anti-Soviet Military Organization"
+ soviet.300.d:0 "The Fascist Trotskyite elements in the Red Army must be purged, especially the traitorous fifth-columnist and counter-revolutionary Tukhachevsky."
+ soviet.300.a:0 "Death to Fascists!"
+
+ srevents.1.t:0 "IMPORTANT INFORMATION ABOUT USSR"
+    srevents.1.d:0 "-Locked on closed economy.\n-New focus tree with a civs vs mils divide.\n-The purge persists through the beginning of barb, with -30% org at the start.\n-Purge debuff decreases by 3% every 10 days.\n-Increases by 3% if Leningrad, Moscow, Smolensk, Kiev, Rostov, or Stalingrad are lost.\n-New focuses to get more generals, offensive bonuses.\n-Winter is much more extreme, should give you time to organize."
+    srevents.1.a:0 "Got it"
+
+    srevents.2.t:0 "IMPORTANT INFORMATION ABOUT USA"
+    srevents.2.d:0 "-USA gets a huge bonus for building civilian factories while they are still in isolation, so make sure you build civilian factories early on."
+
+    srevents.3.t:0 "IMPORTANT INFORMATION ABOUT UNITED KINGDOM"
+    srevents.3.d:0 "-Once the Netherlands capitulate you will get their colonies, once denmark capitulates you get iceland and the US gets greenland \n-Commonwealth development focuses have all been shortened to facilitate allied cooperation. \n-Italy has a large amount of rubber and oil in Libya (which can be further increased by focus). \n-If the axis Captures Egypt they get a buff of -2% consumer goods and +10% stability for the entire axis, which can be cancelled if Egypt is retaken."
+
+    ##  UPDATE WITH NEW INFO ON RESOURCES  -- AST AND SAF  ##
+    srevents.4.t:0 "IMPORTANT INFORMATION ABOUT AUSTRALIA"
+    srevents.4.d:0 "-Added decision to perform an 'anschluss' of ai New Zealand, annexing and gaining cores on New Zealand, giving you their army and generals."
+
+    srevents.5.t:0 "IMPORTANT INFORMATION ABOUT RAJ"
+    srevents.5.d:0 "-Burma, Bangladesh and Siam have greater province density. \n-Don't do Grand Battle Plan. \n-Don't do 20 widths. \n-You need artillery in your divisions. \n-SETUP FALLBACK LINES. DO NOT EXPECT TO SIMPLY HOLD ONE LINE. YOU NEED MULTIPLE DEFENSE LINES OR ELSE YOU WILL DIE IN ONE DAY. JAPANESE INFANTRY WILL BE MUCH BETTER THAN YOURS."
+
+    srevents.6.t:0 "IMPORTANT INFORMATION ABOUT SOUTH AFRICA"
+    srevents.6.d:0 "-Medium Tank South Africa is as good if not better than heavy tank South Africa. Your tank divisions need maintenance companies, aa, and possibly even field hospitals (which give hp). \n-If France leaves you have a decision to annex them and reclaim the rest of their occupied colonies. Make sure to ask if it is okay to do these decisions. As allied defense of africa may be contingent on areas like Syria being under the control of Neutral Vichy France."
+
+    srevents.7.t:0 "IMPORTANT INFORMATION ABOUT FRANCE"
+    srevents.7.d:0 "-You must actually put up a fight in France to grind legitimacy. The more legitimacy you get the more of your african colonies you get to keep once you capitulate."
+
+    srevents.8.t:0 "IMPORTANT INFORMATION ABOUT GERMANY"
+    srevents.8.d:0 "-Economy laws for every nation are based on your focuses, Early mob is behind Rhineland for the allies, and war eco for fascists/commies and partial mob for allies is behind Anschluss. \n-You have a decision to convert a large amount of Spain's tungsten into chromium if you are doing Heavy tanks"
+
+    srevents.9.t:0 "IMPORTANT INFORMATION ABOUT ITALY"
+    srevents.9.d:0 "-Italian focus tree cleaned/dememed. \n-Yugoslavia and Greece are allowed to be annexed pre-war. \n-Italy has a large amount of rubber and oil in Libya (which can be further increased by focus), so actually fighting for Africa is a must if you don't want to put large amounts of resources into refineries. \n-If you successfully take Cairo and Alexandria you have a focus called Triumph in Egypt which gives and axis-wide buff of -2% consumer goods and +10% stability, which can be cancelled if you lose egypt."
+
+    srevents.10.t:0 "IMPORTANT INFORMATION ABOUT JAPAN"
+    srevents.10.d:0 "-War with china is automated, and is fully annexed by two focuses, which gives xp to various nations"
+
+    srevents.11.t:0 "IMPORTANT INFORMATION ABOUT BARBAROSSA"
+    srevents.11.d:0 "The Soviets have a dynamic barb debuff mechanic in which they start out very weak at the beginning of barb but slowly grow stronger. \nThe debuff is -30% division org and recovery rate, and -20% to plane stats, these debuffs will decrease by 3% and 2% respectively every 10 days.\nThe debuff can be increased whenever the soviets lose a big city, which not only increases the debuff percentage, it also lengthens how long the debuff will last by 10 days\n\nDebuff: \n§GDecreases by 4%§! every 10 days \n§RIncreases by 4%§! when the Soviets lose any of the following cities: Leningrad, Moscow, Smolensk, Kiev, Rostov, Stalingrad, Sevastopol"
+    srevents.11.a:0 "Got it"
+
+    srevents.12.t:0 "IMPORTANT INFORMATION FOR BULGARIA"
+    srevents.12.d:0 "-LISTEN TO GERMANY\n-ESCUCHE A ALEMANIA\n-ALMANYA'YA DİNLE\n-HÖREN SIE DEUTSCHLAND ZU"
+    srevents.12.a:0 "Can I get a tradeback?"
+
+    srevents.13.t:0 "IMPORTANT INFORMATION FOR ROMANIA"
+    srevents.13.d:0 "-North Transylvania will be transferred to Hungary, but you will get some additional manpower and a core on West Banat (Which you get after Yugoslavia Capitulates). It is a wasteland so you don't build anything there and have your industry stolen."
+    srevents.13.a:0 "HOW WILL I EVER RECOVER!!!"
+
+    usa.999.t:0 "USA Can Join the War"
+    usa.999.d:0 "USA, Brazil, and Mexico are now allowed to join the war. MAKE SURE TO JOIN THE WAR"
+    usa.999.a:0 "I, The United States of America Understand that I may now Join the war, and will make sure to click the join war button or have the United Kingdom call me into the war against Germany."
+
+    hungary.2.t:0 "The Second Vienna Award"
+    hungary.2.d:0 "Following German arbitration, Berlin has deemed to settle the Transylvania dispute by awarding Hungary Northern Transylvania"
+    hungary.999.a:0 "What happened to I would rather die in a Swamp of Greater Romania than a paradise of Lesser Romania..."

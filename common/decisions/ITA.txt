@@ -1,0 +1,475 @@
+foreign_politics = {
+
+	ITA_Mediterranean_Deployment = {
+			
+        icon = GFX_decision_category_border_war
+        
+        ai_will_do = { factor = 0 }
+        
+        cost = 0
+        fire_only_once = yes				
+        available = {
+            has_manpower > 1060000 		
+            #date > 1938.1.1
+			#date < 1939.5.1 
+			NOT = { has_war_with = ENG }
+        }				
+        
+        visible = { 
+            tag = ITA
+        }
+        
+        complete_effect = {
+            add_manpower = -1060000
+            ITA = {		
+                load_oob = "ITA_MedGarrison_Deployment"
+            }
+        }
+    }
+    ITA_Libyan_Deployment = {
+        
+        icon = GFX_decision_category_border_war
+        
+        ai_will_do = { factor = 0 }
+        
+        cost = 0
+        fire_only_once = yes				
+        available = { 		
+            has_manpower > 339200
+            #date > 1938.1.1
+			#date < 1939.5.1 
+			NOT = { has_war_with = ENG }
+			# NOT = { has_war_with = ETH }
+        }				
+        
+        visible = { 
+            tag = ITA
+        }
+        
+        complete_effect = {
+            add_manpower = -339200
+            ITA = {		
+                load_oob = "ITA_Libyan_Deployment"
+            }
+        }
+    }
+
+	ITA_puppeted_by_GER = {
+
+		icon = generic_prepare_civil_war
+
+				
+	visible = {
+			original_tag  = ITA
+		}
+		
+			activation = {
+		GER = { has_completed_focus = GER_danzig_or_war }		
+		tag = ITA
+		}
+		
+		available = {
+		ITA = { has_war_with = ENG }
+
+		}
+
+		
+		fire_only_once = yes
+		days_mission_timeout = 2400
+
+		complete_effect = {
+			GER = { 
+				puppet = ITA 
+				set_autonomy = {
+    				target = ITA
+    				autonomy_state = autonomy_satellite
+				}
+				if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
+				# add_relation_modifier = {
+    			# 	target = ITA
+    			# 	modifier = stahlpakt
+				# }
+			}
+		}
+		timeout_effect = { }
+	}
+
+
+
+
+# SPR_kill_portugal = { 
+
+# 	allowed = {		tag = SPR	}
+
+# available = {		POR = { has_war_with = SPR }	}
+			
+# 			fire_only_once = yes
+			
+# 			cost = 0
+
+# 			visible = {  }
+
+# 		complete_effect = {
+# 	SPR = { white_peace = POR }
+# 	POR = { white_peace = SPR }
+# 	729 = { remove_core_of = POR }
+# 	SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
+#  SPR = { add_threat = 50 }
+#  POR = { add_ideas = attritionn }	
+# 			}
+# }
+
+ITA_annex_bul = {
+	icon = generic_operation
+
+	
+			available = {
+			BUL = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+		NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ITA = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184 add_state_core = 106
+			}
+			
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+
+	ITA_annex_cro = {
+		icon = generic_operation
+	
+		
+				available = {
+				CRO = { is_ai = yes }
+				GER = { has_completed_focus = GER_danzig_or_war }
+				}
+		
+				allowed = {
+					tag = ITA
+				}
+	
+				fire_only_once = yes
+	
+				cost = 0
+	
+				visible = {
+					country_exists = CRO
+					NOT = { has_country_flag = cro_annexed }
+					}
+	
+				complete_effect = {
+					ITA = { 
+						annex_country = {
+							target = CRO
+							transfer_troops = yes 
+						}
+				}
+				
+				hidden_effect = { set_country_flag = cro_annexed }
+			}
+		}
+	
+	ITA_annex_bul_rom = {
+	icon = generic_operation
+
+	
+			available = {
+			BUL = { is_ai = yes }
+			GER = { has_completed_focus = GER_danzig_or_war }
+			}
+	
+			allowed = {
+				tag = ITA
+			}
+
+			fire_only_once = yes
+
+			cost = 0
+
+			visible = {
+			NOT = { has_country_flag = bul_annexed }
+				}
+
+			complete_effect = {
+				ROM = { 
+					annex_country = {
+						target = BUL
+						transfer_troops = yes 
+					}
+					add_state_core = 48 add_state_core = 212 add_state_core = 211 add_state_core = 184 add_state_core = 106
+			}
+			hidden_effect = { set_country_flag = bul_annexed }
+		}
+	}
+	
+	   ITA_annex_romania = {
+
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ITA
+		}
+
+		available = {
+			ROM = { 
+				is_ai = yes 
+			}
+			date > 1940.5.1
+		}
+			
+		cost = 0
+			
+		visible = {
+			country_exists = ROM
+		}
+			
+		fire_only_once = yes
+	
+		complete_effect = {
+			
+			if = {
+				limit = {
+					ROM = {
+						has_tech = CAS2
+					}
+				}
+				set_technology = {
+					CAS2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = CAS3
+					}
+				}
+				set_technology = {
+					CAS3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = tactical_bomber2
+					}
+				}
+				set_technology = {
+					tactical_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = tactical_bomber3
+					}
+				}
+				set_technology = {
+					tactical_bomber3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_bomber2
+					}
+				}
+				set_technology = {
+					naval_bomber2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = naval_bomber3
+					}
+				}
+				set_technology = {
+					naval_bomber3 = 1
+				}
+			}
+#############################################################################################
+
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation1
+					}
+				}
+				set_technology = {
+					excavation1 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation2
+					}
+				}
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation3
+					}
+				}
+				set_technology = {
+					excavation3 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation4
+					}
+				}
+				set_technology = {
+					excavation4 = 1
+				}
+			}
+#############################################################################################
+			if = {
+				limit = {
+					ROM = {
+						has_tech = excavation5
+					}
+				}
+				set_technology = {
+					excavation5 = 1
+				}
+			}
+#############################################################################################
+			
+		    ITA = {
+				# if= {
+				# 	limit = {
+				# 		ROM = {
+				# 			OR = {
+				# 			    has_tech = hunt_and_destroy
+                #                 has_tech = multialtitude_flying
+                #                 has_tech = operational_destruction
+				# 		    }
+				# 		}
+				# 	}
+				# 	add_ideas = ROM_local_development
+				# }
+				annex_country = {
+					target = ROM
+					transfer_troops = yes 
+				}
+			}
+			HUN = { transfer_state = 76 transfer_state = 83 transfer_state = 676 transfer_state = 82 }
+			if = { limit = { SOV = { NOT = { controls_state = 78}}}
+			ITA = { transfer_state = 78  transfer_state = 766 transfer_state = 80 }
+			}
+			every_state = { 
+				limit = { is_core_of = ROM }
+				set_compliance = 100 }
+		}
+	}
+}
+
+ITA_ll_germany = {
+	ITA_auto_ll_ger = {
+		icon = generic_prepare_civil_war
+		available = { original_tag = ITA }
+		complete_effect = {
+			set_country_flag = auto_ll_ger_enabled
+			activate_mission = ITA_auto_ll_ger_1
+		}
+		visible = { NOT = { has_country_flag = auto_ll_ger_enabled } }
+		
+		fire_only_once = no
+	}
+	ITA_stop_auto_ll_ger = {
+		icon = generic_prepare_civil_war
+		available = { original_tag = ITA }
+		complete_effect = {
+			clr_country_flag = auto_ll_ger_enabled
+		}
+		visible = { has_country_flag = auto_ll_ger_enabled }
+		
+		fire_only_once = no
+	}
+	ITA_auto_ll_ger_1 = {
+		allowed = { always = no
+			original_tag = ITA }
+
+		icon = officers_purged
+
+		available = { 
+			NOT = { has_country_flag = auto_ll_ger_enabled } 
+		}
+		activation = {
+			always=no
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 30
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = { 
+			send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+			#send_equipment = { equipment = transport_plane_equipment amount = 5000 target = GER }
+			activate_mission = ITA_auto_ll_ger_2
+		 }
+		complete_effect = {}
+	}
+	ITA_auto_ll_ger_2 = {
+		allowed = { always = no
+			original_tag = ITA }
+		available = { 
+			#tag = gay 
+			NOT = { has_country_flag = auto_ll_ger_enabled } 
+		}
+		activation = {
+			always=no
+		}
+
+		selectable_mission = no
+		days_mission_timeout = 30
+		is_good = yes
+		fire_only_once = yes
+		timeout_effect = { 
+			send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+			send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+			activate_mission = ITA_auto_ll_ger_1 
+		}
+	}
+}

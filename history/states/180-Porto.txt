@@ -1,0 +1,19 @@
+
+state={
+	id=180
+	impassable = yes
+	name="STATE_180"
+	history={
+		owner = NOR
+		add_core_of = NOR
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	provinces={
+		27 3059 3094 6080 6114 6136 6184 6216 9032 9047 9135 9170 9227 11037 11113 11135 11206 
+	}
+	manpower=21034
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,42 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 3750158
+	
+	state_category = metropolis
+
+	history={
+		owner = SOV
+		victory_points = { 3151 40.0 } #Center
+		victory_points = { 7984 1.0 } #Ice Bridge
+		victory_points = { 10737 10.0 } #Port
+		victory_points = { 12831 10.0 } #South
+		victory_points = { 149 10.0 } #Southeast
+		victory_points = { 10852 10.0 } #East
+		victory_points = { 12877 10.0 } #North
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 1
+			air_base = 10
+			3151 = { bunker = 5 }
+			10737 ={ naval_base = 10 coastal_bunker = 5 bunker = 3 }
+			12877 = { bunker = 3 }
+			10852 = { bunker = 3 }
+			149 = { bunker = 3 }
+			12831 = { bunker = 3 }
+			
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 7
+			}
+		}
+	}
+
+	provinces={
+		79 149 3151 6174 11068 12831 10852 12877 10737 7984
+	}
+}

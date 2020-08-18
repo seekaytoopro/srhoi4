@@ -1,0 +1,20 @@
+state={
+id=293
+name="STATE_293"
+manpower = 1
+state_category = rural
+#impassable = yes
+history={
+owner=ENG
+add_core_of = SWE
+buildings = {
+infrastructure = 3
+}
+victory_points = {
+10840 10
+}
+}
+provinces={
+1920 1973 4924 10752 10840
+}
+}

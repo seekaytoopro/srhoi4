@@ -1,0 +1,29 @@
+
+state={
+	id=267
+	name="STATE_267"
+	resources={
+		steel=5.000
+		aluminium=11.000
+	}
+
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 2
+			air_base = 2
+
+		}
+		add_core_of = GER
+
+	}
+
+	provinces={
+		9252 9277 9306 9387 11260 11288 
+	}
+	manpower=201493
+	buildings_max_level_factor=1.000
+	state_category=town
+}

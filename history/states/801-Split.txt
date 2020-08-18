@@ -1,0 +1,25 @@
+
+state={
+	id=801
+	name="STATE_801" # Split
+	manpower = 205800
+
+	state_category = rural
+
+
+	history={
+		owner = YUG
+		victory_points = {
+			3924 3
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		#add_core_of = CRO
+		add_core_of = YUG
+	}
+
+	provinces={
+		984 3924 3974 
+	}
+}

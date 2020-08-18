@@ -1,0 +1,220 @@
+﻿capital = 43
+
+oob = "HUN_1936"
+
+set_research_slots = 3
+set_stability = 0.7
+set_war_support = 0.6
+
+
+add_to_tech_sharing_group = axis_research 
+
+diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
+diplomatic_relation = {   country = ITA relation = military_access  active = yes  }
+
+add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+
+add_relation_modifier = {
+    target = ITA
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = ROM
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = SPR
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = GER
+    modifier = stahlpakt
+}
+add_relation_modifier = {
+    target = BUL
+    modifier = stahlpakt
+}
+if = { limit = { country_exists = CRO }
+	add_relation_modifier = {
+    	target = CRO
+    	modifier = stahlpakt
+	}
+}
+add_opinion_modifier = {
+	target = GER
+	modifier = german_trade_monopoly
+}
+
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	CAS1 = 1
+	fuel_silos = 1
+	interwar_antiair = 1
+	transport = 1
+}
+
+set_convoys = 50
+
+set_variable = {
+    var = min_fuel
+    value = 0.800
+}
+
+set_rule = { can_be_spymaster = no }
+
+
+	add_ideas = {
+		disarmed_nation
+		HUN_treaty_of_triannon
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 31
+	neutrality = 44
+}
+
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1100
+	producer = HUN
+}  
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 222
+	producer = HUN
+} 
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 10000
+	producer = HUN
+} 
+
+add_equipment_to_stockpile = {
+type = anti_air_equipment_1
+amount = 983
+producer = HUN
+}
+
+#Start Horty as neutral if DOD
+
+	create_country_leader = {
+		name = "Miklós Horthy"
+		desc = "POLITICS_MIKLOS_HORTHY_DESC"
+		picture = "Portrait_Hungary_Miklos_Horthy.dds"
+		expire = "1965.1.1"
+		ideology = oligarchism
+		traits = {
+			fascist_sympathies
+			anti_communist
+		}
+		id = 500 #Horthy Neutral
+	}
+	
+		create_country_leader = {
+		name = "Miklós Horthy"
+		desc = "POLITICS_MIKLOS_HORTHY_DESC"
+		picture = "Portrait_Hungary_Miklos_Horthy.dds"
+		expire = "1965.1.1"
+		ideology = fascism_ideology
+		traits = {
+			fascist_sympathies
+			anti_communist
+		}
+		id = 5000 #Horthy Neutral
+	}
+
+
+create_country_leader = {
+	name = "Mátyás Rákosi"
+	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
+	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Árpád Szakasits"
+	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		#
+	}
+}
+
+
+
+create_corps_commander = {
+	name = "Géza Lakatos"
+	gfx = GFX_Portrait_hungary_geza_lakatos
+	traits = { career_officer cavalry_leader trickster substance_abuser harsh_leader career_officer panzer_leader trait_reckless desert_fox }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Iván Hindy"
+	gfx = GFX_Portrait_hungary_ivan_hindy
+	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox paratrooper camouflage_expert career_officer trait_reckless media_personality brilliant_strategist }
+	skill = 4
+	attack_skill = 9
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 6
+}
+
+create_corps_commander = {
+	name = "Károly Beregfy"
+	gfx = GFX_Portrait_hungary_karoly_beregfy
+	traits = { harsh_leader trait_reckless politically_connected infantry_leader infantry_officer trait_mountaineer }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 6
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Lajos Veress"
+	gfx = GFX_Portrait_hungary_lajos_veress
+	traits = { panzer_leader hill_fighter trait_engineer trait_cautious organizer }
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Ferenc Feketehalmy-Czeydner"
+	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+	traits = { old_guard inflexible_strategist swamp_fox ranger skilled_staffer politically_connected organizer defensive_doctrine career_officer }
+	skill = 5
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 6
+}

@@ -1,0 +1,4 @@
+technology_categories = {
+	special_forces
+}
+

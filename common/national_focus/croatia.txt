@@ -1,0 +1,1347 @@
+﻿focus_tree = {
+	id = croatia_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = CRO
+		}
+	}
+	
+	default = no
+	
+	
+		focus = {
+		id = cro_army_effort
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 1
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = { NOT = { CRO = { has_capitulated = yes }}}
+		
+		
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = cro_equipment_effort
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = cro_army_effort }
+		x = -1
+		y = 1
+		relative_position_id = cro_army_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = cro_motorization_effort
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = cro_army_effort }
+		bypass = { has_tech = motorised_infantry }
+		x = 1
+		y = 1
+		relative_position_id = cro_army_effort
+		cost = 10
+
+		available_if_capitulated = yes
+		
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = cro_doctrine_effort
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = cro_army_effort }
+		x = 0
+		y = 2
+		relative_position_id = cro_army_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = cro_equipment_effort_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = cro_equipment_effort }
+		x = 0
+		y = 2
+		relative_position_id = cro_equipment_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = cro_mechanization_effort
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = cro_motorization_effort }
+		x = 0
+		y = 2
+		relative_position_id = cro_motorization_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = cro_doctrine_effort_2
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = cro_doctrine_effort }
+		x = 0
+		y = 2
+		relative_position_id = cro_doctrine_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = cro_equipment_effort_3
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = cro_equipment_effort_2 }
+		x = 0
+		y = 2
+		relative_position_id = cro_equipment_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = cro_armor_effort
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = cro_mechanization_effort }
+		x = 0
+		y = 2
+		relative_position_id = cro_mechanization_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2	
+				uses = 1
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_light_tank
+				technology = advanced_medium_tank
+				technology = advanced_heavy_tank
+			}
+		}
+	}
+
+	focus = {
+		id = cro_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = cro_equipment_effort_3 }
+		prerequisite = { focus = cro_doctrine_effort_2 }
+		prerequisite = { focus = cro_armor_effort }
+		x = 1
+		y = 1
+		relative_position_id = cro_equipment_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = cro_aviation_effort
+		icon = GFX_goal_generic_build_airforce
+		x = 3
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 3
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = cro_industrial_effort
+		icon = GFX_goal_generic_production
+		x = 5
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+				#available = { NOT = { YUG = { owns_state = 107 }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = cro_construction_effort
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = cro_industrial_effort }
+		x = -1
+		y = 1
+		relative_position_id = cro_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+
+		completion_reward = {
+		add_offsite_building = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+		}
+	}
+
+	focus = {
+		id = cro_production_effort
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = cro_industrial_effort }
+		x = 1
+		y = 1
+		relative_position_id = cro_industrial_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2			
+		}
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+
+		completion_reward = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+	}
+
+	focus = {
+		id = cro_construction_effort_2
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = cro_construction_effort }
+		x = 0
+		y = 1
+		relative_position_id = cro_construction_effort
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+
+		completion_reward = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+	}
+
+	focus = {
+		id = cro_production_effort_2
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = cro_production_effort }
+		x = 0
+		y = 1
+		relative_position_id = cro_production_effort
+		cost = 10
+
+		available_if_capitulated = yes
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+
+		ai_will_do = {
+			factor = 2
+		}	
+
+		completion_reward = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+		}
+	}
+
+
+	focus = {
+		id = cro_production_effort_3
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = cro_production_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = cro_production_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+
+		complete_tooltip = {
+	
+		}		
+
+		completion_reward = {
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+		}
+	}
+
+
+	focus = {
+		id = cro_construction_effort_3
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = cro_construction_effort_2 }
+		x = 0
+		y = 1
+		relative_position_id = cro_construction_effort_2
+		cost = 10
+
+		available_if_capitulated = yes
+
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		bypass = {
+		
+		}
+
+		complete_tooltip = {
+	
+		}
+
+		completion_reward = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+		}
+	}
+
+
+	focus = {
+		id = cro_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = cro_construction_effort_3 }
+		x = 0
+		y = 1
+		relative_position_id = cro_construction_effort_3
+		cost = 10
+
+		available_if_capitulated = yes
+
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+				category = rocketry
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				always = yes
+			}
+		}
+	}
+
+	focus = {
+		id = cro_political_effort
+		icon = GFX_goal_generic_demand_territory
+		x = 7
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+
+		#available = { NOT = { YUG = { owns_state = 107 }}}
+
+		
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	
+	focus = {
+		id = CRO_emergency_powers_to_pavlec
+		icon = GFX_goal_generic_demand_territory
+		x = 15
+		y = 0
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {}
+		mutually_exclusive = { }
+		
+		cost = 0.2
+		ai_will_do = {
+			factor = 0
+		}
+		available = {
+		#controls_state = 109
+		ITA = { owns_state = 107 }
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_country_leader_trait = emergency_powers
+			103 = { add_core_of = CRO }	104 = { add_core_of = CRO }	109 = { add_core_of = CRO }
+			CRO = { transfer_state = 104 transfer_state = 109 transfer_state = 103 }
+			CRO = { add_ideas = yugoslav_partisans }
+			CRO = { set_capital = 109 }
+		}
+	}
+	focus = {
+		id = CRO_the_national_revolution
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -5
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_emergency_powers_to_pavlec
+		}
+		relative_position_id = CRO_emergency_powers_to_pavlec
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	focus = {
+		id = CRO_long_term_economic_planning
+		icon = GFX_goal_generic_construct_civilian
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_the_national_revolution
+		}
+		relative_position_id = CRO_the_national_revolution
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = CRO_long_term_economic_planning
+				category = industry
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = CRO_aid_small_businesses
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_long_term_economic_planning
+		}
+		relative_position_id = CRO_long_term_economic_planning
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CRO_venerate_the_craftsman
+		icon = GFX_goal_generic_production
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_the_national_revolution
+		}
+		relative_position_id = CRO_the_national_revolution
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = { FRA_venerate_the_craftsman }
+		}
+	}
+	focus = {
+		id = CRO_celebrate_motherhood
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_venerate_the_craftsman
+		}
+		relative_position_id = CRO_venerate_the_craftsman
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = CRO_prosecute_the_losers
+		icon = GFX_goal_generic_neutrality_focus
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_the_national_revolution
+		}
+		relative_position_id = CRO_the_national_revolution
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = CRO_mandatory_work_service
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_prosecute_the_losers
+		}
+		relative_position_id = CRO_prosecute_the_losers
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			reduce_occupation_cost_effect = yes
+			add_ideas = { FRA_mandatory_work_service }
+		}
+	}
+	focus = {
+		id = CRO_a_nation_reborn
+		icon = GFX_goal_support_fascism
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_celebrate_motherhood
+		}
+		prerequisite = { 
+			focus = CRO_aid_small_businesses
+		}
+		prerequisite = { 
+			focus = CRO_mandatory_work_service
+		}
+		relative_position_id = CRO_celebrate_motherhood
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}	
+	
+	focus = {
+		id = CRO_national_regeneration
+		icon = GFX_goal_generic_political_pressure
+		x = 0
+		y = 1
+
+		prerequisite = {
+			focus = CRO_a_nation_reborn
+		}
+		relative_position_id = CRO_a_nation_reborn
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 15
+				state = 109
+			}
+			add_resource = {
+				type = tungsten
+				amount = 3
+				state = 104
+			}
+		}
+	}
+	focus = {
+		id = CRO_destroy_decadence
+		icon = GFX_focus_rom_parties_end
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_national_regeneration
+		}
+		relative_position_id = CRO_national_regeneration
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = FRA_anti_decandence days = 365 }
+		}
+	}
+	focus = {
+		id = CRO_integralism
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_national_regeneration
+		}
+		relative_position_id = CRO_national_regeneration
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_resource = {
+				type = aluminium
+				amount = 9
+				state = 103
+			}
+			add_resource = {
+				type = oil
+				amount = 7
+				state = 104
+			}
+
+		}
+	}
+	focus = {
+		id = CRO_work
+		icon = GFX_goal_generic_construction2
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_integralism
+		}
+
+		relative_position_id = CRO_integralism
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = { FRA_travail }
+		}
+	}
+	focus = {
+		id = CRO_family
+		icon = GFX_focus_generic_support_the_left_right
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_integralism
+		}
+
+		relative_position_id = CRO_integralism
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_stability = 0.2
+		}
+	}
+	focus = {
+		id = CRO_fatherland
+		icon = GFX_focus_generic_military_mission
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_integralism
+		}
+		relative_position_id = CRO_integralism
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = CRO_political_unity
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = CRO_national_regeneration
+		}
+		relative_position_id = CRO_national_regeneration
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 1 }
+		}
+	}
+
+	
+	
+	
+	focus = {
+		id = CRO_the_national_bureau_of_statistics
+		icon = GFX_focus_generic_treaty
+		x = -2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_emergency_powers_to_pavlec
+		}
+		relative_position_id = CRO_emergency_powers_to_pavlec
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = { FRA_national_bureau_of_statistics }
+		}
+	}
+	focus = {
+		id = CRO_rebuild_the_military
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_emergency_powers_to_pavlec
+		}
+		relative_position_id = CRO_emergency_powers_to_pavlec
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+			num_of_military_factories > 34
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = { FRA_rebuild_the_military }
+							add_offsite_building = { type = arms_factory level = 6 }
+
+		}
+	}
+	focus = {
+		id = CRO_finish_the_naval_buildup
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = -2
+		y = 2
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_rebuild_the_military
+		}
+		relative_position_id = CRO_rebuild_the_military
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			navy_experience = 50
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_of = ROOT
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = CRO_hidden_materials
+		icon = GFX_focus_secret_rearmament
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_rebuild_the_military
+		}
+		relative_position_id = CRO_rebuild_the_military
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = { FRA_hidden_materials }
+		}
+	}
+	focus = {
+		id = CRO_analyze_our_defeat
+		icon = GFX_goal_generic_army_doctrines
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_hidden_materials
+		}
+		relative_position_id = CRO_hidden_materials
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = CRO_analyze_our_defeat
+				category = land_doctrine
+				uses = 2
+				bonus = 1
+			}
+		}
+	}
+	focus = {
+		id = CRO_modernize_the_airforce
+		icon = GFX_goal_generic_air_doctrine
+		x = 2
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = { 
+			focus = CRO_rebuild_the_military
+		}
+		relative_position_id = CRO_rebuild_the_military
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_tech_bonus = {
+				name = CRO_modernize_the_airforce
+				category = air_doctrine
+				bonus = 1
+				uses = 3
+			}
+		}
+	}
+
+}

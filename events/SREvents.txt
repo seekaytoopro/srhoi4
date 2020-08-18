@@ -1,0 +1,222 @@
+add_namespace = srevents
+
+#####	#####	#####	#####	#####
+#		  #		#	#	#	#	  #
+#		  #		#	#	#	#	  #
+#####	  #		#####	####	  #
+	#	  #		#	#	# #		  #
+	#	  #		#	#	#  #	  #
+#####	  #		#	#	#	#	  #
+
+### Soviet Start Event
+country_event = { 
+	id = srevents.1
+	title = srevents.1.t
+	desc = srevents.1.d 
+	picture = GFX_report_event_stalin_01  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### USA Start Event
+country_event = { 
+	id = srevents.2
+	title = srevents.2.t
+	desc = srevents.2.d 
+	picture = GFX_report_event_FDR_speech  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+		add_timed_idea = { idea = economic_recovery days = 1350 }
+
+	}
+	
+}
+
+### ENG Start Event
+country_event = { 
+	id = srevents.3
+	title = srevents.3.t
+	desc = srevents.3.d 
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### AST
+country_event = { 
+	id = srevents.4
+	title = srevents.4.t
+	desc = srevents.4.d 
+	picture = GFX_report_event_ast_army
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### RAJ
+country_event = { 
+	id = srevents.5
+	title = srevents.5.t
+	desc = srevents.5.d 
+	picture = GFX_report_event_ghandi_women 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### SAF
+country_event = { 
+	id = srevents.6
+	title = srevents.6.t
+	desc = srevents.6.d 
+	picture = GFX_report_event_saf_soldiers
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### FRA 
+country_event = { 
+	id = srevents.7
+	title = srevents.7.t
+	desc = srevents.7.d 
+	picture = GFX_report_event_french_liberation  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### GER
+country_event = { 
+	id = srevents.8
+	title = srevents.8.t
+	desc = srevents.8.d 
+	picture = GFX_report_event_hitler_croatia_handshake  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### ITA
+country_event = { 
+	id = srevents.9
+	title = srevents.9.t
+	desc = srevents.9.d 
+	picture = GFX_report_event_albanian_king_zog
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+### JAP
+country_event = { 
+	id = srevents.10
+	title = srevents.10.t
+	desc = srevents.10.d 
+	picture = GFX_report_event_japan_army_mountainside
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = srevents.1.a 
+
+	}
+	
+}
+
+#####	#   #	#####
+  #		#	#	  #		
+  #		#	#	  #		
+  #		#	#	  #
+  #		#	#	  #
+  #		#	#	  #
+  # 	#####	  #
+
+  #Barbarossa Start Events rewrite to explain the barb debuff mechanic
+country_event = {
+	id = srevents.11 #
+	title = srevents.11.t
+	desc = srevents.11.d
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = srevents.11.a
+	}
+
+  }
+#BUL
+country_event = {
+	id = srevents.12
+	title = srevents.12.t
+	desc = srevents.12.d
+	picture = GFX_report_event_albanian_king_zog
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = srevents.12.a
+	}
+}
+#ROM
+country_event = {
+	id = srevents.13
+	title = srevents.13.t
+	desc = srevents.13.d
+	picture = GFX_report_event_albanian_king_zog
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = srevents.13.a
+	}
+}

@@ -1,0 +1,128 @@
+﻿capital = 271
+
+oob = "ETH_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}
+
+add_ideas = { ETH_colonial_nation }
+
+set_convoys = 5
+
+
+1939.1.1 = {
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = flexible_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+
+		#doctrines
+		grand_battle_plan = 1
+		trench_warfare = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+# A colony of Italy in 1939, however if independent it would have the same politics as in 1936
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 64
+	neutrality = 36
+}
+
+create_country_leader = {
+	name = "Pietro Badoglio"
+	desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		duke_addis
+	}
+}
+
+create_country_leader = {
+	name = "Pietro Badoglio"
+	desc = "POLITICS_PIETRO_BADOGLIO_DESC"
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		duke_addis
+	}
+}
+
+create_field_marshal = {
+	name = "Pietro Badoglio"
+	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+	traits = { old_guard offensive_doctrine infantry_leader skilled_staffer media_personality career_officer brilliant_strategist}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 6
+}
+
+create_corps_commander = {
+	name = "Alessandro Pirzio Biroli"
+	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_1.dds"
+	traits = {harsh_leader infantry_officer trait_mountaineer skilled_staffer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Amadeo Guillet"
+	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_2.dds"
+	traits = { media_personality career_officer cavalry_leader trickster brilliant_strategist}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Annibale Bergonzoli"
+	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_3.dds"
+	traits = {politically_connected infantry_officer old_guard organizer}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}

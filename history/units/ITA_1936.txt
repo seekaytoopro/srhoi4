@@ -1,0 +1,545 @@
+﻿division_template = { 
+	name = "Reggimento di Cavalleria" 
+	division_names_group = ITA_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 } 
+		cavalry = { x = 0 y = 1 } 
+		cavalry = { x = 0 y = 2 } 		
+		cavalry = { x = 1 y = 0 } 
+		cavalry = { x = 1 y = 1 } 
+		cavalry = { x = 1 y = 2 } 
+		cavalry = { x = 2 y = 0 } 
+		cavalry = { x = 2 y = 1 } 
+		cavalry = { x = 3 y = 0 } 
+		cavalry = { x = 3 y = 1 } 
+	} 
+} 
+
+####### Division Templates #######
+division_template = { 
+	name = "Divisione di Fanteria" 
+	division_names_group = ITA_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon =  { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	}
+} 
+
+division_template = { 
+	name = "Divisione Alpina" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 3 }
+	}
+	support = { 
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 
+	} 
+
+	priority = 2 
+} 
+
+division_template = { 
+	name = "Divisione Coloniale" 
+	division_names_group = ITA_COL_01 
+
+	# Represents lesser-equipped colonial units
+	regiments = { 
+		infantry = { x = 0 y = 0 } 
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 } 
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 1 y = 2 } 
+		infantry = { x = 2 y = 0 } 
+		infantry = { x = 2 y = 1 } 
+		infantry = { x = 2 y = 2 } 
+		infantry = { x = 3 y = 0 } 
+	}
+	support = { 
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+	} 
+
+	priority = 0 
+} 
+
+division_template = {
+	name = "Desert Infantry"
+	division_names_group = ITA_INF_01 
+
+	regiments = {
+		desertinfantry = { x = 0 y = 0 }
+		desertinfantry = { x = 0 y = 1 }
+		desertinfantry = { x = 0 y = 2 }
+		desertinfantry = { x = 0 y = 3 }
+		desertinfantry = { x = 0 y = 4 }
+		desertinfantry = { x = 1 y = 0 }
+		desertinfantry = { x = 1 y = 1 }
+		desertinfantry = { x = 1 y = 2 }
+		desertinfantry = { x = 1 y = 3 }
+		desertinfantry = { x = 1 y = 4 }
+		desertinfantry = { x = 2 y = 0 }
+		desertinfantry = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		anti_air_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		anti_tank_brigade = { x = 4 y = 3 }	
+		anti_tank_brigade = { x = 4 y = 4 }	
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+	}
+}
+
+division_template = { 
+	name = "Divisione Celere" 
+	division_names_group = ITA_CAV_02 
+
+	regiments = { 
+		motorized = { x = 0 y = 0 } 
+		motorized = { x = 0 y = 1 } 
+		motorized = { x = 1 y = 0 } 
+		motorized = { x = 1 y = 1 } 
+		light_armor = { x = 2 y = 0 }													# (elite) Bersaglieri Regiment
+		light_armor = { x = 2 y = 1 } 
+		light_armor = { x = 2 y = 2 } 
+		light_armor = { x = 3 y = 0 }			
+		light_armor = { x = 3 y = 1 }	
+		light_armor = { x = 2 y = 3 } 		
+	} 
+
+	priority = 2 
+}
+
+
+####### OOB #######
+units = { 
+	##### Commando Superiore Metropolitana #####
+	### Gruppo d'Armata Ovest ###
+	## 1a Armata ##
+
+	division = { # "4a Divisione Alpina 'Cuneense'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		} 
+		location = 10120 
+		division_template = "Desert Infantry" 
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+
+	## 4a Armata ##
+	# Corpo d'Armata Alpina #
+	division = { # "1a Divisione Alpina 'Taurinense'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}  
+		location = 4060 
+		division_template = "Desert Infantry" 
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+
+	division = { # "2a Divisione Alpina 'Tridentina'" 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}  
+		location = 1060 
+		division_template = "Desert Infantry" 
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		} #  "3a Divisione Alpina 'Julia'" 
+		location = 12082 
+		division_template = "Desert Infantry" 
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Divisione Alpina 'Pusteria'" 
+		location = 2057 
+		division_template = "Desert Infantry" 
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+
+
+	### Armata dell'Africa Orientale Italiana ###
+	# I Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		} #  "26a Divisione di Fanteria 'Assietta'" 
+		location = 6788 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		} #  "30a Divisione di Fanteria 'Sabauda'" 
+		location = 6788 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		name = "4a Divisione CC.NN. '3 Gennaio'" 
+		location = 6973 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+
+	# II Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		} #  "19a Divisione di Fanteria 'Venezia'" 
+		location = 6973 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		} #  "24a Divisione di Fanteria 'Pinerolo'" 
+		location = 11833 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		name = "3a Divisione CC.NN. '21 Aprile'" 
+		location = 11833 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+
+	# III Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		} #  "27a Divisione Autotrasportabile 'Brescia'" 
+		location = 11751 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.50 
+	} 
+	division = { # 
+		name = "1a Divisione CC.NN. '23 Marzo'" 
+		location = 11751 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+
+	# IV Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Divisione di Fanteria 'Cosseria'" 
+		location = 6919 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		name = "2a Divisione CC.NN. '28 Ottobre'" 
+		location = 11846 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		name = "5a Divisione CC.NN. '1 Febbraio'" 
+		location = 11846 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+
+	# Corpo d'Armata Eritreo #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		} #  "1a Divisione Coloniale 'Eritrea'" 
+		location = 819 
+		division_template = "Divisione di Fanteria" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		} #  "2a Divisione Coloniale 'Eritrea'" 
+		location = 819 
+		division_template = "Divisione di Fanteria" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.50
+	} 
+
+	# Corpo d'Armata Libico #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		} #  "29a Divisione di Fanteria 'Piemonte'" 
+		location = 4159 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} #  "1a Divisione Coloniale 'Libia'" 
+		location = 4014 
+		division_template = "Divisione di Fanteria" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		} #  "101a Divisione Coloniale 'Somalia'" 
+		location = 10074 
+		division_template = "Divisione di Fanteria" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } } 
+		start_equipment_factor = 0.50
+	} 
+	division = { # 
+		name = "6a Divisione CC.NN. 'Tevere'" 
+		location = 7059 
+		division_template = "Divisione di Fanteria"	# CC.NN. militia, lower training and equipment
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.50
+	} 
+}
+
+
+
+##### AIR WINGS #####
+air_wings = { 
+	### ITALY ###
+	# 1a Squadra Aerea - SQA1 (Milan)
+	158 = { 
+		# 2a Divisione Aerea 'Borea'
+		fighter_equipment_0 = { 
+			amount = 250	
+			owner = "ITA" 
+		} 
+		# 4a Divisione Aerea 'Drago'
+		# 6a Divisione Aerea 'Falco'
+		tac_bomber_equipment_0 = { 
+			amount = 180
+			owner = "ITA" 
+		} 
+	
+		# 9a Divisione Aerea 'Leone'
+		nav_bomber_equipment_1 = { 
+			amount = 50
+			owner = "ITA" 
+		} 
+	 
+
+		CAS_equipment_1 = { 
+			amount = 48 
+			owner = "ITA" 
+		} 
+	}
+} 
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+	if = { 
+		limit = { is_tutorial = no } 
+
+		##### Equipments #####
+		add_equipment_production = { 
+			equipment = { 
+				type = infantry_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 15
+			progress = 0.1 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = support_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 4
+			progress = 0.3 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = motorized_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1
+			progress = 0.4 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = artillery_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1
+			progress = 0.4 
+			efficiency = 50 
+		} 
+		
+		add_equipment_production = { 
+			equipment = { 
+				type = CAS_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.2 
+			efficiency = 50 
+		} 
+		add_equipment_production = { 
+			equipment = { 
+				type = nav_bomber_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.2 
+			efficiency = 50 
+		} 
+		
+		add_equipment_production = { 
+			equipment = { 
+				type = anti_air_equipment_1 
+				creator = "ITA" 
+			} 
+
+			requested_factories = 3
+			progress = 0.4 
+			efficiency = 50 
+		}
+		add_equipment_production = { 
+			equipment = { 
+				type = anti_tank_equipment_1 
+				creator = "ITA" 
+			} 
+	
+			requested_factories = 1
+			progress = 0.4 
+			efficiency = 50 
+		} 
+			add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "ITA" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	}
+} 

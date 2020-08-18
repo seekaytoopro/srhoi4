@@ -1,0 +1,27 @@
+
+state={
+	id=356
+	name="STATE_356"
+
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
+		}
+		victory_points = {
+			6318 5 
+		}
+		victory_points = {
+			9315 3 
+		}
+	}
+
+	provinces={
+		6237 6318 9315 9379 11345 11382 
+	}
+	manpower=340372
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

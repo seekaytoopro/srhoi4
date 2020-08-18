@@ -1,0 +1,25 @@
+state={
+id=772
+name="STATE_772"
+manpower = 746415
+state_category = town
+resources={
+rubber=19
+}
+history={
+owner = FRA
+add_core_of=SWE
+victory_points = {
+8193 5
+}
+buildings = {
+infrastructure = 4
+12975 = {
+naval_base = 10
+}
+}
+}
+provinces={
+2192 3109 8193 12975
+}
+}

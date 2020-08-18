@@ -1,0 +1,5 @@
+﻿l_english:
+  general_decisions:0 "General Decisions"
+  general_decisions_desc:0 "Make sure you gave only ONE general assigned in order to ensure the correct general receives the below trait (Field Marshal assignment does not matter)."
+  general_decision_trickster:0 "Assign a Free Trickster Trait"
+  general_decision_organizer:0 "Assign a Free Organizer Trait"

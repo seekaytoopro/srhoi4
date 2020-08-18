@@ -1,0 +1,32 @@
+
+state={
+	id=453
+	name="STATE_453"
+
+	history={
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 3
+			10099 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+			}
+			air_base = 2
+
+		}
+		victory_points = { 10099 19 }
+		victory_points = { 4161 5 }
+		victory_points = { 1155 5 }
+		victory_points = { 9947 5 }
+
+	}
+
+	provinces={
+		1112 1155 2215 4161 9947 10002 10099 11922 11979 12073 
+	}
+	manpower=15359
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

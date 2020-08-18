@@ -1,0 +1,25 @@
+
+state={
+	id=513
+	name="STATE_513"
+
+	history={
+		owner = FRA
+		add_core_of = SWE
+		victory_points = {
+			12034 3 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		1043 1126 1141 1596 1901 1967 2049 2149 4018 4903 4970 5035 5053 5095 7149 8061 8077 8192 8251 9763 9943 9960 10059 10731 10935 11797 12018 12034 12306 12711 12888 13074 13237 13238 13239 13241 13243 13244 13246 13247 13248 13249 
+	}
+	manpower=945486
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

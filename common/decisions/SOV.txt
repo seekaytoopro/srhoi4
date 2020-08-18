@@ -1,0 +1,543 @@
+
+SOV_mrp = {
+
+	# SOV_surrender_fin = {
+			
+	# 	available = {
+
+	# 	}
+
+	# 	allowed = {
+	# 		tag = SOV
+	# 	}
+			
+			
+	# 	fire_only_once = yes
+
+	# 	cost = 0
+
+	# 	visible = {
+	# 		FIN = { has_war_with = SOV }
+	# 	}
+		
+		
+	# 	complete_effect = {
+	# 		SOV = { white_peace = FIN }
+	# 		FIN = { white_peace = SOV }
+	# 		transfer_state = 146
+	# 		add_state_core = 146 
+	# 		transfer_state = 147
+	# 		add_state_core = 147
+	# 		}
+	# }
+	
+	SOV_prepare = {    
+
+	available = { 
+		has_manpower > 4340000 
+		has_war = no 
+		date < 1941.5.1
+			POL = { has_capitulated = yes }
+				}
+
+				allowed = {
+					tag = SOV
+				}
+				
+				fire_only_once = yes
+
+				cost = 0
+
+				complete_effect = {	
+				load_oob = "SOV_Belarus_Deployment"
+				add_manpower = -2000000
+				add_manpower = -2000000
+				add_manpower = -340000
+			}
+		}
+		SOV_baltic-novgorod = {    
+
+			available = { 
+				has_manpower > 1830000
+				SOV = {
+					controls_state = 12
+					controls_state = 13
+					controls_state = 191
+					controls_state = 208
+					controls_state = 209
+					controls_state = 210
+					controls_state = 195
+					controls_state = 244
+					controls_state = 263
+					controls_state = 246
+					}
+					#POL = { has_capitulated = yes }
+						}
+		
+						allowed = {
+							tag = SOV
+						}
+						
+						fire_only_once = yes
+		
+						cost = 0
+		
+						complete_effect = {	
+						load_oob = "SOV_baltic-novgorod_deployment"
+						add_manpower = -1830000
+					}
+				}
+	
+	}
+
+
+SOV_great_patriotic_war = {
+
+
+
+
+
+
+	SOV_Capital_Kuibyshev = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 251 = { is_controlled_by = SOV } } 
+					set_capital = 251 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	SOV_Capital_Moscow = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 219 = { is_controlled_by = SOV } } 
+					set_capital = 219 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SOV_Capital_Gorki = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 252 = { is_controlled_by = SOV } } 
+					set_capital = 252 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	SOV_Capital_Kazan = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 249 = { is_controlled_by = SOV } } 
+					set_capital = 249 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SOV_Capital_Kirov = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 400 = { is_controlled_by = SOV } } 
+					set_capital = 400 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SOV_Capital_Stalingrad = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 217 = { is_controlled_by = SOV } } 
+					set_capital = 217 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SOV_Capital_Baku = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 229 = { is_controlled_by = SOV } } 
+					set_capital = 229 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	SOV_Capital_Magnitogorsk = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 582 = { is_controlled_by = SOV } } 
+					set_capital = 582 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+	SOV_Capital_Perm = {
+
+		icon = generic_political_actions
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+		fire_only_once = no
+		available = {
+			has_war = yes
+			SOV = { has_completed_focus = SOV_move_industry_to_urals }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		complete_effect = {
+				if = { 
+					limit = { 398 = { is_controlled_by = SOV } } 
+					set_capital = 398 
+				}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+
+
+
+
+
+
+
+
+
+	SOV_order_227 = {
+
+		icon = generic_army_support
+
+		available = {
+			has_war_with = GER
+			surrender_progress > 0.20
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		days_remove = 720
+
+		modifier = {
+			army_core_defence_factor = 0.05
+			mobilization_speed = 0.15
+		}
+	}
+
+
+	#217 "Stalingrad"
+	SOV_hold_stalingrad = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 217 }
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = GER
+			217 = {
+				is_controlled_by = SOV
+				OR = {
+					any_neighbor_state = {
+						is_controlled_by = GER
+						OWNER = { tag = SOV }
+					}
+					NOT = { is_fully_controlled_by = SOV }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			217 = { save_event_target_as = state }			
+			country_event = wtt_soviet_hold_city.1
+		}
+		#Fail
+		complete_effect = {
+			217 = { save_event_target_as = state }			
+			country_event = wtt_soviet_hold_city.2
+		}
+	}
+	
+	#195 "Leningrad"
+	SOV_hold_leningrad = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 195 }
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = GER
+			195 = {
+				is_controlled_by = SOV
+				OR = {
+					any_neighbor_state = {
+						is_controlled_by = GER
+						OWNER = { tag = SOV }
+					}
+					NOT = { is_fully_controlled_by = SOV }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			195 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.3
+		}
+		#Fail
+		complete_effect = {
+			195 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.4
+		}
+	}
+
+	#219 "Moscow"
+	SOV_hold_moscow = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = SOV
+		}
+
+		#Fail trigger
+		available = {
+			NOT = { controls_state = 219 }
+		}
+
+		days_mission_timeout = 180
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = GER
+			219 = {
+				is_controlled_by = SOV
+				OR = {
+					any_neighbor_state = {
+						is_controlled_by = GER
+						OWNER = { tag = SOV }
+					}
+					NOT = { is_fully_controlled_by = SOV }
+				}
+			}
+		}
+
+		#Success
+		timeout_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			219 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.5
+		}
+		#Fail
+		complete_effect = {
+			219 = { save_event_target_as = state }
+			country_event = wtt_soviet_hold_city.6
+		}
+	}
+}

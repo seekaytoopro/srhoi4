@@ -1,0 +1,17 @@
+state={
+id=661
+name="STATE_661"
+manpower = 17617
+state_category = wasteland
+history={
+owner = ITA
+add_core_of=SWE
+buildings = {
+infrastructure = 2
+air_base = 1
+}
+}
+provinces={
+4117 7154 10037 11940 4962 10884 5004 7066 fGGF 10826 12314 12248 12416 11871 10497 12653
+}
+}

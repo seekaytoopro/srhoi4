@@ -1,0 +1,130 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		}
+	}
+	
+	on_declare_war = {
+		effect = {
+		#Barbarossa purge Mechanic, else-if's are for late Barb penalties
+		if = { 
+			limit = { AND = { FROM = { original_tag = SOV } date<1941.7.10 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_4 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				}
+			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.7.10 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_5 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				} 
+			}
+			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.7.20 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_6 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				} 
+			}
+			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.7.30 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_7 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				} 
+			}
+			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.8.15 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_8 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				} 
+			}
+			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.8.30 } }
+				hidden_effect= { 
+					SOV = { 
+						add_ideas = { SOV_barb_debuff_9 }
+						activate_mission = SOV_barb_debuff_mission
+						activate_mission = SOV_relocation 
+					} 
+				} 
+			}
+			# HUN = { declare_war_on = { target = SOV type = annex_everything } }
+			# BUL = { declare_war_on = { target = SOV type = annex_everything } }
+			# SPR = { declare_war_on = { target = SOV type = annex_everything } }
+			# ITA = { declare_war_on = { target = SOV type = annex_everything } }
+			# ROM = { declare_war_on = { target = SOV type = annex_everything } }
+			}
+		}
+	}
+	
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+		}
+	}
+
+	# ROOT is previously capitulated country
+	on_uncapitulation = {
+		effect = {
+		}
+	}
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = { limit = { SOV = { AND = { has_war_with = GER } NOT = { has_idea = SOV_barb_debuff_ended } } }
+				if = { 
+					limit = { FROM.FROM = { is_on_continent = europe } }
+					if = { 
+						limit = { 
+							ROOT = {
+								the_axis = yes
+							}
+						}
+						if = { limit = { FROM.FROM = { state = 202 NOT = { has_state_flag = sr_fall_of_kiev } } }
+						202 = { set_state_flag = sr_fall_of_kiev } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.104
+						}
+						if = { limit = { FROM.FROM = { state = 137 NOT = { has_state_flag = sr_fall_of_sevastopol } } }
+						137 = { set_state_flag = sr_fall_of_sevastopol } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.107
+						}
+						if = { limit = { FROM.FROM = { state = 242 NOT = { has_state_flag = sr_fall_of_smolensk } } }
+						242 = { set_state_flag = sr_fall_of_smolensk } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.336
+						}
+						if = { limit = { FROM.FROM = { state = 218 NOT = { has_state_flag = sr_fall_of_rostov } } }
+						218 = { set_state_flag = sr_fall_of_rostov } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.337
+						}
+						if = { limit = { FROM.FROM = { state = 219 NOT = { has_state_flag = sr_fall_of_moscow } } }
+						219 = { set_state_flag = sr_fall_of_moscow } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.106
+						}
+						if = { limit = { FROM.FROM = { state = 195 NOT = { has_state_flag = sr_fall_of_leningrad } } }
+						195 = { set_state_flag = sr_fall_of_leningrad } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.103
+						}
+						if = { limit = { FROM.FROM = { state = 217 NOT = { has_state_flag = sr_fall_of_stalingrad } } }
+						217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
+						news_event = news.105
+						}
+					}
+				}
+			}
+		}
+	}
+}

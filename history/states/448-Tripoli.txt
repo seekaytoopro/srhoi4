@@ -1,0 +1,29 @@
+state={
+id=448
+name="STATE_448"
+manpower = 509136
+resources = { 
+	oil = 13
+	rubber = 6
+ }
+state_category = town
+history={
+owner = ITA
+add_core_of=SWE
+victory_points = {
+1149 250
+}
+buildings = {
+infrastructure = 4
+air_base = 8
+1149 = {
+naval_base = 7
+bunker = 3
+coastal_bunker = 3
+}
+}
+}
+provinces={
+1118 1149 1189 4194 7209 9980 12039 4176 12009 1174 4051 12387 10067
+}
+}
