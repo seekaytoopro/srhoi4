@@ -14,154 +14,154 @@
 }
 	units = {
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FIN" } }
 	}
 		division = {
-		start_equipment_factor = 0.01 start_experience_factor = 0.2
+		start_equipment_factor = 1.00 start_experience_factor = 0.2
 		name = "Jalkaväkidivisioona"
 		location = 165
 		division_template = "Jalkaväkidivisioona"

@@ -2371,7 +2371,7 @@ technologies = {
 
 
 
-		supply_consumption_factor = -0.125
+		supply_consumption_factor = -0.1
 		motorized_rocket_brigade = {
 			max_organisation = 10
 			default_morale = 0.2
@@ -2555,7 +2555,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		supply_consumption_factor = -0.075
+		supply_consumption_factor = -0.05
 
 		artillery_brigade = { 
 			soft_attack = 0.05 

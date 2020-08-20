@@ -577,7 +577,7 @@ ideas = {
 				production_speed_buildings_factor = 0.20
 				research_speed_factor = 0.10
 
-				supply_consumption_factor = -0.125
+				supply_consumption_factor = -0.175
 				drift_defence_factor = 0.5
 			}
 			rule = {
