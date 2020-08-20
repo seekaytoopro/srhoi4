@@ -1338,12 +1338,17 @@ ideas = {
 					}
 				}
 			}
+			cost = 75
 			
 			research_bonus = {
 				armor = 0.15
 			}
 			
-			traits = { fast_tank_manufacturer }
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.05 hard_attack = 0.05 build_cost_ic = -0.05
+				}
+			}
 			
 			modifier = {
 			}
@@ -1361,8 +1366,13 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			cost = 75
 			
-			traits = { medium_tank_manufacturer }
+			equipment_bonus = {
+				armor = {
+					reliability = -0.05 build_cost_ic = -0.10
+				}
+			}
 			
 			modifier = {
 			}
@@ -1380,8 +1390,14 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+
+			cost = 75
 			
-			traits = { heavy_tank_manufacturer }
+			equipment_bonus = {
+				armor = {
+					maximum_speed = -0.10 defense = 0.10 soft_attack = 0.10 hard_attack = 0.10 build_cost_ic = 0.10
+				}
+			}
 			
 			modifier = {
 			}

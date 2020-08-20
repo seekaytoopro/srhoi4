@@ -1311,8 +1311,15 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			cost = 75
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.05 soft_attack = 0.1 hard_attack = 0.1 build_cost_ic = 0.08
+				}
+			}
 			
-			traits = { heavy_tank_manufacturer }
+			#traits = { porsche_manufacturer }
 
 			ai_will_do = {
 				factor = 10
@@ -1330,8 +1337,15 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			cost = 75
 			
-			traits = { fast_tank_manufacturer }
+			#traits = { henschel_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = -0.10 defense = 0.10 soft_attack = 0.20 hard_attack = 0.20 build_cost_ic = 0.16
+				}
+			}
 			
 			ai_will_do = {
 				factor = 1
@@ -1345,12 +1359,19 @@ ideas = {
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO }
 			}
+			cost = 75
 			
 			research_bonus = {
 				armor = 0.15
 			}
+
+			equipment_bonus = {
+				armor = {
+					reliability = 0.05 soft_attack = 0.15 hard_attack = 0.15 build_cost_ic = 0.12
+				}
+			}
 			
-			traits = { medium_tank_manufacturer }
+			#traits = { man_manufacturer }
 
 			ai_will_do = {
 				factor = 1

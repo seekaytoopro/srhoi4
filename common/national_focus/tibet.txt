@@ -27,129 +27,129 @@ focus_tree = {
 		completion_reward = {
 		
 			hidden_effect = {
-			anti_cross_faction_trade_all = yes
+			#anti_cross_faction_trade_all = yes
 			GER = { add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 100 producer = SWE } }
 			ENG = { add_equipment_to_stockpile = { type = strat_bomber_equipment_1 amount = 100 producer = SWE } }
-			SPR = {
-			add_opinion_modifier = {
-    target = SOV
-    modifier = anti_cross_faction_trade
-}
-			}
-					SOV = {
-			add_opinion_modifier = {
-    target = SPR
-    modifier = anti_cross_faction_trade
-}
-			}
-				JAP = {
-			add_opinion_modifier = {
-    target = SOV
-    modifier = anti_cross_faction_trade
-}
-			}
-				SOV = {
-			add_opinion_modifier = {
-    target = JAP
-    modifier = anti_cross_faction_trade
-}
-			}
-			MAN = {
-			add_opinion_modifier = {
-    target = SOV
-    modifier = anti_cross_faction_trade
-}
-			}
-				SOV = {
-			add_opinion_modifier = {
-    target = MAN
-    modifier = anti_cross_faction_trade
-}
-			}
-			SIA = {
-			add_opinion_modifier = {
-    target = SOV
-    modifier = anti_cross_faction_trade
-}
-			}
-				ENG = {
-			add_opinion_modifier = {
-    target = SIA
-    modifier = anti_cross_faction_trade
-}
-			}
-							JAP = {
-			add_opinion_modifier = {
-    target = ENG
-    modifier = anti_cross_faction_trade
-}
-			}
-				ENG = {
-			add_opinion_modifier = {
-    target = JAP
-    modifier = anti_cross_faction_trade
-}
-			}
-			MAN = {
-			add_opinion_modifier = {
-    target = ENG
-    modifier = anti_cross_faction_trade
-}
-			}
-				ENG = {
-			add_opinion_modifier = {
-    target = MAN
-    modifier = anti_cross_faction_trade
-}
-			}
-			SIA = {
-			add_opinion_modifier = {
-    target = ENG
-    modifier = anti_cross_faction_trade
-}
-			}
-				ENG = {
-			add_opinion_modifier = {
-    target = SIA
-    modifier = anti_cross_faction_trade
-}
-			}
-							JAP = {
-			add_opinion_modifier = {
-    target = USA
-    modifier = anti_cross_faction_trade
-}
-			}
-				USA = {
-			add_opinion_modifier = {
-    target = JAP
-    modifier = anti_cross_faction_trade
-}
-			}
-			MAN = {
-			add_opinion_modifier = {
-    target = USA
-    modifier = anti_cross_faction_trade
-}
-			}
-				USA = {
-			add_opinion_modifier = {
-    target = MAN
-    modifier = anti_cross_faction_trade
-}
-			}
-			SIA = {
-			add_opinion_modifier = {
-    target = USA
-    modifier = anti_cross_faction_trade
-}
-			}
-				USA = {
-			add_opinion_modifier = {
-    target = SIA
-    modifier = anti_cross_faction_trade
-}
-			}			
+			# SPR = {
+# 			add_opinion_modifier = {
+#     target = SOV
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 					SOV = {
+# 			add_opinion_modifier = {
+#     target = SPR
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				JAP = {
+# 			add_opinion_modifier = {
+#     target = SOV
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				SOV = {
+# 			add_opinion_modifier = {
+#     target = JAP
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			MAN = {
+# 			add_opinion_modifier = {
+#     target = SOV
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				SOV = {
+# 			add_opinion_modifier = {
+#     target = MAN
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			SIA = {
+# 			add_opinion_modifier = {
+#     target = SOV
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				ENG = {
+# 			add_opinion_modifier = {
+#     target = SIA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 							JAP = {
+# 			add_opinion_modifier = {
+#     target = ENG
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				ENG = {
+# 			add_opinion_modifier = {
+#     target = JAP
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			MAN = {
+# 			add_opinion_modifier = {
+#     target = ENG
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				ENG = {
+# 			add_opinion_modifier = {
+#     target = MAN
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			SIA = {
+# 			add_opinion_modifier = {
+#     target = ENG
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				ENG = {
+# 			add_opinion_modifier = {
+#     target = SIA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 							JAP = {
+# 			add_opinion_modifier = {
+#     target = USA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				USA = {
+# 			add_opinion_modifier = {
+#     target = JAP
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			MAN = {
+# 			add_opinion_modifier = {
+#     target = USA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				USA = {
+# 			add_opinion_modifier = {
+#     target = MAN
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 			SIA = {
+# 			add_opinion_modifier = {
+#     target = USA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}
+# 				USA = {
+# 			add_opinion_modifier = {
+#     target = SIA
+#     modifier = anti_cross_faction_trade
+# }
+# 			}			
 			
 			
 			

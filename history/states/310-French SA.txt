@@ -4,7 +4,7 @@ name="STATE_310"
 manpower = 47341
 state_category = town
 resources={
-	rubber=19 # was: 30
+	# rubber=19 # was: 30 Removed because it made japan have even less impact
 	oil = 14
 }
 history={
