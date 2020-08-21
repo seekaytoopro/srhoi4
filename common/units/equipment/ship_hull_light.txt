@@ -44,12 +44,9 @@ equipments = {
 			}
 
 			mid_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
-					ship_anti_air
 					ship_depth_charge
 				}
 			}
@@ -94,12 +91,12 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 35
 		reliability = 0.80
 		
 		naval_range = 1500
 		
-		max_strength = 25
+		max_strength = 12.5
 		
 
 		fuel_consumption = 0
@@ -139,13 +136,12 @@ equipments = {
 			fixed_ship_engine_slot = inherit
 
 			mid_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+#					ship_mine_warfare
+#					ship_mine_layer
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -159,12 +155,13 @@ equipments = {
 		}
 
 
+		naval_speed = 35.53
 		reliability = 0.85
 		naval_range = 1800
-		max_strength = 40
+		max_strength = 20
 		build_cost_ic = 500
 		resources = {
-			steel = 2
+			steel = 3
 		}
 		manpower = 325
 	}
@@ -189,7 +186,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -197,10 +193,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+#					ship_mine_warfare
+#					ship_mine_layer
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -208,10 +203,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+#					ship_mine_warfare
+#					ship_mine_layer
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -224,17 +218,18 @@ equipments = {
 
 		surface_detection = 20
 		surface_visibility = 10
+		naval_speed = 36.01		
 		reliability = 0.90
 		naval_range = 2000
-		max_strength = 50
+		max_strength = 25
 		build_cost_ic = 550
 		manpower = 400
-
-		default_modules = {
-			mid_1_custom_slot = empty
-			rear_1_custom_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_3
-		}
+		
+		default_modules = {		
+			mid_1_custom_slot = empty		
+			rear_1_custom_slot = empty		
+			fixed_ship_engine_slot = light_ship_engine_3		
+		}		
 	}
 
 	ship_hull_light_4 = {
@@ -253,10 +248,9 @@ equipments = {
 			fixed_ship_torpedo_slot = inherit
 			fixed_ship_engine_slot = inherit
 			front_1_custom_slot = {
-				required = no
+				required = yes
 				allowed_module_categories = {
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -264,10 +258,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+#					ship_mine_warfare
+#					ship_mine_layer
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -276,10 +269,9 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					ship_torpedo
-					ship_mine_warfare
-					ship_mine_layer
+#					ship_mine_warfare
+#					ship_mine_layer
 					ship_depth_charge
-					ship_anti_air
 					ship_light_battery
 				}
 			}
@@ -287,12 +279,14 @@ equipments = {
 
 
 		surface_detection = 20
+		naval_speed = 36.44		
 		reliability = 0.92
 		naval_range = 2500
-		max_strength = 60
+		max_strength = 30
 		build_cost_ic = 600
 		resources = {
 			steel = 3
+			chromium = 1
 		}
 		manpower = 500
 	}
@@ -326,7 +320,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 35
 		reliability = 0.80
 		
 		naval_range = 1500
@@ -374,7 +368,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 35.53
 		reliability = 0.85
 
 		naval_range = 1800
@@ -426,7 +420,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 36.01
 		reliability = 0.90
 
 		naval_range = 2000
@@ -477,7 +471,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 36.44
 		reliability = 0.92
 
 		naval_range = 2500
@@ -494,7 +488,8 @@ equipments = {
 		build_cost_ic = 500
 		resources = {
 			#oil = 2
-			steel = 3
+			steel = 4
+			chromium = 1
 		}		
 		manpower = 500
 	}

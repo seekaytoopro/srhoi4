@@ -237,7 +237,7 @@ sub_units = {
 		special_forces = yes
 
 		priority = 2
-		ai_priority = 2
+		ai_priority = 601
 		active = no
 
 		type = {
@@ -285,7 +285,7 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 2
-		priority = 3000
+		priority = 601
 		active = no
 
 		type = {
@@ -341,7 +341,7 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 2
-		priority = 3000
+		priority = 601
 		active = no
 
 		type = {
@@ -396,7 +396,7 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 50
-		priority = 3000
+		priority = 601
 		active = no
 
 		type = {
@@ -455,7 +455,7 @@ sub_units = {
 		special_forces = yes
 		
 		ai_priority = 2
-		priority = 3000
+		priority = 601
 		active = no
 
 		type = {
