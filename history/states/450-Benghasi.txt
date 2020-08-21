@@ -2,9 +2,9 @@
 state={
 	id=450
 	name="STATE_450"
-	resources = { 
-		oil = 17
-		rubber = 5
+	resources={
+		oil=17.000
+		rubber=5.000
 	}
 
 	history={
@@ -20,6 +20,7 @@ state={
 				naval_base = 5
 				bunker = 2
 				coastal_bunker = 2
+
 			}
 
 		}
@@ -27,7 +28,7 @@ state={
 	}
 
 	provinces={
-		1062 1127 1204 4063 4120 4133 4151 4583 6935 7063 7139 10049 10123 11954 12079 12094 
+		806 1062 1127 1204 4063 4112 4120 4133 4151 4583 6935 7063 7139 10049 10123 11954 12079 12094 
 	}
 	manpower=102535
 	buildings_max_level_factor=1.000

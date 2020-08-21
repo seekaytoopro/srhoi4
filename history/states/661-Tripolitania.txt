@@ -1,17 +1,27 @@
+
 state={
-id=661
-name="STATE_661"
-manpower = 17617
-state_category = wasteland
-history={
-owner = ITA
-add_core_of=SWE
-buildings = {
-infrastructure = 2
-air_base = 1
-}
-}
-provinces={
-4117 7154 10037 11940 4962 10884 5004 7066 fGGF 10826 12314 12248 12416 11871 10497 12653
-}
+	id=661
+	name="STATE_661"
+	resources = {
+		rubber = 6
+		oil = 15
+	}
+
+	history={
+		owner = ITA
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1005 1119 1122 3851 4117 4127 4962 5004 6912 7066 7154 9941 10037 10122 10497 10826 10884 11871 11940 12248 12314 12416 12653 
+	}
+	manpower=17617
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
