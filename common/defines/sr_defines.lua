@@ -13,6 +13,8 @@ NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45.0 -- Vanilla is 30.0, incre
 ---------------------------------------------------------------
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue 
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0                     -- vanilla 62.0  how fast you train in deployment queue
+NDefines.NCountry.ATTACHE_XP_SHARE = 0.05
+
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
