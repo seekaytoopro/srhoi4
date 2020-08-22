@@ -3,7 +3,7 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100    							-- 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							-- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	 -- WAS 60 	| less messages lying around at the top of your screen
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.50, 0.300, 0.20, 0.05, 0.0 } -- 0.375, 0.175, 0.1, 0.035, 0.0 game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.50, 0.300, 0.20, 0.035, 0.0 } -- 0.375, 0.175, 0.1, 0.035, 0.0 game speeds for each level. Must be 5 entries with last one 0 for unbound
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1						-- WAS -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 ---------------------------------------------------------------
@@ -76,7 +76,7 @@ NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
 
 -- Fuel Changes -- Reduced across the board -------------------------------------------------------------
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.45 -- (0.50) fuel cost multiplier for all army related stuff
-NDefines.NNavy.FUEL_COST_MULT = 0.08 -- (0.10) fuel multiplier for all naval missions
+NDefines.NNavy.FUEL_COST_MULT = 0.07 -- (0.10) fuel multiplier for all naval missions
 NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
 ---------------------------------------------------------------------------------------------------------
 
@@ -146,7 +146,8 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 8		-- (5) chance to get a hit to damage on forts. (out of 100)
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.041 -- (0.1)
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04 -- (0.1)
+NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.05
 
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level AA state 
@@ -429,7 +430,7 @@ NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.7 -- (0.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.05					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 4.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 
-	--SUB DEFINES STOLEN FROM GDU TILL I HAVE TIME TO MAKE MY OWN
+	-- DEFINES STOLEN FROM GDU
 	--- Naval Defines Related to USW and ASW 
 
 NDefines.NNavy.SUB_DETECTION_CHANCE_BASE = 8
@@ -454,6 +455,32 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 1.0				-- Factor 
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 1.0					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.0						-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
 	
+-- Naval Defines Related to Convoys and Escorts
+NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.0		-- Minimum fraction of an equipment type's base industry capacity cost to use when converting a naval equipment, such as through ship refitting.
+NDefines.NProduction.MIN_NAVAL_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 0.0	-- Minimum fraction of an equipment type's base strategic resource cost to use when converting a naval equipment, such as through ship refitting.
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 50.0					-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+NDefines.NNavy.CONVOY_DEFENSE_MAX_REGION_TO_TASKFORCE_RATIO = 15.0				-- each taskforce in convoy defense mission can at most cover this many regions without losing efficiency
+NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.10		-- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route
+NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1								-- How much efficiency drops when losing convoys. If modifier is 0.5, then losing 100% of convoys in short period, the efficiency will drop by 50%.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 5							-- Convoy starts regaining it's efficiency after X days without any convoys being sink.
+NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04						-- How much efficiency regains every day.
+NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.04								-- To avoid complete 0% efficiency, set the lower limit.
+NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.25                             	-- base % of convoys that get intercepted
+
+NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 2 										-- the taskforces that wants to join existing combats will wait for at least this amount 8--->2 
+NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT = 2.0 								-- multiplies hit chance of small guns, early application of 1.6.2 
+NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1.0 									-- early application of 1.6.2 
+NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.2								-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
+NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.006								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
+
+NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 6.0	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
+NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 15.0 	-- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
+NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.75  -- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.05 -- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
+
+NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00		
+
 	---------------------------------------------------------------
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0.10	-- WAS 0.2 | LICENSES ARE FREE SO TECH BONUS IS TOO MUCH | License production tech bonus
 NDefines.NAI.RESEARCH_BONUS_FACTOR = 200.0

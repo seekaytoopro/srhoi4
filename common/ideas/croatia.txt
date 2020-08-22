@@ -17,7 +17,7 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = -0.25
-				non_core_manpower = -0.10
+				non_core_manpower = -1.00
 			}
 		}
 	}
@@ -200,7 +200,7 @@ ideas = {
 				original_tag = CRO
 			}
 			
-			traits = { army_artillery_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -216,7 +216,7 @@ ideas = {
 				original_tag = CRO
 			}
 			
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
