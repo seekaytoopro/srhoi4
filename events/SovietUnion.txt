@@ -454,6 +454,78 @@ is_triggered_only = yes
 
 }
 
+	###single deployment###
+	country_event = {
+		id = soviet.54
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			SOV = {		
+				load_oob = "SOV_Belarus_Deployment"
+				load_oob = "SOV_Baltic_Deployment"
+			}
+		}	
+	}
+	country_event = {
+		id = soviet.55
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_NorthUkraine_Deployment"
+			load_oob = "SOV_SouthUkraine_Deployment"
+		}	
+	}
+		###double deployment###
+	country_event = {
+		id = soviet.56
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_Belarus_Deployment"
+			load_oob = "SOV_Baltic_Deployment"
+		}	
+	}
+	country_event = {
+		id = soviet.57
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_Belarus_Deployment"
+			load_oob = "SOV_Baltic_Deployment"
+		}	
+	}
+	country_event = {
+		id = soviet.58
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_NorthUkraine_Deployment"
+			load_oob = "SOV_SouthUkraine_Deployment"
+		}	
+	}
+	country_event = {
+		id = soviet.59
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_NorthUkraine_Deployment"
+			load_oob = "SOV_SouthUkraine_Deployment"
+		}	
+	}
+
+
    country_event = {
    id = soviet.140
    title = soviet.140.t

@@ -944,7 +944,7 @@ focus = {
 			
 			completion_reward = {
 				add_tech_bonus = {
-					name = GER_autarky
+					name = SOV_command_economy
 					bonus = 1.0
 					uses = 2
 					technology = excavation1
@@ -952,6 +952,18 @@ focus = {
 					technology = excavation3
 					technology = excavation4
 					technology = excavation5
+					}
+					653 = {
+						add_resource = {
+							type = aluminium
+							amount = 37
+						}
+					}
+					572 = {
+						add_resource = {
+							type = aluminium
+							amount = 31
+						}
 					}
 				}
 			}

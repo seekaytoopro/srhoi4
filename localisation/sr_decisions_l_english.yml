@@ -52,4 +52,13 @@
  ITA_stop_auto_ll_ger:0 "Stop Auto Lendlease"
  ITA_auto_ll_ger_1:0 "Auto Lendlease Planes to Germany"
  ITA_auto_ll_ger_2:0 "Auto Lendlease Planes to Germany"
+ GDU_Belarus_Deployment_decision:0 "Place 1 Division in every tile of the Belarus Air Zone"
+ GDU_Baltic_Deployment_decision:0 "Place 1 Division in every tile of the Baltic States Air Zone"
+ GDU_NorthUkraine_Deployment_decision:0 "Place 1 Division in every tile of the Northern Ukraine Air Zone"
+ GDU_SouthUkraine_Deployment_decision:0 "Place 1 Division in every tile of the Southern Ukraine Air Zone"
+ 
+ GDU_Soviet_Single_Deployment_decision:0 "Deploy One Division per Tile"
+ GDU_Soviet_Single_Deployment_decision_desc:0 "This is Done over 3 Days to Prevent Lag"
+ GDU_Soviet_Double_Deployment_decision:0 "Deploy Two Divisions per Tile"
+ GDU_Soviet_Double_Deployment_decision:0 "This is Done over 7 Days to Prevent Lag"
  
