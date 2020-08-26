@@ -161,6 +161,8 @@ focus_tree = {
 				activate_mission = SOV_barb_debuff_mission
 			}
 
+			add_ideas = georgy_zhukov_chief
+
 			#hidden_effect = {
 				create_field_marshal = {
 					name = "Georgy Zhukov"
@@ -499,7 +501,7 @@ focus = {
 	relative_position_id = SOV_wartime_propaganda
 	x = 2
 	y = 1
-	cost = 10
+	cost = 20
 	ai_will_do = {
 		factor = 100
 	}

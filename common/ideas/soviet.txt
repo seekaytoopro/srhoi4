@@ -1185,6 +1185,24 @@ ideas = {
 			allowed = { original_tag = SOV	}
 			traits = { army_chief_maneuver_2 }	
 		}	
+
+		georgy_zhukov_chief = {
+		
+			picture = georgy_zhukov
+
+
+			allowed = {
+				original_tag = SOV # Unlocked via focus
+			}
+
+			available = {
+				has_completed_focus = SOV_defense_of_moscow
+			}
+
+			cost = 150
+
+			traits = { marshal_of_victory }
+		}	
 	}
 	navy_chief = {
 		
