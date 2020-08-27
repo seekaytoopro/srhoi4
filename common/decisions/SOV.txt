@@ -38,6 +38,10 @@ SOV_mrp = {
 
 		available = {
 			NOT = { has_country_flag = Sov_Divisions_Deployed }
+			has_manpower > 415000
+			has_war = no 
+			date < 1941.5.1
+			POL = { has_capitulated = yes }
 		}
 
 		allowed = {
@@ -63,6 +67,9 @@ SOV_mrp = {
 		available = {
 			NOT = { has_country_flag = Sov_Divisions_Deployed }
 			has_manpower > 850000
+			has_war = no 
+			date < 1941.5.1
+			POL = { has_capitulated = yes }
 		}
 
 		allowed = {
