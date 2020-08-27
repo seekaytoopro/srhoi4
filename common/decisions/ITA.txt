@@ -182,6 +182,10 @@ ITA_annex_bul = {
 							transfer_troops = yes 
 						}
 				}
+				every_state = {
+					limit = { is_core_of = CRO }
+					set_compliance = 100
+				}
 				
 				hidden_effect = { set_country_flag = cro_annexed }
 			}
