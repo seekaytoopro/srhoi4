@@ -174,36 +174,32 @@ country_event = {
 	
 	option = {
 		name = japan.144.a
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+		declare_war_on = { target = ENG type = annex_everything }
+		declare_war_on = { target = FRA type = annex_everything }
+		declare_war_on = { target = HOL type = annex_everything }
+		declare_war_on = { target = USA type = annex_everything }
+		declare_war_on = { target = AST type = annex_everything }
+		declare_war_on = { target = NZL type = annex_everything }
+		declare_war_on = { target = RAJ type = annex_everything }
+		declare_war_on = { target = NOR type = annex_everything }
+		declare_war_on = { target = SAF type = annex_everything }
+		declare_war_on = { target = CAN type = annex_everything }
+		declare_war_on = { target = BEL type = annex_everything }
+		declare_war_on = { target = DEN type = annex_everything }
+			
 		if = {
-limit = {  AND = { tag = JAP  date > 1940.12.15  }  }
-			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
-			declare_war_on = { target = ENG     type = annex_everything }
-			declare_war_on = { target = FRA    type = annex_everything }
-			declare_war_on = { target = HOL   type = annex_everything }
-			declare_war_on = { target = USA   type = annex_everything }
-			declare_war_on = { target = AST   type = annex_everything }
-			declare_war_on = { target = NZL   type = annex_everything }
-			declare_war_on = { target = RAJ  type = annex_everything  }
-			declare_war_on = { target = NOR  type = annex_everything  }
-			declare_war_on = { target = SAF   type = annex_everything }
-			declare_war_on = { target = CAN  type = annex_everything  }
-			declare_war_on = { target = BEL  type = annex_everything  }
-			declare_war_on = { target = DEN  type = annex_everything  }
-			
-			if = {
-			limit = { BRA = { is_in_faction = yes}}
-			declare_war_on = { target = BRA   type = annex_everything }
-			}
-				if = {
-			limit = { MEX = { is_in_faction = yes}}
+		limit = { BRA = AND = { is_in_faction = yes is_ai = no } } 
+		declare_war_on = { target = BRA   type = annex_everything }
+		}
+		if = {
+			limit = { MEX = { AND = { is_in_faction = yes is_ai = no } } }
 			declare_war_on = { target = MEX  type = annex_everything  }
-			}
-				if = {
-			limit = { IRE = { is_in_faction = yes}}
+		}
+		if = {
+			limit = { IRE = { AND = { is_in_faction = yes is_ai = no } } }
 			declare_war_on = { target = IRE  type = annex_everything  }
-			}
-			
-			}
+		}
 	}
 }
 

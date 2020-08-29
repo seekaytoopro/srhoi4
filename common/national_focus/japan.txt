@@ -567,8 +567,8 @@ focus_tree = {
 		custom_effect_tooltip = tooltip_jap_war
 		country_event = { id = japan.144 }
 		add_ideas = game_impact_japan
-		if = { limit = { country_exists = MAN} MAN = { add_ideas = game_impact_japan_puppet   } }
-		if = { limit = { country_exists = SIA} SIA = { add_ideas = game_impact_japan_puppet   } }
+		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
+		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
 	}
 	}
 

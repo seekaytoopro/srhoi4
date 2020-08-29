@@ -64,6 +64,35 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = SOMEPIC
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = news.3.a
+		trigger = {
+			OR = {
+				TAG = SOV
+				TAG = USA
+				TAG = BRA
+				TAG = MEX
+				is_in_faction_with = ENG
+			}
+				
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = { OR = { TAG = GER TAG = SIA TAG = MAN TAG = HUN TAG = ROM TAG = ITA TAG = CRO TAG = BUL TAG = JAP } }
+	}
+}
+
 # French Indochina I
 news_event = {
 	id = news.5

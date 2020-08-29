@@ -58,7 +58,7 @@ political_actions = {
 		cost = 100
 
 		complete_effect = {
-		custom_effect_tooltip = "Gives 12.85% Stability in total"
+		custom_effect_tooltip = "Gives 12.85% Stability in total. Decision can be taken again in 720 days"
 		}
 
 		ai_will_do = {
@@ -67,6 +67,50 @@ political_actions = {
 				add = 1
 				has_stability < 0.6
 			}
+		}
+	}
+
+	remove_no_production = {
+
+		icon = generic_industry
+		
+		allowed = { 
+			OR = {	
+			tag = EFR 
+			tag = SIA 
+			tag = MAN
+			tag = IRE
+			tag = FIN
+			tag = BRA
+			tag = MEX
+			tag = NOR
+			tag = CRO 
+			}
+		}
+
+		available = {
+			ROOT = { is_ai = no }
+		}
+
+		visible = {
+			ROOT = { has_idea = no_production }
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		complete_effect = {
+		custom_effect_tooltip = "Removes the negative ai modifiers from your country"
+		if = {
+			limit = { ROOT = { has_idea = no_production } }
+			ROOT = { remove_ideas = no_production }
+		}
+		
+		}
+
+		ai_will_do = {
+			base = 0
 		}
 	}
 

@@ -1983,34 +1983,6 @@ date > 1941.6.1
 		completion_reward = {
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
 
-			YUG = {
-				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
-				if = {
-					limit = {
-						ROOT = { has_government = fascism }
-						NOT = { has_government = fascism }
-						NOT = { has_idea_with_trait = fascist_demagogue }
-						fascism < 0.3
-					}
-					add_popularity = {
-						ideology = fascism
-						popularity = -0.07
-					}
-				}
-				if = {
-					limit = {
-						ROOT = { has_government = democratic }
-						NOT = { has_government = democratic }
-						NOT = { has_idea_with_trait = democratic_reformer }
-						democratic < 0.3
-					}
-					add_popularity = {
-						ideology = democratic
-						popularity = -0.07
-					}
-				}
-			}
-
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
 			}
@@ -2102,7 +2074,7 @@ date > 1941.6.1
   remove_idea = vittoria_mutilata 
   add_idea = vittoria_mutilata2	 
 }
-			add_state_core = 103
+			add_state_core = 801
 			add_state_core = 163
 			add_state_core = 116
 			add_state_core = 1
@@ -2248,6 +2220,9 @@ date > 1941.6.1
 				set_province_name = { id = 11905 name = "Dedeagach" }
 			}
 			ITA = { army_experience = 100 air_experience = 100 }
+			hidden_effect = {
+				news_event = { hours = 6 id = news.3 }
+			}
 		}
 	}
 
