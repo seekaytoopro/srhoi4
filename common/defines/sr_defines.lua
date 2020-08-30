@@ -15,6 +15,9 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vani
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0                     -- vanilla 62.0  how fast you train in deployment queue
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.00
 
+NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
+NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
+
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
@@ -75,9 +78,9 @@ NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
 
 
 -- Fuel Changes -- Reduced across the board -------------------------------------------------------------
-NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.45 -- (0.50) fuel cost multiplier for all army related stuff
-NDefines.NNavy.FUEL_COST_MULT = 0.07 -- (0.10) fuel multiplier for all naval missions
-NDefines.NAir.FUEL_COST_MULT = 0.25 -- (0.35) fuel multiplier for all air missions 
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.50 -- (0.50) fuel cost multiplier for all army related stuff
+NDefines.NNavy.FUEL_COST_MULT = 0.05 -- (0.10) fuel multiplier for all naval missions
+NDefines.NAir.FUEL_COST_MULT = 0.17 -- (0.35) fuel multiplier for all air missions 
 ---------------------------------------------------------------------------------------------------------
 
 
