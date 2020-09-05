@@ -38,7 +38,7 @@ weather_snow = { # on Region
 	local_org_regain = -0.10
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.05
-	positioning = -0.1
+	# positioning = -0.1
 }
 weather_blizzard = { # on Region 
 	air_detection = -0.8
@@ -64,7 +64,7 @@ weather_sandstorm = { # on Region
 weather_arctic_water = { # on Region 
 	navy_casualty_on_sink = 0.2
 	naval_retreat_speed = -0.05
-	positioning = -0.2
+	# positioning = -0.2
 }
 weather_mud = { # on Province
 	attrition = 0.5
@@ -134,7 +134,7 @@ compliance_effect_base = {
 
 compliance_effect = {
 	local_factories = 0.8
-	local_non_core_manpower = 0.18
+	local_non_core_manpower = 0.18 #1.00
 }
 # On States
 non_core = {
@@ -181,50 +181,6 @@ ROM_foreign_motor_company = {
 	license_tech_difference_speed = 0.1 #less cost increase for each tech level between the license and own tech level 
 }
 
-HUN_dynastic_ties_license = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-
-	license_purchase_cost = 0 #base cost reduction
-	ai_license_acceptance = 50 #more to AI acceptance value.
-
-}
-
-YUG_western_license = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
-	}
-	ai_license_acceptance = 20 #more to AI acceptance value.
-
-}
-
-FRA_coordinate_rearmament = {
-	valid_relation_trigger = {
-		FROM = {
-			is_in_faction_with = ROOT
-		}
-	}
-	license_purchase_cost = 0
-	ai_license_acceptance = 100 #more to AI acceptance value.
-	license_production_speed = 0.25
-	license_tech_difference_speed = 0.25
-}
-
-
-HUN_stubborn_fools = {
-	valid_relation_trigger = {
-		FROM = {
-			NOT = { is_in_faction_with = ROOT }
-		}
-	}
-	ai_license_acceptance = -50 #penalty to AI acceptance
-
-}
 
 ROM_military_modernization = {
 	valid_relation_trigger = {
@@ -233,8 +189,6 @@ ROM_military_modernization = {
 		}
 	}
 
-	license_purchase_cost = 0 #base cost reduction
-	ai_license_acceptance = 60 #more to AI acceptance value.
 	license_production_speed = 0.25 #speed  increase for being a license
 	license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level 
 }
@@ -331,19 +285,19 @@ naval_mines_effect = {
 }
 
 air_wing_experience_malus_min = {
-	air_attack_factor = -0.0
-	#air_defence_factor = -0.15
-	air_agility_factor = -0.12
-	air_night_penalty = 0.12
-	#air_weather_penalty = 0.15
+	# air_attack_factor = -0.0
+	# #air_defence_factor = -0.15
+	# air_agility_factor = -0.12
+	# air_night_penalty = 0.12
+	# #air_weather_penalty = 0.15
 }
 
 air_wing_experience_bonus_max = {
-	air_attack_factor = 0.0
-	#air_defence_factor = 0.2
-	air_agility_factor = 0.20
-	air_night_penalty = -0.2
-	#air_weather_penalty = -0.3
+	# air_attack_factor = 0.0
+	# #air_defence_factor = 0.2
+	# air_agility_factor = 0.20
+	# air_night_penalty = -0.2
+	# #air_weather_penalty = -0.3
 }
 
 pride_of_the_fleet = {

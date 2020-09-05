@@ -207,6 +207,7 @@ sub_units = {
 		supply_consumption = 0.02
 		recon = 2
 		can_be_parachuted = yes
+		ap_attack = -4.9
 
 		# Support nerfs to combat abilities
 		breakthrough 	= -0.75
