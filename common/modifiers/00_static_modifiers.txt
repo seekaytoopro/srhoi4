@@ -204,16 +204,15 @@ free_license = {
 
 # applies when stability > 50%
 stability_good_modifier = {
-	industrial_capacity_factory = 0.20
-	industrial_capacity_dockyard = 0.20
+	
 	consumer_goods_factor = -0.05
 	political_power_factor = 0.1
+	production_speed_buildings_factor = 0.15
 }
 
 # applies when stability < 50%
 stability_bad_modifier = {
-	industrial_capacity_factory = -0.40
-	industrial_capacity_dockyard = -0.40
+	consumer_goods_factor = 0.05
 	political_power_factor = -0.2
 }
 
@@ -222,6 +221,8 @@ war_support_good_modifier = {
 	#army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.05
 	command_power_gain_mult = 0.45
+	industrial_capacity_factory = 0.20
+	industrial_capacity_dockyard = 0.20
 }
 
 war_support_bad_modifier = {
@@ -232,7 +233,7 @@ war_support_bad_modifier = {
 
 
 attache_sent = {
-	war_support_factor = 0.1
+	war_support_factor = 0.05
 }
 
 # Difficulty modifiers
@@ -382,7 +383,7 @@ active_decryption_modifier = {
 
 # modifiers applied to allied divisions entering the intel network
 intel_network_state_level_bonus = {
-	amphibious_invasion_defence = 1
+	amphibious_invasion_defence = .03
 	planning_speed = 0.5
 }
 

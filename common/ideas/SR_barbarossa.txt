@@ -19,7 +19,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.39
-				army_morale_factor = -0.39
+				army_morale_factor = -0.2
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -61,7 +61,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.36
-				army_morale_factor = -0.36
+				army_morale_factor = -0.19
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -105,7 +105,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.33
-				army_morale_factor = -0.33
+				army_morale_factor = -0.18
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -149,7 +149,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.30
-				army_morale_factor = -0.30
+				army_morale_factor = -0.17
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -193,7 +193,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.27
-				army_morale_factor = -0.27
+				army_morale_factor = -0.16
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -237,7 +237,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.24
-				army_morale_factor = -0.24
+				army_morale_factor = -0.15
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -281,7 +281,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.21
-				army_morale_factor = -0.21
+				army_morale_factor = -0.14
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -325,7 +325,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.18
-				army_morale_factor = -0.18
+				army_morale_factor = -0.13
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -368,7 +368,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.15
-				army_morale_factor = -0.15
+				army_morale_factor = -0.12
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -411,7 +411,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.12
-				army_morale_factor = -0.12
+				army_morale_factor = -0.11
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -454,7 +454,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.09
-				army_morale_factor = -0.09
+				army_morale_factor = -0.1
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -497,7 +497,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.06
-				army_morale_factor = -0.06
+				army_morale_factor = -0.09
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -540,7 +540,7 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.03
-				army_morale_factor = -0.03
+				army_morale_factor = -0.08
 			}
 			equipment_bonus = {
 				fighter_equipment = {

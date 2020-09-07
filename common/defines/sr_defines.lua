@@ -32,7 +32,7 @@ NDefines.NMilitary.UNIT_EXPERIENCE_PER_TRAINING_DAY = 0
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999             -- WAS 500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999
-NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 0.0
+NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 500.0
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.000 -- 0.0 is vanilla, reduces savegame bloat
 
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015 -- (0.0001)

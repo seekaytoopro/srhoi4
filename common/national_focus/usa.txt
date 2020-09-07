@@ -22,6 +22,7 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		x = 11
 		y = 0
+		y = 0
 		cost = 10
 		available = {
 			ROOT = { has_war_with = JAP }
@@ -242,7 +243,7 @@ focus_tree = {
 
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 280 }
 			USA_congress_medium_oppositiona = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -282,7 +283,7 @@ focus_tree = {
 
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 280 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_oppositiona = yes
 		}
@@ -398,6 +399,7 @@ focus_tree = {
 
 		available = {
 			congress_low_support_trigger = yes
+			date > 1937.3.1
 		}
 		
 		bypass = {
@@ -488,7 +490,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		available = {
+		available = { date > 1941.1.1
 		}
 		completion_reward = {
 			add_research_slot = 1
@@ -1348,7 +1350,7 @@ focus_tree = {
 		# 		not = { has_dlc = "Man the Guns" }
 		# 	}
 		# }
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2110,7 +2112,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2149,7 +2151,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_strategic_bombing
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2277,7 +2279,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_combined_bomber_offensive }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1

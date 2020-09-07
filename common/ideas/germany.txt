@@ -524,8 +524,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.125
-				defense_bonus_against = 0.075
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 			modifier = {
 				production_speed_air_base_factor=0.20
@@ -944,7 +944,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				# production_speed_synthetic_refinery_factor = 0.25
+				 production_speed_synthetic_refinery_factor = 0.25
 				political_power_cost = 0.65
 			}
 		}
@@ -980,7 +980,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				# production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
 				political_power_cost = 0.8
 			}
 		}
@@ -1016,7 +1016,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				# production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
 				political_power_cost = 0.95
 			}
 		}
@@ -1052,7 +1052,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				# production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
 				political_power_cost = 1.1
 			}
 		}
@@ -1088,7 +1088,7 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 				production_speed_arms_factory_factor = 0.25
 				production_speed_dockyard_factor = 0.25
-				# production_speed_synthetic_refinery_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.25
 				political_power_cost = 1.25
 			}
 		}
@@ -1156,7 +1156,7 @@ ideas = {
 			
 			available = {
 				#date>1941.6.1
-				has_completed_focus = GER_armament_miracle
+				has_completed_focus = GER_danzig_or_war
 			}
 			
 			cost = 150
@@ -1302,7 +1302,7 @@ ideas = {
 		designer = yes
 		
 		porsche = {
-
+		cost = 75
 			
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO  }
@@ -1311,11 +1311,11 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			cost = 75
+			
 
 			equipment_bonus = {
 				armor = {
-					maximum_speed = 0.05 soft_attack = 0.1 hard_attack = 0.1 build_cost_ic = 0.08
+					maximum_speed = 0.05 soft_attack = 0.1 hard_attack = 0.1 breakthrough = 0.07
 				}
 			}
 			
@@ -1329,7 +1329,7 @@ ideas = {
 		
 		henschel = {
 
-			
+			cost = 75
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO }
 			}
@@ -1337,13 +1337,13 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			cost = 75
+		
 			
 			#traits = { henschel_manufacturer }
 
 			equipment_bonus = {
 				armor = {
-					maximum_speed = -0.10 defense = 0.10 soft_attack = 0.20 hard_attack = 0.20 build_cost_ic = 0.16
+					maximum_speed = -0.05 defense = 0.10 soft_attack = 0.15 hard_attack = 0.15
 				}
 			}
 			
@@ -1355,11 +1355,11 @@ ideas = {
 		GER_MAN = {
 
 			picture = GER_MAN
-			
+			cost = 75
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO }
 			}
-			cost = 75
+			
 			
 			research_bonus = {
 				armor = 0.15
@@ -1367,7 +1367,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-					reliability = 0.05 soft_attack = 0.15 hard_attack = 0.15 build_cost_ic = 0.12
+					reliability = 0.05 soft_attack = 0.15 hard_attack = 0.15 
 				}
 			}
 			
@@ -1427,6 +1427,7 @@ ideas = {
 		designer = yes
 		
 		messerschmitt = {
+		cost = 75
 			
 			allowed = {
 				original_tag = GER
@@ -1435,8 +1436,17 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			equipment_bonus = {
+			fighter_equipment = {
+			air_agility = 0.15
+			maximum_speed = 0.15
+			air_range = 0.1
+			air_attack = 0.1
+	
+			}
+			}
 			
-			traits = { light_aircraft_manufacturer }
+			traits = {#light_aircraft_manufacturer }
 			
 			equipment_bonus = {
 				
@@ -1448,6 +1458,7 @@ ideas = {
 		}
 		
 		junkers = { 
+		cost = 75
 			allowed = {
 				original_tag = GER
 			}
@@ -1455,8 +1466,13 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			
-			traits = { CAS_manufacturer }
+			equipment_bonus = {
+			CAS_equipment = {
+			air_defense = 0.1
+			ground_attack = 0.15
+			}
+			}
+			traits = { #CAS_manufacturer }
 			
 			equipment_bonus = {
 				
@@ -1469,7 +1485,7 @@ ideas = {
 		
 
 		focke_wulf = { 
-
+			cost = 75
 			
 			allowed = {
 				original_tag = GER
@@ -1488,7 +1504,7 @@ ideas = {
 		}
 		
 		heinkel = {
-
+			cost = 75
 			
 			allowed = {
 				original_tag = GER
@@ -1507,7 +1523,7 @@ ideas = {
 		}
 		
 		dornier = {
-
+			cost = 75
 			allowed = {
 				original_tag = GER
 			}
@@ -1537,7 +1553,7 @@ ideas = {
 			
 			research_bonus = {
 				industry = 0.05
-				synth_resources = 0.2
+				synth_resources = 0.25
 			}
 			
 			traits = { refinery_concern }
@@ -1554,7 +1570,7 @@ ideas = {
 			}
 			
 			research_bonus = {
-				industry = 0.15
+				industry = 0.2
 				
 			}
 			ai_will_do = {
@@ -1581,7 +1597,7 @@ ideas = {
 	materiel_manufacturer = {
 		
 		designer = yes
-		
+		cost = 75
 		rheinmetall = {
 			
 			allowed = {
@@ -1600,7 +1616,7 @@ ideas = {
 		}
 		
 		mauser = {
-
+			cost = 75
 			
 			allowed = {
 				original_tag = GER
@@ -1621,13 +1637,14 @@ ideas = {
 
 		
 		opel = {
-			
+			cost = 75
 			allowed = {
 				original_tag = GER
 			}
 			
 			research_bonus = {
 				motorized_equipment = 0.25
+				mechanized_equipment = .03
 			}
 			
 			traits = { motorized_equipment_manufacturer }
@@ -1939,7 +1956,7 @@ ideas = {
 					has_completed_focus = GER_army_innovation
 				}
 			
-			traits = { army_armored_3 }
+			traits = { rommel_hc }
 			
 			ai_will_do = {
 				factor = 8
@@ -1953,7 +1970,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = {rund_hc}
 			
 			ai_will_do = {
 				factor = 1.5
@@ -2012,7 +2029,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			traits = { army_commando_1 }
+			traits = { army_commando_2 }
 
 			ai_will_do = {
 				factor = 1

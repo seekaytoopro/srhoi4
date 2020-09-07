@@ -524,36 +524,7 @@ ideas = {
 
 			picture = generic_air_bonus
 
-			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_CAS_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				cv_nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				nav_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				tac_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-				strat_bomber_equipment = {
-					build_cost_ic = -0.1
-					instant = yes
-				}
-			}
+			
 
 			modifier = {
 				industrial_capacity_factory = 0.05
@@ -917,7 +888,7 @@ ideas = {
 			
 			picture = ROM_gheorghe_potopeanu
 			
-			traits = { army_regrouping_1 } 
+			traits = { army_regrouping_2 } 
 		}
 		ROM_gheorghe_avramescu = {
 			ledger = army
@@ -946,7 +917,7 @@ ideas = {
 			
 			picture = generic_army_europe_3
 			
-			traits = { army_commando_2 }
+			traits = { army_commando_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -963,7 +934,7 @@ ideas = {
 			
 			picture = generic_army_europe_4
 			
-			traits = { army_armored_2 }
+			traits = { army_armored_3 }
 			
 			ai_will_do = {
 				factor = 1
