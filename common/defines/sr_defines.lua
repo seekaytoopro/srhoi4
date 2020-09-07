@@ -495,10 +495,11 @@ NDefines.NAI.DEPLOY_MIN_EQUIPMENT_SURRENDER_FACTOR = 0.2
 ---------------------------------------------------------------
 ------HORST RESISTANCE, COMPLIANCE, AND SPY AGENCY CHANGES-------
 ---------------------------------------------------------------
--- NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
--- NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
+NDefines.NCountry.MAX_PROPAGANDA_STABILITY_IMPACT = 0 --  	Max total penalty from operative performing the propaganda mission in a country 
+NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
+--NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
 NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
--- NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
+NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
 -- NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
 -- NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
@@ -514,6 +515,8 @@ NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 1.5
 NDefines.NOperatives.ROOT_OUT_RESISTANCE_DAILY_XP_GAIN = 1.5
 NDefines.NOperatives.AGENCY_OPERATIVE_RECRUITMENT_TIME = 5
 NDefines.NOperatives.OPERATION_COMPLETION_XP = 100
+NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0
+NDefines.NOperatives.OPERATIVE_BASE_PROPAGANDA_POWER = 0
 NDefines.NOperatives.ON_CAPTURE_COUNTERINTELLIGENCE_OPERATIVE_XP_GAIN = 300
 NDefines.NOperatives.INTEL_NETWORK_MIN_VP_TO_TARGET = 1
 NDefines.NOperatives.INTEL_NETWORK_MIN_STRENGTH_TO_TARGET = 1
