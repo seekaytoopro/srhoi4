@@ -402,7 +402,7 @@ active_decryption_modifier = {
 
 # modifiers applied to allied divisions entering the intel network
 intel_network_state_level_bonus = {
-	amphibious_invasion_defence = .03
+	amphibious_invasion_defence = 0.03
 	planning_speed = 0.5
 }
 
