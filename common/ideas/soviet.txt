@@ -1421,25 +1421,25 @@ ideas = {
 			}
 		}
 		
-				uralmash = {
+		# 		uralmash = {
 				
-				picture = GFX_idea_uralmash
+		# 		picture = GFX_idea_uralmash
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 			
-			cost = 0
+		# 	cost = 0
 			
-			# research_bonus = {
-			# 	armor = 0.15
-			# }
+		# 	# research_bonus = {
+		# 	# 	armor = 0.15
+		# 	# }
 			
-			traits = { fix_it_again_tony }
+		# 	traits = { fix_it_again_tony }
 			
-			modifier = {
-			}
-		}
+		# 	modifier = {
+		# 	}
+		# }
 	}
 	
 	aircraft_manufacturer = {

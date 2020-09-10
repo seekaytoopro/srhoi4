@@ -403,9 +403,9 @@ adjacency_rule
 	}
 	friend =
 	{
-		army = yes
-		navy = yes
-		submarine = yes
+		army = no
+		navy = no
+		submarine = no
 		trade = yes
 	}
 	neutral =
@@ -416,10 +416,10 @@ adjacency_rule
 		trade = no
 	}
 	
-	required_provinces = { 9833 11829 }
+	required_provinces = { 9833 } #13122
 	
 	icon = 9833
-	offset = { -2 0 -9 }
+	offset = { 0 0 0 }
 }
 
 #Kiel Canal
