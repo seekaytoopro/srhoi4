@@ -1271,7 +1271,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { army_infantry_1 }
+			traits = { army_infantry_2 }
 		}
 		
 		aleksandr_vasilevsky = {
@@ -1281,7 +1281,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { army_regrouping_2 }
+			traits = { army_regrouping_3 }
 
 		}
 		
