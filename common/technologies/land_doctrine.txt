@@ -14,12 +14,12 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			breakthrough = 0.20
+			breakthrough = 0.10
 			#max_strength = 2.00
 		}
 		
-		planning_speed = 0.5
-		army_speed_factor = 0.10
+		planning_speed = 0.375
+		army_speed_factor = 0.075
 		enable_tactic = tactic_unexpected_thrust
 		org_loss_when_moving = -0.15
 
@@ -57,10 +57,10 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		
-		category_all_armor = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		# category_all_armor = {
+		# 	soft_attack = 0.05
+		# 	hard_attack = 0.05
+		# }
 		category_all_infantry = {
 			max_organisation = 10
 		}
@@ -278,61 +278,56 @@ technologies = {
 
 		motorized = {
 			max_organisation = 15
-			
+			combat_width = -0.25
 		}
+	
 		mechanized = {
 			max_organisation = 15
+			combat_width = -0.25
 		}
 		amphibious_mechanized = {
 			max_organisation = 15
+			combat_width = -0.25
 		}
-		
-		armored_car = {
-			max_organisation = 3	
-		}
-
+	
 		category_tanks = {
-			max_organisation = 3
-
-			
-		}		
-		
+			max_organisation = 5
+		}			
 		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			combat_width = -0.5
 		}	
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			combat_width = -0.5
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			combat_width = -0.5
 		}			
 		light_tank_destroyer_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -0.25
 		}
 		medium_tank_destroyer_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -0.25
 		}
 		heavy_tank_destroyer_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -0.25
 		}			
 		light_sp_anti_air_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -1
 		}
 		medium_sp_anti_air_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -1
 		}
 		heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-			hard_attack = 0.05		
+			combat_width = -1
 		}
+		super_heavy_sp_anti_air_brigade = {
+		combat_width = -1
+		}
+		modern_sp_anti_air_brigade = {
+			combat_width = -1
+		}
+		
+	
 	
 
 		enable_tactic = tactic_blitz
@@ -426,9 +421,9 @@ technologies = {
 		}
 
 		category_all_armor = {
-			default_morale = 0.1
-			soft_attack = 0.05
-			hard_attack = 0.05
+			default_morale = 0.2
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		
@@ -467,7 +462,8 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 
-		#air_cas_present_factor = 0.1
+		air_cas_present_factor = 0.1
+		no_supply_grace = 72
 		category_tanks = {
 			max_organisation = 2
 		}
@@ -542,10 +538,7 @@ technologies = {
 		amphibious_mechanized = {
 			default_morale = 0.1
 		}
-		category_all_armor = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
+		land_reinforce_rate = 0.07
 		# faster planning
 		planning_speed = 0.2
 		signal_company = {
@@ -678,12 +671,13 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_armor = {
 			max_organisation = 3
-			soft_attack = 0.05
-			hard_attack = 0.05
+			# soft_attack = 0.05
+			# hard_attack = 0.05
 		}
 
 		category_all_armor = {
 			default_morale = 0.2
+			breakthrough = 0.10
 		}
 		armored_car = {
 			max_organisation = 3
@@ -2278,7 +2272,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
-		no_supply_grace = 120 # more hours before supply penalty changes
+		no_supply_grace = 72 # more hours before supply penalty changes
 		out_of_supply_factor = -0.175
 				
 		path = {
@@ -2318,8 +2312,8 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_dig_in = 6
-		dig_in_speed_factor = 0.35
+		max_dig_in = 4
+		dig_in_speed_factor = 0.25
 		pocket_penalty = -0.05
 
 		category_light_infantry = {
@@ -2371,7 +2365,7 @@ technologies = {
 
 
 
-		supply_consumption_factor = -0.1
+		# supply_consumption_factor = -0.1
 		motorized_rocket_brigade = {
 			max_organisation = 10
 			default_morale = 0.2
@@ -2495,9 +2489,9 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_planning = 0.10
-		planning_speed = 0.05
-		land_reinforce_rate = 0.08
+		max_planning = 0.05
+		planning_speed = 0.15
+		land_reinforce_rate = 0.1
 		
 		motorized = {
 			max_organisation = 5
@@ -2555,10 +2549,11 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		supply_consumption_factor = -0.05
+		supply_consumption_factor = -0.085
 
 		artillery_brigade = { 
-			soft_attack = 0.05 
+			soft_attack = 0.08
+			defense = 0.15
 		}
 
 		infantry = {
@@ -2747,7 +2742,7 @@ technologies = {
 			hard_attack = 0.075
 		}
 		category_army = {
-			default_morale = 0.05
+			default_morale = 0.12
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.05

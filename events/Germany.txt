@@ -525,9 +525,16 @@ country_event = {
 			name = armor_bonus
 			bonus = 1.0
 			uses = 1
-			technology = advanced_light_tank
+			ahead_reduction = 0.75
+			#technology = advanced_light_tank
 			technology = improved_medium_tank
 			technology = improved_heavy_tank
+		}
+		add_tech_bonus = {
+			name = light_armor_bonus
+			bonus = 1.0
+			uses = 1
+			technology = advanced_light_tank
 		}
 		set_country_flag = SOV_armor_bonus_given
 		}

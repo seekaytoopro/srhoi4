@@ -16,7 +16,7 @@ state={
 		victory_points = { 10852 10.0 } #East
 		victory_points = { 12877 10.0 } #North
 		buildings = {
-			infrastructure = 7
+			infrastructure = 8
 			arms_factory = 6
 			industrial_complex = 1
 			air_base = 10
@@ -29,11 +29,6 @@ state={
 			
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 7
-			}
-		}
 	}
 
 	provinces={

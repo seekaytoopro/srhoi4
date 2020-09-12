@@ -2,10 +2,52 @@
 #Important to put HIGHEST first
 SOV_barb_debuff_level_up = {
 	if = {
+		limit = { has_idea = SOV_barb_debuff_20 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_20
+			add_idea = SOV_barb_debuff_ended
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_19 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_19
+			add_idea = SOV_barb_debuff_20
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_18 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_18
+			add_idea = SOV_barb_debuff_19
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_17 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_17
+			add_idea = SOV_barb_debuff_18
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_16 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_16
+			add_idea = SOV_barb_debuff_17
+		}		
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_15 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_15
+			add_idea = SOV_barb_debuff_16
+		}		
+	}
+	else_if = {
 		limit = { has_idea = SOV_barb_debuff_14 }
 		swap_ideas = {
 			remove_idea = SOV_barb_debuff_14
-			add_idea = SOV_barb_debuff_ended
+			add_idea = SOV_barb_debuff_15
 		}		
 	}
 	else_if = {
@@ -191,6 +233,48 @@ SOV_barb_debuff_level_down = {
 		swap_ideas = {
 			remove_idea = SOV_barb_debuff_14
 			add_idea = SOV_barb_debuff_13
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_15 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_15
+			add_idea = SOV_barb_debuff_14
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_16 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_16
+			add_idea = SOV_barb_debuff_15
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_17 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_17
+			add_idea = SOV_barb_debuff_16
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_18 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_18
+			add_idea = SOV_barb_debuff_17
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_19 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_19
+			add_idea = SOV_barb_debuff_18
+		}
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_20 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_20
+			add_idea = SOV_barb_debuff_19
 		}
 	}
 }

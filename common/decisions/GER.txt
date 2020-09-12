@@ -79,6 +79,26 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
+	GER_invade_iran = {
+
+			icon = generic_prepare_civil_war
+			
+			allowed = { tag = GER }
+					
+			visible = {	 }
+			
+			available =  {
+				country_exists = PER
+				ITA = { has_completed_focus = ITA_triumph_in_egypt }
+			}
+		
+			complete_effect = {	
+				SOV = { country_event = { id = iran.2 } }
+				ENG = { country_event = { id = iran.3 }	}
+			}
+		
+		}
+
 GER_case_anton = {
 
 	icon = generic_prepare_civil_war
@@ -364,7 +384,7 @@ create_corps_commander = {
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
-    attack_skill = 5
+    attack_skill = 7
     defense_skill = 3
     planning_skill = 4
     logistics_skill = 4
@@ -409,7 +429,7 @@ create_corps_commander = {
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
-    attack_skill = 5
+    attack_skill = 7
     defense_skill = 3
     planning_skill = 4
     logistics_skill = 4
@@ -455,7 +475,7 @@ create_corps_commander = {
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
-    attack_skill = 5
+    attack_skill = 7
     defense_skill = 3
     planning_skill = 4
     logistics_skill = 4
@@ -499,11 +519,11 @@ create_corps_commander = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
+    skill = 5
+    attack_skill = 6
     defense_skill = 3
     planning_skill = 4
-    logistics_skill = 4
+    logistics_skill = 5
 
 }
 BUL = { set_country_flag = BUL_dankus }
@@ -543,11 +563,11 @@ create_corps_commander = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
+    skill = 5
+    attack_skill = 6
     defense_skill = 3
     planning_skill = 4
-    logistics_skill = 4
+    logistics_skill = 5
 
 }
 
@@ -590,11 +610,11 @@ create_corps_commander = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
-    skill = 4
-    attack_skill = 2
+    skill = 5
+    attack_skill = 6
     defense_skill = 3
     planning_skill = 4
-    logistics_skill = 4
+    logistics_skill = 5
 
 }
 ROM = { set_country_flag = ROM_dankus }

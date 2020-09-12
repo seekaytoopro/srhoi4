@@ -13,7 +13,7 @@ set_rule = { can_be_spymaster = no }
 
 add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.75
 set_war_support = 0
 set_variable = { var = senators_support value = 48 }

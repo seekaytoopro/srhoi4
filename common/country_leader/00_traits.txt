@@ -1416,8 +1416,8 @@ leader_traits = {
 	reichs_minister = {
 		sprite = 10
 		random = yes
-		production_factory_efficiency_gain_factor = 0.03
-		line_change_production_efficiency_factor  = 0.03
+		production_factory_efficiency_gain_factor = 0.05
+		line_change_production_efficiency_factor  = 0.1
 		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.1		
 		production_speed_fuel_silo_factor = 0.1
@@ -3091,6 +3091,25 @@ leader_traits = {
 		}
 	}
 	
+	rommel_hc = { 
+		sprite = 5
+		army_armor_attack_factor = 0.12
+	    army_armor_defence_factor = 0.12
+		army_morale_factor = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	
+	rund_hc = { 
+		sprite = 8
+		max_dig_in = 4
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
 	
 	army_concealment_1 = { # Ground units take less damage from air attacks
 		sprite = 9

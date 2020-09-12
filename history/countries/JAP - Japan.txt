@@ -215,7 +215,7 @@ create_corps_commander = {
 	traits = {trickster trait_engineer brilliant_strategist politically_connected cavalry_officer infantry_leader}
 	skill = 6
 	id = 5010	
-	attack_skill = 6
+	attack_skill = 7
 	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 5
@@ -227,7 +227,7 @@ create_field_marshal = {
 	traits = { offensive_doctrine JAP_samurai_lineage  politically_connected trait_reckless media_personality}
 	skill = 5
 	id = 5036
-	attack_skill = 6
+	attack_skill = 7
 	defense_skill = 5
 	planning_skill = 4
 	logistics_skill = 1
@@ -239,7 +239,7 @@ create_field_marshal = {
 		traits = { offensive_doctrine JAP_samurai_lineage organizer harsh_leader inflexible_strategist}
 		skill = 5
 	id = 5037
-	attack_skill = 2
+	attack_skill = 3
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 6
@@ -251,7 +251,7 @@ create_corps_commander = {
 		traits = { career_officer brilliant_strategist infantry_leader}
 		skill = 4
 	id = 5023
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 2
 	planning_skill = 5
 	logistics_skill = 2
@@ -263,7 +263,7 @@ create_corps_commander = {
 		traits = { JAP_samurai_lineage career_officer skilled_staffer }
 		skill = 4
 	id = 5031
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 3
@@ -275,7 +275,7 @@ create_corps_commander = {
 		traits = { trickster career_officer infantry_officer skilled_staffer infantry_leader}
 		skill = 5
 	id = 5011
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 6
 	logistics_skill = 3
@@ -287,7 +287,7 @@ create_corps_commander = {
 		traits = { trait_reckless skilled_staffer commando}
 		skill = 4
 	id = 5032
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 3
@@ -299,7 +299,7 @@ create_corps_commander = {
 		traits = { brilliant_strategist infantry_officer old_guard war_hero infantry_leader hill_fighter}
 		skill = 5
 	id = 5013
-	attack_skill = 6
+	attack_skill = 7
 	defense_skill = 2
 	planning_skill = 5
 	logistics_skill = 3
@@ -311,7 +311,7 @@ create_corps_commander = {
 		traits = { career_officer trait_reckless  harsh_leader cavalry_officer cavalry_leader}
 		skill = 4
 	id = 5014
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 5
@@ -325,7 +325,7 @@ create_field_marshal = {
 	id = 5015
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 6
@@ -339,7 +339,7 @@ create_corps_commander = {
 	id = 5016
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 1
@@ -353,7 +353,7 @@ create_corps_commander = {
 	id = 5017
 
 
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
@@ -367,7 +367,7 @@ create_corps_commander = {
 	id = 5033
 
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 3
@@ -380,7 +380,7 @@ create_corps_commander = {
 		skill = 5
 	id = 5012
 
-	attack_skill = 6
+	attack_skill = 7
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 4
@@ -394,7 +394,7 @@ create_corps_commander = {
 	id = 5034
 
 
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 4
@@ -408,7 +408,7 @@ create_corps_commander = {
 	id = 5018
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 6
@@ -422,7 +422,7 @@ create_corps_commander = {
 	id = 5019
 
 
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 1
 	planning_skill = 3
 	logistics_skill = 4
@@ -436,7 +436,7 @@ create_corps_commander = {
 	id = 5024
 
 
-	attack_skill = 7
+	attack_skill = 8
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 4
@@ -450,7 +450,7 @@ create_corps_commander = {
 	id = 5035
 
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
@@ -463,7 +463,7 @@ create_corps_commander = {
 	id = 5025
 
 
-	attack_skill = 1
+	attack_skill = 2
 	defense_skill = 5
 	planning_skill = 1
 	logistics_skill = 4
@@ -477,7 +477,7 @@ create_corps_commander = {
 	id = 5020
 
 
-	attack_skill = 5
+	attack_skill = 6
 	defense_skill = 2
 	planning_skill = 5
 	logistics_skill = 1
@@ -490,7 +490,7 @@ create_corps_commander = {
 	id = 5026
 
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
@@ -504,7 +504,7 @@ create_corps_commander = {
 	id = 5027
 
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 3
@@ -518,7 +518,7 @@ create_corps_commander = {
 	id = 5021
 
 
-	attack_skill = 2
+	attack_skill = 3
 	defense_skill = 5
 	planning_skill = 1
 	logistics_skill = 5
@@ -532,7 +532,7 @@ create_corps_commander = {
 	id = 5028
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 2
 	logistics_skill = 2
@@ -546,7 +546,7 @@ create_corps_commander = {
 	id = 5022
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
 	logistics_skill = 3
@@ -560,7 +560,7 @@ create_corps_commander = {
 	id = 5029
 
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 3
 	planning_skill = 6
 	logistics_skill = 2
@@ -572,7 +572,7 @@ create_field_marshal = {
 	traits = { JAP_samurai_lineage old_guard politically_connected skilled_staffer war_hero expert_delegator inflexible_strategist}
 	skill = 4
 	id = 5030
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 6
 	planning_skill = 1
 	logistics_skill = 1

@@ -55,6 +55,30 @@ SOV_has_barb_debuff = {
 		limit = { has_idea = SOV_barb_debuff_14 }
 		has_idea = SOV_barb_debuff_14
 	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_15 }
+		has_idea = SOV_barb_debuff_15
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_16 }
+		has_idea = SOV_barb_debuff_16
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_17 }
+		has_idea = SOV_barb_debuff_17
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_18 }
+		has_idea = SOV_barb_debuff_18
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_19 }
+		has_idea = SOV_barb_debuff_19
+	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_20 }
+		has_idea = SOV_barb_debuff_20
+	}
 	else = {		
 		has_idea = SOV_barb_debuff_1
 	}

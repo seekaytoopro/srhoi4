@@ -173,7 +173,7 @@ ideas = {
 				original_tag = BUL
 			}
 					
-			traits = { army_regrouping_2 }
+			traits = { army_regrouping_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -205,7 +205,7 @@ ideas = {
 				original_tag = BUL
 			}
 					
-			traits = { army_armored_2 }
+			traits = { army_armored_3 }
 			
 			ai_will_do = {
 				factor = 1

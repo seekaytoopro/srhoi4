@@ -1185,9 +1185,9 @@ hidden_effect = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 2.0
+				bonus = 0.6
 				uses = 1
-				technology = fighter3
+				technology = fighter2
 			}
 	42 = {
 		set_building_level = {
@@ -1381,11 +1381,11 @@ hidden_effect = {
 		name = GER_soviet_treaty
 		bonus = 1.0
 		uses = 2
+		ahead_reduction = 0.75
 		technology = improved_medium_tank
 		technology = improved_heavy_tank
 		technology = advanced_light_tank
-		technology = advanced_medium_tank
-		technology = advanced_heavy_tank
+	
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
@@ -1498,12 +1498,7 @@ hidden_effect = {
 				uses = 2
 				category = land_doctrine
 			}
-			add_tech_bonus = {
-				bonus = 1.0
-				uses = 1
-				name = mech_army_bonus
-				technology = advanced_medium_tank
-			}	
+			
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
@@ -1513,7 +1508,7 @@ hidden_effect = {
 			add_tech_bonus = {
 				name = mech_army_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				technology = advanced_medium_spaa
 				technology = advanced_medium_td
 				technology = advanced_medium_art

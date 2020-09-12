@@ -3257,11 +3257,11 @@ focus_tree = {
 	focus = {
 		id = ENG_iran_focus
 		icon = GFX_focus_ENG_iran
-		prerequisite = { focus = ENG_military_training_act }
-		x = 0
-		y = 1
-		relative_position_id = ENG_military_training_act
-		cost = 4
+		#prerequisite = { focus = ENG_military_training_act }
+		x = 21
+		y = 0
+		#relative_position_id = ENG_military_training_act
+		cost = 2.9
 
 	available = {
 		#NOT = { SOV = { has_completed_focus = SOV_southern_thrust } }
@@ -3274,7 +3274,7 @@ focus_tree = {
 	}
 
 	bypass = {
-		SOV = { has_completed_focus = SOV_southern_thrust }
+		NOT = { country_exists = PER }
 	}
 
 		completion_reward = {

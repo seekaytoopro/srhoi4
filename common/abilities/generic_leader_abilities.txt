@@ -41,14 +41,14 @@ ability = {
 			OWNER = { NOT = { has_completed_focus = JAP_warrior_spirit OR = { tag = EFR tag = POL tag = BEL tag = HOL tag = DEN  }   } }
 		}
 		
-		cost = 0.22
+		cost = 0.44
 		duration = 168
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				org_damage_multiplier = -1.0
-				str_damage_multiplier = 0.6
-				war_support_reduction_on_damage = 0.2
+				org_damage_multiplier = -0.5
+				str_damage_multiplier = 1.00
+				# war_support_reduction_on_damage = 0.2
 				days = 7
 				tooltip = ABILITY_LAST_STAND_TOOLTIP
 			}
@@ -71,7 +71,7 @@ ability = {
 		duration = 168
 		
 		unit_modifiers = {
-			planning_speed = 4.0
+			planning_speed = 3.0
 		}
 	}
 	
@@ -88,7 +88,7 @@ ability = {
 		}
 		
 		unit_modifiers = {
-			fort = { attack = 0.2 }
+			fort = { attack = 0.1 }
 			fortification_damage = 2.0
 			fortification_collateral_chance = 2.0
 		}
