@@ -241,6 +241,46 @@ create_corps_commander = {
 	planning_skill = 1
 	logistics_skill = 4
 }
+create_corps_commander = {
+	name = "Frank Berryman"
+	picture = "Portrait_AST_Frank_Berryman.tga"
+	traits = { infantry_leader infantry_officer old_guard career_officer jungle_rat}
+	skill = 5
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 3
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Brudenell White"
+	picture = "Portrait_AST_Brudenell_White.tga"
+	traits = { harsh_leader trait_cautious old_guard naval_invader jungle_rat war_hero commando}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Iven Mackay"
+	picture = "Portrait_AST_Iven_Mackay.tga"
+	traits = { desert_fox old_guard infantry_leader skilled_staffer career_officer harsh_leader brilliant_strategist trickster}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "John Lavarack"
+	picture = "Portrait_AST_John_Lavarack.tga"
+	traits = { career_officer hill_fighter trait_mountaineer trickster inflexible_strategist trait_cautious }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 2
+}
 create_navy_leader = {
 	name = "Harold Farncomb"
 	gfx = "GFX_AST_harold_farncomb"

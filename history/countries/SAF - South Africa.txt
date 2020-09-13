@@ -42,18 +42,23 @@ set_technology = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 336
+	amount = 1336
 	producer = SAF
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 140
+	amount = 340
 	producer = SAF
 } 
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 4700
+	producer = SAF
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 2000
 	producer = SAF
 } 
 add_equipment_to_stockpile = {
@@ -166,6 +171,56 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
+	name = "Dan Pienaar"
+	picture = "Portrait_SAF_Dan_Pienaar.tga"
+	traits = { brilliant_strategist trait_cautious skilled_staffer career_officer infantry_leader organizer media_personality}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Christiaan du Toit"
+	picture = "Portrait_SAF_Christiaan_du_Toit.tga"
+	traits = { organizer harsh_leader commando desert_fox armor_officer panzer_leader career_officer}
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Christoffel Venter"
+	picture = "Portrait_SAF_Christoffel_Venter.tga"
+	traits = { old_guard war_hero infantry_officer infantry_leader hill_fighter inflexible_strategist}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Evered Poole"
+	picture = "Portrait_SAF_Evered_Poole.tga"
+	traits = { trickster trait_mountaineer commando infantry_officer trait_cautious infantry_leader skilled_staffer}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Hendrik Klopper"
+	picture = "Portrait_SAF_Hendrik_Klopper.tga"
+	traits = { commando  naval_invader brilliant_strategist infantry_leader harsh_leader trait_engineer  }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 6
+}
+create_field_marshal = {
 	name = "Jan Smuts"
 	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
 	traits = { panzer_leader organizer brilliant_strategist trait_cautious skilled_staffer career_officer politically_connected }
@@ -174,6 +229,26 @@ create_field_marshal = {
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 7
+}
+create_corps_commander = {
+	name = "Leonard Beyers"
+	picture = "Portrait_SAF_Leonard_Beyers.tga"
+	traits = { organizer inflexible_strategist old_guard organizer skilled_staffer trait_engineer politically_connected infantry_officer}
+	skill = 4
+	attack_skill = 2
+	defense_skill = 7
+	planning_skill = 1
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Nick Bierman"
+	picture = "Portrait_SAF_Nick_Bierman.tga"
+	traits = { harsh_leader trait_reckless career_officer armor_officer organizer panzer_leader desert_fox }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
 }
 
 create_navy_leader = {

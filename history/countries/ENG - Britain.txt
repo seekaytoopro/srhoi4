@@ -365,7 +365,7 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "George Giffard"
 	picture = "Portrait_Britain_George_Giffard.dds"
 	traits = { defensive_doctrine infantry_leader commando hill_fighter old_guard war_hero career_officer cavalry_officer}
@@ -376,7 +376,7 @@ create_corps_commander = {
 	logistics_skill = 5
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Harold Alexander" # Aristocrat
 	id = 995
 	picture = "Portrait_Britain_Harold_Alexander.dds"
@@ -443,7 +443,7 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "John Vereker Lord Gort" # Aristocrat
 	id = 994
 	picture = "Portrait_Britain_John_Vereker.dds"
@@ -522,7 +522,7 @@ create_corps_commander = {
 	logistics_skill = 1
 }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Archibald Wavell" # Aristocrat
 	id = 998
 	picture = "Portrait_Britain_Archibald_Wavell.dds"

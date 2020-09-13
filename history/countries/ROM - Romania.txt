@@ -237,6 +237,66 @@ create_corps_commander = {
 	planning_skill = 5
 	logistics_skill = 3
 }
+create_corps_commander = {
+	name = "Constantin Constantinescu-Claps"
+	picture = "Portrait_Romania_Constantin_Constantinescu_Claps.tga"
+	traits = { infantry_leader infantry_officer trait_cautious organizer politically_connected }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Constantin Pantazi"
+	picture = "Portrait_Romania_Constantin_Pantazi.tga"
+	traits = { organizer trait_engineer urban_assault_specialist trait_reckless brilliant_strategist }
+	skill = 4
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Dumitru Popescu"
+	picture = "Portrait_Romania_Dumitru_Popescu.tga"
+	traits = { hill_fighter trait_mountaineer  career_officer harsh_leader   }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Leonard Mociulschi"
+	picture = "Portrait_Romania_Leonard_Mociulschi.tga"
+	traits = { career_officer cavalry_leader panzer_leader trait_engineer harsh_leader brilliant_strategist career_officer trait_reckless}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Nicolae Ciuperca"
+	picture = "Portrait_Romania_Nicolae_Ciuperca.tga"
+	traits = { panzer_leader armor_officer career_officer trait_cautious substance_abuser harsh_leader commando desert_fox }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 7
+	planning_skill = 3
+	logistics_skill = 6
+}
+create_corps_commander = {
+	name = "Nicolae Macici"
+	picture = "Portrait_Romania_Nicolae_Macici.tga"
+	traits = {naval_invader harsh_leader infantry_officer media_personality infantry_leader trait_reckless desert_fox }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
 
 create_corps_commander = {
 	name = "Gheorghe Avramescu"

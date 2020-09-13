@@ -210,3 +210,23 @@ create_field_marshal = {
 	planning_skill = 2
 	logistics_skill = 7
 }
+create_corps_commander = {
+	name = "Teodosi Daskalov"
+	picture = "Portrait_BUL_Teodosi_Daskalov.tga"
+	traits = { organizer infantry_officer old_guard politically_connected trait_engineer career_officer skilled_staffer harsh_leader}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 5
+}
+create_corps_commander = {
+	name = "Ivan Valkov"
+	picture = "Portrait_BUL_Ivan_Valkov.tga"
+	traits = { war_hero brilliant_strategist media_personality infantry_officer infantry_leader desert_fox }
+	skill = 5
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 3
+}
