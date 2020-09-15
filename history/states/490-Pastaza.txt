@@ -3,7 +3,6 @@ state={
 	id=490
 	name="STATE_490"
 	impassable = yes
-
 	history={
 		owner = ENG
 		add_core_of = SWE
@@ -11,7 +10,7 @@ state={
 	}
 
 	provinces={
-		921 3921 4138 4932 10418 10850 12394 12788 
+		921 1555 3921 4138 4932 4949 5064 10418 10850 12394 12788 
 	}
 	manpower=642
 	buildings_max_level_factor=1.000
