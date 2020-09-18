@@ -1897,7 +1897,7 @@ hidden_effect = {
 		x = 2
 		y = 2
 		relative_position_id = GER_anschluss
-		cost = 10
+		cost = 5
 		bypass = {
 
 		}
