@@ -118,13 +118,15 @@ NDefines.NAI.PLAN_FRONTUNIT_DISTANCE_FACTOR	= 30 --- closer units move first but
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
 --END OF HFU FRONTLINE MECHANICS-----------------------------------------------------------------------------------------------
 
+NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0.0 -- we need more intel than this to get any supremacy - should hopefully make naval invasions not be blocked by intel nonesense????
+
 NDefines.NMilitary.RIVER_CROSSING_PENALTY =	-0.20 	--small river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE =	-0.35 	--large river crossing
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY =	-0.25 	--small river crossing
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE =	-0.40 	--large river crossing 
 
 
-NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72 -- Divisions per general
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0 -- (72) Divisions per general
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0 -- Divisions per field marshal directly leading troops
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.08
@@ -144,7 +146,7 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01 -- Same rate as battleplan
 NDefines.NMilitary.PLANNING_MAX = 0.2                           	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7 -- Number of support companies allowed per division
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 8		-- (5) chance to get a hit to damage on forts. (out of 100)
@@ -174,7 +176,7 @@ NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.00   -- WAS 3,
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 800                               -- this can be halved 3 times into 100 stacks (very convenient)
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500  -- WAS 3000, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.001			-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.06						-- WAS 0.03 | How much the experinence gained by paradropping is scaled
 NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0004        	   -- WAS 0.0002 | How much the experinence gained by bombing is scaled
@@ -198,8 +200,8 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { 						 -- command power cost per p
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- MISSION_RECON
 	}
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.025       -- WAS 0.05 | Changed due to plane count changes
-NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO  = 0.015       -- WAS 0.03 | Changed due to plane count changes
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05       -- WAS 0.025 | Changed due to plane count changes
+NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO  = 0.03       -- WAS 0.015 | Changed due to plane count changes
 
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 999.0 -- Can no longer use ground crews, to help strat region balance
 ---------------------------------------------------------------
@@ -323,7 +325,7 @@ NDefines.NCountry.BASE_FUEL_CAPACITY = 150000                -- WAS 50k, increas
 NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0 -- WAS 0.3 | each percent of collaboration will lower surrender limit by this percentage 
 NDefines.NCountry.GIE_CAPITULATION_WARSCORE_LEGITIMACY_FACTOR = 2    --Multiplies accumulated warscore with this factor for part of starting legitimacy.
 NDefines.NCountry.GIE_WARSCORE_GAIN_LEGITIMACY_FACTOR = 2                --Factor on how much legitimacy is gained from warscore earned by GiE units.
-NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0               --Removed for game stability/reducing chance of desync
+NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0.0000               --Removed for game stability/reducing chance of desync
 NDefines.NCountry.GIE_HOST_CIC_FROM_LEGITIMACY_MAX = 0 					--Host will receive from 0 to this value in CIC.
 NDefines.NCountry.GIE_HOST_MIC_FROM_LEGITIMACY_MAX = 0					--Host will receive from 0 to this value in MIC.
 ---------------------------------------------------------------
@@ -421,7 +423,7 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 0			-- duration 
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4         	-- how often carrier planes do battle inside naval combat
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 11.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.3		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.9 -- max extra plane % that can join every day
