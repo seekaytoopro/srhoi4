@@ -71,9 +71,6 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
 			}
 		}
 		"GER"={
@@ -86,9 +83,6 @@ bookmarks = {
 				GER_mefo_bills_1
 			}
 			focuses = {
-				GER_anschluss
-				GER_danzig_or_war
-				GER_ussr_war_goal
 			}
 		}
 		"ITA"={
@@ -164,11 +158,8 @@ bookmarks = {
 				AST_great_depression_1
 			}
 			focuses = {
-									AST_cac_boomerang
 				AST_squash_the_squanderbugs
 				AST_rats_of_tobruk
-				
-				
 			}
 		}
 		"NZL"={
@@ -235,29 +226,11 @@ bookmarks = {
 			ideology = neutrality
 			ideas = {
 				ROM_king_carol_ii_hedonist
-				neutrality_idea
 			}
 			focuses = {
 				ROM_iron_guard
 				ROM_institute_royal_dictatorship
 				ROM_preserve_greater_romania
-			}
-		}
-		
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_foreign_threats
-				CHI_army_reform
-				CHI_war_of_resistance
-
 			}
 		}
 		"MAN"={
@@ -291,7 +264,15 @@ bookmarks = {
 				MEX_focus_support_general_cedillo			}
 		}
 
-		"SPR"={			minor = yes			history = "SPAIN_GATHERING_STORM_DESC"			ideology = democratic			ideas = {				SPR_military_disloyalty				SPA_carlism_1				SPR_political_violence			}			focuses = {				SPA_caudillo_of_spain				}		}
+		"SPR"={			
+			minor = yes			
+			history = "SPAIN_GATHERING_STORM_DESC"			
+			ideology = democratic			
+			ideas = {				
+			}			
+			focuses = {							
+			}		
+		}
 		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

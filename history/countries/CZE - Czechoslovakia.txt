@@ -2,7 +2,7 @@
 
 oob = "CZE_1936"
 
-set_convoys = 5
+set_convoys = 0
 
 add_ideas = { no_training neutral_ai_nation }
 
@@ -22,25 +22,9 @@ set_technology = {
 	improved_light_tank = 1
 	interwar_antiair = 1
 	}
-
-	
-# 	add_equipment_to_stockpile = {
-# 	type = infantry_equipment_1
-# 	amount = 15400
-# }
-
-# add_equipment_to_stockpile = {
-# 	type = support_equipment
-# 	amount = 50
-# }
-
-# add_equipment_to_stockpile = {
-# 	type = light_tank_equipment_2
-# 	amount = 200
-# }
 	
 
-set_research_slots = 1
+set_research_slots = 0
 
 set_politics = {
 	ruling_party = democratic
@@ -132,10 +116,5 @@ create_corps_commander = {
     planning_skill = 2
     logistics_skill = 1
 }
-
-	add_ideas = {
-		CZE_skoda_works
-		CZE_divided_nation
-	}
 
 

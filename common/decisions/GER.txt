@@ -123,7 +123,7 @@ GER_case_anton = {
 		timeout_effect = {  	GER = { add_to_faction = EFR } EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=0.2} }	}
 	
 		complete_effect = {	GER = { puppet = EFR }	
-		if = { limit = { EFR = { is_ai = no }}  EFR = { add_ideas = CHI_illegal_regime } }
+		# if = { limit = { EFR = { is_ai = no }}  EFR = { add_ideas = CHI_illegal_regime } }
 		}
 	
 	}

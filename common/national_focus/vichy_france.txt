@@ -1046,7 +1046,7 @@
 					remove_ideas = VIC_aircraft_parts
 				}
 			}
-			FRA = { add_ideas = CHI_illegal_regime }
+			# FRA = { add_ideas = CHI_illegal_regime }
 			}
 	}
 	

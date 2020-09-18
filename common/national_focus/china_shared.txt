@@ -6,13 +6,13 @@ shared_focus = {
 	x = 37
 	y = 0
 
-		offset = {
-		x = -3
-		y = 0
-		trigger = {
-			tag = CHI
-		}
-	}
+	# 	offset = {
+	# 	x = -3
+	# 	y = 0
+	# 	trigger = {
+	# 		tag = CHI
+	# 	}
+	# }
 	offset = {
 		x = -16
 		y = 0
@@ -128,11 +128,10 @@ shared_focus = {
 
 	
 	available = {
-		NOT = { has_idea = CHI_incompetent_officers }	
-		OR = { NOT = { has_global_flag = falkenhausen_recalled }
+		# NOT = { has_idea = CHI_incompetent_officers }	
+		# OR = { NOT = { has_global_flag = falkenhausen_recalled }
 		tag = MAN
 		}
-	}
 
 	bypass = {
 
@@ -997,7 +996,7 @@ shared_focus = {
 	}
 
 	bypass = {
-		NOT = { has_idea = CHI_nine_power_treaty }
+		# NOT = { has_idea = CHI_nine_power_treaty }
 	}
 
 	cancel_if_invalid = yes
@@ -1005,7 +1004,7 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		remove_ideas = CHI_nine_power_treaty
+		# remove_ideas = CHI_nine_power_treaty
 	}
 }
 
