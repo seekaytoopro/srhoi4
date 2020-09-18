@@ -19,21 +19,15 @@ state={
 			11767 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 5
 			arms_factory = 1
-			industrial_complex = 2 
-			air_base = 3
+			industrial_complex = 5 
+			air_base = 6
 			11767 = {
 				naval_base = 4
 			}
 		}
 		add_core_of = ALB
-
-		1939.4.12 = {
-			owner = ITA
-			controller = ITA
-			remove_claim_by = ITA
-		}
 	}
 
 	provinces={

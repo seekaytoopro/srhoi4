@@ -9,6 +9,8 @@ state={
 		owner = YUG
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 4
 		}
 		add_core_of = YUG
 	}

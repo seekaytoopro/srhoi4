@@ -10,17 +10,11 @@ state={
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 1
 
 		}
 		add_core_of = POL
-		1939.1.1 = {
-			buildings = {
-				air_base = 3
-
-			}
-
-		}
 
 	}
 
