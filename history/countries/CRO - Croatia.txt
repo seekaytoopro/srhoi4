@@ -101,23 +101,23 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Ante Pavelic"
 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 3
+	traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer ranger}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 6
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { old_guard inflexible_strategist politically_connected organizer defensive_doctrine career_officer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 6
+	traits = { old_guard inflexible_strategist skilled_staffer politically_connected organizer defensive_doctrine career_officer }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 7
 }
 
 create_corps_commander = {
@@ -134,31 +134,31 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Fedor Dragojlov"
 	portrait_path = "gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
-	traits = { panzer_leader trait_engineer cavalry_leader cavalry_officer trait_reckless }
-	skill = 4
-	attack_skill = 6
+	traits = { panzer_leader trait_engineer trickster cavalry_leader cavalry_officer trait_reckless }
+	skill = 5
+	attack_skill = 7
 	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 3
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_corps_commander = {
 	name = "Ante Vokić"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { harsh_leader infantry_officer infantry_leader infantry_expert career_officer trait_reckless brilliant_strategist }
-	skill = 3
+	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox career_officer trait_reckless brilliant_strategist }
+	skill = 4
 	attack_skill = 6
 	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 2
+	planning_skill = 4
+	logistics_skill = 5
 }
 
 create_navy_leader = {
 	name = "Nikola Steinfl"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_5.dds"
 	traits = { blockade_runner spotter green_water_expert concealment_expert }
-	skill = 3
-	attack_skill = 4
+	skill = 4
+	attack_skill = 5
 	defense_skill = 3
 	maneuvering_skill = 3
 	coordination_skill = 2

@@ -173,9 +173,9 @@ NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 ---------------------------------------------------------------
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.00   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
 ---------------------------------------------------------------
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 200						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 ---------------------------------------------------------------
-NDefines.NAir.AIR_WING_MAX_SIZE = 800                               -- this can be halved 3 times into 100 stacks (very convenient)
+NDefines.NAir.AIR_WING_MAX_SIZE = 3200                               -- this can be halved 3 times into 100 stacks (very convenient)
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.001			-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.06						-- WAS 0.03 | How much the experinence gained by paradropping is scaled
@@ -244,7 +244,7 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
 
-NDefines.NBuildings.INFRA_TO_SUPPLY = 2.7
+NDefines.NBuildings.INFRA_TO_SUPPLY = 2.5
 NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
@@ -531,7 +531,8 @@ NDefines.NOperatives.OPERATIVE_SLOTS_FROM_FACTION_MEMBERS_FOR_SPY_MASTER = {   -
         0,     0, -- 0 operative for [0, 10)
         0,      0, -- 0.25 operative for [10, 50)
         0,     0, -- 0.5 operative for >= 50
-    }
+	}
+NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.0 -- Removing meme modifiers
 ---------------------------------------------------------------
 ----------END OF HORST SPY/AGENCY/INTELLIGENCE CHANGES-----------
 ---------------------------------------------------------------
