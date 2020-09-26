@@ -19,15 +19,9 @@ state={
 			arms_factory = 7
 			industrial_complex = 1
 			fuel_silo = 1
-			air_base = 8
+			air_base = 10
 		}
 		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				industrial_complex = 3
-			}
-		}
 	}
 
 	provinces={

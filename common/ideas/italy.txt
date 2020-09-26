@@ -651,20 +651,20 @@ ideas = {
 	
 		designer = yes
 	
-		fiat = {
+		# fiat = {
 	
-			allowed = {
-				OR = { original_tag = ITA original_tag = GER original_tag = SPR original_tag = EFR original_tag = BUL original_tag = ROM  original_tag = HUN original_tag = CRO    } 
-			}
+		# 	allowed = {
+		# 		OR = { original_tag = ITA original_tag = GER original_tag = SPR original_tag = EFR original_tag = BUL original_tag = ROM  original_tag = HUN original_tag = CRO    } 
+		# 	}
 				
-			# research_bonus = {
-			# 	armor = 0.15
-			# }
+		# 	# research_bonus = {
+		# 	# 	armor = 0.15
+		# 	# }
 
-			cost = 0
+		# 	cost = 0
 			
-			traits = { fix_it_again_tony }
-		}
+		# 	traits = { fix_it_again_tony }
+		# }
 	}
 	
 	

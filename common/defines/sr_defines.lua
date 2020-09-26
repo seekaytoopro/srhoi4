@@ -54,7 +54,7 @@ NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.55 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 16 -- (12) Makes having proper recon and leadership more important
-NDefines.NMilitary.SLOWEST_SPEED = 3
+NDefines.NMilitary.SLOWEST_SPEED = 4 -- Was 3 before 3 speed changes
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.50 -- amphibious landing penalty
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	=0.03 	--air global damage modifier
@@ -244,7 +244,7 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
 
-NDefines.NBuildings.INFRA_TO_SUPPLY = 2.5
+NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
 NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
@@ -423,7 +423,7 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 0			-- duration 
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4         	-- how often carrier planes do battle inside naval combat
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 8.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 7.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.3		-- Max planes that can join a combat comparing to the total strength of the ships
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.9 -- max extra plane % that can join every day

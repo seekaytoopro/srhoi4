@@ -71,6 +71,13 @@ weather_mud = { # on Province
 	army_speed_factor = -0.8
 	army_attack_factor = -0.6
 }
+mud_simulator = { 
+	army_speed_factor = -0.2
+	army_armor_speed_factor = -0.3	
+	army_attack_factor = -0.2
+	breakthrough_factor = -0.3
+	attrition = 0.10		
+}
 weather_extreme_cold = { # on Province
 	# winter_attrition = 0.3
 	# army_attack_factor = -0.4

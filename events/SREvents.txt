@@ -220,3 +220,63 @@ country_event = {
 		name = srevents.13.a
 	}
 }
+
+###########################################################################3
+# Russian Mud Events #
+country_event = {
+	id = srevents.800 #spring mud
+	title = "The Continuation War"
+	desc = "With the German invasion of the Soviet Union, our time has come to strike the Soviets and reclaim our lost territories!"
+	picture = GFX_report_event_german_italian_pact
+	hidden = yes 
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+		# news_event = { id = mtg_news.776  days = 0 }
+		# hidden_effect = {
+		# 	SOV = { add_timed_idea = { idea = mud_sucks_ru days = 60 }}
+		# 	FIN = { add_timed_idea = { idea = mud_sucks_eu days = 60 }}
+ 		# }
+	}
+}     
+country_event = {
+	id = srevents.802 #fall mud
+	title = "The Continuation War"
+	desc = "With the German invasion of the Soviet Union, our time has come to strike the Soviets and reclaim our lost territories!"
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+ 
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+		# news_event = { id = mtg_news.777  days = 0 }
+		# hidden_effect = {
+		# 	SOV = { add_timed_idea = { idea = mud_sucks_ru days = 60 }}
+		# 	GER = { add_timed_idea = { idea = mud_sucks_eu days = 242 }}
+		# 	ITA = { add_timed_idea = { idea = mud_sucks_eu days = 242 }}
+		# 	ROM = { add_timed_idea = { idea = mud_sucks_eu days = 242 }}
+		# 	HUN = { add_timed_idea = { idea = mud_sucks_eu days = 242 }}
+		# 	BUL = { add_timed_idea = { idea = mud_sucks_eu days = 242 }}
+		# 	FIN = { add_timed_idea = { idea = mud_sucks_eu days = 60 }}
+		# }
+	}
+}     
+country_event = {
+	id = srevents.801 #mud removal event
+	title = "The Continuation War"
+	desc = "With the German invasion of the Soviet Union, our time has come to strike the Soviets and reclaim our lost territories!"
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		every_state = { limit = { is_core_of = SOV } remove_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
+	}
+}       

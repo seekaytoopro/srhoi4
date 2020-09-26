@@ -3095,7 +3095,7 @@ leader_traits = {
 		sprite = 5
 		army_armor_attack_factor = 0.12
 	    army_armor_defence_factor = 0.12
-		army_morale_factor = 0.12
+		army_morale_factor = 0.04
 		
 		ai_will_do = {
 			factor = 3
