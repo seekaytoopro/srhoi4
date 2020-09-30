@@ -18,57 +18,57 @@ on_actions = {
 			SWE = { anti_cross_faction_trade_all = yes }
 			SWE = { startup_on_actions = yes }
 			########################################################
-			set_variable = {
-				var = global.horst_acesCounterJAP
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterMAN
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterSIA
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterHUN
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterROM
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterBUL
-				value = 0
-			}
-			set_variable = {
-				var = global.horst_acesCounterSOV
-				value = 0
-			}
-						set_variable = {
-				var = global.horst_acesCounterITA
-				value = 0
-			}
-						set_variable = {
-				var = global.horst_acesCounterENG
-				value = 0
-			}
-						set_variable = {
-				var = global.horst_acesCounterCAN
-				value = 0
-			}
-						set_variable = {
-				var = global.horst_acesCounterGER
-				value = 0
-			}
+			# set_variable = {
+			# 	var = global.horst_acesCounterJAP
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterMAN
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterSIA
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterHUN
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterROM
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterBUL
+			# 	value = 0
+			# }
+			# set_variable = {
+			# 	var = global.horst_acesCounterSOV
+			# 	value = 0
+			# }
+			# 			set_variable = {
+			# 	var = global.horst_acesCounterITA
+			# 	value = 0
+			# }
+			# 			set_variable = {
+			# 	var = global.horst_acesCounterENG
+			# 	value = 0
+			# }
+			# 			set_variable = {
+			# 	var = global.horst_acesCounterCAN
+			# 	value = 0
+			# }
+			# 			set_variable = {
+			# 	var = global.horst_acesCounterGER
+			# 	value = 0
+			# }
 		}
 		
 	}
 	
-	on_ace_promoted = {
-		random_events = { 100 = ace_promoted.1 }
-	}
+	# on_ace_promoted = {
+	# 	random_events = { 100 = ace_promoted.1 }
+	# }
 	
 	on_declare_war = {
 		effect = {
@@ -428,48 +428,48 @@ on_subject_autonomy_level_change = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
 		effect = {
-			if = { limit = { AND = { ENG = { has_war_with = GER } NOT = { has_global_flag = sr_fall_of_egypt } } }
-				if = { 
-					limit = { FROM.FROM = { is_on_continent = africa } }
-					if = { 
-						limit = { 
-							ROOT = {
-								the_axis = yes 
-							}
-						}
-						if = { 
-							limit = { 
-								AND = { 
-									FROM.FROM = { state = 446 } 
-									NOT = { has_global_flag = sr_fall_of_egypt }
-									FROM = { NOT = { controls_state = 447 } }
-								} 
-							}
-							set_global_flag = sr_fall_of_egypt
-							every_country = {
-								limit = { africa_allies = yes }
-								add_timed_idea = { idea = allies_defeat_in_egypt days = 180 }
-							}
-							# news_event = news.104
-						}
-						if = { 
-							limit = { 
-								AND = { 
-									FROM.FROM = { state = 447 } 
-									NOT = { has_global_flag = sr_fall_of_egypt }
-									FROM = { NOT = { controls_state = 446 } }
-								} 
-							}
-							set_global_flag = sr_fall_of_egypt
-							every_country = {
-								limit = { africa_allies = yes }
-								add_timed_idea = { idea = allies_defeat_in_egypt days = 180 }
-							}
-							# news_event = news.104
-						}
-					}
-				}
-			}
+			# if = { limit = { AND = { ENG = { has_war_with = GER } NOT = { has_global_flag = sr_fall_of_egypt } } }
+			# 	if = { 
+			# 		limit = { FROM.FROM = { is_on_continent = africa } }
+			# 		if = { 
+			# 			limit = { 
+			# 				ROOT = {
+			# 					the_axis = yes 
+			# 				}
+			# 			}
+			# 			if = { 
+			# 				limit = { 
+			# 					AND = { 
+			# 						FROM.FROM = { state = 446 } 
+			# 						NOT = { has_global_flag = sr_fall_of_egypt }
+			# 						FROM = { NOT = { controls_state = 447 } }
+			# 					} 
+			# 				}
+			# 				set_global_flag = sr_fall_of_egypt
+			# 				every_country = {
+			# 					limit = { africa_allies = yes }
+			# 					add_timed_idea = { idea = allies_defeat_in_egypt days = 180 }
+			# 				}
+			# 				# news_event = news.104
+			# 			}
+			# 			if = { 
+			# 				limit = { 
+			# 					AND = { 
+			# 						FROM.FROM = { state = 447 } 
+			# 						NOT = { has_global_flag = sr_fall_of_egypt }
+			# 						FROM = { NOT = { controls_state = 446 } }
+			# 					} 
+			# 				}
+			# 				set_global_flag = sr_fall_of_egypt
+			# 				every_country = {
+			# 					limit = { africa_allies = yes }
+			# 					add_timed_idea = { idea = allies_defeat_in_egypt days = 180 }
+			# 				}
+			# 				# news_event = news.104
+			# 			}
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					OR = {

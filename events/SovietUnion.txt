@@ -534,19 +534,6 @@ is_triggered_only = yes
    }
 
    country_event = {
-   id = soviet.200
-   title = soviet.200.t
-   desc = soviet.200.d
-   picture = GFX_report_event_ussr_startup
-   fire_only_once = yes
-   is_triggered_only = yes
-   option = {
-	   name = soviet.200.a
-	   add_timed_idea = { idea = SOV_barbarossa days = 182 }
-	}
-   }
-
-   country_event = {
 	id = soviet.300
 	title = soviet.300.t
 	desc = soviet.300.d

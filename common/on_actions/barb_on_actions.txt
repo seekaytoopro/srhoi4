@@ -83,48 +83,87 @@ on_actions = {
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
+	# on_state_control_changed = {
+	# 	effect = {
+	# 		if = { limit = { SOV = { AND = { has_war_with = GER } NOT = { has_idea = SOV_barb_debuff_ended } } }
+	# 			if = { 
+	# 				limit = { FROM.FROM = { is_on_continent = europe } }
+	# 				if = { 
+	# 					limit = { 
+	# 						ROOT = {
+	# 							the_axis = yes
+	# 						}
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 202 NOT = { has_state_flag = sr_fall_of_kiev } } }
+	# 					202 = { set_state_flag = sr_fall_of_kiev } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.104
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 137 NOT = { has_state_flag = sr_fall_of_sevastopol } } }
+	# 					137 = { set_state_flag = sr_fall_of_sevastopol } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.107
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 242 NOT = { has_state_flag = sr_fall_of_smolensk } } }
+	# 					242 = { set_state_flag = sr_fall_of_smolensk } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.336
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 218 NOT = { has_state_flag = sr_fall_of_rostov } } }
+	# 					218 = { set_state_flag = sr_fall_of_rostov } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.337
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 219 NOT = { has_state_flag = sr_fall_of_moscow } } }
+	# 					219 = { set_state_flag = sr_fall_of_moscow } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.106
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 195 NOT = { has_state_flag = sr_fall_of_leningrad } } }
+	# 					195 = { set_state_flag = sr_fall_of_leningrad } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.103
+	# 					}
+	# 					if = { limit = { FROM.FROM = { state = 217 NOT = { has_state_flag = sr_fall_of_stalingrad } } }
+	# 					217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
+	# 					news_event = news.105
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	on_weekly_SOV = {
 		effect = {
-			if = { limit = { SOV = { AND = { has_war_with = GER } NOT = { has_idea = SOV_barb_debuff_ended } } }
-				if = { 
-					limit = { FROM.FROM = { is_on_continent = europe } }
-					if = { 
-						limit = { 
-							ROOT = {
-								the_axis = yes
-							}
-						}
-						if = { limit = { FROM.FROM = { state = 202 NOT = { has_state_flag = sr_fall_of_kiev } } }
-						202 = { set_state_flag = sr_fall_of_kiev } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.104
-						}
-						if = { limit = { FROM.FROM = { state = 137 NOT = { has_state_flag = sr_fall_of_sevastopol } } }
-						137 = { set_state_flag = sr_fall_of_sevastopol } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.107
-						}
-						if = { limit = { FROM.FROM = { state = 242 NOT = { has_state_flag = sr_fall_of_smolensk } } }
-						242 = { set_state_flag = sr_fall_of_smolensk } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.336
-						}
-						if = { limit = { FROM.FROM = { state = 218 NOT = { has_state_flag = sr_fall_of_rostov } } }
-						218 = { set_state_flag = sr_fall_of_rostov } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.337
-						}
-						if = { limit = { FROM.FROM = { state = 219 NOT = { has_state_flag = sr_fall_of_moscow } } }
-						219 = { set_state_flag = sr_fall_of_moscow } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.106
-						}
-						if = { limit = { FROM.FROM = { state = 195 NOT = { has_state_flag = sr_fall_of_leningrad } } }
-						195 = { set_state_flag = sr_fall_of_leningrad } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.103
-						}
-						if = { limit = { FROM.FROM = { state = 217 NOT = { has_state_flag = sr_fall_of_stalingrad } } }
-						217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
-						news_event = news.105
-						}
-					}
+				#Rewriting barb code so it doesn't use inefficient on_state_control_changed
+			if = {
+				limit = {
+					SOV = { AND = { has_war_with = GER NOT = { has_idea = SOV_barb_debuff_ended } } }
 				}
-			}
+				if = { limit = { 202 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kiev } } } }
+					202 = { set_state_flag = sr_fall_of_kiev } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.104
+				}
+				if = { limit = { 137 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_sevastopol } } } }
+					137 = { set_state_flag = sr_fall_of_sevastopol } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.107
+				}
+				if = { limit = { 242 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_smolensk } } } }
+					242 = { set_state_flag = sr_fall_of_smolensk } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.336
+				}
+				if = { limit = { 218 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_rostov } } } }
+					218 = { set_state_flag = sr_fall_of_rostov } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.337
+				}
+				if = { limit = { 219 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_moscow } } } }
+					219 = { set_state_flag = sr_fall_of_moscow } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.106
+				}
+				if = { limit = { 195 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_leningrad } } } }
+					195 = { set_state_flag = sr_fall_of_leningrad } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.103
+				}
+				if = { limit = { 217 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_stalingrad } } } }
+					217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
+					news_event = news.105
+				}
+			}	
 		}
 	}
 }

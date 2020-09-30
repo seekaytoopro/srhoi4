@@ -236,7 +236,7 @@ foreign_politics = {
 
         available = {
 			NOT = { has_global_flag = operation_overlord_flag }
-			date>1942.1.1
+			date>1942.9.1
 
 		}
 		
@@ -275,43 +275,43 @@ foreign_politics = {
 	
 	
 
-ENG_annex_ire = {
-	icon = generic_operation
+# ENG_annex_ire = {
+# 	icon = generic_operation
 
-			allowed = {
-				tag = ENG
-			}
+# 			allowed = {
+# 				tag = ENG
+# 			}
 
-			available = {
-			NOR = { has_capitulated = yes }
-			IRE = { is_ai = yes }
-			}
+# 			available = {
+# 			NOR = { has_capitulated = yes }
+# 			IRE = { is_ai = yes }
+# 			}
 			
-			fire_only_once = yes
+# 			fire_only_once = yes
 
-			cost = 0
+# 			cost = 0
 
-			visible = {
+# 			visible = {
 				
 				
-				}
+# 				}
 
-			complete_effect = {
-		IRE = { 	every_unit_leader = {
-				    set_nationality = ENG
-			    }
-			}
+# 			complete_effect = {
+# 		IRE = { 	every_unit_leader = {
+# 				    set_nationality = ENG
+# 			    }
+# 			}
 							    
-					annex_country = {
-						target = IRE 
-						transfer_troops = yes 
-					}
+# 					annex_country = {
+# 						target = IRE 
+# 						transfer_troops = yes 
+# 					}
 
-					every_state = { 
-						limit = { is_core_of = IRE }
-						add_core_of = ENG }
-		}
-	}
+# 					every_state = { 
+# 						limit = { is_core_of = IRE }
+# 						add_core_of = ENG }
+# 		}
+# 	}
 	
 		ENG_annex_australia = {
 		icon = generic_operation

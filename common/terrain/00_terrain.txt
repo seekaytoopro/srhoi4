@@ -35,7 +35,7 @@ categories =  {
 			attack = -0.16
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.20
+		enemy_army_bonus_air_superiority_factor = -0.10 #0.20
 	}
 
 	hills = {
@@ -49,7 +49,7 @@ categories =  {
 		units = {
 			attack = -0.25
 		}
-		enemy_army_bonus_air_superiority_factor = -0.10
+		enemy_army_bonus_air_superiority_factor = -0.05 #0.10
 	}
 	
 	mountain = {
@@ -65,7 +65,7 @@ categories =  {
 			attack = -0.45
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.50
+		enemy_army_bonus_air_superiority_factor = -0.25 #0.50
 	}
 	
 	plains = {

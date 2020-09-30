@@ -1098,6 +1098,10 @@ focus_tree = {
 		}
 	
 		available = {
+			OR = {
+				date>1942.3.1
+				ENG = { surrender_progress > 0.10 }
+			}
 			
 		}
 			
@@ -1118,6 +1122,11 @@ focus_tree = {
 		icon = GFX_focus_attack_germany
 		prerequisite = { focus = USA_intervention_in_europe }
 		available = {
+			OR = {
+				date>1942.9.1
+				ENG = { surrender_progress > 0.10 }
+			}
+			
 		}
 
 		continue_if_invalid = yes
@@ -1131,9 +1140,6 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			GER = {
-				add_opinion_modifier = { target = USA modifier = war_plan_black }
-			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
@@ -1172,69 +1178,22 @@ focus_tree = {
 				attack_skill = 7
 				defense_skill = 2
 				planning_skill = 3
-				logistics_skill = 5
-				traits = { naval_invader jungle_rat }
+				logistics_skill = 7
+				traits = { naval_invader jungle_rat infantry_leader trickster }
 			}
 		}
 	}
-	focus = {
-		id = USA_war_plan_orange
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_intervention_in_asia }
-		available = {
-			
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-
-		x = 0
-		y = 1
-		relative_position_id = USA_intervention_in_asia
-		cost = 0.2
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-
-		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
-			}
-			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
-		}
-	}
-	
-	focus = {
-		id = USA_war_with_japan
-		icon = GFX_america_goal_marcarthur_military
-		prerequisite = { focus = USA_war_plan_orange }
-		available = {
-		date > 1941.2.1
-		}
-		relative_position_id = USA_war_plan_orange
-		x = 0
-		y = 1
-		cost = 0.2
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = JAP
-				generator = { 645 }
-				expire = 0
-			}
-		}
-		}
 	
 	focus = {
 		id = USA_defense_of_the_pacific
 		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = USA_war_plan_orange }
+		prerequisite = { focus = USA_intervention_in_asia }
 		available = {
 
 		}
 		will_lead_to_war_with = JAP
-		x = 2
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = USA_intervention_in_asia
 		cost = 1
 		#ai_will_do = {
@@ -1325,6 +1284,55 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = USA_war_with_japan
+		icon = GFX_america_goal_marcarthur_military
+		prerequisite = { focus = USA_defense_of_the_pacific }
+		available = {
+			date > 1941.2.1
+		}
+		bypass = { ROOT = { has_war_with = JAP } }
+		relative_position_id = USA_defense_of_the_pacific
+		x = 0
+		y = 1
+		cost = 0.2
+		completion_reward = {
+			create_wargoal = {
+				type = take_state_focus
+				target = JAP
+				generator = { 645 }
+				expire = 0
+			}
+		}
+	}
+
+	focus = {
+		id = USA_war_plan_orange
+		icon = GFX_focus_attack_japan
+		prerequisite = { focus = USA_war_with_japan }
+		available = {
+			date>1942.1.1
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 0
+		y = 1
+		relative_position_id = USA_war_with_japan
+		cost = 0.2
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = { target = USA modifier = war_plan_orange }
+			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
 

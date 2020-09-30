@@ -52,7 +52,7 @@ cold_climate =
 		weather_ground_snow_medium = 0.1
 		weather_ground_snow_high = 0.15
 	}
-	weather_modifiers_reduction_factor = 0.225
+	weather_modifiers_reduction_factor = 0.06
 
 	change_camo_when =
 	{

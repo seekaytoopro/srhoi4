@@ -1490,19 +1490,19 @@ if = {
 		ENG = { 
 					add_relation_modifier = {
 				target = FRA
-				modifier = stahlpakt5
+				modifier = stahlpakt
 			}
 			}
 					USA = { 
 					add_relation_modifier = {
 				target = FRA
-				modifier = stahlpakt5
+				modifier = stahlpakt
 			}
 			}
 					SAF = { 
 					add_relation_modifier = {
 				target = FRA
-				modifier = stahlpakt5
+				modifier = stahlpakt
 			}
 			}			
 		}

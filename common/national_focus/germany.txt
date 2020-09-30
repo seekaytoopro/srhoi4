@@ -3329,7 +3329,6 @@ SPR = { country_event = spain.29 }
 						}
 						
 					GER = { add_timed_idea = { idea = GER_barbarossa days = 175 }  }
-					SOV = { country_event = { id = soviet.200 days = 180 } }
 					hidden_effect={
 					ITA = { add_timed_idea = { idea = GER_barbarossa days = 175 } }
 					if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }

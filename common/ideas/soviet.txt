@@ -10,8 +10,8 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.075
-				army_infantry_attack_factor = 0.05
+				# army_armor_attack_factor = 0.075
+				# army_infantry_attack_factor = 0.05
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
@@ -26,8 +26,8 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.075
-				army_infantry_attack_factor = 0.05
+				# army_armor_attack_factor = 0.075
+				# army_infantry_attack_factor = 0.05
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
@@ -42,8 +42,8 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.05
-				army_infantry_attack_factor = 0.025
+				# army_armor_attack_factor = 0.05
+				# army_infantry_attack_factor = 0.025
 				winter_attrition_factor = -0.5
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
@@ -228,29 +228,6 @@ ideas = {
 				industrial_capacity_factory = 0.15
 			}
 		}
-	
-	SOV_barbarossa = {
-	
-	removal_cost = -1
-			
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-			has_government = communism
-			}
-
-			picture = generic_manpower_bonus
-	
-	modifier = {
-	army_morale_factor = 0.1
-	army_org_factor	= 0.1
-	army_core_defence_factor = 0.05 
-	
-	}
-	
-	}
 	
 		SOV_purge_now_plz = {
 		

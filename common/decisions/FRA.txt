@@ -269,7 +269,12 @@ operations = {
 					transfer_troops = yes 
 				}
 			}
-
+			FRA = { 
+				add_state_core = 541
+				add_state_core = 275
+				add_state_core = 719
+				add_state_core = 681
+			}
 			SAF = {
 				remove_state_core = 541
 				remove_state_core = 275

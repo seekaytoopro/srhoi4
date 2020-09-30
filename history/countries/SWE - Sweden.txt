@@ -12,17 +12,17 @@ if = {
 set_research_slots = 0
 
 add_ideas = {
-	SWI_acesSpiritJAP
-	SWI_acesSpiritMAN
-	SWI_acesSpiritSIA
-	SWI_acesSpiritHUN
-	SWI_acesSpiritROM
-	SWI_acesSpiritBUL
-	SWI_acesSpiritSOV
-	SWI_acesSpiritCAN
-	SWI_acesSpiritGER
-	SWI_acesSpiritITA
-	SWI_acesSpiritENG
+	# SWI_acesSpiritJAP
+	# SWI_acesSpiritMAN
+	# SWI_acesSpiritSIA
+	# SWI_acesSpiritHUN
+	# SWI_acesSpiritROM
+	# SWI_acesSpiritBUL
+	# SWI_acesSpiritSOV
+	# SWI_acesSpiritCAN
+	# SWI_acesSpiritGER
+	# SWI_acesSpiritITA
+	# SWI_acesSpiritENG
 
 	neutrality_idea3
 }

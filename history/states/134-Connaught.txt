@@ -3,19 +3,20 @@ state=
 {
 	id=134
 	name="STATE_134"
-	manpower = 678100
+	# manpower = 678100
+	manpower = 1
 	
-	state_category = town
-
-	resources = { steel = 6 }
+	# state_category = town
+	state_category = wasteland
+	# resources = { steel = 6 }
 
 	history=
 	{
-		owner = IRE
-		buildings = {
-			infrastructure = 6
-		}
-		add_core_of = IRE
+		# owner = IRE
+		# buildings = {
+		# 	infrastructure = 6
+		# }
+		# add_core_of = IRE
 	}
 
 	provinces=
