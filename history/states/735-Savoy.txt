@@ -1,8 +1,7 @@
+
 state={
 	id=735
 	name="STATE_735"
-
-	state_category = town
 
 	history={
 		owner = FRA
@@ -19,13 +18,17 @@ state={
 			arms_factory = 1
 			9909 = {
 				naval_base = 2
-			}		
+
+			}
+
 		}
+
 	}
 
 	provinces={
-		764 778 3764 3959 3961 6609 6975 9603 9736 9745 9909 11573 
+		764 778 911 956 3764 3928 3959 3961 6609 6975 9603 9736 9745 9909 11573 
 	}
 	manpower=907500
 	buildings_max_level_factor=1.000
+	state_category=town
 }

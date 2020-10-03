@@ -1,10 +1,7 @@
 
 state={
 	id=21
-	name="STATE_21" # Provence
-	manpower = 2060400
-
-	state_category = city
+	name="STATE_21"
 
 	history={
 		owner = FRA
@@ -12,7 +9,7 @@ state={
 			911 1 
 		}
 		victory_points = {
-			11834 10
+			11834 10 
 		}
 		buildings = {
 			infrastructure = 6
@@ -21,21 +18,30 @@ state={
 			911 = {
 				naval_base = 10
 				coastal_bunker = 1
+
 			}
 			11834 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = FRA
 		1939.1.1 = {
 			buildings = {
 				dockyard = 3
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		911 956 958 3762 3928 11834 11849 11875 
+		958 11834 11849 11875 
 	}
+	manpower=2060400
+	buildings_max_level_factor=1.000
+	state_category=city
 }

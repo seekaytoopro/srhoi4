@@ -17,7 +17,11 @@ ideas = {
 			picture = generic_navy_bonus
 
 				modifier = {
-			industrial_capacity_dockyard = -2
+			industrial_capacity_dockyard = -10
+			production_speed_dockyard_factor = -10
+			production_speed_naval_base_factor  = -10
+			production_speed_air_base_factor = -10
+			air_range_factor = -10
 			}
 
 }
@@ -39,8 +43,11 @@ SPR_no_navy2 = {
 			picture = generic_navy_bonus
 
 				modifier = {
-			industrial_capacity_dockyard = -2
-			air_range_factor = -1
+			industrial_capacity_dockyard = -10
+			production_speed_dockyard_factor = -10
+			production_speed_naval_base_factor  = -10
+			production_speed_air_base_factor = -10
+			air_range_factor = -10
 			}
 
 }

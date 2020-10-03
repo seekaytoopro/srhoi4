@@ -1867,10 +1867,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 				category = naval_doctrine
 			}
 			529 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1917,10 +1917,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 				category = marine_tech	
 			}
 			533 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1961,10 +1961,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_ideas = JAP_first_air_fleet
 			531 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2006,10 +2006,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 				category = dd_tech	
 			}
 			535 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2053,10 +2053,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = kure_naval_arsenal
 			528 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2142,10 +2142,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 					}
 				}
 				282 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = dockyard
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -2188,10 +2188,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 				category = ca_tech	
 			}
 			534 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2228,10 +2228,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 		completion_reward = {
 			add_ideas = the_long_lance
 			536 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2276,10 +2276,10 @@ set_technology = { cv_naval_bomber2 = 1 }
 				set_technology = { torpedo_cruiser_mtg = 1 }
 			}
 			532 = {
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

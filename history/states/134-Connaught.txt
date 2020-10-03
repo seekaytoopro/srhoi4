@@ -1,25 +1,20 @@
 
-state=
-{
+state={
 	id=134
 	name="STATE_134"
-	# manpower = 678100
-	manpower = 1
-	
-	# state_category = town
-	state_category = wasteland
-	# resources = { steel = 6 }
 
-	history=
-	{
-		# owner = IRE
-		# buildings = {
-		# 	infrastructure = 6
-		# }
-		# add_core_of = IRE
+	history={
+		owner = ENG
+		add_core_of = ENG
+		buildings = {
+			infrastructure = 5
+		}
 	}
 
-	provinces=
-	{
-337 3396 9255 9303 9321 9369 11238 11287 11371 	}
+	provinces={
+		311 6363 9364 
+	}
+	manpower=731410
+	buildings_max_level_factor=1.000
+	state_category=town
 }
