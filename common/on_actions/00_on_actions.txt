@@ -217,6 +217,7 @@ on_actions = {
 					}
 				}
 				FRA_fix_africa = yes
+				FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 add_state_core = 660 add_state_core = 774 }
 				FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
 				762 = { set_compliance = 60 }
