@@ -617,7 +617,7 @@ create_corps_commander = {
 # 	logistics_skill = 8
 # }
 
-create_corps_commander = {
+create_field_marshal = {
 	name = "Vasily Chuikov"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
 		traits = { brilliant_strategist career_officer infantry_leader panzer_leader trait_engineer urban_assault_specialist trait_cautious}
