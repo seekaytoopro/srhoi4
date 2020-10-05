@@ -234,7 +234,7 @@ country_event = {
 	
 	option = {
 		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
-		SWE = { country_event = { id = srevents.801 days = 10 } }
+		SWE = { country_event = { id = srevents.801 days = 60 } }
 		# news_event = { id = mtg_news.776  days = 0 }
 		# hidden_effect = {
 		# 	SOV = { add_timed_idea = { idea = mud_sucks_ru days = 60 }}
@@ -255,7 +255,7 @@ country_event = {
 	
 	option = {
 		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
-		SWE = { country_event = { id = srevents.801 days = 10 } }
+		SWE = { country_event = { id = srevents.801 days = 60 } }
 		# news_event = { id = mtg_news.777  days = 0 }
 		# hidden_effect = {
 		# 	SOV = { add_timed_idea = { idea = mud_sucks_ru days = 60 }}
