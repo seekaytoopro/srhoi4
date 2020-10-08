@@ -15,6 +15,7 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.8
+		maximum_speed = 4.5
 
 		#Defensive Abilities
 		defense = -2.5
@@ -25,13 +26,14 @@ equipments = {
 
 		#Offensive Abilities
 		hard_attack = 23.0
+		soft_attack = 1.0
 		ap_attack = 20
 		air_attack = 0
 
 		#Space taken in convoy
 		lend_lease_cost = 2
 				
-		build_cost_ic = 1.67
+		build_cost_ic = 1.60
 		resources = {
 			tungsten = 2
 			steel = 2
@@ -55,11 +57,12 @@ equipments = {
 		visual_level = 1
 		
 		hard_attack = 32.0
+		soft_attack = 1.2
 		ap_attack = 25
 		defense = -5.5
 		breakthrough = 0.375
 		
-		build_cost_ic = 2.0
+		build_cost_ic = 1.9
 		resources = {
 			tungsten = 2
 			steel = 2
@@ -75,11 +78,12 @@ equipments = {
 		visual_level = 2
 		
 		hard_attack = 42.5
-		ap_attack = 45
+		ap_attack = 40
+		soft_attack = 1.5
 		defense = -8.5
 		breakthrough = 0.5
 		
-		build_cost_ic = 2.25
+		build_cost_ic = 2.20
 		resources = {
 			tungsten = 2
 			steel = 3

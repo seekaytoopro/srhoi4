@@ -110,13 +110,13 @@ FRA_move_capital_casablanca = {
 icon = generic_operation
 
 allowed = {
-original_tag = FRA
+original_tag = FRF
 
 }
 
 		available = {
 			has_capitulated = yes 
-			FRA = { controls_state = 461 }
+			FRF = { controls_state = 461 }
 		}
 		
 		visible = {
@@ -127,7 +127,7 @@ original_tag = FRA
 		cost = 0
 		
 		complete_effect = {
-		FRA = { set_capital = 461 }
+		FRF = { set_capital = 461 }
 		}
 	}
 		
@@ -135,11 +135,11 @@ FRA_move_capital_gabon = {
 icon = generic_operation
 
 allowed = {
-original_tag = FRA
+original_tag = FRF
 }
 		available = {
 		has_capitulated = yes 
-		FRA = { controls_state = 539 }
+		FRF = { controls_state = 539 }
 		}
 		visible = {
 			#FRA = { controls_state = 539 }
@@ -148,18 +148,18 @@ original_tag = FRA
 		cost = 0
 		
 		complete_effect = {
-		FRA = { set_capital = 539 }
+		FRF = { set_capital = 539 }
 		}
 }
 FRA_move_capital_guiana = {
 	icon = generic_operation
 	
 	allowed = {
-	original_tag = FRA
+	original_tag = FRF
 	}
 			available = {
 			has_capitulated = yes 
-			FRA = { controls_state = 310 }
+			FRF = { controls_state = 310 }
 			}
 			visible = {
 				#FRA = { controls_state = 310 }
@@ -168,7 +168,7 @@ FRA_move_capital_guiana = {
 			cost = 0
 			
 			complete_effect = {
-			FRA = { set_capital = 310 }
+			FRF = { set_capital = 310 }
 			}
 	}
 }
@@ -182,7 +182,7 @@ operations = {
 		icon = generic_operation
 
 		allowed = {
-			original_tag = FRA
+			original_tag = FRF
 		}
 
 		available = {
@@ -263,13 +263,13 @@ operations = {
 				set_technology = { excavation5 = 1 }
 			}
 
-		    FRA = {
+		    FRF = {
 				annex_country = {
 					target = SAF
 					transfer_troops = yes 
 				}
 			}
-			FRA = { 
+			FRF = { 
 				add_state_core = 541
 				add_state_core = 275
 				add_state_core = 719

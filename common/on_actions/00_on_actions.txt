@@ -223,6 +223,8 @@ on_actions = {
 				762 = { set_compliance = 60 }
 				if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
 				JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
+
+				FRA = { country_event = { id = france.800 } }
 				}
 			}
 			
@@ -367,17 +369,17 @@ on_actions = {
 		}
 	}
 
-	# ROOT is previously capitulated country
-	on_uncapitulation = {
-		effect = {
-			if = {
-				limit = {
-					original_tag = FRA
-				}
-				drop_cosmetic_tag = yes
-			}
-		}
-	}
+	# # ROOT is previously capitulated country
+	# on_uncapitulation = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				original_tag = FRA
+	# 			}
+	# 			drop_cosmetic_tag = yes
+	# 		}
+	# 	}
+	# }
 	
 on_subject_autonomy_level_change = {
 		effect = {

@@ -2449,6 +2449,10 @@ technologies = {
 			max_strength = 7.5
 			max_organisation = 2.5
 		}
+		anti_tank_brigade = { 
+			max_strength = 7.5
+			max_organisation = 2.5
+		}
 
 		xp_research_type = army
 		xp_research_cost = 100

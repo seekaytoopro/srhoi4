@@ -378,7 +378,7 @@ NDefines.NNavy.GUN_HIT_PROFILES = {
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		2.0,	-- heavy attack
-		10.0,	-- torpedos
+		12.0,	-- torpedos
 		2.0	--  light attack	
 	}
 	NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 1.0                                    -- base chance for hit

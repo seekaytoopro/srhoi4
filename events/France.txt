@@ -228,36 +228,97 @@ country_event = {
 }
 
 
-# country_event = {
-# 	id = france.351
-# 	title = france.351.t
-# 	desc = france.351.d
-# 	picture = GFX_france1
-	
-# 	trigger = {
-# 		original_tag = FRA
-# 		has_government = democratic
-# 	   	has_capitulated = yes
-# 		NOT = { controls_state = 461 
-# 				has_country_flag = gabon_capital
-# 									}
-# 	}
+country_event = {
+	id = france.800
+	title = france.800.t
+	desc = france.800.d
+	picture = GFX_report_event_canadian_soldiers
 
-# 	fire_only_once = yes
+	is_triggered_only = yes
 
-# 	mean_time_to_happen = {
-# 		days = 1
-# 	}
+	immediate = {
 
 
-	
-# 	option = {
-# 		ai_chance = { factor = 1 }
-# 		name = france.351.a
-# 		set_capital = 539	
-# 		set_country_flag = gabon_capital
-# 		}	
-# 	}
+				#### Stuff to replace the old France (FRA) with a brand new Free France (FRF) country ####
+
+				FRF = {
+					transfer_state = 539
+					transfer_state = 772
+					transfer_state = 773
+					transfer_state = 660
+					transfer_state = 774
+					transfer_state = 775
+					transfer_state = 515
+					transfer_state = 694
+					transfer_state = 310
+					transfer_state = 268
+					transfer_state = 706
+					transfer_state = 713
+					transfer_state = 320
+					transfer_state = 635
+					transfer_state = 641
+					transfer_state = 734
+					transfer_state = 680
+					transfer_state = 554
+					transfer_state = 553 
+					transfer_state = 677
+					transfer_state = 708
+					transfer_state = 730
+				}
+
+				FRF = {
+					change_tag_from = FRA
+					add_state_core = 539
+					add_state_core = 772
+					add_state_core = 773
+					add_state_core = 660
+					add_state_core = 774
+					# annex_country = FRA			
+				}
+
+				FRF = {
+					every_state = {
+						limit = { is_core_of = FRA }
+						add_core_of = FRF
+						remove_core_of = FRA
+					}
+				}
+				FRA = { set_equipment_fraction = 0.0 }
+				FRF = {
+					annex_country = { target = FRA transfer_troops = no }
+				}
+				ENG = { add_to_faction = FRF }
+				GER = { declare_war_on = { target = FRF type = annex_everything } }
+				# FRF = {
+				# 	every_state = {
+				# 		limit = { is_owned_and_controlled_by = FRA }
+				# 		transfer_state = ROOT.ROOT
+				# 	}
+				# }
+				# FRF = {
+				# 	annex_country = BEL
+				# }
+
+
+				# country_event = { id = gduvichy.14 days = 2 }
+				# country_event = { id = gduvichy.13 days = 4 }
+				# country_event = { id = gduvichy.12 days = 6 }
+				# country_event = { id = gduvichy.7 days = 8 }
+				# FRF = { news_event = { id = france.20 days = 10 } }
+
+	}
+
+	option = {
+		name = france.800.a
+		FRF = {
+			transfer_state = 295 
+			transfer_state = 718 
+			transfer_state = 538 
+			transfer_state = 768 
+			transfer_state = 769 
+		}
+	}
+}
 
 
 

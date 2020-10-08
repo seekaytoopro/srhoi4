@@ -11,16 +11,16 @@ transfer_state = 1
 EFR = { 
 add_ideas = FRA_occupation_costs_4
 add_ideas = SPR_no_navy2
-set_variable = { vichy_legitimacy_mechanic_stability_factor = -0.1 }
+# set_variable = { vichy_legitimacy_mechanic_stability_factor = -0.1 }
 add_research_slot = 1
 add_equipment_to_stockpile = {
     type = convoy_1
     amount = 500
     producer = EFR
 }
-add_dynamic_modifier = {
-    modifier = vichy_legitimacy
-}
+# add_dynamic_modifier = {
+#     modifier = vichy_legitimacy
+# }
 	diplomatic_relation = {   country = GER    relation = military_access    active = yes  }
 	diplomatic_relation = {    country = ITA    relation = military_access   active = yes  }
 
@@ -110,15 +110,15 @@ transfer_state = 461
 461 = { set_demilitarized_zone = yes }
 transfer_state = 514 #Was changed by thrasy to 515 for some reason
 514 = { set_demilitarized_zone = yes }
-###SYRIA+LEBANON###
-if = { limit = { FRA = { has_legitimacy	< 100 } } 
-transfer_state = 680
-transfer_state = 554
-transfer_state = 553 
-transfer_state = 677
-}
-###WEST AFRICA###
-if = { limit = { FRA = { has_legitimacy	< 80 } } 
+# ###SYRIA+LEBANON###
+# if = { limit = { FRA = { has_legitimacy	< 100 } } 
+# transfer_state = 680
+# transfer_state = 554
+# transfer_state = 553 
+# transfer_state = 677
+# }
+# ###WEST AFRICA###
+# if = { limit = { FRA = { has_legitimacy	< 80 } } 
 transfer_state = 786
 transfer_state = 782 #Was commented out
 transfer_state = 557
@@ -132,12 +132,12 @@ transfer_state = 776
 transfer_state = 777
 transfer_state = 778
 transfer_state = 782 ## Was in Central Africa transfer
-}
-###MADAGASCAR###
-if = { limit = { FRA = { has_legitimacy	< 60 } } 
+# }
+# ###MADAGASCAR###
+# if = { limit = { FRA = { has_legitimacy	< 60 } } 
 transfer_state = 543
-543 = { set_demilitarized_zone = yes }
-}
+# 543 = { set_demilitarized_zone = yes }
+# }
 ###CENTRAL AFRICA - BET###
 # if = { limit = { FRA = { has_legitimacy	< 40 } } 
 # transfer_state = 515 #These were commented Out
@@ -158,15 +158,15 @@ transfer_state = 543
 # transfer_state = 660
 # }
 ###CENTRAL AFRICA - BELGIAN CONGO###
-if = { limit = { FRA = { has_legitimacy	> 59 } } 
-FRA = { 
-			transfer_state = 295 
-			transfer_state = 718 
-			transfer_state = 538 
-			transfer_state = 768 
-			transfer_state = 769 
-			}
-}
+# if = { limit = { FRA = { has_legitimacy	> 59 } } 
+# FRA = { 
+# 			transfer_state = 295 
+# 			transfer_state = 718 
+# 			transfer_state = 538 
+# 			transfer_state = 768 
+# 			transfer_state = 769 
+# 			}
+# }
 
 delete_unit_template_and_units = { division_template = "Division Légère de Cavalerie" }
 delete_unit_template_and_units = { division_template = "Divisions Légères Mécaniques" }
@@ -206,21 +206,22 @@ transfer_state = 728
 
 # POR = { country_event = wtt_britain_lease_azores.1 }
 
-FRA = { transfer_state = 713 
+FRA = { 
+	# transfer_state = 713 
 remove_ideas = FRA_protected_by_the_maginot_line
 remove_ideas = FRA_victors_of_wwi2
 add_ideas = FRA_defeatism
 remove_ideas = FRA_full_employment
-			create_country_leader = {
-				name = "Charles de Gaulle"
-				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
-				picture = "Portrait_France_Charles_De_Gaulle.dds"
-				expire = "1965.1.1"
-				ideology = conservatism
-				traits = {
+			# create_country_leader = {
+			# 	name = "Charles de Gaulle"
+			# 	desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+			# 	picture = "Portrait_France_Charles_De_Gaulle.dds"
+			# 	expire = "1965.1.1"
+			# 	ideology = conservatism
+			# 	traits = {
 					
-				}
-			}
+			# 	}
+			# }
 				every_unit_leader = {
 					limit = {
 						OR = {

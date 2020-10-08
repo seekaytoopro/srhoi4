@@ -33,7 +33,9 @@ political_actions = {
 		tag = BRA
 		tag = MEX
 		tag = NOR
-		tag = CRO }
+		tag = CRO 
+		tag = FRF
+			}
 		}
 
 		available = {
@@ -127,7 +129,7 @@ political_actions = {
 			allowed = { 
 		OR = { 
 			tag = EFR 
-
+		tag = FRF
 		tag = SOV
 		tag = CHI
 		tag = SIA 
@@ -199,6 +201,7 @@ propaganda_efforts = {
 		icon = generic_prepare_civil_war
 		allowed = {
 			OR = {	
+				tag = FRF
 				tag = SOV
 				tag = FRA
 				tag = JAP
@@ -227,7 +230,7 @@ propaganda_efforts = {
 		}		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
 			threat > 0.3
-			has_offensive_war = no
+			# has_offensive_war = no
 		}
 
 		visible = {
@@ -269,6 +272,7 @@ propaganda_efforts = {
 		
 				allowed = { 
 		OR = {
+		tag = FRF
 		tag = EFR 
 		tag = SOV
 		tag = CHI
@@ -893,6 +897,7 @@ war_measures = {
 		tag = EFR 
 
 		tag = SOV
+		tag = FRF
 		tag = SIA 
 		tag = RAJ
 		tag = AST
@@ -950,6 +955,7 @@ war_measures = {
 		tag = RAJ
 		tag = GER
 			tag = EFR 
+			tag = FRF
 
 		tag = ITA
 		tag = AST
@@ -1015,6 +1021,7 @@ war_measures = {
 		tag = ROM
 		tag = HUN
 				tag = FRA
+				tag = FRF
 		tag = SPR
 		tag = ENG
 		tag = IRE
@@ -1075,6 +1082,7 @@ war_measures = {
 		tag = ROM
 		tag = HUN
 			tag = EFR 
+			tag = FRF
 
 		tag = SPR
 		tag = ENG
@@ -1146,6 +1154,7 @@ war_measures = {
 		tag = CHI
 		tag = SIA
 	tag = EFR 
+	tag = FRF
 		tag = MAN 
 		tag = RAJ
 		tag = AST
@@ -1283,7 +1292,7 @@ economy_decisions = {
 		tag = CHI
 		tag = SIA 
 			tag = EFR 
-
+			tag = FRF
 		tag = RAJ
 		tag = AST
 		tag = NZL
@@ -1390,6 +1399,7 @@ economy_decisions = {
 		tag = BUL
 		tag = ROM
 		tag = HUN
+		tag = FRF
 			tag = EFR 
 
 		tag = SPR
@@ -1467,7 +1477,7 @@ economy_decisions = {
 			allowed = { 
 		OR = { 
 			tag = EFR 
-
+			tag = FRF
 		tag = SIA 
 		tag = RAJ
 		tag = AST

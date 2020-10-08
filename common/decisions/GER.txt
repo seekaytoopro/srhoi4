@@ -412,7 +412,7 @@ GER_expedition_bul = {
 
 		complete_effect = {
 			BUL = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -457,7 +457,7 @@ GER_expedition_hun = {
 
 		complete_effect = {
 			HUN = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -503,7 +503,7 @@ GER_expedition_rom = {
 
 		complete_effect = {
 			ROM = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -548,7 +548,7 @@ GER_expedition2_bul = {
 
 		complete_effect = {
 			BUL = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -592,7 +592,7 @@ GER_expedition2_hun = {
 
 		complete_effect = {
 			HUN = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -639,7 +639,7 @@ GER_expedition2_rom = {
 
 		complete_effect = {
 			ROM = {
-create_corps_commander = {
+create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
     traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
@@ -883,50 +883,6 @@ special_projects = {
 			}
 
 			clr_country_flag = GER_chromium_converted
-		}
-	}
-
-	GER_dismantle_maginot = {
-
-		icon = generic_construction
-
-			allowed = { 
-		original_tag = GeR
-		}
-		
-		available = {
-			controls_state = 28
-		}
-
-		cost = 50
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			controls_state = 28
-		}
-		days_remove = 180
-		modifier = {
-			civilian_factory_use = 5
-		}
-		remove_effect = {
-			28 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = {
-						all_provinces = yes
-						limit_to_border = no
-						level > 2
-					}
-				}
-			}
-		}
-		complete_effect = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
-	
 		}
 	}		
 }

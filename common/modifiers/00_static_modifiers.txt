@@ -238,8 +238,8 @@ stability_good_modifier = {
 
 # applies when stability < 50%
 stability_bad_modifier = {
-	# industrial_capacity_factory = -0.40
-	# industrial_capacity_dockyard = -0.40
+	industrial_capacity_factory = -0.20
+	industrial_capacity_dockyard = -0.20
 	political_power_factor = -0.2
 }
 
@@ -353,7 +353,7 @@ screening_bonus = {
 
 capital_screening_bonus = { 
 	naval_retreat_speed = 0.1
-  fighter_sortie_efficiency = 0.15
+	fighter_sortie_efficiency = 0.15
 }
 
 ship_experience_bonus_max = {
@@ -487,7 +487,7 @@ stahlpakt2 = {
 	}
 
 	trade_cost_for_target_factor = -0.8
-		extra_trade_to_target_factor = 1.0
+		# extra_trade_to_target_factor = 1.0
 
 	}
 stahlpakt = {
@@ -515,7 +515,7 @@ valid_relation_trigger = {
 }
 
 trade_cost_for_target_factor = -0.9
-	extra_trade_to_target_factor = 1.0
+	# extra_trade_to_target_factor = 1.0
 
 }		
 stahlpakt5 = {
