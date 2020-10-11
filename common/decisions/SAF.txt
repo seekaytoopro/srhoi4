@@ -10,7 +10,7 @@ operations = {
 		}
 
 		available = {
-			FRA = { 
+			FRF = { 
 				is_ai = yes 
 			}
 			EFR = { owns_state = 26 }
@@ -20,7 +20,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			country_exists = FRA
+			country_exists = FRF
 			EFR = { owns_state = 26 }
 		}
 			
@@ -31,7 +31,7 @@ operations = {
 
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = basic_heavy_tank
 					}
 				}
@@ -41,7 +41,7 @@ operations = {
 			}
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = improved_heavy_tank
 					}
 				}
@@ -51,7 +51,7 @@ operations = {
 			}
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = advanced_heavy_tank
 					}
 				}
@@ -62,7 +62,7 @@ operations = {
 
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = basic_medium_tank
 					}
 				}
@@ -72,7 +72,7 @@ operations = {
 			}
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = improved_medium_tank
 					}
 				}
@@ -82,7 +82,7 @@ operations = {
 			}
 			if = {
 				limit = {
-					FRA = {
+					FRF = {
 						has_tech = advanced_medium_tank
 					}
 				}
@@ -123,11 +123,11 @@ operations = {
 
 		    SAF = {
 				annex_country = {
-					target = FRA
+					target = FRF
 					transfer_troops = yes 
 				}
 			}
-			FRA = { 
+			FRF = { 
 				every_unit_leader = {
 					 set_nationality = SAF
 				 }
@@ -136,7 +136,7 @@ operations = {
 				 }
 			 
 			 }
-			 set_country_flag = annexed_fra
+			 set_country_flag = annexed_frf
 
 			# SAF = {
 			# 	remove_state_core = 541
@@ -160,7 +160,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			AND = { has_country_flag = annexed_fra EFR = { controls_state = 782 controls_state = 774 controls_state = 773 controls_state = 660 } }
+			AND = { has_country_flag = annexed_frf EFR = { controls_state = 782 controls_state = 774 controls_state = 773 controls_state = 660 } }
 		}
 			
 		fire_only_once = yes
@@ -187,7 +187,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			AND = { has_country_flag = annexed_fra EFR = { controls_state = 786 } }
+			AND = { has_country_flag = annexed_frf EFR = { controls_state = 786 } }
 		}
 			
 		fire_only_once = yes
@@ -222,7 +222,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			AND = { has_country_flag = annexed_fra EFR = { controls_state = 680 } }
+			AND = { has_country_flag = annexed_frf EFR = { controls_state = 680 } }
 		}
 			
 		fire_only_once = yes
@@ -249,7 +249,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			AND = { has_country_flag = annexed_fra EFR = { controls_state = 539 } }
+			AND = { has_country_flag = annexed_frf EFR = { controls_state = 539 } }
 		}
 			
 		fire_only_once = yes
@@ -274,7 +274,7 @@ operations = {
 		cost = 0
 			
 		visible = {
-			AND = { has_country_flag = annexed_fra EFR = { controls_state = 543 } }
+			AND = { has_country_flag = annexed_frf EFR = { controls_state = 543 } }
 		}
 			
 		fire_only_once = yes

@@ -25,6 +25,8 @@
 	support = {
 		engineer = { x = 0 y = 0 }
 		recon =  { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }	
+		anti_air = { x = 0 y = 3 }	
 	}
 }
 division_template = {
@@ -63,13 +65,12 @@ division_template = {
 		marine = { x = 1 y = 3 }
 		marine = { x = 1 y = 4 }
 		marine = { x = 2 y = 0 }
-		marine = { x = 2 y = 1 }
-		marine = { x = 2 y = 2 }
-		marine = { x = 2 y = 3 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
+		artillery_brigade = { x = 4 y = 2 }
 
 	}
 	support = {
@@ -81,7 +82,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+	name = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 
 	regiments = {
 		desertinfantry = { x = 0 y = 0 }
@@ -129,17 +130,14 @@ division_template = {
 		mountaineers = { x = 1 y = 2 }
 		mountaineers = { x = 1 y = 3 }
 		mountaineers = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
+		mountaineers = {x = 2 y = 0 }
+		anti_air_brigade = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		anti_air_brigade = { x = 3 y = 3 }
-		anti_tank_brigade = { x = 4 y = 0 }
-		anti_tank_brigade = { x = 4 y = 1 }
-		anti_tank_brigade = { x = 4 y = 2 }
-		anti_tank_brigade = { x = 4 y = 3 }	
-		anti_tank_brigade = { x = 4 y = 4 }	
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -484,7 +482,7 @@ units = {
 			name_order = 1
 		}
 		location = 10127
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -494,7 +492,7 @@ units = {
 			name_order = 1
 		}
 		location = 10127
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -504,7 +502,7 @@ units = {
 			name_order = 1
 		}
 		location = 10127
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -514,7 +512,7 @@ units = {
 			name_order = 1
 		}
 		location = 1071
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -524,7 +522,7 @@ units = {
 			name_order = 1
 		}
 		location = 1071
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -534,7 +532,7 @@ units = {
 			name_order = 1
 		}
 		location = 1071
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -544,7 +542,7 @@ units = {
 			name_order = 1
 		}
 		location = 1155
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -554,7 +552,7 @@ units = {
 			name_order = 1
 		}
 		location = 1155
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -564,7 +562,7 @@ units = {
 			name_order = 1
 		}
 		location = 9947
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -574,7 +572,7 @@ units = {
 			name_order = 1
 		}
 		location = 9947
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -584,7 +582,7 @@ units = {
 			name_order = 1
 		}
 		location = 1064
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -594,7 +592,7 @@ units = {
 			name_order = 1
 		}
 		location = 1064
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -604,7 +602,7 @@ units = {
 			name_order = 1
 		}
 		location = 1064
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -614,7 +612,7 @@ units = {
 			name_order = 1
 		}
 		location = 4913
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -624,7 +622,7 @@ units = {
 			name_order = 1
 		}
 		location = 3967
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -634,7 +632,7 @@ units = {
 			name_order = 1
 		}
 		location = 1151
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -644,7 +642,7 @@ units = {
 			name_order = 1
 		}
 		location = 10028
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -654,7 +652,7 @@ units = {
 			name_order = 1
 		}
 		location = 7030
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -664,7 +662,7 @@ units = {
 			name_order = 1
 		}
 		location = 10403
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -674,7 +672,7 @@ units = {
 			name_order = 1
 		}
 		location = 10403
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -684,7 +682,7 @@ units = {
 			name_order = 1
 		}
 		location = 7188
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -694,7 +692,7 @@ units = {
 			name_order = 1
 		}
 		location = 7188
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -704,7 +702,7 @@ units = {
 			name_order = 1
 		}
 		location = 4143
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -714,7 +712,7 @@ units = {
 			name_order = 1
 		}
 		location = 4143
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -724,7 +722,7 @@ units = {
 			name_order = 1
 		}
 		location = 12004
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -734,7 +732,7 @@ units = {
 			name_order = 1
 		}
 		location = 12004
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -744,7 +742,7 @@ units = {
 			name_order = 1
 		}
 		location = 7011
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -754,7 +752,7 @@ units = {
 			name_order = 1
 		}
 		location = 7011
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -764,7 +762,7 @@ units = {
 			name_order = 1
 		}
 		location = 12016
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -774,7 +772,7 @@ units = {
 			name_order = 1
 		}
 		location = 10073
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -784,7 +782,7 @@ units = {
 			name_order = 1
 		}
 		location = 10073
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -794,7 +792,7 @@ units = {
 			name_order = 1
 		}
 		location = 928
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -804,7 +802,7 @@ units = {
 			name_order = 1
 		}
 		location = 928
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -814,7 +812,7 @@ units = {
 			name_order = 1
 		}
 		location = 7091
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -824,7 +822,7 @@ units = {
 			name_order = 1
 		}
 		location = 7091
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -834,7 +832,7 @@ units = {
 			name_order = 1
 		}
 		location = 4076
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -844,7 +842,7 @@ units = {
 			name_order = 1
 		}
 		location = 4076
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -854,7 +852,7 @@ units = {
 			name_order = 1
 		}
 		location = 12013
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -864,7 +862,7 @@ units = {
 			name_order = 1
 		}
 		location = 12013
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -874,7 +872,7 @@ units = {
 			name_order = 1
 		}
 		location = 11839
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -884,7 +882,7 @@ units = {
 			name_order = 1
 		}
 		location = 12836
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -894,7 +892,7 @@ units = {
 			name_order = 1
 		}
 		location = 11897
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -904,7 +902,7 @@ units = {
 			name_order = 1
 		}
 		location = 2062
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -914,7 +912,7 @@ units = {
 			name_order = 1
 		}
 		location = 8090
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -924,7 +922,7 @@ units = {
 			name_order = 1
 		}
 		location = 12796
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -934,7 +932,7 @@ units = {
 			name_order = 1
 		}
 		location = 6977
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -944,7 +942,7 @@ units = {
 			name_order = 1
 		}
 		location = 12409
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}
@@ -954,7 +952,7 @@ units = {
 			name_order = 1
 		}
 		location = 12806
-		division_template = "Use These all over Africa (especially Egypt), 20w pure inf with shovels is not enough to hold you numbskulls"
+		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.10
 	}

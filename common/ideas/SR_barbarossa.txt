@@ -21,6 +21,7 @@ ideas = {
 				army_org_Factor = -0.38
 				army_attack_factor = -0.076
 				army_defence_factor = -0.076
+				max_dig_in = -3.8
 				#army_morale_factor = -0.39
 			}
 			equipment_bonus = {
@@ -65,6 +66,7 @@ ideas = {
 				army_org_Factor = -0.36
 				army_attack_factor = -0.072
 				army_defence_factor = -0.072
+				max_dig_in = -3.6
 				#army_morale_factor = -0.36
 			}
 			equipment_bonus = {
@@ -111,6 +113,7 @@ ideas = {
 				army_org_Factor = -0.34
 				army_attack_factor = -0.068
 				army_defence_factor = -0.068
+				max_dig_in = -3.4
 				#army_morale_factor = -0.33
 			}
 			equipment_bonus = {
@@ -157,6 +160,7 @@ ideas = {
 				army_org_Factor = -0.32
 				army_attack_factor = -0.064
 				army_defence_factor = -0.064
+				max_dig_in = -3.2
 				#army_morale_factor = -0.30
 			}
 			equipment_bonus = {
@@ -203,6 +207,7 @@ ideas = {
 				army_org_Factor = -0.30
 				army_attack_factor = -0.060
 				army_defence_factor = -0.060
+				max_dig_in = -3.0
 				#army_morale_factor = -0.30
 			}
 			equipment_bonus = {
@@ -249,6 +254,7 @@ ideas = {
 				army_org_Factor = -0.28
 				army_attack_factor = -0.056
 				army_defence_factor = -0.056
+				max_dig_in = -2.8
 				#army_morale_factor = -0.27
 			}
 			equipment_bonus = {
@@ -295,6 +301,7 @@ ideas = {
 				army_org_Factor = -0.26
 				army_attack_factor = -0.052
 				army_defence_factor = -0.052
+				max_dig_in = -2.6
 				#army_morale_factor = -0.24
 			}
 			equipment_bonus = {
@@ -341,6 +348,7 @@ ideas = {
 				army_org_Factor = -0.24
 				army_attack_factor = -0.048
 				army_defence_factor = -0.048
+				max_dig_in = -2.4
 				#army_morale_factor = -0.21
 			}
 			equipment_bonus = {
@@ -387,6 +395,7 @@ ideas = {
 				army_org_Factor = -0.22
 				army_attack_factor = -0.044
 				army_defence_factor = -0.044
+				max_dig_in = -2.2
 				#army_morale_factor = -0.18
 			}
 			equipment_bonus = {
@@ -432,6 +441,7 @@ ideas = {
 				army_org_Factor = -0.20
 				army_attack_factor = -0.040
 				army_defence_factor = -0.040
+				max_dig_in = -2.0
 				#army_morale_factor = -0.15
 			}
 			equipment_bonus = {
@@ -477,6 +487,7 @@ ideas = {
 				army_org_Factor = -0.18
 				army_attack_factor = -0.036
 				army_defence_factor = -0.036
+				max_dig_in = -1.8
 				#army_morale_factor = -0.12
 			}
 			equipment_bonus = {
@@ -522,6 +533,7 @@ ideas = {
 				army_org_Factor = -0.16
 				army_attack_factor = -0.032
 				army_defence_factor = -0.032
+				max_dig_in = -1.6
 				#army_morale_factor = -0.09
 			}
 			equipment_bonus = {
@@ -567,6 +579,7 @@ ideas = {
 				army_org_Factor = -0.14
 				army_attack_factor = -0.028
 				army_defence_factor = -0.028
+				max_dig_in = -1.4
 				#army_morale_factor = -0.06
 			}
 			equipment_bonus = {
@@ -612,6 +625,7 @@ ideas = {
 				army_org_Factor = -0.12
 				army_attack_factor = -0.024
 				army_defence_factor = -0.024
+				max_dig_in = -1.2
 				#army_morale_factor = -0.03
 			}
 			equipment_bonus = {
@@ -657,6 +671,7 @@ ideas = {
 				army_org_Factor = -0.10
 				army_attack_factor = -0.020
 				army_defence_factor = -0.020
+				max_dig_in = -1.0
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -703,6 +718,7 @@ ideas = {
 				army_org_Factor = -0.08
 				army_attack_factor = -0.016
 				army_defence_factor = -0.016
+				max_dig_in = -0.8
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -749,6 +765,7 @@ ideas = {
 				army_org_Factor = -0.06
 				army_attack_factor = -0.012
 				army_defence_factor = -0.012
+				max_dig_in = -0.6
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -795,6 +812,7 @@ ideas = {
 				army_org_Factor = -0.04
 				army_attack_factor = -0.008
 				army_defence_factor = -0.008
+				max_dig_in = -0.4
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -841,6 +859,7 @@ ideas = {
 				army_org_Factor = -0.02
 				army_attack_factor = -0.004
 				army_defence_factor = -0.004
+				max_dig_in = -0.2
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -887,6 +906,7 @@ ideas = {
 				army_org_Factor = -0.00
 				army_attack_factor = -0.000
 				army_defence_factor = -0.000
+				max_dig_in = -0.0
 				#army_morale_factor = -0.00
 			}
 			equipment_bonus = {
@@ -933,6 +953,7 @@ ideas = {
 				army_org_Factor = 0.00
 				army_attack_factor = 0.000
 				army_defence_factor = 0.000
+				max_dig_in = 0.0
 				#army_morale_factor = 0.00
 			}
 		}

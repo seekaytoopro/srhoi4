@@ -73,7 +73,7 @@ weather_mud = { # on Province
 }
 mud_simulator = { 
 	army_speed_factor = -0.2
-	army_armor_speed_factor = -0.3	
+	army_armor_speed_factor = -0.15	
 	army_attack_factor = -0.2
 	breakthrough_factor = -0.3
 	attrition = 0.10		
@@ -346,9 +346,9 @@ water_modifier_shark_infested = {
 }
 
 screening_bonus = { 
-	naval_retreat_speed = 0.125
-  	naval_hit_chance = 1.500 #0.825
-  	naval_defense_factor = 0.200 #1.000
+	naval_retreat_speed = 0.4
+  	naval_hit_chance = 1.250 #0.825
+  	naval_defense_factor = 0.400 #1.000
 }
 
 capital_screening_bonus = { 

@@ -3090,6 +3090,7 @@ SPR = { country_event = spain.29 }
 				icon = GFX_focus_ger_reichskommisariats
 				available = {
 					NOT = { has_idea = GER_fall_blau }
+					NOT = { has_idea = GER_operation_citadel }
 					Date > 1940.6.1
 					count_triggers={
 						amount=3
@@ -3416,6 +3417,7 @@ SPR = { country_event = spain.29 }
 					icon = GFX_focus_ger_reichskommisariats
 					available = {
 						Date > 1942.5.1
+						Date < 1942.10.1
 						NOT={has_idea=GER_barbarossa}
 						NOT={has_idea= GER_ardennenoffensive }
 					}
@@ -3439,6 +3441,43 @@ SPR = { country_event = spain.29 }
 							#FIN = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
 							ITA = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 70 }}}
+							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_fall_blau days = 70 }}}
+						}
+					}
+				}
+
+				focus = {
+					id = GER_operation_citadel
+			
+					prerequisite = { focus = GER_fall_blau }
+					icon = GFX_focus_ger_reichskommisariats
+					available = {
+						Date > 1943.5.1
+						NOT={has_idea=GER_barbarossa }
+						NOT={has_idea= GER_ardennenoffensive }
+						NOT={has_idea = GER_fall_blau}
+					}
+					relative_position_id = GER_fall_blau
+					x = 0
+					y = 1
+			
+					cost = 1
+					ai_will_do = {
+						factor = 1
+					}
+			
+					available_if_capitulated = no
+					completion_reward = {
+			
+						GER = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}
+						hidden_effect={  
+							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
+							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
+							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
+							#FIN = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
+							ITA = {add_timed_idea = { idea = GER_fall_blau days = 65 }}
+							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
+							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
 						}
 					}
 			

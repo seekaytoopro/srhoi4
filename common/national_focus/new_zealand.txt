@@ -570,26 +570,28 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = nav_bomber_equipment_1
-				amount = 100
-				producer = ENG
-			}
-			if = {
-				limit = {
-					ENG = { has_tech = tactical_bomber1 }
-				}
+			ENG = { 
 				add_equipment_to_stockpile = {
-					type = tac_bomber_equipment_1
+					type = nav_bomber_equipment_1
 					amount = 100
 					producer = ENG
 				}
-				else = {
+				if = {
+					limit = {
+						ENG = { has_tech = tactical_bomber1 }
+					}
 					add_equipment_to_stockpile = {
-						type = tac_bomber_equipment_0
+						type = tac_bomber_equipment_1
 						amount = 100
 						producer = ENG
-					}	
+					}
+					else = {
+						add_equipment_to_stockpile = {
+							type = tac_bomber_equipment_0
+							amount = 100
+							producer = ENG
+						}	
+					}
 				}
 			}
 		}

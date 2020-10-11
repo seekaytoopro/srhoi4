@@ -3,14 +3,7 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
-oob = "FRF_1936"
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FRA_1936_naval_mtg"
-	else = {
-		set_naval_oob = "FRA_1936_naval_legacy"
-	}
-}
+
 set_research_slots = 5
 
 set_stability = 0.5
@@ -24,6 +17,11 @@ add_to_tech_sharing_group = commonwealth_research
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
 	tech_engineers = 1
 	tech_support = 1
 	armored_car1 = 1
@@ -31,8 +29,14 @@ set_technology = {
 	tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
+	interwar_artillery = 1
+	artillery1 = 1
 	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
 	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
 	gwtank = 1
 	basic_light_tank = 1
 	basic_heavy_tank = 1
@@ -45,10 +49,25 @@ set_technology = {
 	early_bomber = 1
 	tactical_bomber1 = 1
 	CAS1 = 1
-	trench_warfare = 1
+	# trench_warfare = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
+	concentrated_industry = 1
+	concentrated_industry2 = 1
+	concentrated_industry3 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	dispersed_industry3 = 1
+	construction1 = 1
+	construction2 = 1
+	construction3 = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	excavation1 = 1
+	excavation2 = 1
+	excavation3 = 1
 }
 
 # Starting tech
@@ -69,9 +88,6 @@ if = {
 		early_carrier = 1
 		transport = 1
 		synth_oil_experiments = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
 	}
 }
 if = {
@@ -95,9 +111,6 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 		synth_oil_experiments = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
 	}
 }
 
@@ -124,6 +137,7 @@ add_ideas = {
 	limited_conscription
 	war_economy
 	export_focus
+	renault_frf
 }
 
 #Order matters here Daladier will start as leaders because added last
@@ -157,10 +171,10 @@ create_country_leader = {
 		picture = "Portrait_France_Alphonse_Juin.dds"
 		traits = {infantry_leader trait_reckless war_hero old_guard politically_connected career_officer skilled_staffer inflexible_strategist defensive_doctrine}
 		skill = 5
-		attack_skill = 4
+		attack_skill = 3
 		defense_skill = 6
-		planning_skill = 4
-		logistics_skill = 4
+		planning_skill = 3
+		logistics_skill = 5
 	}
 
 	create_field_marshal = {
@@ -168,10 +182,10 @@ create_country_leader = {
 		picture = "Portrait_France_Charles_De_Gaulle.dds"
 		traits = {  armor_officer harsh_leader media_personality trait_reckless panzer_leader trickster desert_fox}
 		# id = 101
-		skill = 6
+		skill = 5
 		attack_skill = 6
-		defense_skill = 6
-		planning_skill = 4
+		defense_skill = 5
+		planning_skill = 3
 		logistics_skill = 5
 	}
 
@@ -179,11 +193,11 @@ create_country_leader = {
 		name = "Philippe Leclerc"
 		picture = "portrait_france_philippe_leclerc.dds"
 		traits = {infantry_leader desert_fox armor_officer trait_reckless old_guard inflexible_strategist trickster}
-		skill = 4
+		skill = 5
 		attack_skill = 6
 		defense_skill = 6
-		planning_skill = 2
-		logistics_skill = 2
+		planning_skill = 4
+		logistics_skill = 5
 	}
 
 	create_navy_leader = {

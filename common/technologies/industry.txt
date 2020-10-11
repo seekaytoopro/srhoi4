@@ -214,9 +214,9 @@ technologies = {
 	
 		equipment_conversion_speed = 0.40
 
-		allow_branch = {
-			has_dlc = "Death or Dishonor"
-		}
+		# allow_branch = {
+		# 	has_dlc = "Death or Dishonor"
+		# }
 
 		path = {
 			leads_to_tech = advanced_equipment_conversion

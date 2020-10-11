@@ -62,7 +62,7 @@ focus_tree = {
 		relative_position_id = SOV_great_purge
 		prerequisite = { focus = SOV_great_purge }
 
-		cost = 1
+		cost = 1.5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -98,7 +98,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 5
+		cost = 7.2
 		ai_will_do = {
 			factor = 1
 		}	

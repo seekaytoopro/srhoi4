@@ -90,7 +90,8 @@ foreign_politics = {
 		cost = 0
 		fire_only_once = yes				
 		available = { 	
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			country_exists = FRF
 			surrender_progress < 0.01
 			has_manpower > 410400
 			#date > 1938.1.1
@@ -396,7 +397,7 @@ foreign_politics = {
 		available = {
 		AND = {
 			date>1939.1.1   
-		FRA = { is_ai = yes }
+		FRF = { is_ai = yes }
 		SAF = { is_ai = yes }
 		}
 		}
@@ -422,7 +423,7 @@ foreign_politics = {
 					transfer_troops = yes 
 				}	
 			}
-			FRA = { 
+			FRF = { 
 					give_resource_rights = { receiver = ENG state = 556 }
 					give_resource_rights = { receiver = ENG state = 543 }
 					give_resource_rights = { receiver = ENG state = 635 }
@@ -576,7 +577,8 @@ foreign_politics = {
 
         available = {
 			OR = {
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			country_exists = FRF
 			date>1940.7.1
 			}
 			}
@@ -793,9 +795,13 @@ political_actions = {
 
 		available = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-			FRA = {
+			OR = {
+				FRA = {
 				surrender_progress > 0.2
+				}
+				country_exists = FRF
 			}
+			
 		}
 
 		cost = 50
@@ -834,7 +840,8 @@ political_actions = {
 
 		available = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-			FRA = { has_capitulated = yes }
+			# FRA = { has_capitulated = yes }
+			country_exists = FRF
 		}
 
 		cost = 50
