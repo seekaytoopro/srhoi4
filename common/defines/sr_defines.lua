@@ -17,7 +17,7 @@ NDefines.NCountry.ATTACHE_XP_SHARE = 0.00
 
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
-
+NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
@@ -172,11 +172,15 @@ NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 ---------------------------------------------------------------
 --HORST/SR AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
 ---------------------------------------------------------------
-NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1.00   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.50   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
 ---------------------------------------------------------------
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 200						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 ---------------------------------------------------------------
-NDefines.NAir.AIR_WING_MAX_SIZE = 3200                               -- this can be halved 3 times into 100 stacks (very convenient)
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.045 -- original 0.05 air supply?
+NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01
+
+
+NDefines.NAir.AIR_WING_MAX_SIZE = 3200                               -- this can be halved 6 times into 100 stacks (very convenient)
 NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.001			-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.06						-- WAS 0.03 | How much the experinence gained by paradropping is scaled
@@ -201,7 +205,6 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = { 						 -- command power cost per p
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- MISSION_RECON
 	}
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.05       -- WAS 0.025 | Changed due to plane count changes
 NDefines.NAir.NAVAL_STRIKE_BASE_STR_TO_PLANES_RATIO  = 0.03       -- WAS 0.015 | Changed due to plane count changes
 
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 999.0 -- Can no longer use ground crews, to help strat region balance
@@ -427,15 +430,15 @@ NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carr
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 7.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.3		-- Max planes that can join a combat comparing to the total strength of the ships
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.9 -- max extra plane % that can join every day
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 50			-- Min cap for planes that can join naval combat
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.01 -- (0.2 -> 0.01) -- SilentLegion#1356, MTG 
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.8 -- (0.2 -> 0.75) -- SilentLegion#1356, MTG 
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.07 -- (0.15 -> 0.04) -- These ones are a bit harder to explain but in essence it makes ship aa much more important and fleet aa less important. Low aa takes more damage and higher takes less, here's a spreadsheet to make it clearer what it does (should be editable so you can test some values yourself) -- SilentLegion#1356, MTG  https://docs.google.com/spreadsheets/d/1gILOpO6VzPlscVmSTEeHuEPUKPh2Y2_bQ2ky67gxUmI/edit?usp=sharing
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.7 -- (0.5 -> 0.75) -- SilentLegion#1356, MTG 
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.05					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 4.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.875					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 6.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 
 	-- DEFINES STOLEN FROM GDU
 	--- Naval Defines Related to USW and ASW 

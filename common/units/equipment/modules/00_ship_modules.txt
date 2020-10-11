@@ -1763,7 +1763,7 @@ equipment_modules = {
 	
 			add_equipment_type = capital_ship
 			add_stats = {
-				carrier_size = 10
+				carrier_size = 5
 				build_cost_ic = 800
 			}
 			manpower = 500 #outside the add_stats section for code reasons

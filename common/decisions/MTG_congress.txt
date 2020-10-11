@@ -13,7 +13,7 @@ USA_depresi_mission = {
 		NOT = { country_exists = USA }
 		}
 
-		days_mission_timeout = 210
+		days_mission_timeout = 280
 		#days_remove = 1
 
 		activation = {
@@ -44,7 +44,7 @@ USA = { country_event = { id = usa.995  }	}		}
 		NOT = { country_exists = USA }
 		}
 
-		days_mission_timeout = 210
+		days_mission_timeout = 280
 		#days_remove = 1
 
 		activation = {

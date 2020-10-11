@@ -346,6 +346,7 @@ country_event = {
 					ENG = { add_to_faction = FRF }
 					GER = { declare_war_on = { target = FRF type = annex_everything } }
 					FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 }
+					FRF = { army_experience = 475 }
 				}
 				#### Stuff to replace the old France (FRA) with a brand new Free France (FRF) country ####
 

@@ -37,7 +37,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 49.5
+		build_cost_ic = 99
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -78,7 +78,7 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 6
 		
-		build_cost_ic = 67.5
+		build_cost_ic = 135
 		resources = {
 			aluminium = 4
 
@@ -107,7 +107,7 @@ equipments = {
 		interface_overview_category_index = 3
 		
 		upgrades = {
-			plane_gun_upgrade
+			# plane_gun_upgrade
 			plane_range_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
@@ -121,7 +121,7 @@ equipments = {
 		naval_strike_attack = 5
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 39.3
+		build_cost_ic = 78.6
 		resources = {
 			#oil = 1			
 			aluminium = 2
@@ -144,7 +144,7 @@ equipments = {
 		maximum_speed = 2500
 		air_agility = 8
 		air_attack = 0.5
-		air_defence = 1.900
+		air_defence = 1.875
 		air_bombing = 15
 		air_ground_attack = 3
 		
@@ -165,11 +165,11 @@ equipments = {
 		maximum_speed = 4300
 		air_agility = 10
 		air_attack = 1.5
-		air_defence = 3.880
+		air_defence = 3.83
 		air_bombing = 18
 		air_ground_attack = 8
 		
-		build_cost_ic = 54
+		build_cost_ic = 108
 		resources = {
 			#oil = 1
 			aluminium = 3
@@ -191,11 +191,11 @@ equipments = {
 		maximum_speed = 4400
 		air_agility = 12.5
 		air_attack = 4.5
-		air_defence = 4.0375
+		air_defence = 3.98
 		air_bombing = 21
 		air_ground_attack = 14
 		
-		build_cost_ic = 58.5
+		build_cost_ic = 117
 		resources = {
 			#oil = 1
 			aluminium = 4
@@ -217,11 +217,11 @@ equipments = {
 		maximum_speed = 4800
 		air_agility = 15
 		air_attack = 5.5
-		air_defence = 5.5417
+		air_defence = 5.47
 		air_bombing = 24
 		air_ground_attack = 18
 		
-		build_cost_ic = 63
+		build_cost_ic = 126
 		resources = {
 			#oil = 1
 			aluminium = 4
@@ -242,11 +242,11 @@ equipments = {
 		maximum_speed = 8200
 		air_agility = 28.5
 		air_attack = 6
-		air_defence = 6.0960
+		air_defence = 6.02
 		air_bombing = 24
 		air_ground_attack = 15
 		
-		# build_cost_ic = 26
+		# build_cost_ic = 104
 	}
 
 	# Improved Jet tac_bomber
@@ -261,11 +261,11 @@ equipments = {
 		maximum_speed = 8750
 		air_agility = 28.5
 		air_attack = 7.5
-		air_defence = 7.48125
+		air_defence = 7.38
 		air_bombing = 30
 		air_ground_attack = 20
 		
-		build_cost_ic = 72
+		build_cost_ic = 144
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -305,7 +305,7 @@ equipments = {
 		air_defence = 15
 		air_ground_attack = 8
 		
-		build_cost_ic = 42.6
+		build_cost_ic = 85.2
 		resources = {
 			#oil = 1			
 			aluminium = 3
@@ -329,7 +329,7 @@ equipments = {
 		air_defence = 18
 		air_ground_attack = 12
 		
-		build_cost_ic = 45.9
+		build_cost_ic = 91.8
 		resources = {
 			#oil = 1			
 			aluminium = 4
@@ -407,7 +407,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 15
 
-		build_cost_ic = 20
+		build_cost_ic = 60
 		resources = {		
 			aluminium = 3
 			rubber = 1

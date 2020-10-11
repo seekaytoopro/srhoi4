@@ -1724,20 +1724,6 @@ ideas = {
 
 			traits = { medium_tank_manufacturer }
 		}
-		FRF_panhard = {
-			
-
-			available = {
-				
-			}
-						
-			research_bonus = {
-				armor = 0.15
-			}
-			
-
-			traits = { armored_car_manufacturer }
-		}
 	}
 	
 	materiel_manufacturer = {
