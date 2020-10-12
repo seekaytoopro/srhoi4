@@ -85,7 +85,7 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.20
-				production_factory_efficiency_gain_factor = -0.25		
+				production_factory_efficiency_gain_factor = -0.4
 			}
 			
 		}
@@ -226,6 +226,7 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.15
+					production_factory_efficiency_gain_factor = 0.6
 			}
 		}
 	
@@ -327,7 +328,7 @@ ideas = {
 			picture = generic_production_bonus
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = -0.15
 				production_speed_arms_factory_factor = 0.10
 			}
 		}
@@ -500,8 +501,8 @@ ideas = {
 			}
 
 			modifier = {
-				global_building_slots_factor = 0.10
-				production_speed_arms_factory_factor = 0.05
+				global_building_slots_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
 				conversion_cost_civ_to_mil_factor= -0.2
 			}
 			
@@ -548,7 +549,7 @@ ideas = {
 			}
 			
 			modifier = {
-				consumer_goods_factor = -0.10
+				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.20

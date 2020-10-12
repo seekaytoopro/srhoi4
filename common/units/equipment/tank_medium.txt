@@ -27,7 +27,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 11.84
-		breakthrough = 38
+		breakthrough = 44
 		hardness = 0.9
 		armor_value = 65
 
@@ -74,7 +74,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 16.26
-		breakthrough = 51
+		breakthrough = 59
 		armor_value = 75
 
 		#Offensive Abilities
@@ -106,7 +106,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 20.58
-		breakthrough = 66
+		breakthrough = 68
 		armor_value = 110
 
 		#Offensive Abilities
@@ -140,15 +140,12 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
+	
 		}
 				
 		#Misc Abilities
-		maximum_speed = 7
-		reliability = 0.8
+		maximum_speed = 8
+		reliability = 0.96
 
 		#Defensive Abilities
 		defense = 13.26
@@ -157,7 +154,7 @@ equipments = {
 		armor_value = 50
 
 		#Offensive Abilities
-		soft_attack = 55
+		soft_attack = 63.25
 		hard_attack = 1
 		ap_attack = 5
 		air_attack = 0
@@ -198,7 +195,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 7
+		maximum_speed = 8.5
 
 		#Defensive Abilities
 		defense = 16.28
@@ -206,7 +203,7 @@ equipments = {
 		armor_value = 60
 
 		#Offensive Abilities
-		soft_attack = 70.8
+		soft_attack = 81
 		hard_attack = 1.5
 		
 		build_cost_ic = 19
@@ -232,7 +229,7 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 8
+		maximum_speed = 10
 
 		#Defensive Abilities
 		defense = 19.18
@@ -268,25 +265,22 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
+			
 		}
 		
 		#Misc Abilities
-		maximum_speed = 7
-		reliability = 0.8
+		maximum_speed = 8
+		reliability = 0.96
 
 		#Defensive Abilities
-		defense = 11.84
-		breakthrough = 12.67
+		defense = 14.8
+		breakthrough = 15.204
 		hardness = 0.9
 		armor_value = 65
 
 		#Offensive Abilities
-		soft_attack = 3.2
-		hard_attack = 30
+		soft_attack = 4.8
+		hard_attack = 45
 		ap_attack = 60
 		air_attack = 0
 		
@@ -328,16 +322,16 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 7
+		maximum_speed = 8.5
 
 		#Defensive Abilities
-		defense = 14.46
-		breakthrough = 17
+		defense = 18.075
+		breakthrough = 20.4
 		armor_value = 100
 
 		#Offensive Abilities
 		soft_attack = 4.2
-		hard_attack = 38.75
+		hard_attack = 58.125
 		ap_attack = 83
 		
 		build_cost_ic = 19
@@ -364,16 +358,16 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 8
+		maximum_speed = 10
 
 		#Defensive Abilities
-		defense = 16.98
-		breakthrough = 22
+		defense = 21.225
+		breakthrough = 26.4
 		armor_value = 110
 
 		#Offensive Abilities
 		soft_attack = 5.4
-		hard_attack = 47.5
+		hard_attack = 71.25
 		ap_attack = 110
 		
 		build_cost_ic = 20
@@ -402,15 +396,12 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
+			
 		}
 		
 		#Misc Abilities
-		maximum_speed = 7
-		reliability = 0.8
+		maximum_speed = 8
+		reliability = 0.96
 
 		#Defensive Abilities
 		defense = 23.24
@@ -422,7 +413,7 @@ equipments = {
 		soft_attack = 13.5
 		hard_attack = 7.8
 		ap_attack = 40
-		air_attack = 36
+		air_attack = 45
 
 		build_cost_ic = 18
 		
@@ -462,7 +453,7 @@ equipments = {
 
 		
 		#Misc Abilities
-		maximum_speed = 7
+		maximum_speed = 8.5
 		
 		#Defensive Abilities
 		defense = 29.08
@@ -473,7 +464,7 @@ equipments = {
 		soft_attack = 18
 		hard_attack = 13
 		ap_attack = 60
-		air_attack = 54
+		air_attack = 67.5
 		
 		build_cost_ic = 19
 		
@@ -509,7 +500,7 @@ equipments = {
 		soft_attack = 22.5
 		hard_attack = 18
 		ap_attack = 80
-		air_attack = 70
+		air_attack = 87.5
 		
 		build_cost_ic = 20
 

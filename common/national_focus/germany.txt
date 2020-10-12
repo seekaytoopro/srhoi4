@@ -1090,7 +1090,7 @@ hidden_effect = {
 				#has_ideas = speer
 			}
 			completion_reward = {
-				add_ideas = tot_economic_mobilisation
+
 				add_ideas = GER_armaments_miracle
 				random_owned_controlled_state = {
 					limit = {
@@ -1101,10 +1101,10 @@ hidden_effect = {
 						}
 						is_core_of = GER
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1117,10 +1117,10 @@ hidden_effect = {
 						}
 						is_core_of = GER
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1133,10 +1133,10 @@ hidden_effect = {
 						}
 						is_core_of = GER
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1149,10 +1149,10 @@ hidden_effect = {
 						}
 						is_core_of = GER
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 				}
@@ -1239,8 +1239,9 @@ hidden_effect = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
+				ahead_reduction = 3.0
 				uses = 1
-				category = tactical_bomber
+				
 				category = cas_bomber			
 			}
 		}
@@ -1319,10 +1320,10 @@ hidden_effect = {
 			}
 				add_tech_bonus = {
 				name = bomber_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				category = tactical_bomber
-				category = cas_bomber			
+						
 			}
 		}
 	}
@@ -1931,13 +1932,20 @@ hidden_effect = {
 		x = 0
 		y = 1
 		relative_position_id = GER_end_of_czechoslovakia
+		
 		cost = 4
 		ai_will_do = {
 			factor = 10	
 
 		}	
 		completion_reward = {
+		custom_effect_tooltip = available_theorist 
+			show_ideas_tooltip = speer`		
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			add_political_power = 150
+			
+			`
+			
 				
 				
 					GER = {
@@ -1994,7 +2002,8 @@ POL = {
 		}
 		
 SPR = { country_event = spain.29 }
-		}	
+		}
+			
 		}
 	}
 	
@@ -2768,41 +2777,21 @@ SPR = { country_event = spain.29 }
 		prerequisite = { focus = GER_rhineland }
 		available = {
 		
-			date > 1942.1.1				
-			GER = { NOT ={
-			controls_state = 188
-				controls_state = 5
-					controls_state = 67
-						controls_state = 66
-							controls_state = 68
-								controls_state = 75
-									controls_state = 51
-			}}
-		FRA = { 	controls_state = 16  }
-		BEL = { controls_state = 6 }
-		HOL = { controls_state = 7 }
-		}
+			date > 1942.6.1		
+}			
 		
 		x = -3
 		y = 1
 		relative_position_id = GER_rhineland
+		
 		cost = 1
 		
 	completion_reward = {
-	add_ideas = tot_economic_mobilisation
-	add_ideas = all_adults_serve
-	add_ideas = closed_economy
+
+	
+
 	add_ideas = the_great_turn
-				create_field_marshal = {
-				name = "Heinrich Himmler"
-				picture = "Portrait_Germany_Heinrich_Himmler.dds"
-				traits = { politically_connected }
-				skill = 1
-				attack_skill = 1
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 1
-			}
+		
 	
 	}	
 	}
@@ -3289,8 +3278,8 @@ SPR = { country_event = spain.29 }
 					completion_reward = {
 						add_war_support = 0.05
 						SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
-						custom_effect_tooltip = available_theorist
-						show_ideas_tooltip = speer
+					
+						
 						}
 					}
 			

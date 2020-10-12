@@ -1283,7 +1283,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 	outcome_execute = {
 		ROOT = {
 			steal_random_tech_bonus = {
-				folder = electronics_folder
+				
 				folder = industry_folder
 				bonus = 1.50
 				name = operation_steal_tech_civilian
@@ -1299,7 +1299,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 	outcome_extra_execute = { # SCOPE_OPERATION
 				ROOT = {
 					steal_random_tech_bonus = {
-						folder = electronics_folder
+						
 						folder = industry_folder
 						bonus = 1.50
 						name = operation_steal_tech_civilian
@@ -1312,7 +1312,7 @@ operation_steal_tech_civilian = { ### 12 3/35
 	outcome_potential = {
 		ROOT = {
 			steal_random_tech_bonus = {
-				folder = electronics_folder
+				
 				folder = industry_folder
 				bonus = 1.50
 				name = operation_steal_tech_civilian

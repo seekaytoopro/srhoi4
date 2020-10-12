@@ -93,7 +93,13 @@ focus_tree = {
 		id = SOV_the_germans_invade
 		icon = GFX_focus_generic_combined_arms
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		available = {  has_war_with = GER }
+		available = {
+			OR = {
+				has_war_with = GER
+				ENG = { surrender_progress > 0.15 }
+				USA = { surrender_progress > 0.15 }
+			}
+		}
 
 		x = 0
 		y = 2

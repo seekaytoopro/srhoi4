@@ -1145,6 +1145,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_armor = {
 			breakthrough = 0.10
+			max_organisation = 7
 		}
 		
 		
@@ -1233,8 +1234,11 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		category_all_armor = {
-			hard_attack = 0.10
-			soft_attack = 0.10
+			hard_attack = 0.15
+			soft_attack = 0.15
+			max_organisation = 3
+			default_morale = 0.05
+			
 		}
 		
 		enable_tactic = tactic_breakthrough
