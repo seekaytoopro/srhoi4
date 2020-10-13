@@ -134,7 +134,7 @@ set_stability = 0.5
 		expire = "1965.1.1"
 		ideology = falangism
 		traits = {
-			sins_of_the_father
+			# sins_of_the_father
 		}
 	}
 	create_country_leader = {

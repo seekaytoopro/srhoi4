@@ -82,13 +82,46 @@ foreign_politics = {
 				puppet = ITA 
 				set_autonomy = {
     				target = ITA
-    				autonomy_state = autonomy_satellite
+    				autonomy_state = autonomy_reichsprotectorate
 				}
 				if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
 				# add_relation_modifier = {
     			# 	target = ITA
     			# 	modifier = stahlpakt
 				# }
+			}
+			hidden_effect = {
+				add_relation_modifier = {
+					target = GER
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = ROM
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = SPR
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = HUN
+					modifier = stahlpakt
+				}
+				add_relation_modifier = {
+					target = BUL
+					modifier = stahlpakt
+				}
+				if = { limit = { country_exists = CRO }
+					add_relation_modifier = {
+						target = CRO
+						modifier = stahlpakt
+					}
+				}
+				add_opinion_modifier = {
+					target = GER
+					modifier = german_trade_monopoly
+				}
+				
 			}
 		}
 		timeout_effect = { }
