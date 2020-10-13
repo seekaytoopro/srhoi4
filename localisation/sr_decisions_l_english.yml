@@ -61,4 +61,7 @@
  GDU_Soviet_Single_Deployment_decision_desc:0 "This is Done over 3 Days to Prevent Lag"
  GDU_Soviet_Double_Deployment_decision:0 "Deploy Two Divisions per Tile"
  GDU_Soviet_Double_Deployment_decision:0 "This is Done over 7 Days to Prevent Lag"
+
+ anti_neutrality_raids:0 "Anti-Neutrality Raids"
+ anti_neutrality_raids_desc:0 "We will initiate censorship and political supression of the non-aligned movement in our nation."
  

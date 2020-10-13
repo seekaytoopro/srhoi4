@@ -1940,11 +1940,9 @@ hidden_effect = {
 		}	
 		completion_reward = {
 		custom_effect_tooltip = available_theorist 
-			show_ideas_tooltip = speer`		
+			show_ideas_tooltip = speer	
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			add_political_power = 150
-			
-			`
 			
 				
 				
