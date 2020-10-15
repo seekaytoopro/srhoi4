@@ -13,13 +13,16 @@ state=
 			infrastructure = 5
 			industrial_complex = 1
 			arms_factory = 1
-			air_base = 2
+			air_base = 8
 		}
 		victory_points = {
 			9716 1 
 		}
 		victory_points = {
-			6706 1 
+			6761 1
+		}
+		victory_points = {
+			6706 5
 		}
 		add_core_of = ROM
 	}

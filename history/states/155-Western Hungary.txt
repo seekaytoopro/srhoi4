@@ -1,32 +1,38 @@
 
 state={
 	id=155
-	name="STATE_155" # Transdanubia
-	manpower = 2287605
-	
-	state_category = city
+	name="STATE_155"
 	resources={
-		oil = 1 # was: 1
-		steel = 11
+		oil=1.000
+		steel=11.000
 	}
+
 	history={
 		owner = HUN
 		victory_points = {
-			11610 5 
+			9676 3 
 		}
 		victory_points = {
-			9676 3 
+			6703 1
+		}
+		victory_points = {
+			686 1
 		}
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 			air_base = 3
+
 		}
 		add_core_of = HUN
+
 	}
 
 	provinces={
-		682 686 701 3670 3680 3683 6685 6703 6720 9624 9643 9676 11610 11627 11663 13125 
+		686 701 3683 6703 6720 9676 11627 11663 13125 
 	}
+	manpower=1387605
+	buildings_max_level_factor=1.000
+	state_category=city
 }

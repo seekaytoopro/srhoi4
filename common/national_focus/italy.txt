@@ -2208,9 +2208,9 @@ date > 1941.6.1
 			ITA = { annex_country = { target = YUG	transfer_troops = no } }
 			ITA = { annex_country = { target = GRE transfer_troops = no } }
 			GER = { transfer_state = 102 }
-			BUL = { transfer_state = 184 transfer_state = 106 }
-			HUN = { transfer_state = 45 }
-			ROM = { transfer_state = 764 } 764 = { add_core_of = ROM }
+			if = { limit = {country_exists = BUL } BUL = { transfer_state = 184 transfer_state = 106 } }
+			if = { limit = {country_exists = HUN } HUN = { transfer_state = 45 } }
+			if = { limit = {country_exists = ROM } ROM = { transfer_state = 764 } 764 = { add_core_of = ROM } }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 }
 				set_province_name = { id = 619 name = "Újvidék" }

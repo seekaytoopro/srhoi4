@@ -204,7 +204,14 @@ GER_case_anton = {
 			HUN = { 
 				is_ai = yes 
 			}
-			date > 1940.5.1
+			OR = {
+				date > 1940.5.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+			
 		}
 			
 		cost = 0
@@ -255,17 +262,17 @@ GER_case_anton = {
 				}
 			}
 			hidden_effect = {
-				GER = { 
-					transfer_state = 155
-					transfer_state = 43
-					transfer_state = 154
-					transfer_state = 664
-					transfer_state = 70
-					transfer_state = 71
-					transfer_state = 73
-					transfer_state = 45
-					transfer_state = 764
-				}
+				# GER = { 
+				# 	transfer_state = 155
+				# 	transfer_state = 43
+				# 	transfer_state = 154
+				# 	transfer_state = 664
+				# 	transfer_state = 70
+				# 	transfer_state = 71
+				# 	transfer_state = 73
+				# 	transfer_state = 45
+				# 	transfer_state = 764
+				# }
 			}
 			every_state = { 
 				limit = { is_core_of = HUN }
