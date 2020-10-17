@@ -513,8 +513,9 @@ ideas = {
 				defense_bonus_against = 0.05
 			}
 			modifier = {
-				# production_speed_air_base_factor=0.20
-				# production_speed_infrastructure_factor=0.20
+				 production_speed_air_base_factor=0.20
+				 production_speed_infrastructure_factor=0.20
+					terrain_penalty_reduction = 0.2
 			}
 			#targeted_modifier = {
 			#tag = GER
@@ -789,8 +790,8 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.01
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 

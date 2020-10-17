@@ -154,7 +154,7 @@ equipments = {
 		family = light_tank_equipment
 		type = { 
 			armor
-			artillery
+			
 		}
 		group_by = archetype
 

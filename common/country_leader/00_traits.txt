@@ -10,6 +10,17 @@ leader_traits = {
 		}
 	}
 	
+	stalin_barb_leader_trait2 = {
+	random = no
+		war_support_factor = 0.3
+		defensive_war_stability_factor = 0.3
+		army_attack_factor = 0.10
+		army_defence_factor =  0.10
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	lion_of_verdun = {
 	random = no
 		experience_gain_army = 0.05

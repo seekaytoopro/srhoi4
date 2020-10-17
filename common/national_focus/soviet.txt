@@ -2800,5 +2800,22 @@ focus = {
 				}
 			}
 			
+			focus = { 
+		id = SOV_man_of_steel
+		icon = GFX_SOV_goal_stalin
+		prerequisite = { focus = SOV_operation_little_saturn}
+		available = { OR = {  date > 1944.3.1 USA = { has_capitulated = yes }   } }
+		x = 0
+		y = 2 
+		relative_position_id = SOV_operation_little_saturn
+		cost = 3
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_country_leader_trait = stalin_barb_leader_trait2
+		}
+		}	
+			
 			
 }

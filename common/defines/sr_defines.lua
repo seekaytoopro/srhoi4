@@ -19,6 +19,8 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bo
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
 
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 			 -- no vet loss when converting templates in the field, levels the playing field vs ppl who don't know how to template edit
+
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
 NDefines.NMilitary.OUT_OF_SUPPLY_ATTRITION = 0.4                -- max attrition when out of supply
@@ -60,7 +62,7 @@ NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.50 -- amphibious landing penalty
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.04 	--air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.04 	--global damage modifier 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.25 --(0.25)
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.20 --(0.25)
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.35 	--effect on defense due to enemy air superiority
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.65 	--more AA attack will approach this amount of help (diminishing returns)
@@ -86,7 +88,7 @@ NDefines.NAir.FUEL_COST_MULT = 0.17 -- (0.35) fuel multiplier for all air missio
 
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.033                    -- basic speed control
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.029                   -- basic speed control
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.025	-- speed penalty per infrastucture below maximum.
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15 -- WAS 0.20, how much org is lost every hour while moving an army. 
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35
@@ -141,12 +143,12 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0.00
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0.00
 NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -- if there are multiple leaders in same combat, each one gets thisratio + (1-thisratio)/num leaders. amount of xp each general gets scales 1 0.75 0.66 etc for 1 2 3 generals
 
-NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.35               -- defender penalty if attacked from multiple directions
+NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.5               -- defender penalty if attacked from multiple directions
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 -- (4) Changed to make micro more responsive
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01 -- Same rate as battleplanning
-NDefines.NMilitary.PLANNING_MAX = 0.2                           	-- can get more from techs
+NDefines.NMilitary.PLANNING_MAX = 0.15                           	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7 -- Number of support companies allowed per division
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 8 -- Number of support companies allowed per division
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
@@ -174,7 +176,7 @@ NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 ---------------------------------------------------------------
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.50   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
 ---------------------------------------------------------------
-NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 80					 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100					 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 ---------------------------------------------------------------
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.045 -- original 0.05 air supply?
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01
@@ -247,11 +249,12 @@ NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.7
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.05 -- vanilla .01		
 
 NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
 NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
 -- NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 -- NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -298,7 +301,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate G
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 0                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0 -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgarias to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 9999999    -- Increased so most nations don't need to queue up multiple lines of infantry or spam 2w infantry and convert 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 99999999    -- Increased so most nations don't need to queue up multiple lines of infantry or spam 2w infantry and convert 
 NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 1.00			-- | Changed to prevent using the scuttle mechanic to tank US warsupport | "Maximum refitting progress % that we still allow to cancel wihtout having to scuttle the ship.
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 300 -- WAS 5 | changed to reduce the number of production lines on navy
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
@@ -502,6 +505,7 @@ NDefines.NAI.RESEARCH_AHEAD_BONUS_FACTOR = 200.0
 NDefines.NAI.MAX_AHEAD_RESEARCH_PENALTY = 12
 NDefines.NAI.DEPLOY_MIN_TRAINING_SURRENDER_FACTOR = 0.01
 NDefines.NAI.DEPLOY_MIN_EQUIPMENT_SURRENDER_FACTOR = 0.2
+
 ---------------------------------------------------------------  
 ---------------------------------------------------------------
 ------HORST RESISTANCE, COMPLIANCE, AND SPY AGENCY CHANGES-------

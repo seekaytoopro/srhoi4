@@ -14,7 +14,7 @@ technologies = {
 		}
 		
 		category_all_armor = {
-			breakthrough = 0.10
+			breakthrough = 0.15
 			#max_strength = 2.00
 		}
 		
@@ -676,15 +676,15 @@ technologies = {
 		}
 
 		category_all_armor = {
-			default_morale = 0.2
-			breakthrough = 0.10
+			default_morale = 0.25
+			breakthrough = 0.15
 		}
 		armored_car = {
 			max_organisation = 3
 			default_morale = 0.2
 			breakthrough = 0.20
 		}
-		air_cas_present_factor = 0.075
+
 		
 		doctrine = yes	
 		research_cost = 4.5
@@ -837,7 +837,7 @@ technologies = {
 		}
 		
 		category_front_line = {
-			 soft_attack = 0.15
+			 soft_attack = 0.2
 		}
 		#supply_consumption_factor = 0.05
 		
@@ -1145,7 +1145,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_armor = {
 			breakthrough = 0.10
-			max_organisation = 7
+			max_organisation = 4
 		}
 		
 		

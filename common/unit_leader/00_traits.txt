@@ -60,7 +60,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			max_dig_in = 2
+			max_dig_in = 1
 			army_defence_factor = 0.025
 		}
 	}
@@ -110,7 +110,6 @@ leader_traits = {
 		
 		modifier = {
 			army_morale_factor = 0.05
-			max_planning = 0.03
 			
 		}
 		new_commander_weight = {
@@ -208,7 +207,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			max_dig_in = 2
+			max_dig_in = 1
 		}
 		
 		defense_skill_factor = 1
@@ -220,7 +219,7 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			recon_factor = 0.15
+			org_loss_when_moving = -.05
 		}		
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
@@ -526,7 +525,7 @@ leader_traits = {
 		
 		cost = 500
 		modifier = {
-			recon_factor = 0.25
+			recon_factor = 0.15
 		}
 		
 		ai_will_do = {
@@ -769,8 +768,8 @@ leader_traits = {
 		type = corps_commander
 		modifier = {
 			forest = {
-				attack = 0.04
-				defence = 0.04
+				attack = 0.06
+				defence = 0.06
 			}
 		}
 		
@@ -855,6 +854,7 @@ leader_traits = {
 			army_armor_defence_factor = 0.05
 			motorized_defence_factor = 0.10
 			mechanized_defence_factor = 0.10
+			air_superiority_bonus_in_combat = 0.15
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -1083,7 +1083,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.075
+			cas_damage_reduction = 0.20
 			air_superiority_bonus_in_combat = -0.1
 		}
 		
@@ -1107,28 +1107,28 @@ leader_traits = {
 		modifier = {
 			river_crossing_factor = -0.6 
 			desert = {
-				movement = 0.025
+				movement = 0.05
 			}
 			hills = {
-				movement = 0.025
+				movement = 0.05
 			}
 			forest = {
-				movement = 0.025
+				movement = 0.05
 			}
 			mountain = {
-				movement = 0.025
+				movement = 0.05
 			}			
 			plains = {
-				movement = 0.025
+				movement = 0.05
 			}
 			urban = {
-				movement = 0.025
+				movement = 0.05
 			}
 			jungle = {
-				movement = 0.025
+				movement = 0.05
 			}
 			marsh = {
-				movement = 0.025
+				movement = 0.05
 			}
 		}
 		

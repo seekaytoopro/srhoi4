@@ -250,12 +250,12 @@ create_field_marshal = {
 	name = "Günther von Kluge"
 	picture = "Portrait_Germany_Gunther_von_Kluge.dds"
 	traits = {  offensive_doctrine armor_officer panzer_leader fast_planner ranger trait_reckless panzer_expert organizer career_officer trait_cautious inspirational_leader}
-	skill = 5
+	skill = 6
 	id = 2
-	attack_skill = 8
+	attack_skill = 10
 	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
+	planning_skill = 2
+	logistics_skill = 8
 }
 
 create_field_marshal = {
@@ -290,7 +290,7 @@ create_field_marshal = {
 	id = 5
 	attack_skill = 7
 	defense_skill = 3
-	planning_skill = 5
+	planning_skill = 2
 	logistics_skill = 2
 }
 
@@ -330,18 +330,6 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Ewald von Kleist"
-	desc = ""
-	picture = "Portrait_Germany_Ewald_von_Kleist.dds"
-	traits = { panzer_leader armor_officer career_officer brilliant_strategist}
-	skill = 4
-	id = 8
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
 
 create_field_marshal = {
 	name = "Fedor von Bock"
@@ -355,17 +343,7 @@ create_field_marshal = {
 	logistics_skill = 7
 }
 
-create_corps_commander = {
-	name = "Maximilian von Weichs"
-	picture = "Portrait_Germany_Maximilian_von_Weichs.dds"
-	traits = {cavalry_officer career_officer cavalry_leader organizer}
-	skill = 4
-	id = 11
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 4
-}
+
 
 create_field_marshal = {
 	name = "Wilhelm Ritter von Leeb"
@@ -463,17 +441,7 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Friedrich Schulz"
-	picture = "Portrait_Germany_Friedrich_Schulz.dds"
-	traits = { ranger politically_connected trait_cautious}
-	skill = 4
-	id = 21
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 4
-}
+c
 
 create_corps_commander = {
 	name = "Georg von Küchler"
@@ -487,22 +455,12 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "Alfred Jodl"
-	picture = "Portrait_Germany_Alfred_Jodl.dds"
-	traits = { organizer skilled_staffer infantry_officer brilliant_strategist old_guard}
-	skill = 5
-	id = 23
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 5
-	logistics_skill = 2
-}
+
 
 create_corps_commander = {
 	name = "Sepp Dietrich"
 	picture = "Portrait_Germany_Josef_Dietrich.dds"
-	traits = { panzer_leader harsh_leader cavalry_officer trait_reckless politically_connected}
+	traits = { panzer_leader harsh_leader cavalry_officer trait_reckless urban_assault_specialist ambusher trait_engineer politically_connected}
 	skill = 3
 	id = 24
 	attack_skill = 5
@@ -572,16 +530,7 @@ create_corps_commander = {
     logistics_skill = 3
 }
 
-create_corps_commander = {
-    name = "Subhas Chandra Bose"
-    picture = "GER_Cockburn.dds"
-    traits = { substance_abuser media_personality }
-    skill = 1
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 1
-    logistics_skill = 1
-}
+
 
 create_navy_leader = {
 	name = "Karl Dönitz"
