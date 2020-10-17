@@ -4,13 +4,14 @@ fascism_on_the_rise = {
 
 		icon = generic_political_discourse
 		
-				allowed = { 
-		OR = {
-		tag = BUL
-		tag = SIA
-		tag = ROM
-		tag = HUN
-		}
+		allowed = { 
+			OR = {
+				tag = BUL
+				tag = SIA
+				tag = ROM
+				tag = HUN
+				tag = SPR
+			}
 		}
 
 
@@ -215,6 +216,8 @@ political_actions = {
 		tag = FRA
 		tag = BRA
 		tag = MEX
+		tag = CRO
+		tag = FRF
 		tag = NOR  }
 		}
 
@@ -286,6 +289,8 @@ political_actions = {
 		tag = FIN 
 		tag = BRA
 		tag = MEX
+		tag = CRO
+		tag = FRF
 		tag = NOR  }
 		}
 		
@@ -347,6 +352,8 @@ political_actions = {
 		tag = CAN
 		tag = BRA
 		tag = MEX
+		tag = CRO
+		tag = FRF
 		tag = NOR }
 		}
 		
@@ -356,6 +363,69 @@ political_actions = {
 	
 		modifier = {
 			communism_drift = -0.05
+			stability_weekly = 0.007
+		}
+	
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+		
+		remove_effect = {
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	anti_neutrality_raids = {
+
+    	icon = generic_civil_support
+
+    	visible = {
+			NOT = { has_government = neutrality }
+		}
+
+			allowed = { 
+		OR = {
+		tag = CHI
+		tag = EFR
+		tag = SIA 
+		tag = JAP
+		tag = RAJ
+		tag = AST
+		tag = NZL
+		tag = MAN
+		tag = FRA
+		tag = YUG
+		tag = BUL
+		tag = ROM
+		tag = HUN
+		tag = SPR
+		tag = GER
+		tag = ITA
+		tag = ENG
+		tag = IRE
+		tag = SAF
+		tag = FIN 
+		tag = USA
+		tag = CAN
+		tag = BRA
+		tag = MEX
+		tag = CRO
+		tag = FRF
+		tag = NOR }
+		}
+		
+		available = {
+            neutrality > 0.05
+        }
+	
+		modifier = {
+			neutrality_drift = -0.05
 			stability_weekly = 0.007
 		}
 	
