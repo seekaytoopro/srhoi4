@@ -1,20 +1,26 @@
+
 state={
 	id=759
 	name="STATE_759"
-	provinces={
-		1698 1943 2074 4947 5736 10315 
-	}
-	#manpower=70000
-	manpower=1
-	buildings_max_level_factor=1.000
-	state_category = wasteland
+
 	history={
-		#owner = CHI
-		#add_core_of = CHI
-		buildings = {
-			infrastructure = 0
-
+		owner = BUL
+		victory_points = { #Ruse
+			9612 3
 		}
+		victory_points = { #Pleven
+			3796 3
+		}
+		buildings = {
+			infrastructure = 4
+		}
+		add_core_of = BUL
 
 	}
+	provinces={
+		3796 3819 3952 6842 9610 9612 
+	}
+	manpower=931011
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

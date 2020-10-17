@@ -184,21 +184,21 @@ horst_tank_research_options = {
 	}
 }
 
-horst_nuke_options = {
-	name = "HORST_NUKE_OPTIONS"
-	group = "HORST_GROUPKEY"				
-	icon = "GFX_nukes"
-	default = {	
-		name = "HORST_ENABLE_NUKES"
-		text = "HORST_RULE_OPTION_ENABLE_NUKES"
-		desc = "HORST_RULE_OPTION_ENABLE_NUKES_DESC"	
-	}
-	option = {	
-		name = "HORST_DISABLE_NUKES"
-		text = "HORST_RULE_OPTION_DISABLE_NUKES"
-		desc = "HORST_RULE_OPTION_DISABLE_NUKES_DESC"
-	}
-}
+# horst_nuke_options = {
+# 	name = "HORST_NUKE_OPTIONS"
+# 	group = "HORST_GROUPKEY"				
+# 	icon = "GFX_nukes"
+# 	default = {	
+# 		name = "HORST_ENABLE_NUKES"
+# 		text = "HORST_RULE_OPTION_ENABLE_NUKES"
+# 		desc = "HORST_RULE_OPTION_ENABLE_NUKES_DESC"	
+# 	}
+# 	option = {	
+# 		name = "HORST_DISABLE_NUKES"
+# 		text = "HORST_RULE_OPTION_DISABLE_NUKES"
+# 		desc = "HORST_RULE_OPTION_DISABLE_NUKES_DESC"
+# 	}
+# }
 horst_allow_adaptable = {
 	name = "HORST_ALLOW_ADAPTABLE"
 	group = "HORST_GROUPKEY"					
