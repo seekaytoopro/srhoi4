@@ -235,9 +235,9 @@ ideas = {
 			picture = generic_manpower_bonus
 			modifier = {
 				drift_defence_factor = 0.50
-				army_org_Factor = 0.15
-				army_attack_factor = 0.075
-				army_defence_factor = 0.075
+				army_org_Factor = 0.075
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
 					consumer_goods_factor = -0.15
 					conscription = 0.015
 				
@@ -509,10 +509,11 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
 			}
 			modifier = {
+				air_cas_present_factor = 0.15
 				# production_speed_air_base_factor=0.20
 				# production_speed_infrastructure_factor=0.20
 			}

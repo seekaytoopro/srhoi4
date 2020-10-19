@@ -19,6 +19,8 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bo
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
 
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.05 -- 0.01
+
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
 NDefines.NMilitary.OUT_OF_SUPPLY_ATTRITION = 0.4                -- max attrition when out of supply
@@ -251,7 +253,7 @@ NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
 NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
 NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 15                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
 -- NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 -- NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -298,7 +300,7 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 99 -- WAS 25 | Increased to accommodate G
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 0                 -- License can be cancelled at any time now, down from 30 | 
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0 -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgarias to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0
-NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 9999999    -- Increased so most nations don't need to queue up multiple lines of infantry or spam 2w infantry and convert 
+NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 99999999    -- Increased so most nations don't need to queue up multiple lines of infantry or spam 2w infantry and convert 
 NDefines.NProduction.SHIP_REFIT_MAX_PROGRESS_TO_CANCEL = 1.00			-- | Changed to prevent using the scuttle mechanic to tank US warsupport | "Maximum refitting progress % that we still allow to cancel wihtout having to scuttle the ship.
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 300 -- WAS 5 | changed to reduce the number of production lines on navy
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0            -- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.

@@ -1239,7 +1239,7 @@ hidden_effect = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
-				ahead_reduction = 3.0
+				ahead_reduction = 1.5
 				uses = 1
 				
 				category = cas_bomber			
@@ -2776,9 +2776,16 @@ SPR = { country_event = spain.29 }
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_rhineland }
 		available = {
-		
-			date > 1942.6.1		
-}			
+			OR = {
+				AND = {
+					surrender_progress > 0.01
+					has_war_with = SOV
+				}
+				
+				date > 1942.8.1
+			}
+				
+		}			
 		
 		x = -3
 		y = 1
