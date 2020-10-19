@@ -1696,11 +1696,13 @@ hidden_effect = {
 		completion_reward = {
 
 			#First Vienna Award effects
-			HUN = {
+			if = { limit = {country_exists = HUN } HUN = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
 				transfer_state = 664 
-			}
+			} }
+			if = { limit = { NOT = { country_exists = HUN } } GER = { transfer_state = 664 } } 
+			664 = { set_compliance = 60 }
 			hidden_effect = { CZE = { 				remove_state_core = 664  }}
 			every_other_country = {
 				limit = {
@@ -1775,7 +1777,7 @@ hidden_effect = {
 			set_global_flag = end_of_czechoslovakia
 				
 			CZE = { country_event = germany.53 }
-			HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 }
+			if = { limit = {country_exists = HUN } HUN = { transfer_state = 73 transfer_state = 70 transfer_state = 71 } }
 			CZE = { set_equipment_fraction = 0.0 }
 			GER = { 
 				annex_country = {

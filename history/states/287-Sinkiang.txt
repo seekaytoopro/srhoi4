@@ -1,10 +1,9 @@
+
 state={
 	id=287
 	name="STATE_287"
 
 	history={
-		#owner = CHI
-		#add_core_of = CHI
 		buildings = {
 			infrastructure = 0
 
@@ -13,11 +12,9 @@ state={
 	}
 
 	provinces={
-		4973 8042 8086 10885 10911 12864 
+		1698 1766 1943 1970 2015 2074 4828 4947 4973 5016 5087 5736 7790 7949 8042 8086 8112 10315 10885 10911 12119 12864 
 	}
-	#manpower=408000
 	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	impassable = yes
 }

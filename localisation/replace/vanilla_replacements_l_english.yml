@@ -1,0 +1,10 @@
+﻿l_english:
+ SOCIAL_DSTATUS_PLAYING_AS:0 "Thinking about COCK as $COUNTRY$ in $YEAR$"
+ PRODUCTION_CONSUMER_GOODS_DESC:1 "With our current Economic Policy, the people expect $PERCENTAGE|H1%$ of our number of Civilian and Military Factories to produce Consumer Goods. This need is filled by Civilian Factories only, leaving us with $OPERATIONAL|H$ factories where $TRADE_USABLE|H$ can be used for trade."
+ armored_car_recon:0 "Armored Car Recon Company"
+ SOCIAL_DSTATUS_IN_MP_LOBBY:0 "In a COCK Lobby"
+ SOCIAL_DSTATUS_PLAYING_AS:0 "Playing with COCK as $COUNTRY$ in $YEAR$"
+ SOCIAL_DSTATUS_OBSERVING_AS:1 "Observing COCK as $COUNTRY$ in $YEAR$"
+ WAR_NAME_GER_ENG:0 "The Second World War"
+ WAR_NAME_GER_USA:0 "The Second World War"
+ WAR_NAME_GER_SOV:0 "The Great Patriotic War"

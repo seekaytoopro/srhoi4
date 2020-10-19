@@ -2,14 +2,10 @@
 state={
 	id=48
 	name="STATE_48"
-	manpower = 1913500
 	resources={
-		aluminium=4 # was: 2
-		steel = 11
+		aluminium=4.000
+		steel=11.000
 	}
-	
-	
-	state_category = city
 
 	history={
 		owner = BUL
@@ -20,11 +16,16 @@ state={
 			infrastructure = 5
 			industrial_complex = 6
 			air_base = 8
+
 		}
 		add_core_of = BUL
+
 	}
 
 	provinces={
-		793 935 949 965 3908 3971 6857 9771 9818 11754 
+		793 935 949 965 3908 3971 9771 11754 
 	}
+	manpower=1813500
+	buildings_max_level_factor=1.000
+	state_category=city
 }

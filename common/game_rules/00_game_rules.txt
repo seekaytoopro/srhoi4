@@ -99,6 +99,22 @@ maximum_fort_level = {
 		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
 	}
 }
+
+mini_sr = {
+	name = "MINI_SR_OPTIONS"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_trait_adaptable"
+	default = {
+		name = "DISABLE_MINI_SR"
+		text = "Disable Mini SR"
+		desc = "This will have all Commonwealth and Axis players expected to be filled, and cannot be annexed until later."	
+	}
+	option = {	
+		name = "ENABLE_MINI_SR"
+		text = "Enable Mini SR"
+		desc = "This will allow the major nations to annex their minors from the start"
+	}
+}
  
 horst_sub_options = {
 	name = "HORST_SUB_OPTIONS"
@@ -168,21 +184,21 @@ horst_tank_research_options = {
 	}
 }
 
-horst_nuke_options = {
-	name = "HORST_NUKE_OPTIONS"
-	group = "HORST_GROUPKEY"				
-	icon = "GFX_nukes"
-	default = {	
-		name = "HORST_ENABLE_NUKES"
-		text = "HORST_RULE_OPTION_ENABLE_NUKES"
-		desc = "HORST_RULE_OPTION_ENABLE_NUKES_DESC"	
-	}
-	option = {	
-		name = "HORST_DISABLE_NUKES"
-		text = "HORST_RULE_OPTION_DISABLE_NUKES"
-		desc = "HORST_RULE_OPTION_DISABLE_NUKES_DESC"
-	}
-}
+# horst_nuke_options = {
+# 	name = "HORST_NUKE_OPTIONS"
+# 	group = "HORST_GROUPKEY"				
+# 	icon = "GFX_nukes"
+# 	default = {	
+# 		name = "HORST_ENABLE_NUKES"
+# 		text = "HORST_RULE_OPTION_ENABLE_NUKES"
+# 		desc = "HORST_RULE_OPTION_ENABLE_NUKES_DESC"	
+# 	}
+# 	option = {	
+# 		name = "HORST_DISABLE_NUKES"
+# 		text = "HORST_RULE_OPTION_DISABLE_NUKES"
+# 		desc = "HORST_RULE_OPTION_DISABLE_NUKES_DESC"
+# 	}
+# }
 horst_allow_adaptable = {
 	name = "HORST_ALLOW_ADAPTABLE"
 	group = "HORST_GROUPKEY"					

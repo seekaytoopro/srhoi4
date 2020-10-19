@@ -273,70 +273,23 @@ foreign_politics = {
 		}	
 	}
 	
-	
-	
-
-# ENG_annex_ire = {
-# 	icon = generic_operation
-
-# 			allowed = {
-# 				tag = ENG
-# 			}
-
-# 			available = {
-# 			NOR = { has_capitulated = yes }
-# 			IRE = { is_ai = yes }
-# 			}
-			
-# 			fire_only_once = yes
-
-# 			cost = 0
-
-# 			visible = {
-				
-				
-# 				}
-
-# 			complete_effect = {
-# 		IRE = { 	every_unit_leader = {
-# 				    set_nationality = ENG
-# 			    }
-# 			}
-							    
-# 					annex_country = {
-# 						target = IRE 
-# 						transfer_troops = yes 
-# 					}
-
-# 					every_state = { 
-# 						limit = { is_core_of = IRE }
-# 						add_core_of = ENG }
-# 		}
-# 	}
-	
 		ENG_annex_australia = {
-		icon = generic_operation
+			icon = generic_operation
 
-		allowed = {
-			original_tag = ENG
-		}
-			
-		available = {
-			date > 1940.7.1
-			AST = { surrender_progress < 0.01 }
-			OR = {
-				AND = { 
-					country_exists = AST
-					NOT = { country_exists = NZL }
-					AST = { is_ai = yes }
-				}
-				AND = { 
-					country_exists = NZL
-					NOT = { country_exists = AST }
-					NZL = { is_ai = yes }
-				}
+			allowed = {
+				original_tag = ENG
 			}
-		}
+				
+			available = {
+				OR = {
+					date > 1940.7.1
+					has_game_rule = {
+						rule = mini_sr
+						option = ENABLE_MINI_SR
+					}
+				}
+				AST = { surrender_progress < 0.01 }
+			}
 	
 
 		fire_only_once = yes
@@ -364,7 +317,7 @@ foreign_politics = {
 				}	
 			}  
 			}
-			if = { limit = { country_exists = NZL  } 
+			if = { limit = { NZL = { is_ai = yes }  }
 			NZL = {
 			    every_unit_leader = {
 				    set_nationality = ENG
@@ -385,6 +338,67 @@ foreign_politics = {
 			set_compliance = 100 }
 	}
 	}
+
+	ENG_annex_frf = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = ENG
+		}
+			
+		available = {
+		AND = {
+			OR = {
+				date > 1940.5.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+			FRF = { is_ai = yes }
+		}
+		}
+	
+
+		fire_only_once = yes
+
+		cost = 0
+			
+		visible = {
+			country_exists = FRF
+		}
+
+		complete_effect = {
+			FRF = { 
+				 every_unit_leader = {
+				 set_nationality = ENG
+			    }
+			}
+			every_state = { 
+				limit = { is_owned_by = FRF }
+				set_compliance = 100
+			}
+			ENG = { 
+				annex_country = {
+					target = FRF
+					transfer_troops = yes 
+				}
+				transfer_state = 786
+				transfer_state = 557
+				transfer_state = 272
+				transfer_state = 556
+				transfer_state = 780
+				transfer_state = 298
+				transfer_state = 779
+				transfer_state = 781
+				transfer_state = 776
+				transfer_state = 777
+				transfer_state = 778
+				transfer_state = 782
+				transfer_state = 543
+			}
+		}
+		}
 	
 	
 		ENG_annex_saf = {
@@ -396,9 +410,14 @@ foreign_politics = {
 			
 		available = {
 		AND = {
-			date>1939.1.1   
-		FRF = { is_ai = yes }
-		SAF = { is_ai = yes }
+			OR = {
+				date > 1939.1.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+			SAF = { is_ai = yes }
 		}
 		}
 	
@@ -412,32 +431,71 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-		SAF = { 
-					    every_unit_leader = {
-				    set_nationality = ENG
+			SAF = { 
+				 every_unit_leader = {
+				 set_nationality = ENG
 			    }
-				}
-				ENG = { 
+			}
+			ENG = { 
 				annex_country = {
 					target = SAF
 					transfer_troops = yes 
 				}	
 			}
-			FRF = { 
-					give_resource_rights = { receiver = ENG state = 556 }
-					give_resource_rights = { receiver = ENG state = 543 }
-					give_resource_rights = { receiver = ENG state = 635 }
-					give_resource_rights = { receiver = ENG state = 557 }
-					give_resource_rights = { receiver = ENG state = 272 }
-					give_resource_rights = { receiver = ENG state = 295 }
-					give_resource_rights = { receiver = ENG state = 538 }
-					give_resource_rights = { receiver = ENG state = 718 }
+			every_state = { 
+				limit = { is_core_of = SAF }
+				set_compliance = 100 
+			}
+		}
+		}
+
+		ENG_annex_raj = {
+			icon = generic_operation
+	
+			allowed = {
+				original_tag = ENG
+			}
+				
+			available = {
+			AND = {
+				OR = {
+					date > 1939.1.1
+					has_game_rule = {
+						rule = mini_sr
+						option = ENABLE_MINI_SR
 					}
-					every_state = { 
-						limit = { is_core_of = SAF }
-						set_compliance = 100 }
+				}
+				RAJ = { is_ai = yes }
+			}
+			}
+		
+	
+			fire_only_once = yes
+	
+			cost = 0
+				
+			visible = {
+	
+			}
+	
+			complete_effect = {
+				RAJ = { 
+					 every_unit_leader = {
+					 set_nationality = ENG
+					}
+				}
+				ENG = { 
+					annex_country = {
+						target = RAJ
+						transfer_troops = yes 
+					}	
+				}
+				every_state = { 
+					limit = { is_core_of = RAJ }
+					set_compliance = 100 
 				}
 			}
+		}
 
 	    ENG_annex_canada = {
 
@@ -451,7 +509,13 @@ foreign_politics = {
 			CAN = { 
 				is_ai = yes 
 			}
-			date > 1940.7.1
+			OR = {
+				date > 1940.7.1
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 			
 		cost = 0

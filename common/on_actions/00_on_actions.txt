@@ -343,6 +343,7 @@ on_actions = {
 			transfer_state = 762
 			transfer_state = 72
 			transfer_state = 92
+			transfer_state = 619
 			86 = { set_compliance = 60 }
 			762 = { set_compliance = 60 }
 		}
