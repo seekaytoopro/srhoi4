@@ -255,7 +255,7 @@ create_field_marshal = {
 	attack_skill = 10
 	defense_skill = 3
 	planning_skill = 2
-	logistics_skill = 8
+	logistics_skill = 5
 }
 
 create_field_marshal = {

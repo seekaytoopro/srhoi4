@@ -6,7 +6,7 @@ state_category = large_town
 resources={
 rubber=342
 steel=20
-tungsten=189
+tungsten=94
 aluminium = 15
 }
 history={

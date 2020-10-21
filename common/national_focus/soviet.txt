@@ -31,6 +31,7 @@ focus_tree = {
 			country_event = { id = soviet.300 days = 55 }
 		}
 		completion_reward = {
+			
 		add_political_power = 120
 		country_event = { id = soviet.53 }
 			
@@ -47,6 +48,8 @@ focus_tree = {
 
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
+			
+			
 			# hidden_effect = {
 			# 	country_event = { id = soviet.300 days = 30 }
 			# }
@@ -85,6 +88,51 @@ focus_tree = {
 			add_ideas = tot_economic_mobilisation
 			add_ideas = defend_the_motherland
 			add_offsite_building = { type = industrial_complex level = 10 }
+			hidden_effect = {SOV = {
+						activate_mission = SOV_relocate_industry_from_bialyostok
+						activate_mission = SOV_relocate_industry_from_brest
+						activate_mission = SOV_relocate_industry_from_bryansk
+						activate_mission = SOV_relocate_industry_from_cherkasy
+						activate_mission = SOV_relocate_industry_from_crimea
+						activate_mission = SOV_relocate_industry_from_dnipropetrovsk
+						activate_mission = SOV_relocate_industry_from_gomel
+						activate_mission = SOV_relocate_industry_from_harju
+						activate_mission = SOV_relocate_industry_from_ivanovo
+						activate_mission = SOV_relocate_industry_from_kalinin
+						activate_mission = SOV_relocate_industry_from_kaunas
+						activate_mission = SOV_relocate_industry_from_kharkov
+						activate_mission = SOV_relocate_industry_from_kiev
+						activate_mission = SOV_relocate_industry_from_kursk
+						activate_mission = SOV_relocate_industry_from_kurzeme
+						activate_mission = SOV_relocate_industry_from_leningrad
+						activate_mission = SOV_relocate_industry_from_lvov
+						activate_mission = SOV_relocate_industry_from_minsk
+						activate_mission = SOV_relocate_industry_from_moscow
+						activate_mission = SOV_relocate_industry_from_novgorod
+						activate_mission = SOV_relocate_industry_from_nowogrodek
+						activate_mission = SOV_relocate_industry_from_odessa
+						activate_mission = SOV_relocate_industry_from_orel
+						activate_mission = SOV_relocate_industry_from_rostov
+						activate_mission = SOV_relocate_industry_from_ryazan
+						activate_mission = SOV_relocate_industry_from_rzhev
+						activate_mission = SOV_relocate_industry_from_siauliai
+						activate_mission = SOV_relocate_industry_from_smolensk
+						activate_mission = SOV_relocate_industry_from_stalino
+						activate_mission = SOV_relocate_industry_from_tartu
+						activate_mission = SOV_relocate_industry_from_tula
+						activate_mission = SOV_relocate_industry_from_vidzeme
+						activate_mission = SOV_relocate_industry_from_voronezh
+						activate_mission = SOV_relocate_industry_from_voroshilovgrad
+						activate_mission = SOV_relocate_industry_from_wilejka
+						activate_mission = SOV_relocate_industry_from_wilno
+						activate_mission = SOV_relocate_industry_from_yaroslavl
+						activate_mission = SOV_relocate_industry_from_zaporozhe
+						activate_mission = SOV_relocate_industry_from_pinsk
+						activate_mission = SOV_relocate_industry_from_zhytomyr
+						activate_mission = SOV_relocate_industry_from_wolyn
+					}
+			
+		}
 		}
 
 	}
@@ -485,6 +533,11 @@ focus = {
 
 	completion_reward = {
 	add_ideas = wartime_propaganda
+	swap_ideas = {
+				remove_idea = production_targets_idea
+				add_idea = production_targets_idea_barb_focus
+			}
+
 	}
 }
 
@@ -677,6 +730,8 @@ focus = {
 				bonus = 1.0
 				uses = 1
 				technology = construction2
+				
+		
 				}
 		}
 	}
@@ -720,6 +775,7 @@ focus = {
 			}
 		}
 		completion_reward = {
+			
 			217 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
@@ -748,6 +804,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+				
 			add_ideas = workers_culture
 			#add_ideas = workers_culture_civ #Ideas merged
 		}
@@ -766,6 +823,7 @@ focus = {
 		}
 		
 		completion_reward = {
+				
 			247 = { 
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -861,6 +919,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+				
 				add_research_slot = 1
 			}
 		}
@@ -883,6 +942,7 @@ focus = {
 			}
 	
 			completion_reward = {
+				
 						add_resource = {
 					type = rubber
 					amount = 12
@@ -1054,7 +1114,7 @@ focus = {
 			x = 0
 			y = 1
 			relative_position_id = SOV_first_tech_slot
-			cost = 10
+			cost = 5
 			ai_will_do = {
 				factor = 10
 			}
@@ -1063,6 +1123,7 @@ focus = {
 	
 			completion_reward = {
 				add_ideas = progress_cult_focus
+				
 			}
 		}
 
@@ -1102,6 +1163,7 @@ focus = {
 			}
 			
 			completion_reward = {
+				
 				219 = { 
 					add_building_construction = {
 					type = infrastructure
@@ -1151,6 +1213,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				257 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1189,12 +1252,13 @@ focus = {
 			x = -1
 			y = 1
 			relative_position_id = SOV_railway_expansion
-			cost = 10
+			cost = 5
 			ai_will_do = {
 				factor = 1
 			}
 			
 			completion_reward = {
+				
 				407 = { 
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -1308,6 +1372,7 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
+			
 				add_ideas = { SOV_collectivist_propaganda }
 			}
 		}
@@ -1327,6 +1392,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				add_political_power = 150
 			}
 		}
@@ -1345,6 +1411,7 @@ focus = {
 			available = {
 			}
 			completion_reward = {
+				
 				218 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
@@ -1560,6 +1627,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				257 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1606,6 +1674,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				252 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -1645,6 +1714,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				add_resource = {
 					type = steel
 					amount = 23
@@ -1686,10 +1756,10 @@ focus = {
 					state = 398
 				}
 				252 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 					instant_build = yes }
 				}
 				250 = {
@@ -1712,12 +1782,14 @@ focus = {
 		focus = {
 			id = SOV_stalinist_architecture
 			icon = GFX_focus_generic_self_management
-			prerequisite = { focus = SOV_ural_expansion focus = SOV_metal_foundaries }
+			prerequisite = { focus = SOV_ural_expansion}
+			prerequisite = { focus = SOV_metal_foundaries }
+	
 			x = 1
 			y = 1
 			relative_position_id = SOV_metal_foundaries
 	
-			cost = 10
+			cost = 5
 	
 			ai_will_do = {
 				factor = 1
@@ -1735,7 +1807,7 @@ focus = {
 			available_if_capitulated = no
 	
 			completion_reward = {
-				add_ideas = { stalinist_architecture }
+				add_ideas =stalinist_architecture
 				add_political_power = 150
 			}
 		}
@@ -1800,29 +1872,30 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 				257 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 2
 					instant_build = yes }
 				}
 				248 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = industrial_complex
 						level = 2
 					instant_build = yes }
 				}	
 				253 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = industrial_complex
 						level = 1
 					instant_build = yes }
 				}
 				401 = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
 						type = arms_factory
 						level = 1
@@ -1909,7 +1982,7 @@ focus = {
 			y = 1
 			relative_position_id = SOV_great_purge
 	
-			cost = 10
+			cost = 5
 	
 			ai_will_do = {
 				factor = 1
@@ -2237,25 +2310,8 @@ focus = {
 		# 	}
 		# }
 
-		focus = {
-			id = SOV_peoples_commissariat
-			icon = GFX_goal_support_communism
-			prerequisite = { focus = SOV_stalinist_architecture }
-			x = 0
-			y = 1
-			relative_position_id = SOV_stalinist_architecture
-			cost = 10
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available_if_capitulated = yes
-	
-			completion_reward = {
-				#add_research_slot = 1
-				add_ideas = peoples_commissariat_focus
-			}
-		}
+		
+		
 
 		#End of Mil Focus branch--------------------------------------------------------------------------------------
 
@@ -2375,11 +2431,17 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
-		
-		hidden_effect = {
-		}
 			
-				army_experience = 20
+			657 = {
+					add_extra_state_shared_building_slots = 12
+					add_building_construction = {
+						type = industrial_complex
+						level = 12
+						instant_build = yes
+					}
+					}
+		
+	
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 1.0
@@ -2414,6 +2476,7 @@ focus = {
 				if = { limit = { has_idea = SOV_great_patriotic_war_5 } remove_ideas = SOV_great_patriotic_war_5 }			
 			}
 		}
+		
 	
 	
 		focus = {
@@ -2491,7 +2554,17 @@ focus = {
 	
 			completion_reward = {
 				add_research_slot = 1
+				578 = {
+					add_extra_state_shared_building_slots = 12
+					add_building_construction = {
+						type = industrial_complex
+						level = 12
+						instant_build = yes
+					}
+			
+				
 			}
+		}
 		}
 
 		#End of lessons of war branch--------------------------------------------------------------------------------------
@@ -2511,6 +2584,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
+			
 					add_tech_bonus = {
 					bonus = 3.0
 					uses = 10
@@ -2541,10 +2615,10 @@ focus = {
 			complete_tooltip = {
 				every_state = {
 					limit = { has_state_flag = SOV_expand_red_fleet_2dockyards }
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}				
 				}
@@ -2559,19 +2633,19 @@ focus = {
 			completion_reward = {
 				navy_experience = 50
 				195 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					set_state_flag = SOV_expand_red_fleet_2dockyards
 				}
 				137 = {
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 2
+						level = 3
 						instant_build = yes
 					}
 					set_state_flag = SOV_expand_red_fleet_2dockyards
@@ -2667,7 +2741,7 @@ focus = {
 				x = -8
 				y = 2
 				relative_position_id = SOV_great_purge
-				cost = 8
+				cost = 5
 				ai_will_do = {
 					factor = 10
 				}
@@ -2677,9 +2751,15 @@ focus = {
 				completion_reward = {
 					add_tech_bonus = {
 						name = SOV_fighter_effort
-						bonus = 1.00
-						uses = 2
+						bonus = 2.00
+						uses = 1
 						category = light_fighter
+					}
+					add_tech_bonus = {
+						name = air_doctrine
+						bonus = 1.0
+						uses = 2
+						category = air_doctrine
 					}
 				}
 			}
@@ -2691,7 +2771,7 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_fighter_effort
-				cost = 8
+				cost = 3
 				ai_will_do = {
 					factor = 10
 				}
@@ -2706,6 +2786,14 @@ focus = {
 						category = tactical_bomber
 						category = cas_bomber
 					}
+					add_tech_bonus = {
+						name = air_doctrine
+						bonus = 1.0
+						uses = 2
+						category = air_doctrine
+					}
+					
+					
 				}
 			}
 
@@ -2716,7 +2804,7 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_cas_effort
-				cost = 8
+				cost = 4
 				ai_will_do = {
 					factor = 1
 				}
@@ -2724,11 +2812,11 @@ focus = {
 				available_if_capitulated = yes	
 		
 				completion_reward = {
-					air_experience = 25
+					air_experience = 500
 					add_tech_bonus = {
 						name = air_doctrine
 						bonus = 1.0
-						uses = 6
+						uses = 2
 						category = air_doctrine
 					}
 				}

@@ -55,5 +55,41 @@ units = {
 		division_template = "Medium Tanks" 	# Frontline, best equipment
 		start_experience_factor = 0.35
 	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 5139
+		division_template = "Medium Tanks" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 5139
+		division_template = "Medium Tanks" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 5139
+		division_template = "Medium Tanks" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 5139
+		division_template = "Medium Tanks" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
 }
 
