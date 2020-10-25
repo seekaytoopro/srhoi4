@@ -238,14 +238,10 @@ ideas = {
 				army_org_Factor = 0.075
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
-					consumer_goods_factor = -0.15
-					conscription = 0.015
-				
-				
-				
+				consumer_goods_factor = -0.15
+				conscription = 0.015	
 			}
-
-			}
+		}
 		
 	
 		sour_loser = {
@@ -685,6 +681,29 @@ ideas = {
 			}
 		}
 
+		GER_operation_solstice = {
+			allowed = { always = no }
+
+			allowed_civil_war = { has_government = fascism }
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			modifier = {
+				air_cas_present_factor = 0.25
+				army_armor_attack_factor = 0.15
+				army_infantry_attack_factor = 0.15
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.05
+			}
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.075
+				defense_bonus_against = 0.075
+			}
+		}
+
 		GER_dismantle_maginot = {
 			allowed = {
 				always = no
@@ -790,7 +809,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
