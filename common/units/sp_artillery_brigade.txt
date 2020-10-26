@@ -169,7 +169,7 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.6
 		weight = 1.5
-		supply_consumption = 0.73
+		supply_consumption = 0.67
 
 
 		forest = {
@@ -194,8 +194,8 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.5
-			defence = -0.2
+			attack = -0.20
+			defence = -0.1
 		}
 		river = { 
 			attack = -0.4 
@@ -267,8 +267,8 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-			attack = -0.6
-			defence = -0.2
+			attack = -0.25
+			defence = -0.15
 		}
 		river = { 
 			attack = -0.5
