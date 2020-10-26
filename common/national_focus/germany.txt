@@ -1239,7 +1239,7 @@ hidden_effect = {
 				ahead_reduction = 3.0
 				uses = 1
 				
-				category = cas_bomber			
+				technology = cas2
 			}
 		}
 	}
