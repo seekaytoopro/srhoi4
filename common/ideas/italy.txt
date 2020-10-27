@@ -491,7 +491,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			traits = { army_armored_2 }
+			traits = { army_armored_3 }
 		}
 		mario_roatta = {
 			ledger = army
@@ -520,7 +520,7 @@ ideas = {
 			
 
 			
-			traits = { army_cavalry_1 }
+			traits = { army_commando_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -537,7 +537,7 @@ ideas = {
 			
 
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
 			
 			ai_will_do = {
 				factor = 2
