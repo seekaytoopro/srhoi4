@@ -21,6 +21,190 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1250 }
+	
+	
+	
+	
+	
+	focus = {
+		id = ITA_lessons_rommel
+		icon = GFX_focus_ENG_imp_conference
+		prerequisite = { focus = ITA_triumph_in_egypt }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ITA_triumph_in_egypt
+		available = {
+			date > 1942.9.1
+			
+				AND = {
+					
+					
+					
+						447 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+													
+							}
+						}
+										
+					
+						446 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+																	
+							}
+						}
+					
+					
+						456 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+																			
+							}
+						
+					}
+					
+						291 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+															
+							}
+						
+					}
+					
+											
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		create_field_marshal = {
+	name = "Erwin Rommel"
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	traits = { desert_fox urban_assault_specialist organizer fast_planner unyielding_defender offensive_doctrine inspirational_leader commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
+	skill = 6
+	id = 100001
+	attack_skill = 8
+	defense_skill = 5
+	planning_skill = 3
+	logistics_skill = 3
+	}
+	every_army_leader = {
+	 
+                limit = { has_id = 5040}
+				add_planning = 1
+				add_logistics = 1
+				add_attack = 1
+			} 
+			 random_unit_leader = {
+                limit = { has_id = 5040}
+				add_unit_leader_trait = commando 
+				add_unit_leader_trait = inflexible_strategist
+				
+				}
+	
+}
+			
+			
+			
+		}
+		
+		
+		focus = {
+		id = ITA_army_reform
+		icon = GFX_focus_ENG_imp_conference
+		prerequisite = { focus = ITA_lessons_rommel }
+		x = -1
+		y = 1
+		cost = 5
+		relative_position_id = ITA_lessons_rommel
+		available = {
+			date > 1943.6.1
+			
+				AND = {
+					
+					
+					
+						115 = {
+							
+								
+								is_controlled_by = ITA		
+													
+							
+						}
+										
+					
+						156 = {
+							
+							
+								is_controlled_by = ITA	
+																	
+							
+						}
+						
+						151 = {
+							
+							
+								is_controlled_by = ITA	
+																	
+							
+						}
+						
+							47 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+															
+							}
+	
+						}
+						
+						
+							185 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+															
+							}
+	
+						}
+						
+						
+						
+						
+					
+					
+					
+						
+					
+											
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		
+		
+	
+}
+			
+			
+			
+		}
+	
+	
+	
 
 	focus = {
 		id = ITA_ethiopian_war_logistics

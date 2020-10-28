@@ -282,7 +282,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Giovanni Messe"
 	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = { panzer_leader trait_reckless combined_arms_expert improvisation_expert trickster armor_officer media_personality trait_cautious war_hero brilliant_strategist trickster desert_fox  }
+	traits = { panzer_leader trait_reckless combined_arms_expert expert_improviser guerilla_fighter trickster armor_officer media_personality trait_cautious war_hero brilliant_strategist trickster desert_fox  }
 	skill = 6
 	id = 5040
 
@@ -339,7 +339,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Rodolfo Graziani"
 	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { old_guard infantry_officer infantry_expert unyielding_defender offensive_doctrine insipirational_leader infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
+	traits = { old_guard infantry_officer infantry_expert unyielding_defender offensive_doctrine inspirational_leader infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
 	skill = 5
 	id = 5045
 

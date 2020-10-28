@@ -544,6 +544,49 @@ ideas = {
 			}
 		}	
 		
+		
+		alfredo_guzzoni2 = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			traits = { army_infantry_2 }
+			available =
+			{
+				NOT = { has_idea = alfredo_guzzoni}
+				has_completed_focus = ITA_army_reform
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		
+		vittorio_ambrosio2 = {
+			ledger = army
+			
+			available =
+			{
+				NOT = { has_idea = alfredo_guzzoni}
+				has_completed_focus = ITA_army_reform
+			}
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		ettore_muti = {
 			ledger = air
 			
