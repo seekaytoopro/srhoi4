@@ -212,7 +212,62 @@ foreign_politics = {
 					instant_build = yes
 					province = 7203
 				}
-			}
+				
+		
+
+		}
+			random_unit_leader = {
+                limit = { has_id = 2003 }
+				
+				
+				
+				
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = organizer
+			
+				
+				
+            }
+			every_army_leader = {
+	 
+                limit = { has_id = 2005}
+				add_defense = 1
+				add_logistics = 2
+				add_attack = 2
+				
+			} 
+			random_unit_leader = {
+                limit = { has_id = 2005 }
+				
+				
+				
+				
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = organizer
+				add_unit_leader_trait = expert_improviser
+				
+			
+				
+				
+            }
+			
+			random_unit_leader = {
+                limit = { has_id = 602 }
+				
+				
+				
+				
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				
+				
+				
+			
+				
+				
+            }
 		}	
 	}
 
