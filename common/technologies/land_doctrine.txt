@@ -837,7 +837,7 @@ technologies = {
 		}
 		
 		category_front_line = {
-			 soft_attack = 0.2
+			 soft_attack = 0.15
 		}
 		#supply_consumption_factor = 0.05
 		
@@ -2454,7 +2454,7 @@ technologies = {
 			max_organisation = 2.5
 		}
 		anti_tank_brigade = { 
-			max_strength = 7.5
+			max_strength = 2
 			max_organisation = 2.5
 		}
 
