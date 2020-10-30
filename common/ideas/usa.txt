@@ -24,6 +24,8 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+		
 
 			allowed_civil_war = {
 				always = yes
@@ -35,7 +37,21 @@ ideas = {
 				political_power_cost = 0.85
 				consumer_goods_factor = 0.3
 				}
+				
+					
 		}
+		
+		 USA_idea_intervention_in_africa = {
+					 
+					 allowed_civil_war{ always = yes}
+					 allowed = {always = no}
+					 removal_cost = -1
+					 modifier = {
+					  production_speed_air_base_factor=0.1
+				
+					 }
+					 }
+		
 		great_depression_2 = {
 			picture = usa_great_depression_2
 			
