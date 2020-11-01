@@ -1,0 +1,198 @@
+division_template = {
+	name = "SS Panzer-Division"
+    is_locked = yes
+	division_names_group = GER_SS_01
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+	    
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+		medium_sp_anti_air_brigade = { x = 4 y = 3 }
+
+	}
+	
+	support = {
+    engineer = { x = 0 y = 0 }
+    armored_car_recon = { x = 0 y = 1 } 
+	logistics_company { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	maintenance = { x = 0 y = 4 }
+	flamethrower = { x = 0 y = 5 }
+	artillery = { x = 0 y = 6 }
+	rocket_artillery = { x = 0 y = 7 }
+	}
+	
+	priority = 2
+}
+
+division_template = {
+	name = "SS Panzer-Grenadier"
+    is_locked = yes
+	division_names_group = GER_SS_01
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+	    
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+		mot_artillery_brigade = { x = 3 y = 3 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		medium_tank_destroyer_brigade  = { x = 4 y = 1 }
+		medium_tank_destroyer_brigade  = { x = 4 y = 2 }
+		medium_sp_anti_air_brigade = { x = 4 y = 3 }
+		medium_tank_destroyer_brigade  = { x = 4 y = 5 }
+
+	}
+	
+	support = {
+    engineer = { x = 0 y = 0 }
+    armored_car_recon = { x = 0 y = 1 } 
+	logistics_company { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	maintenance = { x = 0 y = 4 }
+	flamethrower = { x = 0 y = 5 }
+	artillery = { x = 0 y = 6 }
+	rocket_artillery = { x = 0 y = 7 }
+	}
+	
+	priority = 2
+}
+division_template = {
+	name = "Schwere Panzer-Division"
+    is_locked = yes
+	
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+	    mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 0 y = 3 }
+		
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+	    
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		heavy_armor = { x = 3 y = 0 }
+		heavy_armor = { x = 3 y = 1 }
+		heavy_armor = { x = 3 y = 2 }
+		heavy_armor = { x = 3 y = 3 }
+		heavy_armor = { x = 4 y = 0 }
+		heavy_armor = { x = 4 y = 1 }
+		heavy_armor = { x = 4 y = 2 }
+		heavy_sp_anti_air_brigade = { x = 4 y = 3 }
+
+	}
+	
+	support = {
+    engineer = { x = 0 y = 0 }
+    armored_car_recon = { x = 0 y = 1 } 
+	logistics_company { x = 0 y = 2 }
+	field_hospital = { x = 0 y = 3 }
+	maintenance = { x = 0 y = 4 }
+	flamethrower = { x = 0 y = 5 }
+	artillery = { x = 0 y = 6 }
+	rocket_artillery = { x = 0 y = 7 }
+	
+	priority = 2
+}
+}
+
+
+
+	
+
+
+
+
+units = {
+	
+	
+	
+	##### PFU Heavy Panzer #####
+	division= {	
+        name = "Schwere Panzer-Division 502"
+		location = 6521
+		division_template = "Schwere Panzer-Division"
+		start_experience_factor = 0.5
+	}
+	
+	##### PFU Heavy Panzer #####
+	division= {	
+        name = "Schwere Panzer-Division 502"
+		location = 6521
+		division_template = "Schwere Panzer-Division"
+		start_experience_factor = 0.5
+	}
+	
+	division= {	
+        name = "Panzer-Grenadier Korp.1"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	division= {	
+        name = "Panzer-Grenadier Korp.2"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	division= {	
+        name = "Panzer-Grenadier Korp.3"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	division= {	
+        name = "Panzer-Grenadier Korp.4"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	division= {	
+        name = "Panzer-Grenadier Korp.5"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	division= {	
+        name = "Panzer-Grenadier Korp.6"
+		location = 6521
+		division_template = "SS Panzer-Grenadier"
+		start_experience_factor = 0.5
+	}
+	
+	
+	
+}

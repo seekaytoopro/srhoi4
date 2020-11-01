@@ -109,7 +109,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = ENG_african_lessons
 		available = {
-			date > 1942.9.1
+			date > 1943.9.1
 			
 				AND = {
 					NOT = { 

@@ -3467,7 +3467,7 @@ SPR = { country_event = spain.29 }
 			
 					available_if_capitulated = no
 					completion_reward = {
-			
+					load_oob = GER_fallblau
 						GER = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
 						hidden_effect={  
 							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_fall_blau days = 70 }}}

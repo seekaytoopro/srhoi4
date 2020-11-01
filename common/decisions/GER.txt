@@ -189,6 +189,7 @@ GER_case_anton = {
 		hidden_effect = { EFR = { set_equipment_fraction = 0 }}
 		ITA = { transfer_state = 32 transfer_state = 21 }
 		annex_country = { target = EFR	}
+		load_oob = GER_LSSAH
 		}
 		}
 	
