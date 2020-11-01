@@ -93,9 +93,9 @@ focus_tree = {
 	skill = 6
 	id = 100001
 	attack_skill = 8
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
 	}
 	every_army_leader = {
 	 
@@ -2214,6 +2214,7 @@ date > 1941.6.1
 		
 		available = {
 			country_exists = ALB
+			date > 1937.7.1
 		}
 
 		cost = 10
