@@ -1422,8 +1422,8 @@ hidden_effect = {
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
 			add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 5
 				category = radar_tech
 			}
 			if = {
