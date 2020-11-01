@@ -993,6 +993,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = british_arms_discount
+			air_experience = 150
 		}
 	}
 	focus = {
