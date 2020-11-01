@@ -1825,10 +1825,10 @@ ideas = {
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 				light_tank_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 				}
 			}
 
