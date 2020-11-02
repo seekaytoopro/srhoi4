@@ -1523,6 +1523,7 @@ hidden_effect = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_air_innovation_2 }
+		
 		x = 2
 		y = 1
 		relative_position_id = GER_extra_tech_slot
@@ -1610,7 +1611,7 @@ hidden_effect = {
 		id = GER_anschluss
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
-
+		available ={ date > 1937.6.1}
 		cancel_if_invalid = no
 		x = 0
 		y = 1
