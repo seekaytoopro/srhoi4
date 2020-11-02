@@ -604,38 +604,9 @@ ideas = {
 			}
 		}
 		
-		marziale_cerutti = {
-			ledger = air
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
+	
 
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		silvio_scaroni = {
-			ledger = air
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { air_bomber_interception_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		
 		alberto_da_zara = {
 			ledger = navy

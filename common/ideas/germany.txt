@@ -1167,7 +1167,7 @@ ideas = {
 			
 			available = {
 				#date>1941.6.1
-				has_completed_focus = GER_danzig_or_war
+				has_completed_focus = GER_fall_blau
 			}
 			
 			cost = 150
@@ -1252,12 +1252,11 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
+				has_completed_focus = GER_danzig_or_war
 				}
 			}
 
-			traits = { gestapo }
+			traits = { gestapo  }
 		}
 		
 		martin_bormann = {
@@ -1354,7 +1353,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-					maximum_speed = -0.05 defense = 0.05 soft_attack = 0.15 hard_attack = 0.15
+				reliability = -0.1	maximum_speed = -0.05 defense = 0.075 soft_attack = 0.15 hard_attack = 0.15
 				}
 			}
 			
@@ -1803,18 +1802,7 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		ludwig_beck = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { army_chief_organizational_2 }			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 
 		wilhelm_keitel  = {
 
@@ -1823,44 +1811,16 @@ ideas = {
 				original_tag = GER
 			}
 					
-			traits = { army_chief_drill_2 }
+			traits = { keitel_hc }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	
-		franz_halder = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-						
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	
-		walther_von_brauchitsch = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_army_innovation
-			}
-
-					
-			traits = { army_chief_maneuver_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
+		
 	}
 	
 	air_chief = {
@@ -1872,43 +1832,16 @@ ideas = {
 				original_tag = GER
 			}
 						
-			traits = { air_chief_ground_support_3 }
+			traits = { goering_hc }
 			
 			ai_will_do = {
 				factor = 2
 			}
 		}
 		
-		ritter_von_greim = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_air_innovation
-			}
-						
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 0.5
-			}
-		}
 		
-		albert_kesselring = {
-
-			
-			allowed = {
-				original_tag = GER
-			}
-						
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
+		
 	}
 	
 	navy_chief = { #CHIEF OF NAVY
@@ -1920,7 +1853,7 @@ ideas = {
 				original_tag = GER
 			}
 						
-			traits = { navy_chief_decisive_battle_2 }
+			traits = { navy_chief_decisive_battle_3 }
 			
 			ai_will_do = {
 				factor = 0.1
@@ -1996,7 +1929,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			traits = { army_logistics_1 }
+			traits = { army_logistics_2 }
 			
 			ai_will_do = {
 				factor = 1.5
@@ -2027,7 +1960,7 @@ ideas = {
 				original_tag = GER
 			}
 
-			traits = { air_bomber_interception_1 }
+			traits = { air_bomber_interception_3 }
 
 			ai_will_do = {
 				factor = 1
@@ -2048,34 +1981,9 @@ ideas = {
 			}
 		}
 
-		erich_bey = {
-		ledger = navy
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { navy_naval_air_defense_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
 		
-		gunther_lutjens = {
-		ledger = navy
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			traits = { navy_fleet_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		 
+		
 		viktor_schutze = {
 		ledger = navy
 			

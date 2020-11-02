@@ -85,11 +85,9 @@ focus_tree = {
 				add_unit_leader_trait = commando
 				add_unit_leader_trait = panzer_leader
 				add_unit_leader_trait = naval_invader
-				add_unit_leader_trait = old_guard
-				add_unit_leader_trait = career_officer
+				
 				add_unit_leader_trait = desert_fox
 				add_unit_leader_trait = urban_assault_specialist
-				add_unit_leader_trait = war_hero
 				
             }
 			
@@ -249,8 +247,7 @@ focus_tree = {
 				add_unit_leader_trait = hill_fighter
 				add_unit_leader_trait = trait_engineer
 				add_unit_leader_trait = urban_assault_specialist
-				add_unit_leader_trait = media_personality
-				add_unit_leader_trait = war_hero
+			
 				
             }
 			
@@ -264,8 +261,7 @@ focus_tree = {
 				add_unit_leader_trait = commando
 				add_unit_leader_trait = trickster
 				add_unit_leader_trait = expert_improviser
-				add_unit_leader_trait = media_personality
-				add_unit_leader_trait = war_hero
+			
 				
             }
 			
@@ -457,29 +453,6 @@ focus_tree = {
 		available = { 			
 		}
 		icon = GFX_goal_generic_army_motorized
-		x = 2
-		y = 1
-		relative_position_id = limited_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-	focus = {
-		id = ENG_tank_focus
-		prerequisite = { focus = limited_rearmament_focus }
-		icon = GFX_goal_generic_army_tanks
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -495,12 +468,63 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = ENG_tank_focus
+		prerequisite = { focus = ENG_motorized_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = ENG_motorized_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 4
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = improved_heavy_tank
 				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = ENG_tank_focus2
+		prerequisite = { focus = ENG_tank_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = ENG_tank_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date >1941.6.1}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 4
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_light_tank
+			
 			}
 		}
 	}
@@ -789,9 +813,7 @@ focus_tree = {
 	focus = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
-		available = {
-					threat > 0.05
-		}
+		
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes

@@ -239,7 +239,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -307,7 +307,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -370,7 +370,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {
@@ -433,7 +433,7 @@ political_actions = {
 		cost = 50
 
 		complete_effect = {
-			add_stability = -0.1
+			add_stability = -0.08
 		}
 		
 		remove_effect = {

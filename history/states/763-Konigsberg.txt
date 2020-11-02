@@ -15,7 +15,7 @@ state={
 
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 7
+			industrial_complex = 10
 			6332 = {
 				bunker = 1
 

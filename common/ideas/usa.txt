@@ -1596,7 +1596,7 @@ ideas = {
 				original_tag = USA 
 			}
 			
-			traits = { army_armored_2 } 
+			traits = { army_armored_3} 
 			
 			ai_will_do = { 
 				factor = 1 
@@ -1620,25 +1620,7 @@ ideas = {
 			}
 		}
 		
-		joseph_stilwell = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-			available = {
-				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
-			}
-
-			
-			traits = { army_logistics_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		
 		mark_clark = {
 			ledger = army
@@ -1674,21 +1656,7 @@ ideas = {
 			}
 		}
 		
-		john_cannon = {
-			ledger = air
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { air_close_air_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		
 		claire_lee_chennault = {
 			ledger = air
@@ -1700,7 +1668,7 @@ ideas = {
 			
 
 			
-			traits = { air_tactical_bombing_2 }
+			traits = { air_tactical_bombing_3 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1741,22 +1709,7 @@ ideas = {
 			}
 		}
 		
-		thomas_kinkaid = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = USA
-			}
-			
-
-			
-			traits = { navy_amphibious_assault_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 	}
 		
 	tank_manufacturer = { 

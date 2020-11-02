@@ -35,7 +35,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
-		x = -3
+		x = 1
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
@@ -1070,10 +1070,11 @@ hidden_effect = {
 		focus = {
 			id = GER_armament_miracle
 			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+			prerequisite = { focus = GER_battle_russia }
+			prerequisite = {focus = GER_tactical_air_effort2 }
 			x = 0
-			y = 1
-			relative_position_id = GER_german_war_economy
+			y = 3
+			relative_position_id = GER_ussr_war_goal
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -1180,7 +1181,7 @@ hidden_effect = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.6
+				bonus = 0.5
 				uses = 1
 				technology = fighter2
 			}
@@ -1205,8 +1206,7 @@ hidden_effect = {
 			instant_build = yes
 		}
 	}			
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
+			
 		}
 	}
 
@@ -1347,8 +1347,7 @@ hidden_effect = {
 				uses = 2
 				category = land_doctrine
 			}
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch		
+				
 		}
 	}
 	
@@ -1941,7 +1940,7 @@ hidden_effect = {
 		}	
 		completion_reward = {
 		custom_effect_tooltip = available_theorist 
-			show_ideas_tooltip = speer	
+			show_ideas_tooltip = heinrich_himmler
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			add_political_power = 150
 			
@@ -2606,7 +2605,7 @@ SPR = { country_event = spain.29 }
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { cruiser_submarines = 1 }
+				
 			}
 		}
 		
@@ -3136,8 +3135,9 @@ SPR = { country_event = spain.29 }
 				id = GER_flak_36
 				icon = GFX_goal_generic_construct_military
 				relative_position_id = GER_german_war_economy
-				prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
-				x = -2
+				prerequisite = { focus = GER_german_war_economy}
+				prerequisite = { focus = GER_integrate_war_economies }
+				x = -1
 				y = 1
 				cost = 2
 				ai_will_do = {
@@ -3466,9 +3466,12 @@ SPR = { country_event = spain.29 }
 					ai_will_do = {
 						factor = 1
 					}
+					
 			
 					available_if_capitulated = no
 					completion_reward = {
+					custom_effect_tooltip = available_theorist 
+					show_ideas_tooltip = speer
 					load_oob = GER_fallblau
 						GER = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
 						hidden_effect={  

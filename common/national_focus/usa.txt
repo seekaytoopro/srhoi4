@@ -1860,9 +1860,9 @@ focus_tree = {
 		every_army_leader = {
 	 
                 limit = { has_id = 57}
-				add_defense = 1
+				add_defense = 3
 				add_logistics = 1
-				add_attack = 2
+				add_attack = 3
 				add_planning = 1
 			} 
 		
@@ -1920,7 +1920,7 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_war_with_japan }
 		available = {
-			date>1942.1.1
+			date>1943.1.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1990,7 +1990,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2058,7 +2058,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2102,7 +2102,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2228,7 +2228,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2268,7 +2268,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_selective_training_act }
 		ai_will_do = {
 			factor = 5
@@ -2304,7 +2304,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2355,7 +2355,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2397,7 +2397,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2438,7 +2438,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2494,7 +2494,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2534,7 +2534,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2584,7 +2584,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2623,7 +2623,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2655,7 +2655,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2686,7 +2686,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2798,7 +2798,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2845,7 +2845,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2866,7 +2866,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_us_army_airforce
-				uses = 3
+				uses = 6
 				bonus = 1.0
 				category = air_doctrine
 			}

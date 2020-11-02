@@ -222,112 +222,112 @@ focus_tree = {
 					name = "Georgy Zhukov"
 					id = 410
 					picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-					traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer}
+					traits = { winter_specialist  brilliant_strategist  panzer_leader trait_engineer}
 					skill = 6
 	
 	
-					attack_skill = 6
-					defense_skill = 4
+					attack_skill = 5
+					defense_skill = 6
 					planning_skill = 4
-					logistics_skill = 5
+					logistics_skill = 7
 				}
 	
 			create_field_marshal = {
 			name = "Boris Shaposhnikov"
 				picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-			traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer}
+			traits = { winter_specialist  organizer defensive_doctrine  organizer}
 			skill = 5
 	
 			attack_skill = 2
-			defense_skill = 4
+			defense_skill = 7
 			planning_skill = 3
-			logistics_skill = 7
+			logistics_skill = 8
 			}
 	
 			create_corps_commander = {
 			name = "Ivan Konev"
 			id = 408
 				picture = "Portrait_Soviet_Ivan_Konev.dds"
-			traits = { armor_officer harsh_leader politically_connected panzer_leader trait_reckless ranger }
+			traits = {  panzer_leader panzer_expert organizer trickster  ranger }
 			skill = 5
 	
 	
 	
-			attack_skill = 5
-			defense_skill = 7
-			planning_skill = 4
-			logistics_skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
 			}
 	
 			create_corps_commander = {
 			name = "Vasily Kuznetsov"
 				picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
-			traits = { winter_specialist commando infantry_officer politically_connected infantry_leader media_personality war_hero brilliant_strategist }
+			traits = { winter_specialist organizer commando infantry_leader  brilliant_strategist }
 			skill = 5
 	
 			attack_skill = 4
-			defense_skill = 4
+			defense_skill = 7
 			planning_skill = 3
-			logistics_skill = 3
+			logistics_skill = 7
 			}
 	
 			create_corps_commander = {
 			name = "Markian Popov"
 				picture = "Portrait_Soviet_Matkian_Popov.dds"
-			traits = { infantry_officer brilliant_strategist war_hero infantry_leader urban_assault_specialist trait_engineer}
+			traits = {  brilliant_strategist  infantry_leader urban_assault_specialist trait_engineer}
 			skill = 5
 	
 	
 			attack_skill = 6
-			defense_skill = 4
+			defense_skill = 6
 			planning_skill = 3
-			logistics_skill = 3
+			logistics_skill = 4
 			}
 	
 			create_corps_commander = {
 				name = "Nikolai Berzarin"
 					picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
-				traits = { infantry_officer trait_mountaineer war_hero trait_reckless skilled_staffer old_guard trait_cautious }
+				traits = {  trait_mountaineer   skilled_staffer infantry_leader ambusher }
 				skill = 5
 		
 				attack_skill = 6
 				defense_skill = 7
-				planning_skill = 2
-				logistics_skill = 5
+				planning_skill = 1
+				logistics_skill = 2
 				}
 	
 			create_corps_commander = {
 			name = "Alexander Gorbatov"
 				picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
-			traits = { career_officer cavalry_officer harsh_leader trait_reckless infantry_leader }
+			traits = { infantry_expert trickster ranger infantry_leader }
 			skill = 5
 	
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
+			attack_skill = 5
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 3
 			}
 	
 			create_corps_commander = {
 			name = "Dmitry Lelyushenko"
 				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
-			traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster  }
+			traits = {  panzer_leader panzer_expert expert_improviser organizer trickster  }
 			skill = 5
 	
-			attack_skill = 5
-			defense_skill = 4
-			planning_skill = 6
-			logistics_skill = 1
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
 			}
 			create_corps_commander = {
 			name = "Rodion Malinovsky"
 				picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
-			traits = { winter_specialist swamp_fox career_officer old_guard trait_cautious politically_connected }
+			traits = { winter_specialist swamp_fox  }
 			skill = 5
 	
 	
-			attack_skill = 3
-			defense_skill = 3
+			attack_skill = 6
+			defense_skill =5
 			planning_skill = 2
 			logistics_skill = 8
 			}
@@ -585,37 +585,37 @@ focus = {
 	name = "Konstantin Rokossovsky"
 	id = 402
 		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero}
+	traits = {   panzer_leader brilliant_strategist trickster panzer_expert winter_specialist expert_improviser trait_engineer panzer_expert organizer}
 	skill = 6
 
-	attack_skill = 6
-	defense_skill = 5
+	attack_skill = 10
+	defense_skill = 6
 	planning_skill = 5
-	logistics_skill = 3
+	logistics_skill = 5
 	}
 
 	create_corps_commander = {
 	name = "Aleksandr Vasilevsky"
 	id = 407
 		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { winter_specialist armor_officer politically_connected trait_cautious harsh_leader skilled_staffer panzer_leader organizer}
+	traits = { winter_specialist panzer_expert urban_assault_specialist skilled_staffer panzer_leader organizer}
 	skill = 6
 
 
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 8
-	logistics_skill = 4
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 5
+	logistics_skill = 6
 	}
 
 	create_field_marshal = {
 	name = "Kirill Moskalenko"
 		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
-	traits = { winter_specialist brilliant_strategist infantry_leader old_guard career_officer ranger skilled_staffer}
+	traits = { winter_specialist brilliant_strategist infantry_leader ranger skilled_staffer}
 	skill = 6
 
-	attack_skill = 6
-	defense_skill = 3
+	attack_skill = 7
+	defense_skill = 5
 	planning_skill = 6
 	logistics_skill = 1
 	}

@@ -768,22 +768,7 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		ROM_constantin_sanatescu = {
-			
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = ROM
-			}
-			
-
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		
 		ROM_ion_antonescu = {
 			

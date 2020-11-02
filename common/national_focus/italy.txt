@@ -89,7 +89,7 @@ focus_tree = {
 		create_field_marshal = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
-	traits = { desert_fox urban_assault_specialist organizer fast_planner unyielding_defender offensive_doctrine inspirational_leader commando trickster expert_improviser inflexible_strategist panzer_expert trait_reckless war_hero media_personality infantry_officer trait_engineer panzer_leader }
+	traits = { desert_fox urban_assault_specialist organizer fast_planner unyielding_defender offensive_doctrine inspirational_leader commando trickster expert_improviser inflexible_strategist panzer_expert trait_engineer panzer_leader }
 	skill = 6
 	id = 100001
 	attack_skill = 8
@@ -108,6 +108,7 @@ focus_tree = {
                 limit = { has_id = 5040}
 				add_unit_leader_trait = commando 
 				add_unit_leader_trait = inflexible_strategist
+				add_unit_leader_trait = trait_engineer
 				
 				}
 	
