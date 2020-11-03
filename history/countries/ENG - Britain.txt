@@ -349,10 +349,10 @@ create_corps_commander = {
 	picture = "Portrait_Britain_Richard_OConnor.dds"
 	traits = { panzer_leader desert_fox trickster  brilliant_strategist expert_improviser panzer_expert camouflage_expert }
 	skill = 5
-	attack_skill = 9
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 1
+	attack_skill = 5
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {

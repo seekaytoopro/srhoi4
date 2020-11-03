@@ -285,7 +285,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Erich von Manstein"
 	picture = "Portrait_Germany_Erich_von_Manstein.dds"
-	traits = { combined_arms_expert aggressive_assaulter ambusher offensive_doctrine panzer_leader skilled_staffer thorough_planner      brilliant_strategist infantry_leader trickster trait_engineer  }
+	traits = { combined_arms_expert aggressive_assaulter ambusher offensive_doctrine panzer_leader skilled_staffer thorough_planner  brilliant_strategist infantry_leader  trait_engineer  }
 	skill = 6
 	id = 5
 	attack_skill = 5
@@ -297,11 +297,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Walter Model"
 	picture = "Portrait_Germany_Walter_Model.dds"
-	traits = {   unyielding_defender panzer_expert fast_planner defensive_doctrine panzer_leader trickster   organizer  inflexible_strategist}
+	traits = {   unyielding_defender panzer_expert fast_planner defensive_doctrine panzer_leader organizer inflexible_strategist}
 	skill = 5
 	id = 10
 	attack_skill = 3
-	defense_skill = 8
+	defense_skill = 7
 	planning_skill = 5
 	logistics_skill = 3
 }
@@ -327,7 +327,7 @@ create_corps_commander = {
 	attack_skill = 5
 	defense_skill = 6
 	planning_skill = 2
-	logistics_skill = 3
+	logistics_skill = 5
 }
 
 
@@ -360,10 +360,10 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Georg-Hans Reinhardt"
 	picture = "Portrait_Germany_Georg_von_Reinhardt.dds"
-	traits = { panzer_leader swamp_fox }
+	traits = { panzer_leader panzer_expert trickster expert_improviser trait_engineer swamp_fox }
 	skill = 4
 	id = 14
-	attack_skill = 4
+	attack_skill = 6
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 4
@@ -375,10 +375,10 @@ create_corps_commander = {
 	traits = {  infantry_expert infantry_leader  ranger commando }
 	skill = 4
 	id = 15
-	attack_skill = 7
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
+	attack_skill = 8
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
 }
 
 create_corps_commander = {
@@ -401,14 +401,14 @@ create_corps_commander = {
 	id = 17
 	attack_skill = 6
 	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Hermann Hoth"
 	picture = "Portrait_Germany_Herman_Hoth.dds"
-	traits = { panzer_leader   brilliant_strategist skilled_staffer trait_engineer urban_assault_specialist}
+	traits = { panzer_leader panzer_expert trickster brilliant_strategist skilled_staffer trait_engineer urban_assault_specialist}
 	skill = 4
 	id = 18
 	attack_skill = 5
@@ -417,29 +417,8 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_field_marshal = {
-	name = "Johannes Blaskowitz"
-	picture = "Portrait_Germany_Johannes_Blaskowitz.dds"
-	traits = { infantry_leader  inflexible_strategist }
-	skill = 4
-	id = 19
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 3
-}
 
-create_corps_commander = {
-	name = "Paul Hausser"
-	picture = "Portrait_Germany_Paul_Hausser.dds"
-	traits = {  panzer_leader trickster   trait_engineer panzer_expert scavenger }
-	skill = 5
-	id = 20
-	attack_skill = 6
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 3
-}
+
 
 
 
@@ -449,10 +428,10 @@ create_corps_commander = {
 	traits = { infantry_expert expert_improviser    organizer trickster infantry_leader}
 	skill = 5
 	id = 22
-	attack_skill = 6
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 5
 }
 
 
@@ -460,37 +439,27 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Sepp Dietrich"
 	picture = "Portrait_Germany_Josef_Dietrich.dds"
-	traits = { panzer_leader    urban_assault_specialist ambusher trait_engineer }
-	skill = 3
+	traits = { panzer_leader panzer_expert trickster urban_assault_specialist ambusher trait_engineer }
+	skill = 4
 	id = 24
 	attack_skill = 5
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 1
 }
 
-create_corps_commander = {
-	name = "Hasso von Manteuffel"
-		picture = "Portrait_Germany_Hasso_von_Manteuffel.dds"
-	traits = { panzer_leader hill_fighter    }
-	skill = 4
-	id = 25
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 3
-}
+
 
 create_field_marshal = {
 	name = "Albert Kesselring"
 	picture = "Portrait_Germany_Albert_Kesselring.dds"
-	traits = {    infantry_leader ambusher hill_fighter unyielding_defender defensive_doctrine inspirational_leader logistics_wizard thorough_planner   inflexible_strategist organizer skilled_staffer trait_mountaineer}
+	traits = {hill_fighter unyielding_defender defensive_doctrine inspirational_leader logistics_wizard thorough_planner   inflexible_strategist organizer skilled_staffer trait_mountaineer}
 	skill = 6
 	id = 32
 	attack_skill = 5
 	defense_skill = 9
 	planning_skill = 4
-	logistics_skill = 5
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -509,25 +478,13 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Ernst-Eberhard Hell"
 	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
-	traits = { winter_specialist       skilled_staffer}
+	traits = { winter_specialist  expert_delegator}
 	skill = 4
 	id = 34
 	attack_skill = 3
 	defense_skill = 2
 	planning_skill = 3
 	logistics_skill = 5
-}
-
-create_corps_commander = {
-    name = "Felix Steiner"
-    gfx = "GFX_portrait_ger_felix_steiner"
-    traits = { commando panzer_leader     substance_abuser}
-    skill = 4
-    id = 35
-    attack_skill = 3
-    defense_skill = 3
-    planning_skill = 4
-    logistics_skill = 3
 }
 
 

@@ -192,13 +192,13 @@ create_country_leader = {
 create_corps_commander = {
 	name = "George S. Patton"
 	picture = "Portrait_USA_George_S_Patton.dds"
-	traits = {  trickster  panzer_leader panzer_expert   panzer_leader }
+	traits = {  trickster  panzer_leader panzer_expert  }
 	skill = 5
  id = 2005
 	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 4
-	logistics_skill = 2
+	logistics_skill = 3
 }
 
 create_corps_commander = {
@@ -301,10 +301,10 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Leslie McNair"
 	picture = "Portrait_USA_Lesley_McNair.dds"
-	traits = {     panzer_leader ranger }
+	traits = {     panzer_leader panzer_expert ranger }
 	skill = 5
 
-	attack_skill = 5
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 3

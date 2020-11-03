@@ -195,8 +195,10 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
-		
+			add_political_power = 300
+			custom_effect_tooltip = available_theorist 
+			show_ideas_tooltip = alfredo_guzzoni2
+			show_ideas_tooltip = vittorio_ambrosio2
 	
 }
 			

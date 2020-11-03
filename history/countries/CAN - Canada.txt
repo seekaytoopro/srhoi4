@@ -242,12 +242,12 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Kenneth Stuart"
 	picture = "CAN_Leader_6.dds"
-	traits = { desert_fox  trickster infantry_leader  panzer_leader  skilled_staffer   brilliant_strategist}
+	traits = { desert_fox  trickster infantry_leader panzer_expert infantry_expert expert_improviser  panzer_leader  skilled_staffer   brilliant_strategist}
 	skill = 5
-		attack_skill = 8
-		defense_skill = 1
+		attack_skill = 4
+		defense_skill = 4
 		planning_skill = 4
-		logistics_skill = 2
+		logistics_skill = 5
 }
 
 create_navy_leader = {
