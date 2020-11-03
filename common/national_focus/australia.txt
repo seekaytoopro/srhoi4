@@ -144,7 +144,7 @@
 				create_corps_commander = {
 					name = "Iven Mackay"
 					gfx = "GFX_AST_iven_mackay"
-					traits = {   inflexible_strategist infantry_officer commando jungle_rat infantry_leader }
+					traits = {   inflexible_strategist infantry_expert commando jungle_rat infantry_leader }
 					skill = 3
 
 					attack_skill = 2
