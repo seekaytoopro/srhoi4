@@ -213,7 +213,7 @@ create_field_marshal = {
 	attack_skill = 2
 	defense_skill = 6
 	planning_skill = 1
-	logistics_skill = 7
+	logistics_skill = 4
 }
 
 create_field_marshal = {
@@ -222,35 +222,26 @@ create_field_marshal = {
 	traits = {brilliant_strategist  urban_assault_specialist thorough_planner inspirational_leader aggressive_assaulter  trait_engineer    offensive_doctrine   }
 	skill = 5
 	attack_skill = 6
-	defense_skill = 3
-	planning_skill = 5
+	defense_skill = 4
+	planning_skill = 6
 	logistics_skill = 2
 }
 
 create_corps_commander = {
 	name = "Ioan Mihail Racovita"
 	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = {    infantry_leader ambusher  fortress_buster organizer urban_assault_specialist  trait_engineer}
+	traits = {    infantry_leader ambusher trickster fortress_buster organizer urban_assault_specialist  trait_engineer}
 	skill = 5
-	attack_skill = 3
+	attack_skill = 5
 	defense_skill = 7
 	planning_skill = 5
 	logistics_skill = 3
 }
-create_corps_commander = {
-	name = "Constantin Constantinescu-Claps"
-	picture = "Portrait_Romania_Constantin_Constantinescu_Claps.tga"
-	traits = { infantry_leader   organizer  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 4
-}
+
 create_corps_commander = {
 	name = "Constantin Pantazi"
 	picture = "Portrait_Romania_Constantin_Pantazi.tga"
-	traits = { organizer trait_engineer urban_assault_specialist  brilliant_strategist }
+	traits = { organizer trait_engineer infantry_leader infantry_expert trickster expert_improviser urban_assault_specialist  brilliant_strategist }
 	skill = 4
 	attack_skill = 6
 	defense_skill = 2
@@ -262,20 +253,20 @@ create_corps_commander = {
 	picture = "Portrait_Romania_Dumitru_Popescu.tga"
 	traits = { hill_fighter trait_mountaineer      }
 	skill = 4
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 5
+	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Leonard Mociulschi"
 	picture = "Portrait_Romania_Leonard_Mociulschi.tga"
-	traits = {  cavalry_leader panzer_leader combined_arms_expert fortress_buster trait_engineer  brilliant_strategist  }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
+	traits = {  cavalry_leader panzer_leader ranger trickster expert_improviser combined_arms_expert fortress_buster trait_engineer  brilliant_strategist  }
+	skill = 5
+	attack_skill = 6
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Nicolae Ciuperca"
@@ -304,9 +295,9 @@ create_corps_commander = {
 	traits = {   infantry_leader infantry_expert trickster expert_improviser  ranger  skilled_staffer trait_engineer organizer}
 		skill = 5
 		attack_skill = 6
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 4
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 5
 }
 create_navy_leader = {
 	name = "Horia Macellariu"

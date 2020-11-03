@@ -2207,7 +2207,7 @@ ideas = {
 			cost = 200
 			
 			research_bonus = {
-				cat_superior_firepower = 0.15
+				cat_superior_firepower = 0.25
 			}
 			
 			traits = { superior_firepower_expert }
@@ -2224,7 +2224,7 @@ ideas = {
 			cost = 200
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.15
+				cat_mobile_warfare = 0.25
 			}
 			
 			traits = { mobile_warfare_expert }

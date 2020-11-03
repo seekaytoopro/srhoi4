@@ -849,10 +849,10 @@ ideas = {
 		 	cost = 250
 			
 		 	research_bonus = {
-		 		cat_mass_assault = 0.15
+		 		cat_superior_firepower = 0.25
 		 	}
 			
-		 	traits = { mass_assault_expert }
+		 	traits = { superior_firepower_expert }
 		}
 
 		giovanni_messe = {
@@ -865,7 +865,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.15
+				cat_mobile_warfare = 0.25
 			}
 			
 			traits = { mobile_warfare_expert }
@@ -881,7 +881,7 @@ ideas = {
 			cost = 250
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.15
+				cat_grand_battle_plan = 0.25
 			}
 			
 			traits = { grand_battle_plan_expert }

@@ -1717,7 +1717,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.15
+				cat_mobile_warfare = 0.25
 			}
 			
 
