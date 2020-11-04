@@ -27,9 +27,24 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				# army_armor_attack_factor = 0.075
-				# army_infantry_attack_factor = 0.05
+				 army_infantry_attack_factor = 0.05
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
+			}
+		}
+		
+			SOV_uranus = {
+			allowed = { always = no }
+
+			allowed_civil_war = { has_government = communism }
+
+			removal_cost = -1
+
+			picture = generic_acquire_tanks
+			modifier = {
+				 army_armor_attack_factor = 0.45
+				 army_infantry_attack_factor = 0.20
+				
 			}
 		}
 
@@ -42,12 +57,58 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				# army_armor_attack_factor = 0.05
-				# army_infantry_attack_factor = 0.025
+				army_armor_attack_factor = 0.05
+				army_infantry_attack_factor = 0.025
 				winter_attrition_factor = -0.5
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
 		}
+		
+		SOV_227 = { 
+			allowed = {	always = no 	}
+			picture = generic_manpower_bonus
+			available = { }
+			allowed_civil_war = { has_government = communism	}	
+			modifier = {
+				#army_core_defence_factor = 0.15
+				#army_armor_attack_factor = 0.1
+				#army_core_attack_factor = 0.05				
+				dig_in_speed_factor = 0.6
+				training_time_army_factor = -0.2
+			army_infantry_attack_factor = 0.025
+				army_morale_factor = 0.075
+				
+				
+				out_of_supply_factor = -0.25	
+			}
+	}
+	
+	 SOV_millitary_workforce = { 
+			allowed = {	always = no 	}
+			picture = generic_manpower_bonus
+			available = { }
+			allowed_civil_war = { has_government = communism	}	
+			modifier = {
+				max_dig_in = 1.5
+		
+				production_speed_infrastructure_factor = 0.5
+				mobilization_speed = 1
+					
+			}
+	}
+	
+	 SOV_stavka_control_increased = { 
+			allowed = {	always = no 	}
+			picture = generic_manpower_bonus
+			available = { }
+			allowed_civil_war = { has_government = communism	}	
+			modifier = {
+			
+			army_org_factor = 0.075
+				army_speed_factor = 0.05
+					
+			}
+	}
 
 		militarized_schools = {
 		
@@ -468,7 +529,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_speed_factor = 0.2
+				research_speed_factor = 0.125
 			}
 		}
 

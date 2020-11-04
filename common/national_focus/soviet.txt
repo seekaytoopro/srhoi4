@@ -79,7 +79,7 @@ focus_tree = {
 				has_war_with = GER
 				ENG = { surrender_progress > 0.15 }
 				USA = { surrender_progress > 0.15 }
-				date>1941.10.1
+				date>1941.7.22
 			}
 		}
 		cancel_if_invalid = no
@@ -457,28 +457,22 @@ focus = {
 			}
 		}
 		add_tech_bonus = {
-			bonus = 4.0
+			bonus = 6.0
 			uses = 1
 			category = land_doctrine
 		}
+	
 		add_tech_bonus = {
 			name = Great_patriotic_research
 			bonus = 1.00
-			uses = 1
-			ahead_reduction = 1
-			category = light_fighter
-		}
-		add_tech_bonus = {
-			name = Great_patriotic_research
-			bonus = 1.00
-			uses = 1
+			uses = 2
 			ahead_reduction = 1
 			technology = advanced_medium_tank
 			technology = advanced_heavy_tank
 		}
 		add_tech_bonus = {
 			bonus = 0.00
-			uses = 1
+			uses = 3
 			ahead_reduction = 1.0
 			name = Great_patriotic_research_td
 			technology = advanced_light_td
@@ -487,7 +481,7 @@ focus = {
 		}
 		add_tech_bonus = {
 			bonus = 0.00
-			uses = 1
+			uses =3
 			ahead_reduction = 1.0
 			name = Great_patriotic_research_art
 			technology = advanced_light_art
@@ -496,7 +490,7 @@ focus = {
 		}
 		add_tech_bonus = {
 			bonus = 0.00
-			uses = 1
+			uses = 3
 			ahead_reduction = 1.0
 			name = Great_patriotic_research_spaa
 			technology = advanced_light_spaa
@@ -544,9 +538,8 @@ focus = {
 focus = {
 	id = SOV_defense_of_stalingrad
 	icon = GFX_focus_ger_great_red_menace
-	#prerequisite = { focus = SOV_defense_of_moscow }
-	prerequisite = { focus = SOV_wartime_propaganda }
-	prerequisite = { focus = SOV_extra_tech_slot_2 }
+	
+	prerequisite = { focus = SOV_modernize_equipment }
 	available = {
 		OR = {
 			has_war_with = GER
@@ -557,8 +550,8 @@ focus = {
 	bypass = {
 		GER = { has_capitulated = yes }
 	}
-	relative_position_id = SOV_wartime_propaganda
-	x = 2
+	relative_position_id = SOV_modernize_equipment
+	x = 0
 	y = 1
 	cost = 20
 	ai_will_do = {
@@ -623,14 +616,103 @@ focus = {
 	}
 }
 
+focus = {
+		id = SOV_order_227
+		
+		prerequisite = { focus = SOV_defense_of_stalingrad}
+		x = 2
+		y = 1
+		relative_position_id = SOV_defense_of_stalingrad
+		cost = 0
+
+	available = { date > 1942.7.28
+		
+	}
+	
+		completion_reward = {
+			add_ideas = SOV_227
+		}
+	}
+	
+	focus = {
+		id = SOV_penal_batallions
+		
+		prerequisite = { focus = SOV_order_227}
+	
+		x = 0
+		y = 1
+		relative_position_id = SOV_order_227
+		cost = 3
+
+
+	
+		completion_reward = {
+			add_ideas = SOV_millitary_workforce
+		}
+	}
+	
+	focus = {
+	id = SOV_extra_tech_slot_3
+	icon = GFX_goal_generic_scientific_exchange
+	prerequisite = { focus = SOV_order_227 }
+	
+	relative_position_id = SOV_order_227
+	x = 2
+	y = 1
+	cost = 10
+	ai_will_do = {
+		factor = 10
+	}
+
+
+
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_research_slot = 1
+	add_tech_bonus = {
+			name = Great_patriotic_research
+			bonus = 1.00
+			uses = 1
+			
+			category = light_fighter
+		}
+}
+}
+
+	
+	focus = {
+		id = SOV_operation_uranus
+		
+		prerequisite = { focus = SOV_defense_of_stalingrad}
+		x = -2
+		y = 1
+		relative_position_id = SOV_defense_of_stalingrad
+		cost = 0
+
+	available = { date > 1942.11.19
+		
+	}
+	
+	
+
+	
+
+		completion_reward = {
+			SOV = { add_timed_idea = { idea = SOV_uranus days = 10 } }
+		}
+	}
+
+
 	focus = {
 		id = SOV_southern_thrust
 		icon = GFX_focus_SOV_iran
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = 2
-		y = 1
-		relative_position_id = SOV_move_industry_to_urals
-		cost = 2.9
+		prerequisite = { focus = SOV_improve_stalin_line }
+		prerequisite = { focus = SOV_socialist_realism}
+		x = 0
+		y = 2
+		relative_position_id =SOV_positive_heroism
+		cost =3
 
 	available = {
 		AND = {
@@ -655,10 +737,12 @@ focus = {
 	focus = {
 		id = SOV_modernize_equipment
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = -2
+		prerequisite = { focus = SOV_extra_tech_slot_2 }
+		prerequisite = { focus = SOV_wartime_propaganda}
+		prerequisite = { focus = SOV_winter_offensive }
+		x = 0
 		y = 1
-		relative_position_id = SOV_move_industry_to_urals
+		relative_position_id = SOV_winter_offensive
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2445,13 +2529,10 @@ focus = {
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 1.0
-					uses = 1
-					technology = basic_medium_tank
-					technology = improved_medium_tank
-					technology = improved_heavy_tank
+					uses = 2.0
 					technology = advanced_light_tank
-					technology = advanced_medium_tank
-					technology = advanced_heavy_tank
+					technology = improved_heavy_tank
+				
 				}
 				add_tech_bonus = {
 					name = armor_bonus
@@ -2751,7 +2832,7 @@ focus = {
 				completion_reward = {
 					add_tech_bonus = {
 						name = SOV_fighter_effort
-						bonus = 2.00
+						bonus = 1.5
 						uses = 1
 						category = light_fighter
 					}
@@ -2860,8 +2941,9 @@ focus = {
 				icon = GFX_focus_attack_germany
 				relative_position_id = SOV_defense_of_stalingrad
 				x = 0
-				y = 1
-				prerequisite = { focus = SOV_defense_of_stalingrad }
+				y = 2
+				prerequisite = { focus = SOV_order_227}
+				prerequisite = { focus = SOV_operation_uranus}
 				cost = 1.0
 				ai_will_do = {
 					factor = 1000
@@ -2888,14 +2970,43 @@ focus = {
 				}
 			}
 			
+			focus = {
+				id = SOV_stalin_cedes
+				
+				relative_position_id = SOV_operation_little_saturn
+				x = 0
+				y = 1
+				prerequisite = { focus = SOV_operation_little_saturn}
+				
+				cost = 1.0
+				ai_will_do = {
+					factor = 1000
+					modifier = {
+						factor = 0
+						NOT = { has_war_with = GER }
+					}
+				}
+
+				
+
+				
+				completion_reward = {
+		
+					add_ideas = SOV_stavka_control_increased
+		
+		
+				
+			}
+			}
+			
 			focus = { 
 		id = SOV_man_of_steel
 		icon = GFX_SOV_goal_stalin
-		prerequisite = { focus = SOV_operation_little_saturn}
+		prerequisite = { focus = SOV_stalin_cedes}
 		available = { OR = {  date > 1944.3.1 USA = { has_capitulated = yes }   } }
 		x = 0
-		y = 2 
-		relative_position_id = SOV_operation_little_saturn
+		y = 1
+		relative_position_id = SOV_stalin_cedes
 		cost = 3
 		
 		available_if_capitulated = yes
