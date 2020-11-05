@@ -283,8 +283,9 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				army_org_Factor = 0.05
-				planning_speed = 0.25
+				planning_speed = 0.20
 				operative_slot = 3
+				no_supply_grace = 72
 			}
 		}
 
