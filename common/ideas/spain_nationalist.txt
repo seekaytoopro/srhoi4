@@ -1312,90 +1312,16 @@ SPR_no_navy2 = {
 				}
 			}
 			
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_offensive_3 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		SPA_rafael_garcia_valino = { # Francoist/Carlist
-			
-			picture = SPA_rafael_garcia_valino
-			
-			allowed = {
-				original_tag = SPR
-			}
 
-			visible = {
-				
-			}
+		
 
-			available = {
-				
-				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
-			
-			traits = { army_chief_organizational_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_heli_rolando_de_tella = { # Francoist/Carlist
-			
-			picture = SPA_heli_rolando_de_tella
-			
-			allowed = {
-				original_tag = SPR
-			}
-
-			visible = {
-				
-			}
-
-			available = {
-			custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
-			
-			traits = { army_chief_defensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		SPA_miguel_ponte = { # Francoist
-			
-			picture = SPA_miguel_ponte
-			
-			allowed = {
-				original_tag = SPR
-			}
-
-			visible = {
-			
-			}
-
-			available = {
-				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 	}
 	air_chief = {
@@ -1424,7 +1350,7 @@ SPR_no_navy2 = {
 				}
 			}
 			
-			traits = { air_chief_ground_support_2 }
+			traits = { air_chief_ground_support_3}
 			
 			ai_will_do = {
 				factor = 1
@@ -1525,7 +1451,7 @@ SPR_no_navy2 = {
 				}
 			}
 			
-			traits = { army_logistics_2 }
+			traits = { army_commando_3 }
 			
 			ai_will_do = {
 				factor = 1

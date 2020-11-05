@@ -26,11 +26,11 @@ ideas = {
 	
 
 			modifier = {
-				production_factory_max_efficiency_factor = 0.03
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
-				stability_factor = 0.15
-				consumer_goods_factor = -0.02
+				production_factory_max_efficiency_factor = 0.035
+				industrial_capacity_factory = 0.035
+				industrial_capacity_dockyard = 0.035
+				stability_factor = 0.25
+				consumer_goods_factor = -0.03
 
 			}
 		}

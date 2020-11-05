@@ -55,15 +55,7 @@ leader_traits = {
 ##################################
 # Common Traits
 ##################################
-	old_guard = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			max_dig_in = 2
-			army_defence_factor = 0.025
-		}
-	}
+	
 	
 	
 	brilliant_strategist = { 
@@ -81,9 +73,7 @@ leader_traits = {
 	inflexible_strategist = { 
 		type = land
 		trait_type = personality_trait
-		modifier = {
-			army_defence_factor = 0.05
-		}	
+		
 		defense_skill = 1
 		logistics_skill = 1
 		
@@ -91,103 +81,18 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 	
-	politically_connected = { 
-		type = { land navy }
-		trait_type = personality_trait
-		
-		modifier = {
-			supply_consumption_factor = -0.05
-		}
-		
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
-	}
-
-	war_hero = { 
-		type = { land navy }
-		trait_type = personality_trait
-		
-		
-		modifier = {
-			army_morale_factor = 0.05
-			max_planning = 0.03
-			
-		}
-		new_commander_weight = {
-			factor = 0  # Scripted starting leaders only
-		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
-	}
 	
-	career_officer = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			army_morale_factor = 0.05
-			dig_in_speed_factor = 0.10
-		}
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
-	}
+	
+	
 
-	trait_cautious = { 
-		type = land
-		trait_type = personality_trait
+	
 		
-		modifier = {
-			planning_speed = -0.10
-			army_defence_factor = 0.05
-		}
-		
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
-	}
+	
+	
 
-	trait_reckless = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {		
-			planning_speed = 0.20
-			army_attack_factor = 0.05
-			out_of_supply_factor = 0.1
-			supply_consumption_factor = 0.04
-			heat_attrition_factor = 0.02
-			winter_attrition_factor = 0.02
-			no_supply_grace = 5
-		}
-		
-		attack_skill_factor = 1
-		defense_skill_factor = -1
-		planning_skill_factor = 1
-	}
+	
 
-	media_personality = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-		land_reinforce_rate = 0.03
-		}	
-		attack_skill_factor = 1
-		defense_skill_factor = 1
-	}
-
-	harsh_leader = { 
-		type = land
-		trait_type = personality_trait
-		
-		attack_skill = 1
-
-		modifier = {
-			army_morale_factor = -0.05
-		}
-		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
-	}
+	
 
 	bearer_of_artillery = {
 		type = corps_commander
@@ -203,40 +108,11 @@ leader_traits = {
 		}
 	}
 	
-	infantry_officer = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			max_dig_in = 2
-		}
-		
-		defense_skill_factor = 1
-		planning_skill_factor = 1
-	}
 	
-	cavalry_officer = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			recon_factor = 0.15
-		}		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
-	}
 	
-	armor_officer = { 
-		type = land
-		trait_type = personality_trait
-		
-		modifier = {
-			supply_consumption_factor = 0.01
-		}
-		
-		attack_skill_factor = 1
-		planning_skill_factor = 1
-	}
+
+	
+
 	
 ##################################
 # Field Marshal traits.
@@ -526,7 +402,7 @@ leader_traits = {
 		
 		cost = 500
 		modifier = {
-			recon_factor = 0.25
+			recon_factor = 0.15
 		}
 		
 		ai_will_do = {
@@ -769,8 +645,8 @@ leader_traits = {
 		type = corps_commander
 		modifier = {
 			forest = {
-				attack = 0.04
-				defence = 0.04
+				attack = 0.06
+				defence = 0.06
 			}
 		}
 		
@@ -825,7 +701,7 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			army_armor_defence_factor = 0.10
+			army_armor_defence_factor = 0.15
 			motorized_defence_factor = 0.05
 			mechanized_defence_factor = 0.05
 		}
@@ -853,8 +729,14 @@ leader_traits = {
 		cost = 500
 		modifier = {
 			army_armor_defence_factor = 0.05
-			motorized_defence_factor = 0.10
-			mechanized_defence_factor = 0.10
+			motorized_defence_factor = 0.075
+			mechanized_defence_factor = 0.075
+			army_bonus_air_superiority_factor = 0.075
+			army_morale_factor = 0.025
+			planning_speed = 0.15
+			
+			max_dig_in = 1
+			
 		}
 		
 		custom_effect_tooltip = INCREASED_BLITZ_AND_ENCIRCLEMENT_CHANCE
@@ -1083,7 +965,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			cas_damage_reduction = 0.075
+			cas_damage_reduction = 0.20
 			air_superiority_bonus_in_combat = -0.1
 		}
 		
@@ -1107,28 +989,28 @@ leader_traits = {
 		modifier = {
 			river_crossing_factor = -0.6 
 			desert = {
-				movement = 0.025
+				movement = 0.05
 			}
 			hills = {
-				movement = 0.025
+				movement = 0.05
 			}
 			forest = {
-				movement = 0.025
+				movement = 0.05
 			}
 			mountain = {
-				movement = 0.025
+				movement = 0.05
 			}			
 			plains = {
-				movement = 0.025
+				movement = 0.05
 			}
 			urban = {
-				movement = 0.025
+				movement = 0.05
 			}
 			jungle = {
-				movement = 0.025
+				movement = 0.05
 			}
 			marsh = {
-				movement = 0.025
+				movement = 0.05
 			}
 		}
 		
