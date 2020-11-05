@@ -1423,11 +1423,11 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					
+					reliability = 0.15 soft_attack = 0.05 hard_attack = 0.05
 				}
 			}
 			
-			modifier = {	reliability = 0.15 soft_attack = 0.05 hard_attack = 0.05
+			modifier = {	
 			}
 		}
 		

@@ -2975,10 +2975,11 @@ focus = {
 			focus = {
 				id = SOV_operation_bagration
 				icon = GFX_focus_attack_germany
-				relative_position_id = SOV_defense_of_stalingrad
-				x = 1
-				y = 1
-				prerequisite = { focus = SOV_defense_of_stalingrad }
+				relative_position_id = SOV_operation_uranus
+				available_if_capitulated = yes
+				x = -2
+				y = 2
+				prerequisite = { focus = SOV_operation_uranus }
 				cost = 1.0
 				ai_will_do = {
 					factor = 1000
@@ -3002,31 +3003,7 @@ focus = {
 				}
 			}
 
-			focus = { 
-				id = SOV_man_of_steel
-				icon = GFX_SOV_goal_stalin
-				prerequisite = { focus = SOV_defense_of_stalingrad }
-				available = { 
-					OR = {  
-						date > 1944.3.1 
-						USA = { has_capitulated = yes }
-						AND = {
-							has_war_with = JAP
-							date > 1943.6.1
-						}
-					} 
-				}
-				x = 0
-				y = 2
-				relative_position_id = SOV_defense_of_stalingrad
-				cost = 3
-		
-				available_if_capitulated = yes
-		
-				completion_reward = {
-					add_country_leader_trait = stalin_barb_leader_trait2
-				}
-			}	
+				
 			
 			focus = {
 				id = SOV_stalin_cedes
