@@ -37,7 +37,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 10
 		
-		build_cost_ic = 130
+		build_cost_ic = 99
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -78,7 +78,7 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 6
 		
-		build_cost_ic = 180
+		build_cost_ic = 135
 		resources = {
 			aluminium = 4
 
@@ -121,7 +121,7 @@ equipments = {
 		naval_strike_attack = 5
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 100
+		build_cost_ic = 78.6
 		resources = {
 			#oil = 1			
 			aluminium = 2
@@ -169,7 +169,7 @@ equipments = {
 		air_bombing = 18
 		air_ground_attack = 15
 		
-		build_cost_ic = 150
+		build_cost_ic = 108
 		resources = {
 			#oil = 1
 			aluminium = 3
@@ -195,7 +195,7 @@ equipments = {
 		air_bombing = 21
 		air_ground_attack = 20
 		
-		build_cost_ic = 160
+		build_cost_ic = 117
 		resources = {
 			#oil = 1
 			aluminium = 4
@@ -221,7 +221,7 @@ equipments = {
 		air_bombing = 24
 		air_ground_attack = 25
 		
-		build_cost_ic = 178
+		build_cost_ic = 126
 		resources = {
 			#oil = 1
 			aluminium = 4
@@ -246,7 +246,7 @@ equipments = {
 		air_bombing = 24
 		air_ground_attack = 15
 		
-		# build_cost_ic = 120
+		# build_cost_ic = 104
 	}
 
 	# Improved Jet tac_bomber
@@ -305,7 +305,7 @@ equipments = {
 		air_defence = 15
 		air_ground_attack = 8
 		
-		build_cost_ic = 115
+		build_cost_ic = 85.2
 		resources = {
 			#oil = 1			
 			aluminium = 3
@@ -329,7 +329,7 @@ equipments = {
 		air_defence = 18
 		air_ground_attack = 12
 		
-		build_cost_ic = 125
+		build_cost_ic = 91.8
 		resources = {
 			#oil = 1			
 			aluminium = 4
@@ -389,7 +389,7 @@ equipments = {
 		air_attack = 0
 		air_defence = 13
 		
-		build_cost_ic = 40
+		build_cost_ic = 20
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
 	}

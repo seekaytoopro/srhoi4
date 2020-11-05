@@ -189,7 +189,6 @@ GER_case_anton = {
 		hidden_effect = { EFR = { set_equipment_fraction = 0 }}
 		ITA = { transfer_state = 32 transfer_state = 21 }
 		annex_country = { target = EFR	}
-		load_oob = GER_LSSAH
 		}
 		}
 	
@@ -423,7 +422,7 @@ GER_expedition_bul = {
 create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser  substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 7
     defense_skill = 3
@@ -468,7 +467,7 @@ GER_expedition_hun = {
 create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 7
     defense_skill = 3
@@ -514,7 +513,7 @@ GER_expedition_rom = {
 create_field_marshal = {
     name = "Ingrad Stahl"
     picture = "Portrait_Baltic_Alfred_von_Randow.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 7
     defense_skill = 3
@@ -559,7 +558,7 @@ GER_expedition2_bul = {
 create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser  substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 6
     defense_skill = 3
@@ -603,7 +602,7 @@ GER_expedition2_hun = {
 create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 6
     defense_skill = 3
@@ -650,7 +649,7 @@ GER_expedition2_rom = {
 create_field_marshal = {
     name = "Edvin Lemmor"
     picture = "Portrait_Baltic_Johan_Laidoner.tga"
-    traits = { trickster panzer_leader panzer_expert expert_improviser  substance_abuser }
+    traits = { trickster panzer_leader panzer_expert expert_improviser trait_reckless harsh_leader substance_abuser }
     skill = 5
     attack_skill = 6
     defense_skill = 3

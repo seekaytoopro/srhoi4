@@ -23,11 +23,11 @@ sub_units = {
 
 
 		forest = {
-		    attack = -0.25
+		    attack = -0.40
 			movement = -0.40
 		}
 		hills = {
-		    attack = -0.15
+		    attack = -0.20
 		}
 		mountain = 	{
 			attack = -0.9
@@ -44,10 +44,8 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
-
-			attack = -0.15
-			defence = -0.10
-
+			attack = -0.2
+			defence = -0.1
 		}
 		river = { 
 			attack = -0.4 
@@ -76,8 +74,6 @@ sub_units = {
 		max_strength = 2
 		weight = 1.5
 		
-
-		supply_consumption = 0.485
-
+		supply_consumption = 0.44
 	}
 }

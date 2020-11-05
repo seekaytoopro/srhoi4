@@ -2,17 +2,15 @@
 state={
 	id=251
 	name="STATE_251"
-resources={
-		steel= 59
-	}
+
 	history={
 		owner = SOV
 		victory_points = {
 			11225 20 
 		}
 		buildings = {
-			infrastructure = 8
-			arms_factory = 4
+			infrastructure = 6
+			arms_factory = 2
 			air_base = 8
 
 		}

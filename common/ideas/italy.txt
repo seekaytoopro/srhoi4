@@ -491,7 +491,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			traits = { army_armored_3 }
+			traits = { army_armored_2 }
 		}
 		mario_roatta = {
 			ledger = army
@@ -520,7 +520,7 @@ ideas = {
 			
 
 			
-			traits = { army_commando_1 }
+			traits = { army_cavalry_1 }
 			
 			ai_will_do = {
 				factor = 1
@@ -537,55 +537,12 @@ ideas = {
 			
 
 			
-			traits = { army_infantry_1 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 2
 			}
 		}	
-		
-		
-		alfredo_guzzoni2 = {
-			ledger = army
-			
-			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { army_infantry_2 }
-			available =
-			{
-				NOT = { has_idea = alfredo_guzzoni}
-				has_completed_focus = ITA_army_reform
-			}
-			ai_will_do = {
-				factor = 2
-			}
-		}
-		
-		vittorio_ambrosio2 = {
-			ledger = army
-			
-			available =
-			{
-				NOT = { has_idea = alfredo_guzzoni}
-				has_completed_focus = ITA_army_reform
-			}
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { army_commando_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
 		
 		ettore_muti = {
 			ledger = air
@@ -604,9 +561,38 @@ ideas = {
 			}
 		}
 		
-	
+		marziale_cerutti = {
+			ledger = air
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
 
-		
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		silvio_scaroni = {
+			ledger = air
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		alberto_da_zara = {
 			ledger = navy
@@ -849,10 +835,10 @@ ideas = {
 		 	cost = 250
 			
 		 	research_bonus = {
-		 		cat_superior_firepower = 0.25
+		 		cat_mass_assault = 0.15
 		 	}
 			
-		 	traits = { superior_firepower_expert }
+		 	traits = { mass_assault_expert }
 		}
 
 		giovanni_messe = {
@@ -865,7 +851,7 @@ ideas = {
 			cost = 250
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.25
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }
@@ -881,7 +867,7 @@ ideas = {
 			cost = 250
 						
 			research_bonus = {
-				cat_grand_battle_plan = 0.25
+				cat_grand_battle_plan = 0.15
 			}
 			
 			traits = { grand_battle_plan_expert }

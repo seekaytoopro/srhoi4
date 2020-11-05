@@ -595,6 +595,19 @@ ideas = {
 			}
 		}
 
+		SAF_leonard_beyers = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 	}
 
@@ -717,7 +730,21 @@ ideas = {
 			}
 		}
 
-	
+		SAF_marinus_van_osterkamp = {
+			ledger = navy
+
+			picture = generic_air_europe_3
+			
+			allowed = {
+				original_tag = SAF
+			}
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		SAF_jeannot_de_la_tourier = {
 			ledger = navy

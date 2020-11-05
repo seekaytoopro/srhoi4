@@ -116,7 +116,7 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.28
+			attack = -0.33
 		}
 	}
 	

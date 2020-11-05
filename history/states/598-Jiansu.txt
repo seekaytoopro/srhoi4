@@ -2,9 +2,6 @@
 state={
 	id=598
 	name="STATE_598"
-	resources = {
-	steel = 14
-	}
 	
 	state_category = town
 

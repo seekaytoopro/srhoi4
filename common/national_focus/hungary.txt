@@ -1830,7 +1830,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_army_maneuvers
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 40
@@ -1940,7 +1940,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 40
@@ -1982,7 +1982,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_mobile_focus
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 60

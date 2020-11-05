@@ -38,5 +38,3 @@ SOV_relocate_mil = {
 		}
 	}
 }
-
-

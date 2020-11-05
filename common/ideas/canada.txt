@@ -530,7 +530,21 @@ ideas = {
 	# MILITARY
 	army_chief = {
 		
-		
+		CAN_harry_crerar = {
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+
+			
+			traits = { army_chief_old_guard }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		CAN_andrew_mcnaughton = {
 			picture = generic_army_europe_3
@@ -548,13 +562,41 @@ ideas = {
 			}
 		}
 
-		
+		CAN_george_pearkes = {
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	air_chief = {
 
 
-		
+		CAN_lloyd_samuel_breadner = {
+			picture = generic_air_europe_2
+
+			allowed = {
+				original_tag = CAN
+			}
+
+
+
+			traits = { air_air_superiority_2}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		CAN_george_croil = {
 			picture = generic_air_europe_1
 			

@@ -27,29 +27,11 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				# army_armor_attack_factor = 0.075
-
-				 army_infantry_attack_factor = 0.05
-
-			
+				# army_infantry_attack_factor = 0.05
 				army_armor_attack_factor = 0.025
-
+				army_infantry_attack_factor = 0.025
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
-			}
-		}
-		
-			SOV_uranus = {
-			allowed = { always = no }
-
-			allowed_civil_war = { has_government = communism }
-
-			removal_cost = -1
-
-			picture = generic_acquire_tanks
-			modifier = {
-				 army_armor_attack_factor = 0.45
-				 army_infantry_attack_factor = 0.20
-				
 			}
 		}
 
@@ -63,61 +45,11 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				army_armor_attack_factor = 0.05
-
-			
-
 				army_infantry_attack_factor = 0.05
-
 				winter_attrition_factor = -0.5
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
 		}
-		
-		SOV_227 = { 
-			allowed = {	always = no 	}
-			picture = generic_manpower_bonus
-			available = { }
-			allowed_civil_war = { has_government = communism	}	
-			modifier = {
-				#army_core_defence_factor = 0.15
-				#army_armor_attack_factor = 0.1
-				#army_core_attack_factor = 0.05				
-				dig_in_speed_factor = 0.6
-				training_time_army_factor = -0.2
-			army_infantry_attack_factor = 0.025
-				army_morale_factor = 0.075
-				
-				
-				out_of_supply_factor = -0.25	
-			}
-	}
-	
-	 SOV_millitary_workforce = { 
-			allowed = {	always = no 	}
-			picture = generic_manpower_bonus
-			available = { }
-			allowed_civil_war = { has_government = communism	}	
-			modifier = {
-				max_dig_in = 1.5
-		
-				production_speed_infrastructure_factor = 0.5
-				mobilization_speed = 1
-					
-			}
-	}
-	
-	 SOV_stavka_control_increased = { 
-			allowed = {	always = no 	}
-			picture = generic_manpower_bonus
-			available = { }
-			allowed_civil_war = { has_government = communism	}	
-			modifier = {
-			
-			army_org_factor = 0.075
-				army_speed_factor = 0.05
-					
-			}
-	}
 
 		militarized_schools = {
 		
@@ -155,14 +87,12 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.20
-
-				production_factory_efficiency_gain_factor = -0.45
-
+				production_factory_efficiency_gain_factor = -0.30		
 			}
 			
 		}
 
-		production_targets_idea_barb_focus = {
+		production_targets_idea_mil_focus = {
 			removal_cost = -1
 
 			allowed = {
@@ -176,10 +106,12 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-			production_factory_max_efficiency_factor = 0.20
-				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.20
+				production_factory_efficiency_gain_factor = -0.25
 				
-				
+				#combined with workers culture mil
+				production_speed_buildings_factor = 0.10
+				production_speed_industrial_complex_factor = -0.10
 			}
 			
 		}
@@ -207,9 +139,6 @@ ideas = {
 			}
 			
 		}
-		
-		
-		
 
 		shattered_retreat = {
 
@@ -299,7 +228,6 @@ ideas = {
 			
 			modifier = {
 				industrial_capacity_factory = 0.15
-					
 			}
 		}
 	
@@ -401,10 +329,8 @@ ideas = {
 			picture = generic_production_bonus
 			
 			modifier = {
-				production_speed_industrial_complex_factor = -0.2
-				production_speed_arms_factory_factor = 0.20
-				global_building_slots_factor = 0.15
-				conversion_cost_civ_to_mil_factor= -0.3
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.10
 			}
 		}
 
@@ -444,8 +370,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-				production_speed_arms_factory_factor = 0.15
-				conscription = 0.05
+				production_speed_arms_factory_factor = 0.10
+				conscription = 0.03
 				#industry_free_repair_factor = -1
 			}
 		}
@@ -576,8 +502,8 @@ ideas = {
 			}
 
 			modifier = {
-				global_building_slots_factor = 0.15
-				production_speed_arms_factory_factor = 0.15
+				global_building_slots_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
 				conversion_cost_civ_to_mil_factor= -0.2
 			}
 			
@@ -628,8 +554,7 @@ ideas = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.20
-				research_speed_factor = 0.15
-				
+				research_speed_factor = 0.10
 
 				supply_consumption_factor = -0.20
 				drift_defence_factor = 0.5
@@ -1335,7 +1260,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { army_regrouping_3 }
+			traits = { army_regrouping_2 }
 
 		}
 		
@@ -1352,18 +1277,37 @@ ideas = {
 		}	
 				
 		stepan_krasovsky = {
-			ledger = army
+			ledger = air
 			
 			allowed = {
 				original_tag = SOV
 			}
 			
-			traits = {army_commando_2 }
+			traits = { air_air_combat_training_2 }
 		}	
 		
-	
+		vladimir_kasatonov = {
+			ledger = navy
 			
+			allowed = {
+				original_tag = SOV
+			}
+				
+			traits = { navy_submarine_2 }
 			
+		}
+			
+		arseniy_golovko = {
+			ledger = army
+			#Also unit leader: 409
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			traits = { navy_amphibious_assault_2 }
+			
+		}	
 	}
 		
 	tank_manufacturer = {
@@ -1399,7 +1343,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					soft_attack = 0.05 hard_attack = 0.05 breakthrough = 0.05
+					soft_attack = 0.05 hard_attack = 0.05 build_cost_ic = -0.05
 				}
 			}
 			
@@ -1423,11 +1367,11 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					
+					reliability = -0.05 build_cost_ic = -0.10
 				}
 			}
 			
-			modifier = {	reliability = 0.15 soft_attack = 0.05 hard_attack = 0.05
+			modifier = {
 			}
 		}
 		
@@ -1448,7 +1392,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					maximum_speed = -0.10 defense = -0.10 soft_attack = 0.1 hard_attack = 0.1
+					maximum_speed = -0.10 defense = 0.10 soft_attack = 0.10 hard_attack = 0.10 build_cost_ic = 0.10
 				}
 			}
 			

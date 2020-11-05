@@ -433,7 +433,7 @@ ideas = {
 				original_tag = NZL
 			}
 
-			traits = { army_commando_1 }
+			traits = { army_commando_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -448,7 +448,7 @@ ideas = {
 				original_tag = NZL
 			}
 
-			traits = { army_infantry_1 }
+			traits = { army_infantry_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -461,7 +461,7 @@ ideas = {
 				original_tag = NZL
 			}
 
-			traits = { army_armored_1}
+			traits = { army_armored_2 }
 
 			ai_will_do = {
 				factor = 1
@@ -471,7 +471,22 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		
+		NZL_william_sinclair_burgess = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NZL
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		NZL_edward_puttick = {
 			
@@ -490,8 +505,39 @@ ideas = {
 			}
 		}
 
+		NZL_j_e_duigan = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = NZL
+			}
+			
 
-	
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		NZL_n_weir = {
+			
+			picture = generic_army_europe_3
+			
+			allowed = {
+				original_tag = NZL
+			}
+			
+
+			
+			traits = { army_chief_morale_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	air_chief = {

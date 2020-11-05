@@ -307,6 +307,22 @@ ideas = {
 	army_chief = {
 		
 
+		HUN_ferenc_szombathelyi = {
+			
+			picture = generic_army_europe_4
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		HUN_hugo_sonyi = {
 			
@@ -339,14 +355,29 @@ ideas = {
 			
 
 			
-			traits = { air_chief_ground_support_3}
+			traits = { air_chief_ground_support_2 }
 			
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		
+		HUN_sandor_magyarossy = {
+			
+			picture = generic_air_europe_2
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+
+			
+			traits = { air_air_combat_training_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 
 	navy_chief = {
@@ -424,7 +455,21 @@ ideas = {
 			}
 		}
 	
-	
+		HUN_jeno_ratz = {
+			ledger = air
+			
+			picture = generic_air_europe_3
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = { air_air_combat_training_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		HUN_henrik_werth = {
 			ledger = army
