@@ -222,7 +222,7 @@ focus_tree = {
 					name = "Georgy Zhukov"
 					id = 410
 					picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-					traits = { winter_specialist  brilliant_strategist  panzer_leader trait_engineer}
+					traits = { winter_specialist defensive_doctrine aggressive_assaulter inspirational_leader brilliant_strategist  panzer_leader panzer_expert  trait_engineer}
 					skill = 6
 	
 	
@@ -235,7 +235,7 @@ focus_tree = {
 			create_field_marshal = {
 			name = "Boris Shaposhnikov"
 				picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-			traits = { winter_specialist  organizer defensive_doctrine  organizer}
+			traits = { winter_specialist logistics_wizard organizer defensive_doctrine  organizer}
 			skill = 5
 	
 			attack_skill = 2
@@ -248,7 +248,7 @@ focus_tree = {
 			name = "Ivan Konev"
 			id = 408
 				picture = "Portrait_Soviet_Ivan_Konev.dds"
-			traits = {  panzer_leader panzer_expert organizer trickster  ranger }
+			traits = {  panzer_leader panzer_expert expert_improviser organizer trickster  ranger }
 			skill = 5
 	
 	
@@ -274,7 +274,7 @@ focus_tree = {
 			create_corps_commander = {
 			name = "Markian Popov"
 				picture = "Portrait_Soviet_Matkian_Popov.dds"
-			traits = {  brilliant_strategist  infantry_leader urban_assault_specialist trait_engineer}
+			traits = {  brilliant_strategist infantry_expert  infantry_leader urban_assault_specialist trait_engineer}
 			skill = 5
 	
 	

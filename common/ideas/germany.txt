@@ -1354,7 +1354,7 @@ ideas = {
 
 			equipment_bonus = {
 				armor = {
-				reliability = -0.1	maximum_speed = -0.05 defense = 0.075 soft_attack = 0.15 hard_attack = 0.15
+					maximum_speed = -0.01 defense = 0.25 soft_attack = 0.15 hard_attack = 0.15
 				}
 			}
 			

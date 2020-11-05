@@ -321,7 +321,7 @@ create_corps_commander = {
 	skill = 3
 	id = 4022
 
-	attack_skill = 3
+	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 2
@@ -330,12 +330,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Issa Pliyev"
 		picture = "Portrait_Soviet_Issa_Pliyev.dds"
-	traits = {   cavalry_leader  trickster desert_fox }
+	traits = {   cavalry_leader cavalry_expert  trickster desert_fox }
 	skill = 3
 	id = 4023
 	
 	attack_skill = 4
-	defense_skill = 2
+	defense_skill = 4
 	planning_skill = 1
 	logistics_skill = 3
 }
@@ -368,29 +368,29 @@ create_field_marshal = {
 create_corps_commander = {
 	name = "Kirill Meretskov"
 		picture = "Portrait_Soviet_Kirill_Meretskov.dds"
-	traits = {    infantry_leader  }
+	traits = {    infantry_leader infantry_expert ranger }
 	skill = 2
 	id = 1210
 	
 
 	
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
+	attack_skill = 3
+	defense_skill = 5
+	planning_skill = 2
 	logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Filipp Golikov"
 		picture = "Portrait_Soviet_Filipp_Golikov.dds"
-	traits = {  brilliant_strategist  panzer_leader   }
+	traits = {  brilliant_strategist  panzer_leader panzer_expert   }
 	skill = 4
 	id = 4013
 	
 	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 3
-	logistics_skill = 1
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -401,10 +401,10 @@ create_corps_commander = {
 	id = 4024
 
 	
-	attack_skill = 1
+	attack_skill = 3
 	defense_skill = 4
 	planning_skill = 1
-	logistics_skill = 4
+	logistics_skill = 3
 }
 
 create_field_marshal = {
@@ -434,24 +434,12 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 
-create_corps_commander = {
-	name = "Max Reyter"
-		picture = "Portrait_Soviet_Max_Andreyevich.dds"
-	traits = {    infantry_leader  }
-	skill = 2
-	id = 4026
 
-	
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
 
 create_corps_commander = {
 	name = "Nikandr Chibisov"
 		picture = "Portrait_Soviet_Nikandr_Yevlampyevich_Chibisov.dds"
-		traits = { trickster  urban_assault_specialist infantry_leader   }
+		traits = { trickster  urban_assault_specialist infantry_leader ambusher  }
 		skill = 4
 	id = 4035
 
@@ -474,18 +462,7 @@ create_corps_commander = {
 # 	logistics_skill = 3
 # }
 
-create_corps_commander = {
-	name = "Andrey Vlasov"
-		picture = "Portrait_Soviet_Andrey_Vlasov.dds"
-		traits = {   skilled_staffer organizer trait_engineer }
-	id = 412
-	skill = 4
-	
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 5
-}
+
 
 create_corps_commander = {
 	name = "Ivan Fedyuninsky"
@@ -503,27 +480,16 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Maksim Purkayev"
 		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
-		traits = {  ranger  infantry_leader inflexible_strategist  }
+		traits = {  ranger infantry_expert infantry_leader inflexible_strategist  }
 		skill = 4
 	id = 4016
 	
-	attack_skill = 4
+	attack_skill = 3
 	defense_skill = 5
 	planning_skill = 2
 	logistics_skill = 2
 }
-create_corps_commander = {
-	name = "Kuzma Galitsky"
-		picture = "Portrait_Soviet_Kuzma_Galitsky.dds"
-		traits = {   ranger hill_fighter   }
-	skill = 1 
-	id = 4028
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
+
 # create_corps_commander = { #Created by defense of Moscow
 # 	name = "Markian Popov"
 # 		picture = "Portrait_Soviet_Matkian_Popov.dds"
@@ -592,7 +558,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Andrei Grechko"
 		picture = "Portrait_Soviet_Andrei_Antonovich_Grechko.dds"
-		traits = {   hill_fighter trait_mountaineer trickster infantry_leader  }
+		traits = {   hill_fighter trait_mountaineer trickster infantry_leader ambusher}
 	skill = 2
 	id = 4020
 
@@ -620,7 +586,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Vasily Chuikov"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-		traits = { brilliant_strategist  infantry_leader panzer_leader trait_engineer urban_assault_specialist }
+		traits = { brilliant_strategist aggressive_assaulter panzer_expert offensive_doctrine infantry_leader panzer_leader trait_engineer urban_assault_specialist }
 	skill = 4
 	id = 4031
 

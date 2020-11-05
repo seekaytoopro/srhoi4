@@ -1388,7 +1388,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					soft_attack = 0.05 hard_attack = 0.05 build_cost_ic = -0.05
+					soft_attack = 0.05 hard_attack = 0.05 breakthrough = 0.05
 				}
 			}
 			
@@ -1412,11 +1412,11 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					reliability = -0.1 build_cost_ic = -0.10
+					
 				}
 			}
 			
-			modifier = {
+			modifier = {	reliability = 0.15 soft_attack = 0.05 hard_attack = 0.05
 			}
 		}
 		
@@ -1437,7 +1437,7 @@ ideas = {
 			
 			equipment_bonus = {
 				armor = {
-					maximum_speed = -0.12 defense = -0.12 soft_attack = 0.08 hard_attack = 0.08
+					maximum_speed = -0.10 defense = -0.10 soft_attack = 0.1 hard_attack = 0.1
 				}
 			}
 			
