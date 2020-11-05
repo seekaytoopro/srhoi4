@@ -1234,7 +1234,7 @@ hidden_effect = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
-				ahead_reduction = 3.0
+				ahead_reduction = 1.5
 				uses = 1
 				
 				technology = cas2
@@ -2773,10 +2773,39 @@ SPR = { country_event = spain.29 }
 		id = GER_the_great_turn
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_rhineland }
-		available = {
 		
-			date > 1942.6.1		
-}			
+		available = {
+			OR = {
+				date > 1942.9.1
+
+				AND = {
+					surrender_progress > 0.01
+					date > 1941.1.1
+				}
+
+				AND = {
+					date > 1941.1.1
+					count_triggers = {
+						amount=3
+						NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+						NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+					}
+				}
+				
+			}
+				
+		}			
 		
 		x = -3
 		y = 1
@@ -3079,33 +3108,26 @@ SPR = { country_event = spain.29 }
 					NOT = { has_idea = GER_fall_blau }
 					NOT = { has_idea = GER_operation_citadel }
 					Date > 1940.6.1
-					count_triggers={
-						amount=3
-						NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-					 	NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+					OR = {
+						surrender_progress > 0.01
+
+						count_triggers={
+							amount=3
+							NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+							NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+						}
 					}
-					# OR = {
-					# 	NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-					# 	NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
-					# }
 				}
 				x = 0
 				y = 1
@@ -3515,13 +3537,47 @@ SPR = { country_event = spain.29 }
 							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
 							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
 							#FIN = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
-							ITA = {add_timed_idea = { idea = GER_fall_blau days = 65 }}
+							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
 							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_operation_citadel days = 65 }}}
 						}
 					}
+				}
+
+				focus = {
+					id = GER_operation_solstice
 			
+					prerequisite = { focus = GER_operation_citadel }
+					icon = GFX_focus_ger_reichskommisariats
+					available = {
+						Date > 1944.5.1
+						NOT={ has_idea =GER_barbarossa }
+						NOT={ has_idea = GER_ardennenoffensive }
+						NOT={ has_idea = GER_fall_blau }
+						NOT={ has_idea = GER_operation_citadel }
+					}
+					relative_position_id = GER_operation_citadel
+					x = 0
+					y = 1
 			
+					cost = 1
+					ai_will_do = {
+						factor = 1
+					}
 			
+					available_if_capitulated = no
+					completion_reward = {
+			
+						GER = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}
+						hidden_effect={  
+							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}}
+							if = {limit = {country_exists = HUN } HUN = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}}
+							if = {limit = {country_exists = BUL } BUL = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}}
+							#FIN = {add_timed_idea = { idea = GER_operation_solstice days = 70 }}
+							ITA = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}
+							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}}
+							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_operation_solstice days = 60 }}}
+						}
+					}
 				}
 	

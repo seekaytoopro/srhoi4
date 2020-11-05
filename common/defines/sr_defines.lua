@@ -19,7 +19,11 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bo
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
 
+
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 			 -- no vet loss when converting templates in the field, levels the playing field vs ppl who don't know how to template edit
+
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.05 -- 0.01
+
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
@@ -85,7 +89,6 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.50 -- (0.50) fuel cost multiplier for
 NDefines.NNavy.FUEL_COST_MULT = 0.05 -- (0.10) fuel multiplier for all naval missions
 NDefines.NAir.FUEL_COST_MULT = 0.17 -- (0.35) fuel multiplier for all air missions 
 ---------------------------------------------------------------------------------------------------------
-
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.029                   -- basic speed control

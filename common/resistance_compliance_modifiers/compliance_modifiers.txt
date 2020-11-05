@@ -40,6 +40,8 @@ compliance_60 = {
 	threshold = 60
 	margin = 2
 	state_modifier = {
-		recruitable_population_factor = 0.004
+
+		recruitable_population_factor = 0.05
+
 	}
 }
