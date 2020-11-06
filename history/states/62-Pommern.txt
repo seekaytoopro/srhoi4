@@ -2,7 +2,9 @@
 state={
 	id=62
 	name="STATE_62"
-
+	resources = {
+	chromium = 8
+	}
 	history={
 		victory_points = {
 			9388 1 

@@ -491,7 +491,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			traits = { army_armored_3 }
+			traits = { messe_hc }
 		}
 		mario_roatta = {
 			ledger = army

@@ -1241,10 +1241,15 @@ date > 1941.6.1
 		completion_reward = {
 			
 			662 = {
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 3
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =infrastructure
+					level = 6
 					instant_build = yes
 				}
 				add_resource = {
@@ -1280,12 +1285,12 @@ date > 1941.6.1
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 						add_building_construction = {
 						type = naval_base
-						level = 2
+						level = 5
 						province = 11954
 						instant_build = yes
 					}
@@ -1301,7 +1306,7 @@ date > 1941.6.1
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 6
 						instant_build = yes
 					}
 	set_building_level = {
@@ -1351,7 +1356,7 @@ date > 1941.6.1
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 5
 						instant_build = yes
 					}
 						set_building_level = {
@@ -1417,7 +1422,7 @@ date > 1941.6.1
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 0.25
 		}
@@ -1520,7 +1525,7 @@ date > 1941.6.1
 		x = -3
 		y = 1
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1544,7 +1549,7 @@ date > 1941.6.1
 		x = -1
 		y = 1
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1607,7 +1612,7 @@ date > 1941.6.1
 		x = 0
 		y = 1
 		relative_position_id = ITA_special_forces
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1653,10 +1658,10 @@ date > 1941.6.1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1669,10 +1674,10 @@ date > 1941.6.1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1740,7 +1745,7 @@ date > 1941.6.1
 		x = 1
 		y = 1
 		relative_position_id = ITA_army_primacy
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1840,17 +1845,17 @@ date > 1941.6.1
 
 			add_tech_bonus = {
 				name = ITA_bomber_effort
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				technology = tactical_bomber2
-				technology = tactical_bomber3
+				
 			}
 			add_tech_bonus = {
 				name = ITA_bomber_effort
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				technology = CAS2
-				technology = CAS3
+			
 			}
 		}
 	}
@@ -1875,11 +1880,13 @@ date > 1941.6.1
 
 			add_tech_bonus = {
 				name = naval_air_effort
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 2
 				technology = naval_bomber1
 				technology = naval_bomber2
-				technology = naval_bomber3
+				technology = cv_naval_bomber1
+				technology = cv_naval_bomber2
+			
 			}
 		}
 	}
@@ -1935,14 +1942,14 @@ date > 1941.6.1
 				name = ITA_marines_and_landing_craft
 				bonus = 1.0
 				uses = 1
-				technology = marines
+				
 				technology = marines2
 			}
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
 				bonus = 1.0
 				uses = 1
-				technology = transport
+				
 				technology = landing_craft
 				technology = tank_landing_craft
 			}
@@ -2100,7 +2107,7 @@ date > 1941.6.1
 		id = ITA_sea_wolves
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = ITA_submarine_effort }
-		prerequisite = { focus = ITA_german_millitary_cooperation }
+		
 		available = {
 		}
 		x = -1
@@ -2268,7 +2275,7 @@ date > 1941.6.1
 		y = 2
 		relative_position_id = ITA_pact_of_steel
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -2302,25 +2309,7 @@ date > 1941.6.1
 	
 	
 	
-	focus = {
-		id = ITA_german_millitary_cooperation
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = ITA_pact_of_steel }
-
-		available = {
-		}
-		
-		x = -3
-		y = 1
-		relative_position_id = ITA_pact_of_steel
-		cost = 10
-		ai_will_do = {
-			factor = 10
-		}	
-		completion_reward = {
-			add_ideas = ITA_german_millitary_cooperation_focus
-		}
-	}
+	
 
 	focus = {
 		id = ITA_german_rd_treaty
@@ -2353,6 +2342,7 @@ date > 1941.6.1
 					uses = 2
 					category = armor
 				}
+				add_ideas = ITA_german_millitary_cooperation_focus
 				GER = { 
 						add_tech_bonus = {
 			bonus = 1.0
@@ -2372,13 +2362,13 @@ date > 1941.6.1
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
 		text = secret_weapons
-		prerequisite = { focus = ITA_german_millitary_cooperation }
+		prerequisite = { focus = ITA_italia_irredenta }
 		available = {
 			
 			}
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = ITA_german_millitary_cooperation
+		relative_position_id  = ITA_italia_irredenta
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2578,7 +2568,7 @@ focus = {
 	completion_reward = {
 		add_resource = {
 			type = rubber
-			amount = 20
+			amount = 32
 			state = 159
 		}
 
@@ -2659,7 +2649,7 @@ focus = {
 
 	available = {
 		has_global_flag = operation_torch_flag
-		date>1942.1.1
+		date>1942.3.1
 		ITA = {
 			AND = {controls_state = 662 controls_state = 159}
 
@@ -2680,7 +2670,7 @@ focus = {
 	completion_reward = {
 		add_resource = {
 			type = rubber
-			amount = 20
+			amount = 32
 			state = 159
 		}
 

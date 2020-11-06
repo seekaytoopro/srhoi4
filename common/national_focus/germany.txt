@@ -712,12 +712,12 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = GER_autobahn_tt
+			
 			every_state = { 
 			limit = { OR = {is_core_of = GER is_core_of = AUS } }
 			add_state_modifier = { modifier = { local_building_slots_factor = 0.20  } }
 			}
-			hidden_effect = {
+			
 				64 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
@@ -779,7 +779,7 @@ focus_tree = {
 						}
 					}
 				}
-			}		
+					
 		}
 	}
 
@@ -1328,7 +1328,7 @@ hidden_effect = {
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 15
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1405,7 +1405,7 @@ hidden_effect = {
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1477,7 +1477,7 @@ hidden_effect = {
 		x = 0
 		y = 2
 		relative_position_id = GER_soviet_treaty
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}

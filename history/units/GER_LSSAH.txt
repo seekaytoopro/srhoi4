@@ -34,7 +34,7 @@ division_template = {
     armored_car_recon = { x = 0 y = 1 } 
 	logistics_company { x = 0 y = 2 }
 	field_hospital = { x = 0 y = 3 }
-	maintenance = { x = 0 y = 4 }
+	maintenance_company = { x = 0 y = 4 }
 	flamethrower = { x = 0 y = 5 }
 	artillery = { x = 0 y = 6 }
 	rocket_artillery = { x = 0 y = 7 }
