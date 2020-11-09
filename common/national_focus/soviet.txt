@@ -32,7 +32,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			
-		add_political_power = 120
+		add_political_power = 10
+		add_ideas = partial_economic_mobilisation
 		country_event = { id = soviet.53 }
 			
 				add_timed_idea = {
@@ -772,12 +773,15 @@ focus = {
 		ai_will_do = {
 			factor = 5
 		}
+		available = {
+			date > 1938.1.1
+		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1.00
+				bonus = 1.50
 				uses = 1
 				name = mech_army_bonus
 				technology = mechanised_infantry
@@ -791,6 +795,19 @@ focus = {
 						instant_build = yes
 					}
 				}
+				
+				add_tech_bonus = {
+				name = heavy_armor_tank_cult
+				ahead_reduction = 2
+				bonus = 1.00 
+				technology = improved_heavy_tank
+			}
+			add_tech_bonus = {
+				name = light_armor_tank_cult
+				ahead_reduction = 2
+				bonus = 1.00 
+				technology = advanced_light_tank
+			}	
 			}
 		}
 
@@ -2528,10 +2545,14 @@ focus = {
 	
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 1.0
-					uses = 2.0
-					technology = advanced_light_tank
-					technology = improved_heavy_tank
+					bonus = 2.0
+					uses = 4.0
+					technology = advanced_light_td
+					technology = advanced_light_art
+					technology = advanced_light_spaa
+					technology = improved_heavy_td
+					technology = improved_heavy_art
+					technology = improved_heavy_spaa
 				
 				}
 				add_tech_bonus = {

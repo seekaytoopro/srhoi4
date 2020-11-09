@@ -55,7 +55,7 @@ set_technology = {
 	forward_interception = 1
 	dive_bombing = 1
 	armored_car1 = 1
-	
+	basic_heavy_tank = 1`
 	motorized_rocket_unit = 1
 	basic_light_td = 1
 	basic_light_art = 1
