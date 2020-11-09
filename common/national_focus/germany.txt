@@ -1620,7 +1620,7 @@ hidden_effect = {
 		completion_reward = {
 			add_research_slot = 1
 			army_experience = 50
-			add_political_power = 75
+			add_political_power = 150
 			add_war_support = 0.1
 			add_stability = 0.05
 			add_named_threat = { threat = 10 name = germany.4.t }
@@ -2360,10 +2360,10 @@ SPR = { country_event = spain.29 }
 			navy_experience = 50
 			every_state = {
 				limit = { has_state_flag = GER_naval_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2389,14 +2389,14 @@ SPR = { country_event = spain.29 }
 					dockyard > 0
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 3
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = dockyard
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = GER_naval_effort_2dockyards
@@ -2634,12 +2634,7 @@ SPR = { country_event = spain.29 }
 				uses = 1
 				category = ss_tech
 			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = { cruiser_submarines = 1 }
-			}
+			
 		}
 	}
 

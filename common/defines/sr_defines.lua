@@ -405,7 +405,7 @@ NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.0	-- casting damage value to ship
 	--NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 2.0 -- ratio for scoring for different gun types against heavy ships
 	--NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 2.0 -- ratio for scoring for different gun types against heavy ships
 	--NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 0.1   -- ratio for scoring for different gun types against heavy ships
-	
+		
 
 --Defines to make it a positioning meme mod
 NDefines.NNavy.BASE_POSITIONING = 1.0

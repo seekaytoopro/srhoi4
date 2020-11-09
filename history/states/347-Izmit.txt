@@ -2,7 +2,9 @@
 state={
 	id=347
 	name="STATE_347"
-
+	resources = {
+		aluminium=35.000
+	}
 	history={
 		victory_points = {
 			3673 3 
@@ -13,7 +15,7 @@ state={
 		owner = AUS
 		add_core_of = AUS
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			arms_factory = 2
 			industrial_complex = 3
 		}

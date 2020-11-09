@@ -66,6 +66,11 @@ set_technology = {
 	synth_oil_experiments = 1
 	trench_warfare = 1
 	transport = 1
+	gwtank = 1
+	air_superiority = 1
+	basic_light_tank = 1
+	mtg_transport = 1
+	armored_car1 = 1
 }
 
 set_variable = {
@@ -73,7 +78,7 @@ set_variable = {
     value = 0.800
 }
 
-set_convoys = 25
+set_convoys = 125
 add_equipment_to_stockpile = {
          type = artillery_equipment_1
          amount = 505

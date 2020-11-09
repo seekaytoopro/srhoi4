@@ -230,8 +230,8 @@
  seawolf_desc:0 "§LThe Sea Wolf is particularly skilled in Convoy Raiding§!"
  superior_tactician:0 "Superior Tactician"
  superior_tactician_desc:0 "§LA master of Fleet Positioning.§!"
- old_guard:0 "Old Guard"
- old_guard_desc:0 "§LWhile not the most brilliant officer, he is unlikely to cause trouble.§!"
+ 
+
  old_guard_navy:0 "Old Guard"
  old_guard_navy_desc:0 "§LWhile not the most brilliant officer, he is unlikely to cause trouble.§!"
  trickster:0 "Trickster"
@@ -502,15 +502,8 @@
  brilliant_strategist:0 "Brilliant Strategist"
  inflexible_strategist:0 "Inflexible Strategist"
  politically_connected:0 "Politically Connected"
- war_hero:0 "War Hero"
- career_officer:0 "Career Officer"
- trait_cautious:0 "Cautious"
- trait_reckless:0 "Reckless"
- media_personality:0 "Media Personality"
- harsh_leader:0 "Harsh Leader"
- infantry_officer:0 "Infantry Officer"
- cavalry_officer:0 "Cavalry Officer"
- armor_officer:0 "Armor Officer"
+
+
  UNIT_LEADER_ASSIGN_TRAIT_COST_TOOLTIP:0 "It will cost $VAL|R$ £command_power to assign this trait."
  UNIT_LEADER_TRAIT_XP:0 "§HExperience:§! $CUR|.0$/$MAX|.0$"
  UNIT_LEADER_TRAIT_GAIN_XP_WHEN:0 "§HExperience gained while:§!"

@@ -37,7 +37,7 @@ SPR_the_fire_rises = {
 
 	add_ideas = SPA_recovering_from_civil_war
 			SOV = { air_experience = 300 }
-			GER = { air_experience = 300 }
+			GER = { air_experience = 400 }
 			ITA = { air_experience = 300 }
 			SOV = { army_experience = 300 }
 			GER = { army_experience = 500 }
