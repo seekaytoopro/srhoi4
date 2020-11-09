@@ -67,7 +67,7 @@ sub_units = {
 		}
 
 		amphibious = {
-			attack = -0.1
+			attack = 0.1
 		}
 	}
 
@@ -103,9 +103,9 @@ sub_units = {
 		max_strength = 2.1
 		training_time = 120
 		weight = 0.5
-		hard_attack = -0.25
+		hard_attack = -0.35
 
-		supply_consumption = 0.14
+		supply_consumption = 0.065
 
 		forest = {
 			attack = -0.2
