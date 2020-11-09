@@ -55,6 +55,19 @@ set_technology = {
 	forward_interception = 1
 	dive_bombing = 1
 	armored_car1 = 1
+	
+	motorized_rocket_unit = 1
+	basic_light_td = 1
+	basic_light_art = 1
+	basic_light_spaa = 1
+	improved_light_td = 1
+	improved_light_art = 1
+	improved_light_spaa = 1	
+	basic_heavy_td = 1
+	basic_heavy_art = 1
+	basic_heavy_spaa = 1	
+
+	
 }
 	# add_tech_bonus = {
 	# 			name = SCW_lessons_from
@@ -106,10 +119,22 @@ add_equipment_to_stockpile = { type = support_equipment amount = 7501 producer =
 add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 150000 producer = SOV } 
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 162000 producer = SOV } 
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 7900 producer = SOV } 
-add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 7000 producer = SOV } 
-add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 7000 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 12000 producer = SOV } 
 add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 18500 producer = SOV }
+add_equipment_to_stockpile ={ type = light_tank_equipment_1 amount = 2500 producer = SOV} 
+add_equipment_to_stockpile = {type = light_tank_equipment_2 amount = 500 producer = SOV }
+add_equipment_to_stockpile = { type = motorized_rocket_equipment amount = 1556 producer = SOV}
+add_equipment_to_stockpile = { type = light_tank_artillery_equipment_1 amount = 1475 producer = SOV}
+add_equipment_to_stockpile = { type = light_tank_artillery_equipment_2 amount = 1675 producer = SOV}
+add_equipment_to_stockpile = {type = light_tank_destroyer_equipment_1 amount = 1400 producer = SOV}
+add_equipment_to_stockpile = {type = light_tank_destroyer_equipment_2 amount = 500 producer = SOV}
+add_equipment_to_stockpile = {type = light_tank_aa_equipment_1 amount = 500 producer = SOV}
+add_equipment_to_stockpile = { type = light_tank_aa_equipment_2 amount = 250 producer = SOV}
+add_equipment_to_stockpile = {  type = heavy_tank_artillery_equipment_1 amount = 523 producer = SOV}
+add_equipment_to_stockpile = {type = heavy_tank_destroyer_equipment_1 amount = 300 producer = SOV}
+add_equipment_to_stockpile = { type = heavy_tank_aa_equipment_1 amount = 96 producer = SOV}
+
+
 
 
 set_convoys = 150
