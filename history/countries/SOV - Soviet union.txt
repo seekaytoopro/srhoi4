@@ -133,6 +133,7 @@ add_equipment_to_stockpile = { type = light_tank_aa_equipment_2 amount = 250 pro
 add_equipment_to_stockpile = {  type = heavy_tank_artillery_equipment_1 amount = 523 producer = SOV}
 add_equipment_to_stockpile = {type = heavy_tank_destroyer_equipment_1 amount = 300 producer = SOV}
 add_equipment_to_stockpile = { type = heavy_tank_aa_equipment_1 amount = 96 producer = SOV}
+add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 481    producer = SOV}
 
 
 
