@@ -1755,7 +1755,7 @@ focus_tree = {
 		# 	}
 		# }
 		relative_position_id = uk_empire_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -1952,7 +1952,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

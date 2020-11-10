@@ -1177,9 +1177,11 @@ technologies = {
 			centralized_fire_control
 		}
 
-		category_army = {
+		category_all_armor = {
 			hard_attack = 0.10
-		}
+			}
+			category_all_infantry = { hard_attack = 0.10}
+		
 		
 		path = {
 			leads_to_tech = combined_arms 
@@ -1222,6 +1224,14 @@ technologies = {
 			max_organisation = 1.5
 			
 			
+		}
+		category_special_forces = { 
+			soft_attack = 0.1
+			max_organisation = 5
+		}
+		infantry = { 
+			soft_attack = 0.05
+			max_organisation = 3
 		}
 		
 		enable_tactic = tactic_breakthrough
@@ -1307,6 +1317,9 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_front_line = {
 			max_organisation = 5
+		}
+			category_recon = {
+			recon = 1
 		}
 			
 		#combat advantage when air superior
