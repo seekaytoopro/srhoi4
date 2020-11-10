@@ -822,7 +822,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}	
@@ -840,7 +840,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 8
 
 		available_if_capitulated = yes
 
@@ -857,7 +857,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_extra_tech_slot
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}	
@@ -932,17 +932,13 @@ focus_tree = {
 	
 	focus = {
 		id = royal_ordinance_focus
-		available = {
-					GER = {
-						has_completed_focus = GER_rhineland
-					}
-		} 
+	 
 		prerequisite = { focus = uk_extra_tech_slot }
 		icon = GFX_goal_generic_construct_mil_factory
 		x = -1
 		y = 2
 		relative_position_id = uk_extra_tech_slot
-		cost = 10
+		cost = 8
 		ai_will_do = {
 			factor = 1
 		}
