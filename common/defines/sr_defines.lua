@@ -216,7 +216,7 @@ NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 999.0 -- Can no longer use ground cre
 ---------------------------------------------------------------
 ----END OF DEFINE CHANGES FOR SUPPORTING HALVED PLANE COUNT----
 ---------------------------------------------------------------
-NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.096	-- vanilla 0.192 | changed so flicker bombing isnt as effective and ACs are more able to respond to changes in bombing | How much efficiency to regain per day. Gain applied hourly.
+NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.048	-- vanilla 0.192 | changed so flicker bombing isnt as effective and ACs are more able to respond to changes in bombing | How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 NDefines.NAir.ACCIDENT_CHANCE_BASE = 0							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
