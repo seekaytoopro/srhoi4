@@ -1,4 +1,6 @@
 DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
+
+
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = GER }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = JAP }  } } 
 	if = { limit = {ROOT = { tag = EFR   } }  		NOT = {  FROM = { tag = MAN }  } } 
@@ -21,12 +23,42 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { the_axis = yes  } } 	NOT = { FROM = { tag = MAN  } } }
 	if = { limit = {ROOT = { the_axis = yes} } 		NOT = { FROM = { tag = JAP  } } }
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 
-	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } } 
+	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } }
+
+	if = { limit = {ROOT = {  the_axis_minors = yes }   }   		NOT = {  FROM = { tag = GER = yes }  } } 
+	if = { limit = {ROOT = { the_axis_minors = yes }   }   		NOT = {  FROM = { tag = ITA = yes }  } } 
+ 
+	if = { limit = {ROOT = {  the_allied_minors = yes  } }   		NOT = {  FROM = { tag = USA = yes }  } }
+	if = { limit = {ROOT = { the_allied_minors = yes   } }  		NOT = {  FROM = { tag = ENG = yes }  } } 
+}		
 	
-	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
-	# if = { limit = {FROM = { normally_played_allies = yes} } 		NOT = { ROOT = { tag = SOV  } } } 
 	
-	}
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {	
 	if = { limit = {ROOT = { tag = EFR   } }  		EFR = {  always = no  } } 
@@ -42,6 +74,14 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { tag = FIN   } }  		FIN = {  always = no  } } 
 	# if = { limit = {FROM = { normally_played_allies = yes} } 		NOT = { ROOT = { tag = SOV  } } }
 	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
+	
+		
+	
+	#if = { limit = {ROOT = { tag = GER   } }  		NOT = {  FROM = { the_axis_minors = yes }  } } `
+	#if = { limit = {ROOT = { tag = ITA   } }  		NOT = {  FROM = { the_axis_minors = yes }  } } 
+	
+	#if = { limit = {ROOT = { tag = USA   } }  		NOT = {  FROM = { the_allied_minors = yes }  } }
+	#if = { limit = {ROOT = { tag = ENG   } }  		NOT = {  FROM = { the_allied_minors = yes }  } }  		
 	
 	}
 	DIPLOMACY_SEND_EXP_FORCE_ENABLE_TRIGGER = {

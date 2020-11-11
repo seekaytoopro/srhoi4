@@ -105,12 +105,26 @@ original_tag = GER
 original_tag = ITA
 original_tag = SPR
 original_tag = EFR
-original_tag = FIN
+#original_tag = FIN
 original_tag = ROM
 original_tag = HUN
 original_tag = BUL
-original_tag = ETH
-original_tag = CRO
+#original_tag = ETH
+#original_tag = CRO
+}
+}
+
+the_axis_minors = {
+OR = { 
+
+original_tag = SPR
+original_tag = EFR
+#original_tag = FIN
+original_tag = ROM
+original_tag = HUN
+original_tag = BUL
+#original_tag = ETH
+#original_tag = CRO
 }
 }
 
@@ -175,9 +189,25 @@ africa_allies = {
 	original_tag = FRA	
 	original_tag = ENG	
 	original_tag = CAN 
-	original_tag = IRE
+	
 	}
 }
+
+the_allied_minors = {
+	OR = {
+	original_tag = NZL	
+	original_tag = AST	
+	original_tag = RAJ	
+	original_tag = SAF	
+	original_tag = FRA	
+	original_tag = CAN 
+	original_tag = MEX
+	original_tag = BRA
+	
+	}
+}
+
+
 
 HMP_med_coastal_fort = {
 OR = {
