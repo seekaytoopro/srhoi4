@@ -196,6 +196,13 @@ technologies = {
 			maximum_speed = 0.1
 			default_morale = 0.2
 		}
+		
+		Panzergrenadier = {
+		maximum_speed = 0.1
+		default_morale = 0.2
+		}
+		
+		
 		amphibious_mechanized = {
 			maximum_speed = 0.1
 			default_morale = 0.2
@@ -279,6 +286,9 @@ technologies = {
 		motorized = {
 			max_organisation = 20
 		
+		}
+		Panzergrenadier = {
+		max_organisation = 20
 		}
 	
 		mechanized = {
@@ -463,6 +473,8 @@ technologies = {
 		motorized = {
 			max_organisation = 10
 		}
+		
+		Panzergrenadier = { max_organisation = 10}
 	
 		mechanized = {
 			max_organisation = 10
@@ -512,6 +524,10 @@ technologies = {
 		}
 		motorized = {
 			default_morale = 0.1
+		}
+		Panzergrenadier = {
+		
+		default_morale = 0.1
 		}
 		mechanized = {
 			default_morale = 0.1
@@ -1728,6 +1744,9 @@ technologies = {
 	
 		motorized = {
 			max_organisation = 5
+		}
+		Panzergrenadier = {
+		max_organisation = 5
 		}
 		armored_car = {
 			max_organisation = 5

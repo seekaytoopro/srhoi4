@@ -25,6 +25,8 @@
  GER_tactical_air_effort2_desc:0 "Victory can be assured by renewed investment in the ultimate weapon of terror, the divisional support air plane. "
  GER_infra_effort:0"Begin Construction of the Berlin-Moscow Super Highway"
  GER_infra_effort_desc:0" We must prepare the railroads for a new populace...."
+ GER_panzer_grenadier:0"Recruit the Panzergrenadiers"
+ GER_panzer_grenadier_desc:0"We may now field an elite, but more expensive mechanized infantry batallion."
  ENG_tank_focus2:0"Modernize the Matilda"
  ENG_tank_focus2_desc:0"We must prepare superior weapons of war to end the Prussian Menace once and for all."
  GER_align_hungary_desc:0 "Hungary, Romania and Bulgaria are already in our sphere of influence, but we could easily sway them further to our way of thinking, making them even more easily manipulable in the future."

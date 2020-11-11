@@ -1517,6 +1517,31 @@ hidden_effect = {
 		}
 	}
 
+
+focus = {
+		id = GER_panzer_grenadier
+		icon = GFX_goal_GER_panzer_granadier
+		
+		prerequisite = {focus = GER_army_innovation_2}
+		relative_position_id =GER_army_innovation_2
+		x = 0
+		y = 1
+		cost = 5
+		available = {
+			has_tech = mechanised_infantry
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+			set_technology = {
+				panzergrenadier = 1
+			}		
+		
+		}
+	}
+	
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
@@ -3463,6 +3488,8 @@ SPR = { country_event = spain.29 }
 						}
 					}
 				}
+				
+				
 
 				focus = {
 					id = GER_fall_blau

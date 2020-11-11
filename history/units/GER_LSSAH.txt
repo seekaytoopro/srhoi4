@@ -4,15 +4,15 @@ division_template = {
 	division_names_group = GER_SS_01
 	
 	regiments = {
-		mechanized = { x = 0 y = 0 }
-	    mechanized = { x = 0 y = 1 }
-		mechanized = { x = 0 y = 2 }
-		mechanized = { x = 0 y = 3 }
+		Panzergrenadier = { x = 0 y = 0 }
+	    Panzergrenadier = { x = 0 y = 1 }
+		Panzergrenadier = { x = 0 y = 2 }
+		Panzergrenadier = { x = 0 y = 3 }
 		
-		mechanized = { x = 1 y = 0 }
-		mechanized = { x = 1 y = 1 }
-		mechanized = { x = 1 y = 2 }
-		mechanized = { x = 1 y = 3 }
+		Panzergrenadier = { x = 1 y = 0 }
+		Panzergrenadier = { x = 1 y = 1 }
+		Panzergrenadier = { x = 1 y = 2 }
+		Panzergrenadier = { x = 1 y = 3 }
 	    
 		medium_armor = { x = 2 y = 0 }
 		medium_armor = { x = 2 y = 1 }

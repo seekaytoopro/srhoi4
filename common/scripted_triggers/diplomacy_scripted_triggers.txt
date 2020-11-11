@@ -25,11 +25,11 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 
 	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } }
 
-	if = { limit = {ROOT = {  the_axis_minors = yes }   }   		NOT = {  FROM = { tag = GER = yes }  } } 
-	if = { limit = {ROOT = { the_axis_minors = yes }   }   		NOT = {  FROM = { tag = ITA = yes }  } } 
+	if = { limit = {ROOT = {  the_axis_minors = yes }   }   		NOT = {  FROM = { tag = GER}  } } 
+	if = { limit = {ROOT = { the_axis_minors = yes }   }   		NOT = {  FROM = { tag = ITA }  } } 
  
-	if = { limit = {ROOT = {  the_allied_minors = yes  } }   		NOT = {  FROM = { tag = USA = yes }  } }
-	if = { limit = {ROOT = { the_allied_minors = yes   } }  		NOT = {  FROM = { tag = ENG = yes }  } } 
+	if = { limit = {ROOT = {  the_allied_minors = yes  } }   		NOT = {  FROM = { tag = USA  }  } }
+	if = { limit = {ROOT = { the_allied_minors = yes   } }  		NOT = {  FROM = { tag = ENG }  } } 
 }		
 	
 	
