@@ -1919,6 +1919,21 @@ ideas = {
 			}
 		}
 		
+		franz_halder = {
+
+
+			allowed = {
+				original_tag = GER
+			}
+
+			traits = { army_cavalry_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		
 		erwin_rommel = {
 			ledger = army
 			

@@ -1209,15 +1209,7 @@ ideas = {
 	army_chief = {
 		
 		
-		semyon_timoshenko = {
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = { army_chief_reform_2 }
-			
-		}
+		
 		
 		kliment_voroshilov = {
 			
@@ -1229,16 +1221,15 @@ ideas = {
 
 		}
 		
-		# alexander_yegorov = {
-		# 	allowed = {	original_tag = SOV }
 		
-		# 	traits = { army_chief_defensive_2 }
-		# }
 		
 		vasily_blucher = {		
 			allowed = { original_tag = SOV	}
 			traits = { army_chief_maneuver_2 }	
 		}	
+		
+		
+		
 
 		georgy_zhukov_chief = {
 		
@@ -1260,16 +1251,7 @@ ideas = {
 	}
 	navy_chief = {
 		
-		pyotr_smirnov = {
-			
-			
-			allowed = {
-				original_tag = SOV
-			}
-
-			traits = { navy_chief_naval_aviation_1 }
-			
-		}
+		
 		
 		mikhail_frinovsky = {	
 			
@@ -1281,14 +1263,7 @@ ideas = {
 			
 		}
 		
-		nikolay_kuznetsov = {
-			
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = { navy_chief_reform_2 }
-		}
+		
 		
 		ivan_yumashev = {
 				
@@ -1317,7 +1292,24 @@ ideas = {
 	
 	
 	high_command = {
-	
+		
+		nikolay_kuznetsov = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { army_anti_tank_1 }
+		}
+		
+		
+		 alexander_yegorov = {
+		 	allowed = {	original_tag = SOV }
+		
+		 	traits = { air_bomber_interception_1 }
+		 }
+		
+		
 		ivan_konev = {
 			ledger = army
 
@@ -1325,7 +1317,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
 		}
 		
 		aleksandr_vasilevsky = {
@@ -1337,6 +1329,17 @@ ideas = {
 			
 			traits = { army_regrouping_3 }
 
+		}
+		
+		pyotr_smirnov = {
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			traits = { army_cavalry_1 }
+			
 		}
 		
 		konstantin_rokossovsky = {
@@ -1359,7 +1362,17 @@ ideas = {
 			}
 			
 			traits = {army_commando_2 }
-		}	
+		}
+
+			semyon_timoshenko = {
+			
+			allowed = {
+				original_tag = SOV
+			}
+			
+			traits = { army_artillery_1 }
+			
+		}		
 		
 	
 			

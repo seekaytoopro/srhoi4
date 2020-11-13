@@ -23,3 +23,7 @@
  keitel_hc:0"Oberkommando der Wehrmacht"
  goering_hc:0"Oberkommando der Luftwaffe"
  messe_hc:0"Sidi Barrani:Graziani Offensive"
+ army_anti_tank_1:0"GDU Protege"
+ modifier_army_sub_unit_anti_tank_brigade_attack_factor:0"Anti Tank Division Attack"
+ modifier_army_sub_unit_anti_tank_brigade_defence_factor:0"Anti Tank Division Defense"
+ modifier_army_sub_unit_anti_tank_brigade_speed_factor:0"Anti Tank Division Speed"
