@@ -571,36 +571,8 @@ ideas = {
 			}
 		}
 
-		CAN_harold_edwards = {
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-
-			
-			traits = { air_chief_reform_2}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		CAN_raymond_collishaw = {
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-
-			
-			traits = { air_air_combat_training_2}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
+		
 	}
 
 	navy_chief = {
@@ -623,19 +595,7 @@ ideas = {
 
 		
 
-		CAN_alasdair_murray = {
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = CAN
-			}
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 		CAN_george_jones = {
 			picture = generic_navy_europe_1
 			
@@ -652,7 +612,69 @@ ideas = {
 	}
 	
 	high_command = {
+		CAN_alasdair_murray = {
+			picture = generic_navy_europe_1
+			ledger = navy
+			allowed = {
+				original_tag = CAN
+			}
+			
+			traits = { navy_screen_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
+		CAN_harold_edwards = {
+			picture = generic_army_europe_5
+			ledger = army
+			
+			allowed = {
+				original_tag = CAN
+			}
+			
+
+			
+			traits = { army_cavalry_1}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+		CAN_raymond_collishaw = {
+			picture = generic_air_europe_3
+			ledger =army
+			allowed = {
+				original_tag = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+
+			
+			traits = { air_tactical_bombing_3  }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CAN_raymond_collishaw = {
+			picture = generic_army_europe_4
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			
+
+			
+			traits = { army_regrouping_1}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	
 		CAN_guy_simonds = {
 			ledger = army
@@ -663,7 +685,23 @@ ideas = {
 				original_tag = CAN
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		CAN_lloyd_samuel_breadner = {
+			picture = generic_army_europe_6
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			
+
+			
+			traits = { army_logistics_1 }
 			
 			ai_will_do = {
 				factor = 1
