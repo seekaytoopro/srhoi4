@@ -239,7 +239,7 @@ ideas = {
 				army_attack_factor = 0.075
 				army_defence_factor = 0.075
 				consumer_goods_factor = -0.15
-				conscription = 0.010
+				conscription = 0.007
 				production_speed_arms_factory_factor = 0.15
 			}
 		}
@@ -278,7 +278,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				conscription = 0.01
+				conscription = 0.009
 				army_org_Factor = 0.05
 				planning_speed = 0.20
 				operative_slot = 3

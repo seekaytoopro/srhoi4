@@ -304,7 +304,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1936
 		
 		folder = {
@@ -483,7 +483,7 @@ technologies = {
 			has_dlc = "Man the Guns"
 		}
 		
-		research_cost = 0.5
+		research_cost = 0.75
 		start_year = 1934
 
 		categories = {
@@ -498,7 +498,7 @@ technologies = {
 			amphibious_tank_equipment_2
 		}
 		
-		research_cost = 0.5
+		research_cost = 0.75
 		start_year = 1939
 		
 		categories = {
@@ -513,7 +513,7 @@ technologies = {
 			light_tank_equipment_3 
 		}	
 		
-		research_cost = 2
+		research_cost = 0.75
 		start_year = 1941
 		
 		folder = {
@@ -1444,7 +1444,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 1934
 		
 		folder = {
@@ -1612,7 +1612,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.25
 		start_year = 1941
 		
 		folder = {
@@ -1797,7 +1797,7 @@ technologies = {
 			research_cost_coeff = 0.9
 		}
 		
-		research_cost = 2.5
+		research_cost = 1.5
 		start_year = 1943
 		
 		folder = {

@@ -518,6 +518,12 @@ ideas = {
 				original_tag = ITA
 			}
 			
+			available =
+			{
+				
+				NOT = {has_completed_focus = ITA_army_reform}
+			}
+			
 
 			
 			traits = { army_commando_1 }
@@ -530,7 +536,11 @@ ideas = {
 		alfredo_guzzoni = {
 			ledger = army
 			
-			
+			available =
+			{
+				
+				NOT = {has_completed_focus = ITA_army_reform}
+			}
 			allowed = {
 				original_tag = ITA
 			}
