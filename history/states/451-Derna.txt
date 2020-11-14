@@ -10,12 +10,12 @@ state={
 	history={
 		owner = ITA
 		add_core_of = SWE
-		victory_points = { #Tobruk
+		victory_points = {
 			1130 150 
 		}
-		# victory_points = { #Bardia
-		# 	10120 25 
-		# }
+		victory_points = {
+			10120 25 
+		}
 		buildings = {
 			infrastructure = 3
 			air_base = 6

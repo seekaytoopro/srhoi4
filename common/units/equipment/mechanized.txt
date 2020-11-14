@@ -31,7 +31,11 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 1
 		
+<<<<<<< HEAD
 		build_cost_ic = 8.0 
+=======
+		build_cost_ic = 8 
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 		resources = {
 			steel = 2
 			#oil = 1
@@ -72,7 +76,11 @@ equipments = {
 		ap_attack = 16
 		soft_attack = 3.5
 		
+<<<<<<< HEAD
 		build_cost_ic = 9.0
+=======
+		build_cost_ic = 8.5
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 		resources = {
 			steel = 3
 			rubber = 1
@@ -102,7 +110,11 @@ equipments = {
 		soft_attack = 4
 		
 		
+<<<<<<< HEAD
 		build_cost_ic = 10.0
+=======
+		build_cost_ic = 9
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 		resources = {
 			steel = 4
 			rubber = 1

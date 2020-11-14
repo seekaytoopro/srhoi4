@@ -44,15 +44,20 @@ sub_units = {
 			movement = -0.2
 		}
 		urban = {
+<<<<<<< HEAD
 			attack = -0.2
 			defence = -0.1
+=======
+			attack = -0.15
+			defence = -0.25
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 		}
 		river = { 
 			attack = -0.4 
 			movement = -0.4
 		}
 		amphibious = { 
-			attack = -0.95
+			attack = -0.9
 		}
 		fort = {
 			attack = 0.1
@@ -74,6 +79,10 @@ sub_units = {
 		max_strength = 2
 		weight = 1.5
 		
+<<<<<<< HEAD
 		supply_consumption = 0.44
+=======
+		supply_consumption = 0.485
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 	}
 }

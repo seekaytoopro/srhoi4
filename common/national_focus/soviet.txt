@@ -2765,9 +2765,16 @@ focus = {
 				id = SOV_operation_little_saturn
 				icon = GFX_focus_attack_germany
 				relative_position_id = SOV_defense_of_stalingrad
+<<<<<<< HEAD
 				x = -1
 				y = 1
 				prerequisite = { focus = SOV_defense_of_stalingrad }
+=======
+				x = 0
+				y = 2
+				prerequisite = { focus = SOV_order_227}
+				prerequisite = { focus = SOV_operation_uranus}
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 				cost = 1.0
 				ai_will_do = {
 					factor = 1000
@@ -2788,67 +2795,11 @@ focus = {
 		
 				completion_reward = {
 		
-					add_timed_idea= { idea=SOV_operation_little_saturn days = 90 }
+					add_timed_idea= { idea=SOV_operation_little_saturn days=60 }
 		
 		
 				}
 			}
-
-			focus = {
-				id = SOV_operation_bagration
-				icon = GFX_focus_attack_germany
-				relative_position_id = SOV_defense_of_stalingrad
-				x = 1
-				y = 1
-				prerequisite = { focus = SOV_defense_of_stalingrad }
-				cost = 1.0
-				ai_will_do = {
-					factor = 1000
-					modifier = {
-						factor = 0
-						NOT = { has_war_with = GER }
-					}
-				}
-
-				bypass = {
-					date>1944.2.18
-				}
-
-				available = {
-					date>1943.12.1
-					date<1944.2.18
-				}
-		
-				completion_reward = {
-					add_timed_idea= { idea=SOV_operation_bagration days = 90 }
-				}
-			}
-
-			focus = { 
-				id = SOV_man_of_steel
-				icon = GFX_SOV_goal_stalin
-				prerequisite = { focus = SOV_defense_of_stalingrad }
-				available = { 
-					OR = {  
-						date > 1944.3.1 
-						USA = { has_capitulated = yes }
-						AND = {
-							has_war_with = JAP
-							date > 1943.6.1
-						}
-					} 
-				}
-				x = 0
-				y = 2
-				relative_position_id = SOV_defense_of_stalingrad
-				cost = 3
-		
-				available_if_capitulated = yes
-		
-				completion_reward = {
-					add_country_leader_trait = stalin_barb_leader_trait2
-				}
-			}	
 			
 			
 }

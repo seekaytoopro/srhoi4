@@ -27,15 +27,19 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				# army_armor_attack_factor = 0.075
+<<<<<<< HEAD
 				# army_infantry_attack_factor = 0.05
 				army_armor_attack_factor = 0.025
 				army_infantry_attack_factor = 0.025
+=======
+				 army_infantry_attack_factor = 0.05
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 				winter_attrition_factor = -0.8
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
 		}
 
-		SOV_operation_bagration = {
+		SOV_operation_mars_jupiter = {
 			allowed = { always = no }
 
 			allowed_civil_war = { has_government = communism }
@@ -45,7 +49,11 @@ ideas = {
 			picture = generic_acquire_tanks
 			modifier = {
 				army_armor_attack_factor = 0.05
+<<<<<<< HEAD
 				army_infantry_attack_factor = 0.05
+=======
+				army_infantry_attack_factor = 0.025
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 				winter_attrition_factor = -0.5
 				acclimatization_cold_climate_gain_factor = 100.0
 			}
@@ -87,7 +95,11 @@ ideas = {
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.20
+<<<<<<< HEAD
 				production_factory_efficiency_gain_factor = -0.30		
+=======
+				production_factory_efficiency_gain_factor = -0.45
+>>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 			}
 			
 		}
