@@ -1055,6 +1055,36 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = USA_intervention_in_africa
+		icon = GFX_goal_generic_territory_or_war
+		x = 3
+		y = 1
+		prerequisite = { focus = USA_war_plans_division }
+		relative_position_id = USA_war_plans_division
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = USA_idea_intervention_in_africa
+		}
+		}
+		
+		focus = {
 		id = USA_intervention_in_europe
 		icon = GFX_goal_generic_territory_or_war
 		x = -2
@@ -1082,6 +1112,250 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = USA_intervention_in_europe
 		}
+		}
+		
+	
+	
+	
+	
+	
+	focus = {
+		id = USA_torch
+	
+		prerequisite = { focus = USA_intervention_in_africa }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = USA_intervention_in_africa
+		available = {
+			date > 1943.6.1
+			
+				AND = {
+					NOT = { 
+						448 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								is_controlled_by = EFR	
+															
+							}
+						}
+					}
+					
+					
+					
+				
+					
+					
+					
+					
+					
+					NOT = { 
+						460 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}					
+					NOT = { 
+						513 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP		
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					NOT = {
+						458 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					NOT = {
+						291 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = JAP								
+							}
+						}
+					}
+					NOT = {
+						459 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					NOT = {
+						462 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}						
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		
+		every_army_leader = {
+	 
+                limit = { has_id = 2003}
+				add_defense = 3
+				add_logistics = 1
+				add_attack = 1
+				add_planning = 3
+			} 
+		
+		random_unit_leader = {
+                limit = { has_id = 2003 }
+				
+				
+				
+				
+				add_unit_leader_trait = trickster
+				add_unit_leader_trait = expert_improviser
+				add_unit_leader_trait = urban_assault_specialist
+			
+				
+				
+            }
+			
+			random_unit_leader = {
+                limit = { has_id = 602 }
+				
+				
+				
+				
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = infantry_leader
+				
+				
+			
+				
+				
+            }
+		
+			
+		}
+	
+	}
+	
+	focus = {
+		id = USA_overlord
+	
+		prerequisite = { focus = USA_torch }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id =USA_torch
+		available = {
+			date > 1944.6.1
+			
+				AND = {
+					NOT = { 
+						115 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+															
+							}
+						}
+					}
+					
+					
+					
+				
+					
+					
+					
+					
+					
+					NOT = { 
+						114 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP
+							
+							}
+						}
+					}					
+					NOT = { 
+						1 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP		
+								is_controlled_by = EFR	
+							}
+						}
+					}
+											
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		
+		every_army_leader = {
+	 
+                limit = { has_id = 602}
+				add_defense = 1
+				add_logistics = 4
+				add_attack = 2
+				add_planning = 4
+			} 
+		
+			
+			random_unit_leader = {
+                limit = { has_id = 602 }
+				
+				
+				
+				
+			
+				add_unit_leader_trait = urban_assault_specialist
+				add_unit_leader_trait = combined_arms_expert
+				add_unit_leader_trait = infantry_expert
+				
+				
+			
+				
+				
+            }
+		
+			
+		}
+	
 	}
 	
 	focus = {
@@ -1099,7 +1373,7 @@ focus_tree = {
 	
 		available = {
 			OR = {
-				date>1942.3.1
+				date>1943.6.1
 				ENG = { surrender_progress > 0.10 }
 			}
 			
@@ -1123,7 +1397,7 @@ focus_tree = {
 		prerequisite = { focus = USA_intervention_in_europe }
 		available = {
 			OR = {
-				date>1942.9.1
+				date>1944.9.1
 				ENG = { surrender_progress > 0.10 }
 			}
 			
@@ -1286,6 +1560,338 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = USA_rubber_hold
+	
+		prerequisite = { focus = USA_defense_of_the_pacific }
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = USA_defense_of_the_pacific
+		available = {
+			date > 1943.3.1
+			
+				AND = {
+					NOT = { 
+						672 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+															
+							}
+						}
+					}
+					
+					
+					
+				
+					
+					
+					
+					
+					
+					NOT = { 
+						335 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP
+								
+							}
+						}
+					}					
+					NOT = { 
+						667 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP		
+								
+							}
+						}
+					}
+					NOT = {
+						523 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+							}
+						}
+					}
+					NOT = {
+						285 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = JAP								
+							}
+						}
+					}
+					NOT = {
+						284 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+							}
+						}
+					}
+					NOT = {
+						629 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}	
+
+					NOT = {
+						632 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}		
+
+					NOT = {
+						630 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					
+					NOT = {
+						631 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		
+		every_army_leader = {
+	 
+                limit = { has_id = 2004}
+				add_defense = 1
+				add_logistics = 1
+				add_attack = 4
+				add_planning = 2
+			} 
+		
+		random_unit_leader = {
+                limit = { has_id = 2004 }
+				
+				
+				
+				
+				add_unit_leader_trait = trickster
+				
+				
+			
+				
+				
+            }
+		
+			
+		}
+	
+	}
+	
+	focus = {
+		id = USA_protect_phillipenes
+	
+		prerequisite = { focus = USA_rubber_hold }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = USA_rubber_hold
+		available = {
+			date > 1943.6.1
+			
+				AND = {
+					NOT = { 
+						333 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+															
+							}
+						}
+					}
+					
+					
+					
+				
+					
+					
+					
+					
+					
+					NOT = { 
+						334 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP
+								
+							}
+						}
+					}					
+					NOT = { 
+						673 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP		
+								
+							}
+						}
+					}
+					NOT = {
+						327 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+							}
+						}
+					}
+					NOT = {
+						623 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = JAP								
+							}
+						}
+					}
+					NOT = {
+						627 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP	
+								
+							}
+						}
+					}
+					NOT = {
+						626 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}	
+
+					NOT = {
+						624 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}		
+
+					NOT = {
+						668 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					
+					NOT = {
+						684 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP
+								is_controlled_by = EFR	
+							}
+						}
+					}
+					
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		
+		every_army_leader = {
+	 
+                limit = { has_id = 57}
+				add_defense = 3
+				add_logistics = 1
+				add_attack = 3
+				add_planning = 1
+			} 
+		
+		random_unit_leader = {
+                limit = { has_id = 57 }
+				
+				
+				
+				
+				add_unit_leader_trait = trickster
+				add_unit_leader_trait = commando
+				add_unit_leader_trait = infantry_leader
+				add_unit_leader_trait = infantry_expert
+				add_unit_leader_trait = organizer
+				add_unit_leader_trait = logistics_wizard
+				add_unit_leader_trait = thorough_planner
+				add_unit_leader_trait = unyielding_defender
+				
+				add_unit_leader_trait = inspirational_leader
+				add_unit_leader_trait = expert_delegator
+			
+				
+				
+            }
+		
+			
+		}
+	
+	}
 
 	focus = {
 		id = USA_war_with_japan
@@ -1314,7 +1920,7 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_war_with_japan }
 		available = {
-			date>1942.1.1
+			date>1943.1.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1384,7 +1990,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1452,7 +2058,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1496,7 +2102,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1622,7 +2228,7 @@ focus_tree = {
 		y = 3
 		prerequisite = { focus = USA_army_of_the_united_states }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1662,7 +2268,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_selective_training_act }
 		ai_will_do = {
 			factor = 5
@@ -1698,7 +2304,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_support_rock_island }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1749,7 +2355,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1791,7 +2397,7 @@ focus_tree = {
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1832,7 +2438,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1888,7 +2494,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1928,7 +2534,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_build_the_pentagon }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1978,7 +2584,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2017,7 +2623,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2049,7 +2655,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2080,7 +2686,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = USA_air_support
-		cost = 10
+		cost = 5
 		#ai_will_do = {
 		#	factor = 1
 		#}
@@ -2192,7 +2798,7 @@ focus_tree = {
 		y = 2
 		prerequisite = { focus = USA_air_support focus = USA_strategic_bombing }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2239,7 +2845,7 @@ focus_tree = {
 		y = 4
 		prerequisite = { focus = USA_TAC }
 		relative_position_id = USA_air_war_plans_division
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2260,7 +2866,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_us_army_airforce
-				uses = 3
+				uses = 6
 				bonus = 1.0
 				category = air_doctrine
 			}

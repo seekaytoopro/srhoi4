@@ -289,7 +289,7 @@ air_wings = {
 		fighter_equipment_0 = {
 			version_name = "I16-R"
 			owner = "SOV" 
-			amount = 3000
+			amount = 800
 		}
        
 		tac_bomber_equipment_0 =  {
@@ -410,6 +410,17 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		efficiency = 70
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "SOV" 
+			version_name = "MiG-3"
+		}
+		requested_factories = 25
+		progress = 0.15
+		efficiency = 65
 	}
 
 	add_equipment_production = {

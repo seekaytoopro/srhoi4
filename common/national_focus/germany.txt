@@ -35,7 +35,7 @@ focus_tree = {
 		id = GER_west_wall
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = GER_four_year_plan }
-		x = -3
+		x = 1
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
@@ -121,7 +121,7 @@ focus_tree = {
 	focus = {
 		id = GER_ostwall
 		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = GER_four_year_plan }
+		prerequisite = { focus =GER_ussr_war_goal }
 		available = {
 			any_country = {
 				OR = {
@@ -143,16 +143,16 @@ focus_tree = {
 				}
 			}
 		}
-		x = 1
+		x = 2
 		y = 1
-		relative_position_id = GER_four_year_plan
+		relative_position_id = GER_ussr_war_goal
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		
 		completion_reward = {
-			add_ideas = GER_ostwall_idea
+		
 			custom_effect_tooltip = GER_ostwall_forts
 			custom_effect_tooltip = GER_ostwall_forts_2
 			if = {
@@ -512,7 +512,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				technology = advanced_machine_tools
 				technology = flexible_line
@@ -521,12 +521,7 @@ focus_tree = {
 				technology = concentrated_industry3
 				technology = concentrated_industry4
 				technology = concentrated_industry5
-				technology = dispersed_industry3
-				technology = dispersed_industry4
-				technology = dispersed_industry5
-				technology = construction3
-				technology = construction4
-				technology = construction5
+			
 				}
 			add_tech_bonus = {
 				name = GER_autarky
@@ -1075,10 +1070,11 @@ hidden_effect = {
 		focus = {
 			id = GER_armament_miracle
 			icon = GFX_goal_generic_construct_mil_factory
-			prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+			prerequisite = { focus = GER_battle_russia }
+			prerequisite = {focus = GER_tactical_air_effort2 }
 			x = 0
-			y = 1
-			relative_position_id = GER_german_war_economy
+			y = 3
+			relative_position_id = GER_ussr_war_goal
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -1185,7 +1181,7 @@ hidden_effect = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.6
+				bonus = 0.5
 				uses = 1
 				technology = fighter2
 			}
@@ -1210,8 +1206,7 @@ hidden_effect = {
 			instant_build = yes
 		}
 	}			
-			custom_effect_tooltip = available_chief_of_airforce
-			show_ideas_tooltip = ritter_von_greim
+			
 		}
 	}
 
@@ -1242,7 +1237,7 @@ hidden_effect = {
 				ahead_reduction = 1.5
 				uses = 1
 				
-				category = cas_bomber			
+				technology = cas2
 			}
 		}
 	}
@@ -1348,12 +1343,11 @@ hidden_effect = {
 			
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 1.0
+				bonus = 1.5
 				uses = 2
 				category = land_doctrine
 			}
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch		
+				
 		}
 	}
 	
@@ -1381,7 +1375,7 @@ hidden_effect = {
 		add_tech_bonus = {
 		name = GER_soviet_treaty
 		bonus = 1.0
-		uses = 2
+		uses = 3
 		ahead_reduction = 0.75
 		technology = improved_medium_tank
 		technology = improved_heavy_tank
@@ -1391,7 +1385,7 @@ hidden_effect = {
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 2.0
-			uses = 2
+			uses = 3
 			technology = improved_medium_spaa
 			technology = improved_medium_td
 			technology = improved_medium_art
@@ -1425,8 +1419,8 @@ hidden_effect = {
 			# Balance research bonus to next tech among radio, radio_detection, decimetric_radar, improved_decimetric_radar, centimetric_radar, improved_centimetric_radar, advanced_centimetric_radar
 			add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 5
 				category = radar_tech
 			}
 			if = {
@@ -1496,27 +1490,30 @@ hidden_effect = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 2
+				
+				uses = 3
 				category = land_doctrine
 			}
 			
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
+				ahead_reduction = 1.25
 				name = mech_army_bonus
 				technology = mechanised_infantry
-			}	
-			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 1.0
-				uses = 3
-				technology = advanced_medium_spaa
-				technology = advanced_medium_td
-				technology = advanced_medium_art
-				technology = advanced_heavy_spaa
-				technology = advanced_heavy_td
-				technology = advanced_heavy_art
 			}
+			add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 2.0
+			uses = 3
+			technology = improved_medium_spaa
+			technology = improved_medium_td
+			technology = improved_medium_art
+			technology = improved_heavy_spaa
+			technology = improved_heavy_td
+			technology = improved_heavy_art
+		}				
+			
 		}
 	}
 
@@ -1525,6 +1522,7 @@ hidden_effect = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_air_innovation_2 }
+		
 		x = 2
 		y = 1
 		relative_position_id = GER_extra_tech_slot
@@ -1612,7 +1610,7 @@ hidden_effect = {
 		id = GER_anschluss
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = GER_rhineland }
-
+		available ={ date > 1937.6.1}
 		cancel_if_invalid = no
 		x = 0
 		y = 1
@@ -1942,7 +1940,7 @@ hidden_effect = {
 		}	
 		completion_reward = {
 		custom_effect_tooltip = available_theorist 
-			show_ideas_tooltip = speer	
+			show_ideas_tooltip = heinrich_himmler
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			add_political_power = 150
 			
@@ -2607,7 +2605,7 @@ SPR = { country_event = spain.29 }
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				set_technology = { cruiser_submarines = 1 }
+				
 			}
 		}
 		
@@ -3159,8 +3157,9 @@ SPR = { country_event = spain.29 }
 				id = GER_flak_36
 				icon = GFX_goal_generic_construct_military
 				relative_position_id = GER_german_war_economy
-				prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
-				x = -2
+				prerequisite = { focus = GER_german_war_economy}
+				prerequisite = { focus = GER_integrate_war_economies }
+				x = -1
 				y = 1
 				cost = 2
 				ai_will_do = {
@@ -3351,12 +3350,61 @@ SPR = { country_event = spain.29 }
 					}			
 				}
 			}
+			
+			
+			
+			focus = {
+		id = GER_tactical_air_effort2
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_ostwall }
+		x = 0
+		y = 1
+		relative_position_id = GER_ostwall
+		cost = 10
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				air_experience = 300
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				ahead_reduction = 0.75
+				uses = 1
+				
+				technology = cas3
+			}
+		}
+	}
+	
+	focus = {
+		id = GER_infra_effort
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = GER_ussr_war_goal }
+		x = -2
+		y = 1
+		relative_position_id = GER_ussr_war_goal
+		cost = 5
+		ai_will_do = {
+			factor = 0.25
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				
+			add_ideas = GER_ostwall_idea
+		}
+	}
 
 			focus = {
 				id = GER_battle_russia
 				icon = GFX_goal_generic_attack_allies
-				relative_position_id = GER_army_innovation_2
-				prerequisite = { focus = GER_army_innovation_2 }
+				relative_position_id = GER_infra_effort
+				prerequisite = { focus = GER_infra_effort }
 				x = 0
 				y = 1
 				cost = 10
@@ -3370,7 +3418,7 @@ SPR = { country_event = spain.29 }
 				available_if_capitulated = yes
 		
 				completion_reward = {
-					army_experience = 100
+					army_experience = 300
 					if = {
 						limit = { NOT = { has_tech = improved_heavy_tank } }
 						set_technology = {
@@ -3387,7 +3435,7 @@ SPR = { country_event = spain.29 }
 					}
 					add_tech_bonus = {
 						bonus = 0.00
-						uses = 1
+						uses = 3
 						ahead_reduction = 1.0
 						name = Barbarossa_TD_bonus
 						technology = advanced_light_td
@@ -3396,7 +3444,7 @@ SPR = { country_event = spain.29 }
 					}
 					add_tech_bonus = {
 						bonus = 0.00
-						uses = 1
+						uses = 3
 						ahead_reduction = 1.0
 						name = Barbarossa_ART_bonus
 						technology = advanced_light_art
@@ -3405,7 +3453,7 @@ SPR = { country_event = spain.29 }
 					}
 					add_tech_bonus = {
 						bonus = 0.00
-						uses = 1
+						uses = 3
 						ahead_reduction = 1.0
 						name = Barbarossa_SPAA_bonus
 						technology = advanced_light_spaa
@@ -3414,7 +3462,7 @@ SPR = { country_event = spain.29 }
 					}
 					add_tech_bonus = {
 						name = at_bonus
-						bonus = 0.5
+						bonus = 0.75
 						uses = 2
 						category = cat_anti_tank
 						}
@@ -3440,10 +3488,13 @@ SPR = { country_event = spain.29 }
 					ai_will_do = {
 						factor = 1
 					}
+					
 			
 					available_if_capitulated = no
 					completion_reward = {
-			
+					custom_effect_tooltip = available_theorist 
+					show_ideas_tooltip = speer
+					load_oob = GER_fallblau
 						GER = {add_timed_idea = { idea = GER_fall_blau days = 70 }}
 						hidden_effect={  
 							if = {limit = {country_exists = ROM } ROM = {add_timed_idea = { idea = GER_fall_blau days = 70 }}}

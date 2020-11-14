@@ -12,6 +12,264 @@ focus_tree = {
 	}
 	
 	default = no
+	
+	
+	focus = {
+		id = ENG_african_lessons
+		icon = GFX_focus_ENG_imp_conference
+		prerequisite = { focus = ENG_military_training_act }
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_military_training_act
+		available = {
+			date > 1942.3.1
+			
+				AND = {
+					
+					
+					NOT = { 
+						447 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP						
+							}
+						}
+					}					
+					NOT = { 
+						446 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP										
+							}
+						}
+					}
+					NOT = {
+						456 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP												
+							}
+						}
+					}
+					NOT = {
+						291 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = JAP								
+							}
+						}
+					}
+					
+											
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		random_unit_leader = {
+                limit = { has_id = 996 }
+				
+				add_unit_leader_trait = expert_delegator
+				
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = infantry_leader
+				add_unit_leader_trait = ambusher
+				add_unit_leader_trait = commando
+				add_unit_leader_trait = panzer_leader
+				add_unit_leader_trait = naval_invader
+				
+				add_unit_leader_trait = desert_fox
+				add_unit_leader_trait = urban_assault_specialist
+				
+            }
+			
+			
+			
+		}
+	
+	}
+	
+	
+	focus = {
+		id = ENG_lessons_of_war
+	
+		prerequisite = { focus = ENG_african_lessons }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = ENG_african_lessons
+		available = {
+			date > 1943.9.1
+			
+				AND = {
+					NOT = { 
+						448 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					NOT = { 
+						439 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					NOT = { 
+						423 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					
+					NOT = { 
+						428 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					
+					NOT = { 
+						445 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					
+					
+					NOT = { 
+						431 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+															
+							}
+						}
+					}
+					
+					NOT = { 
+						447 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA		
+								is_controlled_by = JAP						
+							}
+						}
+					}					
+					NOT = { 
+						446 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA	
+								is_controlled_by = JAP										
+							}
+						}
+					}
+					NOT = {
+						456 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP												
+							}
+						}
+					}
+					NOT = {
+						291 = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = JAP								
+							}
+						}
+					}
+					NOT = {
+						450 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER		
+								is_controlled_by = JAP		
+							}
+						}
+					}
+					NOT = {
+						451 = {
+							OR = {
+								is_controlled_by = ITA
+								is_controlled_by = GER	
+								is_controlled_by = JAP		
+							}
+						}
+					}						
+				}
+			
+		}
+		ai_will_do = {
+			factor = 9
+		}
+		
+		completion_reward = {
+		random_unit_leader = {
+                limit = { has_id = 995 }
+				add_unit_leader_trait = organizer
+				add_unit_leader_trait = logistics_wizard
+				add_unit_leader_trait = thorough_planner
+				add_unit_leader_trait = unyielding_defender
+				add_unit_leader_trait = expert_delegator
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = urban_assault_specialist
+			
+				
+            }
+			
+			random_unit_leader = {
+                limit = { has_id = 2002 }
+		
+				add_unit_leader_trait = hill_fighter
+				add_unit_leader_trait = trait_engineer
+				add_unit_leader_trait = infantry_leader
+				add_unit_leader_trait = infantry_expert
+				add_unit_leader_trait = commando
+				add_unit_leader_trait = trickster
+				add_unit_leader_trait = expert_improviser
+			
+				
+            }
+			
+		}
+	
+	}
+	
+	
 
 	focus = {
 		id = ENG_refinery_effort
@@ -195,29 +453,6 @@ focus_tree = {
 		available = { 			
 		}
 		icon = GFX_goal_generic_army_motorized
-		x = 2
-		y = 1
-		relative_position_id = limited_rearmament_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-	focus = {
-		id = ENG_tank_focus
-		prerequisite = { focus = limited_rearmament_focus }
-		icon = GFX_goal_generic_army_tanks
 		x = 0
 		y = 1
 		relative_position_id = limited_rearmament_focus
@@ -233,12 +468,63 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 2
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = ENG_tank_focus
+		prerequisite = { focus = ENG_motorized_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = ENG_motorized_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2.0
+				uses = 4
 				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = improved_heavy_tank
 				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = ENG_tank_focus2
+		prerequisite = { focus = ENG_tank_focus }
+		icon = GFX_goal_generic_army_tanks
+		x = 0
+		y = 1
+		relative_position_id = ENG_tank_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date >1941.6.1}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 4
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = improved_heavy_tank
+				technology = advanced_light_tank
+			
 			}
 		}
 	}
@@ -527,9 +813,7 @@ focus_tree = {
 	focus = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
-		available = {
-					threat > 0.05
-		}
+		
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -586,17 +870,13 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				technology = advanced_machine_tools
-				technology = flexible_line
+				
 				technology = assembly_line_production
 				technology = concentrated_industry3
 				technology = concentrated_industry4
-				technology = concentrated_industry5
-				technology = dispersed_industry3
-				technology = dispersed_industry4
-				technology = dispersed_industry5
-				technology = construction3
-				technology = construction4
-				technology = construction5			}
+				
+				
+						}
 		}
 	}
 	
@@ -731,6 +1011,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = british_arms_discount
+			
 		}
 	}
 	focus = {
@@ -976,6 +1257,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		air_experience = 150
 			add_ideas = british_fighter_discount
 		}
 	}

@@ -13,7 +13,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_4 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+					
 					} 
 				}
 			else_if = { limit = { AND = { FROM = { original_tag = SOV } date>1941.7.10 } }
@@ -21,7 +21,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_5 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+						
 					} 
 				} 
 			}
@@ -30,7 +30,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_6 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+					
 					} 
 				} 
 			}
@@ -39,7 +39,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_7 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+						
 					} 
 				} 
 			}
@@ -48,7 +48,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_8 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+						
 					} 
 				} 
 			}
@@ -57,7 +57,7 @@ on_actions = {
 					SOV = { 
 						add_ideas = { SOV_barb_debuff_9 }
 						activate_mission = SOV_barb_debuff_mission
-						activate_mission = SOV_relocation 
+						
 					} 
 				} 
 			}
@@ -69,6 +69,8 @@ on_actions = {
 			}
 		}
 	}
+	
+								
 	
 	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {

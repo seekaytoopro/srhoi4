@@ -322,13 +322,13 @@ sub_units = {
 		}
 
 		marsh = {
-			attack = 0.05
-			movement = 0.05
+			attack = 0.1
+			movement = 0.1
 		}
 		forest = {
-			attack = 0.05
-			defence = 0.05
-			movement = 0.05
+			attack = 0.20
+			defence = 0.15
+			movement = 0.01
 		}
 		amphibious = {
 			attack = 0.10
@@ -378,8 +378,8 @@ sub_units = {
 		}
 
 		jungle = {
-			attack = 0.075
-			defence = 0.05
+			attack = 0.15
+			defence = 0.10
 			movement = 0.1
 		}
 		river = {
@@ -437,7 +437,7 @@ sub_units = {
 
 		urban = {
 			attack = 0.15
-			movement = 0.1
+			movement = 0.05
 			defence = 0.1
 		}
 		fort = {
@@ -494,12 +494,12 @@ sub_units = {
 		desert = {
 			attack = 0.075
 			defence = 0.075
-			movement = 0.1
+			movement = 0.2
 		}
 		deep_desert = {
 			attack = 0.075
 			defence = 0.075
-			movement = 0.1
+			movement = 0.2
 		}
 		amphibious = {
 			attack = 0.10
@@ -529,7 +529,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 26
 		max_organisation = 31
 		default_morale = 0.30
 		manpower = 1200
@@ -538,7 +538,7 @@ sub_units = {
 		training_time = 90
 		suppression = 1
 		weight = 0.75
-		supply_consumption = 0.12
+		supply_consumption = 0.10
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -604,11 +604,11 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.2
-		hard_attack = 3.5
+		soft_attack = 0.3
+		hard_attack = 2.5
 		
 		#Size Definitions
-		max_strength = 30
+		max_strength = 32
 		max_organisation = 36
 		default_morale = 0.3
 		manpower = 1200

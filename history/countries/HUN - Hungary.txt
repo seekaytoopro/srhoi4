@@ -167,9 +167,9 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Géza Lakatos"
 	gfx = GFX_Portrait_hungary_geza_lakatos
-	traits = { career_officer cavalry_leader trickster substance_abuser harsh_leader career_officer panzer_leader trait_reckless desert_fox }
+	traits = { cavalry_leader trickster substance_abuser expert_improviser cavalry_expert  panzer_leader panzer_expert desert_fox}
 	skill = 5
-	attack_skill = 4
+	attack_skill = 6
 	defense_skill = 4
 	planning_skill = 4
 	logistics_skill = 4
@@ -178,9 +178,9 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Iván Hindy"
 	gfx = GFX_Portrait_hungary_ivan_hindy
-	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox paratrooper camouflage_expert career_officer media_personality brilliant_strategist }
+	traits = {   infantry_leader infantry_expert swamp_fox paratrooper camouflage_expert   brilliant_strategist }
 	skill = 4
-	attack_skill = 8
+	attack_skill = 6
 	defense_skill = 1
 	planning_skill = 1
 	logistics_skill = 6
@@ -189,7 +189,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Károly Beregfy"
 	gfx = GFX_Portrait_hungary_karoly_beregfy
-	traits = { harsh_leader trait_reckless politically_connected infantry_leader infantry_officer trait_mountaineer }
+	traits = {    infantry_leader infantry_expert  trait_mountaineer }
 	skill = 4
 	attack_skill = 5
 	defense_skill = 6
@@ -200,8 +200,8 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Lajos Veress"
 	gfx = GFX_Portrait_hungary_lajos_veress
-	traits = { career_officer cavalry_leader trickster substance_abuser harsh_leader career_officer panzer_leader trait_reckless ranger}
-	skill = 4
+	traits = {  cavalry_leader trickster substance_abuser panzer_expert cavalry_expert expert_improviser  panzer_leader  ranger}
+	skill = 5
 	attack_skill = 7
 	defense_skill = 5
 	planning_skill = 2
@@ -211,7 +211,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Bela Miklos"
 	picture = "Portrait_HUN_Bela_Miklos.tga"
-	traits = { politically_connected infantry_officer old_guard skilled_staffer trait_cautious trait_engineer war_hero }
+	traits = {    skilled_staffer  trait_engineer  }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
@@ -221,102 +221,47 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Dezso Laszlo"
 	picture = "Portrait_HUN_Dezso_Laszlo.tga"
-	traits = { ranger brilliant_strategist harsh_leader trait_reckless war_hero armor_officer trait_engineer }
+	traits = { ranger brilliant_strategist infantry_expert infantry_leader    trait_engineer }
 	skill = 5
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Gusztav Denk"
-	picture = "Portrait_HUN_Gusztav_Denk.tga"
-	traits = { career_officer cavalry_leader trickster substance_abuser harsh_leader career_officer panzer_leader trait_reckless desert_fox }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 4
+	attack_skill = 6
+	defense_skill = 6
 	planning_skill = 4
 	logistics_skill = 4
 }
-create_corps_commander = {
-	name = "Hugo Sonyi"
-	picture = "Portrait_HUN_Hugo_Sonyi.tga"
-	traits = { naval_invader infantry_officer infantry_leader trait_engineer career_officer trait_reckless }
-	skill = 3
-	attack_skill = 6
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Janky Kocsard"
-	picture = "Portrait_HUN_Janky_Kocsard.tga"
-	traits = { cavalry_leader cavalry_officer career_officer politically_connected trickster commando trait_cautious media_personality }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 1
-	logistics_skill = 4
-}
+
+
+
 
 create_corps_commander = {
 	name = "Jany Gusztav"
 	picture = "Portrait_HUN_Jany_Gusztav.tga"
-	traits = { infantry_officer infantry_leader skilled_staffer urban_assault_specialist commando harsh_leader }
+	traits = {  infantry_leader skilled_staffer trait_engineer urban_assault_specialist commando  }
 	skill = 4
 	attack_skill = 3
 	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 5
 }
-create_corps_commander = {
-	name = "Hugo Miklos"
-	picture = "Portrait_Romania_Constantin_Pantazi.tga"
-	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox paratrooper camouflage_expert career_officer trait_reckless media_personality brilliant_strategist }
-	skill = 4
-	attack_skill = 9
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 6
-}
+
 
 create_field_marshal = {
 	name = "Ferenc Feketehalmy-Czeydner"
 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { old_guard inflexible_strategist logistics_wizard thorough_planner swamp_fox ranger inspirational_leader skilled_staffer politically_connected organizer career_officer }
+	traits = {  inflexible_strategist logistics_wizard thorough_planner swamp_fox ranger inspirational_leader skilled_staffer  organizer  }
 	skill = 5
 	attack_skill = 3
 	defense_skill = 5
 	planning_skill = 3
 	logistics_skill = 6
 }
-create_corps_commander = {
-	name = "Szilard Bakay"
-	picture = "Portrait_HUN_Szilard_Bakay.tga"
-	traits = { cavalry_leader cavalry_officer trickster war_hero politically_connected ranger substance_abuser }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
+
 create_field_marshal = {
 	name = "Vilmos Nagy de Nagybaczon"
 	picture = "Portrait_HUN_Vilmos_Nagy_de_Nagybaczon.tga"
-	traits = { infantry_leader brilliant_strategist offensive_doctrine trickster career_officer harsh_leader  }
+	traits = { infantry_leader brilliant_strategist offensive_doctrine trickster    }
 	skill = 5
 	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 4
 	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Vilmos Roder"
-	picture = "Portrait_HUN_Vilmos_Roder.tga"
-	traits = { infantry_officer career_officer trait_cautious commando politically_connected old_guard skilled_staffer }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 5
 }

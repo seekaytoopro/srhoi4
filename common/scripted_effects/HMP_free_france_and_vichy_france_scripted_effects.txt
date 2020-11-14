@@ -225,7 +225,7 @@ remove_ideas = FRA_full_employment
 				every_unit_leader = {
 					limit = {
 						OR = {
-							has_trait = old_guard
+							
 							has_trait = old_guard_navy
 						}
 					}
