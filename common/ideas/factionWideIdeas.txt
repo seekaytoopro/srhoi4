@@ -210,7 +210,7 @@ ideas = {
 	
 
 			modifier = {
-				conscription_factor = 0.10
+				conscription_factor = 0.05
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -278,7 +278,7 @@ ideas = {
 	
 
 			modifier = {
-				conscription_factor = 0.20
+				conscription_factor = 0.10
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -346,7 +346,7 @@ ideas = {
 	
 
 			modifier = {
-				conscription_factor = 0.30
+				conscription_factor = 0.15
 			}
 			equipment_bonus = {
 				fighter_equipment = {
@@ -414,7 +414,7 @@ ideas = {
 	
 
 			modifier = {
-				conscription_factor = 0.40
+				conscription_factor = 0.20
 			}
 			equipment_bonus = {
 				fighter_equipment = {

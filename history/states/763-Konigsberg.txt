@@ -15,14 +15,9 @@ state={
 
 		buildings = {
 			infrastructure = 6
-<<<<<<< HEAD
 			industrial_complex = 6
-=======
-			industrial_complex = 10
->>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 			6332 = {
 				bunker = 1
-
 			}
 			anti_air_building = 2
 			6332 = {
@@ -32,11 +27,6 @@ state={
 			air_base = 6
 		}
 		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
-		}
 	}
 
 	provinces={

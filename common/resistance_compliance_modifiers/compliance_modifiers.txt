@@ -40,10 +40,6 @@ compliance_60 = {
 	threshold = 60
 	margin = 2
 	state_modifier = {
-<<<<<<< HEAD
 		recruitable_population_factor = 0.05
-=======
-		recruitable_population_factor = 0.004
->>>>>>> parent of c35d3e6... Merge branch 'master' into n00bproofing-and-more
 	}
 }

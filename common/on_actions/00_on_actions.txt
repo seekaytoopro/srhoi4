@@ -230,6 +230,10 @@ on_actions = {
 			
 			if = {
 				limit = { original_tag = JAP }
+				every_state = {
+					limit = { is_owned_by = JAP }
+					set_compliance = 0
+				}
 			 	USA = { 
 					annex_country = {
 					target = JAP

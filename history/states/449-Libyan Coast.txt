@@ -8,6 +8,12 @@ state={
 	}
 
 	history={
+		victory_points = {
+			4047 5
+		}
+		victory_points = {
+			4057 1
+		}
 		owner = ITA
 		add_core_of = SWE
 		buildings = {
