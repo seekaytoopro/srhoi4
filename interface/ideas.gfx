@@ -4879,5 +4879,139 @@ spriteTypes = {
 	}	
 
 	
+	################################BRAZIL####################################
+	spriteType = {
+		name = "GFX_idea_BRA_joao_neves_da_fontoura"
+		texturefile = "gfx/interface/ideas/joao_neves_da_fontoura.dds"
+	}
 	
+	spriteType = {
+		name = "GFX_idea_BRA_nero_fiuza_de_castro"
+		texturefile = "gfx/interface/ideas/Dutra.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_salgado_filho"
+		texturefile = "gfx/interface/ideas/Salgado.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_ismael_motta_paes"
+		texturefile = "gfx/interface/ideas/ismael.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_aristides_guilhem"
+		texturefile = "gfx/interface/ideas/aristides.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_jorge_martins"
+		texturefile = "gfx/interface/ideas/jorge.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_floriano_peixoto"
+		texturefile = "gfx/interface/ideas/peixoto.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_washington_luis_pereira"
+		texturefile = "gfx/interface/ideas/washington.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_osvaldo_aranha"
+		texturefile = "gfx/interface/ideas/osvaldo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_afranio_de_mello_franco"
+		texturefile = "gfx/interface/ideas/afranio.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_karl_renner"
+		texturefile = "gfx/interface/ideas/karl.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_newton_cavalcanti"
+		texturefile = "gfx/interface/ideas/newton.dds"
+	}
+	
+	spriteType = { 
+		name = "GFX_idea_BRA_eduardo_gomes"
+		texturefile = "gfx/interface/ideas/eduardo_gomes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_isaias_de_noronha"
+		texturefile = "gfx/interface/ideas/noronha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_epaminondas_dos_santos"
+		texturefile = "gfx/interface/ideas/santos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_artur_da_costa_e_silva"
+		texturefile = "gfx/interface/ideas/artur.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_moreira_lima"
+		texturefile = "gfx/interface/ideas/moreira.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_olga_benario"
+		texturefile = "gfx/interface/ideas/olga.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_caires_brito"
+		texturefile = "gfx/interface/ideas/milton.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_jorge_amado"
+		texturefile = "gfx/interface/ideas/amado.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_luis_carlos_prestes"
+		texturefile = "gfx/interface/ideas/prestes.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_nelson_werneck"
+		texturefile = "gfx/interface/ideas/nelson.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_henry_berger"
+		texturefile = "gfx/interface/ideas/henry.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_raimundo_padilha"
+		texturefile = "gfx/interface/ideas/padilha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_raul_fernandes"
+		texturefile = "gfx/interface/ideas/raul.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_artur_de_souza"
+		texturefile = "gfx/interface/ideas/sousa.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BRA_waldemar_cromwell"
+		texturefile = "gfx/interface/ideas/waldemar.dds"
+	}
 }

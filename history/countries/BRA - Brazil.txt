@@ -2,6 +2,8 @@
 
 
 oob = "BRA_1936"
+set_stability = 0.4
+set_war_support = 0.4
 
 # Starting tech
 set_technology = {
@@ -49,6 +51,10 @@ add_equipment_to_stockpile = {
 
 add_ideas = {
 USA_anti_spy
+BRA_rural_idea
+	BRA_provisional
+	BRA_fascism_support
+	BRA_cangaco
 }
 
 if = {
@@ -90,7 +96,10 @@ set_politics = {
 }
 
 set_popularities = {
-	neutrality = 100
+	neutrality = 45
+        communism = 15
+        democratic = 10
+        fascism = 30
 }
 
 create_country_leader = {
@@ -139,18 +148,6 @@ create_country_leader = {
 
 set_convoys = 40
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1934.7.17"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		neutrality = 100
-	}
-}
-
 create_field_marshal = {
 	name = "Eurico Gaspar Dutra"
 	portrait_path = "gfx/leaders/BRA/Eurico_Gaspar_Dutra.tga"
@@ -170,6 +167,61 @@ create_corps_commander = {
 	attack_skill = 4
 	defense_skill = 4
 	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Cordeiro de Farias"
+	picture = "Cordeiro.dds"
+	traits = { politically_connected bearer_of_artillery }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Zenóbio da Costa"
+	picture = "Zenobio.dds"
+	traits = { infantry_officer }
+	skill = 2
+	attack_skill =2
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Estevão de Carvalho"
+	picture = "Leitao.dds"
+	traits = { trait_engineer old_guard  }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Olympio Falconiére"
+	picture = "Olympio.dds"
+	traits = { winter_expert }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Gois Monteiros"
+	picture = "Gois.dds"
+	traits = { media_personality politically_connected  }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
 	logistics_skill = 3
 }
 
@@ -249,26 +301,6 @@ if = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = empty
-		}
-	}
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = {
-			has_dlc = "Man the Guns"
-		}
-		create_equipment_variant = {
-			name = "Tupi Class"
-			type = ship_hull_submarine_2
-			name_group = BRA_SS_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_1
-				fixed_ship_engine_slot = sub_ship_engine_1
-				rear_1_custom_slot = empty
-			}
 		}
 	}
 }
