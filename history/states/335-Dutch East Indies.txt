@@ -6,7 +6,6 @@ state_category = city
 resources={
 rubber=140
 oil=10
-tungsten = 22.000
 }
 history={
 owner = HOL

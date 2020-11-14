@@ -40,8 +40,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-			
-		
 
 			allowed_civil_war = {
 				always = yes
@@ -53,21 +51,7 @@ ideas = {
 				political_power_cost = 0.85
 				consumer_goods_factor = 0.3
 				}
-				
-					
 		}
-		
-		 USA_idea_intervention_in_africa = {
-					 
-					 allowed_civil_war{ always = yes}
-					 allowed = {always = no}
-					 removal_cost = -1
-					 modifier = {
-					  production_speed_air_base_factor=0.1
-				
-					 }
-					 }
-		
 		great_depression_2 = {
 			picture = usa_great_depression_2
 			
@@ -950,12 +934,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				amphibious_invasion = 0.05
+				amphibious_invasion = 0.10
 			}
 			equipment_bonus = {
 				convoy = {
 					instant = yes
-					build_cost_ic = -0.15
+					build_cost_ic = -0.25
 				}
 			}
 		}
@@ -973,7 +957,12 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -990,7 +979,9 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				
+				CAS_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
 			}
 		}
 
@@ -1612,7 +1603,7 @@ ideas = {
 				original_tag = USA 
 			}
 			
-			traits = { army_armored_3} 
+			traits = { army_armored_2 } 
 			
 			ai_will_do = { 
 				factor = 1 
@@ -1636,7 +1627,25 @@ ideas = {
 			}
 		}
 		
-		
+		joseph_stilwell = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			available = {
+				NOT = { has_country_flag = joseph_stilwell_sent_to_china }
+			}
+
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		mark_clark = {
 			ledger = army
@@ -1672,7 +1681,21 @@ ideas = {
 			}
 		}
 		
-		
+		john_cannon = {
+			ledger = air
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		
 		claire_lee_chennault = {
 			ledger = air
@@ -1684,7 +1707,7 @@ ideas = {
 			
 
 			
-			traits = { air_tactical_bombing_3 }
+			traits = { air_tactical_bombing_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -1725,7 +1748,22 @@ ideas = {
 			}
 		}
 		
-		
+		thomas_kinkaid = {
+			ledger = army
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			traits = { navy_amphibious_assault_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 	}
 		
 	tank_manufacturer = { 
@@ -1787,10 +1825,10 @@ ideas = {
 			
 			equipment_bonus = {
 				medium_tank_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 				light_tank_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 				}
 			}
 
@@ -1822,12 +1860,12 @@ ideas = {
 					hard_attack = 0.25
 				}
 				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
 				heavy_tank_destroyer_equipment = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
@@ -2223,7 +2261,7 @@ ideas = {
 			cost = 200
 			
 			research_bonus = {
-				cat_superior_firepower = 0.25
+				cat_superior_firepower = 0.15
 			}
 			
 			traits = { superior_firepower_expert }
@@ -2240,7 +2278,7 @@ ideas = {
 			cost = 200
 			
 			research_bonus = {
-				cat_mobile_warfare = 0.25
+				cat_mobile_warfare = 0.15
 			}
 			
 			traits = { mobile_warfare_expert }

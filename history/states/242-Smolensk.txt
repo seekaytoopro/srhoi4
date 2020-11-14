@@ -3,7 +3,6 @@ state={
 	id=242
 	name="STATE_242"
 
-
 	history={
 		owner = SOV
 		victory_points = { 306 20 } #Northeast
@@ -11,8 +10,8 @@ state={
 		victory_points = { 9858 10 } #Southwest
 		victory_points = { 10399 10 } #Southeast
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 2
+			infrastructure = 5
+			industrial_complex = 1
 			air_base = 8
 
 		}

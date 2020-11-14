@@ -110,7 +110,7 @@ shared_focus = {
 			planning_skill = 3
 			logistics_skill = 3
 			id = 603
-			traits = {  }
+			traits = { infantry_officer }
 		}
 	}
 }

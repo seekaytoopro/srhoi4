@@ -21,17 +21,6 @@ leader_traits = {
 			}
 		}
 	
-	stalin_barb_leader_trait2 = {
-	random = no
-		war_support_factor = 0.3
-		defensive_war_stability_factor = 0.3
-		army_attack_factor = 0.10
-		army_defence_factor =  0.10
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	
 	lion_of_verdun = {
 	random = no
 		experience_gain_army = 0.05
@@ -1285,8 +1274,7 @@ leader_traits = {
 		sprite = 13
 		resistance_damage_to_garrison = -0.25 
 		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.01
-
+		non_core_manpower = 0.04
 		
 		ai_will_do = {
 			factor = 1
@@ -1297,14 +1285,9 @@ leader_traits = {
 		sprite = 13
 		resistance_damage_to_garrison = -0.25 
 		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.02
+		non_core_manpower = 0.04
 		operative_slot = 1
 		agency_upgrade_time = -0.15
-			production_factory_efficiency_gain_factor = 0.05
-		line_change_production_efficiency_factor  = 0.1
-		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1		
-		production_speed_fuel_silo_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -1444,9 +1427,11 @@ leader_traits = {
 	reichs_minister = {
 		sprite = 10
 		random = yes
-		
-		line_change_production_efficiency_factor  = 0.25
-	
+		production_factory_efficiency_gain_factor = 0.05
+		line_change_production_efficiency_factor  = 0.1
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1		
+		production_speed_fuel_silo_factor = 0.1
 		
 		ai_will_do = {
 			factor = 1
@@ -3121,18 +3106,7 @@ leader_traits = {
 		sprite = 5
 		army_armor_attack_factor = 0.12
 	    army_armor_defence_factor = 0.12
-		army_morale_factor = 0.08
-		
-		ai_will_do = {
-			factor = 3
-		}
-	}
-	
-	keitel_hc = { 
-		sprite = 5
-		army_attack_factor = 0.12
-	    army_defence_factor = 0.075
-		army_morale_factor = 0.08
+		army_morale_factor = 0.04
 		
 		ai_will_do = {
 			factor = 3
@@ -3260,18 +3234,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 3
 		}
-	}
-	
-	goering_hc ={
-	sprite = 1 
-	air_weather_penalty = -0.15
-	air_ace_generation_chance_factor = 0.2
-	air_strategic_bomber_bombing_factor = 0.05
-	air_cas_present_factor = 0.1
-	air_night_penalty = -0.2
-	experience_gain_air_factor = 0.2
-	army_bonus_air_superiority_factor = 0.15
-	ai_will_do = {factor = 5}
 	}
 	
 	air_chief_old_guard = {

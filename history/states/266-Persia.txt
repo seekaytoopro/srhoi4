@@ -3,9 +3,6 @@ state={
 	id=266
 	name="STATE_266"
 	impassable = yes
-	resources = {
-	oil = 4
-	}
 	history={
 		owner = PER
 		buildings = {

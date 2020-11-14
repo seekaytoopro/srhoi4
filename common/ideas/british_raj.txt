@@ -586,9 +586,36 @@ ideas = {
 			}
 		}
 
-	
+		RAJ_aspy_merwan_engineer = {
+			ledger = navy
 
-		
+			picture = generic_air_arab_2
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		RAJ_mehar_singh = {
+			ledger = air
+			picture = generic_air_arab_1
+
+			allowed = {
+				original_tag = RAJ
+			}
+
+			traits = { air_close_air_support_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		RAJ_w_h_gould_bradford = {
 			ledger = navy
@@ -609,10 +636,56 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		
-		
-		
+		RAJ_arthur_a_barrett = {
+			
+			picture = generic_army_europe_2
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
 
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		RAJ_archibald_wavell = {
+			
+			picture = generic_army_europe_5
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
+
+			
+			traits = { army_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		RAJ_reginald_savory = {
+			
+			picture = generic_army_europe_1
+			
+			allowed = {
+				original_tag = RAJ
+			}
+			
+
+			
+			traits = { army_chief_drill_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		RAJ_mohan_singh = {
 			

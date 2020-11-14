@@ -2,9 +2,7 @@
 state={
 	id=414
 	name="STATE_414"
-resources = {
-oil = 5
-}
+
 	history={
 		owner = PER
 		buildings = {

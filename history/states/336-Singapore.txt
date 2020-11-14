@@ -4,9 +4,9 @@ name="STATE_336"
 manpower = 2893200
 state_category = large_town
 resources={
-rubber=142
+rubber=342
 steel=20
-tungsten=94
+tungsten=189
 aluminium = 15
 }
 history={
@@ -22,11 +22,11 @@ victory_points = {
 10297 1
 }
 buildings = {
-infrastructure = 6
+infrastructure = 8
 industrial_complex = 1
 air_base = 8
 12299 = {
-naval_base = 2
+naval_base = 8
 coastal_bunker = 3
 }
 7329 = {

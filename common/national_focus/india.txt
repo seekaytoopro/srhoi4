@@ -781,7 +781,7 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"
 					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
-					traits = { infantry_leader organizer skilled_staffer hill_fighter trait_engineer}
+					traits = { infantry_leader organizer skilled_staffer career_officer  trait_reckless harsh_leader hill_fighter trait_engineer}
 					skill = 5
 					attack_skill = 5
 					defense_skill = 4
@@ -791,7 +791,7 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Kodandera Subayya Thimayya"
 					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
-					traits = { jungle_rat infantry_leader commando inflexible_strategist   }
+					traits = { jungle_rat infantry_leader commando inflexible_strategist trait_cautious infantry_officer politically_connected }
 					skill = 5
 					attack_skill = 4
 					defense_skill = 4
@@ -801,7 +801,7 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Jayanto Nath Chaudhuri"
 					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
-					traits = { desert_fox cavalry_leader  trickster panzer_leader }
+					traits = { desert_fox cavalry_leader  trickster panzer_leader career_officer trait_reckless armor_officer}
 					skill = 5
 					attack_skill = 6
 					defense_skill = 2
@@ -1654,7 +1654,6 @@ focus_tree = {
 		id = RAJ_expand_mazagon_dock
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = RAJ_industrial_expansion }
-		prerequisite = { focus = RAJ_east_india_railways}
 		x = 3
 		y = 1
 		relative_position_id = RAJ_industrial_expansion
@@ -1739,8 +1738,7 @@ focus_tree = {
 	focus = {
 		id = RAJ_found_scindia_shipyard
 		icon = GFX_goal_generic_construct_naval_dockyard
-		prerequisite = { focus = RAJ_industrial_expansion }
-		prerequisite = { focus = RAJ_east_india_railways}	
+		prerequisite = { focus = RAJ_east_india_railways }
 		x = 2
 		y = 0
 		relative_position_id = RAJ_expand_mazagon_dock
