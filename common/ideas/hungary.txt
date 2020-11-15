@@ -389,6 +389,41 @@ ideas = {
 
 	high_command = {
 
+
+		HUN_jeno_ratz = {
+			ledger = army
+			
+			picture = generic_air_europe_3
+
+			allowed = {
+				original_tag = HUN
+			}
+			
+			traits = { army_cavalry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+			HUN_reszo_kastner = {
+			ledher = army
+			picture = generic_navy_europe_2
+			
+			allowed = {
+				original_tag = HUN
+			}
+			
+
+			
+			traits = { army_artillery_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
 		HUN_gusztav_jany = {
 			ledger = army
 			

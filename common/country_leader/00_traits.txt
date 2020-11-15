@@ -2953,6 +2953,13 @@ leader_traits = {
 		}
 	}
 	
+	army_heat_attrition_1 = 
+	{
+	sprite = 6
+	heat_attrition_factor = -0.25
+	ai_will_do = {factor = 10}
+	}
+	
 	
 		army_anti_tank_1 = { # +4 AT efficiency
 		sprite = 8
@@ -2960,6 +2967,37 @@ leader_traits = {
 	modifier_army_sub_unit_anti_tank_brigade_defence_factor = 0.04
 	modifier_army_sub_unit_anti_tank_brigade_speed_factor = 0.04
 		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	army_marine_1 = { # +4 MARINE efficiency
+		sprite = 5
+	modifier_army_sub_unit_marine_attack_factor = 0.04
+	modifier_army_sub_unit_marine_defence_factor = 0.08
+	modifier_army_sub_unit_marine_speed_factor = 0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_jungletroop_1 = { # +4 JUNGLE efficiency
+		sprite = 5
+	modifier_army_sub_unit_jungletroop_attack_factor = 0.04
+	modifier_army_sub_unit_jungletroop_defence_factor = 0.08
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	army_mountaineer_1 = { # +4 MOUNTAIN efficiency
+		sprite = 5
+	modifier_army_sub_unit_mountaineer_attack_factor = 0.04
+	modifier_army_sub_unit_mountaineer_defence_factor = 0.06
+	
 		ai_will_do = {
 			factor = 1
 		}

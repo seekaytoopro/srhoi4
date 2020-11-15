@@ -807,42 +807,12 @@ ideas = {
 			}
 		}
 
-		ROM_gheorghe_jienescu = {
-			
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = ROM
-			}
-			
-
-			
-			traits = { air_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	
 	}
 
 	navy_chief = {
 
-		ROM_nicolae_sova = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = ROM
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		
 
 		ROM_horia_macellariu = {
 			
@@ -854,7 +824,7 @@ ideas = {
 			
 
 			
-			traits = { navy_chief_maneuver_2 }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -863,6 +833,42 @@ ideas = {
 	}
 
 	high_command = {
+	
+	
+		ROM_gheorghe_jienescu = {
+			
+			picture = generic_air_europe_3
+			ledger= army
+			
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = {army_marine_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	
+	ROM_nicolae_sova = {
+			
+			picture = generic_navy_europe_1
+			ledger = army
+			allowed = {
+				original_tag = ROM
+			}
+			
+
+			
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 		gheorghe_potopeanu_hc = { 
 			ledger = army

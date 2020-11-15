@@ -359,33 +359,7 @@ ideas = {
 
 		
 
-		CAN_robert_manion = {
-
-			allowed = {
-				original_tag = CAN
-				
-			}
-
-			available = {
-				if = {
-					has_completed_focus = CAN_strengthen_the_commonwealth_ties
-					}
-			}
-			
-			picture = generic_democratic_reformer_commonwealth_2d
-			
-			traits = { democratic_reformer }
-			
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+		
 
 		
 
@@ -612,6 +586,30 @@ ideas = {
 	}
 	
 	high_command = {
+	
+	
+	CAN_robert_manion = {
+
+			allowed = {
+				original_tag = CAN
+				
+			}
+			
+			ledger = army
+
+		
+			
+			picture = generic_democratic_reformer_commonwealth_2d
+			
+			traits = { army_marine_1 }
+			
+			
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	
 		CAN_alasdair_murray = {
 			picture = generic_navy_europe_1
 			ledger = navy

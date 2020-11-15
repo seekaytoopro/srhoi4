@@ -27,6 +27,20 @@ sub_unit_modifiers = {
 	modifier_army_sub_unit_anti_tank_brigade_defence_factor
 	modifier_army_sub_unit_anti_tank_brigade_speed_factor
 	
+	
+	modifier_army_sub_unit_marine_attack_factor
+	modifier_army_sub_unit_marine_defence_factor
+	modifier_army_sub_unit_marine_speed_factor
+	
+		modifier_army_sub_unit_mountaineer_attack_factor
+	modifier_army_sub_unit_mountaineer_defence_factor
+	modifier_army_sub_unit_mountaineer_speed_factor
+	
+	modifier_army_sub_unit_jungletroop_attack_factor
+	modifier_army_sub_unit_jungletroop_defence_factor
+	modifier_army_sub_unit_jungletroop_speed_factor
+	
+	
 	modifier_army_sub_unit_cavalry_attack_factor
 	modifier_army_sub_unit_cavalry_defence_factor
 	modifier_army_sub_unit_cavalry_speed_factor

@@ -1399,7 +1399,74 @@ SPR_no_navy2 = {
 
 
 		### La Resistance ###
+	SPA_emilio_esteban_infantes_vanilla = {
+			ledger = army
 
+			name = SPA_emilio_esteban_infantes
+			allowed = {
+				original_tag = SPR
+			}
+			picture = generic_army_europe_5
+						available = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+				}
+			}
+			
+
+			
+			traits = { army_cavalry_3 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SPA_agustin_munoz_grandes_vanilla = {
+			ledger = army
+
+			name = SPA_agustin_munoz_grandes
+			allowed = {
+				original_tag = SPR
+			}
+			picture = generic_army_europe_3
+						available = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+				}
+			}
+			
+
+			
+			traits = { army_logistics_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+				SPA_joaquin_garcia_morato_vanilla = {
+			ledger = army
+
+			name = SPA_joaquin_garcia_morato
+			allowed = {
+				original_tag = SPR
+			}
+			picture = generic_air_europe_2
+						available = {
+				custom_trigger_tooltip = {
+					tooltip = SPA_not_republican_spain_tt
+				}
+			}
+			
+
+			
+			traits = { army_infantry_1 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
 
 		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
