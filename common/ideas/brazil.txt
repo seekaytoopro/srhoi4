@@ -307,7 +307,8 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-				fascism_acceptance = 70		
+				fascism_acceptance = 70	
+				fascism_drift = 0.01	
 							
 			}
 		}
@@ -542,11 +543,6 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-				equipment_bonus = {
-					infantry_equipment = {
-						build_cost_ic = -0.1 instant = yes
-					}
-				}	
 				production_speed_arms_factory_factor = 0.05
 				production_speed_fuel_silo_factor = 0.05
 					
@@ -627,11 +623,11 @@ ideas = {
 	
 							available ={
 				
-				has_government = neutrality
+				has_completed_focus = BRA_polaca
 				
 				}
 				
-				traits = { captain_of_industry   }
+				traits = { captain_of_industry }
 			}
 			BRA_osvaldo_aranha = {
 	
@@ -640,8 +636,8 @@ ideas = {
 					original_tag = BRA
 				}
 	
-							available ={
-				has_completed_focus = BRA_osvaldo
+				available ={
+					has_completed_focus = BRA_osvaldo
 				}
 				
 				
@@ -657,9 +653,7 @@ ideas = {
 				}
 	
 				available ={
-				NOT = {
-					has_government = neutrality
-				}
+						has_government = democratic
 				}
 				
 				cost = 50
@@ -680,7 +674,7 @@ ideas = {
 				
 				cost = 50
 				
-				traits = { fascist_demagogue fascist_militia_leader }
+				traits = { fascist_militia_leader war_industrialist }
 			}
 			
 			BRA_raul_fernandes = {
@@ -750,7 +744,7 @@ ideas = {
 		theorist = {
 	
 			BRA_newton_cavalcanti = {
-	
+				ledger = army
 				allowed = {
 					original_tag = BRA
 				}
@@ -766,7 +760,7 @@ ideas = {
 			
 	
 			BRA_eduardo_gomes = {
-						
+				ledger = air
 					
 				allowed = {
 					original_tag = BRA
@@ -783,7 +777,7 @@ ideas = {
 			}
 	
 					BRA_isaias_de_noronha = {
-						
+				ledger = navy
 					
 				allowed = {
 					original_tag = BRA
@@ -804,7 +798,7 @@ ideas = {
 	
 			BRA_epaminondas_dos_santos = {
 	
-				ledger = air
+				ledger = army
 				allowed = {
 					original_tag = BRA
 				}
@@ -813,7 +807,7 @@ ideas = {
 
 				}
 				
-				traits = { air_air_combat_training_2 }
+				traits = { army_regrouping_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -831,9 +825,9 @@ ideas = {
 
 				}
 				
-				cost = 50
+				cost = 150
 				
-				traits = { army_logistics_2 }
+				traits = { army_logistics_3 }
 				
 				ai_will_do = {
 					factor = 1
@@ -876,7 +870,7 @@ ideas = {
 			BRA_agliberto_vieira = {
 	
 				picture = generic_navy_south_america_2
-				ledger = navy
+				ledger = army
 				allowed = {
 					original_tag = BRA
 				}
@@ -884,9 +878,9 @@ ideas = {
 				available ={
 				}
 				
-				cost = 50
+				cost = 150
 				
-				traits = { navy_naval_air_defense_2 }
+				traits = { army_armored_2 }
 				
 				ai_will_do = {
 					factor = 1
@@ -903,7 +897,7 @@ ideas = {
 				available ={
 				}
 				
-				cost = 50
+				cost = 150
 				
 				traits = { army_chief_offensive_2 }
 				
@@ -953,9 +947,9 @@ ideas = {
 	
 		air_chief = {
 			
-			ledger = air
+			
 			BRA_salgado_filho = {
-				
+				ledger = air	
 				
 				allowed = {
 					original_tag = BRA

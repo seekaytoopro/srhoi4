@@ -13,7 +13,7 @@ focus_tree = {
 	
 	default = no
 	
-	/////////////////////////////ARMY FOCUS////////////////////////////////////////////////////
+	# /////////////////////////////ARMY FOCUS////////////////////////////////////////////////////
 	
 	focus = {
 		id = BRA_expand_realengo
@@ -54,7 +54,6 @@ focus_tree = {
 				uses = 2
 				category = infantry_weapons
 			}
-			set_technology = { bicycle_infantry = 1 }
 		}
 	}
 	
@@ -102,8 +101,8 @@ focus_tree = {
 	focus = {
 		id = BRA_EPPA
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = BRA_modern_cannons }
-		prerequisite = { focus = BRA_equipment_effort }
+		prerequisite = { focus = BRA_modern_cannons focus = BRA_equipment_effort }
+
 		x = -1
 		y = 1
 		relative_position_id = BRA_modern_cannons
@@ -204,14 +203,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 25
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = land_doctrine
-		}
-		add_ideas = CZE_war_college_idea
+			}
 		}
 	}
 	
@@ -326,7 +324,7 @@ focus_tree = {
 	
 	
 	
- /////////////////////NAVY FOCUS///////////////////////////////////////
+#  /////////////////////NAVY FOCUS///////////////////////////////////////
  
  
  
@@ -615,7 +613,7 @@ focus = {
 		}
 	
  
- /////////////////////AIRFORCE FOCUS///////////////////////////////////////
+#  /////////////////////AIRFORCE FOCUS///////////////////////////////////////
 		
 	
 	focus = {
@@ -630,17 +628,11 @@ focus = {
 
 		complete_tooltip = {
 			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}			
+		
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}			
 		}
@@ -648,54 +640,10 @@ focus = {
 		completion_reward = {
 			air_experience = 25
 
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = air_doctrine
 			}
 		}
@@ -716,10 +664,7 @@ focus = {
 			add_tech_bonus = {
 				name = bomber_bonus
 				bonus = 1.0
-				uses = 2
-				technology = strategic_bomber1
-				technology = strategic_bomber2
-				technology = strategic_bomber3
+				uses = 1
 				category = tactical_bomber
 			}
 		}
@@ -741,7 +686,7 @@ focus = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
 				bonus = 1.0
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 				uses = 1
 				category = naval_bomber
 			}
@@ -763,12 +708,9 @@ focus = {
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
-				uses = 2
-				technology = early_fighter
-				technology = fighter1
+				uses = 1
 				technology = fighter2
 				technology = fighter3
-				technology = heavy_fighter1
 				technology = heavy_fighter2
 				technology = heavy_fighter3
 			}
@@ -788,15 +730,9 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 1.0
-				uses = 2
-				technology = cas_bomber
-			}
-			add_tech_bonus = {
 				name = CAS_bonus
 				bonus = 1.0
-				ahead_reduction = 2
+				ahead_reduction = 0.25
 				uses = 1
 				category = cas_bomber
 			}
@@ -951,7 +887,7 @@ focus = {
 	}
 
 
-/////////////////////////INDUSTRIAL FOCUS////////////////////////////////////////////////////////////
+# /////////////////////////INDUSTRIAL FOCUS////////////////////////////////////////////////////////////
 	
 	
 	focus = {
@@ -1004,28 +940,6 @@ focus = {
 				category = industry
 			}
 			501 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								501 = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1078,28 +992,6 @@ focus = {
 
 		completion_reward = {
 			501 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								501 = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
@@ -1140,28 +1032,6 @@ focus = {
 
 		completion_reward = {
 			495 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								495 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1175,40 +1045,6 @@ focus = {
 					amount = 12
 				}
 			}
-		}
-	}
-	
-	focus = {
-		id = BRA_mining_effort
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = BRA_estrada_de_ferro}
-		x = 1
-		y = 1
-		relative_position_id = BRA_estrada_de_ferro
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-
-
-		completion_reward = {
-		
-		496 = {
-				add_resource = {
-					type = steel
-					amount = 16
-				}
-			}
-		
-			
-			
-			
 		}
 	}
 	
@@ -1253,204 +1089,6 @@ focus = {
 	}
 	
 	focus = {
-		id = BRA_CNP
-		icon = GFX_goal_generic_oil_refinery
-		prerequisite = { focus = BRA_mining_effort }
-		x = 1
-		y = 1
-		relative_position_id = BRA_mining_effort
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-
-
-		completion_reward = {
-		
-		499 = {
-				add_resource = {
-					type = oil
-					amount = 8
-				}
-			}
-			
-			
-			
-		}
-	}
-	focus = {
-		id = BRA_the_south
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = BRA_estrada_de_ferro }
-		x = -1
-		y = 1
-		relative_position_id = BRA_estrada_de_ferro
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}			
-		}
-
-		completion_reward = {
-			503 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								503 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			
-			502 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								502 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = BRA_fabrica_nacional_de_motores
-		icon = GFX_goal_generic_production2
-		prerequisite = { focus = BRA_the_south }
-		x = -1
-		y = 2
-		relative_position_id = BRA_the_south
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-		
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}			
-		}
-
-		completion_reward = {
-			
-			502 = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								502 = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
 		id = BRA_estrada_de_ferro
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = BRA_paulista_industry }
@@ -1484,28 +1122,6 @@ focus = {
 				add_idea = BRA_rural_idea3
 			}
 			500 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								500 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1514,28 +1130,6 @@ focus = {
 			}
 			
 			501 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								501 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
@@ -1543,32 +1137,166 @@ focus = {
 				}
 			}
 			496 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								496 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_the_south
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = BRA_estrada_de_ferro }
+		x = -1
+		y = 1
+		relative_position_id = BRA_estrada_de_ferro
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			503 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			502 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_fabrica_nacional_de_motores
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = BRA_the_south }
+		x = -1
+		y = 2
+		relative_position_id = BRA_the_south
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+		
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}			
+		}
+
+		completion_reward = {
+			
+			502 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_mining_effort
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = BRA_estrada_de_ferro}
+		x = 1
+		y = 1
+		relative_position_id = BRA_estrada_de_ferro
+		cost = 10
+
+		available_if_capitulated = yes
+	
+		ai_will_do = {
+			factor = 2
+		}
+
+		completion_reward = {
+
+		496 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_CNP
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = BRA_mining_effort }
+		x = 1
+		y = 1
+		relative_position_id = BRA_mining_effort
+		cost = 5
+
+		available_if_capitulated = yes
+
+
+		
+		ai_will_do = {
+			factor = 2
+		}
+
+
+
+		completion_reward = {
+		
+		499 = {
+				add_resource = {
+					type = oil
+					amount = 8
 				}
 			}
 		}
@@ -1605,28 +1333,6 @@ focus = {
 		completion_reward = {
 		
 			505 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								503 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1636,28 +1342,6 @@ focus = {
 			}
 			
 			280 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								502 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -1769,9 +1453,189 @@ focus = {
 	}
 	
 
-///////////////////NEIGHBORS FOCUS//////////////////////////////////
+# ///////////////////NEIGHBORS FOCUS//////////////////////////////////
 	
-	///////////DIPLOMATIC FOCUS/////////////////////////////////
+	# ///////////DIPLOMATIC FOCUS/////////////////////////////////
+
+	focus = {
+		id = BRA_cohen_plan
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		mutually_exclusive = { focus = BRA_free_elections }
+	
+		x = 5
+		y = 0
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+		country_event = { id = brazil.4 }
+		}	
+	}
+
+	focus = {
+		id = BRA_free_elections
+		icon = GFX_goal_support_democracy
+		x = 5
+		y = 0
+		cost = 10
+		relative_position_id = BRA_cohen_plan
+		mutually_exclusive = { focus = BRA_cohen_plan }
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		completion_reward = {
+		country_event = { id = brazil.13 } 
+		}	
+	}
+	
+	
+	focus = {
+		id = BRA_education_investment
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = BRA_free_elections
+		prerequisite = { focus = BRA_free_elections  }
+        available = { has_government = democratic}
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+		
+		add_ideas = BRA_education_investment
+	}	
+	
+
+		
+	}
+	
+	focus = {
+		id = BRA_expand_USP
+		icon = GFX_focus_research
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BRA_education_investment
+		prerequisite = { focus = BRA_education_investment  }
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}	
+	}
+	
+	focus = {
+		id = BRA_liberalism
+		icon = GFX_focus_generic_concessions
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = BRA_free_elections
+		prerequisite = { focus = BRA_free_elections  }
+		
+		available = { has_government = democratic}
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = liberty_ethos_focus
+		}	
+	}
+
+	focus = {
+		id = BRA_invite_foreign_investors
+		icon = GFX_focus_mex_privatisation
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BRA_liberalism
+		prerequisite = { focus = BRA_liberalism  }
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_ideas = HUN_invite_foreign_investors
+		}	
+	}
+	
+	focus = {
+		id = BRA_democratic_constitution
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 0
+		y = 3
+		cost = 10
+		relative_position_id = BRA_free_elections
+		prerequisite = { focus = BRA_free_elections  }
+		available = { has_government = democratic}
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+		add_political_power = 50
+		add_ideas = BRA_democratic_constitution
+		}		
+	}
+	
+	focus = {
+		id = BRA_guarantees
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = BRA_democratic_constitution
+		prerequisite = { focus = BRA_democratic_constitution  }
+
+		
+		
+		
+
+		available_if_capitulated = yes
+		
+		ai_will_do = {
+			factor = 20
+		}
+
+		completion_reward = {
+		add_political_power = 150
+		add_ideas = ROM_constitutional_guarantees
+		}	
+
+	}
 	
 	focus = {
 		id = BRA_osvaldo
@@ -1779,109 +1643,18 @@ focus = {
 		x = 4
 		y = 0
 		relative_position_id = BRA_free_elections
-		mutually_exclusive = { focus = BRA_karl }
 		cost = 5
 
 		available_if_capitulated = yes
 		
-		available = { NOT = { has_idea = BRA_provisional }
-                      NOT = {has_government = communism}}
+		available = { NOT = { has_idea = BRA_provisional } }
 
 		completion_reward = {
-		add_political_power = 50 
-		ENG = {
-				add_opinion_modifier = { 
-						target = ROOT 
-						modifier =  CZE_trust_in_the_west
-				}
-			}
-			FRA = {
-				add_opinion_modifier = { 
-					target = ROOT 
-					modifier =  CZE_trust_in_the_west
-				}
-			
-			}
+			add_political_power = 50 
 		}
 
 		ai_will_do = {
 			factor = 10
-		}
-	}
-	
-	focus = {
-		id = BRA_CSN_accords
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 1
-		y = 1
-		prerequisite = { focus = BRA_RAF }
-		relative_position_id = BRA_RAF
-		cost = 10
-
-		available_if_capitulated = yes
-		
-		available = {  
-                      is_in_faction_with = ENG				  }
-
-		completion_reward = {
-		500 = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								500 = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 10
-		}
-	}
-	
-	focus = {
-		id = BRA_vale_do_rio_doce
-		icon = GFX_goal_generic_construction2
-		x = 0
-		y = 1
-		prerequisite = { focus = BRA_CSN_accords }
-		relative_position_id = BRA_CSN_accords
-		cost = 10
-
-		available_if_capitulated = yes
-		
-		available = {  
-                      
-                      OR = {is_in_faction_with = ENG is_in_faction_with = GER}				  }
-
-		completion_reward = {
-			add_ideas = FRA_global_investments
-		}
-
-		ai_will_do = {
-			factor = 0
 		}
 	}
 	
@@ -1925,8 +1698,7 @@ focus = {
 
 		available_if_capitulated = yes
 		
-		available = {  
-                      is_in_faction_with = ENG	}
+		available = { is_in_faction_with = ENG }
 
 		completion_reward = {
 		air_experience = 25
@@ -1939,7 +1711,7 @@ focus = {
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
 			}
@@ -1947,6 +1719,59 @@ focus = {
 
 		ai_will_do = {
 			factor = 10
+		}
+	}
+
+	focus = {
+		id = BRA_CSN_accords
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 1
+		y = 1
+		prerequisite = { focus = BRA_RAF }
+		relative_position_id = BRA_RAF
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = { is_in_faction_with = ENG }
+
+		completion_reward = {
+		500 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	focus = {
+		id = BRA_vale_do_rio_doce
+		icon = GFX_goal_generic_construction2
+		x = 0
+		y = 1
+		prerequisite = { focus = BRA_CSN_accords }
+		relative_position_id = BRA_CSN_accords
+		cost = 10
+
+		available_if_capitulated = yes
+		
+		available = {  
+                      
+                      OR = {is_in_faction_with = ENG }				  }
+
+		completion_reward = {
+			add_ideas = FRA_global_investments
+		}
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
@@ -1961,8 +1786,7 @@ focus = {
 
 		available_if_capitulated = yes
 		
-		available = {  
-                      is_in_faction_with = ENG	}
+		available = {  is_in_faction_with = ENG	}
 
 		completion_reward = {
 		navy_experience = 25
@@ -1986,20 +1810,19 @@ focus = {
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 0
 		y = 3
-		prerequisite = { focus = BRA_RAF}
+		prerequisite = { focus = BRA_RAF }
 		relative_position_id = BRA_RAF
 		cost = 10
 
 		available_if_capitulated = yes
 		
 		available = {  
-                      is_in_faction_with = FRA	}
+                      is_in_faction_with = ENG	}
 
 		completion_reward = {
 		every_army_leader = {
 			add_defense = 1
 		}
-		add_ideas = CHI_french_drill
 		}
 
 		ai_will_do = {
@@ -2036,30 +1859,6 @@ focus = {
 		ai_will_do = {
 			factor = 0
 		}
-	}
-	
-	focus = {
-		id = BRA_cohen_plan
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		mutually_exclusive = { focus = BRA_free_elections}
-		mutually_exclusive = { focus = BRA_provisional2}
-	
-		x = 5
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		country_event = { id = brazil.4 }
-		
-	}	
-
-		
 	}
 	
 	focus = {
@@ -2110,7 +1909,10 @@ focus = {
 
 		completion_reward = {
 		country_event = { id = brazil.16 }
-		add_ideas = ENG_continuation_of_politics
+		add_timed_idea = {
+			idea = FRA_strengthen_government_support_focus
+			days = 365
+		}
 		
 	}	
 
@@ -2161,9 +1963,7 @@ focus = {
 				ideology = neutrality
 			}
 		add_country_leader_trait = dictator
-		hidden_effect = {
-		country_event = { id = brazil.5 days = 30 }
-		}
+		country_event = { id = brazil.5 }
 	}	
 
 		
@@ -2232,28 +2032,6 @@ focus = {
 
 		completion_reward = {
 		502 = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								502 = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
 				add_extra_state_shared_building_slots = 2
 				
 				add_building_construction = {
@@ -2395,6 +2173,10 @@ focus = {
 		mutually_exclusive = { focus = BRA_polaca }
 
 		available_if_capitulated = yes
+
+		available = {
+			has_government = neutrality
+		}
 		
 		ai_will_do = {
 			factor = 20
@@ -2611,205 +2393,6 @@ focus = {
 
 		completion_reward = {
 		add_research_slot = 1
-	}	
-	
-
-		
-	}
-	
-	focus = {
-		id = BRA_free_elections
-		icon = GFX_goal_support_democracy
-		x = 5
-		y = 0
-		cost = 10
-		relative_position_id = BRA_cohen_plan
-		mutually_exclusive = { focus = BRA_cohen_plan}
-		mutually_exclusive = { focus = BRA_provisional2}
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 0
-		}
-
-		completion_reward = {
-		country_event = { id = brazil.13 } 
-	}	
-	
-
-		
-	}
-	
-	
-	focus = {
-		id = BRA_education_investment
-		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 1
-		y = 1
-		cost = 10
-		relative_position_id = BRA_free_elections
-		prerequisite = { focus = BRA_free_elections  }
-        available = { has_government = democratic}
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		
-		add_ideas = BRA_education_investment
-	}	
-	
-
-		
-	}
-	
-	focus = {
-		id = BRA_expand_USP
-		icon = GFX_focus_research
-		x = 0
-		y = 1
-		cost = 10
-		relative_position_id = BRA_education_investment
-		prerequisite = { focus = BRA_education_investment  }
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		add_research_slot = 1
-	}	
-	
-
-		
-	}
-	
-	focus = {
-		id = BRA_liberalism
-		icon = GFX_focus_generic_concessions
-		x = -1
-		y = 1
-		cost = 10
-		relative_position_id = BRA_free_elections
-		prerequisite = { focus = BRA_free_elections  }
-		
-		available = { has_government = democratic}
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		add_stability = 0.1
-		add_war_support = 0.1
-		add_ideas = liberty_ethos_focus
-	}	
-	
-
-		
-	}
-	
-	focus = {
-		id = BRA_invite_foreign_investors
-		icon = GFX_focus_mex_privatisation
-		x = 0
-		y = 1
-		cost = 10
-		relative_position_id = BRA_liberalism
-		prerequisite = { focus = BRA_liberalism  }
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		add_stability = 0.1
-		add_war_support = 0.1
-		add_ideas = HUN_invite_foreign_investors
-	}	
-
-	}
-	
-	focus = {
-		id = BRA_democratic_constitution
-		icon = GFX_goal_generic_intelligence_exchange
-		x = 0
-		y = 3
-		cost = 10
-		relative_position_id = BRA_free_elections
-		prerequisite = { focus = BRA_free_elections  }
-		available = { has_government = democratic}
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		add_political_power = 50
-		add_ideas = BRA_democratic_constitution
-	}	
-	
-
-		
-	}
-	
-	focus = {
-		id = BRA_guarantees
-		icon = GFX_goal_generic_improve_relations
-		x = 0
-		y = 1
-		cost = 10
-		relative_position_id = BRA_democratic_constitution
-		prerequisite = { focus = BRA_democratic_constitution  }
-
-		
-		
-		
-
-		available_if_capitulated = yes
-		
-		ai_will_do = {
-			factor = 20
-		}
-
-		completion_reward = {
-		add_political_power = 150
-		add_ideas = ROM_constitutional_guarantees
 	}	
 	
 
