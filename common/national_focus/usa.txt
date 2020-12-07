@@ -178,7 +178,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		
+
 		completion_reward = {
+			custom_effect_tooltip = usa_sov_tech_sharing_tooltip
 			SOV = { add_to_tech_sharing_group = USA_SOV_tech_group }
 			add_to_tech_sharing_group = USA_SOV_tech_group
 		}	

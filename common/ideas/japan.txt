@@ -1617,7 +1617,7 @@ ideas = {
 			available = {
 				has_completed_focus = JAP_agility_focus
 			}
-			
+			cost = 75
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1652,6 +1652,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
+			cost = 75
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1780,7 +1781,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 175
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.15
@@ -1810,7 +1811,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 150
 						
 			research_bonus = {
 				cat_base_strike = 0.15
@@ -1840,7 +1841,7 @@ ideas = {
 				original_tag = JAP
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_operational_integrity = 0.15

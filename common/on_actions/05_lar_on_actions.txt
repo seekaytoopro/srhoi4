@@ -285,35 +285,35 @@ on_actions = {
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					tag = FRA
-					has_completed_focus = FRA_national_uprising
-					FROM.FROM = {
-						is_core_of = ROOT
-						not = { has_state_flag = FRA_core_state_liberated }
-					}
-				}
-				FROM.FROM = {
-					set_state_flag = FRA_core_state_liberated
-					create_unit = {
-						division = "name = \"1re Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"2me Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"3me Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
-						owner = ROOT
-					}
-				}
-			}
-		}
-	}
+	# on_state_control_changed = {
+	# 	effect = {
+	# 		if = {
+	# 			limit = {
+	# 				tag = FRA
+	# 				has_completed_focus = FRA_national_uprising
+	# 				FROM.FROM = {
+	# 					is_core_of = ROOT
+	# 					not = { has_state_flag = FRA_core_state_liberated }
+	# 				}
+	# 			}
+	# 			FROM.FROM = {
+	# 				set_state_flag = FRA_core_state_liberated
+	# 				create_unit = {
+	# 					division = "name = \"1re Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+	# 					owner = ROOT
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"2me Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+	# 					owner = ROOT
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"3me Demi-Brigade de Chasseurs\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+	# 					owner = ROOT
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	on_weekly = {
 		effect = {
