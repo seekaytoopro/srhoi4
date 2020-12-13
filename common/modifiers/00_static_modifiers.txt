@@ -131,12 +131,6 @@ flooded = { # on Province
 	dig_in_speed_factor = 0.2
 }
 
-unplanned_offensive = { # on Province
-	army_speed_factor = -0.00
-	army_attack_factor = -0.00
-	local_org_regain = -0.00
-}
-
 night = { # On province. Multiplied by amount of darkness.
 	naval_hit_chance = -0.25
 	carrier_traffic = -0.75
@@ -305,25 +299,12 @@ diff_strong_ai_generic = {
 }
 
 naval_mines_effect = {
-	# naval_accidents_chance = 0.00
-	# naval_speed_factor = -0.01
-	# naval_invasion_penalty = 0.0
 }
 
 air_wing_experience_malus_min = {
-	# air_attack_factor = -0.0
-	# #air_defence_factor = -0.15
-	# air_agility_factor = -0.12
-	# air_night_penalty = 0.12
-	# #air_weather_penalty = 0.15
 }
 
 air_wing_experience_bonus_max = {
-	# air_attack_factor = 0.0
-	# #air_defence_factor = 0.2
-	# air_agility_factor = 0.20
-	# air_night_penalty = -0.2
-	# #air_weather_penalty = -0.3
 }
 
 pride_of_the_fleet = {
@@ -408,7 +389,7 @@ active_decryption_modifier = {
 
 # modifiers applied to allied divisions entering the intel network
 intel_network_state_level_bonus = {
-	amphibious_invasion_defence = 0.03
+	amphibious_invasion_defence = 0.10
 	planning_speed = 0.5
 }
 
@@ -441,25 +422,6 @@ operative_nationality_operation = {
 	operation_cost = -0.1
 }
 
-#LaR Compliance
-
-FRA_host_the_german_exiles = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.25
-}
-
-FRA_reorganized_departments = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = neutrality
-		}
-	}
-	compliance_gain = 0.25
-}
 
 GER_rescued_mussolini = {
 	valid_relation_trigger = {
@@ -543,13 +505,3 @@ lend_lease = {
 
 	trade_cost_for_target_factor = -0.6
 	}
-
-
-FRA_carry_the_revolution_south = {
-	valid_relation_trigger = {
-		ROOT = {
-			has_government = communism
-		}
-	}
-	compliance_gain = 0.4
-}

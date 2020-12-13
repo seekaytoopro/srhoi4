@@ -77,7 +77,7 @@ autonomous_occupation = {
 	}
 
 	state_modifier = {
-		compliance_gain 				= 10
+		compliance_gain 				= 0.12
 		resistance_target 				= -0.5
 		required_garrison_factor 		= -1	
 		resistance_damage_to_garrison 	= -1
