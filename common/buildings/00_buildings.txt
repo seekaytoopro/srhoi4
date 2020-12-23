@@ -6,20 +6,22 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 1000
+		per_level_extra_cost = 500 
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
+		damage_factor = 0.75
 		value = 1
-
+		
 		show_modifier = yes
-		max_fuel_building = 0.75 #k
+		max_fuel_building = 0.5 #k
 	}
 
 	arms_factory = {
 		show_on_map = 6
-		base_cost = 7200
-		base_cost_conversion = 4000
+		base_cost = 8400 #7200
+		base_cost_conversion = 5200 #4000
 		military_production = 1
 		icon_frame = 2
 		max_level = 99
@@ -30,8 +32,8 @@ buildings = {
 
 	industrial_complex = {
 		show_on_map = 6
-		base_cost = 10800
-		base_cost_conversion = 9000
+		base_cost = 12600 #10800
+		base_cost_conversion = 10500 #9000
 		general_production = 1
 		icon_frame = 1
 		max_level = 99
@@ -93,7 +95,7 @@ buildings = {
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
-		base_cost = 6400
+		base_cost = 7200 #6400
 		only_costal = yes
 		naval_production = 1
 		icon_frame = 4
@@ -119,7 +121,7 @@ buildings = {
 
 	synthetic_refinery = {
 		show_on_map = 1
-		base_cost = 14500
+		base_cost = 15200 #14500
 		icon_frame = 10
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
