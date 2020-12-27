@@ -335,7 +335,7 @@ GER_case_anton = {
 				#DEN =  { has_capitulated = yes }
 		HOL =  { has_capitulated = yes }
 		NOR =  { has_capitulated = yes }
-		BEL =  { has_capitulated = yes }
+		# BEL =  { has_capitulated = yes }
 
 		NOT = { has_completed_focus = GER_anti_comitern_pact }
 		has_manpower > 1257200   #123200 guns    2400 AA  

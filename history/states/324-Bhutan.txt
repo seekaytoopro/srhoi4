@@ -2,7 +2,7 @@ state={
 id=324
 name="STATE_324"
 manpower = 450000
-state_category = town
+state_category = pastoral
 resources={
 }
 history={
@@ -10,7 +10,7 @@ owner = RAJ
 add_core_of=RAJ
 buildings = {
 infrastructure = 1
-industrial_complex = 2
+# industrial_complex = 2
 }
 victory_points = {
 8010 3
