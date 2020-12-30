@@ -5,6 +5,9 @@ state={
 	manpower = 2672756
 	
 	state_category = large_city
+	resources = {
+		steel = 43
+	}
 
 	history={
 		owner = USA
@@ -16,13 +19,6 @@ state={
 		victory_points = {
 			1770 3 
 		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 5
-			}
-		}
-
 	}
 
 	provinces={

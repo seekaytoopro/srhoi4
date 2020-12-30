@@ -18,6 +18,6 @@ state={
 		6909 9847 9850 
 	}
 	manpower=1672000
-	state_category=megalopolis
+	state_category=city
 	buildings_max_level_factor=1.000
 }
