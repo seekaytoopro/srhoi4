@@ -899,7 +899,7 @@ focus = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+		available = { OR = { has_completed_focus = BRA_cohen_plan has_completed_focus = BRA_free_elections } }
 
 		
 		ai_will_do = {
@@ -1058,7 +1058,7 @@ focus = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+		available = { has_war_with = JAP }
 
 		
 		ai_will_do = {
@@ -1068,7 +1068,13 @@ focus = {
 
 
 		completion_reward = {
-		
+			add_ideas = refinery_effort
+			add_tech_bonus = {
+				name = SOV_coal_liquidization
+				bonus = 0.5
+				uses = 3
+				category = synth_resources
+			}
 		497 = {
 				add_resource = {
 					type = rubber

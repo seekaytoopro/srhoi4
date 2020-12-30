@@ -92,7 +92,7 @@ sub_units = {
 		training_time = 120
 		weight = 1
 		
-		supply_consumption = 0.30
+		supply_consumption = 0.28
 		air_attack = -0.15
 		transport = motorized_equipment
 		need = {
