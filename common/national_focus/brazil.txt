@@ -937,7 +937,19 @@ focus = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = dispersed_industry5
+				technology = construction3
+				technology = construction4
+				technology = construction5
 			}
 			501 = {
 				add_extra_state_shared_building_slots = 1
@@ -1669,7 +1681,7 @@ focus = {
 		icon = GFX_focus_chi_british_cooperation
 		x = 0
 		y = 1
-		prerequisite = { focus = BRA_osvaldo}
+		prerequisite = { focus = BRA_osvaldo }
 		relative_position_id = BRA_osvaldo
 		cost = 10
 
@@ -1683,9 +1695,6 @@ focus = {
 						exists = yes  NOT = { has_government = fascism } }
 
 		completion_reward = {
-		ENG = {
-				country_event = generic.2
-			}
 		}
 
 		ai_will_do = {
@@ -1704,7 +1713,7 @@ focus = {
 
 		available_if_capitulated = yes
 		
-		available = { is_in_faction_with = ENG }
+		available = { is_in_faction_with = ENG date>1940.8.1 }
 
 		completion_reward = {
 		air_experience = 25
@@ -1969,6 +1978,7 @@ focus = {
 				ideology = neutrality
 			}
 		add_country_leader_trait = dictator
+		custom_effect_tooltip = "Will crush the Integralists once and for all..."
 		country_event = { id = brazil.5 }
 	}	
 
@@ -1991,7 +2001,7 @@ focus = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = BRA_CLT_reforms_effect_tt
+		add_stability = 0.10
 		
 	}
 }	
@@ -2093,9 +2103,7 @@ focus = {
 
 		available_if_capitulated = yes
 		
-		available = {  has_idea = BRA_workers_rights
-                       has_idea = BRA_labour_safety
-                       has_idea = BRA_labour_justice} 
+		available = {  has_stability > 0.85 }
 		
 		
 		

@@ -208,6 +208,7 @@ focus_tree = {
 					add_political_power = 100
 					add_war_support = 0.10
 					air_experience = 300
+					army_experience = 100
 				}
 				SOV = { army_experience = 1000 air_experience  = 300 }
 				GER = { air_experience  = 300 }
@@ -221,7 +222,10 @@ focus_tree = {
 				NZL = { army_experience = 150 }	
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
-				BUL = { army_experience = 100 }					
+				BUL = { army_experience = 100 }
+				IF = { limit = { country_exists = CRO } CRO = { army_experience = 100 } }
+				IF = { limit = { country_exists = CRO } SIA = { army_experience = 1000 air_experience  = 1000 } }
+				IF = { limit = { country_exists = CRO } MAN = { army_experience = 1000 air_experience  = 1000 } }
 			}
 		}
 	}

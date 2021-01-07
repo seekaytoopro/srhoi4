@@ -19,7 +19,7 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bo
 NDefines.NCountry.GIE_DIVISION_DEFENSE_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
 NDefines.NMilitary.UNIT_DIGIN_CAP = 2.0
 
-NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.05 -- 0.01
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.025 -- 0.01
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
 NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
