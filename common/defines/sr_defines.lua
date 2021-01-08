@@ -87,7 +87,7 @@ NDefines.NAir.FUEL_COST_MULT = 0.17 -- (0.35) fuel multiplier for all air missio
 ---------------------------------------------------------------------------------------------------------
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
-NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.033                    -- basic speed control
+NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0375                    -- basic speed control
 NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.025	-- speed penalty per infrastucture below maximum.
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15 -- WAS 0.20, how much org is lost every hour while moving an army. 
 NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35

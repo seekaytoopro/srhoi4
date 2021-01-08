@@ -922,8 +922,7 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_subject_of = ROOT
+			ROOT = {
 				has_full_control_of_state = 716				
 			}
 		}
