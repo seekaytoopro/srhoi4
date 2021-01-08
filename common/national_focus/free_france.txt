@@ -35,9 +35,7 @@ focus_tree = {
 				popularity = 0.15
 				ideology = democratic
 			}
-			custom_effect_tooltip = FRF_france_libre
-			# country_event = { days = 1 id = free_france.5 }
-			# custom_effect_tooltip = syria_sway_tt						
+			custom_effect_tooltip = FRF_france_libre				
 		}
 	}
 	
@@ -661,7 +659,7 @@ focus_tree = {
 	}
 	focus = {
 		id = FRF_infantry
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FRF_france_libre }
 	    mutually_exclusive = { 
 		    focus = FRF_tanks
@@ -671,8 +669,8 @@ focus_tree = {
 		cost = 1
 
 		available_if_capitulated = yes
-
 		completion_reward = {
+			custom_effect_tooltip = FRF_inf_spawn
 			load_oob = "FRF_infantry"
 		}
 	}
@@ -691,15 +689,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = FRF_tank_spawn
 			load_oob = "FRF_tanks"
-			# add_ideas = FRF_infantry_focus
-			# add_ideas = FRF_fortification_focus
-			# add_tech_bonus = {
-			# 	bonus = 1.00 
-			# 	uses = 1
-			# 	name = mech_army_bonus
-			# 	tech = mechanised_infantry
-			# }
 		}
 	}
 		focus = {
