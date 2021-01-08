@@ -123,6 +123,8 @@ ideas = {
 			}
 			
 			modifier = {
+				army_core_attack_factor	= 0.05
+				army_core_defence_factor = 0.05
 				surrender_limit = 0.15
 			}	
 		}
@@ -142,8 +144,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-			army_core_attack_factor	= 0.05
-			army_core_defence_factor = 0.05
+			army_core_attack_factor	= 0.1
+			army_core_defence_factor = 0.1
 			resistance_target_on_our_occupied_states = 0.1
 			}		
 		}
@@ -164,8 +166,8 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-			army_core_attack_factor	= 0.1
-			army_core_defence_factor = 0.1
+			army_core_attack_factor	= 0.15
+			army_core_defence_factor = 0.15
 			resistance_target_on_our_occupied_states = 0.2
 			}		
 		}
@@ -186,9 +188,9 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-						army_core_attack_factor	= 0.15
-			army_core_defence_factor = 0.15
-			resistance_target_on_our_occupied_states = 0.3
+				army_core_attack_factor	= 0.2
+				army_core_defence_factor = 0.2
+				resistance_target_on_our_occupied_states = 0.3
 			}		
 		}
 				stiff_upper_lip5 = {
@@ -208,9 +210,9 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-					army_core_attack_factor	= 0.2
-			army_core_defence_factor = 0.2
-			resistance_target_on_our_occupied_states = 0.4
+				army_core_attack_factor	= 0.25
+				army_core_defence_factor = 0.25
+				resistance_target_on_our_occupied_states = 0.4
 			}		
 		}
 				stiff_upper_lip6 = {
@@ -230,9 +232,9 @@ ideas = {
 			
 			modifier = {
 				surrender_limit = 0.15
-						army_core_attack_factor	= 0.25
-			army_core_defence_factor = 0.25
-			resistance_target_on_our_occupied_states = 0.5
+				army_core_attack_factor	= 0.3
+				army_core_defence_factor = 0.3
+				resistance_target_on_our_occupied_states = 0.5
 			}		
 		}
 

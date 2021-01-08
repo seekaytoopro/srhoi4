@@ -167,7 +167,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+			SOV = { has_war_with = GER }
 		}
 		
 		bypass = {
