@@ -12,6 +12,15 @@ if = {
 set_rule = { can_be_spymaster = no }
 
 add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = ENG civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = NZL civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = AST civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = CAN civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = RAJ civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = BRA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = MEX civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = SAF civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
+add_intel = { target = FRA civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
 set_research_slots = 5
 set_stability = 0.75
@@ -54,6 +63,9 @@ set_technology = {
 	synth_oil_experiments = 1
 	motorised_infantry = 1
 	marines = 1
+	air_superiority = 1
+	forward_interception = 1 
+	fighter_ace_initiative = 1 	
 }
 
 
@@ -446,9 +458,19 @@ create_corps_commander = {
 }
 
 create_navy_leader = {
+	name = "Ernest King"
+		picture = "Portrait_USA_Earnest_King.dds"
+	traits = { caustic_personality chief_engineer blockade_runner superior_tactician ironside }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 6
+}
+create_navy_leader = {
 	name = "Chester W. Nimitz"
 		picture = "Portrait_USA_Chester_W_Nimitz.dds"
-	traits = { bold superior_tactician spotter air_controller  blue_water_expert concealment_expert flight_deck_manager   smoke_screen_expert }
+	traits = { bold superior_tactician spotter air_controller blue_water_expert concealment_expert flight_deck_manager   smoke_screen_expert }
 	skill = 8
 	attack_skill = 8
 	defense_skill = 6
@@ -466,6 +488,16 @@ create_navy_leader = {
 	maneuvering_skill = 2
 	coordination_skill = 7
 }
+create_navy_leader = {
+	name = "Raymond A. Spruance"
+		picture = "Portrait_USA_Raymond_A_Spruance.dds"
+	traits = { cuts_corners seawolf fleet_protector spotter blockade_runner blue_water_expert }
+	skill = 3
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 5
+	coordination_skill = 4
+}
 
 create_navy_leader = {
 	name = "Arleigh Burke"
@@ -476,6 +508,16 @@ create_navy_leader = {
 	defense_skill = 2
 	maneuvering_skill = 9
 	coordination_skill = 2
+}
+create_navy_leader = {
+	name = "Charles M. Cooke, Jr."
+		picture = "Portrait_USA_Charles_M_Cooke.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 5
+	coordination_skill = 3
 }
 if = {
 	limit = { has_dlc = "La Resistance" }
@@ -589,7 +631,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {			# represents O/R class, S class
-		name = "S Class"
+		name = "SS1"
 		type = ship_hull_submarine_1
 		name_group = USA_SS_HISTORICAL
 		parent_version = 0
@@ -600,22 +642,38 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
-		name = "Porpoise Class"				# represents Porpoise, Shark, and Perch classes
+		name = "SS2"			# represents Barracuda, Dolphin, Cachalot classes
 		type = ship_hull_submarine_2
 		name_group = USA_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_engine_slot = sub_ship_engine_1
 			rear_1_custom_slot = empty
 		}
+		obsolete = yes
 	}
 	# Destroyers #
-
 	create_equipment_variant = {
-		name = "Farragut Class"				# represents Farragut, Porter, Mahan classes
+		name = "Basic DD1"				# represents Sampson, Caldwell, Clemson, and Wickes classes
+		type = ship_hull_light_1
+		name_group = USA_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sonar DD1"				# represents Farragut, Porter, Mahan classes
 		type = ship_hull_light_1
 		name_group = USA_DD_HISTORICAL
 		parent_version = 0
@@ -632,7 +690,7 @@ if = {
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Omaha Class"
+		name = "CL1"
 		type = ship_hull_cruiser_1
 		name_group = USA_CL_HISTORICAL
 		parent_version = 0
@@ -650,7 +708,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Brooklyn Class"
+		name = "CL2"
 		type = ship_hull_cruiser_2
 		name_group = USA_CL_HISTORICAL
 		parent_version = 0
@@ -668,10 +726,9 @@ if = {
 			rear_1_custom_slot = ship_light_medium_battery_2
 		}
 	}
-
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Pensacola Class"			# Pensacola and Northampton classes
+		name = "CA1"			# Pensacola and Northampton classes
 		type = ship_hull_cruiser_1
 		name_group = USA_CA_HISTORICAL
 		parent_version = 0
@@ -689,9 +746,8 @@ if = {
 		}
 		obsolete = yes
 	}
-
 	create_equipment_variant = {
-		name = "New Orleans Class"
+		name = "CA2"
 		type = ship_hull_cruiser_2
 		name_group = USA_CA_HISTORICAL
 		parent_version = 0
@@ -709,32 +765,47 @@ if = {
 		}
 	}
 
-	# Battleships #
-
 
 	create_equipment_variant = {
-		name = "Colorado Class"				
+		name = "BB1"				# represents Pennsylvania, Nevada, Tennessee, and New Mexico classes
 		type = ship_hull_heavy_1
 		name_group = USA_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_battery_slot = ship_heavy_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_1
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_2
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = empty
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_1
 		}
+		obsolete = yes
 	}
-	# Carriers #
 
+	# Carriers #
 	create_equipment_variant = {
-		name = "Yorktown Class"
+		name = "CV1"
+		type = ship_hull_carrier_conversion_bb
+		name_group = USA_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			mid_1_custom_slot = ship_deck_space
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "CV2"
 		type = ship_hull_carrier_1
 		name_group = USA_CV_HISTORICAL
 		parent_version = 0
