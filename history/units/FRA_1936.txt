@@ -127,6 +127,45 @@ division_template = {
 	}
 }
 division_template = {
+	name = "Mediums"
+	division_names_group = FRA_MEC_01					
+	
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }		
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mot_anti_air_brigade = { x = 1 y = 4 }
+
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }
+	
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		anti_tank = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+	}
+}
+division_template = {
 	name = "Division d'Infanterie Motorisée"	# Division d'Infanterie Motorisée
 	division_names_group = FRA_MOT_01
 
@@ -156,11 +195,13 @@ division_template = {
 
 	}
 	support = {
-        recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+        engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
 		anti_tank = { x = 0 y = 3 }
-		artillery = { x = 0 y = 4 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
 	}
 }
 division_template = {
@@ -190,11 +231,13 @@ division_template = {
 		light_armor = { x = 4 y = 2 }
 	}
 	support = {
-        recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
+        engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
 		anti_tank = { x = 0 y = 3 }
-		artillery = { x = 0 y = 4 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
 	}
 }
 
@@ -315,6 +358,15 @@ instant_effect = {
 			creator = "FRA"
 		}
 		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = gw_armored_car_equipment
+			creator = "FRA" 
+		}
+		requested_factories = 1
+		progress = 0.4
 		efficiency = 50
 	}
 
