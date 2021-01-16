@@ -1,8 +1,9 @@
+
 supply_area={
 	id=264
 	name="SUPPLYAREA_264"
 	value=4
 	states={
-		330 
+		330 752 287 322 415 604 617 616 618 754 753 283 
 	}
 }
