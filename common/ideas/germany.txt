@@ -600,8 +600,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = FRA
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.1
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
 			}
 			targeted_modifier = {
 				tag = BEL
