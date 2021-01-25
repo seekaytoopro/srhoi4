@@ -52,7 +52,6 @@ NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.074 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0333 	-- (0.05) global damage modifier
 
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.58 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 12.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
