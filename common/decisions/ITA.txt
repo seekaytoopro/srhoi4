@@ -127,31 +127,6 @@ foreign_politics = {
 		timeout_effect = { }
 	}
 
-
-
-
-# SPR_kill_portugal = { 
-
-# 	allowed = {		tag = SPR	}
-
-# available = {		POR = { has_war_with = SPR }	}
-			
-# 			fire_only_once = yes
-			
-# 			cost = 0
-
-# 			visible = {  }
-
-# 		complete_effect = {
-# 	SPR = { white_peace = POR }
-# 	POR = { white_peace = SPR }
-# 	729 = { remove_core_of = POR }
-# 	SPR = { transfer_state = 179  transfer_state = 180 transfer_state = 181	transfer_state = 112	transfer_state = 795	}
-#  SPR = { add_threat = 50 }
-#  POR = { add_ideas = attritionn }	
-# 			}
-# }
-
 ITA_annex_bul = {
 	icon = generic_operation
 
@@ -306,72 +281,6 @@ ITA_annex_bul = {
 		fire_only_once = yes
 	
 		complete_effect = {
-			
-			if = {
-				limit = {
-					ROM = {
-						has_tech = CAS2
-					}
-				}
-				set_technology = {
-					CAS2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					ROM = {
-						has_tech = CAS3
-					}
-				}
-				set_technology = {
-					CAS3 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					ROM = {
-						has_tech = tactical_bomber2
-					}
-				}
-				set_technology = {
-					tactical_bomber2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					ROM = {
-						has_tech = tactical_bomber3
-					}
-				}
-				set_technology = {
-					tactical_bomber3 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					ROM = {
-						has_tech = naval_bomber2
-					}
-				}
-				set_technology = {
-					naval_bomber2 = 1
-				}
-			}
-#############################################################################################
-			if = {
-				limit = {
-					ROM = {
-						has_tech = naval_bomber3
-					}
-				}
-				set_technology = {
-					naval_bomber3 = 1
-				}
-			}
 #############################################################################################
 
 #############################################################################################
@@ -432,18 +341,6 @@ ITA_annex_bul = {
 #############################################################################################
 			
 		    ITA = {
-				# if= {
-				# 	limit = {
-				# 		ROM = {
-				# 			OR = {
-				# 			    has_tech = hunt_and_destroy
-                #                 has_tech = multialtitude_flying
-                #                 has_tech = operational_destruction
-				# 		    }
-				# 		}
-				# 	}
-				# 	add_ideas = ROM_local_development
-				# }
 				annex_country = {
 					target = ROM
 					transfer_troops = yes 
@@ -517,7 +414,6 @@ ITA_ll_germany = {
 		allowed = { always = no
 			original_tag = ITA }
 		available = { 
-			#tag = gay 
 			NOT = { has_country_flag = auto_ll_ger_enabled } 
 		}
 		activation = {
