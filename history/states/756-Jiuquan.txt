@@ -1,19 +1,29 @@
+
 state={
 	id=756
 	name="STATE_756"
-	provinces={
-		1778 2028 4783 5076 7727 7803 7971 8102 10770 10899 12596 12820 
+	resources={
+		steel=10.000
 	}
-	#manpower=1000000
-	manpower = 1
-	buildings_max_level_factor=1.000
-	state_category = wasteland
-	history={
-		# owner = CHI
-		# add_core_of = CHI
-		# buildings = {
-		# 	infrastructure = 1
 
-		# }
+	history={
+		owner = ITA
+		victory_points = {
+			9752 5 
+		}
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+
+		}
+		add_core_of = ITA
+
 	}
+
+	provinces={
+		3773 3976 6790 9752 
+	}
+	manpower=675123
+	buildings_max_level_factor=1.000
+	state_category=city
 }

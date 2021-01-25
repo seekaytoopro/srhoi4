@@ -1410,7 +1410,6 @@ focus = {
 		prerequisite = { focus = BRA_universidade_do_brasil }
 		available = {
 			num_of_factories > 50
-			amount_research_slots < 5
 		}
 		
 		cancel_if_invalid = no
@@ -1424,8 +1423,6 @@ focus = {
 
 		completion_reward = {
 		add_ideas = BRA_rural_idea4
-			add_research_slot = 1
-			custom_effect_tooltip = CZE_war_college_effect_tt
 		}
 	}	
 	
