@@ -558,11 +558,6 @@ ideas = {
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.05
 			}
-			#targeted_modifier = {
-		#	tag = GER
-			#army_armor_speed_factor = 0.10			
-		#	}
-
 		}
 		
 		GER_barbarossa_minor = {
