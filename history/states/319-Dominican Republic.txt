@@ -1,13 +1,16 @@
-state=
-{
-id=319
-name="STATE_319"
-manpower = 1
-state_category = wasteland
-history=
-{
-}
-provinces={
-4598 7632 7660 10484
-}
+
+state={
+	id=319
+	name="STATE_319"
+
+	history={
+
+	}
+
+	provinces={
+		10484 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }
