@@ -65,7 +65,7 @@
 1399;1515;sea;8893;-1;-1;-1;-1;;Kurils 1
 1515;13037;sea;8893;-1;-1;-1;-1;;Kurils 2
 13037;4646;sea;5922;-1;-1;-1;-1;;Kurils-Hokkaido
-9952;1117;sea;2609;-1;-1;-1;-1;;Niigata-Sado
+9952;1117;sea;2658;-1;-1;-1;-1;;Niigata-Sado
 1135;13090;sea;8170;-1;-1;-1;-1;;Amlia-Unalaska
 13090;10694;sea;8739;-1;-1;-1;-1;;Unalaska-Unimak
 10092;7046;sea;8791;-1;-1;-1;-1;;Kyushu-Shikoku
@@ -87,13 +87,7 @@
 13041;13044;sea;7287;-1;-1;-1;-1;;Carolines 1
 13042;13043;sea;2414;-1;-1;-1;-1;;Carolines 2
 10276;7669;sea;5263;-1;-1;-1;-1;;Tiwi-Darwin
-12910;7567;sea;5798;-1;-1;-1;-1;;Adelaide-Kangaroo Island
-11350;177;sea;2766;-1;-1;-1;-1;;St Lucia-Martinique
-177;7123;sea;2766;-1;-1;-1;-1;;Martinique-Dominica
-7123;9377;sea;2766;-1;-1;-1;-1;;Dominica-Guadeloupe
-9377;4450;sea;2766;-1;-1;-1;-1;;Guadeloupe-Montserrat
-4450;13084;sea;2766;-1;-1;-1;-1;;Montserrat-Anguilla
-1440;13084;sea;5700;-1;-1;-1;-1;;Puerto Rico-Virgin Islands
+12910;7567;sea;5771;-1;-1;-1;-1;;Adelaide-Kangaroo Island
 10203;9805;sea;5864;-1;-1;-1;-1;;Corfu-Epirus
 1106;12001;sea;5913;-1;-1;-1;-1;;Lefkada-Epirus
 3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
@@ -109,7 +103,7 @@
 22;3016;sea;5792;-1;-1;-1;-1;;Northern-Straits
 6062;6205;sea;3590;-1;-1;-1;-1;;West Scottish-Strait
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
-7304;4360;sea;8642;-1;-1;-1;-1;;New Foundland-Strait
+7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
