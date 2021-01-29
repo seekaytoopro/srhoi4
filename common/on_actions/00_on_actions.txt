@@ -319,6 +319,7 @@ on_actions = {
 		limit = { 
 			original_tag = POL
 		}
+			POL = { set_equipment_fraction = 0.0 }
 	SOV = { 
 		transfer_state = 784  
 		transfer_state = 97
