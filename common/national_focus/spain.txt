@@ -25,13 +25,16 @@ focus_tree = {
 
 
 
-		focus = {
+		focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_unify_the_nationalist_front
 				
 		icon = GFX_focus_spa_unify_the_nationalist_front
 		x = 8
 		y = 0
 		cost = 30
+
+		ai_will_do = { factor = 1 }
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -51,7 +54,8 @@ focus_tree = {
 	}
 	
 	
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_caudillo_of_spain
 
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
@@ -89,7 +93,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_martyrdom_for_primo_de_rivera
 
 		prerequisite = { focus = SPA_caudillo_of_spain }
@@ -113,7 +118,8 @@ focus_tree = {
 
 	
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_consolidate_the_north
 
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
@@ -170,7 +176,8 @@ focus_tree = {
 			}
 		}
 	
-		focus = {
+		focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_expand_conscription
 
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
@@ -188,7 +195,8 @@ focus_tree = {
 	}
 
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_utilize_the_intellectuals
 		available = {
 		}
@@ -209,7 +217,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_banish_the_party_leaders
 		available = {
 		}
@@ -232,7 +241,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_fuse_the_parties
 		available = {
 		}
@@ -254,7 +264,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_adopt_the_26_points
 		available = {
 		}
@@ -299,7 +310,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_direct_the_universities
 		available = {
 			# num_of_factories > 40
@@ -321,7 +333,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_dictator_for_life
 		available = {
 		
@@ -379,7 +392,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_tangiers_enclave
 		available = {
 			#has_full_control_of_state = 290
@@ -408,7 +422,8 @@ focus_tree = {
 	}
 
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_safeguard_the_freedom_of_worship
 		available = {
 		}
@@ -431,7 +446,8 @@ focus_tree = {
 	}
 
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_national_and_popular_army_of_spain
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
@@ -457,7 +473,8 @@ focus_tree = {
 		}
 	}
 	
-		focus = {
+		focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_a_methodical_approach
 		available = {
 		}
@@ -479,7 +496,8 @@ focus_tree = {
 
 	
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_army_of_africa_model
 		available = {
 		}
@@ -512,7 +530,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_equipment_modernization
 		available = {
 		}
@@ -538,7 +557,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_artillery_modernization
 		available = {
 		}
@@ -564,7 +584,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_expand_the_air_branch
 		prerequisite = { focus = SPA_equipment_modernization }
 		icon = GFX_goal_generic_air_doctrine
@@ -585,7 +606,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_expand_the_special_forces
 		prerequisite = { focus = SPA_equipment_modernization }
 		
@@ -614,7 +636,8 @@ focus_tree = {
 	}
 
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_an_armored_corps
 		prerequisite = { focus = SPA_unify_the_nationalist_front }		
 		icon = GFX_goal_generic_army_tanks
@@ -639,7 +662,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_national_recovery
 		available = {
 			date > 1939.4.1 
@@ -673,7 +697,8 @@ focus_tree = {
 	}
 
 
-		focus = {
+		focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_fascist_economic_aid
 		available = {
 			
@@ -704,7 +729,8 @@ focus_tree = {
 
 
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_facilitate_pyrenees_freight_transports
 		available = {
 		
@@ -792,7 +818,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_improve_cross_country_railways
 		
 		prerequisite = { focus = SPA_fascist_economic_aid focus = SPA_spanish_austerity }
@@ -833,7 +860,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_support_the_war_industry
 		
 		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
@@ -861,7 +889,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_duty_to_work
 		available = {
 		
@@ -883,7 +912,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_expand_the_war_industry
 		available = {
 		
@@ -939,7 +969,8 @@ focus_tree = {
 	}
 
 	
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_autarky
 		available = {
 		}
@@ -972,7 +1003,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_spanish_austerity
 		available = {
 		}
@@ -982,10 +1014,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 		
 		icon = GFX_goal_generic_construct_civilian
@@ -1005,7 +1033,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_expand_the_axis_gold_trade
 		available = {
 		}
@@ -1026,7 +1055,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_ensure_agricultural_self_sufficiency
 		prerequisite = { focus = SPA_expand_the_axis_gold_trade }
 		prerequisite = { focus = SPA_improve_cross_country_railways }
@@ -1069,7 +1099,8 @@ focus_tree = {
 
 
 	
-		focus = {
+		focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_corpo_truppe_volontarie
 		available = {
 			
@@ -1102,7 +1133,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_the_condor_legion
 		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
@@ -1120,7 +1152,8 @@ focus_tree = {
 		}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_obtain_training_staff
 		available = {
 		}
@@ -1142,7 +1175,8 @@ focus_tree = {
 	}
 	}
 
-	focus = {
+	focus = { 
+		ai_will_do = { factor = 1 }
 		id = SPA_doctrinal_advancements
 		available = {
 		

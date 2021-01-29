@@ -862,101 +862,50 @@ focus_tree = {
 
 			60 = {
 				add_extra_state_shared_building_slots = 10
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-					instant_build = yes
-				}
-		
+				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
 			}
-
-
-	
-				HUN = { country_event = { id = wtt_germany.72 }
+			HUN = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = HUN_REICH
-	if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-			GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-		}
-
-155 = {
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-								type = arms_factory
-								level = 4
-								instant_build = yes
-							}
-					
-						}
-					
-				} 	
-			
-				ROM = { country_event = { id = wtt_germany.72 }
-					#set_cosmetic_tag = ROM_REICH 
-					if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-		GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-		}
+				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+				155 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
+				}	
+			} 	
+			ROM = { country_event = { id = wtt_germany.72 }
+				#set_cosmetic_tag = ROM_REICH 
+				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
 				46 = {
-							add_extra_state_shared_building_slots = 4
-							add_building_construction = {
-								type = arms_factory
-								level = 4
-								instant_build = yes
-							}
-						}					
-				} 	
-										if = { limit = { country_exists = BUL }
-										set_autonomy = { target = BUL autonomy_state = autonomy_satellite } 		
-										
-							BUL = { 
-				country_event = { id = wtt_germany.72 }
-				#set_cosmetic_tag = BUL_REICH 
-						if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+				}					
+			} 	
+			if = { limit = { country_exists = BUL }
+				GER = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+				BUL = { 
+					country_event = { id = wtt_germany.72 }
+					#set_cosmetic_tag = BUL_REICH 
+					48 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+					}
+				}
 			}
-		}
-				48 = {
+			hidden_effect = {
+				if = { limit = { country_exists = CRO }
+					GER = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+					CRO = {
+						country_event = { id = wtt_germany.72 }
+						#set_cosmetic_tag = BUL_REICH 
+						109 = {
 							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
+							add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 						}
-							}
-hidden_effect = {
-	CRO = { 
-				country_event = { id = wtt_germany.72 }
-				#set_cosmetic_tag = BUL_REICH 
-						if = {
-			limit = {
-				has_dlc = "Death or Dishonor" 
-				is_subject = no
-			}
-		}
-				109 = {
-							add_extra_state_shared_building_slots = 2
-							add_building_construction = {
-								type = arms_factory
-								level = 2
-								instant_build = yes
-							}
-						}
-							}
-}
-							
-							}				
-							}	
-		}
+					}
+				}
+			}			
+		}	
+	}
 
 		focus = {
 			id = GER_german_war_economy
