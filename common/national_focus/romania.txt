@@ -1216,6 +1216,15 @@ focus_tree = {
 				technology = improved_heavy_tank
 				technology = advanced_heavy_tank
 			}
+			add_tech_bonus = {
+				name = ROM_mediums
+				bonus = 1.0
+				uses = 2
+				technology = basic_medium_tank
+				technology = improved_medium_tank
+				technology = advanced_medium_tank
+				technology = advanced_light_tank
+			}
 		}
 	}
 
