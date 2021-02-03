@@ -1124,7 +1124,7 @@ technologies = {
 		#Change the custom tooltip too: RAJ_jungle_training_effect
 		marine = {
 			jungle = {
-				attack = 0.05 
+				attack = 0.05
 				movement = 0.1
 			}
 		}
@@ -1137,6 +1137,27 @@ technologies = {
 		}
 
 		paratrooper = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		jungletroop = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		jaeger = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		desertinfantry = {
 			jungle = {
 				attack = 0.05
 				movement = 0.1

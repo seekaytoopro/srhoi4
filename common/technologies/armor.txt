@@ -2039,10 +2039,18 @@ technologies = {
 		allow = {
 			always = no
 		}
+		category_all_armor  = { soft_attack = 0.25 }
+	}
 
-					category_all_armor  = { soft_attack = 0.25 }
-		
-		
+	FRF_get_tank_designer = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		add_ideas = renault_frf
 	}
 	
 }
