@@ -176,6 +176,10 @@ resource_rights = {
 		give_resource_rights = { receiver = USA state = 479 }
 		give_resource_rights = { receiver = USA state = 480 }	
 	}
+	PER = {	
+		give_resource_rights = { receiver = ENG state = 413 }
+		give_resource_rights = { receiver = ENG state = 412 }
+	}
 	if = { limit = { country_exists = SIA } SIA  = { give_resource_rights = { receiver = GER state = 724 }	} 
 		else = { JAP = { give_resource_rights = { receiver = GER state = 724 } } } }
 }
