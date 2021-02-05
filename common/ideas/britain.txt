@@ -478,6 +478,28 @@ ideas = {
 			removal_cost = -1
 		}
 
+		eng_blood_toil_tears_idea = {
+
+			name = eng_blood_toil_tears_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+
+			picture = generic_production_bonus
+			
+			removal_cost = -1
+		}
+
 
 		
 		ENG_service_overseas_idea = {
