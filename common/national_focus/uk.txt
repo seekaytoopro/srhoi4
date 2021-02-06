@@ -199,6 +199,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = tizard_mission_focus
+		available = {
+			USA = { has_war_with = GER }
+		}
+		prerequisite = { focus = limited_rearmament_focus }
+		icon = GFX_goal_generic_scientific_exchange
+		x = -4
+		y = 1
+		relative_position_id = limited_rearmament_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			air_experience = 25
+			ENG = {
+				add_tech_bonus = {
+					name = fighter_command_focus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
+			}
+			
+			USA = { 
+				add_tech_bonus = {
+					name = fighter_command_focus
+					bonus = 1.0
+					uses = 1
+					category = light_fighter
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = uk_extra_tech_slot
 		text = extra_tech_slot
 		icon = GFX_focus_research
@@ -797,7 +833,6 @@ focus_tree = {
 	focus = {
 		id = uk_battleship_focus
 		prerequisite = { focus = uk_waves_focus }
-		mutually_exclusive = { focus = uk_carrier_focus }
 		icon = GFX_goal_generic_navy_battleship
 		x = 1
 		y = 1
@@ -1298,6 +1333,86 @@ focus_tree = {
 			add_war_support = 0.05
 		   }
 
+		}
+
+		focus = {
+			id = ENG_home_defence
+			prerequisite = { focus = shadow_scheme_focus }
+			icon = GFX_focus_generic_home_defense
+			x = 0
+			y = 1
+	
+			relative_position_id = shadow_scheme_focus
+			cost = 5
+			ai_will_do = {
+				factor = 1
+			}	
+			completion_reward = {
+				add_war_support = 0.05
+				# Ipswich
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
+	
+				125 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						#Plymouth
+						set_building_level = {
+							type = coastal_bunker
+							level = 3
+							province = 271
+							instant_build = yes
+						}
+					}
+				}
+				# Greater London Area
+				126 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						#London
+						set_building_level = {
+							type = coastal_bunker
+							level = 3
+							province = 11374
+							instant_build = yes
+						}
+					}
+				}
+				# Sussex
+				127 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						#Dover
+						set_building_level = {
+							type = coastal_bunker
+							level = 3
+							province = 3501
+							instant_build = yes
+						}
+						#Portsmouth
+						set_building_level = {
+							type = coastal_bunker
+							level = 5
+							province = 9458
+							instant_build = yes
+						}
+					}								
+				}
+				# Cornwall
+				123 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						#Plymouth
+						set_building_level = {
+							type = coastal_bunker
+							level = 3
+							province = 540
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 
 	focus = {
@@ -2878,86 +2993,6 @@ focus_tree = {
 	### GERMAN WAR ###
 
 	focus = {
-		id = ENG_home_defence
-		prerequisite = { focus = shadow_scheme_focus }
-		icon = GFX_focus_generic_home_defense
-		x = 0
-		y = 1
-
-		relative_position_id = shadow_scheme_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}	
-		completion_reward = {
-			add_war_support = 0.05
-			# Ipswich
-			army_experience = 25
-			navy_experience = 25
-			air_experience = 25
-
-			125 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					#Plymouth
-					set_building_level = {
-						type = coastal_bunker
-						level = 3
-						province = 271
-						instant_build = yes
-					}
-				}
-			}
-			# Greater London Area
-			126 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					#London
-					set_building_level = {
-						type = coastal_bunker
-						level = 3
-						province = 11374
-						instant_build = yes
-					}
-				}
-			}
-			# Sussex
-			127 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					#Dover
-					set_building_level = {
-						type = coastal_bunker
-						level = 3
-						province = 3501
-						instant_build = yes
-					}
-					#Portsmouth
-					set_building_level = {
-						type = coastal_bunker
-						level = 5
-						province = 9458
-						instant_build = yes
-					}
-				}								
-			}
-			# Cornwall
-			123 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					#Plymouth
-					set_building_level = {
-						type = coastal_bunker
-						level = 3
-						province = 540
-						instant_build = yes
-					}
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = ENG_issue_gasmasks
 		available = {
 			OR = {
@@ -2985,8 +3020,23 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ENG_artillery
 				uses = 1
-				bonus = 1.0
+				bonus = 0.5
 				technology = artillery1
+				technology = artillery2
+			}
+			add_tech_bonus = {
+				name = ENG_AT
+				uses = 1
+				bonus = 0.5
+				technology = antitank2
+				technology = antitank3		
+			}
+			add_tech_bonus = {
+				name = ENG_AA
+				uses = 1
+				bonus = 0.5
+				technology = antiair2
+				technology = antiair3
 			}
 		}
 	}

@@ -7,9 +7,10 @@ ENG_historical_plan = {
     }
 
 	ai_national_focuses = {
-		limited_rearmament_focus #March 10 1936
+        limited_rearmament_focus #March 10 1936
+        uk_extra_tech_slot
         uk_empire_focus
-        uk_service_focus
+        ENG_global_defense
         uk_colonial_focus
         ENG_british_commonwealth_air_training_plan
         uk_india_focus
@@ -20,8 +21,7 @@ ENG_historical_plan = {
 
         # ENG_steady_as_she_goes
         # ENG_home_defence
-		shadow_scheme_focus #May 20 1936	
-        uk_extra_tech_slot
+		shadow_scheme_focus #May 20 1936
         uk_industrial_focus #July 30 1936
         royal_ordinance_focus #October 10 1936	
 		general_rearmament_focus #October 10 1936
