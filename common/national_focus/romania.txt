@@ -7,8 +7,6 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = ROM
-			#always = no
-			#has_dlc = "Death or Dishonor"
 		}
 	}
 	
@@ -155,12 +153,41 @@ focus_tree = {
 	############################
 
 	focus = {
-		id = ROM_civil_works
-		icon = GFX_goal_generic_construction
+		id = ROM_agrarian_reform
+		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = ROM_preserve_greater_romania }
 		x = 2
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
+
+		cost = 10
+
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = ROM_agrarian_reform
+		}
+	}
+
+	focus = {
+		id = ROM_civil_works
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = ROM_agrarian_reform }
+		x = 1
+		y = 1
+		relative_position_id = ROM_agrarian_reform
 
 		cost = 10
 
@@ -198,44 +225,13 @@ focus_tree = {
 		}
 	}
 
-	
-
-	focus = {
-		id = ROM_agrarian_reform
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = ROM_civil_works }
-		x = 0
-		y = 1
-		relative_position_id = ROM_civil_works
-
-		cost = 10
-
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_ideas = ROM_agrarian_reform
-		}
-	}
-
 	focus = {
 		id = ROM_danubian_transport_network
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = ROM_agrarian_reform }
 		x = 0
 		y = 2
-		relative_position_id = ROM_civil_works
+		relative_position_id = ROM_agrarian_reform
 
 		cost = 5
 
@@ -308,8 +304,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
 		x = 0
-		y = 3
-		relative_position_id = ROM_civil_works
+		y = 1
+		relative_position_id = ROM_danubian_transport_network
 
 		cost = 10
 
@@ -354,8 +350,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = ROM_malaxa }
 		x = -1
-		y = 4
-		relative_position_id = ROM_civil_works
+		y = 1
+		relative_position_id = ROM_malaxa
 
 		cost = 10
 
@@ -407,8 +403,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_military
 		prerequisite = { focus = ROM_malaxa }
 		x = 1
-		y = 4
-		relative_position_id = ROM_civil_works
+		y = 1
+		relative_position_id = ROM_malaxa
 
 		cost = 10
 
@@ -454,9 +450,9 @@ focus_tree = {
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = ROM_invest_in_the_iar }
 		prerequisite = { focus = ROM_hunedoara_steel_works }
-		x = 0
-		y = 5
-		relative_position_id = ROM_civil_works
+		x = 1
+		y = 1
+		relative_position_id = ROM_hunedoara_steel_works
 
 		cost = 10
 
@@ -487,8 +483,8 @@ focus_tree = {
 		icon = GFX_focus_research
 		prerequisite = { focus = ROM_expand_ploiesti_oil_production }
 		x = 0
-		y = 6
-		relative_position_id = ROM_civil_works
+		y = 1
+		relative_position_id = ROM_expand_ploiesti_oil_production
 
 		cost = 10
 
