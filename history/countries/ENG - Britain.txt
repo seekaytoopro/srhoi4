@@ -31,7 +31,8 @@ set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1	
+	tech_support = 1
+	paratroopers = 1	
 		
 	tech_engineers = 1
 	tech_recon = 1
@@ -119,36 +120,107 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
+		improved_airplane_launcher = 1
 		improved_secondary_battery = 1
 		basic_fire_control_system = 1
 		cruiser_submarines = 1
 	}
 }
-# if = {
-# 	limit = {
-# 		has_dlc = "La Resistance"
-# 	}
-# 	set_technology = {
-# armored_car1 = 1	
-# }
-# }
-
 add_ideas = {
 	stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
-	#IRQ_oil2
 }
 	
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 4100 producer = ENG }  
-add_equipment_to_stockpile = { type = support_equipment amount = 4100 producer = ENG } 
-add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 2200 producer = ENG } 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 90000 producer = ENG } 
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1500 producer = ENG } 
-add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 1440 producer = ENG } 
-add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 2500 producer = ENG }
-add_equipment_to_stockpile = { type = cv_nav_bomber_equipment_1 amount = 100 producer = ENG }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 10500
+	producer = ENG
+}  
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 3500
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 2500
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 75000
+	producer = ENG
+} 
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1500
+	producer = ENG
+} 
 
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_2
+	amount = 1440
+	producer = ENG
+} 
+
+add_equipment_to_stockpile = {
+type = anti_air_equipment_1
+amount = 3500
+producer = ENG
+}
+
+
+
+
+add_equipment_to_stockpile = {
+type = cv_nav_bomber_equipment_1
+amount = 175
+producer = ENG
+}
+add_equipment_to_stockpile = {
+type = cv_fighter_equipment_1
+amount = 75
+producer = ENG
+}
+
+
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 500
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_0
+	amount = 500
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 300
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_0
+	amount = 200
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_1
+	amount = 200
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = heavy_fighter_equipment_1
+	amount = 100
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = nav_bomber_equipment_1
+	amount = 100
+	producer = ENG
+}
 set_convoys = 1300
 
 # DIPLOMACY
@@ -169,19 +241,11 @@ if = {
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
-	
-	# 	set_autonomy = {
-	# 	target = IRE
-	# 	autonomous_state = autonomy_dominion
-	# 	freedom_level = 0.4
-	# }
-
 	set_autonomy = {
 		target = SAF
 		autonomous_state = autonomy_dominion
 		freedom_level = 0.4
 	}
-
 	set_autonomy = {
 		target = AST
 		autonomous_state = autonomy_dominion
@@ -263,8 +327,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		champion_of_peace_1
-		economic_reformer
 	}
 }
 
@@ -275,7 +337,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-		staunch_stalinist
 	}
 }
 
@@ -473,9 +534,9 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "William Gott"
+	name = "(Use for Infantry) William Gott"
 		picture = "Portrait_Britain_William_Gott.dds"
-		traits = {infantry_leader desert_fox armor_officer trait_reckless old_guard inflexible_strategist trickster}
+		traits = {infantry_leader desert_fox armor_officer trait_reckless old_guard inflexible_strategist trickster naval_invader}
 		skill = 4
 		attack_skill = 6
 		defense_skill = 6
@@ -544,36 +605,94 @@ create_navy_leader = {
 	name = "James Fownes Somerville" # Aristocrat
 	id = 983
 	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
-	traits = { superior_tactician concealment_expert air_controller flight_deck_manager blue_water_expert spotter }
+	traits = { superior_tactician spotter air_controller blue_water_expert }
 	skill = 6
-	attack_skill = 4
-	defense_skill = 9
-	maneuvering_skill = 4
-	coordination_skill = 5
+	attack_skill = 6
+	defense_skill = 3
+	maneuvering_skill = 7
+	coordination_skill = 8
+}
+create_navy_leader = {
+	name = "Henry Harwood" # Aristocrat
+	id = 984
+		picture = "Portrait_Britain_Henry_Harwood.dds"
+	traits = {  bold fly_swatter blue_water_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 2
 }
 
 create_navy_leader = {
 	name = "Andrew Cunningham"
 	id = 985
 	picture = "Portrait_Britain_Andrew_Cunningham.dds"
-	traits = { blockade_runner superior_tactician concealment_expert  bold ironside  air_controller    inshore_fighter }
-	skill = 6
+	traits = { bold blockade_runner superior_tactician ironside air_controller inshore_fighter }
+	skill = 7
 	attack_skill = 7
-	defense_skill = 5
+	defense_skill = 4
 	maneuvering_skill = 6
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "Bruce Fraser"
+	id = 986
+		picture = "Portrait_Britain_Bruce_Fraser.dds"
+	traits = { blockade_runner air_controller arctic_water_expert  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 4
 	coordination_skill = 4
 }
 
+create_navy_leader = {
+	name = "John Tovey" # Aristocrat
+	id = 987
+		picture = "Portrait_Britain_John_Tovey.dds"
+	traits = { superior_tactician spotter fly_swatter arctic_water_expert }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 5
+}
+
+create_navy_leader = {
+	name = "Bernard Rawlings" # Aristocrat
+	id = 988
+		picture = "Portrait_Britain_Bernard_Rawlings.dds"
+	traits = { fleet_protector ironside }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 6
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "John Cunningham"
+	id = 989
+		picture = "Portrait_Britain_John_Cunningham.dds"
+	traits = { ironside fly_swatter green_water_expert }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 4
+	maneuvering_skill = 4
+	coordination_skill = 3
+}
 create_navy_leader = {
 	name = "Charles Forbes"
 	id = 990
 		picture = "Portrait_Britain_Charles_Forbes.dds"
 	traits = { fly_swatter cruiser_captain fleet_protector destroyer_leader  arctic_water_expert    }
 	skill = 5
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 2
 	maneuvering_skill = 3
-	coordination_skill = 9
+	coordination_skill = 6
 }
 
 create_navy_leader = {
@@ -649,7 +768,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "S Class"
+		name = "SS2"
 		type = submarine_1
 		parent_version = 1
 		upgrades = {
@@ -710,7 +829,7 @@ if = {
 	}
 	# Battlecruisers #
 	create_equipment_variant = {
-		name = "Nelson Class"
+		name = "BC1"
 		type = battle_cruiser_1
 		parent_version = 0
 		upgrades = {
@@ -722,7 +841,7 @@ if = {
 	}
 	# Battleships #
 	create_equipment_variant = {
-		name = "Nelson Class"
+		name = "BB1"
 		type = battleship_1
 		parent_version = 0
 		upgrades = {

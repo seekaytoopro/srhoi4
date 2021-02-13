@@ -7,14 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 10
 			tag = RAJ
-			#has_dlc = "Together for Victory"
 		}
-
-		#modifier = {
-		#	add = 10
-		#	original_tag = RAJ
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 
 	focus = {
@@ -777,6 +770,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = "Get 3 Powerful 5 Skill Commanders"
 			#custom_effect_tooltip = RAJ_indian_sandhurst_tt 
 				create_corps_commander = {
 					name = "Kodandera Madappa Cariappa"

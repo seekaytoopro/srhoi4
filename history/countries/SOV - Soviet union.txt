@@ -381,7 +381,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Filipp Golikov"
+	name = "(Use for Tanks) Filipp Golikov"
 		picture = "Portrait_Soviet_Filipp_Golikov.dds"
 	traits = { career_officer brilliant_strategist harsh_leader panzer_leader armor_officer trait_reckless }
 	skill = 4
@@ -501,7 +501,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Maksim Purkayev"
+	name = "(Use for Infantry) Maksim Purkayev"
 		picture = "Portrait_Soviet_Maksim_Purkayev.dds"
 		traits = { career_officer ranger trait_reckless infantry_leader inflexible_strategist  }
 		skill = 4
