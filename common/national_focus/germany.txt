@@ -1302,6 +1302,48 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = improved_infantry_weapons
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = artillery1
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = antitank2
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = tech_engineers2
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = tech_recon2
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = tech_signal_company2
+			}
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.00
+				uses = 1
+				technology = tech_field_hospital2
+			}
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = walther_von_brauchitsch		
 		}
@@ -1457,15 +1499,31 @@ focus_tree = {
 				technology = mechanised_infantry
 			}	
 			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 1.0
-				uses = 3
-				technology = advanced_medium_spaa
-				technology = advanced_medium_td
-				technology = advanced_medium_art
-				technology = advanced_heavy_spaa
-				technology = advanced_heavy_td
-				technology = advanced_heavy_art
+				bonus = 0.00
+				uses = 1
+				ahead_reduction = 4.0
+				name = mech_army_TD_bonus
+				technology = advanced_light_td
+				technology = improved_medium_td
+				technology = improved_heavy_td
+			}
+			add_tech_bonus = {
+				bonus = 0.00
+				uses = 1
+				ahead_reduction = 4.0
+				name = mech_army_ART_bonus
+				technology = advanced_light_art
+				technology = improved_medium_art
+				technology = improved_heavy_art
+			}
+			add_tech_bonus = {
+				bonus = 0.00
+				uses = 1
+				ahead_reduction = 4.0
+				name = mech_army_SPAA_bonus
+				technology = advanced_light_spaa
+				technology = improved_medium_spaa
+				technology = improved_heavy_spaa
 			}
 		}
 	}

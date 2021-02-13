@@ -8,7 +8,7 @@ technologies = {
 
 	### Dogfighting/Fighters 
 	air_superiority = {
-		xp_research_type = air
+		# xp_research_type = air
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
 		###########
@@ -34,9 +34,9 @@ technologies = {
 		research_cost = 0.01
 		
 		categories = {
-			air_doctrine
-			strategic_destruction_tree
-			cat_strategic_destruction
+			# air_doctrine
+			# strategic_destruction_tree
+			# cat_strategic_destruction
 		}
 		
 		folder = {
