@@ -2448,7 +2448,7 @@ technologies = {
 			max_organisation = 2.5
 		}
 		anti_tank_brigade = { 
-			max_strength = 7.5
+			max_strength = 2.5
 			max_organisation = 2.5
 		}
 

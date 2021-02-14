@@ -962,7 +962,7 @@ ideas = {
 	tank_manufacturer = { 
 		
 		designer = yes
-		
+		cost = 75
 		pzinz_rom = {
 			
 			picture = generic_tank_manufacturer_3
@@ -1056,7 +1056,7 @@ ideas = {
 	naval_manufacturer = { 			
 		
 		designer = yes
-		
+		cost = 75
 		constanta_shipyard = {
 			
 			picture = generic_naval_manufacturer_2
@@ -1159,7 +1159,7 @@ ideas = {
 		
 		designer = yes
 		
-
+		cost = 75
 		ROM_malaxa = {
 			
 			picture = generic_motorized_equipment_manufacturer_1
@@ -1181,7 +1181,7 @@ ideas = {
 			
 			picture = idea_ROM_cugir #used with permission from Turning Point mod
 
-
+			cost = 75
 			allowed = {
 				original_TAG = ROM
 			}
@@ -1195,7 +1195,7 @@ ideas = {
 		}
 
 		ROM_resita = {
-			
+			cost = 75
 			picture = generic_artillery_manufacturer_1
 
 
@@ -1250,7 +1250,7 @@ ideas = {
 			
 			picture = generic_air_manufacturer_2
 
-			cost = 150
+			cost = 75
 
 			allowed = {
 				original_tag = ROM
@@ -1279,7 +1279,7 @@ ideas = {
 					has_completed_focus = ROM_invest_in_the_iar
 			}
 
-			cost = 50
+			cost = 75
 
 			allowed = {
 				original_tag = ROM
@@ -1313,7 +1313,7 @@ ideas = {
 		ROM_ICAR = {
 			
 			picture = generic_air_manufacturer_1
-
+			cost = 75
 			allowed = {
 				original_tag = ROM
 			}
@@ -1343,7 +1343,7 @@ ideas = {
 		ROM_SET = {
 			
 			picture = generic_air_manufacturer_2
-
+			cost = 75
 			allowed = {
 				original_tag = ROM
 			}

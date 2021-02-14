@@ -215,6 +215,7 @@ ideas = {
 	aircraft_manufacturer = { 
 		
 		designer = yes
+		cost = 75
 		
 		dar = {
 			

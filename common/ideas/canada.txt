@@ -806,7 +806,7 @@ ideas = {
 		designer = yes
 		
 		inglis_company = {
-			
+			cost = 75
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
@@ -827,7 +827,7 @@ ideas = {
 		small_arms_limited = {
 
 			picture = generic_infantry_equipment_manufacturer_1
-			
+			cost = 75
 			allowed = {
 				original_TAG = CAN
 			}
@@ -850,7 +850,7 @@ ideas = {
 		
 		kingston_shipbuilding = {
 			picture = generic_naval_manufacturer_2
-
+			cost = 75
 			
 			allowed = {
 				original_tag = CAN
@@ -869,7 +869,7 @@ ideas = {
 
 		halifax_shipyard_limited = {
 			picture = generic_naval_manufacturer_3
-
+			cost = 75
 			
 			allowed = {
 				original_tag = CAN
@@ -890,7 +890,7 @@ ideas = {
 	aircraft_manufacturer = { 
 			
 		designer = yes
-		
+		cost = 75
 		havilland_canada = {
 			picture = generic_air_manufacturer_1
 
@@ -914,7 +914,7 @@ ideas = {
 
 		canadian_car_foundry = {
 			picture = generic_air_manufacturer_2
-
+			cost = 75
 			
 			allowed = {
 				original_tag = CAN
@@ -936,7 +936,7 @@ ideas = {
 		CAN_fairchild_aircraft_ltd = {
 			picture = generic_air_manufacturer_2
 
-			cost = 150
+			cost = 75
 
 			allowed = {
 				original_tag = CAN
@@ -962,7 +962,7 @@ ideas = {
 		CAN_handley_page = {
 			picture = generic_air_manufacturer_3
 
-			cost = 150
+			cost = 75
 
 			allowed = {
 				original_tag = CAN

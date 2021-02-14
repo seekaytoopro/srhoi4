@@ -582,6 +582,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			air_experience = 50
 			add_ideas = british_fighter_discount
 		}
 	}
@@ -654,9 +655,9 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
+			army_experience = 25
+			navy_experience = 25
+			air_experience = 25
 			add_ideas = ENG_chiefs_of_staff_committee_idea
 		}
 	}

@@ -1528,7 +1528,6 @@ ideas = {
 		designer = yes
 		
 		kure_naval_arsenal = {
-			cost = 75
 			
 			allowed = {
 				original_tag = JAP
@@ -1725,7 +1724,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		
+		cost = 75
 		tokyo_arsenal = {
 			
 			allowed = {
@@ -1757,7 +1756,7 @@ ideas = {
 	tank_manufacturer = {
 	
 		designer = yes
-	
+		cost = 75
 		osaka_army_arsenal = {
 			
 			allowed = {
