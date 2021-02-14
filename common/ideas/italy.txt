@@ -672,6 +672,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
+		cost = 75
 		
 		beretta = {
 			
@@ -691,7 +692,7 @@ ideas = {
 		
 		lancia = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = ITA
 			}
@@ -709,7 +710,7 @@ ideas = {
 		
 		breda = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = ITA
 			}
@@ -728,7 +729,7 @@ ideas = {
 	aircraft_manufacturer = {	
 		
 		designer = yes
-		
+		cost = 75
 		macchi = {
 			
 			
@@ -745,7 +746,7 @@ ideas = {
 		
 		savoia_marchetti = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = ITA
 			}
@@ -758,7 +759,7 @@ ideas = {
 		}
 		
 		caproni = {
-						
+			cost = 75			
 			allowed = {
 				original_tag = ITA
 			}
@@ -771,7 +772,7 @@ ideas = {
 		}
 		
 		piaggio = {
-						
+			cost = 75			
 			allowed = {
 				original_tag = ITA
 			}
@@ -805,7 +806,7 @@ ideas = {
 	naval_manufacturer = {
 	
 		designer = yes
-		
+		cost = 75
 		crda = {
 						
 			allowed = {
@@ -832,7 +833,7 @@ ideas = {
 				original_tag = ITA
 			}
 
-		 	cost = 250
+		 	cost = 175
 			
 		 	research_bonus = {
 		 		cat_mass_assault = 0.15
@@ -848,7 +849,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.15
@@ -864,7 +865,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 175
 						
 			research_bonus = {
 				cat_grand_battle_plan = 0.15
@@ -884,7 +885,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_fleet_in_being = 0.15
@@ -914,7 +915,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_operational_integrity = 0.15

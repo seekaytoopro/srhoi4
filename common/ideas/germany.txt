@@ -1403,7 +1403,7 @@ ideas = {
 	naval_manufacturer = { 
 		
 		designer = yes
-		
+		cost = 75
 		germaniawerft = {
 
 			
@@ -1425,7 +1425,7 @@ ideas = {
 		
 		blohm_und_voss = {
 
-			
+			cost = 75
 			allowed = {
 				original_tag = GER
 			}
@@ -1724,7 +1724,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_mobile_warfare = 0.15
@@ -1741,7 +1741,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_battlefield_support = 0.15
@@ -1785,7 +1785,7 @@ ideas = {
 				original_tag = GER
 			}
 			
-			cost = 250
+			cost = 175
 			
 			research_bonus = {
 				cat_trade_interdiction = 0.20

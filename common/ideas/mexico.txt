@@ -1234,14 +1234,13 @@ ideas = {
 	tank_manufacturer = { 
 		
 		designer = yes
-		
+		cost = 75
 		germano_mexican_tanks = {
 		
 			picture = porsche
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1257,12 +1256,11 @@ ideas = {
 		}
 		
 		russo_mexican_tanks = {
-
+			cost = 75
 			picture = morozov_design_bureau
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1283,10 +1281,9 @@ ideas = {
 		american_mexican_tanks = {
 
 			picture = chrysler
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1310,10 +1307,9 @@ ideas = {
 		designer = yes
 		
 		MEX_astimar_gulf = {
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1331,10 +1327,9 @@ ideas = {
 		}
 		
 		MEX_astimar_pacific = {
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1357,10 +1352,9 @@ ideas = {
 		designer = yes
 		
 		MEX_tnca = {
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1422,7 +1416,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1451,7 +1444,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1476,7 +1468,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = MEX
-				has_dlc = "Man the Guns"
 			}
 			
 			available = {
@@ -1510,7 +1501,7 @@ ideas = {
 			allowed = {
 				original_tag = MEX
 			}
-			
+			cost = 75
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
@@ -1528,7 +1519,7 @@ ideas = {
 		comesa = {
 			
 			picture = generic_artillery_manufacturer_1
-
+			cost = 75
 			
 			allowed = {
 				original_tag = MEX
@@ -1551,7 +1542,7 @@ ideas = {
 		mexican_ford = {
 			
 			picture = ford_motor_company
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
 			}

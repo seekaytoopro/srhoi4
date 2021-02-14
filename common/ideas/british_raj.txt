@@ -833,6 +833,7 @@ ideas = {
 	naval_manufacturer = {
 		
 		designer = yes
+		cost = 75
 		
 		mazagon_dock_limited = {
 			
@@ -851,7 +852,7 @@ ideas = {
 		}
 		
 		garden_reach_shipbuilders = {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}
@@ -866,7 +867,7 @@ ideas = {
 		}
 		
 		scindia_shipyard = {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}
@@ -884,7 +885,7 @@ ideas = {
 	}
 
 	aircraft_manufacturer = {
-			
+		cost = 75
 		designer = yes
 		
 		hindustan_aircraft= {
@@ -907,7 +908,7 @@ ideas = {
 					
 	}
 	materiel_manufacturer = {
-			
+		cost = 75
 		designer = yes
 		
 		ishapore_rifle_factory = {
@@ -929,7 +930,7 @@ ideas = {
 		}
 		
 		ordnance_factories_board = {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}

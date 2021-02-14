@@ -19,18 +19,18 @@ equipments = {
 		maximum_speed = 4.5
 
 		#Defensive Abilities
-		defense = 13.26
+		defense = 14
 		breakthrough = 9.5
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 26.1
+		soft_attack = 27
 		ap_attack = 5
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 4
+		lend_lease_cost = 0.875
 		
 		build_cost_ic = 2.275
 		resources = {
@@ -106,16 +106,17 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 5
-		breakthrough = 23
+		breakthrough = 25
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 45
+		soft_attack = 44
 		ap_attack = 2
 		air_attack = 0
 		
 		build_cost_ic = 5.0
+		lend_lease_cost = 0.875
 		resources = {
 			tungsten = 2
 			steel = 1
@@ -138,9 +139,9 @@ equipments = {
 		priority = 60
 		visual_level = 1
 		
-		defense = 6
-		breakthrough = 26
-		soft_attack = 52
+		defense = 6.5
+		breakthrough = 28
+		soft_attack = 51
 		
 		build_cost_ic = 6.0
 		resources = {
@@ -179,6 +180,8 @@ equipments = {
 		ap_attack = 2
 		air_attack = 0
 		
+		#Space taken in convoy
+		lend_lease_cost = 4
 		build_cost_ic = 12
 		resources = {
 			chromium = 1

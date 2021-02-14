@@ -90,7 +90,7 @@ set_technology = {
 	armored_car1 = 1
 }
 
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 6200 producer = GER }  
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 12200 producer = GER }  
 add_equipment_to_stockpile = { type = support_equipment amount = 2500 producer = GER } 
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 95000 producer = GER } 
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = GER } 
@@ -242,7 +242,7 @@ add_namespace = {
 create_field_marshal = {
 	name = "Gerd von Rundstedt"
 	picture = "Portrait_Germany_Gerd_von_Rundstedt.dds"
-	traits = { defensive_doctrine infantry_leader panzer_leader skilled_staffer armor_officer infantry_officer cavalry_officer inspirational_leader fast_planner organizer trait_cautious career_officer inflexible_strategist }
+	traits = { defensive_doctrine infantry_leader unyielding_defender logistics_wizard panzer_leader skilled_staffer armor_officer infantry_officer cavalry_officer inspirational_leader fast_planner organizer trait_cautious career_officer inflexible_strategist }
 	skill = 6
 	id = 1
 	attack_skill = 5

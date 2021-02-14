@@ -1652,7 +1652,7 @@ ideas = {
 	tank_manufacturer = {
 
 		designer = yes
-	
+		cost = 75
 		# TECHNOLOGY
 		renault_frf = {
 		
@@ -1671,7 +1671,7 @@ ideas = {
 		}
 	
 		FRF_AMX = {
-		
+			cost = 75
 			picture = generic_tank_manufacturer_2
 						
 			allowed = {
@@ -1686,7 +1686,7 @@ ideas = {
 			traits = { fast_tank_manufacturer }
 		}
 		FRF_hotchkiss = {
-		
+			cost = 75
 			picture = generic_tank_manufacturer_3
 
 			available = {
@@ -1707,7 +1707,7 @@ ideas = {
 
 		FRF_APX = {
 			picture = FRA_atelier_puteaux
-			
+			cost = 75
 
 			available = {
 				
@@ -1729,7 +1729,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		
+		cost = 75
 		frf_somua = {
 		
 			allowed = {
@@ -1745,7 +1745,7 @@ ideas = {
 		}
 		
 		frf_mas = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRF
 			}
@@ -1758,7 +1758,7 @@ ideas = {
 		}
 	
 		frf_schneider = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRF
 			}		
@@ -1774,7 +1774,7 @@ ideas = {
 	aircraft_manufacturer = {
 			
 		designer = yes
-		
+		cost = 75
 		frf_morane_saulnier = {
 			
 			allowed = {
@@ -1789,7 +1789,7 @@ ideas = {
 		}
 		
 		frf_bloch = {
-						
+			cost = 75			
 			allowed = {
 				original_tag = FRF
 			}
@@ -1802,7 +1802,7 @@ ideas = {
 		}
 		
 		frf_amiot = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRF
 			}
@@ -1815,7 +1815,7 @@ ideas = {
 		}
 		
 		frf_levasseur = {
-						
+			cost = 75	
 			allowed = {
 				original_tag = FRF
 			}
@@ -1832,7 +1832,7 @@ ideas = {
 	naval_manufacturer = {
 
 		designer = yes
-		
+		cost = 75
 		frf_fcm = {
 						
 			allowed = {
@@ -1850,7 +1850,7 @@ ideas = {
 			allowed = {
 				original_tag = FRF
 			}
-						
+			cost = 75		
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1862,7 +1862,7 @@ ideas = {
 			allowed = {
 				original_tag = FRF
 			}
-						
+			cost = 75		
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -1874,7 +1874,7 @@ ideas = {
 			allowed = {
 				original_tag = FRF
 			}
-						
+			cost = 75		
 			research_bonus = {
 				naval_equipment = 0.15
 			}

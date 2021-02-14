@@ -805,7 +805,6 @@ ideas = {
 
 			allowed = {
 				original_TAG = SAF
-				has_dlc = "Together for Victory"
 			}
 			
 

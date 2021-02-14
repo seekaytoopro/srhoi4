@@ -2050,7 +2050,7 @@ ideas = {
 	
 		# TECHNOLOGY
 		renault_fra = {
-		
+			cost = 75
 			picture = renault
 						
 			allowed = {
@@ -2068,7 +2068,7 @@ ideas = {
 		FRA_AMX = {
 		
 			picture = generic_tank_manufacturer_2
-
+			cost = 75
 			available = {
 				has_completed_focus = FRA_army_reform
 			}
@@ -2087,7 +2087,7 @@ ideas = {
 		FRA_hotchkiss = {
 		
 			picture = generic_tank_manufacturer_3
-
+			cost = 75
 			available = {
 
 			}
@@ -2106,7 +2106,7 @@ ideas = {
 
 		FRA_APX = {
 			picture = FRA_atelier_puteaux
-			
+			cost = 75
 
 			available = {
 				
@@ -2124,7 +2124,7 @@ ideas = {
 			traits = { medium_tank_manufacturer }
 		}
 		FRA_panhard = {
-			
+			cost = 75
 
 			available = {
 				
@@ -2133,7 +2133,6 @@ ideas = {
 						
 			allowed = {
 				original_tag = FRA
-				has_dlc = "La Resistance"
 			}
 						
 			research_bonus = {
@@ -2150,7 +2149,7 @@ ideas = {
 		designer = yes
 		
 		somua = {
-		
+			cost = 75
 			allowed = {
 				original_tag = FRA
 			}
@@ -2164,7 +2163,7 @@ ideas = {
 		}
 		
 		mas = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRA
 			}
@@ -2177,7 +2176,7 @@ ideas = {
 		}
 	
 		schneider = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRA
 			}		
@@ -2195,7 +2194,7 @@ ideas = {
 		designer = yes
 		
 		morane_saulnier = {
-			
+			cost = 75
 			allowed = {
 				original_tag = FRA
 			}
@@ -2208,7 +2207,7 @@ ideas = {
 		}
 		
 		bloch = {
-						
+			cost = 75	
 			allowed = {
 				original_tag = FRA
 			}
@@ -2221,7 +2220,7 @@ ideas = {
 		}
 		
 		amiot = {
-						
+			cost = 75	
 			allowed = {
 				original_tag = FRA
 			}
@@ -2234,7 +2233,7 @@ ideas = {
 		}
 		
 		levasseur = {
-						
+			cost = 75	
 			allowed = {
 				original_tag = FRA
 			}
@@ -2251,7 +2250,7 @@ ideas = {
 	naval_manufacturer = {
 
 		designer = yes
-		
+		cost = 75
 		fcm = {
 						
 			allowed = {
@@ -2269,7 +2268,7 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+			cost = 75
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -2281,7 +2280,7 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+			cost = 75	
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -2293,7 +2292,7 @@ ideas = {
 			allowed = {
 				original_tag = FRA
 			}
-						
+			cost = 75	
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -2382,7 +2381,7 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			cost = 250
+			cost = 175
 						
 			research_bonus = {
 				cat_fleet_in_being = 0.15
@@ -2415,7 +2414,7 @@ ideas = {
 				original_tag = FRA
 			}
 			
-			cost = 250 
+			cost = 175 
 			
 			research_bonus = {
 				cat_operational_integrity = 0.15

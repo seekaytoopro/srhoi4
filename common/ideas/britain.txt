@@ -1553,6 +1553,7 @@ ideas = {
 	aircraft_manufacturer = {
 			
 		designer = yes
+		cost = 75
 		
 		supermarine = {
 			
@@ -1577,6 +1578,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
+			cost = 75
 			
 
 			
@@ -1594,6 +1596,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
+			cost = 75
 			
 
 			
@@ -1612,6 +1615,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
+			cost = 75
 			
 
 			
@@ -1630,6 +1634,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
+			cost = 75
 			
 
 			
@@ -1653,6 +1658,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
+			cost = 75
 			
 
 			
@@ -1671,7 +1677,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {
@@ -1689,7 +1695,7 @@ ideas = {
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {
@@ -1771,9 +1777,9 @@ ideas = {
 		# 	}
 		# }
 		
-							nuffield = {
-				
-				picture = GFX_idea_nuffield
+		nuffield = {
+			cost = 75
+			picture = GFX_idea_nuffield
 			
 			allowed = {
 				OR = { original_tag = ENG original_tag = SAF original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
@@ -1790,8 +1796,8 @@ ideas = {
 		}
 		
 		vauxhall2 = {
-		
-				picture = GFX_idea_vauxhall2
+			cost = 75
+			picture = GFX_idea_vauxhall2
 			
 			allowed = {
 				OR = { original_tag = ENG  original_tag = SAF  original_tag = AST  original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
@@ -1809,7 +1815,7 @@ ideas = {
 		
 	
 		vickers_armstrong_eng = {
-			
+			cost = 75
 			allowed = {
 				OR = { original_tag = ENG   original_tag = AST original_tag = NZL original_tag = CAN original_tag = BRA original_tag = IRE original_tag = RAJ  }
 			}
@@ -1867,11 +1873,6 @@ ideas = {
 
 			ai_will_do = {
 				factor = 2
-				modifier = {
-					has_idea_with_trait = industrial_concern
-					has_idea_with_trait = silent_workhorse
-					factor = 10
-				}
 			}
 		}
 
@@ -1972,11 +1973,6 @@ ideas = {
 			
 			traits = { rocket_scientist }
 		}
-
-	
-	
 	}
-
-
 }
 

@@ -1427,7 +1427,7 @@ ideas = {
 		
 		mig_design_bureau = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1446,7 +1446,7 @@ ideas = {
 		
 		ilyushin_design_bureau = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1465,7 +1465,7 @@ ideas = {
 		
 		tupolev_design_bureau = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1484,7 +1484,7 @@ ideas = {
 		
 		yakovlev_design_bureau = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1547,7 +1547,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		
+		cost = 75
 		grabin_design_bureau = {
 			
 			
@@ -1571,7 +1571,7 @@ ideas = {
 		
 		tula_arms_plant = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1590,7 +1590,7 @@ ideas = {
 		
 		gaz = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = SOV
 			}
@@ -1686,28 +1686,6 @@ ideas = {
 	}
 	
 	theorist = {	
-		# mikhail_tukhachevsky = {
-		# 	ledger = army
-			
-			
-		# 	allowed = {
-		# 		original_tag = SOV
-
-		# 	}
-		# 	available = 
-		# 	{
-		# 		NOT = { has_country_flag = purge_1_group_a }
-		# 	}
-			
-		# 	cost = 250
-			
-		# 	research_bonus = {
-		# 		cat_mass_assault = 0.15
-		# 	}
-			
-		# 	# PURGED
-		# 	traits = { mass_assault_expert }
-		# }
 		
 		boris_shaposhnikov = {
 			ledger = army
