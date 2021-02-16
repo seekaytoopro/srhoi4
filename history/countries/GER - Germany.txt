@@ -91,13 +91,13 @@ set_technology = {
 }
 
 add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 12200 producer = GER }  
-add_equipment_to_stockpile = { type = support_equipment amount = 2500 producer = GER } 
+add_equipment_to_stockpile = { type = support_equipment amount = 3500 producer = GER } 
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 95000 producer = GER } 
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = GER } 
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 3000 producer = GER } 
 add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 1700 producer = GER } 
 add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = GER } 
-add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 3000 producer = GER }
-add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 3500 producer = GER }
+add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4000 producer = GER }
+add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 4500 producer = GER }
 
 # set_country_flag=fuel_system_enabled
 set_country_flag=can_get_cucked
@@ -154,14 +154,6 @@ if = {
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
-# if = {
-# 	limit = {
-# 		has_dlc = "La Resistance"
-# 	}
-# 	set_technology = {
-# armored_car1 = 1	
-# }
-# }
 
 set_research_slots = 4
 set_convoys = 200
@@ -229,8 +221,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		#stalins_puppet # This will now be added in on_actions if SOV releases the country as a puppet via action or war conference
-		exiled # He left in 1933 so he should still be exiled
 	}
 }
 
