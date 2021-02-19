@@ -520,6 +520,50 @@ is_triggered_only = yes
 		}	
 	}
 
+	country_event = {
+		id = soviet.60
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_NonPlains1"
+		}	
+	}
+	
+	country_event = {
+		id = soviet.61
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_NonPlains2"
+		}	
+	}		
+
+	country_event = {
+		id = soviet.62
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_Plains1"
+		}	
+	}
+	
+	country_event = {
+		id = soviet.63
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			load_oob = "SOV_Plains2"
+		}	
+	}
+
 
    country_event = {
    id = soviet.140

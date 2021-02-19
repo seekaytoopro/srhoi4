@@ -1553,14 +1553,14 @@ ideas = {
 	aircraft_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		
 		supermarine = {
 			
 			allowed = {
 				original_TAG = ENG
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {

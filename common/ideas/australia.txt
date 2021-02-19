@@ -744,7 +744,7 @@ high_command = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		lysaghts_works = {
 			
 			picture = generic_infantry_equipment_manufacturer_2
@@ -752,7 +752,7 @@ high_command = {
 			allowed = {
 				original_TAG = AST
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {

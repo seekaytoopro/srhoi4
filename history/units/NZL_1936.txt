@@ -31,15 +31,42 @@
 }
 
 division_template = {
-	name = "Armoured Division"
 
 	division_names_group = NZL_ARM_01
 
+	name = "Mediums"
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mot_anti_air_brigade = { x = 1 y = 4 }
+
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
 	}
 }
 
@@ -79,7 +106,7 @@ units = {
 	##### Royal New Zealand Army #####
 	division= {	
 		#name = "Northern Military District"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
@@ -89,8 +116,7 @@ units = {
 		start_equipment_factor = 0.3
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -100,8 +126,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -111,8 +136,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -122,8 +146,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -133,8 +156,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -144,8 +166,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -155,8 +176,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -166,8 +186,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -177,8 +196,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -188,8 +206,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -199,8 +216,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -210,8 +226,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -221,8 +236,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -232,8 +246,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -243,8 +256,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -254,8 +266,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -265,8 +276,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -276,8 +286,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -287,8 +296,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -298,8 +306,7 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division= {	
-		#name = "2nd District Militia"
-		division_name = {    # New syntax for compatibility with name lists
+		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
@@ -316,6 +323,15 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
+			creator = "NZL"
+		}
+		requested_factories = 1
+		progress = 0.62
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
 			creator = "NZL"
 		}
 		requested_factories = 1

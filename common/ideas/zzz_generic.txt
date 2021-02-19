@@ -1223,7 +1223,6 @@ ideas = {
 	tank_manufacturer = { 
 	
 		designer = yes
-		cost = 75
 		generic_tank_manufacturer = {
 
 			picture = generic_tank_manufacturer_1
@@ -1286,11 +1285,10 @@ ideas = {
 	}
 
 	aircraft_manufacturer = { 
-		cost = 75
+		
 		designer = yes
 	
 		generic_light_aircraft_manufacturer = {
-			
 			picture = generic_air_manufacturer_1
 
 			allowed = {

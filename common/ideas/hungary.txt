@@ -544,7 +544,7 @@ ideas = {
 	aircraft_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		mw_aircraft = {
 			
 			picture = generic_air_manufacturer_2
@@ -553,7 +553,7 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 			}
-			
+			cost = 75
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -569,11 +569,10 @@ ideas = {
 	}
 
 	naval_manufacturer = {
-	cost = 75
+	
 		designer = yes
 	
 		HUN_ganz_danubius = {
-			
 			picture = generic_naval_manufacturer_1
 
 			available = {

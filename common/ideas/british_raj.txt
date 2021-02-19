@@ -833,10 +833,10 @@ ideas = {
 	naval_manufacturer = {
 		
 		designer = yes
-		cost = 75
+		
 		
 		mazagon_dock_limited = {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}
@@ -885,11 +885,11 @@ ideas = {
 	}
 
 	aircraft_manufacturer = {
-		cost = 75
+		
 		designer = yes
 		
 		hindustan_aircraft= {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}
@@ -908,11 +908,11 @@ ideas = {
 					
 	}
 	materiel_manufacturer = {
-		cost = 75
+		
 		designer = yes
 		
 		ishapore_rifle_factory = {
-			
+			cost = 75
 			allowed = {
 				original_TAG = RAJ
 			}

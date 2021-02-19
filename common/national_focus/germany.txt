@@ -1951,6 +1951,7 @@ focus_tree = {
 
 		}	
 		completion_reward = {
+		custom_effect_tooltip = GER_speer_reminder_tt
 		custom_effect_tooltip = available_theorist 
 			show_ideas_tooltip = speer	
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }

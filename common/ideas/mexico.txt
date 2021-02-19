@@ -1234,11 +1234,11 @@ ideas = {
 	tank_manufacturer = { 
 		
 		designer = yes
-		cost = 75
+		
 		germano_mexican_tanks = {
 		
 			picture = porsche
-			
+			cost = 75
 			allowed = {
 				original_tag = MEX
 			}

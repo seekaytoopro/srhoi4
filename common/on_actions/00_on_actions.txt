@@ -305,6 +305,8 @@ on_actions = {
 			BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
 			GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
 			every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
+			# If = { limit = { country_exists = FRA } FRA = { annex_country = BEL } }
+			# If = { limit = { country_exists = FRF } FRF = { annex_country = BEL } }
 		}
 		
 			if = {

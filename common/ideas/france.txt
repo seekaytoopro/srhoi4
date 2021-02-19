@@ -2250,9 +2250,9 @@ ideas = {
 	naval_manufacturer = {
 
 		designer = yes
-		cost = 75
+		
 		fcm = {
-						
+			cost = 75			
 			allowed = {
 				original_tag = FRA
 			}

@@ -634,11 +634,11 @@ ideas = {
 	naval_manufacturer = {
 		
 		designer = yes
-		cost = 75
+		
 		NZL_st_mary_bay_ship = {
 
 			picture = generic_naval_manufacturer_2
-			
+			cost = 75
 			allowed = {
 				original_TAG = NZL
 			}
@@ -697,7 +697,7 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		NZL_charlton_mw = {
 
 			picture = generic_motorized_equipment_manufacturer_1
@@ -705,7 +705,7 @@ ideas = {
 			allowed = {
 				original_TAG = NZL
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {

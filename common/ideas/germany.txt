@@ -1403,10 +1403,10 @@ ideas = {
 	naval_manufacturer = { 
 		
 		designer = yes
-		cost = 75
+		
 		germaniawerft = {
 
-			
+			cost = 75
 			allowed = {
 				original_tag = GER
 			}
