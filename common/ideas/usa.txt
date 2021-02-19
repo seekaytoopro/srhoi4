@@ -1769,10 +1769,10 @@ ideas = {
 	tank_manufacturer = { 
 	
 		designer = yes
-		cost = 75
+		
 	
 		marmon_herrington = {
-			
+			cost = 75
 			
 			allowed = {
 				original_tag = USA

@@ -1652,10 +1652,10 @@ ideas = {
 	tank_manufacturer = {
 
 		designer = yes
-		cost = 75
+		
 		# TECHNOLOGY
 		renault_frf = {
-		
+			cost = 75
 			picture = renault
 						
 			allowed = {
@@ -1729,9 +1729,9 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		cost = 75
-		frf_somua = {
 		
+		frf_somua = {
+			cost = 75
 			allowed = {
 				original_tag = FRF
 			}
@@ -1774,9 +1774,9 @@ ideas = {
 	aircraft_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		frf_morane_saulnier = {
-			
+			cost = 75
 			allowed = {
 				original_tag = FRF
 			}
@@ -1832,9 +1832,9 @@ ideas = {
 	naval_manufacturer = {
 
 		designer = yes
-		cost = 75
+		
 		frf_fcm = {
-						
+			cost = 75		
 			allowed = {
 				original_tag = FRF
 			}

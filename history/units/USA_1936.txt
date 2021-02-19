@@ -1,6 +1,27 @@
-﻿##### Division Templates #####
+﻿division_template = {
+	name = "Cavalry Division"
+
+	division_names_group = USA_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
 division_template = {
-	name = "Infantry Division"  	# Standard formation for frontline divisions
+	name = "Infantry Division"
 
 	division_names_group = USA_INF_01
 
@@ -30,7 +51,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "National Guard Division"  	# Standard formation for NG divisions through late 1940
+	name = "National Guard Division"
 
 	division_names_group = USA_INF_01
 
@@ -49,35 +70,13 @@ division_template = {
 		infantry = { x = 3 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }  # US Hvy Field Arty consisted of 2 Bns, 155mm howitzers
-		engineer = { x = 0 y = 1 }   # US Eng Rgt consisted of 2 Bns
-	}
-}
-division_template = {
-	name = "Cavalry Division"  		# 1st Cavalry Division only
-
-	division_names_group = USA_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-		cavalry = { x = 1 y = 3 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }      # US Cav Recon consisted of 52 ACs, 13 L Arm
-		engineer = { x = 0 y = 1 }   # US Eng Bn
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Marine Brigade" 		# 1st, 2nd Marine Brigades, precursors to 1st, 2nd USMC Divisions
+	name = "Marine Brigade"
 
 	division_names_group = USA_MAR_01
 
@@ -110,13 +109,44 @@ division_template = {
 	priority = 2
 }
 
-###### OOB ######
-units = {
-	####### CONUS Theater #######
-	### Carribean Forces ###
+division_template = {
+	name = "Mediums"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
 
-	### 1st Army -- note: Armies only paper organizations in 1936 ###
-	# I Army Corps #
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mot_anti_air_brigade = { x = 1 y = 4 }
+
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+		medium_armor = { x = 4 y = 2 }
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        armored_car_recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		maintenance_company = { x = 0 y = 4 }
+		field_hospital = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+	}
+}
+
+units = {
 	division= {			
 		division_name = {
 			is_name_ordered = yes
@@ -132,31 +162,22 @@ units = {
 	
 	
 air_wings = {
-	### 1 USAAF Wing -- Los Angeles
 	378 = {
-		# 7th Bombardment Group 
-		# 19th Bombardment Group 
 		tac_bomber_equipment_0 = {
 			owner = "USA" 
-			amount = 105
+			amount = 200
 		}
-		# 17th Attack Group 
 		CAS_equipment_1 = {
 			owner = "USA" 
-			amount = 54
+			amount = 100
 		}
- 
-		# 1st Pursuit Group 
-		# 8th Pursuit Group 
 		fighter_equipment_0 =  {
 			owner = "USA" 
-			amount = 213
+			amount = 200
 		}
-		# Naval Patrol Wing 1 
-		# Naval Patrol Wing 2 
 		nav_bomber_equipment_1 =  {
 			owner = "USA" 
-			amount = 54
+			amount = 100
 		}
 	}
 }
@@ -172,7 +193,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "USA"
 		}
-		requested_factories = 2
+		requested_factories = 8
 		progress = 0.1
 		efficiency = 50
 	}
@@ -182,7 +203,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "USA" 
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -192,14 +213,22 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "USA" 
 		}
+		requested_factories = 5
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "USA" 
+		}
 		requested_factories = 1
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
-			type = cv_fighter_equipment_0
+			type = motorized_equipment_1
 			creator = "USA" 
 		}
 		requested_factories = 1
@@ -207,5 +236,22 @@ instant_effect = {
 		efficiency = 50
 	}
 
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = transport_plane_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
 }
-#####################

@@ -962,12 +962,12 @@ ideas = {
 	tank_manufacturer = { 
 		
 		designer = yes
-		cost = 75
+		
 		pzinz_rom = {
 			
 			picture = generic_tank_manufacturer_3
 
-			
+			cost = 75
 			allowed = {
 				original_tag = ROM
 			}
@@ -1056,12 +1056,12 @@ ideas = {
 	naval_manufacturer = { 			
 		
 		designer = yes
-		cost = 75
+		
 		constanta_shipyard = {
 			
 			picture = generic_naval_manufacturer_2
 
-			
+			cost = 75
 			allowed = {
 				original_tag = ROM
 			}
@@ -1159,9 +1159,9 @@ ideas = {
 		
 		designer = yes
 		
-		cost = 75
+		
 		ROM_malaxa = {
-			
+			cost = 75
 			picture = generic_motorized_equipment_manufacturer_1
 
 

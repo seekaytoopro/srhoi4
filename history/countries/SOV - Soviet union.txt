@@ -109,19 +109,16 @@ add_equipment_to_stockpile = {
 	type = heavy_tank_equipment_1
 	amount = 481
 	producer = SOV
-	obsolete = yes
 } 
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_1
 	amount = 2500
 	producer = SOV
-	obsolete = yes
 } 
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_2
 	amount = 500
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = motorized_rocket_equipment
@@ -132,55 +129,46 @@ add_equipment_to_stockpile = {
 	type = light_tank_artillery_equipment_1
 	amount = 1475
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = light_tank_artillery_equipment_2
 	amount = 1675
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = light_tank_destroyer_equipment_1
 	amount = 1400
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = light_tank_destroyer_equipment_2
 	amount = 500
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = light_tank_aa_equipment_1
 	amount = 500
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = light_tank_aa_equipment_2
 	amount = 250
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = heavy_tank_artillery_equipment_1
 	amount = 523
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = heavy_tank_destroyer_equipment_1
 	amount = 300
 	producer = SOV
-	obsolete = yes
 }
 add_equipment_to_stockpile = {
 	type = heavy_tank_aa_equipment_1
 	amount = 96
 	producer = SOV
-	obsolete = yes
 }
 
 

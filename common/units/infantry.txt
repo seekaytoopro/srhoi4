@@ -93,6 +93,8 @@ sub_units = {
 			category_all_infantry
 			category_army
 		}
+		# entrenchment  = 0.2
+		# supply_consumption_factor = -0.005
 		
 		combat_width = 2
 		

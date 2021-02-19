@@ -64,4 +64,13 @@
 
  anti_neutrality_raids:0 "Anti-Neutrality Raids"
  anti_neutrality_raids_desc:0 "We will initiate censorship and political supression of the non-aligned movement in our nation."
+ GDU_Soviet_NonPlains_Deployment_decision1:0 "Deploy One Division on Non-Plains back to LGrad/Moscow/SGrad"
+ GDU_Soviet_NonPlains_Deployment_decision1_desc:0 "This is Done over 3 Days to Prevent Lag"
+ GDU_Soviet_NonPlains_Deployment_decision2:0 "Deploy Two Divisions on Non-Plains back to LGrad/Moscow/SGrad"
+ GDU_Soviet_NonPlains_Deployment_decision2_desc:0 "This is Done over 7 Days to Prevent Lag"
+
+ GDU_Soviet_Plains_Deployment_decision1:0 "Deploy One Division on Plains back to LGrad/Moscow/SGrad"
+ GDU_Soviet_Plains_Deployment_decision1_desc:0 "This is Done over 3 Days to Prevent Lag"
+ GDU_Soviet_Plains_Deployment_decision2:0 "Deploy Two Divisions on Plains back to LGrad/Moscow/SGrad"
+ GDU_Soviet_Plains_Deployment_decision2_desc:0 "This is Done over 7 Days to Prevent Lag"
  

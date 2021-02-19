@@ -1,47 +1,15 @@
 
 SOV_mrp = {
 
-	# SOV_surrender_fin = {
-			
-	# 	available = {
-
-	# 	}
-
-	# 	allowed = {
-	# 		tag = SOV
-	# 	}
-			
-			
-	# 	fire_only_once = yes
-
-	# 	cost = 0
-
-	# 	visible = {
-	# 		FIN = { has_war_with = SOV }
-	# 	}
-		
-		
-	# 	complete_effect = {
-	# 		SOV = { white_peace = FIN }
-	# 		FIN = { white_peace = SOV }
-	# 		transfer_state = 146
-	# 		add_state_core = 146 
-	# 		transfer_state = 147
-	# 		add_state_core = 147
-	# 		}
-	# }
-
 	GDU_Soviet_Single_Deployment_decision = {
 		icon = GFX_decision_deploy
 		ai_will_do = { factor = 0 }
 		cost = 0
 
 		available = {
-			NOT = { has_country_flag = Sov_Divisions_Deployed }
-			has_manpower > 415000
-			has_war = no 
+			has_manpower > 417000
+			date > 1939.1.1
 			date < 1941.5.1
-			POL = { has_capitulated = yes }
 		}
 
 		allowed = {
@@ -52,9 +20,9 @@ SOV_mrp = {
 
 		complete_effect = {
 			SOV = {
-				set_country_flag = Sov_Divisions_Deployed
 				country_event = { id = soviet.54 days = 1 }
 				country_event = { id = soviet.55 days = 3 }
+				add_manpower = -417000
 			}
 		}
 	}
@@ -65,11 +33,9 @@ SOV_mrp = {
 		cost = 0
 
 		available = {
-			NOT = { has_country_flag = Sov_Divisions_Deployed }
-			has_manpower > 850000
-			has_war = no 
+			has_manpower > 834000
+			date > 1939.1.1		
 			date < 1941.5.1
-			POL = { has_capitulated = yes }
 		}
 
 		allowed = {
@@ -80,13 +46,120 @@ SOV_mrp = {
 
 		complete_effect = {
 			SOV = {
-				set_country_flag = Sov_Divisions_Deployed
 				country_event = { id = soviet.56 days = 1 }
 				country_event = { id = soviet.57 days = 3 }
 				country_event = { id = soviet.58 days = 5 }
 				country_event = { id = soviet.59 days = 7 }
+				add_manpower = -834000
 			}
-			add_manpower = -850000
+		}
+	}
+
+	GDU_Soviet_NonPlains_Deployment_decision1 = {
+		icon = GFX_decision_deploy
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		available = {
+			has_manpower > 438000
+			date > 1939.1.1
+			date < 1941.5.1
+		}
+
+		allowed = {
+			original_tag = SOV		
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SOV = {
+				country_event = { id = soviet.60 days = 1 }
+				country_event = { id = soviet.61 days = 3 }
+				add_manpower = -438000
+			}
+		}
+	}
+
+	GDU_Soviet_NonPlains_Deployment_decision2 = {
+		icon = GFX_decision_deploy
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		available = {
+			has_manpower > 876000
+			date > 1939.1.1		
+			date < 1941.5.1
+		}
+
+		allowed = {
+			original_tag = SOV		
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			SOV = {
+				country_event = { id = soviet.60 days = 1 }
+				country_event = { id = soviet.61 days = 3 }
+				country_event = { id = soviet.60 days = 5 }
+				country_event = { id = soviet.61 days = 7 }
+				add_manpower = -876000
+			}
+		}
+	}
+
+	GDU_Soviet_Plains_Deployment_decision1 = {
+		icon = GFX_decision_deploy
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		available = {
+			has_manpower > 352000
+			date > 1939.1.1
+			date < 1941.5.1
+		}
+
+		allowed = {
+			original_tag = SOV		
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SOV = {
+				country_event = { id = soviet.62 days = 1 }
+				country_event = { id = soviet.63 days = 3 }
+				add_manpower = -352000
+			}
+		}
+	}
+
+	GDU_Soviet_Plains_Deployment_decision2 = {
+		icon = GFX_decision_deploy
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		available = {
+			has_manpower > 704000
+			date > 1939.1.1		
+			date < 1941.5.1
+		}
+
+		allowed = {
+			original_tag = SOV		
+		}
+		
+		fire_only_once = yes
+
+		complete_effect = {
+			SOV = {
+				country_event = { id = soviet.62 days = 1 }
+				country_event = { id = soviet.63 days = 3 }
+				country_event = { id = soviet.62 days = 5 }
+				country_event = { id = soviet.63 days = 7 }
+				add_manpower = -704000
+			}
 		}
 	}
 	

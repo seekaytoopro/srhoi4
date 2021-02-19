@@ -491,7 +491,7 @@ ideas = {
 				original_tag = ITA
 			}
 			
-			traits = { army_armored_2 }
+			traits = { army_armored_3 }
 		}
 		mario_roatta = {
 			ledger = army
@@ -672,11 +672,11 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
-		cost = 75
+		
 		
 		beretta = {
 			
-			
+			cost = 75
 			allowed = {
 				original_tag = ITA
 			}
@@ -729,14 +729,14 @@ ideas = {
 	aircraft_manufacturer = {	
 		
 		designer = yes
-		cost = 75
+		
 		macchi = {
 			
 			
 			allowed = {
 				original_tag = ITA
 			}
-			
+			cost = 75
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -806,13 +806,13 @@ ideas = {
 	naval_manufacturer = {
 	
 		designer = yes
-		cost = 75
+		
 		crda = {
 						
 			allowed = {
 				original_tag = ITA
 			}
-			
+			cost = 75
 			available = {
 			has_completed_focus = ITA_mare_nostrum
 			}

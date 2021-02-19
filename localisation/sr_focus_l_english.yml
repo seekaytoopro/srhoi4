@@ -144,6 +144,7 @@
  GER_danzig_or_war:0 "§WFall Weiß§!"
  GER_anschluss:0 "§gAnschluss§!"
  GER_rhineland:0 "§LRhineland§!"
+ GER_speer_reminder_tt:0 "Unlocks Albert Speer as an advisor: §G+10% Mil Construction Speed, +10% Production Efficiency Retention, 5% Production Efficiency Growth§!\n"
  ITA_transport_resc:0 "Evacuate Libyan Refineries"
  ITA_transport_resc_desc:0 "Evacuate Libyan Refineries"
  ITA_transport_resc5:0 "Evacuate Last Libyan Refineries"

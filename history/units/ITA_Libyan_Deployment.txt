@@ -23,12 +23,6 @@
 units = {
 	division = {	
 		start_equipment_factor = 0.01 start_experience_factor = 0.3
-		location = 2057
-		division_template = "Libyan Garrisons"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
-	}	
-	division = {	
-		start_equipment_factor = 0.01 start_experience_factor = 0.3
 		location = 12082
 		division_template = "Libyan Garrisons"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
@@ -159,12 +153,6 @@ units = {
 		division_template = "Libyan Garrisons"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
 	}	
-	division = {	
-		start_equipment_factor = 0.01 start_experience_factor = 0.3
-		location = 2057
-		division_template = "Libyan Garrisons"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
-	}
 	division = {	
 		start_equipment_factor = 0.01 start_experience_factor = 0.3
 		location = 12082

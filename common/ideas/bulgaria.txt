@@ -215,10 +215,10 @@ ideas = {
 	aircraft_manufacturer = { 
 		
 		designer = yes
-		cost = 75
+		
 		
 		dar = {
-			
+			cost = 75
 			picture = generic_air_manufacturer_1
 
 			

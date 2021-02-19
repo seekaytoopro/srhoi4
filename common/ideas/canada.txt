@@ -890,11 +890,11 @@ ideas = {
 	aircraft_manufacturer = { 
 			
 		designer = yes
-		cost = 75
+		
 		havilland_canada = {
 			picture = generic_air_manufacturer_1
 
-			
+			cost = 75
 			allowed = {
 				original_tag = CAN
 			}
