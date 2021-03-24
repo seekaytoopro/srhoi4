@@ -2197,7 +2197,7 @@ focus = {
 		add_resource = {
 			type = oil
 			amount = 27
-			state = 46
+			state = 159
 		}
 
 		add_resource = {
@@ -2241,7 +2241,7 @@ focus = {
 			add_resource = {
 				type = oil
 				amount = 20
-				state = 46
+				state = 159
 			}
 			add_resource = {
 				type = oil
@@ -2252,7 +2252,7 @@ focus = {
 			add_resource = {
 				type = oil
 				amount = 9
-				state = 46
+				state = 159
 			}
 			add_resource = {
 				type = oil
@@ -2263,7 +2263,7 @@ focus = {
 		add_resource = {
 			type = oil
 			amount = 10
-			state = 46
+			state = 159
 		}
 		add_resource = {
 			type = oil
@@ -2342,7 +2342,7 @@ focus = {
 			add_resource = {
 				type = oil
 				amount = 20
-				state = 46
+				state = 158
 			}
 			add_resource = {
 				type = oil
@@ -2353,7 +2353,7 @@ focus = {
 			add_resource = {
 				type = oil
 				amount = 9
-				state = 46
+				state = 158
 			}
 			add_resource = {
 				type = oil
@@ -2364,7 +2364,7 @@ focus = {
 		add_resource = {
 			type = oil
 			amount = 9
-			state = 46
+			state = 158
 		}
 		add_resource = {
 			type = oil

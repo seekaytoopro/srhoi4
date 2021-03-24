@@ -61,6 +61,7 @@ set_technology = {
 	improved_light_td = 1
 	improved_light_art = 1
 	improved_light_spaa = 1	
+	basic_heavy_tank = 1
 	basic_heavy_td = 1
 	basic_heavy_art = 1
 	basic_heavy_spaa = 1
