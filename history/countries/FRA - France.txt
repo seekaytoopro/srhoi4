@@ -59,7 +59,6 @@ add_equipment_to_stockpile = {
 	amount = 1000
 	producer = FRA
 } 
-
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 46000
@@ -72,14 +71,19 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = gw_tank_equipment
-	amount = 2400
+	amount = 200
 	producer = FRA
 } 
 add_equipment_to_stockpile = {
 	type = light_tank_equipment_1
-	amount = 480
+	amount = 680
 	producer = FRA
-} 
+}
+add_equipment_to_stockpile = {
+	type = light_tank_equipment_2
+	amount = 2000
+	producer = FRA
+}
 
 add_equipment_to_stockpile = {
 type = anti_air_equipment_1
@@ -93,7 +97,7 @@ add_equipment_to_stockpile = {
 } 
 add_equipment_to_stockpile = {
 	type = heavy_tank_equipment_1
-	amount = 500
+	amount = 520
 	producer = FRA
 }
 
@@ -136,12 +140,8 @@ if = {
 		mtg_transport = 1
 	}
 }
-if = {
-	limit = {
-		has_dlc = "La Resistance" }
-	set_technology = {
-		armored_car1 = 1	
-	}
+set_technology = {
+	armored_car1 = 1	
 }
 
 set_convoys = 300
