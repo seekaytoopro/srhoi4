@@ -354,8 +354,8 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { 						-- supremacy multipliers for d
 		0.0, -- RESERVE_FLEET
 		0.2, -- NAVAL_INVASION_SUPPORT
 	}
-NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 0.5							-- WAS 2 | after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
-NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 1						-- WAS 24 | after this many months remove the history of lost convoys to not bloat savegames and memory since there is no way to see them anyway
+NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 2							-- WAS 2 | after that many years, we clear the naval combat results, so they don't get stuck forever in the memory.
+NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 24						-- WAS 24 | after this many months remove the history of lost convoys to not bloat savegames and memory since there is no way to see them anyway
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1                        -- WAS 100 | reduced to relatively nerf subs in terms of naval supremacy, as most of their supremacy comes from a base value of 100
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                       -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 40                           -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties

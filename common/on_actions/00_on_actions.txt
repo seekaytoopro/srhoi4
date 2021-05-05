@@ -234,6 +234,10 @@ on_actions = {
 					limit = { is_owned_by = JAP }
 					set_compliance = 0
 				}
+				every_state = {
+					limit = { is_core_of = JAP }
+					add_dynamic_modifier = { modifier = japanese_resistance }
+				}
 			 	USA = { 
 					annex_country = {
 					target = JAP
