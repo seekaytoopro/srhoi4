@@ -513,6 +513,11 @@ spriteTypes = {
 		name = "GFX_terrain_water_fjords_night_snow_storm"
 		textureFile = "gfx/interface/terrains/terrain_archipelago_night_snow_storm.dds"
 	}
+
+	spriteType = {
+		name = "GFX_modifiers_japanese_separatism"
+		textureFile = "gfx/interface/state_modifiers/modifiers_japanese_separatism.dds"
+	}
 	
 	
 	###
