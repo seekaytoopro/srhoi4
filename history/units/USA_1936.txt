@@ -247,7 +247,7 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = transport_plane_1
+			type = transport_plane_equipment_1
 			creator = "USA" 
 		}
 		requested_factories = 1

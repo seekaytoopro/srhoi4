@@ -15,7 +15,7 @@ state={
 			dockyard = 1
 			air_base = 5
 				7315 = {
-				naval_base = 3
+				naval_base = 6
 			}
 		}
 		add_core_of = USA
@@ -23,7 +23,7 @@ state={
 			1690 1 
 		}
 		victory_points = {
-			7315 10 
+			7315 20 
 		}
 	}
 

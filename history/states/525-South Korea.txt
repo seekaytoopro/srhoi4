@@ -4,6 +4,10 @@ id=525
 name="STATE_525"
 manpower = 15284105
 state_category = town
+resources={
+	chromium=21
+	steel = 29
+}
 history=
 {
 owner = JAP
