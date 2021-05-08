@@ -13,26 +13,15 @@ state={
 			fuel_silo = 5
 			788 = {
 				naval_base = 10
-
 			}
-
 		}
 		add_core_of = USA
 		victory_points = {
 			788 10 
 		}
 		victory_points = {
-			10412 15 
+			10412 20 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-				dockyard = 5
-
-			}
-
-		}
-
 	}
 
 	provinces={
