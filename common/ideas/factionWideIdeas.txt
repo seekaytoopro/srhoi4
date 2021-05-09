@@ -6,13 +6,11 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-
 			cancel={
 				NOT={
 					446={is_controlled_by_ROOT_or_ally = yes}
@@ -21,9 +19,7 @@ ideas = {
 				}
 			}
 			
-			
 			removal_cost = -1
-	
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.03
@@ -40,12 +36,6 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
-			# allowed_civil_war = {
-			# 	NOT = {
-			# 		has_government = democratic
-			# 	}
-			# }
 
 			cancel={
 				446={is_controlled_by_ROOT_or_ally = yes}
@@ -73,16 +63,8 @@ ideas = {
 			picture = generic_exploit_mines
 
 			cancel = { has_war_with = JAP }
-
-			# allowed_civil_war = {
-			# 	NOT = {
-			# 		has_government = democratic
-			# 	}
-			# }
-			
 			
 			removal_cost = -1
-	
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = -0.35
@@ -96,11 +78,6 @@ ideas = {
 
 			picture = generic_exploit_mines
 
-			# allowed_civil_war = {
-			# 	NOT = {
-			# 		has_government = democratic
-			# 	}
-			# }
 			removal_cost = -1
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.30
@@ -485,7 +462,11 @@ ideas = {
 	
 			modifier = {
 				experience_gain_navy_unit_factor = 10
-				training_time_factor = -0.65
+				training_time_factor = -0.75
+				planning_speed = 10.00
+				dig_in_speed = 10.00
+				army_speed_factor = 1.0
+				army_org_regain = 1.0
 			}
 		}
 
