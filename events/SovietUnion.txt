@@ -594,4 +594,18 @@ is_triggered_only = yes
 		}
 	 }
 	}
+
+	# Suspicious Movements on the German-Soviet Border
+	country_event = {
+		id = soviet.301
+		title = soviet.301.t
+		desc = soviet.301.d
+		picture = GFX_report_event_soldiers_marching
+		
+		is_triggered_only = yes
+		
+		option = { # Okay
+			name = soviet.301.a
+		}
+	}
    

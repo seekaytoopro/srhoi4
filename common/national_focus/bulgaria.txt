@@ -14,7 +14,7 @@ focus_tree = {
 
 		focus = {
 		id = BUL_Monarch_Speech
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		icon = GFX_focus_BUL_power_to_the_tsar
 		x = 4
 		y = 0
 		cost = 10
@@ -123,7 +123,7 @@ focus_tree = {
 
 	focus = {
 		id = BUL_Inspire_A_Generation
-		icon = GFX_goal_generic_propaganda
+		icon = GFX_focus_BUL_prussia_of_the_balkans
 		prerequisite = { focus = BUL_Break_Western_Ties }
 		x = 4
 		y = 2
@@ -184,7 +184,13 @@ focus_tree = {
 				name = BUL_Heavy_Machines
 				bonus = 1
 				uses = 1
-				category = industry
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
 			}
 		}
 	}
@@ -421,7 +427,7 @@ focus_tree = {
 
 	focus = {
 		id = BUL_Nationalism
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		icon = GFX_focus_BUL_promote_bulgarian_nationalism #icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = BUL_Monarch_Speech }
 		available = {
 			OR = {
@@ -1039,7 +1045,7 @@ focus_tree = {
 	
 	focus = {
 		id = BUL_military_training
-		icon = GFX_goal_generic_allies_build_infantry
+		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
 		x = 14
 		y = 0
 		cost = 10

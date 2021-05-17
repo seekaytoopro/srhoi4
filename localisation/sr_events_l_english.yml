@@ -142,3 +142,8 @@
  POR_CM_long:0 "CM"
  BRA_psd:0 "PSD"
  BRA_psd_long:0 "Partido Social Democrático"
+
+ soviet.301:0 "Suspicious Movement on the German-Soviet Border"
+ soviet.301.t:0 "Suspicious Movement on the German-Soviet Border"
+ soviet.301.d:0 "Our troops on the border with the Germans have noticed supsicious movements and military build-up in the area, and our intelligence warns us an invasion by the Germans is imminent. Comrade Stalin, however, is unconvinced, and remains certain the Germans will not attack for at least another year, if ever."
+ soviet.301.a:0 "Probably just training exercises..."

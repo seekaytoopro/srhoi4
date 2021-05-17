@@ -1580,7 +1580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_army_of_the_united_states
-		icon = GFX_focus_generic_little_entente
+		icon = GFX_focus_usa_recruit_the_free_corps
 		x = 0
 		y = 2
 		prerequisite = { focus = USA_louisiana_maneuvers }

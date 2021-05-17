@@ -1946,7 +1946,7 @@ focus = {
 	
 	focus = {
 		id = BRA_increase_powers
-		icon = GFX_focus_generic_support_the_left_right
+		icon = GFX_focus_por_recover_brazil
 		x = -1
 		y = 1
 		cost = 10
@@ -2256,7 +2256,7 @@ focus = {
 	
 	focus = {
 		id = BRA_patrianovism
-		icon = GFX_focus_mex_restore_the_army_of_christ 
+		icon = GFX_focus_por_reclaim_crown_jewel
 		x = 0
 		y = 1
 		cost = 10
@@ -2281,7 +2281,7 @@ focus = {
 	
 	focus = {
 		id = BRA_monarchist_ideals
-		icon = GFX_focus_hun_elect_a_king
+		icon = GFX_focus_generic_monarchy_2
 		x = 2
 		y = 1
 		cost = 10

@@ -1840,7 +1840,7 @@ focus_tree = {
 	
 			focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = GER_anschluss }
 		available = {
 			date > 1939.8.22
@@ -3335,6 +3335,12 @@ SPR = { country_event = spain.29 }
 					cost = 2
 			
 					bypass = { }
+
+					select_effect = {
+						SOV = {
+							country_event = { id = soviet.301 days = 1 }
+						}
+					}
 			
 					completion_reward = {
 						create_wargoal = {
