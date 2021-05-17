@@ -82,7 +82,7 @@ weather_extreme_cold = { # on Province
 	# winter_attrition = 0.3
 	# army_attack_factor = -0.4
 	winter_attrition = 0.45
-	army_attack_factor = -0.94
+	army_attack_factor = -0.88
 	naval_detection = -0.9
 	naval_hit_chance = -0.1
 	naval_speed_factor = -0.1
@@ -328,8 +328,8 @@ water_modifier_shark_infested = {
 
 screening_bonus = { 
 	naval_retreat_speed = 0.4
-  	naval_hit_chance = 1.250 #0.825
-  	naval_defense_factor = 0.400 #1.000
+  	naval_hit_chance = 0.825 #0.825
+  	naval_defense_factor = 0.65 #1.000
 }
 
 capital_screening_bonus = { 
