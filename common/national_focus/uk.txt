@@ -63,6 +63,65 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ENG_begin_canadian_exile
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 0
+		cost = 1.4
+
+		available = {
+			ENG = { has_capitulated = yes }
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+				if = {
+					limit = {
+						331 = {
+							is_fully_controlled_by = CAN
+						}					
+					}
+					ENG = { transfer_state = 331 }
+					331 = { add_extra_state_shared_building_slots = 15 set_compliance = 100 }					
+				}
+				if = {
+					limit = {
+						331 = {
+							is_fully_controlled_by = CAN
+						}					
+					}
+					ENG = { transfer_state = 331 }
+					331 = { add_extra_state_shared_building_slots = 15 set_compliance = 100 }
+				}
+				if = {
+					limit = {
+						332 = {
+							is_fully_controlled_by = CAN
+						}					
+					}
+					ENG = { transfer_state = 332 }
+					332 = { add_extra_state_shared_building_slots = 15 set_compliance = 100 }
+				}				
+				if = {
+					limit = {
+						466 = {
+							is_fully_controlled_by = CAN
+						}					
+					}
+					ENG = { transfer_state = 466 }
+					466 = { add_extra_state_shared_building_slots = 15 set_compliance = 100 }
+					ENG = { set_capital = 466 }
+				}
+				ENG = {
+					#add_ideas = ENG_Canadian_exile
+					add_timed_idea = { idea = france_production_regrowth days = 50 }
+				}
+				ENG = { add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 10000 producer = ENG } }
+		}
+	}
+
 	focus = { 
 		id = crypto_bomb_focus
 		available = {

@@ -12,9 +12,13 @@ state={
 			infrastructure = 1
 			3691 = {
 				naval_base = 1
-
 			}
-
+			10715 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			10715 5
 		}
 		add_core_of = CAN
 

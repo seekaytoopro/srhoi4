@@ -1888,8 +1888,9 @@ ideas = {
 		frf_famh = {
 						
 			allowed = {
-				original_tag = FRA
+				original_tag = FRF
 			}
+			#picture = FRA_famh
 						
 			research_bonus = {
 				industry = 0.15
