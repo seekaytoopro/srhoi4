@@ -88,6 +88,48 @@ adjacency_rule
 	required_provinces = { 6955 }
 	is_disabled = {	NOT = {	tag = SPR	}	}
 }
+#spain-strait 3
+adjacency_rule
+{
+	name = "Spain-To-France"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 9689 }
+	is_disabled = {
+		NOT = {
+			tag=SPR
+		}
+		
+	}
+}
 adjacency_rule #Rep Spain Strait
 {
 	name = "Barcelona-Valencia"

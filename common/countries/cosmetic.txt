@@ -71,3 +71,11 @@ CAN_north_america_dominion = {
 SPR_republican_spain = {	color = rgb { 242 205 94 }	color_ui = rgb { 255 255 122 }}
 SPR_nationalist_spain = {	color = rgb { 200 100 31 }	color_ui = rgb { 245 123 38 }}
 FRA_VICHY = {	color = rgb { 80 168 181 }	color_ui = rgb {115 185 196 }}
+
+GER_west_ger = { color = rgb { 100 100 100 } color_ui = rgb { 115 115 115 } }
+ITA_repub = { color = rgb { 70 147 70 } color_ui = rgb { 87 165 82 } }
+FRF_liberated = { color = rgb { 0 55 135 } color_ui = rgb { 0 55 135 } }
+HUN_SSR = { color = rgb { 170  10  50 } color_ui = rgb { 200  10  10 } }
+ROM_SSR = { color = rgb { 170  50  10 } color_ui = rgb { 200  10  10 } }
+BUL_SSR = { color = rgb { 170  50  50 } color_ui = rgb { 200  10  10 } }
+CRO_SSR = { color = rgb { 180  10  80 } color_ui = rgb { 200  10  10 } }

@@ -55,7 +55,6 @@ ideas = {
 			extra_trade_to_target_factor = 0.25
 			trade_cost_for_target_factor = -0.6
 			}
-
 	}
 
 	JAP_year_of_righteous_effort = {

@@ -8,6 +8,8 @@ ideas = {
 				always = no
 			}
 
+			available = { ROOT = { has_government = fascism } }
+
 			allowed_civil_war = {
 				always = yes
 			}

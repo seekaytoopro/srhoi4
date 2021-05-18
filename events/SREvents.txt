@@ -282,4 +282,39 @@ country_event = {
 		every_state = { limit = { is_core_of = SOV } remove_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
 		# SWE = { country_event = { id = srevents.801 days = 60 } }
 	}
-}       
+}
+
+country_event = {
+	id = srevents.999 #Cold war goes hot, Soviets Declare War!
+	title = "Cold War Goes Hot!"
+	desc = "Cold War Goes Hot!"
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		SOV = {
+			declare_war_on = { target = ENG type = annex_everything } 
+			declare_war_on = { target = FRF type = annex_everything } 
+			declare_war_on = { target = CAN type = annex_everything } 
+			declare_war_on = { target = SAF type = annex_everything } 
+			declare_war_on = { target = RAJ type = annex_everything } 
+			declare_war_on = { target = AST type = annex_everything } 
+			declare_war_on = { target = NZL type = annex_everything }
+			declare_war_on = { target = USA type = annex_everything } 
+			declare_war_on = { target = GER type = annex_everything } 
+			declare_war_on = { target = ITA type = annex_everything }
+			#needs tweaking
+			declare_war_on = { target = SPR type = annex_everything }
+			if = { limit = { BRA = { is_ai = no } }
+				declare_war_on = { target = BRA type = annex_everything }
+			}
+			if = { limit = { MEX = { is_ai = no } }
+				declare_war_on = { target = MEX type = annex_everything }
+			}
+		}
+	}
+}    
+

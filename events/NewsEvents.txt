@@ -4850,3 +4850,19 @@ news_event = { #Panay Incident - initial incident
 	}
 }
 
+#Peace in Europe, Prepare for Cold War going Hot!
+news_event = {
+	id = news.400
+	title = news.400.t
+	desc = news.400.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.400.a
+	}
+}
+

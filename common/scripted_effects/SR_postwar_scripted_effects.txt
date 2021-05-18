@@ -1,0 +1,154 @@
+axis_defeat = {
+	set_global_flag = axis_lost
+	every_country = {
+		limit = { the_axis = yes }
+		add_timed_idea = { idea = cold_war_timer days = 60 }
+		# white_peace = {
+		# 	tag = { normally_played_allies = yes }
+		# }
+		every_country = {
+			limit = { has_war_with = ROOT }
+			add_timed_idea = { idea = cold_war_timer days = 60 }
+			white_peace = {
+				tag = ROOT
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = reset_cross_faction_trade
+			}
+			ROOT = {
+				add_opinion_modifier = {
+					target = PREV
+					modifier = reset_cross_faction_trade
+				}
+			}
+		}
+		set_equipment_fraction = 0.0
+		# white_peace = {
+		# 	tag = SOV
+		# }
+	}
+	USA =  { set_autonomy = { target = GER autonomy_state = autonomy_dominion } }
+	USA =  { set_autonomy = { target = ITA autonomy_state = autonomy_dominion } }
+
+	SOV =  { set_autonomy = { target = HUN autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = ROM autonomy_state = autonomy_dominion } }
+	SOV =  { set_autonomy = { target = BUL autonomy_state = autonomy_dominion } }
+	set_victory_points = {
+		province = 11494
+		value = 50
+	}
+
+	ENG = {
+		add_to_faction = ITA
+		add_to_faction = GER
+		add_to_faction = SPR
+	}
+	GER = { 
+		set_capital = 355 set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = GER_west_ger
+	}
+	ITA = { 
+		set_politics = { ruling_party = democratic } 
+		add_popularity = { ideology = democratic popularity = 1.0 }
+		set_cosmetic_tag = ITA_repub
+	}
+	HUN = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = HUN_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	ROM = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = ROM_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	BUL = { 
+		set_politics = { ruling_party = communism } 
+		add_popularity = { ideology = communism popularity = 1.0 }
+		set_cosmetic_tag = BUL_SSR
+		add_ideas = closed_economy
+		add_ideas = comintern_economic_integration
+	}
+	SOV = {
+		add_to_faction = HUN
+		add_to_faction = BUL
+		add_to_faction = ROM
+	}
+	FRF = { set_cosmetic_tag = FRF_liberated }
+
+	# SOV = {
+	# 	annex_country = {
+	# 		target = GER
+	# 		transfer_troops = no
+	# 	}
+	# }
+	every_state = {
+		limit = {
+			OR = { is_core_of = POL is_core_of = YUG is_core_of = CZE is_core_of = GRE }
+			AND = { OR = { is_owned_by = GER is_owned_by = ITA } }
+		}
+		SOV = {
+			transfer_state = PREV
+		}
+	}
+	SOV = {
+		add_ideas = comintern_closed_eco_trade
+		transfer_state = 68 transfer_state = 67 transfer_state = 66 transfer_state = 65 transfer_state = 64
+		transfer_state = 63 transfer_state = 62 transfer_state = 61 transfer_state = 188
+		transfer_state = 343 transfer_state = 267 transfer_state = 5 transfer_state = 763 
+		transfer_state = 44 transfer_state = 163 transfer_state = 736 transfer_state = 4
+	}
+	if = { limit = { country_exists = CRO }
+		SOV = { add_to_faction = CRO set_autonomy = { target = CRO autonomy_state = autonomy_dominion } }
+		CRO = { 
+			set_politics = { ruling_party = communism } 
+			add_popularity = { ideology = communism popularity = 1.0 }
+			set_cosmetic_tag = CRO_SSR
+			transfer_state = 163 transfer_state = 736 transfer_state = 44
+			add_ideas = closed_economy
+			add_ideas = comintern_economic_integration
+		}
+		every_state = { limit = { is_core_of = YUG is_owned_by = SOV }
+			CRO = {
+				transfer_state = PREV
+				# need to add istria, albania, zara
+			}
+		}
+	}
+
+	if = { limit = { country_exists = EFR }
+		FRF = {
+			annex_country = {
+				target = EFR
+				transfer_troops = no
+			}
+		}
+	}
+	every_state = { limit = { is_core_of = FRF }
+		FRF = {
+			transfer_state = PREV
+		}
+	}
+	every_state = { limit = { OR = { AND = { is_owned_by = ITA is_core_of = SWE } is_core_of = NOR } }
+		ENG = {
+			transfer_state = PREV
+		}
+	}
+	every_state = { limit = { is_owned_by = GER NOT = { is_core_of = GER } }
+		USA = {
+			transfer_state = PREV
+		}
+	}
+	USA = { transfer_state = 8 }
+
+	news_event = { hours = 24 id = news.400 }
+	SWE = {
+		country_event = { days = 60 id = srevents.999 }
+	}
+}

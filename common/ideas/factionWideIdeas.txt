@@ -11,6 +11,9 @@ ideas = {
 					has_government = democratic
 				}
 			}
+
+			available = { ROOT = { has_government = fascism } }
+
 			cancel={
 				NOT={
 					446={is_controlled_by_ROOT_or_ally = yes}
@@ -757,7 +760,102 @@ ideas = {
 			modifier = {
 				conscription_factor = 0.05
 			}
-		}		
+		}
 
+		comintern_economic_integration = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			available = { ROOT = { has_government = communism } }
+
+			removal_cost = -1
+
+			modifier = {
+				trade_laws_cost_factor = 99.99
+				economy_cost_factor = -0.5
+				mobilization_laws_cost_factor = -0.5
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				research_speed_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				stability_factor = 0.30
+				surrender_limit = 1.0
+				conscription = 0.02
+				supply_consumption_factor = -0.10
+
+				consumer_goods_factor = -0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				extra_trade_to_target_factor = 1.0	
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+
+		comintern_closed_eco_trade = {
+			allowed = { always = no }
+	
+				allowed_civil_war = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+				
+				picture = generic_production_bonus
+				
+				removal_cost = -1
+		
+				targeted_modifier = {
+					tag = HUN
+					extra_trade_to_target_factor = 1.0
+					trade_cost_for_target_factor = -0.6
+				}
+				targeted_modifier = {
+					tag = ROM
+					extra_trade_to_target_factor = 1.0
+					trade_cost_for_target_factor = -0.6
+				}
+				targeted_modifier = {
+					tag = BUL
+					extra_trade_to_target_factor = 1.0
+					trade_cost_for_target_factor = -0.6
+				}
+				targeted_modifier = {
+					tag = CRO
+					extra_trade_to_target_factor = 1.0
+					trade_cost_for_target_factor = -0.6
+				}
+		}
+
+		cold_war_timer = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+
+		allied_no_surrender = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
     }
 }

@@ -227,6 +227,8 @@ ideas = {
 				always = no
 			}
 
+			available = { ROOT = { has_government = fascism } }
+
 			allowed_civil_war = {
 				always = yes
 			}
@@ -499,6 +501,8 @@ ideas = {
 				has_government = fascism
 			}
 
+			available = { ROOT = { has_government = fascism } }
+
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
@@ -545,6 +549,8 @@ ideas = {
 				always = no
 			}
 
+			available = { ROOT = { has_government = fascism } }
+
 			allowed_civil_war = {
 				has_government = fascism
 			}
@@ -564,6 +570,8 @@ ideas = {
 			allowed = {
 				always = no
 			}
+
+			available = { ROOT = { has_government = fascism } }
 
 			allowed_civil_war = {
 				has_government = fascism
@@ -588,6 +596,8 @@ ideas = {
 			allowed_civil_war = {
 				has_government = fascism
 			}
+
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -615,6 +625,8 @@ ideas = {
 				always = no
 			}
 
+			available = { ROOT = { has_government = fascism } }
+
 			allowed_civil_war = {
 				has_government = fascism
 			}
@@ -639,6 +651,8 @@ ideas = {
 
 			allowed_civil_war = { has_government = fascism }
 
+			available = { ROOT = { has_government = fascism } }
+
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
@@ -660,6 +674,8 @@ ideas = {
 
 			allowed_civil_war = { has_government = fascism }
 
+			available = { ROOT = { has_government = fascism } }
+
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
@@ -680,6 +696,8 @@ ideas = {
 			allowed = { always = no }
 
 			allowed_civil_war = { has_government = fascism }
+
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 
@@ -798,6 +816,8 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+
+			available = { ROOT = { has_government = fascism } }
 
 			removal_cost = -1
 

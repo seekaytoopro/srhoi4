@@ -14,6 +14,10 @@ opinion_modifiers = {
 		trade = yes
 		value = -500
 	}
+	reset_cross_faction_trade = {
+		trade = yes
+		value = 500
+	}
 
 	german_trade_monopoly = {
 		trade = yes
