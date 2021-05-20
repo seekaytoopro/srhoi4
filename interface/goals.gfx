@@ -2811,5 +2811,36 @@ SpriteType = {
 		name = "GFX_focus_SOV_defense_of_moscow"
 		texturefile = "gfx/interface/goals/focus_SOV_defense_of_moscow.dds"
 	}
-	
+	SpriteType = { 
+		name = "GFX_focus_USA_shield_with_guns"
+		texturefile = "gfx/interface/goals/focus_USA_shield_with_guns.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_flag_shield"
+		texturefile = "gfx/interface/goals/focus_GER_flag_shield.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_ITA_albania"
+		texturefile = "gfx/interface/goals/focus_ITA_albania.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_fall_weis"
+		texturefile = "gfx/interface/goals/focus_GER_fall_weis.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_GER_fate_of_czech"
+		texturefile = "gfx/interface/goals/focus_GER_fate_of_czech.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_collectivist_propaganda"
+		texturefile = "gfx/interface/goals/focus_SOV_collectivist_propaganda.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_great_purge"
+		texturefile = "gfx/interface/goals/focus_SOV_great_purge.dds"
+	}
+	SpriteType = { 
+		name = "GFX_focus_SOV_stalin_constitution"
+		texturefile = "gfx/interface/goals/focus_SOV_stalin_constitution.dds"
+	}
 }

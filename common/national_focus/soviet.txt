@@ -16,7 +16,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_great_purge
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_focus_SOV_great_purge
 		available = {
 			#date > 1937.6.1 
 		}
@@ -1278,7 +1278,7 @@ focus = {
 
 		focus = {
 			id = SOV_collectivist_propaganda
-			icon = GFX_goal_generic_propaganda
+			icon = GFX_focus_SOV_collectivist_propaganda
 			prerequisite = { focus = SOV_great_purge }
 			x = -4
 			y = 1
@@ -1308,7 +1308,7 @@ focus = {
 
 		focus = {
 			id = SOV_stalin_constitution
-			icon = GFX_goal_support_communism
+			icon = GFX_focus_SOV_stalin_constitution
 			prerequisite = { focus = SOV_collectivist_propaganda }
 			x = -1
 			y = 1

@@ -1749,7 +1749,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_end_of_czechoslovakia
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_GER_fate_of_czech
 		prerequisite = { focus = GER_demand_sudetenland }
 		available = { 
 		}
@@ -1928,7 +1928,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_danzig_or_war
-		icon = GFX_goal_generic_demand_territory
+		icon = GFX_focus_GER_fall_weis
 		prerequisite = { focus = GER_demand_memel }
 		prerequisite = { focus = GER_mol_rib_pact }
 		prerequisite = { focus = GER_end_of_czechoslovakia }
@@ -2705,7 +2705,7 @@ SPR = { country_event = spain.29 }
 	focus = {
 		id = GER_improve_national_spirit
 		prerequisite = { focus = GER_rhineland }
-		icon = GFX_goal_support_fascism
+		icon = GFX_focus_GER_flag_shield
 		available = {
 			custom_trigger_tooltip = {
 				tooltip = GER_improve_national_spirit_tooltip
@@ -3319,7 +3319,7 @@ SPR = { country_event = spain.29 }
 				
 				focus = {
 					id = GER_ussr_war_goal
-					icon = GFX_goal_generic_war_with_comintern
+					icon = GFX_focus_attack_soviet
 					prerequisite = { focus = GER_anti_comitern_pact }
 					will_lead_to_war_with = SOV
 			
