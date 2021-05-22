@@ -2387,7 +2387,7 @@ leader_traits = {
 		trait_type = basic_trait
 		#gained through script when successfully executing an escape operation
 		modifier = {
-			operation_rescue_operative_risk = -0.1
+			#operation_rescue_operative_risk = -0.1
 			operation_rescue_operative_cost = -0.1
 		}
 	}
