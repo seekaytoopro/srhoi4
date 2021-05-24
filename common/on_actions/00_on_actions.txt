@@ -222,11 +222,13 @@ on_actions = {
 					}
 				}
 				FRA_fix_africa = yes
-				FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 add_state_core = 660 add_state_core = 774 }
+				FRA = { add_state_core = 772 add_state_core = 539 add_state_core = 773 
+						add_state_core = 660 add_state_core = 774 }
 				FRA = { country_event = { id = france.10 }}
 				GER = {  country_event = { id = france.14 }
 				762 = { set_compliance = 60 }
-				if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
+				if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } 
+				else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
 				JAP = { transfer_state = 671 transfer_state = 286 transfer_state = 728 }
 
 				FRA = { country_event = { id = france.800 } }
@@ -266,57 +268,44 @@ on_actions = {
 					}
 			  	}
 			}
-								if = {
-			limit = { original_tag = SOV }
-			ROM = {
-				transfer_state = 766
-				transfer_state = 78
-				transfer_state = 192
-				transfer_state = 80
-				transfer_state = 198
+			if = { limit = { original_tag = SOV }
+				if = { limit = { country_exists = ROM }
+					ROM = { 
+						transfer_state = 766 transfer_state = 78 transfer_state = 192 
+						transfer_state = 80 transfer_state = 198 
+					}
+				}
+				FIN = {
+					transfer_state = 147 transfer_state = 146 transfer_state = 213 transfer_state = 215
+					transfer_state = 216
+				}
+				if = { limit = { country_exists = JAP }
+					JAP = {
+						transfer_state = 655 transfer_state = 408 transfer_state = 560 transfer_state = 409
+						transfer_state = 657 transfer_state = 561 transfer_state = 562 transfer_state = 637
+					}
+				}
+				
+				GER = { annex_country = { target = SOV transfer_troops = no } }
 			}
-			FIN = {
-				transfer_state = 147
-				transfer_state = 146
-				transfer_state = 213
-				transfer_state = 215
-				transfer_state = 216
-			}
-			JAP = {
-				transfer_state = 655
-				transfer_state = 408
-				transfer_state = 560
-				transfer_state = 409
-				transfer_state = 657
-				transfer_state = 561
-				transfer_state = 562
-				transfer_state = 637
-			}
-			 GER = { 
-					annex_country = {
-						target = SOV
-					transfer_troops = no 					}
-			  }
-			}
-				if = {
-			limit = { original_tag = FIN }
-			 SOV = { 
-			 		transfer_state = 147
-					add_state_core = 147
-					transfer_state = 146
-					add_state_core = 146
-					white_peace = FIN
-			  }
+			if = {
+				limit = { original_tag = FIN }
+				SOV = { 
+						transfer_state = 147
+						add_state_core = 147
+						transfer_state = 146
+						add_state_core = 146
+						white_peace = FIN
+				}
 			}
 			
-		if =  { 
-			limit = { original_tag = BEL }
-			BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
-			GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
-			every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
-			# If = { limit = { country_exists = FRA } FRA = { annex_country = BEL } }
-			# If = { limit = { country_exists = FRF } FRF = { annex_country = BEL } }
-		}
+			if =  { limit = { original_tag = BEL }
+				BEL = { country_event = { id =  mtg_netherlands.331 days = 1 } 	}
+				GER = { transfer_state = 6 transfer_state = 34 transfer_state = 8 }
+				every_state = { limit = { is_core_of = BEL } set_compliance = 40 }
+				# If = { limit = { country_exists = FRA } FRA = { annex_country = BEL } }
+				# If = { limit = { country_exists = FRF } FRF = { annex_country = BEL } }
+			}
 		
 			if = {
 				limit = {
@@ -326,57 +315,33 @@ on_actions = {
 				}
 			}
 			news_event = { id = country_capitulated.0 days = 0 }
-	if = {
-		limit = { 
-			original_tag = POL
-		}
-			POL = { set_equipment_fraction = 0.0 }
-	SOV = { 
-		transfer_state = 784  
-		transfer_state = 97
-		transfer_state = 96
-		transfer_state = 95
-		transfer_state = 94
-		transfer_state = 93
-		transfer_state = 91
-		transfer_state = 89
-		784 = { set_compliance = 100 }
-		97 = { set_compliance = 100 }
-		96 = { set_compliance = 100 }
-		95 = { set_compliance = 100 }
-		94 = { set_compliance = 100 }
-		93 = { set_compliance = 100 }
-		91 = { set_compliance = 100 }
-		89 = { set_compliance = 100 }
-	}
-		GER = {  transfer_state = 85
-			transfer_state = 86
-			transfer_state = 87
-			transfer_state = 98
-			transfer_state = 10
-			transfer_state = 90
-			transfer_state = 88 
-			transfer_state = 762
-			transfer_state = 72
-			transfer_state = 92
-			transfer_state = 619
-			86 = { set_compliance = 60 }
-			762 = { set_compliance = 60 }
-		}
-		set_province_name = { id = 6558 name = "Posen" }
-		86 = { set_state_name = "Posen" }
-		set_province_name = { id = 6464 name = "Kattowitz" }
-		762 = { set_state_name = "Kattowitz" }
-		set_province_name = { id = 279 name = "Bromberg" }
-		set_province_name = { id = 3295 name = "Thorn" }
-				
+
+			if = { limit = { original_tag = POL }
+				POL = { set_equipment_fraction = 0.0 }
+				SOV = { 
+					transfer_state = 784 transfer_state = 97 transfer_state = 96 transfer_state = 95
+					transfer_state = 94 transfer_state = 93 transfer_state = 91 transfer_state = 89
+					784 = { set_compliance = 100 } 97 = { set_compliance = 100 }
+					96 = { set_compliance = 100 } 95 = { set_compliance = 100 }
+					94 = { set_compliance = 100 } 93 = { set_compliance = 100 }
+					91 = { set_compliance = 100 } 89 = { set_compliance = 100 }
+				}
+				GER = {  transfer_state = 85
+					transfer_state = 86 transfer_state = 87 transfer_state = 98 transfer_state = 10
+					transfer_state = 90 transfer_state = 88  transfer_state = 762 transfer_state = 72
+					transfer_state = 92 transfer_state = 619
+					86 = { set_compliance = 60 } 762 = { set_compliance = 60 }
+				}
+				#Larp
+				set_province_name = { id = 6558 name = "Posen" } 86 = { set_state_name = "Posen" }
+				set_province_name = { id = 6464 name = "Kattowitz" } 762 = { set_state_name = "Kattowitz" }
+				set_province_name = { id = 279 name = "Bromberg" }
+				set_province_name = { id = 3295 name = "Thorn" }		
 			}
 
-			if = {
-				limit = {
-					original_tag = DEN
-				}
-				GER = { transfer_state = 99 transfer_state = 37 99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
+			if = { limit = { original_tag = DEN }
+				GER = { transfer_state = 99 transfer_state = 37 
+				99 = { set_compliance = 60 } 37 = { set_compliance = 60 } }
 			}
 			
 			if = { limit = { original_tag = NOR }

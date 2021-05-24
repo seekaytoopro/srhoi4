@@ -164,30 +164,30 @@ focus_tree = {
 			add_ideas = georgy_zhukov_chief
 
 			#hidden_effect = {
-				create_field_marshal = {
-					name = "Georgy Zhukov"
-					id = 410
-					picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-					traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer}
-					skill = 6
+			create_field_marshal = {
+				name = "Georgy Zhukov (New Tank Field Marshal)"
+				id = 410
+				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+				traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer}
+				skill = 6
 	
 	
-					attack_skill = 6
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 5
-				}
+				attack_skill = 6
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 5
+			}
 	
 			create_field_marshal = {
-			name = "Boris Shaposhnikov"
+			name = "Boris Shaposhnikov (New Inf Field Marshal)"
 				picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-			traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer}
-			skill = 5
-	
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 7
+				traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer}
+				skill = 5
+		
+				attack_skill = 2
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 7
 			}
 	
 			create_corps_commander = {
@@ -240,7 +240,7 @@ focus_tree = {
 				defense_skill = 7
 				planning_skill = 2
 				logistics_skill = 5
-				}
+			}
 	
 			create_corps_commander = {
 			name = "Alexander Gorbatov"
@@ -255,7 +255,7 @@ focus_tree = {
 			}
 	
 			create_corps_commander = {
-			name = "Dmitry Lelyushenko"
+			name = "Dmitry Lelyushenko (New Tank Commander)"
 				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
 			traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster  }
 			skill = 5
@@ -523,9 +523,9 @@ focus = {
 	#hidden_effect = {
 
 	create_corps_commander = {
-	name = "Konstantin Rokossovsky"
+	name = "Konstantin Rokossovsky (Best Tank Commander)"
 	id = 402
-		picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
+	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 	traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero}
 	skill = 6
 

@@ -1948,73 +1948,52 @@ focus_tree = {
 		cost = 4
 		ai_will_do = {
 			factor = 10	
-
-		}	
+		}
 		completion_reward = {
-		custom_effect_tooltip = GER_speer_reminder_tt
-		custom_effect_tooltip = available_theorist 
-			show_ideas_tooltip = speer	
+			# custom_effect_tooltip = GER_speer_reminder_tt
+			# custom_effect_tooltip = available_theorist 
+			# show_ideas_tooltip = speer	
+			GER = { add_ideas = german_wartime_economy }
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			add_political_power = 150
-			
 				
-				
-					GER = {
+			GER = {
 				create_wargoal = {
-			type = take_state
-			generator = { 85 }
-			target = POL 
-		}
-				
-						add_state_core = 85
+					type = take_state
+					generator = { 85 }
+					target = POL 
+				}
+				add_state_core = 85
 			}
-POL = {
-					country_event = { id = germany.86 }
-					}
-		hidden_effect = {
+			POL = { country_event = { id = germany.86 } }
+			hidden_effect = {
 				GER = {	remove_resource_rights = 724 }
-		
-		
-		if = { limit = { YUG = { is_ai = no}}  		ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } }	  }
-		
-		# if = {
-		# limit = { country_exists = SIA}
-		# SIA = { transfer_state = 741 }
-		# }
-		# if = {
-		# limit = { NOT = { country_exists = SIA } }
-		# JAP = { transfer_state = 741 }
-		# }
-
-				ENG = {
-				add_war_support = 0.1 
+				if = { limit = { YUG = { is_ai = no } }  
+					ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } } 
+				}
+				ENG = { add_war_support = 0.1 }
+				FRA = { add_war_support = 0.1 }
+				SAF = {	country_event = tfv_south_africa.133 }
+				ENG = { country_event = britain.24
+					125 = {
+					add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+					129 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = arms_factory
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				SPR = { country_event = spain.29 } 
 			}
-					FRA = {
-				add_war_support = 0.1 
-			}
-		SAF = {	country_event = tfv_south_africa.133 }
-		ENG = { country_event = britain.24
-		     125 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
-		129 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-				type = arms_factory
-				level = 2
-				instant_build = yes
-			}
-		}
-		}
-		
-SPR = { country_event = spain.29 }
-		}
-			
 		}
 	}
 	

@@ -1422,7 +1422,11 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_ideas = BRA_rural_idea4
+			swap_ideas = {
+				remove_idea = BRA_rural_idea5
+				add_idea = BRA_rural_idea4
+			}
+		#add_ideas = BRA_rural_idea4
 		}
 	}	
 	

@@ -29,6 +29,28 @@ ideas = {
 		}
 	}
 
+	german_wartime_economy = {
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+			
+		removal_cost = -1
+
+		picture = ger_rebuild_the_nation
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+			line_change_production_efficiency_factor  = 0.1
+			production_speed_arms_factory_factor = 0.1
+			production_speed_dockyard_factor = 0.1		
+			production_speed_fuel_silo_factor = 0.1
+		}
+	}
+
 	soldiers_for_the_vaterland = { 
 		
 		
@@ -1188,23 +1210,23 @@ ideas = {
 			}
 		}
 		
-		speer = {
+		# speer = {
 
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 			
-			available = {
-				#date>1941.6.1
-				has_completed_focus = GER_danzig_or_war
-			}
+		# 	available = {
+		# 		#date>1941.6.1
+		# 		has_completed_focus = GER_danzig_or_war
+		# 	}
 			
-			cost = 150
+		# 	cost = 150
 			
 			
-			traits = { reichs_minister }
-		}
+		# 	traits = { reichs_minister }
+		# }
 		
 		hjalmar_schacht = {
 

@@ -1403,8 +1403,9 @@ leader_traits = {
 	armaments_organizer = {
 		sprite = 10
 		random = yes
-		production_factory_efficiency_gain_factor = 0.03
-		line_change_production_efficiency_factor  = 0.03
+		production_factory_efficiency_gain_factor = 0.05
+		line_change_production_efficiency_factor  = 0.05
+		production_factory_max_efficiency_factor = 0.01
 		#conversion_cost_civ_to_mil_factor= -0.2
 		# civ_to_mil_industry_conversion_rate = -1
 		

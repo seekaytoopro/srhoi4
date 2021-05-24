@@ -334,7 +334,7 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Kliment Voroshilov"
+	name = "Kliment Voroshilov (Use as Inf marshal)"
 	id = 405
 		picture = "Portrait_Soviet_Kliment_Voroshilov.dds"
 	traits = {  old_guard politically_connected inflexible_strategist harsh_leader defensive_doctrine}
@@ -679,7 +679,7 @@ create_corps_commander = {
 # }
 
 create_field_marshal = {
-	name = "Vasily Chuikov"
+	name = "Vasily Chuikov (Use as Tank Marshal)"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
 		traits = { brilliant_strategist career_officer infantry_leader panzer_leader trait_engineer urban_assault_specialist trait_cautious}
 	skill = 4

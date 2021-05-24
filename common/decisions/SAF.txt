@@ -91,10 +91,13 @@ operations = {
 				}
 			}
 
-			# every_state = {
-			# 	limit = { AND = { NOT = { is_core_of = FRA } is_owned_and_controlled_by = FRA } }
-			# 	transfer_state = SAF
-			# }
+			every_state = {
+				limit = { AND = { NOT = { is_core_of = FRA } is_owned_and_controlled_by = FRA } }
+				ROOT = {
+					set_compliance = 100
+				}
+				# transfer_state = SAF
+			}
 			ENG = {
 				set_state_owner = 15 
 				set_state_owner = 14 
