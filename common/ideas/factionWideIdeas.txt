@@ -523,7 +523,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.150
 			}
 		}	
 		AST_Navy_Manpower3 = {
@@ -541,7 +541,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.225
 			}
 		}	
 		AST_Navy_Manpower4 = {
@@ -559,7 +559,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.300
 			}
 		}
 		AST_Navy_Manpower5 = {
@@ -577,7 +577,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.375
 			}
 		}
 		AST_Navy_Manpower6 = {
@@ -595,7 +595,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.450
 			}
 		}
 		AST_Navy_Manpower7 = {
@@ -613,7 +613,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.525
 			}
 		}
 		AST_Navy_Manpower8 = {
@@ -631,7 +631,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription_factor = 0.075
+				conscription_factor = 0.600
 			}
 		}	
 	

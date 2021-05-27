@@ -1007,7 +1007,10 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower2
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower1
+				add_idea = AST_Navy_Manpower2
+			}
 			285 = {
 				add_resource = {
 					type = steel
@@ -1047,7 +1050,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower3
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower2
+				add_idea = AST_Navy_Manpower3
+			}
 			285 = {
 				add_resource = {
 					type = steel
@@ -1095,7 +1101,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower4		
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower3
+				add_idea = AST_Navy_Manpower4
+			}	
 			285 = {
 				add_resource = {
 					type = steel
@@ -1139,7 +1148,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower5		
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower4
+				add_idea = AST_Navy_Manpower5
+			}	
 			285 = {
 				add_resource = {
 					type = steel
@@ -1181,7 +1193,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower6		
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower5
+				add_idea = AST_Navy_Manpower6
+			}
 			285 = {
 				add_resource = {
 					type = steel
@@ -1226,7 +1241,10 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = AST_Navy_Manpower7		
+			swap_ideas = {
+				remove_idea = AST_Navy_Manpower6
+				add_idea = AST_Navy_Manpower7
+			}	
 			285 = {
 				add_resource = {
 					type = steel

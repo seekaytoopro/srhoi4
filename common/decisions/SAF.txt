@@ -120,7 +120,11 @@ operations = {
 				set_state_owner = 728
 			}
 
-			SIA = { transfer_state = 741 transfer_state = 670 }
+			if = { limit = { AND = { country_exists = SIA SIA = { is_ai = no } } }
+				SIA = { transfer_state = 741 transfer_state = 670 }
+			} else = {
+				JAP = { transfer_state = 741 transfer_state = 670 }
+			}
 			JAP = { transfer_state = 671 transfer_state = 286 }
 
 
@@ -129,7 +133,15 @@ operations = {
 					target = FRF
 					transfer_troops = yes 
 				}
+				add_state_core = 772
+				add_state_core = 539
+				add_state_core = 773
+				add_state_core = 660
+				add_state_core = 774
 			}
+			# every_state = { limit = { is_core_of = FRF is_owned_and_controlled_by = SAF }
+			# 	SAF = { add_state_core = PREV }			
+			# }
 			FRF = { 
 				every_unit_leader = {
 					 set_nationality = SAF
