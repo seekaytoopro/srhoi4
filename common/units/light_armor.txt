@@ -20,19 +20,18 @@ sub_units = {
 			category_army
 		}
 
-		recon = 0.2
 		combat_width = 2
 
 		need = {
-			light_tank_equipment = 60
+			light_tank_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 10
-		default_morale = 0.3
-		training_time = 180
+		max_organisation = 15
+		default_morale = 0.38
+		training_time = 120
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.29
+		supply_consumption = 0.2175
 
 
 
@@ -41,18 +40,18 @@ sub_units = {
 			movement = -0.2
 		}
 		mountain = 	{
-		    attack = -0.4
-			defence = -0.15
+		    attack = -0.45
+			defence = -0.35
 			movement = -0.5
 		}
 		jungle = {
-		    attack = -0.1
-			defence = -0.05 
+		    attack = -0.25
+			defence = -0.1
 			movement = -0.2
 		}
 		marsh = {
-		    attack = -0.1 
-			movement = -0.1
+		    attack = -0.10
+			movement = -0.10
 		}
 		urban = {
 			attack = -0.3
