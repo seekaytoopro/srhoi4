@@ -145,8 +145,8 @@ technologies = {
 			entrenchment  = 2
 			
 			fort = {
-				defence = 0.10
-				attack = 0.10
+				defence = 0.05
+				attack = 0.05
 			}
 		}
 		
@@ -816,7 +816,7 @@ technologies = {
 			soft_attack = 0.03
 			fort = {
 				defence = 0.05
-				attack = 0.10
+				attack = 0.05
 			}
 			jungle = {
 				attack = 0.1
@@ -885,7 +885,7 @@ technologies = {
 		flamethrower = {
 			soft_attack = 0.05
 			fort = {
-				attack = 0.1
+				attack = 0.05
 			}
 		}
 
@@ -959,7 +959,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
-			max_strength = 5
+			
 		}
 		
 		path = {
@@ -1005,7 +1005,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
-			max_strength = 5
+			
 		}
 		path = {
 			leads_to_tech = tech_field_hospital4
@@ -1049,7 +1049,7 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.15
 			experience_loss_factor = -0.10
-			max_strength = 5
+			
 		}
 
 		research_cost = 1.5
