@@ -378,10 +378,10 @@ NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admir
 NDefines.NNavy.GUN_HIT_PROFILES = {
 	225.0, -- heavy attack 80
 	500.0, -- torpedos 145
-	325.0 -- light attack 45
+	300.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
-		2.0,	-- heavy attack
+		3.0,	-- heavy attack
 		12.0,	-- torpedos
 		2.0	--  light attack	
 	}
@@ -431,8 +431,9 @@ NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carr
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6.5              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.15		-- Max planes that can join a combat comparing to the total strength of the ships
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.45 -- max extra plane % that can join every day
+-- EDIT THIS TO REDUCE OUTSIDE AIR INFLUENCE
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.001		-- Max planes that can join a combat comparing to the total strength of the ships
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO_PER_DAY = 0.1 -- max extra plane % that can join every day
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_MIN_CAP = 25			-- Min cap for planes that can join naval combat
 NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.01 -- (0.2 -> 0.01) -- SilentLegion#1356, MTG 
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.8 -- (0.2 -> 0.75) -- SilentLegion#1356, MTG 
