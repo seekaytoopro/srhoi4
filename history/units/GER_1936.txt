@@ -50,11 +50,9 @@ division_template = {
 		anti_air = { x = 0 y = 5 }
 	}
 }
-
 division_template = {
-	name = "Gebirgsjäger"		# Gebirgsbrigade
+	name = "Gebirgs-Brigade"		# Gebirgsbrigade
 	#Note: precursor to Gebirgs-Divisions
-	 is_locked = yes
 	division_names_group = GER_Mnt_01
 
 	regiments = {
@@ -71,20 +69,19 @@ division_template = {
 		mountaineers = { x = 2 y = 2 }
 		mountaineers = { x = 3 y = 0 }
 		mountaineers = { x = 3 y = 1 }
-		anti_air_brigade = { x = 3 y = 2 }
+		mountaineers = { x = 3 y = 2 }
 		artillery_brigade = { x = 4 y = 0 }
 		artillery_brigade = { x = 4 y = 1 }
 		artillery_brigade = { x = 4 y = 2 }
 		artillery_brigade = { x = 4 y = 3 }
 	}
 	support = { 
-		  engineer = { x = 0 y = 0 }
-    armored_car_recon = { x = 0 y = 1 } 
-	logistics_company { x = 0 y = 2 }
-	field_hospital = { x = 0 y = 3 }
-	maintenance_company = { x = 0 y = 4 }
-	flamethrower = { x = 0 y = 5 }
-	artillery = { x = 0 y = 6 }
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
 	}
 }
 
@@ -234,146 +231,6 @@ division_template = {
 }
 
 units = {
-
-
-division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-		division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 6334
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 1.0
-	}
-
-
-
 
 	##### Oberkommando des Heeres #####
 	### 1. Armee (Wehrmacht-Gruppenkommando) ###
