@@ -2,22 +2,6 @@ ideas = {
 
 	country = {
 
-		amend_the_budget_idea = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-			removal_cost = -1
-
-			picture = generic_goods_red_bonus
-			
-			modifier = {
-			}
-		}
-
 		economic_recovery = {
 			allowed = {
 				always = no
@@ -31,7 +15,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.50
+				production_speed_industrial_complex_factor = 0.45
 			}
 		}
 		great_depression = {
@@ -40,6 +24,8 @@ ideas = {
 			allowed = {
 				always = no
 			}
+			
+		
 
 			allowed_civil_war = {
 				always = yes
@@ -51,7 +37,21 @@ ideas = {
 				political_power_cost = 0.85
 				consumer_goods_factor = 0.3
 				}
+				
+					
 		}
+		
+		 USA_idea_intervention_in_africa = {
+					 
+					 allowed_civil_war{ always = yes}
+					 allowed = {always = no}
+					 removal_cost = -1
+					 modifier = {
+					  production_speed_air_base_factor=0.1
+				
+					 }
+					 }
+		
 		great_depression_2 = {
 			picture = usa_great_depression_2
 			
@@ -934,7 +934,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				amphibious_invasion = 0.10
+				amphibious_invasion = 0.05
 			}
 			equipment_bonus = {
 				convoy = {
@@ -957,12 +957,7 @@ ideas = {
 			removal_cost = -1
 		
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
-				heavy_fighter_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
+				
 			}
 		}
 
@@ -979,9 +974,7 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				CAS_equipment = {
-					build_cost_ic = -0.05 instant = yes
-				}
+				
 			}
 		}
 
@@ -1002,7 +995,7 @@ ideas = {
 				# 	build_cost_ic = -0.1 instant = yes
 				# }
 				tac_bomber_equipment = {
-					build_cost_ic = -0.05 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
@@ -1380,6 +1373,7 @@ ideas = {
 		
 			available = {
 				has_intelligence_agency = yes
+				threat > 0.5
 			}
 			
 			allowed = {
@@ -1768,10 +1762,9 @@ ideas = {
 	tank_manufacturer = { 
 	
 		designer = yes
-		
 	
 		marmon_herrington = {
-			cost = 75
+			
 			
 			allowed = {
 				original_tag = USA
@@ -1794,7 +1787,6 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
 			
 
 			
@@ -1816,7 +1808,6 @@ ideas = {
 			available = {
 				has_completed_focus = USA_main_battle_tanks
 			}
-			cost = 75
 
 			
 			research_bonus = {
@@ -1832,9 +1823,6 @@ ideas = {
 				light_tank_equipment = {
 					build_cost_ic = -0.05
 				}
-				heavy_tank_equipment = {
-					build_cost_ic = -0.05
-				}
 			}
 
 			modifier = {
@@ -1847,7 +1835,6 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
 			available = {
 				has_completed_focus = USA_tank_destroyer_doctrine
 			}
@@ -1866,12 +1853,12 @@ ideas = {
 					hard_attack = 0.25
 				}
 				medium_tank_destroyer_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
 				heavy_tank_destroyer_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.05
 					ap_attack = 0.1
 					hard_attack = 0.25
 				}
@@ -1888,7 +1875,6 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
 			
 
 			
@@ -1908,7 +1894,7 @@ ideas = {
 		designer = yes
 		
 		norfolk_naval_yard = {
-			cost = 75
+			
 			
 			allowed = {
 				original_tag = USA
@@ -1991,7 +1977,7 @@ ideas = {
 		designer = yes
 		
 		north_american_aviation = {
-			cost = 75
+			
 			
 			allowed = {
 				original_tag = USA
@@ -2009,13 +1995,32 @@ ideas = {
 			}
 		}
 		
+		#bell = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { light_aircraft_manufacturer }	#TODO, make different from north american
+		#	
+		#	modifier = {
+		#	}
+		#}	
+		
 		lockheed = {
 			
 			
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
+			
 
 			
 			research_bonus = {
@@ -2034,7 +2039,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
+			
 
 			
 			research_bonus = {
@@ -2054,7 +2059,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			cost = 75
+			
 
 			
 			research_bonus = {
@@ -2066,10 +2071,28 @@ ideas = {
 			modifier = {
 			}
 		}
-
+		
+		#consolidated_aircraft = {
+		#	
+		#	
+		#	allowed = {
+		#		original_tag = USA
+		#	}
+		#	
+		#
+		#	
+		#	research_bonus = {
+		#		air_equipment = 0.15
+		#	}
+		#	
+		#	traits = { heavy_aircraft_manufacturer } #TODO remove?
+		#	
+		#	modifier = {
+		#	}
+		#}
 		grumman = {
 			
-			cost = 75
+			
 			allowed = {
 				original_tag = USA
 			}
@@ -2094,7 +2117,7 @@ ideas = {
 		
 		springfield_armory = {
 			
-			cost = 75
+			
 			allowed = {
 				original_tag = USA
 			}
@@ -2113,7 +2136,7 @@ ideas = {
 		
 		ford_motor_company = {
 			
-			cost = 75
+			
 			allowed = {
 				original_tag = USA
 			}
@@ -2140,7 +2163,7 @@ ideas = {
 			}
 			
 
-			cost = 75
+			
 			research_bonus = {
 				artillery = 0.15
 			}
