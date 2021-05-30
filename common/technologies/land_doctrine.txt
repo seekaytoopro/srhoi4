@@ -183,12 +183,10 @@ technologies = {
 		mot_artillery_brigade = {
 			maximum_speed = 0.1
 			default_morale = 0.2
-			max_organisation = 2.5
 		}
 		mot_anti_tank_brigade = {
 			maximum_speed = 0.1
 			default_morale = 0.2
-					max_organisation = 1.0
 		}
 		mot_anti_air_brigade = {
 			maximum_speed = 0.1
@@ -293,13 +291,13 @@ technologies = {
 			max_organisation = 5
 		}			
 		light_sp_artillery_brigade = {
-			soft_attack = 0.25
+			soft_attack = 0.2
 		}	
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.25
+			soft_attack = 0.2
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.25
+			soft_attack = 0.2
 		}			
 		light_tank_destroyer_brigade = {
 			hard_attack = 0.2
@@ -836,7 +834,7 @@ technologies = {
 		}
 		
 		category_front_line = {
-			 soft_attack = 0.2
+			 soft_attack = 0.15
 		}
 		#supply_consumption_factor = 0.05
 		
@@ -1484,7 +1482,9 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		
-		
+		category_front_line = {
+			 soft_attack = 0.05
+		}
 		
 		category_all_infantry = { 
 			soft_attack = 0.05 
@@ -2431,7 +2431,7 @@ technologies = {
 			default_morale = 0.1
 		}
 		artillery_brigade = { 
-			max_strength = 7.0
+			max_strength = 7.5
 		}
 		mot_artillery_brigade = {
 			max_strength = 7.5
@@ -2444,7 +2444,7 @@ technologies = {
 			max_organisation = 2.5
 		}		
 		anti_air_brigade = { 
-			max_strength = 5.5
+			max_strength = 7.5
 			max_organisation = 2.5
 		}
 		anti_tank_brigade = { 
@@ -2555,12 +2555,12 @@ technologies = {
 
 		artillery_brigade = { 
 			soft_attack = 0.08
-			defense = 0.125
+			defense = 0.15
 		}
 
 		infantry = {
 			max_organisation = 8
-			breakthrough = 0.08
+			breakthrough = 0.10
 		}
 
 		mechanized = {
