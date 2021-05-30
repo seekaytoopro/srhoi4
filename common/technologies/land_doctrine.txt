@@ -976,7 +976,7 @@ technologies = {
 	
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.20
 		}
 		
 		path = {
@@ -1016,7 +1016,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.20
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1061,7 +1061,7 @@ technologies = {
 		
 		category_line_artillery = {
 			default_morale = 0.3
-			max_organisation = 20
+			max_organisation = 30
 		}
 		
 		path = {
@@ -1314,7 +1314,9 @@ technologies = {
 		}
 			
 		#combat advantage when air superior
-		army_bonus_air_superiority_factor = 0.20
+		#army_bonus_air_superiority_factor = 0.20
+		# Replaced with ground support buff
+		air_cas_present_factor = 0.15
 		
 		doctrine = yes	
 		research_cost = 4.5
