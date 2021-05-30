@@ -294,7 +294,7 @@ ideas = {
 			
 			equipment_bonus = {
 				fighter_equipment = {
-					build_cost_ic = -0.025 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 			}
 		}
