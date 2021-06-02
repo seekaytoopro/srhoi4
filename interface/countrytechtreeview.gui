@@ -3775,6 +3775,40 @@ guiTypes = {
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
+
+			instantTextBoxType = {
+				name = "ground_support_reminder"
+				position = { x = 1170 y = 142 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "Everyone should research"
+				maxWidth = 380
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "ground_support_reminder2"
+				position = { x = 1170 y = 208 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "|"
+				maxWidth = 380
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "ground_support_reminder3"
+				position = { x = 1170 y = 218 }
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "V"
+				maxWidth = 380
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
  			
 # 			instantTextBoxType = {
 #				name = "strategic_destruction_title"

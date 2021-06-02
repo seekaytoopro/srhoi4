@@ -31,8 +31,8 @@ focus_tree = {
 			country_event = { id = soviet.300 days = 55 }
 		}
 		completion_reward = {
-		add_political_power = 120
-		country_event = { id = soviet.53 }
+			add_ideas = partial_economic_mobilisation
+			country_event = { id = soviet.53 }
 			
 				add_timed_idea = {
 					idea = officers_purged
@@ -47,9 +47,6 @@ focus_tree = {
 
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
-			# hidden_effect = {
-			# 	country_event = { id = soviet.300 days = 30 }
-			# }
 		}
 	}
 

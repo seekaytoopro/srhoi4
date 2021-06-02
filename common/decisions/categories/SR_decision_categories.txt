@@ -1,0 +1,18 @@
+################
+####   SR   ####
+################
+
+Battle_for_France = {
+	priority = 999
+	
+	allowed = {
+		original_tag = FRA
+	}
+
+	available = {
+	}
+
+	visible = {
+		has_war = yes
+	}
+}

@@ -2568,7 +2568,7 @@ focus = {
 		add_resource = {
 			type = oil
 			amount = 32
-			state = 46
+			state = 158
 		}
 
 		add_resource = {

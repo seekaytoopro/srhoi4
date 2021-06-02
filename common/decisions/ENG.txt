@@ -288,6 +288,7 @@ foreign_politics = {
 						option = ENABLE_MINI_SR
 					}
 				}
+				AST = { is_ai = yes }
 				AST = { surrender_progress < 0.01 }
 			}
 	
@@ -374,10 +375,7 @@ foreign_politics = {
 				 set_nationality = ENG
 			    }
 			}
-			every_state = { 
-				limit = { is_owned_by = FRF }
-				set_compliance = 100
-			}
+			
 			ENG = { 
 				annex_country = {
 					target = FRF
@@ -397,8 +395,12 @@ foreign_politics = {
 				transfer_state = 782
 				transfer_state = 543
 			}
+			every_state = { 
+				limit = { AND = { is_owned_by = ENG is_core_of = FRF } }
+				set_compliance = 100
+			}
 		}
-		}
+	}
 	
 	
 		ENG_annex_saf = {
