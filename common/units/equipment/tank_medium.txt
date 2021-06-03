@@ -116,7 +116,7 @@ equipments = {
 		ap_attack = 101
 		air_attack = 0
 		
-		build_cost_ic = 225
+		build_cost_ic = 25
 		resources = {
 			#oil = 2
 			tungsten = 2
