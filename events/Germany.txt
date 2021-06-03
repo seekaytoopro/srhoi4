@@ -531,11 +531,28 @@ country_event = {
 			technology = improved_heavy_tank
 		}
 		add_tech_bonus = {
+			name = heavy_armor_bonus
+			bonus = 1.0
+			uses = 1
+			technology = improved_heavy_tank
+		}
+		add_tech_bonus = {
 			name = light_armor_bonus
 			bonus = 1.0
 			uses = 1
 			technology = advanced_light_tank
 		}
+		add_tech_bonus = {
+			name = GER_soviet_treaty
+			bonus = 1.0
+			uses = 2
+			technology = improved_medium_spaa
+			technology = improved_medium_td
+			technology = improved_medium_art
+			technology = improved_heavy_spaa
+			technology = improved_heavy_td
+			technology = improved_heavy_art
+		}	
 		set_country_flag = SOV_armor_bonus_given
 		}
 	}
