@@ -233,26 +233,10 @@ create_country_leader = {
 
 set_convoys = 70
 
-1939.1.1 = {
-
-	# Didn't take office until '40, added for flavor
-	create_country_leader = {
-		name = "Peter Fraser"
-		desc = "POLITICS_PETER_FRASER_DESC"
-		picture = "Portrait_NewZealand_Peter_Fraser.dds"
-		expire = "1965.1.1"
-		ideology = socialism
-		traits = {
-			#
-		}
-	}
-	set_convoys = 50
-}
-
 create_field_marshal = {
 	name = "Bernard Freyberg"
 	gfx = "GFX_NZL_bernard_freyberg"
-	traits = { desert_fox jungle_rat organizer inflexible_strategist skilled_staffer politically_connected media_personality }
+	traits = { jungle_rat organizer inflexible_strategist skilled_staffer politically_connected media_personality }
 	skill = 6
 	attack_skill = 5
 	defense_skill = 5
@@ -274,7 +258,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "William Stevens"
 	gfx = "GFX_NZL_william_stevens"
-	traits = { panzer_leader armor_officer desert_fox trickster trait_cautious career_officer }
+	traits = { panzer_leader armor_officer trickster trait_cautious career_officer }
 	skill = 4
 	attack_skill = 5
 	defense_skill = 4
@@ -285,11 +269,22 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Edmund Rupert Drummond"
 	gfx = "GFX_NZL_edmund_drummond"
-	traits = { spotter fleet_protector fly_swatter destroyer_leader cruiser_captain search_pattern_expert hunter_killer air_controller }
+	traits = { chief_engineer fleet_protector spotter blockade_runner }
 	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 5
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Neil Anderson"
+	gfx = "GFX_NZL_peter_phipps"
+	traits = { bold navy_career_officer superior_tactician fly_swatter blue_water_expert }
+	skill = 5
 	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 5
 	coordination_skill = 5
 }
 

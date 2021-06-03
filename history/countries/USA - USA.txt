@@ -228,11 +228,11 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Dwight D. Eisenhower"
 	picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { organizer offensive_doctrine trait_cautious armor_officer skilled_staffer politically_connected media_personality career_officer brilliant_strategist}
+	traits = { organizer offensive_doctrine desert_fox trait_cautious armor_officer skilled_staffer politically_connected media_personality career_officer brilliant_strategist}
 	skill = 6
 	id = 602
 	attack_skill = 4
-	defense_skill = 4
+	defense_skill = 6
 	planning_skill = 7
 	logistics_skill = 7
 }
@@ -277,13 +277,13 @@ create_field_marshal = {
 	name = "Douglas MacArthur"
 	id = 57
 	picture = "Portrait_USA_Douglas_MacArthur.dds"
-	traits = {  offensive_doctrine brilliant_strategist career_officer media_personality jungle_rat naval_invader politically_connected }
+	traits = {  offensive_doctrine trait_reckless brilliant_strategist career_officer media_personality jungle_rat naval_invader politically_connected }
 	skill = 6
 
-	attack_skill = 4
+	attack_skill = 5
 	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 7
+	planning_skill = 3
+	logistics_skill = 5
 }
 
 create_corps_commander = {

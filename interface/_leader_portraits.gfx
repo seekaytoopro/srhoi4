@@ -1318,4 +1318,144 @@ spriteTypes = {
 		name = "GFX_portrait_maurizio_giglio"
 		texturefile = "gfx/leaders/operative_unknown.dds"
 	}
+
+	#la
+	SpriteType = {
+		name = "GFX_portrait_SPA_alfonso_xiii"
+		texturefile = "gfx/leaders/SPA/portrait_spa_alfonso_xiii.dds"
 	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_emilio_mola"
+		texturefile = "gfx/leaders/SPA/portrait_spa_emilio_mola.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_infante_alfonso_carlos"
+		texturefile = "gfx/leaders/SPA/portrait_spa_infante_alfonso_carlos.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+		texturefile = "gfx/leaders/SPA/portrait_spa_jose_antonio_primo_de_rivera.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_juan_yague"
+		texturefile = "gfx/leaders/SPA/portrait_spa_juan_yague.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_luis_carrero_blanco"
+		texturefile = "gfx/leaders/SPA/portrait_spa_luis_carrero_blanco.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_miguel_cabanellas"
+		texturefile = "gfx/leaders/SPA/portrait_spa_miguel_cabanellas.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_manuel_fal_conde"
+		texturefile = "gfx/leaders/SPA/portrait_spa_manuel_fal_conde.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPA_jose_sanjurjo"
+		texturefile = "gfx/leaders/SPA/portrait_spa_jose_sanjurjo.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_jose_millan_astray"
+		texturefile = "gfx/leaders/SPA/portrait_spa_jose_millan_astray.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_xavier_of_bourbon_parma"
+		texturefile = "gfx/leaders/SPA/portrait_spa_xavier_of_bourbon_parma.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_military_junta"
+		texturefile = "gfx/leaders/SPA/portrait_spa_military_junta.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_augustin_muynoz_grandes"
+		texturefile = "gfx/leaders/SPA/portrait_spa_augustin_muynoz_grandes.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_mohamed_meziane"
+		texturefile = "gfx/leaders/SPA/portrait_spa_mohamed_meziane.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+		texturefile = "gfx/leaders/SPA/portrait_spa_gonzalo_queipo_de_llano.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_SPR_buenaventura_durruti"
+		texturefile = "gfx/leaders/SPR/portrait_spr_buenaventura_durruti.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPR_eduardo_medrano_rivas"
+		texturefile = "gfx/leaders/SPR/portrait_spr_eduardo_medrano_rivas.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_portrait_SPA_jose_enrique_varela"
+		texturefile = "gfx/leaders/SPA/portrait_spa_jose_enrique_varela.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPR_jose_asensio_torrado"
+		texturefile = "gfx/leaders/SPR/portrait_spr_jose_asensio_torrado.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_portrait_SPR_vicente_rojo_lluch"
+		texturefile = "gfx/leaders/SPR/portrait_spr_vicente_rojo_lluch.dds"
+	}	
+	SpriteType = {
+		name = "GFX_portrait_SPR_lina_odena"
+		texturefile = "gfx/leaders/SPR/portrait_spr_lina_odena.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_mate_zalka"
+		texturefile = "gfx/leaders/SPR/portrait_spr_mate_zalka.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_jose_miaja"
+		texturefile = "gfx/leaders/SPR/portrait_spr_jose_miaja.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_antonio_cordon_garcia"
+		texturefile = "gfx/leaders/SPR/portrait_spr_antonio_cordon_garcia.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_miguel_buiza_fernandez_palacios"
+		texturefile = "gfx/leaders/SPR/portrait_spr_miguel_buiza_fernandez_palacios.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_anarchist_commune"
+		texturefile = "gfx/leaders/SPR/portrait_spr_anarchist_commune.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_julian_gorkin"
+		texturefile = "gfx/leaders/SPR/portrait_spr_julian_gorkin.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_janos_galicz"
+		texturefile = "gfx/leaders/SPR/portrait_spr_janos_galicz.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_valentin_gonzalez"
+		texturefile = "gfx/leaders/SPR/portrait_spr_valentin_gonzalez.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_juan_modesto"
+		texturefile = "gfx/leaders/SPR/portrait_spr_juan_modesto.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_SPR_cipriano_mera"
+		texturefile = "gfx/leaders/SPR/portrait_spr_cipriano_mera.dds"
+	}
+
+}

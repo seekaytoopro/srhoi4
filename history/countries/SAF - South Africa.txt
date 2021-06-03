@@ -185,10 +185,10 @@ create_corps_commander = {
 	picture = "Portrait_SAF_Christiaan_du_Toit.tga"
 	traits = { organizer harsh_leader commando desert_fox armor_officer panzer_leader career_officer}
 	skill = 5
-	attack_skill = 5
-	defense_skill = 4
+	attack_skill = 3
+	defense_skill = 6
 	planning_skill = 3
-	logistics_skill = 4
+	logistics_skill = 5
 }
 create_corps_commander = {
 	name = "Christoffel Venter"
