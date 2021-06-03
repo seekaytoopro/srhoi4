@@ -26,7 +26,7 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.05 -- 0.01
 
 
 NDefines.NMilitary.ENCIRCLED_PENALTY = -0.35
-NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 22 -- (30)
+NDefines.NMilitary.MAX_OUT_OF_SUPPLY_DAYS = 17 -- (30)
 NDefines.NMilitary.OUT_OF_SUPPLY_ATTRITION = 0.4                -- max attrition when out of supply
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0            -- WAS 0.2 | Most rulesets ban deleting encircled troops, but at least this prevents some manpower from returning | Deleting encircled divisions is always banned anyways, so this reduces unfair play | percentage of manpower returned when an encircled unit is disbanded
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 0 -- WAS 15 | This prevents reassignment memes | This is the number of days it takes to REASSIGN a general. 
@@ -52,7 +52,7 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.074 -- (0.05)
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.06 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0333 	-- (0.05) global damage modifier
 
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01

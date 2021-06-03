@@ -109,7 +109,7 @@ equipments = {
 		ap_attack = 36
 		air_attack = 0		
 		
-		build_cost_ic = 11.6
+		build_cost_ic = 15.6
 		resources = {
 			steel = 3
 		}
@@ -128,7 +128,7 @@ equipments = {
 		maximum_speed = 9
 
 		#Defensive Abilities
-		defense = 14.46
+		defense = 17.46
 		breakthrough = 46
 		armor_value = 40
 
@@ -138,7 +138,7 @@ equipments = {
 		ap_attack = 51
 		air_attack = 0	
 		
-		build_cost_ic = 12.6
+		build_cost_ic = 17.6
 		resources = {
 			steel = 4
 		}
@@ -226,7 +226,7 @@ equipments = {
 		soft_attack = 55.43
 		hard_attack = 1
 		
-		build_cost_ic = 11.6
+		build_cost_ic = 15.6
 		resources = {
 			steel = 3
 			tungsten= 1
@@ -258,7 +258,7 @@ equipments = {
 		soft_attack = 63.135
 		hard_attack = 1.5
 		
-		build_cost_ic = 12.6
+		build_cost_ic = 16.6
 		resources = {
 			steel = 4
 			tungsten = 1
@@ -348,7 +348,7 @@ equipments = {
 		hard_attack = 36
 		ap_attack = 56
 		
-		build_cost_ic = 11.6
+		build_cost_ic = 15.6
 		resources = {
 			steel = 3
 			tungsten = 1
@@ -381,7 +381,7 @@ equipments = {
 		hard_attack = 43.375
 		ap_attack = 78
 		
-		build_cost_ic = 12.6
+		build_cost_ic = 17.6
 		resources = {
 			steel = 4
 			tungsten = 1
@@ -471,7 +471,7 @@ equipments = {
 		ap_attack = 20
 		air_attack = 40
 		
-		build_cost_ic = 11.6
+		build_cost_ic = 15.6
 		resources = {
 			steel = 3
 		}
@@ -504,7 +504,7 @@ equipments = {
 		ap_attack = 35
 		air_attack = 54
 		
-		build_cost_ic = 12.6
+		build_cost_ic = 17.6
 		resources = {
 			steel = 4
 		}

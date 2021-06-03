@@ -39,7 +39,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 5
 		
-		build_cost_ic = 33 #was 26 
+		build_cost_ic = 35 #was 26 
 		resources = {
 			steel = 3
 			chromium = 3
@@ -82,7 +82,7 @@ equipments = {
 		hard_attack = 30
 		ap_attack = 111
 		
-		build_cost_ic = 36.5
+		build_cost_ic = 38.5
 		resources = {
 			steel = 3
 			chromium = 3
@@ -113,7 +113,7 @@ equipments = {
 		hard_attack = 34
 		ap_attack = 131
 		
-		build_cost_ic = 39.5
+		build_cost_ic = 41.5
 			resources = {
 			steel = 4
 			chromium = 3
@@ -151,12 +151,12 @@ equipments = {
 		armor_value = 45
 
 		#Offensive Abilities
-		soft_attack = 79.58
+		soft_attack = 60
 		hard_attack = 1
 		ap_attack = 8
 		air_attack = 0
 		
-		build_cost_ic = 33
+		build_cost_ic = 35
 		resources = {
 			steel = 3
 			chromium = 3
@@ -199,10 +199,10 @@ equipments = {
 		armor_value = 68
 
 		#Offensive Abilities 
-		soft_attack = 105
+		soft_attack = 80
 		hard_attack = 2
 		
-		build_cost_ic = 36.5
+	build_cost_ic = 38.5
 		resources = {
 			steel = 4
 			chromium = 3
@@ -231,10 +231,10 @@ equipments = {
 		armor_value = 90
 
 		#Offensive Abilities
-		soft_attack = 120
+		soft_attack = 95
 		hard_attack = 2.5
 		
-		build_cost_ic = 39.5
+		build_cost_ic = 41.5
 			resources = {
 			steel = 5
 			chromium = 3
@@ -273,11 +273,11 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 3.4
-		hard_attack = 56.25
+		hard_attack = 51.25
 		ap_attack = 98
 		air_attack = 0
 		
-		build_cost_ic = 33 #was 26
+		build_cost_ic = 35 #was 26
 		resources = {
 			steel = 3
 			chromium = 3
@@ -320,11 +320,11 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 4
-		hard_attack = 76.875
+		hard_attack = 62.875
 		ap_attack = 150
 		air_attack = 0
 		
-		build_cost_ic = 36.5
+		build_cost_ic = 38.5
 		resources = {
 			steel = 4
 			chromium = 3
@@ -356,11 +356,11 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 5.8
 
-		hard_attack = 99.375
+		hard_attack = 73.375
 		ap_attack = 160
 		air_attack = 0
 		
-		build_cost_ic = 39.5
+		build_cost_ic = 41.5
 			resources = {
 			steel = 4
 			chromium = 4
@@ -403,7 +403,7 @@ equipments = {
 		ap_attack = 25
 		air_attack = 45
 		
-		build_cost_ic = 33 #was 26
+		build_cost_ic = 35 #was 26
 		resources = {
 			steel = 3
 			chromium = 3
@@ -451,7 +451,7 @@ equipments = {
 		ap_attack = 60
 		air_attack = 77.5
 		
-		build_cost_ic = 36.5
+		build_cost_ic = 38.5
 		resources = {
 			steel = 3
 			chromium = 3
@@ -487,7 +487,7 @@ equipments = {
 		ap_attack = 88
 		air_attack = 100
 		
-		build_cost_ic = 39.5
+		build_cost_ic = 41.5
 			resources = {
 				#oil = 1
 			steel = 4
