@@ -3428,7 +3428,7 @@ focus_tree = {
 						Date > 1942.5.1
 						Date < 1942.10.1
 						NOT={has_idea=GER_barbarossa}
-						NOT={has_idea= GER_ardennenoffensive }
+						# NOT={has_idea= GER_ardennenoffensive }
 					}
 					relative_position_id = GER_ussr_war_goal
 					x = 0
@@ -3463,7 +3463,7 @@ focus_tree = {
 					available = {
 						Date > 1943.5.1
 						NOT={has_idea=GER_barbarossa }
-						NOT={has_idea= GER_ardennenoffensive }
+						# NOT={has_idea= GER_ardennenoffensive }
 						NOT={has_idea = GER_fall_blau}
 					}
 					relative_position_id = GER_fall_blau
@@ -3499,7 +3499,7 @@ focus_tree = {
 					available = {
 						Date > 1944.5.1
 						NOT={ has_idea =GER_barbarossa }
-						NOT={ has_idea = GER_ardennenoffensive }
+						# NOT={ has_idea = GER_ardennenoffensive }
 						NOT={ has_idea = GER_fall_blau }
 						NOT={ has_idea = GER_operation_citadel }
 					}
