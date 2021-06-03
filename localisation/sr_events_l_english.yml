@@ -151,4 +151,7 @@
  news.400:0 "Axis Defeated!"
  news.400.t:0 "Axis Defeated!"
  news.400.d:0 "The Axis has been defeated, and Fascism driven from Europe! \n\nPeace talks about the nature of postwar Europe have completely broken down between the Allies and Soviets, and tensions are rising dramatically. \n\nWAR BETWEEN THE §RCOMINTERN (SOVIETS, HUNGARY, ROMANIA, BULGARIA AND CROATIA)§! AND §BALLIES (ALLIES, GERMANY, AND ITALY)§! WILL BEGIN IN TWO MONTHS, PREPARE FOR WAR!"
+ news.401.d:0 "Mud season will end in 45 days.\n\n§RAll divisions on Soviet core territory will have 18% less division attack, suffer 10% attrition, have 27% less breakthrough, and have a -18% speed penalty (-30.5% for  armor divisions).§!"
+ news.402.d:0 "Mud season will end in 45 days.\n\n§RAll divisions on Soviet core territory will have 18% less division attack, suffer 10% attrition, have 27% less breakthrough, and have a -18% speed penalty (-30.5% for  armor divisions).§!"
  news.400.a:0 "Let them come!"
+ news.401.a:0 "Ok"
