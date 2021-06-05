@@ -160,7 +160,6 @@ focus_tree = {
 
 			add_ideas = georgy_zhukov_chief
 
-			#hidden_effect = {
 			create_field_marshal = {
 				name = "Georgy Zhukov (New Tank Field Marshal)"
 				id = 410
@@ -178,61 +177,54 @@ focus_tree = {
 			create_field_marshal = {
 			name = "Boris Shaposhnikov (New Inf Field Marshal)"
 				picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
-				traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer}
+				traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer logistics_wizard}
 				skill = 5
-		
-				attack_skill = 2
-				defense_skill = 4
-				planning_skill = 3
+				attack_skill = 3
+				defense_skill = 6
+				planning_skill = 2
 				logistics_skill = 7
 			}
 	
 			create_corps_commander = {
-			name = "Ivan Konev"
-			id = 408
+				name = "Ivan Konev"
+				id = 408
 				picture = "Portrait_Soviet_Ivan_Konev.dds"
-			traits = { armor_officer harsh_leader politically_connected panzer_leader trait_reckless ranger }
-			skill = 5
-	
-	
-	
-			attack_skill = 5
-			defense_skill = 7
-			planning_skill = 4
-			logistics_skill = 4
+				traits = { armor_officer harsh_leader politically_connected panzer_leader trait_reckless ranger }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 7
+				planning_skill = 4
+				logistics_skill = 4
 			}
 	
 			create_corps_commander = {
 			name = "Vasily Kuznetsov"
 				picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
-			traits = { winter_specialist commando infantry_officer politically_connected infantry_leader media_personality war_hero brilliant_strategist }
-			skill = 5
+				traits = { winter_specialist commando infantry_officer politically_connected infantry_leader media_personality war_hero brilliant_strategist }
+				skill = 5
 	
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 3
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
 			}
 	
 			create_corps_commander = {
 			name = "Markian Popov"
 				picture = "Portrait_Soviet_Matkian_Popov.dds"
-			traits = { infantry_officer brilliant_strategist war_hero infantry_leader urban_assault_specialist trait_engineer}
-			skill = 5
-	
-	
-			attack_skill = 6
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 3
+				traits = { infantry_officer brilliant_strategist war_hero infantry_leader urban_assault_specialist trait_engineer}
+				skill = 5
+				attack_skill = 6
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
 			}
 	
 			create_corps_commander = {
-				name = "Nikolai Berzarin"
-					picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
-				traits = { infantry_officer trait_mountaineer war_hero trait_reckless skilled_staffer old_guard trait_cautious }
+				name = "Nikolai Berzarin (New Inf General)"
+				picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
+				traits = { infantry_officer ranger war_hero trait_reckless skilled_staffer old_guard infantry_leader infantry_expert }
 				skill = 5
-		
 				attack_skill = 6
 				defense_skill = 7
 				planning_skill = 2
@@ -240,39 +232,35 @@ focus_tree = {
 			}
 	
 			create_corps_commander = {
-			name = "Alexander Gorbatov"
+				name = "Alexander Gorbatov"
 				picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
-			traits = { career_officer cavalry_officer harsh_leader trait_reckless infantry_leader }
-			skill = 5
-	
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 4
+				traits = { career_officer cavalry_officer harsh_leader trait_reckless infantry_leader }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
 			}
 	
 			create_corps_commander = {
-			name = "Dmitry Lelyushenko (New Tank Commander)"
+				name = "Dmitry Lelyushenko (New Tank Commander)"
 				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
-			traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster  }
-			skill = 5
-	
-			attack_skill = 5
-			defense_skill = 4
-			planning_skill = 6
-			logistics_skill = 1
+				traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster  }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 6
+				logistics_skill = 1
 			}
 			create_corps_commander = {
 			name = "Rodion Malinovsky"
 				picture = "Portrait_Soviet_Rodion_Malinovsky.dds"
-			traits = { winter_specialist swamp_fox career_officer old_guard trait_cautious politically_connected }
-			skill = 5
-	
-	
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 8
+				traits = { winter_specialist swamp_fox career_officer old_guard trait_cautious politically_connected }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 8
 			}
 		#}
 			
@@ -280,79 +268,79 @@ focus_tree = {
 				hidden_effect = {
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 3391
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 6414
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 9348
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 301
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 9378
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 6283
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 3259
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 11282
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 11853
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 652
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 3979
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 3
+						level = 4
 						province = 9868
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 4
+						level = 5
 						province = 6380
 						instant_build = yes
 					}
@@ -514,50 +502,44 @@ focus = {
 			add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
 			add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
 			add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
+			add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
 		}
 	}
 	completion_reward = {
-	#hidden_effect = {
+		create_corps_commander = {
+			name = "Konstantin Rokossovsky (Best Tank Commander)"
+			id = 402
+			picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
+			traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 3
+		}
 
-	create_corps_commander = {
-	name = "Konstantin Rokossovsky (Best Tank Commander)"
-	id = 402
-	picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-	traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero}
-	skill = 6
+		create_corps_commander = {
+			name = "Aleksandr Vasilevsky"
+			id = 407
+			picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+			traits = { winter_specialist armor_officer politically_connected trait_cautious harsh_leader skilled_staffer panzer_leader organizer}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 8
+			logistics_skill = 4
+		}
 
-	attack_skill = 6
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 3
-	}
-
-	create_corps_commander = {
-	name = "Aleksandr Vasilevsky"
-	id = 407
-		picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-	traits = { winter_specialist armor_officer politically_connected trait_cautious harsh_leader skilled_staffer panzer_leader organizer}
-	skill = 6
-
-
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 8
-	logistics_skill = 4
-	}
-
-	create_field_marshal = {
-	name = "Kirill Moskalenko"
-		picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
-	traits = { winter_specialist brilliant_strategist infantry_leader old_guard career_officer ranger skilled_staffer}
-	skill = 6
-
-	attack_skill = 6
-	defense_skill = 3
-	planning_skill = 6
-	logistics_skill = 1
-	}
-		#}
+		create_field_marshal = {
+			name = "Kirill Moskalenko (Best Offensive Inf Marshal)"
+			picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
+			traits = { winter_specialist brilliant_strategist infantry_leader old_guard career_officer ranger skilled_staffer}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 3
+		}
 	}
 }
 

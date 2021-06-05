@@ -56,7 +56,7 @@
  rom_refugees:0 "Romanian Refugees"
  rom_refugees_desc:0 "Following the loss of Bessarabia to the Soviets and North Translyvania to the Hungarians, our remaining territories have received a huge influx of refugees. With little economic opportunity available on such short notice, a great number of these refugees have enlisted in the army to at least receive steady pay and food, greatly bolstering our ranks."
  no_production:0 "Anti-lag/Savegame Bloat"
- no_production_desc:0 "Anti-lag/Savegame Bloat"
+ no_production_desc:0 "Anti-lag/Savegame Bloat. There is a decision to remove this if a player takes over this country"
  no_exports:0 "No Exports"
  no_exports_desc:0 "To better fuel our war industry, we have appropriated all civilian production of resources towards the war effort, and ceased exports of all kinds."
  great_depression_4:0 "Mostly Recovered"
