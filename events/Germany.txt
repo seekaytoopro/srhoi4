@@ -528,14 +528,8 @@ country_event = {
 			ahead_reduction = 0.75
 			#technology = advanced_light_tank
 			technology = improved_medium_tank
-			technology = improved_heavy_tank
 		}
-		add_tech_bonus = {
-			name = heavy_armor_bonus
-			bonus = 1.0
-			uses = 1
-			technology = improved_heavy_tank
-		}
+		
 		add_tech_bonus = {
 			name = light_armor_bonus
 			bonus = 1.0
@@ -545,7 +539,7 @@ country_event = {
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 1.0
-			uses = 2
+			uses = 6
 			technology = improved_medium_spaa
 			technology = improved_medium_td
 			technology = improved_medium_art
