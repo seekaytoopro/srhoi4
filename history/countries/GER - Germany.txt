@@ -90,10 +90,10 @@ set_technology = {
 	armored_car1 = 1
 }
 
-add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 12200 producer = GER }  
-add_equipment_to_stockpile = { type = support_equipment amount = 3500 producer = GER } 
-add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 95000 producer = GER } 
-add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 3000 producer = GER } 
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 17200 producer = GER }  
+add_equipment_to_stockpile = { type = support_equipment amount = 5500 producer = GER } 
+add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 145000 producer = GER } 
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 5000 producer = GER } 
 add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 1700 producer = GER } 
 add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = GER } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4000 producer = GER }
