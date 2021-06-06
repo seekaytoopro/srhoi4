@@ -3,6 +3,10 @@ state={
 	id=347
 	name="STATE_347"
 
+	resources = {
+		steel = 17
+	}
+
 	history={
 		victory_points = {
 			3673 3 
@@ -14,7 +18,7 @@ state={
 		add_core_of = AUS
 		buildings = {
 			infrastructure = 8
-			arms_factory = 7
+			arms_factory = 4
 			industrial_complex = 5
 		}
 	}
