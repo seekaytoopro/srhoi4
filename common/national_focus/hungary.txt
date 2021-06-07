@@ -135,6 +135,7 @@ focus_tree = {
 				has_idea = HUN_treaty_of_triannon_2
 				has_idea = HUN_treaty_of_triannon_3
 			}
+			has_government = fascism
 		}
 
 		cancel_if_invalid = yes
@@ -431,6 +432,7 @@ focus_tree = {
 				uses = 1
 				technology = advanced_machine_tools
 				technology = flexible_line
+				technology = streamlined_line
 				technology = assembly_line_production
 				technology = concentrated_industry3
 				technology = concentrated_industry4
@@ -707,6 +709,7 @@ focus_tree = {
 				uses = 2
 				technology = advanced_machine_tools
 				technology = flexible_line
+				technology = streamlined_line
 				technology = assembly_line_production
 				technology = concentrated_industry3
 				technology = concentrated_industry4
@@ -1793,9 +1796,10 @@ focus_tree = {
 	focus = {
 		id = HUN_armored_warfare
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = HUN_the_botond }
+		#prerequisite = { focus = HUN_the_botond }
+		prerequisite = { focus = HUN_mobile_corps_doctrine }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = HUN_the_botond
 
 		cost = 10
@@ -1834,9 +1838,10 @@ focus_tree = {
 	focus = {
 		id = HUN_mobile_corps_doctrine
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = HUN_armored_warfare }
+		#prerequisite = { focus = HUN_armored_warfare }
+		prerequisite = { focus = HUN_the_botond }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = HUN_the_botond
 
 		cost = 10
@@ -2101,7 +2106,7 @@ focus_tree = {
 				name = HUN_form_parachute_battalions
 				bonus = 3.0
 				uses = 1
-				category = para_tech
+				category = special_forces
 			}
 		}
 	}

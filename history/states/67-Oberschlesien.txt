@@ -20,7 +20,8 @@ state={
 		owner = GER
 		buildings = {
 			infrastructure = 6
-		#industrial_complex = 3  SUBJECT TO BALANCING
+			arms_factory = 2
+			#industrial_complex = 3  SUBJECT TO BALANCING
 		}
 		add_core_of = GER
 	}

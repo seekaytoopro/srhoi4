@@ -85,13 +85,6 @@ units = {
 		location = 9660
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {	
-		division_name = { is_name_ordered = yes name_order = 1 }
-		location = 6700
-		division_template = "Mediums"
-		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 	division= {	
@@ -99,21 +92,28 @@ units = {
 		location = 6700
 		division_template = "Mediums"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.02
 	}
 	division= {	
 		division_name = { is_name_ordered = yes name_order = 1 }
 		location = 6700
 		division_template = "Mediums"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.02
 	}
 	division= {	
 		division_name = { is_name_ordered = yes name_order = 1 }
 		location = 6700
 		division_template = "Mediums"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+		start_equipment_factor = 0.02
+	}
+	division= {	
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 6700
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.02
 	}
 }
 
