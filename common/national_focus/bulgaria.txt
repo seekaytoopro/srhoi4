@@ -159,11 +159,48 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_Fuel_Our_Industry
-		icon = GFX_goal_generic_construct_civ_factory
+		id = BUL_Heavy_Machines
+		icon = GFX_goal_generic_production
 		prerequisite = { focus = BUL_Build_It_Better }
 		x = 9
 		y = 3
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = BUL_Heavy_Machines
+				bonus = 1
+				uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+			}
+		}
+	}
+
+	focus = {
+		id = BUL_Fuel_Our_Industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BUL_Heavy_Machines }
+		x = 9
+		y = 4
 		cost = 10
 
 		available_if_capitulated = yes
@@ -230,48 +267,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_Heavy_Machines
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = BUL_Fuel_Our_Industry }
-		x = 11
-		y = 4
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4000
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = BUL_Heavy_Machines
-				bonus = 1
-				uses = 1
-				technology = advanced_machine_tools
-				technology = flexible_line
-				technology = assembly_line_production
-				technology = streamlined_line
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry5
-			}
-		}
-	}
-
-	focus = {
 		id = BUL_Finnish_2_Year_Plan
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = BUL_Fuel_Our_Industry }
 		x = 9
-		y = 4
+		y = 5
 		cost = 10
 
 		available_if_capitulated = yes
@@ -356,7 +356,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_Finnish_2_Year_Plan }
 		icon = GFX_focus_research
 		x = 9
-		y = 5
+		y = 6
 		cost = 10
 
 		available_if_capitulated = yes
