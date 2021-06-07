@@ -277,7 +277,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -286,7 +286,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -295,7 +295,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -304,7 +304,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -313,7 +313,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -322,7 +322,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -331,13 +331,13 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		name = "Gebirgs-Brigade" 
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -346,7 +346,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -355,7 +355,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -364,7 +364,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 	division= {	
 		division_name = {
@@ -373,7 +373,7 @@ units = {
 		}
 		location = 6521
 		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.6
+		start_experience_factor = 0.75
 	}
 }
 
