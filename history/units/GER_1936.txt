@@ -86,43 +86,6 @@ division_template = {
 }
 
 division_template = {
-	# The elite mountaineers Germany starts with
-	name = "Gebirgsjäger"
-	is_locked = yes
-	division_names_group = GER_Mnt_01
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		anti_air_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 4 y = 0 }
-		artillery_brigade = { x = 4 y = 1 }
-		artillery_brigade = { x = 4 y = 2 }
-		artillery_brigade = { x = 4 y = 3 }
-	}
-	support = { 
-		engineer = { x = 0 y = 0 }
-    	armored_car_recon = { x = 0 y = 1 } 
-		logistics_company { x = 0 y = 2 }
-		field_hospital = { x = 0 y = 3 }
-		maintenance_company = { x = 0 y = 4 }
-		flamethrower = { x = 0 y = 5 }
-		artillery = { x = 0 y = 6 }
-	}
-}
-
-division_template = {
 	name = "Fallschirmjäger-Division"			# Airborne Brigade
 	division_names_group = GER_Inf_01
 
@@ -270,14 +233,16 @@ division_template = {
 units = {
 
 	##### Oberkommando des Heeres #####
+	### 1. Armee (Wehrmacht-Gruppenkommando) ###
+	# II. Armeekorps
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -285,17 +250,18 @@ units = {
 				name_order = 12
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
+	# III. Armeekorps
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -303,8 +269,8 @@ units = {
 				name_order = 23
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -312,8 +278,8 @@ units = {
 				name_order = 4
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -321,8 +287,8 @@ units = {
 				name_order = 14
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
@@ -330,22 +296,22 @@ units = {
 				name_order = 24
 		}
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		name = "Gebirgs-Brigade" 
 		location = 6521
-		division_template = "Gebirgsjäger"
-		start_experience_factor = 0.75
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
 	}
 	division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6521
-		division_template = "Gebirgsjäger"
+		location = 6334
+		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.75
 	}
 	division= {	
@@ -353,8 +319,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6521
-		division_template = "Gebirgsjäger"
+		location = 6334
+		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.75
 	}
 	division= {	
@@ -362,8 +328,8 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 6521
-		division_template = "Gebirgsjäger"
+		location = 6334
+		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.75
 	}
 	division= {	
@@ -371,21 +337,30 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 6521
-		division_template = "Gebirgsjäger"
+		location = 6334
+		division_template = "Fallschirmjäger-Division"
+		start_experience_factor = 0.75
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 6334
+		division_template = "Fallschirmjäger-Division"
 		start_experience_factor = 0.75
 	}
 }
 
 ### Air oob
 air_wings = {
+
 	### II. Luftkreiskommando -- Berlin ###
 	64 = { 
 		# Jagdgeschwader 132 'Richtofen'		
-		fighter_equipment_1 =  {		# Ar 68
+		fighter_equipment_0 =  {		# Ar 68
 			owner = "GER" 
-			amount = 800
-			version_name = "Bf 109 E"
+			amount = 400
 		}
 		name = "Jagdgeschwader 132"
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
@@ -399,20 +374,23 @@ air_wings = {
 		tac_bomber_equipment_0 = {		# Do 23
 			owner = "GER" 
 			amount = 200
-			version_name = "Ju 86"
 		}
+
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
 			owner = "GER" 
 			amount = 100
 		}
+	
+
 		name = "Kampfgeschwader 253"
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
-			amount = 200
+			amount = 100
 		}
 		name = "Sturzkampfgeschwader 162"	
+
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 

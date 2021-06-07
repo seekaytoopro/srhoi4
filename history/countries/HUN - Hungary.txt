@@ -57,10 +57,6 @@ set_technology = {
 	CAS1 = 1
 	fuel_silos = 1
 	interwar_antiair = 1
-	basic_light_tank = 1
-	mobile_warfare = 1
-	motorised_infantry = 1
-	armored_car1 = 1
 	transport = 1
 }
 
