@@ -175,12 +175,12 @@ producer = ENG
 
 add_equipment_to_stockpile = {
 type = cv_nav_bomber_equipment_1
-amount = 175
+amount = 250
 producer = ENG
 }
 add_equipment_to_stockpile = {
 type = cv_fighter_equipment_1
-amount = 75
+amount = 100
 producer = ENG
 }
 
