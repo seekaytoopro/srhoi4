@@ -17,7 +17,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construction
 		x = 3
 		y = 0
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 12
 		}
@@ -504,7 +504,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 9
 		}
@@ -1135,7 +1135,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.6
+				bonus = 0.75
 				uses = 1
 				technology = fighter2
 			}
@@ -1299,7 +1299,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -1430,8 +1430,8 @@ focus_tree = {
 							add_ideas = GER_air_innovations_2_idea
 							add_tech_bonus = {
 				name = radar_tech_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 1.5
+				uses = 3
 				category = radar_tech
 			}
 			
@@ -1488,19 +1488,19 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = land_doctrine
 			}
 			
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
 				technology = mechanised_infantry
 			}	
 			add_tech_bonus = {
 				bonus = 0.00
-				uses = 1
+				uses = 3
 				ahead_reduction = 4.0
 				name = mech_army_TD_bonus
 				technology = advanced_light_td
@@ -1509,7 +1509,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				bonus = 0.00
-				uses = 1
+				uses = 3
 				ahead_reduction = 4.0
 				name = mech_army_ART_bonus
 				technology = advanced_light_art
@@ -1518,7 +1518,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				bonus = 0.00
-				uses = 1
+				uses = 3
 				ahead_reduction = 4.0
 				name = mech_army_SPAA_bonus
 				technology = advanced_light_spaa
