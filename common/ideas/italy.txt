@@ -909,7 +909,7 @@ ideas = {
 		}
 		
 		amedeo_mecozzi = {
-			ledger = air
+			ledger = army
 			
 			allowed = {
 				original_tag = ITA
@@ -918,10 +918,10 @@ ideas = {
 			cost = 175
 			
 			research_bonus = {
-				cat_operational_integrity = 0.15
+				cat_superior_firepower = 0.15
 			}
 			
-			traits = { assault_avaition }
+			traits = { superior_firepower_expert }
 		}
 		
 		renato_sandalli = {
