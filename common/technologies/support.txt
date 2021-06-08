@@ -522,7 +522,7 @@ technologies = {
 	tech_military_police2 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.15
 		}
 		
 		
@@ -556,7 +556,7 @@ technologies = {
 	tech_military_police3 = {
 
 		military_police = {
-			suppression_factor = 0.1
+			suppression_factor = 0.15
 		}
 		path = {
 			leads_to_tech = tech_military_police4
