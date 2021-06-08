@@ -9,7 +9,7 @@ technologies = {
 		xor = { superior_firepower trench_warfare mass_assault } 
 
 		path = {
-			leads_to_tech = delay `
+			leads_to_tech = delay 
 			research_cost_coeff = 1
 		}
 		
