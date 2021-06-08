@@ -2409,7 +2409,7 @@ focus = {
 			x = -1
 			y = 1
 			relative_position_id = SOV_lessons_of_war
-			cost = 10
+			cost = 5
 			ai_will_do = {
 				factor = 1
 			}
@@ -2437,7 +2437,7 @@ focus = {
 			x = 1
 			y = 1
 			relative_position_id = SOV_lessons_of_war
-			cost = 10
+			cost = 5
 			ai_will_do = {
 				factor = 1
 			}
