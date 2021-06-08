@@ -865,9 +865,9 @@ create_equipment_variant = {
 	type = fighter_equipment_1
 	upgrades = {
 		# plane_gun_upgrade = 1
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 5
-		plane_reliability_upgrade = 3
+		plane_range_upgrade = 7
+		plane_engine_upgrade = 4
+		plane_reliability_upgrade = 1
 	}
 }
 
