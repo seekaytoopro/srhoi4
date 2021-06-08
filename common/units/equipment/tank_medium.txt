@@ -140,10 +140,10 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_art_upgrade
+			variant_reliability_upgrade
+			variant_engine_upgrade
+			variant_armor_upgrade
+			spg_gun_upgrade
 		}
 				
 		#Misc Abilities
@@ -268,10 +268,10 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_at_upgrade
+			variant_reliability_upgrade
+			variant_engine_upgrade
+			variant_armor_upgrade
+			td_gun_upgrade
 		}
 		
 		#Misc Abilities
@@ -402,10 +402,10 @@ equipments = {
 		interface_category = interface_category_armor
 		
 		upgrades = {
-			tank_reliability_upgrade
-			tank_engine_upgrade
-			tank_armor_upgrade
-			tank_aa_upgrade
+			variant_reliability_upgrade
+			variant_engine_upgrade
+			variant_armor_upgrade
+			spaa_gun_upgrade
 		}
 		
 		#Misc Abilities
