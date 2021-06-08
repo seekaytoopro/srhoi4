@@ -29,32 +29,48 @@ upgrades = {
 		cost = land
 		reliability = 0.06
 	}
-	tank_aa_upgrade = {
-		max_level = 5
-
+	variant_armor_upgrade = {
+		max_level = 3
 		cost = land
-		air_attack = 0.05
-		maximum_speed = -0.01
-		reliability = -0.05
+		defense = 0.0833
+		breakthrough = 0.0667
+		maximum_speed = -0.0167
+		reliability = -0.025
 	}
-	tank_at_upgrade = {
-		max_level = 5
+	variant_engine_upgrade = {
+		max_level = 3
+		cost = land
+		maximum_speed = 0.0667
+	}	
+	variant_reliability_upgrade = {
+		max_level = 3
+		cost = land
+		reliability = 0.1
+	}	
+	spaa_gun_upgrade = {
+		max_level = 3
 
 		cost = land
-		soft_attack = 0.1
-		hard_attack = 0.1
-		maximum_speed = -0.01
-		reliability = -0.05
-
-		ap_attack = 0.05 #Remove once armor and piercing are balanced
+		air_attack = 0.0833
+		maximum_speed = -0.0167
+		reliability = -0.0833
 	}
-	tank_art_upgrade = {
-		max_level = 5
+	td_gun_upgrade = {
+		max_level = 3
 
 		cost = land
-		soft_attack = 0.03
-		maximum_speed = -0.01
-		reliability = -0.05
+		soft_attack = 0.133
+		hard_attack = 0.133
+		maximum_speed = -0.0167
+		reliability = -0.0833
+	}
+	spg_gun_upgrade = {
+		max_level = 3
+
+		cost = land
+		soft_attack = 0.04
+		maximum_speed = -0.0167
+		reliability = -0.0833
 	}
 	ac_engine_upgrade = {
 		max_level = 5
