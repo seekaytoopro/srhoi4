@@ -211,6 +211,7 @@ focus_tree = {
 				uses = 2
 				technology = advanced_machine_tools
 				technology = flexible_line
+				technology = streamlined_line
 				technology = assembly_line_production
 				technology = concentrated_industry3
 				technology = concentrated_industry4
