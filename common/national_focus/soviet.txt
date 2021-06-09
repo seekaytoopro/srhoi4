@@ -1263,7 +1263,7 @@ focus = {
 			y = 1
 			relative_position_id = SOV_great_purge
 	
-			cost = 10
+			cost = 8
 	
 			ai_will_do = {
 				factor = 1
@@ -1892,7 +1892,7 @@ focus = {
 			y = 1
 			relative_position_id = SOV_great_purge
 	
-			cost = 10
+			cost = 8
 	
 			ai_will_do = {
 				factor = 1
