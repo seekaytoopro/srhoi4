@@ -878,7 +878,20 @@ focus_tree = {
 				41 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
-				}	
+				}
+				hidden_effect = {
+					add_relation_modifier = { target = GER modifier = stahlpakt }
+					add_relation_modifier = { target = ROM modifier = stahlpakt }
+					add_relation_modifier = { target = HUN modifier = stahlpakt }
+					add_relation_modifier = { target = BUL modifier = stahlpakt }
+					add_relation_modifier = { target = ITA modifier = stahlpakt }
+					if = { limit = { country_exists = CRO } add_relation_modifier = {
+							target = CRO
+							modifier = stahlpakt
+						}
+					}
+					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+				}
 			}
 			HUN = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = HUN_REICH
@@ -886,7 +899,20 @@ focus_tree = {
 				155 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
-				}	
+				}
+				hidden_effect = {
+					add_relation_modifier = { target = GER modifier = stahlpakt }
+					add_relation_modifier = { target = ROM modifier = stahlpakt }
+					add_relation_modifier = { target = SPR modifier = stahlpakt }
+					add_relation_modifier = { target = BUL modifier = stahlpakt }
+					add_relation_modifier = { target = ITA modifier = stahlpakt }
+					if = { limit = { country_exists = CRO } add_relation_modifier = {
+							target = CRO
+							modifier = stahlpakt
+						}
+					}
+					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+				}
 			} 	
 			ROM = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = ROM_REICH 
@@ -894,7 +920,20 @@ focus_tree = {
 				46 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }
-				}					
+				}
+				hidden_effect = {
+					add_relation_modifier = { target = GER modifier = stahlpakt }
+					add_relation_modifier = { target = SPR modifier = stahlpakt }
+					add_relation_modifier = { target = HUN modifier = stahlpakt }
+					add_relation_modifier = { target = BUL modifier = stahlpakt }
+					add_relation_modifier = { target = ITA modifier = stahlpakt }
+					if = { limit = { country_exists = CRO } add_relation_modifier = {
+							target = CRO
+							modifier = stahlpakt
+						}
+					}
+					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+				}
 			} 	
 			if = { limit = { country_exists = BUL }
 				GER = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
@@ -905,6 +944,19 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 					}
+				}
+				hidden_effect = {
+					add_relation_modifier = { target = GER modifier = stahlpakt }
+					add_relation_modifier = { target = ROM modifier = stahlpakt }
+					add_relation_modifier = { target = HUN modifier = stahlpakt }
+					add_relation_modifier = { target = SPR modifier = stahlpakt }
+					add_relation_modifier = { target = ITA modifier = stahlpakt }
+					if = { limit = { country_exists = CRO } add_relation_modifier = {
+							target = CRO
+							modifier = stahlpakt
+						}
+					}
+					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 				}
 			}
 			hidden_effect = {
@@ -917,6 +969,15 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 						}
+					}
+					hidden_effect = {
+						add_relation_modifier = { target = GER modifier = stahlpakt }
+						add_relation_modifier = { target = ROM modifier = stahlpakt }
+						add_relation_modifier = { target = HUN modifier = stahlpakt }
+						add_relation_modifier = { target = BUL modifier = stahlpakt }
+						add_relation_modifier = { target = ITA modifier = stahlpakt }
+						add_relation_modifier = { target = SPR modifier = stahlpakt }
+						add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 					}
 				}
 			}			

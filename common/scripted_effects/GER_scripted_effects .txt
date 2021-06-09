@@ -112,3 +112,7 @@ axis_minors_declare_war_on_SOV = {
 	ROM = { declare_war_on = { target = SOV type = annex_everything } }
 	# if = { limit = { country_exists = CRO } CRO = { declare_war_on = { target = SOV type = annex_everything } } }
 }
+
+inter_axis_trade_modifier = {
+	
+}

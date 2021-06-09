@@ -521,9 +521,9 @@ instant_effect = {
 			creator = "SOV" 
 			version_name = "MiG-3"
 		}
-		requested_factories = 25
+		requested_factories = 1
 		progress = 0.15
-		efficiency = 65
+		efficiency = 70
 	}
 }
 	#####################

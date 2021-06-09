@@ -82,7 +82,7 @@ foreign_politics = {
 				puppet = ITA 
 				set_autonomy = {
     				target = ITA
-    				autonomy_state = autonomy_reichsprotectorate
+    				autonomy_state = autonomy_satellite
 				}
 				if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
 				# add_relation_modifier = {
@@ -91,6 +91,12 @@ foreign_politics = {
 				# }
 			}
 			hidden_effect = {
+				GER = { 
+					remove_relation_modifier = {
+						target = ITA
+						modifier = stahlpakt
+					}
+				}
 				add_relation_modifier = {
 					target = GER
 					modifier = stahlpakt
