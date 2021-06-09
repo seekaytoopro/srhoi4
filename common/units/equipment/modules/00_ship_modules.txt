@@ -1609,7 +1609,7 @@ equipment_modules = {
 			
 			
 			add_stats = {
-				sub_attack = 4
+				sub_attack = 5
 				build_cost_ic = 30
 			}
 			multiply_stats = {
@@ -1627,7 +1627,7 @@ equipment_modules = {
 	
 			
 			add_stats = {
-				sub_attack = 8
+				sub_attack = 9
 				build_cost_ic = 45
 			}
 			multiply_stats = {
@@ -1645,7 +1645,7 @@ equipment_modules = {
 	
 			
 			add_stats = {
-				sub_attack = 12
+				sub_attack = 13
 				build_cost_ic = 60
 			}
 			multiply_stats = {
@@ -1663,7 +1663,7 @@ equipment_modules = {
 	
 			
 			add_stats = {
-				sub_attack = 18
+				sub_attack = 19
 				build_cost_ic = 75
 			}
 	
@@ -1687,7 +1687,7 @@ equipment_modules = {
 			gfx = ship_sub_snorkel_1
 			
 			multiply_stats = {
-				sub_visibility = -0.1
+				sub_visibility = -0.08
 			}
 			
 			add_stats = {
@@ -1699,7 +1699,7 @@ equipment_modules = {
 			gfx = ship_sub_snorkel_2
 			
 			multiply_stats = {
-				sub_visibility = -0.2
+				sub_visibility = -0.16
 			}
 			
 			add_stats = {
@@ -1723,13 +1723,15 @@ equipment_modules = {
 			
 			add_stats = {
 				surface_detection = 7
-				sub_detection = 2.5
+				sub_detection = 5.5
 				build_cost_ic = 150
+				sub_attack = 1.0
 			}
 			multiply_stats = {
 				hg_attack = 0.12
 				lg_attack = 0.15
-				torpedo_attack = 0.15			
+				torpedo_attack = 0.15	
+				sub_attack = 0.15
 			}
 		}
 		ship_airplane_launcher_2 = {
@@ -1738,13 +1740,15 @@ equipment_modules = {
 			
 			add_stats = {
 				surface_detection = 10
-				sub_detection = 3.5
+				sub_detection = 8.5
 				build_cost_ic = 170
+				sub_attack = 1.0
 			}
 			multiply_stats = {
 				hg_attack = 0.18
 				lg_attack = 0.22
-				torpedo_attack = 0.22			
+				torpedo_attack = 0.22
+				sub_attack = 0.22	
 			}		
 			can_convert_from = {
 				module_category = ship_airplane_launcher
@@ -1806,7 +1810,7 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_sonar
 			
 			add_stats = {
-				sub_detection = 4
+				sub_detection = 6
 				build_cost_ic = 40
 			}
 		}
@@ -1817,7 +1821,7 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_sonar
 			
 			add_stats = {
-				sub_detection = 7.0
+				sub_detection = 9.0
 				build_cost_ic = 60
 			}
 			can_convert_from = {

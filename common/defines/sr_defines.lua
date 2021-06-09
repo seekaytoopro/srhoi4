@@ -479,7 +479,7 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04						-- How much effic
 NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.04								-- To avoid complete 0% efficiency, set the lower limit.
 NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.25                             	-- base % of convoys that get intercepted
 
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 100
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 80
 NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 2 										-- the taskforces that wants to join existing combats will wait for at least this amount 8--->2 
 NDefines.NNavy.DEPTH_CHARGES_HIT_CHANCE_MULT = 10.0 								-- multiplies hit chance of small guns, early application of 1.6.2 
 NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1.0 									-- early application of 1.6.2 
