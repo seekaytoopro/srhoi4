@@ -1316,7 +1316,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-			max_organisation  = 25
 		}
 		
 		
@@ -1362,7 +1361,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-				max_organisation  = 25
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -1405,7 +1403,6 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
-				max_organisation  = 25
 		}
 
 		research_cost = 1.5
