@@ -91,12 +91,12 @@ foreign_politics = {
 				# }
 			}
 			hidden_effect = {
-				GER = { 
-					remove_relation_modifier = {
-						target = ITA
-						modifier = stahlpakt
-					}
-				}
+				# GER = { 
+				# 	remove_relation_modifier = {
+				# 		target = ITA
+				# 		modifier = stahlpakt
+				# 	}
+				# }
 				add_relation_modifier = {
 					target = GER
 					modifier = stahlpakt
@@ -126,6 +126,12 @@ foreign_politics = {
 				add_opinion_modifier = {
 					target = GER
 					modifier = german_trade_monopoly
+				}
+				GER = {
+					add_opinion_modifier = {
+						target = ITA
+						modifier = german_trade_monopoly
+					}
 				}
 				
 			}

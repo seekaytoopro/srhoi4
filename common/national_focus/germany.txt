@@ -866,6 +866,19 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 10
 				add_building_construction = { type = arms_factory level = 10 instant_build = yes }
 			}
+
+			# hidden_effect = {
+			# 	GER = { 
+			# 		remove_relation_modifier = { target = ITA modifier = stahlpakt }
+			# 		remove_relation_modifier = { target = ROM modifier = stahlpakt }
+			# 		remove_relation_modifier = { target = HUN modifier = stahlpakt }
+			# 		remove_relation_modifier = { target = SPR modifier = stahlpakt }
+			# 		remove_relation_modifier = { target = BUL modifier = stahlpakt }
+			# 		if = { limit = { country_exists = CRO } 
+			# 			remove_relation_modifier = { target = CRO modifier = stahlpakt }
+			# 		}
+			# 	}
+			# }
 			# SPR = { add_relation_modifier = { target = GER modifier = stahlpakt } }
 			# ROM = { add_relation_modifier = { target = GER modifier = stahlpakt } }
 			# HUN = { add_relation_modifier = { target = GER modifier = stahlpakt } }
@@ -944,19 +957,19 @@ focus_tree = {
 						add_extra_state_shared_building_slots = 2
 						add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 					}
-				}
-				hidden_effect = {
-					add_relation_modifier = { target = GER modifier = stahlpakt }
-					add_relation_modifier = { target = ROM modifier = stahlpakt }
-					add_relation_modifier = { target = HUN modifier = stahlpakt }
-					add_relation_modifier = { target = SPR modifier = stahlpakt }
-					add_relation_modifier = { target = ITA modifier = stahlpakt }
-					if = { limit = { country_exists = CRO } add_relation_modifier = {
-							target = CRO
-							modifier = stahlpakt
+					hidden_effect = {
+						add_relation_modifier = { target = GER modifier = stahlpakt }
+						add_relation_modifier = { target = ROM modifier = stahlpakt }
+						add_relation_modifier = { target = HUN modifier = stahlpakt }
+						add_relation_modifier = { target = SPR modifier = stahlpakt }
+						add_relation_modifier = { target = ITA modifier = stahlpakt }
+						if = { limit = { country_exists = CRO } add_relation_modifier = {
+								target = CRO
+								modifier = stahlpakt
+							}
 						}
+						add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 					}
-					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 				}
 			}
 			hidden_effect = {
@@ -969,15 +982,15 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 2
 							add_building_construction = { type = arms_factory level = 2 instant_build = yes }
 						}
-					}
-					hidden_effect = {
-						add_relation_modifier = { target = GER modifier = stahlpakt }
-						add_relation_modifier = { target = ROM modifier = stahlpakt }
-						add_relation_modifier = { target = HUN modifier = stahlpakt }
-						add_relation_modifier = { target = BUL modifier = stahlpakt }
-						add_relation_modifier = { target = ITA modifier = stahlpakt }
-						add_relation_modifier = { target = SPR modifier = stahlpakt }
-						add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+						hidden_effect = {
+							add_relation_modifier = { target = GER modifier = stahlpakt }
+							add_relation_modifier = { target = ROM modifier = stahlpakt }
+							add_relation_modifier = { target = HUN modifier = stahlpakt }
+							add_relation_modifier = { target = BUL modifier = stahlpakt }
+							add_relation_modifier = { target = ITA modifier = stahlpakt }
+							add_relation_modifier = { target = SPR modifier = stahlpakt }
+							add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+						}
 					}
 				}
 			}			
