@@ -35,7 +35,7 @@ country_event = {
 	
 	option = { 
 		name = srevents.1.a 
-		add_timed_idea = { idea = economic_recovery days = 1350 }
+		add_timed_idea = { idea = economic_recovery days = 1500 }
 
 	}
 	

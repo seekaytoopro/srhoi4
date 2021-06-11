@@ -600,10 +600,10 @@ focus_tree = {
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			#has_war_support > 0.3
-			OR = {
-				GER = { has_completed_focus = GER_danzig_or_war }
-				date > 1939.9.10
-			}
+			#OR = {
+				#GER = { has_completed_focus = GER_danzig_or_war }
+				date > 1940.1.10
+			#}
 			
 			
 		}

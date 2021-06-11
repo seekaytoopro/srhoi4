@@ -501,13 +501,6 @@ SOV_great_patriotic_war = {
 	}	
 
 
-
-
-
-
-
-
-
 	# SOV_order_227 = {
 
 	# 	icon = generic_army_support

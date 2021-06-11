@@ -3,9 +3,9 @@ id=666
 name="STATE_666"
 manpower = 1
 resources={
-tungsten=40
-steel= 95
-chromium = 25
+tungsten=75
+steel= 105
+chromium = 55
 }
 impassable = yes
 state_category = rural
@@ -16,7 +16,7 @@ add_core_of=SWE
 # 9108 1
 # }
 buildings = {
-infrastructure = 5
+infrastructure = 6
 }
 }
 provinces={
