@@ -136,8 +136,8 @@ foreign_politics = {
                     has_id = 983
                 }
 				add_skill_level = 1
-                add_attack = 3
-                add_maneuver = 2
+                add_attack = 1
+                add_maneuver = 1
                 add_coordination = 1
 				add_unit_leader_trait = fleet_protector
 				add_unit_leader_trait = destroyer_leader
@@ -175,7 +175,7 @@ foreign_politics = {
 			EFR = { owns_state = 26 }
 			NOT = { has_global_flag = operation_torch_flag }
 			OR = { NOT = { ITA = { controls_state = 448 controls_state = 450 controls_state = 451 }   }
-			date > 1941.3.1
+			date > 1942.10.1
 			
 			}
 		}
@@ -237,7 +237,7 @@ foreign_politics = {
 
         available = {
 			NOT = { has_global_flag = operation_overlord_flag }
-			date>1942.9.1
+			date>1942.10.1
 
 		}
 		
