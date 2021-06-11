@@ -1,6 +1,20 @@
 ideas = {
 	country = {
 
+		SOV_order_227 = {
+			allowed = { always = no }
+
+			allowed_civil_war = { has_government = communism }
+
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			modifier = {
+				army_core_defence_factor = 0.05
+				mobilization_speed = 0.15
+			}
+		}
+
 		SOV_winter_offensive = {
 			allowed = { always = no }
 

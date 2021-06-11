@@ -3222,7 +3222,9 @@ focus_tree = {
 				available_if_capitulated = no
 				completion_reward = {
 					GER = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
-					hidden_effect={  
+					hidden_effect={
+						SOV = { add_ideas = SOV_order_227 }
+
 						if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
 						if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
 						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }

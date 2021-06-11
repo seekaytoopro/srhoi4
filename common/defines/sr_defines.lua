@@ -1,3 +1,6 @@
+--NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
+--NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
+
 ---------------------------------------------------------------
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100    							-- 
