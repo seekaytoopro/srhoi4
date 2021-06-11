@@ -5,6 +5,7 @@ name="STATE_559"
 manpower = 1028895
 state_category = rural
 history={
+	set_demilitarized_zone = yes
 owner = ITA
 add_core_of=SWE
 victory_points = {
