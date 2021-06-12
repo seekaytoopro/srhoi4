@@ -16,6 +16,11 @@ technologies = {
 		category_all_armor = {
 			breakthrough = 0.10
 			#max_strength = 2.00
+			
+		}
+		anti_tank_brigade = {
+			
+			default_morale = 0.7
 		}
 		
 		planning_speed = 0.375
