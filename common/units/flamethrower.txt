@@ -40,7 +40,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 75
+			support_equipment = 50
 			infantry_equipment = 50
 		}
 
@@ -48,7 +48,7 @@ sub_units = {
 
 		urban = {
 			defence = 0.05
-			attack = 0.1
+			attack = 0.05
 		}
 
 		marsh = {
