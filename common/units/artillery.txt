@@ -39,7 +39,7 @@ sub_units = {
 		# Support nerfs to combat abilities
 		defense = -0.65
 		breakthrough = -0.65
-		soft_attack = -0.725
+		soft_attack = -0.425
 		hard_attack = -0.65
 
 
@@ -85,7 +85,7 @@ sub_units = {
 		# Support nerfs to combat abilities
 		defense = -0.5
 		breakthrough = -0.65
-		soft_attack = -0.725
+		soft_attack = -0.425
 		hard_attack = -0.65
 
 
