@@ -155,7 +155,8 @@ NDefines.NMilitary.CONSTANT_XP_RATIO_FOR_MULTIPLE_LEADERS_IN_SAME_COMBAT = 0.0 -
 
 NDefines.NMilitary.MULTIPLE_COMBATS_PENALTY = -0.35               -- defender penalty if attacked from multiple directions
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 -- (4) Changed to make micro more responsive
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01 -- Same rate as battleplanning
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
+NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.2                           	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7 -- Number of support companies allowed per division
