@@ -2301,6 +2301,12 @@ focus = {
 	
 			completion_reward = {
 				add_ideas = nkvd
+				add_tech_bonus = {
+					name = SOV_nkvd_primacy
+					bonus = 1.0
+					uses = 1
+					technology = assembly_line_production
+				}
 			}
 		}
 	

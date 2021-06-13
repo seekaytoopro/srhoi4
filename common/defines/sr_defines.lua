@@ -1,5 +1,5 @@
---NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
---NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 
 -- Convoy Priorities START --- this is edited from vanilla to make lend lease be the last priority with convoys, so that you don't get your trade for resources stopped if you are getting too much LL
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1									-- Default convoy priority for naval invasions
@@ -527,8 +527,8 @@ NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
 NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
 -- NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
 -- NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
-NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
+-- NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
+-- NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 100						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
