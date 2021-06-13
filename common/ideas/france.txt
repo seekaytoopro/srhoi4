@@ -73,8 +73,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.09
+				industrial_capacity_dockyard = -0.09
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -92,8 +92,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.18
+				industrial_capacity_dockyard = -0.18
 			}
 		}
 		FRA_political_violence = {
@@ -1182,7 +1182,7 @@ ideas = {
 			picture = generic_disjointed_gov
 			
 			modifier = {
-				political_power_cost = 0.7
+				political_power_cost = 0.4
 				stability_factor = -0.10
 				# surrender_limit = -0.5
 			}
@@ -1943,7 +1943,7 @@ ideas = {
 			
 
 			
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 			
 			ai_will_do = {
 				factor = 1
