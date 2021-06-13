@@ -1,6 +1,14 @@
 --NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 --NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 
+-- Convoy Priorities START --- this is edited from vanilla to make lend lease be the last priority with convoys, so that you don't get your trade for resources stopped if you are getting too much LL
+NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1									-- Default convoy priority for naval invasions
+NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1									-- Default convoy priority for naval transports
+NDefines.NNavy.SUPPLY_PRIORITY = 2											-- Default convoy priority for supplying units via sea
+NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5								-- Default convoy priority for export lend lease              - was 3 in vanilla
+NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3									-- Default convoy priority for export trade                   - was 4 in vanilla
+NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 4									-- Default convoy priority for resources shipped internally   - was 5 in vanilla
+
 ---------------------------------------------------------------
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100    							-- 
@@ -84,9 +92,9 @@ NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
 
 
 -- Fuel Changes -- Reduced across the board -------------------------------------------------------------
-NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.50 -- (0.50) fuel cost multiplier for all army related stuff
-NDefines.NNavy.FUEL_COST_MULT = 0.05 -- (0.10) fuel multiplier for all naval missions
-NDefines.NAir.FUEL_COST_MULT = 0.17 -- (0.35) fuel multiplier for all air missions 
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.55 -- (0.50) fuel cost multiplier for all army related stuff
+NDefines.NNavy.FUEL_COST_MULT = 0.07 -- (0.10) fuel multiplier for all naval missions
+NDefines.NAir.FUEL_COST_MULT = 0.21 -- (0.35) fuel multiplier for all air missions 
 ---------------------------------------------------------------------------------------------------------
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
