@@ -48,8 +48,8 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 999.0 --0.0, 999 for balancing
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.000 -- 0.0 is vanilla, reduces savegame bloat
 
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015 -- (0.0001)
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01 -- (1.00)
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00030 -- (0.0001)
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.001 -- (1.00)
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience drop if unit has different battalion when switching templates(vanilla 0.5 but can be circumvented with template editing)
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
@@ -67,7 +67,7 @@ NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.58 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
 NDefines.NMilitary.STRATEGIC_SPEED_BASE = 12.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
-NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 16 -- (12) Makes having proper recon and leadership more important
+NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 20 -- (12) Makes having proper recon and leadership more important
 NDefines.NMilitary.SLOWEST_SPEED = 4 -- Was 3 before 3 speed changes
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.50 -- amphibious landing penalty
 
