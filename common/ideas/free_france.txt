@@ -221,6 +221,25 @@ ideas = {
 			}
 			research_bonus = { industry = 0.05 }
 		}
+
+		FRF_national_bureau_of_statistics = {
+			picture = SOV_scientist_defect
+			allowed = {
+				original_tag = EFR 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
 		FRF_travail = {
 			picture = generic_production_bonus
 			allowed = {
