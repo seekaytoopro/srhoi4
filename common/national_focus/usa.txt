@@ -1117,6 +1117,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = "Gives the War Plan Silver modifier to all the allies                  "
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_silver show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
@@ -1129,7 +1130,6 @@ focus_tree = {
 				date>1942.9.1
 				ENG = { surrender_progress > 0.10 }
 			}
-			
 		}
 
 		continue_if_invalid = yes
@@ -1143,6 +1143,7 @@ focus_tree = {
 		#	factor = 1
 		#}
 		completion_reward = {
+			custom_effect_tooltip = "Gives the War Plan Black modifier to all the allies                  "
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
@@ -1174,6 +1175,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = "Get a 5 skill 7/2/3/7 Jungle Infantry Commander                  "
 			create_corps_commander = {
 				name = "Alexander Vandegrift"
 				gfx = GFX_portrait_usa_alexander_vandegrift
@@ -1326,15 +1328,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = USA_war_with_japan
 		cost = 0.2
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
 
 		completion_reward = {
-			JAP = {
-				add_opinion_modifier = { target = USA modifier = war_plan_orange }
-			}
+			custom_effect_tooltip = "Gives the War Plan Orange modifier to all the allies                  "
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}

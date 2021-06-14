@@ -1929,7 +1929,7 @@ focus_tree = {
 		}
 	}
 	
-			focus = { #should already be signed in 39
+	focus = { #should already be signed in 39
 		id = GER_mol_rib_pact
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		prerequisite = { focus = GER_anschluss }
@@ -1957,7 +1957,6 @@ focus_tree = {
 							ENG = { add_to_faction = USA  add_to_faction = MEX add_to_faction = BRA }
 							POL = { load_oob = "POL_spawn"}
 							FIN = { load_oob = "FIN_spawn"}
-							HOL = {country_event = { id = mtg_netherlands.68 } }
 			}
 			# SOV = {
 			# 	give_resource_rights = { receiver = GER state = 229 }
@@ -1965,31 +1964,22 @@ focus_tree = {
 		
 			# REVISIT Rework event series to fit new design or retain old design
 			SOV = {
-			country_event = { id = germany.11 days = 1 }
-			custom_effect_tooltip = GER_mol_rib_pact_tt
-			transfer_state = 78 transfer_state = 80 transfer_state = 766 
-			LAT = { set_equipment_fraction = 0.0 }
-			annex_country = { target = LAT  }
-			every_state = {
-				limit = { is_core_of = LAT }
-				add_core_of = SOV
-				remove_core_of = LAT
-			}
-			hidden_effect = { 188 = { remove_core_of = SOV } }
-			# LAT = { remove_state_core = 188 remove_state_core = 189 remove_state_core = 11 remove_state_core = 13 remove_state_core = 191  remove_state_core = 12 remove_state_core = 190      }
-			# 189 = { add_core_of = SOV }
-			# 11 = { add_core_of = SOV }
-			# 13 = { add_core_of = SOV }
-			# 191 = { add_core_of = SOV }
-			# 190 = { add_core_of = SOV }
-			# 12 = { add_core_of = SOV }
-			# 78 = { add_core_of = SOV }
-			# 766 = { add_core_of = SOV }
-			# 80 = { add_core_of = SOV }
-			army_experience = 300
-			air_experience = 300
-			add_political_power = -150
-			country_event = finland.20
+				country_event = { id = germany.11 days = 1 }
+				custom_effect_tooltip = GER_mol_rib_pact_tt
+				transfer_state = 78 transfer_state = 80 transfer_state = 766 
+				LAT = { set_equipment_fraction = 0.0 }
+				annex_country = { target = LAT  }
+				every_state = {
+					limit = { is_core_of = LAT }
+					add_core_of = SOV
+					remove_core_of = LAT
+				}
+				hidden_effect = { 188 = { remove_core_of = SOV } }
+
+				army_experience = 300
+				air_experience = 300
+				add_political_power = -150
+				country_event = finland.20
 			}
 		}
 	}
