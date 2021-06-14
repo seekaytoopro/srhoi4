@@ -16,6 +16,7 @@ ideas = {
 			}
 			
 		}
+	}
 	
 	# 	FRF_full_employment = {
 	# 		picture = generic_production_bonus
@@ -1190,6 +1191,7 @@ ideas = {
 	# 	designer = yes
 		
 	# 	# TECHNOLOGY
+	# tank_manufacturer = {
 	# 	renault_frf = {
 	# 		cost = 75
 	# 		picture = renault
@@ -1205,6 +1207,8 @@ ideas = {
 
 	# 		traits = { heavy_tank_manufacturer }
 	# 	}
+	# }
+		
 	
 	# 	FRF_AMX = {
 	# 		cost = 75
@@ -1549,4 +1553,21 @@ ideas = {
 	# 		traits = { nuclear_scientist }
 	# 	}
 	# }	
+	tank_manufacturer = {
+		renault_frf = {
+			cost = 75
+			picture = renault
+						
+			allowed = {
+				original_tag = FRF
+			}
+						
+			research_bonus = {
+				armor = 0.15
+			}
+			
+
+			traits = { heavy_tank_manufacturer }
+		}
+	}
 }

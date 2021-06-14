@@ -2050,7 +2050,7 @@ technologies = {
 		allow = {
 			always = no
 		}
-		add_ideas = renault_fra
+		add_ideas = renault_frf
 	}
 	
 }

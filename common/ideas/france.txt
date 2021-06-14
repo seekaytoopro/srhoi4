@@ -2195,7 +2195,10 @@ ideas = {
 			picture = generic_tank_manufacturer_2
 			cost = 75
 			available = {
-				has_completed_focus = FRA_army_reform
+				OR = {
+					has_completed_focus = FRA_army_reform
+					original_tag = FRF
+				}
 			}
 						
 			allowed = {

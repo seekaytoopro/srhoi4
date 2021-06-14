@@ -273,8 +273,23 @@ country_event = {
 				# annex_country = FRA			
 			}
 			FRF = {
-				set_technology = { FRF_get_tank_designer = 1 }
+				add_ideas = renault_frf
+			}
+			FRF = {
 				inherit_technology = FRA
+				set_technology = { FRF_get_tank_designer = 1 }
+
+				if = { limit = { FRF = { has_tech = basic_medium_tank } } 
+					set_technology = { basic_medium_tank = 0 }
+					set_technology = { basic_medium_tank = 1 } }
+				if = { limit = { FRF = { has_tech = improved_medium_tank } } 
+					set_technology = { improved_medium_tank = 0 }
+					set_technology = { improved_medium_tank = 1 } }
+				if = { limit = { FRF = { has_tech = improved_heavy_tank } } 
+					set_technology = { improved_heavy_tank = 0 }
+					set_technology = { improved_heavy_tank = 1 } }
+
+
 				# if = { limit = { FRA = { has_tech = basic_medium_tank } } set_technology = { basic_medium_tank = 1 } }
 				# if = { limit = { FRA = { has_tech = improved_medium_tank } } set_technology = { improved_medium_tank = 1 } }
 				# if = { limit = { FRA = { has_tech = improved_heavy_tank } } set_technology = { improved_heavy_tank = 1 } }
@@ -368,8 +383,8 @@ country_event = {
 			
 			#GER = { declare_war_on = { target = FRF type = annex_everything } }
 			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 }
-			FRF = { army_experience = 475 }
-			FRF = { add_political_power = 300 }
+			FRF = { army_experience = 500 }
+			FRF = { add_political_power = 600 }
 			FRF = {
 				transfer_state = 295 
 				transfer_state = 718 
