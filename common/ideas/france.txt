@@ -40,6 +40,23 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		FRF_national_bureau_of_statistics = {
+			picture = SOV_scientist_defect
+			allowed = {
+				original_tag = EFR 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
 		FRA_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
@@ -440,7 +457,10 @@ ideas = {
 		FRA_la_deluge = {
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 
 			allowed_civil_war = {
@@ -1526,7 +1546,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			available = {
@@ -1554,7 +1577,7 @@ ideas = {
 			}
 			
 			available = {
-				GER = { has_completed_focus = GER_demand_sudetenland }
+				has_completed_focus = FRA_form_the_popular_front
 			}
 			cost = 75 
 			traits = { appeaser }
@@ -1572,7 +1595,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			available = {
@@ -1592,7 +1618,10 @@ ideas = {
 		FRA_gaston_henry_haye = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			picture = generic_political_advisor_europe_5
@@ -1613,7 +1642,10 @@ ideas = {
 		FRA_paul_baudouin = {
 
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 
 			picture = generic_political_advisor_europe_3
@@ -1634,7 +1666,10 @@ ideas = {
 		FRA_zivony_peshkov = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			picture = generic_army_europe_5
@@ -1655,7 +1690,10 @@ ideas = {
 		FRA_felix_gouin = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			picture = generic_political_advisor_europe_3
@@ -1677,9 +1715,18 @@ ideas = {
 		FRA_vincent_auriol = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
-			available = { has_completed_focus = FRA_form_the_popular_front }
+			available = {
+				OR = {
+					original_tag = FRF
+					has_completed_focus = FRA_form_the_popular_front
+				}
+				
+			}
 
 			
 			traits = { financial_expert }
@@ -1698,7 +1745,10 @@ ideas = {
 		FRA_charles_tillon = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 			
 			picture = generic_political_advisor_europe_3
@@ -1719,7 +1769,10 @@ ideas = {
 		FRA_paul_reynaud = {
 			
 			allowed = {
-				original_tag = "FRA"
+				OR = {
+					original_tag = "FRA"
+					original_tag = "FRF"
+				}
 			}
 
 			picture = generic_political_advisor_europe_3
@@ -1746,10 +1799,16 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			available = {
-				has_completed_focus = FRA_aggressive_focus
+				OR = {
+					has_completed_focus = FRA_aggressive_focus
+					original_tag = FRF
+				}
 			}
 
 			cost = 50
@@ -1765,10 +1824,16 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			available = {
-				has_completed_focus = FRA_defensive_focus
+				OR = {
+					has_completed_focus = FRA_defensive_focus
+					original_tag = FRF
+				}
 			}
 
 			cost = 50
@@ -1785,7 +1850,10 @@ ideas = {
 			picture = generic_army_europe_3
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1802,7 +1870,10 @@ ideas = {
 			picture = generic_army_europe_1
 
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1818,7 +1889,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1836,7 +1910,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1852,7 +1929,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1868,7 +1948,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1886,7 +1969,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1902,7 +1988,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1918,7 +2007,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1938,7 +2030,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1955,7 +2050,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1972,7 +2070,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -1989,7 +2090,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -2006,7 +2110,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -2023,7 +2130,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -2040,7 +2150,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 
@@ -2063,7 +2176,10 @@ ideas = {
 			picture = renault
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2083,7 +2199,10 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2102,7 +2221,10 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2122,7 +2244,10 @@ ideas = {
 			}
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2141,7 +2266,10 @@ ideas = {
 
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2160,7 +2288,10 @@ ideas = {
 		somua = {
 			cost = 75
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 
 			research_bonus = {
@@ -2174,7 +2305,10 @@ ideas = {
 		mas = {
 			cost = 75		
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2187,7 +2321,10 @@ ideas = {
 		schneider = {
 			cost = 75		
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}		
 			
 			research_bonus = {
@@ -2205,7 +2342,10 @@ ideas = {
 		morane_saulnier = {
 			cost = 75
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 			research_bonus = {
@@ -2218,7 +2358,10 @@ ideas = {
 		bloch = {
 			cost = 75	
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2231,7 +2374,10 @@ ideas = {
 		amiot = {
 			cost = 75	
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2244,7 +2390,10 @@ ideas = {
 		levasseur = {
 			cost = 75	
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2263,7 +2412,10 @@ ideas = {
 		fcm = {
 			cost = 75			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2275,7 +2427,10 @@ ideas = {
 		aeb = {
 			picture = FRA_aeb		
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			cost = 75
 			research_bonus = {
@@ -2287,7 +2442,10 @@ ideas = {
 		acl = {
 			picture = FRA_acl	
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			cost = 75	
 			research_bonus = {
@@ -2299,7 +2457,10 @@ ideas = {
 		acf = {
 			picture = FRA_acf			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			cost = 75	
 			research_bonus = {
@@ -2315,7 +2476,10 @@ ideas = {
 		famh = {
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2332,10 +2496,16 @@ ideas = {
 			ledger = army
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			available = {
-				has_completed_focus = FRA_battle_of_maneuver
+				OR = {
+					has_completed_focus = FRA_begin_rearmament
+					original_tag = FRF
+				}
 			}
 			
 			cost = 75
@@ -2362,7 +2532,10 @@ ideas = {
 			ledger = army
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2387,7 +2560,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 			cost = 175
@@ -2404,7 +2580,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 			
@@ -2420,7 +2599,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 			cost = 175 
@@ -2436,7 +2618,10 @@ ideas = {
 			ledger = air
 						
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 						
 			research_bonus = {
@@ -2451,7 +2636,10 @@ ideas = {
 			
 			
 			allowed = {
-				original_tag = FRA
+				OR = {
+					original_tag = FRA
+					original_tag = FRF
+				}
 			}
 			
 			

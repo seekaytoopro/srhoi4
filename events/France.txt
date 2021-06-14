@@ -273,9 +273,6 @@ country_event = {
 				# annex_country = FRA			
 			}
 			FRF = {
-				add_ideas = renault_frf
-			}
-			FRF = {
 				set_technology = { FRF_get_tank_designer = 1 }
 				inherit_technology = FRA
 				# if = { limit = { FRA = { has_tech = basic_medium_tank } } set_technology = { basic_medium_tank = 1 } }
