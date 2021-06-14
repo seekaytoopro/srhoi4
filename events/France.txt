@@ -32,7 +32,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-is_triggered_only = yes 
+	is_triggered_only = yes 
 
 	immediate = {
 		set_global_flag = achievement_france_surrender
@@ -42,9 +42,9 @@ is_triggered_only = yes
 	option = { # Become Free French
 		name = france.10.b
 		
-		trigger = { FRA = { has_capitulated = yes }}
+		# trigger = { FRA = { has_capitulated = yes }}
 		set_global_flag = fall_of_france
-		set_cosmetic_tag = FRA_FREE
+		# set_cosmetic_tag = FRA_FREE
 		custom_effect_tooltip = france.10.b_tt
 	}
 	
@@ -360,9 +360,24 @@ country_event = {
 				annex_country = { target = FRA transfer_troops = no }
 			}
 			ENG = { add_to_faction = FRF }
-			GER = { declare_war_on = { target = FRF type = annex_everything } }
+			FRF = {
+				add_to_war = { 
+					targeted_alliance = ENG 
+					enemy = GER
+					hostility_reason = asked_to_join
+				}
+			}
+			
+			#GER = { declare_war_on = { target = FRF type = annex_everything } }
 			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 }
 			FRF = { army_experience = 475 }
+			FRF = {
+				transfer_state = 295 
+				transfer_state = 718 
+				transfer_state = 538 
+				transfer_state = 768 
+				transfer_state = 769 
+			}
 		}
 		#### Stuff to replace the old France (FRA) with a brand new Free France (FRF) country ####
 
@@ -388,13 +403,6 @@ country_event = {
 
 	option = {
 		name = france.800.a
-		FRF = {
-			transfer_state = 295 
-			transfer_state = 718 
-			transfer_state = 538 
-			transfer_state = 768 
-			transfer_state = 769 
-		}
 	}
 }
 

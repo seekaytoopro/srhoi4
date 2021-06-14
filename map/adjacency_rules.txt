@@ -167,47 +167,6 @@ adjacency_rule #Rep Spain Strait
 	is_disabled = {	NOT = {	tag = SPD }	}
 }
 
-adjacency_rule
-{
-	name = "London-Stockholm"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	
-	required_provinces = { 6103 }
-	is_disabled = {
-		NOT = {
-			tag = ENG
-		}	
-	}
-}
-
 #Suez Canal
 adjacency_rule
 {
@@ -238,7 +197,7 @@ adjacency_rule
 	{
 		army = yes
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = yes
 	}
 	
@@ -286,11 +245,11 @@ adjacency_rule
 	{
 		army = yes
 		navy = no
-		submarine = yes
+		submarine = no
 		trade = yes
 	}
 	
-	required_provinces = { 4135 }
+	required_provinces = { 4135 13228 }
 	
 	icon = 5407	
 	offset = { -11.0 0.0 -1.0 }
