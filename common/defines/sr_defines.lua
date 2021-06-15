@@ -59,6 +59,11 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.35-- damage reduc
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage dice if our armor outclasses enemy
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5 -- damage reduction if armor outclassing enemy
 
+NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
+NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2   -- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage dice if our armor outclasses enemy
+
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.074 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0333 	-- (0.05) global damage modifier
