@@ -531,11 +531,11 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.075
-				defense_bonus_against = 0.075
+				attack_bonus_against = 0.09
+				defense_bonus_against = 0.09
 			}
 			modifier = {
-				air_cas_present_factor = 0.15
+				#air_cas_present_factor = 0.15
 				# production_speed_air_base_factor=0.20
 				# production_speed_infrastructure_factor=0.20
 			}
@@ -658,7 +658,7 @@ ideas = {
 			picture = generic_acquire_tanks
 
 			modifier = {
-				army_attack_factor = 0.15
+				army_attack_factor = 0.125
 				army_defence_factor = 0.075
 			}
 			targeted_modifier = {
@@ -679,15 +679,15 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.10
-				air_cas_present_factor = 0.25
-				army_infantry_attack_factor = 0.03
+				# army_armor_attack_factor = 0.10
+				# air_cas_present_factor = 0.25
+				# army_infantry_attack_factor = 0.03
 			}
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.125
-				defense_bonus_against = 0.075
+				attack_bonus_against = 0.18
+				defense_bonus_against = 0.09
 			}
 		}
 
@@ -702,15 +702,15 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.15
-				air_cas_present_factor = 0.35
-				army_infantry_attack_factor = 0.05
+				# army_armor_attack_factor = 0.15
+				# air_cas_present_factor = 0.35
+				# army_infantry_attack_factor = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.16
+				defense_bonus_against = 0.08
 			}
 		}
 
@@ -725,17 +725,17 @@ ideas = {
 
 			picture = generic_acquire_tanks
 			modifier = {
-				air_cas_present_factor = 0.25
-				army_armor_attack_factor = 0.15
-				army_infantry_attack_factor = 0.15
+				# air_cas_present_factor = 0.25
+				# army_armor_attack_factor = 0.15
+				# army_infantry_attack_factor = 0.15
 				army_morale_factor = 0.1
 				land_reinforce_rate = 0.05
 			}
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.075
-				defense_bonus_against = 0.075
+				attack_bonus_against = 0.125
+				defense_bonus_against = 0.125
 			}
 		}
 
