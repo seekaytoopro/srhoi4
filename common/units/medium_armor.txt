@@ -41,8 +41,8 @@ sub_units = {
 			movement = -0.2
 		}
 		hills = {
-		    attack = -0.25
-			defence = -0.25 
+		    attack = -0.20
+			defence = -0.275 
 			movement = -0.2
 		}
 		mountain = 	{
