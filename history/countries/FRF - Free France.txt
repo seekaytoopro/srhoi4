@@ -15,6 +15,7 @@ add_to_tech_sharing_group = commonwealth_research
 
 # Starting tech
 set_technology = {
+	basic_medium_tank = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	infantry_weapons2 = 1

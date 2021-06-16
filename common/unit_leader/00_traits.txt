@@ -110,7 +110,7 @@ leader_traits = {
 		
 		modifier = {
 			army_morale_factor = 0.05
-			max_planning = 0.03
+			max_planning = 0.015
 			
 		}
 		new_commander_weight = {
@@ -157,6 +157,7 @@ leader_traits = {
 			heat_attrition_factor = 0.02
 			winter_attrition_factor = 0.02
 			no_supply_grace = 5
+			max_planning = -0.01
 		}
 		
 		attack_skill_factor = 1
@@ -328,7 +329,7 @@ leader_traits = {
 		}
 		cost = 1000
 		field_marshal_modifier = {
-			max_planning = 0.075
+			max_planning = 0.05
 		}
 		
 		ai_will_do = {

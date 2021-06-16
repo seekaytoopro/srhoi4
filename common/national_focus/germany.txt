@@ -3356,14 +3356,14 @@ focus_tree = {
 							}
 						}
 						
-					GER = { add_timed_idea = { idea = GER_barbarossa days = 175 }  }
+					GER = { add_timed_idea = { idea = GER_barbarossa days = 100 }  }
 					hidden_effect={
-					ITA = { add_timed_idea = { idea = GER_barbarossa days = 175 } }
-					if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }
-					if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }
-					if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }
-					if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }
-					if = { limit = {country_exists = CRO } CRO = { add_timed_idea = { idea = GER_barbarossa days = 175 } } }
+					ITA = { add_timed_idea = { idea = GER_barbarossa days = 100 } }
+					if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
+					if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
+					if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
+					if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
+					if = { limit = {country_exists = CRO } CRO = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
 					}			
 				}
 			}
@@ -3397,7 +3397,7 @@ focus_tree = {
 						name = Barbarossa_Panther_bonus
 						bonus = 1.00
 						uses = 1
-						ahead_reduction = 1
+						ahead_reduction = 0.35
 						technology = advanced_medium_tank
 						technology = advanced_heavy_tank
 					}

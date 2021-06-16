@@ -403,7 +403,7 @@ focus = {
 			name = Great_patriotic_research
 			bonus = 1.00
 			uses = 1
-			ahead_reduction = 1
+			ahead_reduction = 0.25
 			technology = advanced_medium_tank
 			technology = advanced_heavy_tank
 		}

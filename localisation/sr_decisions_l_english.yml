@@ -243,6 +243,10 @@ SOV_relocate_industry_from_moscow:0 "Relocate Industry from Moscow"
 
  SOV_relocate_industry_from_wolyn:0 "Relocate Industry from Wolyn"
  SOV_relocate_industry_from_wolyn_desc:0 "Evacuating the heavy machinery of our Wolyn factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_wolyn_tt:0 "§RThese effects require control of Wolyn when the decision times out.§!" 
+ SOV_relocate_industry_from_wolyn_tt:0 "§RThese effects require control of Wolyn when the decision times out.§!"
+
+ SOV_relocate_industry_from_gorodskoy:0 "Relocate Industry from Gorodskoy"
+ SOV_relocate_industry_from_gorodskoy_desc:0 "Evacuating the heavy machinery of our Gorodskoy factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_gorodskoy_tt:0 "§RThese effects require control of Gorodskoy when the decision times out.§!"
 
  

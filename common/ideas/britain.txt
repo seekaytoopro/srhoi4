@@ -1810,10 +1810,11 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					defense = 0.06
+					hard_attack = 0.06
 				}
 			}
 			
-			traits = { heavy_tank_manufacturer }
+			traits = { }
 			
 			modifier = {
 			}

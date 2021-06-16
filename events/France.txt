@@ -380,6 +380,9 @@ country_event = {
 					hostility_reason = asked_to_join
 				}
 			}
+			FRF = {
+				add_to_tech_sharing_group = commonwealth_research
+			}
 			
 			#GER = { declare_war_on = { target = FRF type = annex_everything } }
 			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 }
