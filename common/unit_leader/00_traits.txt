@@ -61,8 +61,9 @@ leader_traits = {
 		
 		modifier = {
 			max_dig_in = 2
-			army_defence_factor = 0.025
+			# army_defence_factor = 0.025
 		}
+		defense_skill = 1
 	}
 	
 	
@@ -82,9 +83,9 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		modifier = {
-			army_defence_factor = 0.05
+			# army_defence_factor = 0.05
 		}	
-		defense_skill = 1
+		defense_skill = 3
 		logistics_skill = 1
 		
 		defense_skill_factor = 1
@@ -96,8 +97,9 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			supply_consumption_factor = -0.05
+			#supply_consumption_factor = -0.05
 		}
+		logistics_skill = 2
 		
 		planning_skill_factor = 1
 		logistics_skill_factor = 1
@@ -111,7 +113,6 @@ leader_traits = {
 		modifier = {
 			army_morale_factor = 0.05
 			max_planning = 0.015
-			
 		}
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
@@ -138,8 +139,9 @@ leader_traits = {
 		
 		modifier = {
 			planning_speed = -0.10
-			army_defence_factor = 0.05
+			# army_defence_factor = 0.05
 		}
+		defense_skill = 2
 		
 		defense_skill_factor = 1
 		logistics_skill_factor = 1
@@ -151,14 +153,16 @@ leader_traits = {
 		
 		modifier = {		
 			planning_speed = 0.20
-			army_attack_factor = 0.05
+			# army_attack_factor = 0.05
 			out_of_supply_factor = 0.1
-			supply_consumption_factor = 0.04
+			# supply_consumption_factor = 0.04
 			heat_attrition_factor = 0.02
 			winter_attrition_factor = 0.02
 			no_supply_grace = 5
 			max_planning = -0.01
 		}
+		attack_skill = 2
+		logistics_skill = -2
 		
 		attack_skill_factor = 1
 		defense_skill_factor = -1
