@@ -59,7 +59,7 @@ focus_tree = {
 		relative_position_id = SOV_great_purge
 		prerequisite = { focus = SOV_great_purge }
 
-		cost = 0.1
+		cost = 1.5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -89,11 +89,11 @@ focus_tree = {
 	focus = {
 		id = SOV_the_germans_invade
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = SOV_modernize_equipment }
+		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {  has_war_with = GER }
 
 		x = 0
-		y = 4
+		y = 2
 		relative_position_id = SOV_move_industry_to_urals
 		cost = 7.2
 		ai_will_do = {
@@ -546,11 +546,10 @@ focus = {
 	focus = {
 		id = SOV_southern_thrust
 		icon = GFX_focus_SOV_iran
-		prerequisite = { focus = SOV_improve_stalin_line }
-		prerequisite = {focus = SOV_far_east_fortification}
-		x = 0
-		y = 2
-		relative_position_id = SOV_collectivist_propaganda
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		x = 2
+		y = 1
+		relative_position_id = SOV_move_industry_to_urals
 		cost = 2.9
 
 	available = {
@@ -577,10 +576,10 @@ focus = {
 		id = SOV_modernize_equipment
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = 0
-		y = 2
+		x = -2
+		y = 1
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -915,10 +914,10 @@ focus = {
 		focus = {
 			id = SOV_command_economy
 			icon = GFX_goal_generic_soviet_construction
-			prerequisite = { focus = SOV_cas_effort }
-			x = 3
-			y = 2
-			relative_position_id = SOV_cas_effort
+			prerequisite = { focus = SOV_railway_expansion }
+			x = 1
+			y = 1
+			relative_position_id = SOV_railway_expansion
 			cost = 10
 			ai_will_do = {
 				factor = 9
@@ -1028,7 +1027,7 @@ focus = {
 			x = 0
 			y = 1
 			relative_position_id = SOV_first_tech_slot
-			cost = 5
+			cost = 10
 			ai_will_do = {
 				factor = 10
 			}
@@ -1159,11 +1158,10 @@ focus = {
 		focus = {
 			id = SOV_southern_SSRs
 			icon = GFX_focus_prc_agrarian_socialism
-			prerequisite = { focus = SOV_socialist_realism }
-		prerequisite = { focus = SOV_stalin_constitution}
-			x = 0
-			y = 2
-			relative_position_id = SOV_positive_heroism
+			prerequisite = { focus = SOV_railway_expansion }
+			x = -1
+			y = 1
+			relative_position_id = SOV_railway_expansion
 			cost = 10
 			ai_will_do = {
 				factor = 1
@@ -1290,10 +1288,10 @@ focus = {
 		focus = {
 			id = SOV_stalin_constitution
 			icon = GFX_focus_SOV_stalin_constitution
-			prerequisite = { focus = SOV_positive_heroism }
+			prerequisite = { focus = SOV_collectivist_propaganda }
 			x = -1
 			y = 1
-			relative_position_id = SOV_positive_heroism
+			relative_position_id = SOV_collectivist_propaganda
 			cost = 5
 			ai_will_do = {
 				factor = 1
@@ -1537,40 +1535,12 @@ focus = {
 			completion_reward = {
 				add_tech_bonus = {
 		name = GER_soviet_treaty
-		bonus = 2.0
+		bonus = 1.0
 		uses = 1
 		ahead_reduction = 1
 		technology = improved_heavy_tank
 	
 		}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_TD_bonus
-				technology = advanced_light_td
-				technology = improved_medium_td
-				technology = improved_heavy_td
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_ART_bonus
-				technology = advanced_light_art
-				technology = improved_medium_art
-				technology = improved_heavy_art
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_SPAA_bonus
-				technology = advanced_light_spaa
-				technology = improved_medium_spaa
-				technology = improved_heavy_spaa
-			}
-		
 				257 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1725,13 +1695,10 @@ focus = {
 		focus = {
 			id = SOV_stalinist_architecture
 			icon = GFX_focus_generic_self_management
-			prerequisite = { focus = SOV_metal_foundaries }
-					prerequisite = { focus = SOV_ural_expansion}
-			
-				relative_position_id = SOV_metal_foundaries
+			prerequisite = { focus = SOV_ural_expansion focus = SOV_metal_foundaries }
 			x = 1
 			y = 1
-		
+			relative_position_id = SOV_metal_foundaries
 	
 			cost = 10
 	
@@ -1971,11 +1938,11 @@ focus = {
 		focus = {
 			id = SOV_improve_stalin_line
 			icon = GFX_goal_generic_fortify_city
-			prerequisite = { focus = SOV_collectivist_propaganda}
+			prerequisite = { focus = SOV_positive_heroism }
 			available = { has_offensive_war = no }
 			x = -1
 			y = 1
-			relative_position_id = SOV_collectivist_propaganda
+			relative_position_id = SOV_positive_heroism
 			cost = 5
 			ai_will_do = {
 				factor = 1
@@ -2253,7 +2220,25 @@ focus = {
 		# 	}
 		# }
 
+		focus = {
+			id = SOV_peoples_commissariat
+			icon = GFX_goal_support_communism
+			prerequisite = { focus = SOV_stalinist_architecture }
+			x = 0
+			y = 1
+			relative_position_id = SOV_stalinist_architecture
+			cost = 10
+			ai_will_do = {
+				factor = 10
+			}
 	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				#add_research_slot = 1
+				add_ideas = peoples_commissariat_focus
+			}
+		}
 
 		#End of Mil Focus branch--------------------------------------------------------------------------------------
 
@@ -2668,12 +2653,9 @@ focus = {
 				x = -8
 				y = 2
 				relative_position_id = SOV_great_purge
-				cost = 5
+				cost = 8
 				ai_will_do = {
 					factor = 10
-				}
-				available = {
-					date>1937.1.1
 				}
 		
 				available_if_capitulated = yes
@@ -2685,12 +2667,6 @@ focus = {
 						uses = 1
 						category = light_fighter
 					}
-					add_tech_bonus = {
-						name = air_doctrine
-						bonus = 1.0
-						uses = 2
-						category = air_doctrine
-					}
 				}
 			}
 
@@ -2701,7 +2677,7 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_fighter_effort
-				cost = 5
+				cost = 8
 				ai_will_do = {
 					factor = 10
 				}
@@ -2713,13 +2689,8 @@ focus = {
 						name = SOV_cas_effort
 						bonus = 1.0
 						uses = 1
+						category = tactical_bomber
 						category = cas_bomber
-					}
-					add_tech_bonus = {
-						name = air_doctrine
-						bonus = 1.0
-						uses = 2
-						category = air_doctrine
 					}
 				}
 			}
@@ -2731,7 +2702,7 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_cas_effort
-				cost = 5
+				cost = 8
 				ai_will_do = {
 					factor = 1
 				}
@@ -2739,11 +2710,11 @@ focus = {
 				available_if_capitulated = yes	
 		
 				completion_reward = {
-					air_experience = 250
+					air_experience = 25
 					add_tech_bonus = {
 						name = air_doctrine
 						bonus = 1.0
-						uses = 2
+						uses = 6
 						category = air_doctrine
 					}
 				}
