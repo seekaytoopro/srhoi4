@@ -1751,7 +1751,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1940
 		folder = {
 			name = infantry_folder
