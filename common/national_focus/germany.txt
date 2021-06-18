@@ -1209,7 +1209,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {	date > 1937.1.1 }
 		available_if_capitulated = yes
 		
 		completion_reward = {
@@ -2849,7 +2849,7 @@ focus_tree = {
 		
 		available = {
 			OR = {
-				date > 1942.9.1
+				date > 1943.2.18
 
 				AND = {
 					surrender_progress > 0.01
@@ -3178,9 +3178,10 @@ focus_tree = {
 				prerequisite = { focus = GER_atlantikwall focus = GER_anti_comitern_pact }
 				icon = GFX_focus_ger_reichskommisariats
 				available = {
-					NOT = { has_idea = GER_fall_blau }
-					NOT = { has_idea = GER_operation_citadel }
-					Date > 1940.6.1
+				
+					Date > 1940.10.1
+					Date < 1942.3.1
+				
 					OR = {
 						surrender_progress > 0.01
 
