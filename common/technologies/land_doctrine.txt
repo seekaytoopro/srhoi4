@@ -1465,12 +1465,10 @@ technologies = {
 			max_organisation = 10
 			default_morale = 0.05
 		}
-		category_tanks = {
-			max_organisation = 2
-		}
+	
 
 		category_all_armor = {
-			default_morale = 0.05
+			default_morale = 0.01
 		}
 		armored_car = {
 			max_organisation = 2
