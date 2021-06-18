@@ -2316,12 +2316,7 @@ focus = {
 	
 			completion_reward = {
 				add_ideas = nkvd
-				add_tech_bonus = {
-					name = SOV_nkvd_primacy
-					bonus = 1.0
-					uses = 1
-					technology = assembly_line_production
-				}
+				
 			}
 		}
 	
@@ -2380,20 +2375,22 @@ focus = {
 	
 			completion_reward = {
 		
-		hidden_effect = {
-		}
+	add_tech_bonus = {
+					name = SOV_nkvd_primacy
+					bonus = 1.0
+					uses = 1
+					technology = assembly_line_production
+				}
 			
-				army_experience = 20
+				army_experience = 500
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 1.0
+					bonus = 2.0
 					uses = 1
 					technology = basic_medium_tank
 					technology = improved_medium_tank
 					technology = improved_heavy_tank
 					technology = advanced_light_tank
-					technology = advanced_medium_tank
-					technology = advanced_heavy_tank
 				}
 				add_tech_bonus = {
 					name = armor_bonus
