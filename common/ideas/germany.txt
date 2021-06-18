@@ -1367,6 +1367,8 @@ ideas = {
 		porsche = {
 		cost = 75
 			
+			
+			
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO  }
 			}
@@ -1377,9 +1379,41 @@ ideas = {
 			
 
 			equipment_bonus = {
-				armor = {
-					maximum_speed = 0.06 soft_attack = 0.08 hard_attack = 0.08 breakthrough = 0.08
+				medium_tank_equipment = {
+					 hard_attack = 0.15
 				}
+				heavy_tank_equipment = { hard_attack = 0.1 soft_attack = 0.05}
+				medium_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				heavy_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.10
+					
+				}
+			    light_tank_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+				
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				light_tank_destroyer_equipment = {
+					reliability = 0.1
+					hard_attack = 0.15
+					maximum_speed = 0.05
+				}
+				light_tank_aa_equipment = {
+					reliability = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
+				
 			}
 			
 			#traits = { porsche_manufacturer }
@@ -1405,9 +1439,42 @@ ideas = {
 			#traits = { henschel_manufacturer }
 
 			equipment_bonus = {
-				armor = {
-					maximum_speed = -0.04 defense = 0.08 soft_attack = 0.12 hard_attack = 0.12
+				medium_tank_equipment = {
+					maximum_speed = -0.1 soft_attack = 0.1 hard_attack = 0.1
 				}
+		heavy_tank_equipment = { hard_attack = 0.1 soft_attack = 0.05}
+				medium_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				heavy_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.10
+		
+			
+				}
+			    light_tank_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+				
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				light_tank_destroyer_equipment = {
+					reliability = 0.1
+					hard_attack = 0.15
+					maximum_speed = 0.05
+				}
+				light_tank_aa_equipment = {
+					reliability = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
+				
 			}
 			
 			ai_will_do = {
@@ -1428,10 +1495,42 @@ ideas = {
 				armor = 0.15
 			}
 
-			equipment_bonus = {
-				armor = {
-					reliability = 0.04 soft_attack = 0.12 hard_attack = 0.12 
+		 equipment_bonus = {
+				medium_tank_equipment = {
+					 soft_attack = 0.15
 				}
+				heavy_tank_equipment = { hard_attack = 0.1 soft_attack = 0.05}
+				medium_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				heavy_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.10
+		
+				}
+			    light_tank_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+				
+				}
+				light_tank_artillery_equipment = {
+					reliability = 0.1
+					soft_attack = 0.1
+					maximum_speed = 0.05
+				}
+				light_tank_destroyer_equipment = {
+					reliability = 0.1
+					hard_attack = 0.15
+					maximum_speed = 0.05
+				}
+				light_tank_aa_equipment = {
+					reliability = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.05
+				}
+				
 			}
 			
 			#traits = { man_manufacturer }
