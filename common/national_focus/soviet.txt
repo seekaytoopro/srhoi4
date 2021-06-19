@@ -59,7 +59,7 @@ focus_tree = {
 		relative_position_id = SOV_great_purge
 		prerequisite = { focus = SOV_great_purge }
 
-		cost = 1.5
+		cost = 0.1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -95,27 +95,27 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 7.2
+		cost = 7.9
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
 				# add_offsite_building = { type = industrial_complex level = 10 }
-				hidden_effect = {
-					set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
-				}
-				SOV_barb_debuff_level_up = yes
-				if = {
-					limit = {
-						check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
-					}
-					set_variable = { var = SOV_barb_debuff_counter value = 10 }
-				}
-				add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+				# hidden_effect = {
+				# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+				# }
+				# SOV_barb_debuff_level_up = yes
+				# if = {
+				# 	limit = {
+				# 		check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+				# 	}
+				# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
+				# }
+				# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
 	
-				hidden_effect = {
-					activate_mission = SOV_barb_debuff_mission
-				}
+				# hidden_effect = {
+				# 	activate_mission = SOV_barb_debuff_mission
+				# }
 
 				add_timed_idea = { idea = shattered_retreat days = 75 }
 		}
@@ -142,21 +142,21 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		completion_reward = {
-			hidden_effect = {
-				set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
-			}
-			SOV_barb_debuff_level_up = yes
-			if = {
-				limit = {
-					check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
-				}
-				set_variable = { var = SOV_barb_debuff_counter value = 10 }
-			}
-			add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+			# hidden_effect = {
+			# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+			# }
+			# SOV_barb_debuff_level_up = yes
+			# if = {
+			# 	limit = {
+			# 		check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+			# 	}
+			# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
+			# }
+			# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
 
-			hidden_effect = {
-				activate_mission = SOV_barb_debuff_mission
-			}
+			# hidden_effect = {
+			# 	activate_mission = SOV_barb_debuff_mission
+			# }
 
 			add_ideas = georgy_zhukov_chief
 
@@ -405,6 +405,12 @@ focus = {
 			uses = 1
 			ahead_reduction = 0.25
 			technology = advanced_medium_tank
+		}
+		add_tech_bonus = {
+			name = Great_patriotic_research
+			bonus = 1.00
+			uses = 1
+			ahead_reduction = 0.25
 			technology = advanced_heavy_tank
 		}
 		add_tech_bonus = {

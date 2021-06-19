@@ -3399,6 +3399,12 @@ focus_tree = {
 						uses = 1
 						ahead_reduction = 0.35
 						technology = advanced_medium_tank
+					}
+					add_tech_bonus = {
+						name = Barbarossa_Panther_bonus
+						bonus = 1.00
+						uses = 1
+						ahead_reduction = 0.35
 						technology = advanced_heavy_tank
 					}
 					add_tech_bonus = {
