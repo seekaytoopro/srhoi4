@@ -247,6 +247,15 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
+			type = cas_equipment_1
+			creator = "USA" 
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
 			type = transport_plane_equipment_1
 			creator = "USA" 
 		}
