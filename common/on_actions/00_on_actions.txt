@@ -177,23 +177,71 @@ on_actions = {
 			if = {
 				limit = { original_tag = HOL }
 				HOL = { set_equipment_fraction = 0.0 }
+				every_country = {
+					limit = { the_axis = yes }
+					white_peace = HOL
+					set_truce = {
+						target = HOL
+						days = 9999
+					}
+				}
 				ENG = { 
-					transfer_state = 334
-					transfer_state = 672
-					transfer_state = 335
-					transfer_state = 667
-					transfer_state = 668
-					transfer_state = 673
-					transfer_state = 738
-					transfer_state = 669
+					# remove_from_faction = HOL
+					# transfer_state = 334 #Kalimantan
+					# transfer_state = 672 #Sumatra
+					# transfer_state = 335 #Java
+					# transfer_state = 667 #Lesser Sunda
+					# transfer_state = 668 #Moluccas
+					# transfer_state = 673 #Sulawesi
+					# transfer_state = 738 #Aru
+					# transfer_state = 669 #West Papua
+					
 					transfer_state = 309
-					transfer_state = 795
-					country_event = { id = britain.1333 }
-						}
-				HOL = { country_event = { id =  mtg_netherlands.330 days = 1 } }
+					# transfer_state = 795 #Borneo Jungle
+
+					# transfer_state = 334 #Kalimantan
+					# transfer_state = 672 #Sumatra
+					# transfer_state = 335 #Java
+					# transfer_state = 667 #Lesser Sunda
+					# transfer_state = 668 #Moluccas
+					# transfer_state = 673 #Sulawesi
+					# transfer_state = 738 #Aru
+					# transfer_state = 669 #West Papua
+					# transfer_state = 795 #Borneo Jungle
+				}
+				HOL = {
+					transfer_state = 333 #British Malaya, no pre-positioning
+					give_resource_rights = { receiver = ENG state = 333 }
+					give_resource_rights = { receiver = ENG state = 334 }
+					give_resource_rights = { receiver = ENG state = 672 }
+					give_resource_rights = { receiver = ENG state = 335 }
+					give_resource_rights = { receiver = ENG state = 667 }
+					give_resource_rights = { receiver = ENG state = 668 }
+					give_resource_rights = { receiver = ENG state = 673 }
+					give_resource_rights = { receiver = ENG state = 738 }
+					give_resource_rights = { receiver = ENG state = 669 }
+					give_resource_rights = { receiver = ENG state = 795 }
+
+					333 = { set_demilitarized_zone = yes }
+					334 = { set_demilitarized_zone = yes }
+					672 = { set_demilitarized_zone = yes }
+					335 = { set_demilitarized_zone = yes }
+					667 = { set_demilitarized_zone = yes }
+					668 = { set_demilitarized_zone = yes }
+					673 = { set_demilitarized_zone = yes }
+					738 = { set_demilitarized_zone = yes }
+					669 = { set_demilitarized_zone = yes }
+					795 = { set_demilitarized_zone = yes }
+
+					set_rule = {
+						can_be_called_to_war = no
+					}
+
+				}
 		 		GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 		 		ENG = { transfer_state = 695 }
 				GER = { transfer_state = 35 transfer_state = 36 transfer_state = 7 }
+				ENG = { country_event = { id = britain.1333 days = 1 } }
 			}
 
 			if = {
@@ -597,130 +645,130 @@ on_subject_autonomy_level_change = {
 
 			
 
-		if = {
-				limit = {
-					ROOT = {
-						OR = {
-							tag = JAP
-							tag = MAN
-							tag = SIA
-						}
-					}
-					FROM.FROM = {
-						AND = {
-							NOT = { has_state_flag = rubber_state_transfered } 
-							OR = {
-								state = 623
-								state = 327
-								state = 625
-								state = 627
-								state = 333
-								state = 334
-								state = 672
-								state = 733
-								state = 422
-								state = 335
-								state = 667
-								state = 721
-								state = 673
-								state = 668
-								state = 669
-								state = 523
-								state = 737
-								state = 634
-								state = 635
-								state = 626
-								state = 628
-								state = 336
-								state = 624
-								state = 738
-							}
-							USA = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							NZL = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							AST = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							RAJ = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							SAF = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							CAN = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							ENG = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							FRA = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-							IRE = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-														BRA = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
-														MEX = {
-								divisions_in_state = {
-									type = infantry
-									size < 1
-									state = FROM.FROM
-								}
-							}
+		# if = {
+		# 		limit = {
+		# 			ROOT = {
+		# 				OR = {
+		# 					tag = JAP
+		# 					tag = MAN
+		# 					tag = SIA
+		# 				}
+		# 			}
+		# 			FROM.FROM = {
+		# 				AND = {
+		# 					NOT = { has_state_flag = rubber_state_transfered } 
+		# 					OR = {
+		# 						state = 623
+		# 						state = 327
+		# 						state = 625
+		# 						state = 627
+		# 						state = 333
+		# 						state = 334
+		# 						state = 672
+		# 						state = 733
+		# 						state = 422
+		# 						state = 335
+		# 						state = 667
+		# 						state = 721
+		# 						state = 673
+		# 						state = 668
+		# 						state = 669
+		# 						state = 523
+		# 						state = 737
+		# 						state = 634
+		# 						state = 635
+		# 						state = 626
+		# 						state = 628
+		# 						state = 336
+		# 						state = 624
+		# 						state = 738
+		# 					}
+		# 					USA = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					NZL = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					AST = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					RAJ = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					SAF = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					CAN = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					ENG = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					FRA = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 					IRE = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 												BRA = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
+		# 												MEX = {
+		# 						divisions_in_state = {
+		# 							type = infantry
+		# 							size < 1
+		# 							state = FROM.FROM
+		# 						}
+		# 					}
 				
-						}
-					}
-				}
-				FROM.FROM = {
-					set_state_flag = rubber_state_transfered
-				}
-				JAP = { set_state_controller = FROM.FROM }
-			}
+		# 				}
+		# 			}
+		# 		}
+		# 		FROM.FROM = {
+		# 			set_state_flag = rubber_state_transfered
+		# 		}
+		# 		JAP = { set_state_controller = FROM.FROM }
+		# 	}
 		}
 	}
 	

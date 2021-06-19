@@ -126,6 +126,7 @@ ideas = {
             modifier = {
 				training_time_factor = 100
 				conscription_factor  = -2
+				ai_join_ally_desire_factor = -1000
             }
 		}
 	
