@@ -266,7 +266,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_named_threat = { threat = 10 name = JAP_CHITWO }
-			#add_timed_idea = { idea = JAP_year_of_righteous_effort days = 365 } #Monkeybuff
+			add_timed_idea = { idea = JAP_year_of_righteous_effort days = 365 } #Monkeybuff
 
 			
 			swap_ideas = {
