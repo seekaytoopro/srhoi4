@@ -76,6 +76,44 @@ ideas = {
 		}
 	}
 
+	JAP_papua = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+		picture = jap_zaibatsu
+		
+		modifier = {
+			navy_max_range_factor = 0.15
+		}
+	}
+
+	JAP_ast = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+		picture = jap_zaibatsu
+		
+		modifier = {
+			navy_max_range_factor = 0.2
+		}
+	}
+
 	JAP_war_with_chi1 = {
 		
 		removal_cost = -1

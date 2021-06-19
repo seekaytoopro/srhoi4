@@ -196,6 +196,8 @@ country_event = {
 		}
 
 		hidden_effect = {
+			AST = { add_ideas = AST_papua }
+			NZL = { add_ideas = AST_papua }
 			ENG = {
 				annex_country = {
 					target = HOL

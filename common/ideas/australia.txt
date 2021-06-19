@@ -1,6 +1,39 @@
 ideas = {
 
 	country = {
+
+		AST_papua = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_classify_aliens
+
+			modifier = {
+				army_core_attack_factor = 0.60
+				army_core_defence_factor = 0.60
+				attrition = -0.5
+				no_supply_grace = 72
+				out_of_supply_factor = -0.5
+				supply_consumption_factor = -0.20
+				land_reinforce_rate = 0.10
+				recon_factor_while_entrenched = 1.0
+				army_speed_factor = 0.05
+				extra_paratrooper_supply_grace = 96
+			}
+			targeted_modifier = { tag = JAP attack_bonus_against = 0.025 }
+			targeted_modifier = { tag = MAN attack_bonus_against = 0.025 }
+			targeted_modifier = { tag = JAP defense_bonus_against = 0.05 }
+			targeted_modifier = { tag = MAN defense_bonus_against = 0.05 }			
+			
+		}
 		
 		AST_the_commonwealth = {
 		

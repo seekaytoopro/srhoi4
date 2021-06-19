@@ -3255,11 +3255,144 @@ set_technology = { cv_naval_bomber2 = 1 }
 					}}					
 				}
 			}
+
+			focus = {
+				id = Victory_in_Papua
+				icon = GFX_focus_jap_strike_south
+				prerequisite = {  }	
+				x = 2
+				y = 0
+				relative_position_id = JAP_strike_on_the_southern_resource_area
+		
+				continue_if_invalid = no
+				cancel_if_invalid = no
+				available_if_capitulated = no
+		
+				cost = 5
+		
+				ai_will_do = {
+					factor = 10
+				}
+		
+				available = {
+		
+					669 = { 
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = ENG }
+						NOT = { is_controlled_by = NZL }				
+					}
+					523 = { 
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = ENG }
+						NOT = { is_controlled_by = NZL }
+					}
+				}
+		
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = no
+				continue_if_invalid = yes
+				available_if_capitulated = no
+		
+				complete_tooltip = {
+		
+				}
+		
+				completion_reward = {
+					AST = { remove_ideas = AST_papua }
+					NZL = { remove_ideas = AST_papua }
+					add_ideas = JAP_papua
+					669 = {
+						add_resource = {
+							type = steel
+							amount = 22
+						}
+					}
+					523 = {
+						add_resource = {
+							type = steel
+							amount = 26
+						}
+					}
+				}
+			}
+		
+			focus = {
+				id = Victory_in_Ast
+				icon = GFX_focus_jap_strike_south
+				prerequisite = { focus = Victory_in_Papua }		
+				x = 4
+				y = 0
+				relative_position_id = JAP_strike_on_the_southern_resource_area
+		
+				continue_if_invalid = no
+				cancel_if_invalid = no
+				available_if_capitulated = no
+		
+				cost = 5
+		
+				ai_will_do = {
+					factor = 10
+				}
+		
+				available = {
+					285 = { 
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }				
+					}
+					517 = {
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}
+					521 = { 
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}	
+					520 = {
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}	
+					522 = {
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}	
+					518 = {
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}		
+				}
+		
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = no
+				continue_if_invalid = yes
+				available_if_capitulated = no
+		
+				complete_tooltip = {
+		
+				}
+		
+				completion_reward = {
+					add_ideas = JAP_ast
+					285 = {
+						add_resource = {
+							type = steel
+							amount = 60
+						}
+					}
+				}
+			}
 		}
-		
-		
-		
-	}
 	
 	
 	
