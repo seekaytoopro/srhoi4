@@ -155,3 +155,8 @@
  news.402.d:0 "Mud season will end in 45 days.\n\n§RAll divisions on Soviet core territory will have 18% less division attack, suffer 10% attrition, have 27% less breakthrough, and have a -18% speed penalty (-30.5% for  armor divisions).§!"
  news.400.a:0 "Let them come!"
  news.401.a:0 "Ok"
+
+ news.410:0 "Total Mobilization and Equipment 3 is Unlocked!"
+ news.410.t:0 "Total Mobilization and Equipment 3 is Unlocked!"
+ news.410.d:0 "Total Mobilization is unlocked for all nations except Germany, and all equipment 3 (Tank 3's, Plane 3's, Artillery 3's, Inf equipment 3, etc.) are unlocked and able to be researched.\n\nDon't forget to go total mob and start teching the new equipment!"
+ news.410.a:0 "Ok, I will remember"
