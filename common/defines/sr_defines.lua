@@ -376,25 +376,55 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 1                        -- WAS 100 | r
 NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 10                       -- WAS 6 | Increased so moving troops around the world is faster and theaters dont seem so disconnected (particularly aimed at improving Allied gameplay experience)
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 40                           -- WAS 10 | Increased so players can use their same submarine or escort admiral without penalties
 --NDefines.NNavy.NAVAL_MINES_DECAY_AT_PEACE_TIME = 1                    -- WAS 0.25 
-NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, whih defines their starting position
-		0.0, -- HOLD 
-		0.0, -- PATROL		
-		0.0, -- STRIKE FORCE 
-		0.0, -- CONVOY RAIDING
-		0.0, -- CONVOY ESCORT
-		0.0, -- MINES PLANTING	
-		0.0, -- MINES SWEEPING	
-		0.5, -- TRAIN
+
+NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
+		0.0, -- HOLD
+		1.0, -- PATROL		
+		0.2, -- STRIKE FORCE 
+		0.5, -- CONVOY RAIDING
+		0.5, -- CONVOY ESCORT
+		0.3, -- MINES PLANTING	
+		0.3, -- MINES SWEEPING	
+		0.0, -- TRAIN
 		0.0, -- RESERVE_FLEET
-		0.0, -- NAVAL_INVASION_SUPPORT
+		0.2, -- NAVAL_INVASION_SUPPORT
+}
+
+NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
+		2.0,		-- do not engage
+		2.0,	-- low
+		2.0,	-- medium
+		2.0,	-- high
+		2.0,	-- I am death incarnate!
 	}
+		
+NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
+		1.0,     -- do not engage
+		1.0,   -- low
+		1.0,   -- medium
+		1.0,   -- high
+		1.0,   -- I am death incarnate!
+	}
+
+-- NDefines.NNavy.MISSION_SPREADS = {  -- mission spreads in the case a ship join combat, whih defines their starting position
+-- 		0.0, -- HOLD 
+-- 		0.0, -- PATROL		
+-- 		0.0, -- STRIKE FORCE 
+-- 		0.0, -- CONVOY RAIDING
+-- 		0.0, -- CONVOY ESCORT
+-- 		0.0, -- MINES PLANTING	
+-- 		0.0, -- MINES SWEEPING	
+-- 		0.5, -- TRAIN
+-- 		0.0, -- RESERVE_FLEET
+-- 		0.0, -- NAVAL_INVASION_SUPPORT
+-- 	}
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
-	225.0, -- heavy attack 80
+	230.0, -- heavy attack 80
 	500.0, -- torpedos 145
-	300.0 -- light attack 45
+	275.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		3.0,	-- heavy attack
