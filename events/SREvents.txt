@@ -238,7 +238,7 @@ country_event = {
 	
 	option = {
 		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
-		SWE = { country_event = { id = srevents.801 days = 45 } }
+		SWE = { country_event = { id = srevents.801 days = 40 } }
 	}
 }
 news_event = {
@@ -272,7 +272,7 @@ country_event = {
 	
 	option = {
 		every_state = { limit = { is_core_of = SOV } add_province_modifier = { static_modifiers = { mud_simulator } province = { all_provinces = yes }  } }
-		SWE = { country_event = { id = srevents.801 days = 45 } }
+		SWE = { country_event = { id = srevents.801 days = 40 } }
 	}
 }
 news_event = {
