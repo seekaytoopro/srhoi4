@@ -924,3 +924,13 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 3
 	}
 }
+create_equipment_variant = {
+	name = "T-35 1936"
+	type = heavy_tank_equipment_1
+upgrades={
+			tank_reliability_upgrade=2
+			tank_engine_upgrade=3
+			tank_armor_upgrade=5
+			tank_gun_upgrade=5
+		}
+		}

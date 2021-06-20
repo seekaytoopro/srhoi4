@@ -349,6 +349,44 @@ division_template = {
 
 }
 
+division_template = {
+	
+		name="Gvardia Heavy Breakthrough Corp"
+		priority=2
+		support={
+			armored_car_recon={ x=0 y=0 }
+			engineer={ x=0 y=1 }
+			anti_air={ x=0 y=2 }
+			anti_tank={ x=0 y=3 }
+			artillery={ x=0 y=4 }
+		}
+		regiments={
+			motorized={ x=0 y=0 }
+			motorized={ x=0 y=1 }
+			motorized={ x=0 y=2 }
+			motorized={ x=0 y=3 }
+			motorized={ x=1 y=0 }
+			motorized={ x=1 y=1 }
+			motorized={ x=1 y=2 }
+			motorized={ x=1 y=3 }
+			mot_anti_air_brigade={ x=1 y=4 }
+			heavy_armor={ x=2 y=0 }
+			heavy_armor={ x=2 y=1 }
+			heavy_armor={ x=2 y=2 }
+			heavy_armor={ x=2 y=3 }
+			heavy_armor={ x=3 y=0 }
+			heavy_armor={ x=3 y=1 }
+			heavy_armor={ x=3 y=2 }
+			heavy_armor={ x=3 y=3 }
+			heavy_armor={ x=4 y=0 }
+			heavy_armor={ x=4 y=1 }
+			heavy_armor={ x=4 y=2 }
+		}
+		}
+
+	
+
+
 ### Note: OOB abstracts away the following:
 #	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
 #	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
@@ -443,7 +481,7 @@ instant_effect = {
 			creator = "SOV" 
 		} 
 
-		requested_factories = 5
+		requested_factories = 7
 		progress = 0.4 
 		efficiency = 70 
 	}
@@ -459,22 +497,13 @@ instant_effect = {
 		efficiency = 70 
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 70
-	}
 
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 1
+		requested_factories = 8
 		progress = 0.4
 		efficiency = 70
 	}
@@ -497,23 +526,13 @@ instant_effect = {
 		efficiency = 70
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "SOV" 
-			version_name = "I16-R"
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 70
-	}
 
 	add_equipment_production = {
 		equipment = {
 			type = cas_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 1
+		requested_factories = 10
 		progress = 0.15
 		efficiency = 70
 	}
@@ -527,5 +546,23 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 70
 	}
+	
+	
+	
+	add_equipment_production = {
+		equipment = {
+		type = heavy_tank_equipment_1
+			creator = "SOV" 
+			version_name = "T-35 1936"
+		}
+		requested_factories = 10
+		progress = 0.15
+		efficiency = 70
+	}
+	
+	
+	
+	
+	
 }
 	#####################
