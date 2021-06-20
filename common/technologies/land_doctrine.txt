@@ -1560,7 +1560,7 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
-		max_dig_in = 10
+		max_dig_in = 5
 		dig_in_speed_factor = 0.25 #25% bonus
 		
 		
@@ -2340,7 +2340,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		max_dig_in = 4
+	
 		dig_in_speed_factor = 0.25
 		pocket_penalty = -0.05
 
