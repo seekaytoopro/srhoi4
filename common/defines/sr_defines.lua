@@ -137,10 +137,10 @@ NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- I
 
 NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0.0 -- we need more intel than this to get any supremacy - should hopefully make naval invasions not be blocked by intel nonesense????
 
-NDefines.NMilitary.RIVER_CROSSING_PENALTY =	-0.20 	--small river crossing
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE =	-0.325 	--large river crossing
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY =	-0.25 	--small river crossing
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE =	-0.40 	--large river crossing 
+NDefines.NMilitary.RIVER_CROSSING_PENALTY =	-0.175 	--small river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE =	-0.30 	--large river crossing
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY =	-0.225 	--small river crossing
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE =	-0.35 	--large river crossing 
 
 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0 -- (72) Divisions per general
