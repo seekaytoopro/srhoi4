@@ -2588,7 +2588,7 @@ technologies = {
 
 		artillery_brigade = { 
 			soft_attack = 0.08
-			defense = 0.15
+			defense = 0.1
 		}
 
 		category_light_infantry = {
