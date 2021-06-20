@@ -1543,7 +1543,6 @@ focus = {
 			army_experience = 250
 				add_tech_bonus = {
 		name = GER_soviet_treaty
-		bonus = 2.0
 		uses = 1
 		ahead_reduction = 4
 		technology = improved_heavy_tank

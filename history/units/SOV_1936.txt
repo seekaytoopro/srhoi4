@@ -555,7 +555,7 @@ instant_effect = {
 			creator = "SOV" 
 			version_name = "T-35 1936"
 		}
-		requested_factories = 10
+		requested_factories = 5
 		progress = 0.15
 		efficiency = 70
 	}
