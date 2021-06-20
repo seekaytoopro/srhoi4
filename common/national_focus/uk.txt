@@ -260,7 +260,7 @@ focus_tree = {
 	focus = {
 		id = tizard_mission_focus
 		available = {
-			USA = { has_war_with = GER }
+			SOV = { has_war_with = GER }
 		}
 		prerequisite = { focus = limited_rearmament_focus }
 		icon = GFX_goal_generic_scientific_exchange
@@ -272,13 +272,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			custom_effect_tooltip = "Gives a fighter 3 bonus for UK and USA"
 			air_experience = 25
 			ENG = {
 				add_tech_bonus = {
 					name = fighter_command_focus
 					bonus = 1.0
 					uses = 1
-					category = light_fighter
+					technology = fighter3
 				}
 			}
 			
@@ -287,7 +288,7 @@ focus_tree = {
 					name = fighter_command_focus
 					bonus = 1.0
 					uses = 1
-					category = light_fighter
+					technology = fighter3
 				}
 			}
 		}

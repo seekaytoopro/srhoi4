@@ -1562,7 +1562,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GER_soviet_treaty
 		cost = 10
 		ai_will_do = {
@@ -3440,6 +3440,34 @@ focus_tree = {
 						uses = 2
 						category = cat_anti_tank
 						}
+					}
+				}
+
+				focus = {
+					id = GER_air_innovation_3
+					icon = GFX_goal_generic_air_fighter2
+					prerequisite = { focus = GER_air_innovation_2 }
+					prerequisite = { focus = GER_battle_russia }
+					x = 2
+					y = 1
+					relative_position_id = GER_air_innovation_2
+					cost = 10
+					ai_will_do = {
+						factor = 1
+					}
+			
+					available_if_capitulated = yes
+			
+					completion_reward = { 
+						air_experience = 50
+						add_tech_bonus = {
+							name = GER_fighter_3
+							bonus = 1.00
+							uses = 1
+							ahead_reduction = 0.2
+							technology = fighter3
+						}
+
 					}
 				}
 
