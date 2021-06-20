@@ -2770,7 +2770,10 @@ technologies = {
 		xp_research_bonus = 1.00
 		org_loss_when_moving = -0.25
 		land_reinforce_rate = 0.05
-
+	rocket_artillery_brigade = { 
+	defense = 0.15
+	breakthrough = 0.1
+	}
 		category_all_armor = {
 			max_organisation = 3
 			soft_attack = 0.075
