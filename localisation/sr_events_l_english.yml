@@ -160,3 +160,8 @@
  news.410.t:0 "Total Mobilization and Equipment 3 is Unlocked!"
  news.410.d:0 "Total Mobilization is unlocked for all nations except Germany, and all equipment 3 (Tank 3's, Plane 3's, Artillery 3's, Inf equipment 3, etc.) are unlocked and able to be researched.\n\nDon't forget to go total mob and start teching the new equipment!"
  news.410.a:0 "Ok, I will remember"
+
+ news.411:0 "Iran Front Begins!"
+ news.411.t:0 "Iran Front Begins!"
+ news.411.d:0 "The Iran Front has begun!"
+ news.411.a:0 "Ok"

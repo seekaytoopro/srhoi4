@@ -4882,3 +4882,19 @@ news_event = {
 	}
 }
 
+#Iran Front Opens
+news_event = {
+	id = news.411
+	title = news.411.t
+	desc = news.411.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.411.a
+	}
+}
+

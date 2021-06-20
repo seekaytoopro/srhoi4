@@ -97,6 +97,7 @@ operations = {
 			complete_effect = {	
 				# SOV = { country_event = { id = iran.2 days = 0 } }
 				# ENG = { country_event = { id = iran.3 days = 0 } }
+				news_event = { id = news.411 days = 0 }
 
 				SOV = {
 					transfer_state = 266

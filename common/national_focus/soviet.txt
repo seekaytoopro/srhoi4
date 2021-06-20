@@ -574,7 +574,8 @@ focus = {
 		completion_reward = {
 				custom_effect_tooltip = SOV_southern_thrust_tt
 				country_event = { id = iran.2 }
-				ENG = { country_event = { id = iran.3 }}	
+				ENG = { country_event = { id = iran.3 }}
+				news_event = { id = news.411 days = 0 }	
 		}
 	}
 
