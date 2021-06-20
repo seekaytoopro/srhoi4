@@ -34,7 +34,8 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	
 	}
 	
-	DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {	
+	DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
+		if = { limit = { FROM = { tag = FRA } }		NOT = { ROOT = { normally_played_allies = yes } } }	
 	if = { limit = {ROOT = { tag = EFR   } }  		EFR = {  always = no  } } 
 	if = { limit = {ROOT = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {ROOT = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
