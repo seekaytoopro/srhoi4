@@ -1209,7 +1209,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {	date > 1937.6.1 }
+		available = {	date > 1937.1.1 }
 		available_if_capitulated = yes
 		
 		completion_reward = {
@@ -1224,7 +1224,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 0.85
+				bonus = 0.75
 				uses = 1
 				technology = fighter2
 			}

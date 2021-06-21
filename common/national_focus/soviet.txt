@@ -2680,7 +2680,7 @@ focus = {
 					factor = 10
 				}
 				available = {
-					date>1937.6.1
+					date>1937.1.1
 				}
 
 				available_if_capitulated = yes
@@ -2688,7 +2688,7 @@ focus = {
 				completion_reward = {
 					add_tech_bonus = {
 						name = SOV_fighter_effort
-						bonus = 1.0
+						bonus = 1.5
 						uses = 1
 						category = light_fighter
 					}
@@ -2711,9 +2711,6 @@ focus = {
 				cost = 5
 				ai_will_do = {
 					factor = 10
-				}
-					available = {
-					date>1938.6.1
 				}
 
 				available_if_capitulated = yes
