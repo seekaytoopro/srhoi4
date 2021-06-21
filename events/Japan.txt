@@ -198,6 +198,19 @@ country_event = {
 		hidden_effect = {
 			AST = { add_ideas = AST_papua }
 			NZL = { add_ideas = AST_papua }
+			if = {
+				limit = {
+					country_exists = AST
+				}
+				AST = {
+					transfer_state = 669
+				}
+			}
+			else = {
+				ENG = {
+					transfer_state = 669
+				}				
+			}
 			ENG = {
 				annex_country = {
 					target = HOL

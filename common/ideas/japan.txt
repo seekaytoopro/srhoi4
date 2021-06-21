@@ -1035,7 +1035,7 @@ ideas = {
 				naval_strike_attack_factor = 0.12
 				naval_strike_targetting_factor = 0.12
 				naval_strike_agility_factor = 0.12
-				army_attack_factor = 0.10
+				army_attack_factor = 0.15
 				army_speed_factor = 0.125
 				navy_screen_attack_factor = 0.1
 				navy_submarine_attack_factor = 0.1
@@ -1044,6 +1044,11 @@ ideas = {
 				# special_forces_attack_factor = 0.025
 				experience_loss_factor = -0.25
 				army_morale_factor = 0.15
+				supply_consumption_factor = -0.075
+			}
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = -0.075
 			}
 		}
 

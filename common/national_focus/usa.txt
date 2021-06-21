@@ -1297,7 +1297,7 @@ focus_tree = {
 		icon = GFX_america_goal_marcarthur_military
 		prerequisite = { focus = USA_defense_of_the_pacific }
 		available = {
-			date > 1941.2.1
+			date > 1941.3.1
 		}
 		bypass = { ROOT = { has_war_with = JAP } }
 		relative_position_id = USA_defense_of_the_pacific
@@ -1312,7 +1312,8 @@ focus_tree = {
 				expire = 0
 			}
 			JAP = {
-				add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+				custom_effect_tooltip = tooltip_jap_war
+				country_event = { id = japan.144 }
 			}
 		}
 	}

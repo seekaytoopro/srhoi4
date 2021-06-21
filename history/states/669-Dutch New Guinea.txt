@@ -3,22 +3,59 @@ state={
 	id=669
 	name="STATE_669"
 	resources={
-		rubber=23.000
+		rubber=27.000
 	}
 
 	history={
 		owner = HOL
 		add_core_of = SWE
 		victory_points = {
-			12371 5 
+			12371 15 
 		}
 		buildings = {
-			infrastructure = 1
-			12371 = {
-				naval_base = 2
-
+			infrastructure = 4
+			4468 = {
+				naval_base = 1
 			}
-
+			12371 = {
+				naval_base = 1
+			}
+			# 555 = {
+			# 	naval_base = 1
+			# }
+			# 42 = {
+			# 	naval_base = 1
+			# }
+			7627 = {
+				naval_base = 1
+			}
+			7529 = {
+				naval_base = 1
+			}
+			# 5012 = {
+			# 	naval_base = 1
+			# }
+			1629 = {
+				naval_base = 3
+			}
+			4524 = {
+				naval_base = 3
+			}
+			# 2222 = {
+			# 	naval_base = 3
+			# }
+			4593 = {
+				naval_base = 3
+			}
+			7542 = {
+				naval_base = 3
+			}
+			1546 = {
+				naval_base = 5
+			}
+			# 55 = {
+			# 	naval_base = 5
+			# }
 		}
 
 	}

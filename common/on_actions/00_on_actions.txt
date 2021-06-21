@@ -211,7 +211,6 @@ on_actions = {
 				}
 				HOL = {
 					transfer_state = 333 #British Malaya, no pre-positioning
-					give_resource_rights = { receiver = ENG state = 333 }
 					give_resource_rights = { receiver = ENG state = 334 }
 					give_resource_rights = { receiver = ENG state = 672 }
 					give_resource_rights = { receiver = ENG state = 335 }
@@ -233,11 +232,12 @@ on_actions = {
 					669 = { set_demilitarized_zone = yes }
 					795 = { set_demilitarized_zone = yes }
 
-					set_rule = {
-						can_be_called_to_war = no
-					}
+					# set_rule = {
+					# 	can_be_called_to_war = no
+					# }
 
 				}
+				HOL = { give_resource_rights = { receiver = ENG state = 333 } }
 		 		GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }
 		 		ENG = { transfer_state = 695 }
 				GER = { transfer_state = 35 transfer_state = 36 transfer_state = 7 }
