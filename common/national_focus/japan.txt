@@ -94,7 +94,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 1.5
 
 		ai_will_do = {
 			factor = 2
@@ -385,7 +385,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_liaison_conference
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -410,11 +410,11 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strike_south_doctrine
-				bonus = 1.0
+				bonus = 3.0
 				uses = 2
-				category = naval_doctrine	
+				category = tp_tech
 			}
-			unlock_decision_tooltip = JAP_pressure_france
+			# unlock_decision_tooltip = JAP_pressure_france
 		}
 	}
 
@@ -449,8 +449,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_bypass_the_philippines
 				bonus = 1.0
-				uses = 1
-				category = tp_tech
+				uses = 2
+				category = naval_doctrine	
 			}
 		}
 	}
