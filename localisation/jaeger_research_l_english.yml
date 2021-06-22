@@ -43,4 +43,13 @@ antiair3_5:0 "Improved Aircraft Targeting"
 antitank3_5:0 "Sub-Caliber Shell Advancements"
 antitank3_5_desc:0 "Advancements in Sub-Caliber shells allow for greatly increased penetration, at the expense of post-penetration damage. Armor-piercing, composite rigid (APCR) is a British term; the US term for the design is high-velocity armor-piercing (HVAP) and the German term is Hartkernmunition."
 
+ sniper_rifle:0 "Sniper Team"
+ sniper_rifle_desc:0 "Adding a sniper unit in each platoon will effectively increase unit's recon ability and attack."
+ sniper_rifle_2:0 "Advanced Sniper Team"
+ sniper_rifle_2_desc:0 "We have improved the rifles and training available to our Sniper Teams, allowing for a notable increase in their effectiveness."
+ sniper_rifle_3:0 "Semi-Modern Sniper Team"
+ sniper_rifle_3_desc:0 "The extensive experience and feedback of our Sniper Teams has enabled us to produce even better equipment."
+ sniper_rifle_4:0 "Modern Sniper Team"
+ sniper_rifle_4_desc:0 "Out teams have the very best equipment and employ nothing less than the most modern equipment."
+
 

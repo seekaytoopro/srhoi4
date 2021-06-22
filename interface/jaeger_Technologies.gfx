@@ -82,4 +82,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_flamethrower.dds"
 	}
 
+	#snipers
+
+	SpriteType = {
+		name = "GFX_sniper_rifle_medium"
+		texturefile = "gfx/interface/technologies/tech_sniper_rifle_01.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper_rifle_2_medium"
+		texturefile = "gfx/interface/technologies/tech_sniper_rifle_02.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper_rifle_3_medium"
+		texturefile = "gfx/interface/technologies/tech_sniper_rifle_03.dds"
+	}
+	SpriteType = {
+		name = "GFX_sniper_rifle_4_medium"
+		texturefile = "gfx/interface/technologies/tech_sniper_rifle_04.dds"
+	}
+
 }
