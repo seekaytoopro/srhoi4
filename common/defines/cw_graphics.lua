@@ -52,17 +52,18 @@ NDefines_Graphics.NGraphics.DRAW_MAP_OBJECTS_CUTOFF = 1.0					-- Remove map obje
 NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50 -- At what distance weather effects are hidden
 
 NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {250, 450, 600}
-NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {250, 450, 600}
-NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 600
+NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {550, 750, 1000}
+NDefines_Graphics.NGraphics.CAPITAL_ICON_CUTOFF = 900
+NDefines_Graphics.NGraphics.UNITS_ICONS_DISTANCE_CUTOFF = 1000
 
 --NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_MAX_SIZE = 0
 NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100				--group moving and still units
-NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 325.0		--group into states
-NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 400		--group units into air regions
+NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 1000.0		--group into states
+NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 2000		--group units into air regions
 NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 220					--size limit for air region grouping
 NDefines_Graphics.NGraphics.MAP_ICONS_STATE_HUGE = 100							--size limit for state grouping
 NDefines_Graphics.NGraphics.MAPICON_GROUP_STRATEGIC_SIZE = 1000
-NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 300
+NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 600
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
 NDefines_Graphics.NGraphics.BLOOM_WIDTH = 0
 NDefines_Graphics.NGraphics.BLOOM_SCALE = 0
