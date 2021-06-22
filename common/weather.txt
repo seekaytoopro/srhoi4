@@ -22,13 +22,13 @@ terrain_modifiers = {
     terrain = { type = "urban" value = 0.7 }
   }
   blizzard = {
-    terrain = { type = "mountain" value = 0.8 }
-    terrain = { type = "forest" value = 0.8 }
-    terrain = { type = "plains" value = 0.8 }
-    terrain = { type = "desert" value = -1.0 }
+  	terrain = { type = "mountain" value = 0.8 }
+	terrain = { type = "forest" value = 0.8 }
+   	terrain = { type = "plains" value = 0.8 }
+  	terrain = { type = "desert" value = -1.0 }
     terrain = { type = "urban" value = 0.5 }
   }
-  sandstorm = { #dudududu
+  sandstorm = {
   	terrain = { type = "desert" value = 0.8 }
   	terrain = { type = "mountain" value = -1.0 }
   }
@@ -64,18 +64,14 @@ settings = {
 
     # When temperature goes below, the mud disappears (it gets frozen).
     min_temperature = 80.0
-  }
 
-  #Provinces with a static modifiers with this ID gets the mud effect applied on the map
-  # visual_mud_effects = {
-  #   flooded
-  # }
+  }
 
   snowing = {
     # Amount of snow collected affects the visual snow on the map
-    snow_gain_on_snowing = 0.0
-    snow_gain_on_blizzard = 0.0
-    snow_gain_max = 0.0
+    snow_gain_on_snowing = 6.0
+    snow_gain_on_blizzard = 8.0
+    snow_gain_max = 80.0
 
     # Visual fix, so even tiny amount of snow can be visible. (0-255)
     snow_visual_min = 128
@@ -88,17 +84,12 @@ settings = {
     snow_melt_multiplier = { 0.001 0.9 }
 
     # Max temperature allowed for snowing / min temperature for highest chance of snowing.
-    temperature = { -90.0 -99.0 }
+    temperature = { 1.0 -10.0 }
 
     weather_ground_snow_medium = { 15.0 40.0 }
     weather_ground_snow_high = { 40.0 1000.0 }
   }
 
-  # arctic_water = {
-	# arctic_water_temperature = { -5.0 0.0 }
-	# arctic_water_end_temperature = { 1.0 5.0 }
-  # }
-  
   # Increase chance of X if was already X before. Decrease otherwise.
   chance_increase = {
     mud = { 20.0 0.10 }
@@ -118,18 +109,23 @@ settings = {
 
 weather_effects = {
   rain_light = {
-
+  	weather_effect = { entity = rain_entity fading_entity = rain_clouds_entity }
+  	weather_effect = { entity = rain_small_entity fading_entity = rain_small_clouds_entity small = yes }
   }
   rain_heavy = {
-
+  	weather_effect = { entity = lightning_storm_entity fading_entity = lightning_storm_clouds_entity }
+  	weather_effect = { entity = lightning_storm_small_entity fading_entity = lightning_storm_small_clouds_entity small = yes }
   }
   snow = {
-
+  	weather_effect = { entity = snow_entity fading_entity = snow_clouds_entity }
+  	weather_effect = { entity = snow_small_entity fading_entity = snow_small_clouds_entity small = yes }
   }
   blizzard = {
-
+  	weather_effect = { entity = snow_storm_entity fading_entity = snow_storm_clouds_entity }
+  	weather_effect = { entity = snow_storm_small_entity fading_entity = snow_storm_small_clouds_entity small = yes }
   }
   sandstorm = {
-
+  	weather_effect = { entity = sandstorm_entity }
   }
 }
+
