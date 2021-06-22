@@ -2034,7 +2034,7 @@ focus_tree = {
 			# custom_effect_tooltip = GER_speer_reminder_tt
 			# custom_effect_tooltip = available_theorist 
 			# show_ideas_tooltip = speer	
-			GER = { add_ideas = german_wartime_economy }
+				add_timed_idea= {  idea = german_wartime_economy days = 700 }
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			add_political_power = 150
 				
