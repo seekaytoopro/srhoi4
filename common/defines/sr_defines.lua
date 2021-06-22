@@ -22,8 +22,6 @@ NDefines.NTechnology.MAX_SUBTECHS = 4                                 -- Added t
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3.0 -- Vanilla is 2.0, means 300% increase in research time per year ahead
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 45.0 -- Vanilla is 30.0, increased because ahead of time penalty also increased
 ---------------------------------------------------------------
-NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2                         -- vanilla 1, you can train to trained in deployment queue 
-NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0                     -- vanilla 62.0  how fast you train in deployment queue
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.00
 
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.05 -- Attack bonus factor against whoever occupies your core territory.
@@ -146,7 +144,16 @@ NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE =	-0.35 	--large river cro
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0 -- (72) Divisions per general
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 0 -- Divisions per field marshal directly leading troops
 NDefines.NMilitary.ARMY_LEADER_XP_GAIN_PER_UNIT_IN_COMBAT = 0.00
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.07
+
+-- Changes for more granular xp levels
+NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02,0.04,0.06,0.08,0.1,0.14,0.18,0.22,0.26,0.3,0.39,0.48,0.57,0.66,0.75,0.78,0.81,0.84,0.87,0.9}		-- Experience needed to progress to the next level
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.015
+NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 10 -- vanilla 1, you can train to trained in deployment queue 
+NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 156.0 -- vanilla 62.0  how fast you train in deployment queue
+NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
+-- End of changes for more granular xp levels
+
 NDefines.NMilitary.MAX_RELATIVE_COMBAT_DAMAGE_TO_MODIFY_XP = 0.0			-- you gain more XP if you are doing more damage relative to enemy, this is the max relative amount to gain following RATe
 NDefines.NMilitary.XP_DECAY_RATE_PER_HOUR_IN_COMBAT = 0.00				-- you get reduced XP as combat drags
 NDefines.NMilitary.MIN_XP_RATE_TO_DECAY = 0.0

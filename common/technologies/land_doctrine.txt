@@ -2342,6 +2342,7 @@ technologies = {
 		xp_research_bonus = 1.00
 	
 		dig_in_speed_factor = 0.25
+		max_dig_in = 1.0
 		pocket_penalty = -0.05
 
 		category_light_infantry = {
