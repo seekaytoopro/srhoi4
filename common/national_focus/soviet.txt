@@ -1,9 +1,11 @@
+
+  
 focus_tree = {
 	id = soviet_focus
 
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = SOV
@@ -11,16 +13,16 @@ focus_tree = {
 	}
 
 	continuous_focus_position = { x = 50 y = 1750 }
-	
+
 	default = no
 
 	focus = {
 		id = SOV_great_purge
 		icon = GFX_focus_SOV_great_purge
 		available = {
-			#date > 1937.6.1 
+			#date > 1937.6.1
 		}
-		
+
 		x = 17
 		y = 0
 		cost = 10
@@ -33,13 +35,13 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = partial_economic_mobilisation
 			country_event = { id = soviet.53 }
-			
+
 				add_timed_idea = {
 					idea = officers_purged
 					days = 1460
 				}
 				hidden_effect = {
-					country_event = { id = soviet.37 days = 146 }				
+					country_event = { id = soviet.37 days = 146 }
 				}
 				hidden_effect = {
 					news_event = { hours = 6 id = news.219 }
@@ -78,7 +80,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
-		completion_reward = {		
+		completion_reward = {
 			add_ideas = tot_economic_mobilisation
 			add_ideas = defend_the_motherland
 			add_offsite_building = { type = industrial_complex level = 10 }
@@ -89,16 +91,16 @@ focus_tree = {
 	focus = {
 		id = SOV_the_germans_invade
 		icon = GFX_focus_generic_combined_arms
-		prerequisite = { focus = SOV_move_industry_to_urals }
+		prerequisite = { focus = SOV_modernize_equipment }
 		available = {  has_war_with = GER }
 
 		x = 0
-		y = 2
+		y = 4
 		relative_position_id = SOV_move_industry_to_urals
 		cost = 7.9
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 				# add_offsite_building = { type = industrial_complex level = 10 }
 				# hidden_effect = {
@@ -112,7 +114,7 @@ focus_tree = {
 				# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
 				# }
 				# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
-	
+
 				# hidden_effect = {
 				# 	activate_mission = SOV_barb_debuff_mission
 				# }
@@ -166,14 +168,14 @@ focus_tree = {
 				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
 				traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer}
 				skill = 6
-	
-	
+
+
 				attack_skill = 6
 				defense_skill = 4
 				planning_skill = 4
 				logistics_skill = 5
 			}
-	
+
 			create_field_marshal = {
 			name = "Boris Shaposhnikov (New Inf Field Marshal)"
 				picture = "Portrait_Soviet_Boris_Shaposhnikov.dds"
@@ -184,7 +186,7 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 7
 			}
-	
+
 			create_corps_commander = {
 				name = "Ivan Konev"
 				id = 408
@@ -196,19 +198,19 @@ focus_tree = {
 				planning_skill = 4
 				logistics_skill = 4
 			}
-	
+
 			create_corps_commander = {
 			name = "Vasily Kuznetsov"
 				picture = "Portrait_Soviet_Vasily_Kuznetsov.dds"
 				traits = { winter_specialist commando infantry_officer politically_connected infantry_leader media_personality war_hero brilliant_strategist }
 				skill = 5
-	
+
 				attack_skill = 4
 				defense_skill = 4
 				planning_skill = 3
 				logistics_skill = 3
 			}
-	
+
 			create_corps_commander = {
 			name = "Markian Popov"
 				picture = "Portrait_Soviet_Matkian_Popov.dds"
@@ -219,7 +221,7 @@ focus_tree = {
 				planning_skill = 3
 				logistics_skill = 3
 			}
-	
+
 			create_corps_commander = {
 				name = "Nikolai Berzarin (New Inf General)"
 				picture = "Portrait_Soviet_Nikolai_Berzarin.dds"
@@ -230,7 +232,7 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 5
 			}
-	
+
 			create_corps_commander = {
 				name = "Alexander Gorbatov"
 				picture = "Portrait_Soviet_Alexander_Gorbatov.dds"
@@ -241,7 +243,7 @@ focus_tree = {
 				planning_skill = 4
 				logistics_skill = 4
 			}
-	
+
 			create_corps_commander = {
 				name = "Dmitry Lelyushenko (New Tank Commander)"
 				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
@@ -263,7 +265,7 @@ focus_tree = {
 				logistics_skill = 8
 			}
 		#}
-			
+
 			219 = {
 				hidden_effect = {
 					add_building_construction = {
@@ -445,7 +447,7 @@ focus = {
 			bonus = 0.5
 			uses = 2
 			category = cat_anti_tank
-			}		
+			}
 	}
 }
 
@@ -552,16 +554,17 @@ focus = {
 	focus = {
 		id = SOV_southern_thrust
 		icon = GFX_focus_SOV_iran
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = 2
-		y = 1
-		relative_position_id = SOV_move_industry_to_urals
+		prerequisite = { focus = SOV_improve_stalin_line }
+		prerequisite = {focus = SOV_far_east_fortification}
+		x = 0
+		y = 2
+		relative_position_id = SOV_collectivist_propaganda
 		cost = 2.9
 
 	available = {
 		AND = {
 			ENG = { controls_state = 446 }
-			ENG = { controls_state = 447 }	
+			ENG = { controls_state = 447 }
 		}
 		#NOT = { ENG = { has_completed_focus = ENG_iran_focus } }
 		date > 1941.1.1
@@ -575,7 +578,7 @@ focus = {
 				custom_effect_tooltip = SOV_southern_thrust_tt
 				country_event = { id = iran.2 }
 				ENG = { country_event = { id = iran.3 }}
-				news_event = { id = news.411 days = 0 }	
+				news_event = { id = news.411 days = 0 }
 		}
 	}
 
@@ -583,10 +586,10 @@ focus = {
 		id = SOV_modernize_equipment
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		x = -2
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 10
 		}
@@ -648,9 +651,9 @@ focus = {
 		ai_will_do = {
 			factor = 12
 		}
-		
+
 		available = {  }
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = SOV_five_year_plan
@@ -744,16 +747,16 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		completion_reward = {
-			247 = { 
+			247 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 2
-				instant_build = yes } 
+				instant_build = yes }
 			}
-			248 = { 
+			248 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
@@ -767,28 +770,28 @@ focus = {
 				level = 2
 					instant_build = yes }
 				}
-			254 = { 
+			254 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 2
 					instant_build = yes }
 				}
-			252 = { 
+			252 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 2
 					instant_build = yes }
 				}
-			349 = { 
+			349 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
 				level = 2
 				instant_build = yes }
 				}
-			250 = { 
+			250 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 				type = infrastructure
@@ -813,7 +816,7 @@ focus = {
 
 	# 	available_if_capitulated = yes
 
-		
+
 
 	# 	completion_reward = {
 	# 		swap_ideas = {
@@ -837,9 +840,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_research_slot = 1
 			}
@@ -852,23 +855,23 @@ focus = {
 			x = 4
 			y = 2
 			relative_position_id = SOV_workers_culture
-			
+
 			cost = 5
 			ai_will_do = {
 				factor = 5
 			}
-	
+
 			available = {
 				controls_state = 251
 			}
-	
+
 			completion_reward = {
 						add_resource = {
 					type = rubber
 					amount = 12
 					state = 251
 				}
-	
+
 				251 = {
 					add_extra_state_shared_building_slots = 6
 					add_building_construction = {
@@ -887,9 +890,9 @@ focus = {
 						add_tech_bonus = {
 					bonus = 1.0
 					uses = 3
-					category = synth_resources	
+					category = synth_resources
 				}
-	
+
 			}
 		}
 
@@ -904,9 +907,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 1
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		195 = {
 		# 			add_extra_state_shared_building_slots = 2
@@ -921,15 +924,15 @@ focus = {
 		focus = {
 			id = SOV_command_economy
 			icon = GFX_goal_generic_soviet_construction
-			prerequisite = { focus = SOV_railway_expansion }
-			x = 1
-			y = 1
-			relative_position_id = SOV_railway_expansion
+			prerequisite = { focus = SOV_cas_effort }
+			x = 3
+			y = 2
+			relative_position_id = SOV_cas_effort
 			cost = 10
 			ai_will_do = {
 				factor = 9
 			}
-			
+
 			completion_reward = {
 				add_tech_bonus = {
 					name = SOV_command_economy
@@ -967,7 +970,7 @@ focus = {
 				ai_will_do = {
 					factor = 9
 				}
-				
+
 				completion_reward = {
 					add_ideas = sov_refinery_effort
 					add_tech_bonus = {
@@ -997,14 +1000,14 @@ focus = {
 			y = 1
 			relative_position_id = SOV_tranformation_of_nature
 			cost = 5
-	
+
 			available_if_capitulated = yes
-	
+
 			ai_will_do = {
 				factor = 1
-			}	
+			}
 			completion_reward = {
-				
+
 				229 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
@@ -1022,8 +1025,8 @@ focus = {
 					amount = 35
 					state = 229
 				}
-				}	
-			
+				}
+
 			}
 		}
 
@@ -1034,13 +1037,13 @@ focus = {
 			x = 0
 			y = 1
 			relative_position_id = SOV_first_tech_slot
-			cost = 10
+			cost = 5
 			ai_will_do = {
 				factor = 10
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_ideas = progress_cult_focus
 			}
@@ -1057,9 +1060,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 10
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		add_tech_bonus = {
 		# 			bonus = 1.0
@@ -1080,15 +1083,15 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-			
+
 			completion_reward = {
-				219 = { 
+				219 = {
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes }
 				add_state_modifier = { modifier = { local_building_slots_factor = 0.35  } } }
-				195 = { 
+				195 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
@@ -1100,19 +1103,19 @@ focus = {
 						level = 2
 						instant_build = yes }
 					add_state_modifier = { modifier = { local_building_slots_factor = 0.35  } } }
-				218 = { 
+				218 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
 						instant_build = yes }
 					add_state_modifier = { modifier = { local_building_slots_factor = 0.35  } } }
-				242 = { 
+				242 = {
 					add_building_construction = {
 						type = infrastructure
 						level = 2
 						instant_build = yes }
 					add_state_modifier = { modifier = { local_building_slots_factor = 0.35  } } }
-				
+
 			}
 		}
 
@@ -1127,9 +1130,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				257 = {
 					add_extra_state_shared_building_slots = 1
@@ -1144,7 +1147,7 @@ focus = {
 						type = industrial_complex
 						level = 1
 					instant_build = yes }
-				}	
+				}
 				253 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1165,24 +1168,25 @@ focus = {
 		focus = {
 			id = SOV_southern_SSRs
 			icon = GFX_focus_prc_agrarian_socialism
-			prerequisite = { focus = SOV_railway_expansion }
-			x = -1
-			y = 1
-			relative_position_id = SOV_railway_expansion
+			prerequisite = { focus = SOV_socialist_realism }
+		prerequisite = { focus = SOV_stalin_constitution}
+			x = 0
+			y = 2
+			relative_position_id = SOV_positive_heroism
 			cost = 10
 			ai_will_do = {
 				factor = 1
 			}
-			
+
 			completion_reward = {
-				407 = { 
+				407 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
-					instant_build = yes } 
+					instant_build = yes }
 				}
-				406 = { 
+				406 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
@@ -1196,63 +1200,63 @@ focus = {
 					level = 2
 						instant_build = yes }
 					}
-				585 = { 
+				585 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				405 = { 
+				405 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				404 = { 
+				404 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				586 = { 
+				586 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				732 = { 
+				732 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				742 = { 
+				742 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				589 = { 
+				589 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				584 = { 
+				584 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
 					level = 2
 						instant_build = yes }
 					}
-				587 = { 
+				587 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 					type = infrastructure
@@ -1269,24 +1273,24 @@ focus = {
 			x = -4
 			y = 1
 			relative_position_id = SOV_great_purge
-	
+
 			cost = 8
-	
+
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available = {
 			}
-			
+
 			bypass = {
-	
+
 			}
-	
+
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
+
 			completion_reward = {
 				add_ideas = { SOV_collectivist_propaganda }
 			}
@@ -1295,17 +1299,17 @@ focus = {
 		focus = {
 			id = SOV_stalin_constitution
 			icon = GFX_focus_SOV_stalin_constitution
-			prerequisite = { focus = SOV_collectivist_propaganda }
+			prerequisite = { focus = SOV_positive_heroism }
 			x = -1
 			y = 1
-			relative_position_id = SOV_collectivist_propaganda
+			relative_position_id = SOV_positive_heroism
 			cost = 5
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_political_power = 150
 			}
@@ -1536,18 +1540,46 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 			army_experience = 250
 				add_tech_bonus = {
 		name = GER_soviet_treaty
 		uses = 1
-		ahead_reduction = 4
+		ahead_reduction = 3.5
 		technology = improved_heavy_tank
-	
+
 		}
+			add_tech_bonus = {
+				bonus = 0.00
+				uses = 3
+				ahead_reduction = 4.0
+				name = mech_army_TD_bonus
+				technology = advanced_light_td
+				technology = improved_medium_td
+				technology = improved_heavy_td
+			}
+			add_tech_bonus = {
+				bonus = 0.00
+				uses = 3
+				ahead_reduction = 4.0
+				name = mech_army_ART_bonus
+				technology = advanced_light_art
+				technology = improved_medium_art
+				technology = improved_heavy_art
+			}
+			add_tech_bonus = {
+				bonus = 0.00
+				uses = 3
+				ahead_reduction = 4.0
+				name = mech_army_SPAA_bonus
+				technology = advanced_light_spaa
+				technology = improved_medium_spaa
+				technology = improved_heavy_spaa
+			}
+
 				257 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1555,15 +1587,15 @@ focus = {
 						level = 1
 					instant_build = yes }
 				}
-				
-			
+
+
 				248 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
 						level = 1
 					instant_build = yes }
-				}	
+				}
 				253 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1592,9 +1624,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				252 = {
 					add_extra_state_shared_building_slots = 2
@@ -1609,7 +1641,7 @@ focus = {
 						type = arms_factory
 						level = 1
 					instant_build = yes }
-				}	
+				}
 				256 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1631,9 +1663,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_resource = {
 					type = steel
@@ -1688,7 +1720,7 @@ focus = {
 						type = industrial_complex
 						level = 2
 					instant_build = yes }
-				}	
+				}
 				256 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -1702,28 +1734,31 @@ focus = {
 		focus = {
 			id = SOV_stalinist_architecture
 			icon = GFX_focus_generic_self_management
-			prerequisite = { focus = SOV_ural_expansion focus = SOV_metal_foundaries }
+			prerequisite = { focus = SOV_metal_foundaries }
+					prerequisite = { focus = SOV_ural_expansion}
+
+				relative_position_id = SOV_metal_foundaries
 			x = 1
 			y = 1
-			relative_position_id = SOV_metal_foundaries
-	
+
+
 			cost = 10
-	
+
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available = {
 			}
-			
+
 			bypass = {
-	
+
 			}
-	
+
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
+
 			completion_reward = {
 				add_ideas = { stalinist_architecture }
 				add_political_power = 150
@@ -1743,9 +1778,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 10
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		add_tech_bonus = {
 		# 			name = new_artillery
@@ -1767,9 +1802,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 10
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		add_ideas = production_cult
 		# 	}
@@ -1786,9 +1821,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				257 = {
 					add_extra_state_shared_building_slots = 1
@@ -1803,7 +1838,7 @@ focus = {
 						type = industrial_complex
 						level = 2
 					instant_build = yes }
-				}	
+				}
 				253 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
@@ -1828,24 +1863,24 @@ focus = {
 		# 	x = -1
 		# 	y = 1
 		# 	relative_position_id = SOV_ural_expansion
-	
+
 		# 	cost = 10
-	
+
 		# 	ai_will_do = {
 		# 		factor = 1
 		# 	}
-	
+
 		# 	available = {
 		# 	}
-			
+
 		# 	bypass = {
-	
+
 		# 	}
-	
+
 		# 	cancel_if_invalid = yes
 		# 	continue_if_invalid = no
 		# 	available_if_capitulated = no
-	
+
 		# 	completion_reward = {
 		# 		add_ideas = { arm_the_workers }
 		# 		add_political_power = 150
@@ -1863,9 +1898,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 1
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		252 = {
 		# 			add_extra_state_shared_building_slots = 1
@@ -1880,7 +1915,7 @@ focus = {
 		# 				type = arms_factory
 		# 				level = 1
 		# 			instant_build = yes }
-		# 		}	
+		# 		}
 		# 		256 = {
 		# 			add_extra_state_shared_building_slots = 1
 		# 			add_building_construction = {
@@ -1898,24 +1933,24 @@ focus = {
 			x = 4
 			y = 1
 			relative_position_id = SOV_great_purge
-	
+
 			cost = 8
-	
+
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available = {
 			}
-			
+
 			bypass = {
-	
+
 			}
-	
+
 			cancel_if_invalid = yes
 			continue_if_invalid = no
 			available_if_capitulated = no
-	
+
 			completion_reward = {
 				add_ideas = SOV_positive_heroism
 				if = { limit = { has_idea = limited_conscription } add_ideas = extensive_conscription }
@@ -1934,9 +1969,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_political_power = 150
 			}
@@ -1945,11 +1980,11 @@ focus = {
 		focus = {
 			id = SOV_improve_stalin_line
 			icon = GFX_goal_generic_fortify_city
-			prerequisite = { focus = SOV_positive_heroism }
+			prerequisite = { focus = SOV_collectivist_propaganda}
 			available = { has_offensive_war = no }
 			x = -1
 			y = 1
-			relative_position_id = SOV_positive_heroism
+			relative_position_id = SOV_collectivist_propaganda
 			cost = 5
 			ai_will_do = {
 				factor = 1
@@ -2159,9 +2194,9 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 1
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		add_resource = {
 		# 			type = steel
@@ -2196,7 +2231,7 @@ focus = {
 		# 				type = industrial_complex
 		# 				level = 1
 		# 			instant_build = yes }
-		# 		}	
+		# 		}
 		# 		407 = {
 		# 			add_extra_state_shared_building_slots = 1
 		# 			add_building_construction = {
@@ -2218,34 +2253,16 @@ focus = {
 		# 	ai_will_do = {
 		# 		factor = 1
 		# 	}
-	
+
 		# 	available_if_capitulated = yes
-	
+
 		# 	completion_reward = {
 		# 		add_ideas = socialist_science_focus
 		# 		if = { limit = { has_idea = volunteer_only } add_ideas = limited_conscription }
 		# 	}
 		# }
 
-		focus = {
-			id = SOV_peoples_commissariat
-			icon = GFX_goal_support_communism
-			prerequisite = { focus = SOV_stalinist_architecture }
-			x = 0
-			y = 1
-			relative_position_id = SOV_stalinist_architecture
-			cost = 10
-			ai_will_do = {
-				factor = 10
-			}
-	
-			available_if_capitulated = yes
-	
-			completion_reward = {
-				#add_research_slot = 1
-				add_ideas = peoples_commissariat_focus
-			}
-		}
+
 
 		#End of Mil Focus branch--------------------------------------------------------------------------------------
 
@@ -2257,9 +2274,9 @@ focus = {
 			y = 1
 			relative_position_id = SOV_production_effort
 			cost = 10
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_tech_bonus = {
 					bonus = 1.0
@@ -2269,7 +2286,7 @@ focus = {
 				army_experience = 20
 			}
 		}
-	
+
 		focus = {
 			id = SOV_rehabilitated_military
 			icon = GFX_goal_generic_small_arms
@@ -2287,14 +2304,14 @@ focus = {
 					has_war = yes
 				}
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_ideas = rehabilitated_military_focus
 			}
 		}
-	
+
 		focus = {
 			id = SOV_nkvd_primacy
 			icon = GFX_goal_generic_military_deal
@@ -2303,15 +2320,15 @@ focus = {
 			y = 1
 			relative_position_id = SOV_production_effort
 			cost = 10
-			
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_ideas = nkvd
-				
+
 			}
 		}
-	
+
 		focus = {
 			id = SOV_nkvd_divisions
 			icon = GFX_goal_generic_allies_build_infantry
@@ -2329,9 +2346,9 @@ focus = {
 					has_war = yes
 				}
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				swap_ideas = {
 					remove_idea = nkvd
@@ -2339,7 +2356,7 @@ focus = {
 				}
 			}
 		}
-	
+
 		focus = {
 			id = SOV_lessons_of_war
 			icon = GFX_goal_generic_military_sphere
@@ -2362,18 +2379,18 @@ focus = {
 					has_war = yes
 				}
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
-		
+
 	add_tech_bonus = {
 					name = SOV_nkvd_primacy
 					bonus = 1.0
 					uses = 1
 					technology = assembly_line_production
 				}
-			
+
 				army_experience = 500
 				add_tech_bonus = {
 					name = armor_bonus
@@ -2399,22 +2416,22 @@ focus = {
 				if = { limit = { has_idea = officers_purged_7 } remove_ideas = officers_purged_7 }
 				if = { limit = { has_idea = officers_purged_8 } remove_ideas = officers_purged_8 }
 				if = { limit = { has_idea = officers_purged_9 } remove_ideas = officers_purged_9 }
-				if = { limit = { has_idea = officers_purged_10 } remove_ideas = officers_purged_10 }			
+				if = { limit = { has_idea = officers_purged_10 } remove_ideas = officers_purged_10 }
 				if = { limit = { has_idea = SOV_great_patriotic_war } remove_ideas = SOV_great_patriotic_war }
 				if = { limit = { has_idea = SOV_great_patriotic_war_2 } remove_ideas = SOV_great_patriotic_war_2 }
 				if = { limit = { has_idea = SOV_great_patriotic_war_3 } remove_ideas = SOV_great_patriotic_war_3 }
 				if = { limit = { has_idea = SOV_great_patriotic_war_4 } remove_ideas = SOV_great_patriotic_war_4 }
-				if = { limit = { has_idea = SOV_great_patriotic_war_5 } remove_ideas = SOV_great_patriotic_war_5 }			
+				if = { limit = { has_idea = SOV_great_patriotic_war_5 } remove_ideas = SOV_great_patriotic_war_5 }
 			}
 		}
-	
-	
+
+
 		focus = {
 			id = SOV_research_city_experiment
 			icon = GFX_focus_wonderweapons
 			prerequisite = { focus = SOV_lessons_of_war }
 			available = {
-	
+
 			}
 			x = -1
 			y = 1
@@ -2423,9 +2440,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_tech_bonus = {
 					name = nuclear_bonus
@@ -2435,14 +2452,14 @@ focus = {
 				}
 			}
 		}
-	
-	
+
+
 		focus = {
 			id = SOV_diversify_the_programme
 			icon = GFX_focus_rocketry
 			prerequisite = { focus = SOV_lessons_of_war }
 			available = {
-	
+
 			}
 			x = 1
 			y = 1
@@ -2451,9 +2468,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_tech_bonus = {
 					name = secret
@@ -2463,14 +2480,14 @@ focus = {
 				}
 			}
 		}
-	
-	
+
+
 		focus = {
 			id = SOV_closed_city_network
 			icon = GFX_focus_research
 			prerequisite = { focus = SOV_diversify_the_programme focus = SOV_research_city_experiment }
 			available = {
-	
+
 			}
 			x = -1
 			y = 1
@@ -2479,9 +2496,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 				add_research_slot = 1
 			}
@@ -2500,9 +2517,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			completion_reward = {
 					add_tech_bonus = {
 					bonus = 3.0
@@ -2528,9 +2545,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-	
+
 			available_if_capitulated = yes
-	
+
 			complete_tooltip = {
 				every_state = {
 					limit = { has_state_flag = SOV_expand_red_fleet_2dockyards }
@@ -2539,16 +2556,16 @@ focus = {
 						type = dockyard
 						level = 2
 						instant_build = yes
-					}				
+					}
 				}
 				add_tech_bonus = {
 					name = ships_bonus
 					bonus = 1.0
 					uses = 2
 					category = naval_equipment
-				}			
+				}
 			}
-	
+
 			completion_reward = {
 				navy_experience = 50
 				195 = {
@@ -2577,7 +2594,7 @@ focus = {
 				}
 			}
 		}
-		
+
 			focus = {
 			id = SOV_expand_red_fleet2
 			icon = GFX_goal_generic_build_navy
@@ -2586,20 +2603,20 @@ focus = {
 			y = 1
 			relative_position_id = SOV_expand_red_fleet
 			cost = 5
-	
-	
+
+
 			available_if_capitulated = yes
-	
+
 			complete_tooltip = {
-			
-			}   
-			
-			
+
+			}
+
+
 			bypass = {
 					has_tech = ship_hull_super_heavy
 			}
-	
-	
+
+
 			completion_reward = {
 							if = {
 						limit = {
@@ -2609,7 +2626,7 @@ focus = {
 							ship_hull_super_heavy = 1
 						}
 					}
-					custom_effect_tooltip = SOV_shbb_tt	
+					custom_effect_tooltip = SOV_shbb_tt
 					create_equipment_variant = {
 						name = "Sovyetsky Soyuz Class"
 						type = ship_hull_super_heavy_1
@@ -2632,26 +2649,26 @@ focus = {
 							rear_2_custom_slot = ship_anti_air_3
 						}
 					}
-				
+
 					hidden_effect = {
 						add_equipment_production = {
 							equipment = {
 								type = ship_hull_super_heavy_1
-								creator = "SOV" 
+								creator = "SOV"
 								version_name = "Sovyetsky Soyuz Class"
 							}
-							name = "Sovetsky Soyuz" 
+							name = "Sovetsky Soyuz"
 							requested_factories = 1
 							progress = 0.9
 							amount = 1
 						}
 					}
-			
+
 			}
 			}
 
 			#End of Navy Branch-------------------------------------------------------------------------------------------
-	
+
 
 			focus = {
 				id = SOV_fighter_effort
@@ -2660,19 +2677,28 @@ focus = {
 				x = -8
 				y = 2
 				relative_position_id = SOV_great_purge
-				cost = 8
+				cost = 5
 				ai_will_do = {
 					factor = 10
 				}
-		
+				available = {
+					date>1937.1.1
+				}
+
 				available_if_capitulated = yes
-		
+
 				completion_reward = {
 					add_tech_bonus = {
 						name = SOV_fighter_effort
 						bonus = 1.5
 						uses = 1
 						category = light_fighter
+					}
+					add_tech_bonus = {
+						name = air_doctrine
+						bonus = 1.0
+						uses = 2
+						category = air_doctrine
 					}
 				}
 			}
@@ -2684,20 +2710,25 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_fighter_effort
-				cost = 8
+				cost = 5
 				ai_will_do = {
 					factor = 10
 				}
-		
+
 				available_if_capitulated = yes
-		
+
 				completion_reward = {
 					add_tech_bonus = {
 						name = SOV_cas_effort
 						bonus = 1.0
 						uses = 1
-						category = tactical_bomber
 						category = cas_bomber
+					}
+					add_tech_bonus = {
+						name = air_doctrine
+						bonus = 1.0
+						uses = 2
+						category = air_doctrine
 					}
 				}
 			}
@@ -2709,19 +2740,19 @@ focus = {
 				x = 0
 				y = 1
 				relative_position_id = SOV_cas_effort
-				cost = 8
+				cost = 5
 				ai_will_do = {
 					factor = 1
 				}
-		
-				available_if_capitulated = yes	
-		
+
+				available_if_capitulated = yes
+
 				completion_reward = {
-					air_experience = 25
+					air_experience = 250
 					add_tech_bonus = {
 						name = air_doctrine
 						bonus = 1.0
-						uses = 6
+						uses = 2
 						category = air_doctrine
 					}
 				}
@@ -2751,23 +2782,23 @@ focus = {
 					date>1941.11.15
 					date<1942.3.15
 				}
-		
+
 				completion_reward = {
-		
+
 					add_timed_idea= { idea=SOV_winter_offensive days=90 }
-		
-		
+
+
 				}
 			}
 
 			focus = {
 				id = SOV_operation_little_saturn
 				icon = GFX_focus_attack_germany
-				relative_position_id = SOV_defense_of_stalingrad
-				x = -1
+				relative_position_id = SOV_penal_batallions
+				x = -2
 				y = 1
-				prerequisite = { focus = SOV_defense_of_stalingrad }
-				cost = 1.0
+				prerequisite = { focus = SOV_penal_batallions}
+				cost = 3.0
 				ai_will_do = {
 					factor = 1000
 					modifier = {
@@ -2784,22 +2815,34 @@ focus = {
 					date>1942.12.1
 					date<1943.2.18
 				}
-		
+
 				completion_reward = {
-		
+
 					add_timed_idea= { idea=SOV_operation_little_saturn days = 90 }
-		
-		
+
+
 				}
 			}
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
 
 			focus = {
 				id = SOV_operation_bagration
 				icon = GFX_focus_attack_germany
-				relative_position_id = SOV_defense_of_stalingrad
-				x = 1
+				relative_position_id =SOV_operation_little_saturn
+				x = 0
 				y = 1
-				prerequisite = { focus = SOV_defense_of_stalingrad }
+				prerequisite = { focus = SOV_operation_little_saturn }
 				cost = 1.0
 				ai_will_do = {
 					factor = 1000
@@ -2817,37 +2860,72 @@ focus = {
 					date>1943.12.1
 					date<1944.2.18
 				}
-		
+
 				completion_reward = {
 					add_timed_idea= { idea=SOV_operation_bagration days = 90 }
 				}
 			}
 
-			focus = { 
+			focus = {
 				id = SOV_man_of_steel
 				icon = GFX_focus_fra_loyalty_stalin
 				prerequisite = { focus = SOV_defense_of_stalingrad }
-				available = { 
-					OR = {  
-						date > 1944.3.1 
+				available = {
+					OR = {
+						date > 1944.3.1
 						USA = { has_capitulated = yes }
 						AND = {
 							has_war_with = JAP
 							date > 1943.6.1
 						}
-					} 
+					}
 				}
 				x = 0
 				y = 2
 				relative_position_id = SOV_defense_of_stalingrad
 				cost = 3
-		
+
 				available_if_capitulated = yes
-		
+
 				completion_reward = {
 					add_country_leader_trait = stalin_barb_leader_trait2
 				}
-			}	
-			
-			
+			}
+			focus = {
+		id = SOV_order_227
+		
+		prerequisite = { focus = SOV_defense_of_stalingrad}
+		x = 2
+		y = 1
+		relative_position_id = SOV_defense_of_stalingrad
+		cost = 0
+
+	available = { date > 1942.7.28
+		
+	}
+	
+		completion_reward = {
+			add_ideas = SOV_227
+		}
+	}
+	
+	focus = {
+		id = SOV_penal_batallions
+		
+		prerequisite = { focus = SOV_order_227}
+	
+		x = 0
+		y = 2.0
+		relative_position_id = SOV_order_227
+		cost = 3
+
+
+	
+		completion_reward = {
+			add_ideas = SOV_millitary_workforce
+		}
+	}
+
+
 }
+
