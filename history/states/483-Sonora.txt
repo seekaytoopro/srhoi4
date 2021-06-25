@@ -2,28 +2,28 @@
 state={
 	id=483
 	name="STATE_483"
-	manpower = 303987
+	manpower = 1
 	
-	state_category = rural
+	state_category = wasteland
 
 	history={
-		owner = MEX
-		buildings = {
-			infrastructure = 3
-		}
-		add_core_of = MEX
-		#victory_points = {
-		#	4977 3
-		#}
-		#victory_points = {
-		#	4908 1
-		#}
-		#victory_points = {
-		#	5071 1
-		#}
-		victory_points = {
-			10765 5
-		}
+		# owner = MEX
+		# buildings = {
+		# 	infrastructure = 3
+		# }
+		# add_core_of = MEX
+		# #victory_points = {
+		# #	4977 3
+		# #}
+		# #victory_points = {
+		# #	4908 1
+		# #}
+		# #victory_points = {
+		# #	5071 1
+		# #}
+		# victory_points = {
+		# 	10765 5
+		# }
 	}
 
 	provinces={
