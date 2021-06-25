@@ -42,6 +42,7 @@ sub_units = {
 		}
 				# Support nerfs to combat abilitie
 		breakthrough = -0.65
+		defense = -1.0
 		soft_attack = -0.625
 		hard_attack = -0.65
 		
