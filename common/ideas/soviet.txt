@@ -573,9 +573,14 @@ ideas = {
 				supply_consumption_factor = -0.20
 				drift_defence_factor = 0.5
 			}
-			rule = {
-				can_create_factions = yes
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = 0.35
+				}
 			}
+			# rule = {
+			# 	can_create_factions = yes
+			# }
 		}
 
 		trotskyite_plot = {
