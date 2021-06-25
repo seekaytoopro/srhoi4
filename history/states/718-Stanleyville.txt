@@ -4,7 +4,6 @@ name="STATE_718"
 state_category = wasteland
 impassable = yes
 resources={
-rubber=10
 }
 history={
 owner = BEL

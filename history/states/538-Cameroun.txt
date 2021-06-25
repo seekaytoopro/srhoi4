@@ -5,7 +5,6 @@ manpower = 1693974
 impassable = yes
 state_category = wasteland
 resources={
-rubber=8
 }
 history={
 owner = BEL

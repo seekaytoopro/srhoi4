@@ -37,31 +37,31 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ENG_sudanese_rubber
-		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = ENG_refinery_effort }
-		available = {
-			ROOT = {
-				controls_state = 549 controls_state = 494
-			}
-		}
-		x = 0
-		y = 1
-		relative_position_id = ENG_refinery_effort
-		cost = 5
-		continue_if_invalid=no
-		cancel_if_invalid=no
-		available_if_capitulated = yes
+	# focus = {
+	# 	id = ENG_sudanese_rubber
+	# 	icon = GFX_focus_generic_rubber
+	# 	prerequisite = { focus = ENG_refinery_effort }
+	# 	available = {
+	# 		ROOT = {
+	# 			controls_state = 549 controls_state = 494
+	# 		}
+	# 	}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = ENG_refinery_effort
+	# 	cost = 5
+	# 	continue_if_invalid=no
+	# 	cancel_if_invalid=no
+	# 	available_if_capitulated = yes
 	
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			add_resource = { type = rubber amount = 9 state = 549 }
-			add_resource = { type = rubber amount = 11 state = 494 }
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	completion_reward = {
+	# 		add_resource = { type = rubber amount = 9 state = 549 }
+	# 		add_resource = { type = rubber amount = 11 state = 494 }
+	# 	}
+	# }
 
 	focus = {
 		id = ENG_begin_canadian_exile
