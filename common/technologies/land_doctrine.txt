@@ -20,7 +20,7 @@ technologies = {
 		}
 		anti_tank_brigade = {
 			
-			default_morale = 0.7
+			default_morale = 1.2
 		}
 		
 		planning_speed = 0.375
