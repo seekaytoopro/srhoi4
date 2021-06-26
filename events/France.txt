@@ -262,6 +262,8 @@ country_event = {
 				transfer_state = 708
 				transfer_state = 730
 			}
+			FRA = { set_equipment_fraction = 0.0 }
+			FRF = { set_equipment_fraction = 0.0 }
 
 			FRF = {
 				change_tag_from = FRA
@@ -368,7 +370,6 @@ country_event = {
 					remove_core_of = FRA
 				}
 			}
-			FRA = { set_equipment_fraction = 0.0 }
 			FRF = {
 				annex_country = { target = FRA transfer_troops = no }
 			}
@@ -393,7 +394,18 @@ country_event = {
 				transfer_state = 718 
 				transfer_state = 538 
 				transfer_state = 768 
-				transfer_state = 769 
+				transfer_state = 769
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = -1000
+					producer = FRF
+				}
+				set_equipment_fraction = 0.0
+				add_equipment_to_stockpile = {
+					type = convoy_1
+					amount = 75
+					producer = FRF
+				}
 			}
 		}
 		#### Stuff to replace the old France (FRA) with a brand new Free France (FRF) country ####

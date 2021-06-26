@@ -15,7 +15,7 @@ add_ideas = SPR_no_navy2
 add_research_slot = 1
 add_equipment_to_stockpile = {
     type = convoy_1
-    amount = 500
+    amount = 100
     producer = EFR
 }
 # add_dynamic_modifier = {
@@ -69,13 +69,13 @@ create_equipment_variant = {
 	  tank_reliability_upgrade = 5
     }
 }
-add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 1300 producer = EFR }
-add_equipment_to_stockpile = { type = medium_tank_equipment_2 amount = 300 producer = EFR }
-add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 900 producer = EFR }
-add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 600 producer = EFR }
-add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 75000 producer = EFR }
-add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = EFR }
-add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1500 producer = EFR }
+# add_equipment_to_stockpile = { type = medium_tank_equipment_1 amount = 1300 producer = EFR }
+# add_equipment_to_stockpile = { type = medium_tank_equipment_2 amount = 300 producer = EFR }
+# add_equipment_to_stockpile = { type = heavy_tank_equipment_1 amount = 900 producer = EFR }
+# add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 600 producer = EFR }
+# add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 75000 producer = EFR }
+# add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = EFR }
+# add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 1500 producer = EFR }
 
 add_ideas =  vichy_trade 
 
@@ -171,7 +171,7 @@ transfer_state = 543
 delete_unit_template_and_units = { division_template = "Division Légère de Cavalerie" }
 delete_unit_template_and_units = { division_template = "Divisions Légères Mécaniques" }
 delete_unit_template_and_units = { division_template = "Divisions Cuirassées de Reserve" }
-load_oob = "EFR_spawn"
+# load_oob = "EFR_spawn"
 }
 
 GER = { 
