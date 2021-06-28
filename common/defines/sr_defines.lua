@@ -431,13 +431,16 @@ NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admir
 NDefines.NNavy.GUN_HIT_PROFILES = {
 	230.0, -- heavy attack 80
 	500.0, -- torpedos 145
-	275.0 -- light attack 45
+	265.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		3.0,	-- heavy attack
 		12.0,	-- torpedos
-		2.0	--  light attack	
+		1.5	--  light attack	
 	}
+
+	NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.35		-- vanilla is 0.05. Each level of navalbase building repairs X strength and can repair as many ships as its level
+
 	NDefines.NNavy.COMBAT_BASE_HIT_CHANCE = 1.0                                    -- base chance for hit
 	NDefines.NNavy.COMBAT_MIN_HIT_CHANCE = 0.001                                    -- never less hit chance then this?
 	NDefines.NNavy.MIN_HIT_PROFILE_MULT = 0.00
