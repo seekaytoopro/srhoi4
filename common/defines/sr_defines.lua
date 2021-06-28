@@ -205,7 +205,7 @@ NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.01
 
 
 NDefines.NAir.AIR_WING_MAX_SIZE = 3200                               -- this can be halved 6 times into 100 stacks (very convenient)
-NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
+NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1500  -- WAS 1500, halved because plane counts halved | Max amount of aircrafts in region to give full detection bonus.
 NDefines.NAir.CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.001			-- WAS 0.0005 | How much the experinence gained by CAS is scaled
 NDefines.NAir.PARADROP_EXPERIENCE_SCALE = 0.06						-- WAS 0.03 | How much the experinence gained by paradropping is scaled
 NDefines.NAir.BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0004        	   -- WAS 0.0002 | How much the experinence gained by bombing is scaled
@@ -443,7 +443,7 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 	NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- vanilla is 4  , carriers immediatly start firing, capitals start after 4 hours
 	NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 0 
 	NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 1.0			   -- Base org regain per hour
-	
+
 
 	NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.35		-- vanilla is 0.05. Each level of navalbase building repairs X strength and can repair as many ships as its level
 
