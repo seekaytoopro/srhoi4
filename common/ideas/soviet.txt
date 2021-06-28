@@ -1269,7 +1269,7 @@ ideas = {
 				original_tag = SOV
 			}
 			
-			traits = { army_infantry_2 }
+			traits = { army_infantry_1 }
 		}
 		
 		aleksandr_vasilevsky = {
