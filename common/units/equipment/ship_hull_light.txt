@@ -96,7 +96,7 @@ equipments = {
 		
 		naval_range = 1500
 		
-		max_strength = 12.5
+		max_strength = 25
 		
 
 		fuel_consumption = 0
@@ -158,7 +158,7 @@ equipments = {
 		naval_speed = 35.53
 		reliability = 0.85
 		naval_range = 1800
-		max_strength = 20
+		max_strength = 40
 		build_cost_ic = 500
 		resources = {
 			steel = 3
@@ -221,7 +221,7 @@ equipments = {
 		naval_speed = 36.01		
 		reliability = 0.90
 		naval_range = 2000
-		max_strength = 25
+		max_strength = 50
 		build_cost_ic = 550
 		manpower = 400
 		
@@ -282,7 +282,7 @@ equipments = {
 		naval_speed = 36.44		
 		reliability = 0.92
 		naval_range = 2500
-		max_strength = 30
+		max_strength = 60
 		build_cost_ic = 600
 		resources = {
 			steel = 3

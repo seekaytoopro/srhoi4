@@ -103,7 +103,7 @@ equipments = {
 		
 		naval_range = 2500
 		
-		max_strength = 100		
+		max_strength = 200		
 		
 
 		fuel_consumption = 20
@@ -137,7 +137,7 @@ equipments = {
 		reliability = 0.85
 		build_cost_ic = 1900
 		naval_range = 3000
-		max_strength = 110
+		max_strength = 220
 		resources = {
 			steel = 3
 		}
@@ -193,7 +193,7 @@ equipments = {
 		naval_speed = 32.74
 		build_cost_ic = 2000
 		reliability = 0.90
-		max_strength = 120
+		max_strength = 240
 		naval_range = 4000
 		manpower = 1200
 		resources = {
@@ -263,7 +263,7 @@ equipments = {
 		manpower = 1400
 		build_cost_ic = 2100
 		naval_range = 4500
-		max_strength = 130
+		max_strength = 260
 		resources = {
 			steel = 4
 			chromium = 1
@@ -397,7 +397,7 @@ equipments = {
 
 		naval_range = 3000
 		
-		max_strength = 120
+		max_strength = 240
 		
 
 		
@@ -448,7 +448,7 @@ equipments = {
 
 		naval_range = 4000
 		
-		max_strength = 140
+		max_strength = 280
 		
 
 		
@@ -500,7 +500,7 @@ equipments = {
 
 		naval_range = 4500
 		
-		max_strength = 160
+		max_strength = 320
 		
 
 		
@@ -877,7 +877,7 @@ equipments = {
 		
 		naval_range = 4000
 		
-		max_strength = 140		
+		max_strength = 280		
 		
 
 		
@@ -964,7 +964,7 @@ equipments = {
 		
 		naval_range = 4000
 		
-		max_strength = 140		
+		max_strength = 280		
 		
 
 		
