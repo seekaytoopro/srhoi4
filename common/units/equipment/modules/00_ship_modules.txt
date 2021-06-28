@@ -2046,7 +2046,7 @@ equipment_modules = {
 			}
 			add_stats = {
 				armor_value = 5
-				max_strength = 25
+				max_strength = 50
 			}
 			dismantle_cost_ic = 2500
 		}
