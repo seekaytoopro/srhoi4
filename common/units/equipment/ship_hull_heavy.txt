@@ -39,7 +39,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = yes
-				allowed_module_categories = { ship_secondaries }
+				allowed_module_categories = { ship_secondaries ship_anti_air }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -531,7 +531,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = yes
-				allowed_module_categories = { ship_secondaries }
+				allowed_module_categories = { ship_secondaries ship_anti_air }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -548,6 +548,7 @@ equipments = {
 				allowed_module_categories = {
 					ship_secondaries
 					ship_torpedo
+					ship_anti_air
 				}
 			}
 			mid_1_custom_slot = {
@@ -599,7 +600,7 @@ equipments = {
 		}
 		naval_range = 4500
 		naval_speed = 23.75
-		max_strength = 800
+		max_strength = 1600
 		fuel_consumption = 75
 		reliability = 0.80
 		build_cost_ic = 5500
