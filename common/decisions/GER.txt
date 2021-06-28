@@ -668,6 +668,137 @@ set_global_flag = GER_dankus_sent
 
 special_projects = {
 
+	GER_relocate_industry_civ = {
+		icon = generic_construction
+		# highlight_states = {
+		# 	state = 19
+		# }
+		available = {
+			NOT = {
+				any_state = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					is_controlled_by  = GER
+					industrial_complex > 0
+				}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			GER = { has_war_with = ENG }
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					# is_controlled_by  = GER
+					industrial_complex > 0
+				}
+				remove_building = {type = industrial_complex level = 1}
+				GER = {
+					random_owned_controlled_state = {
+						limit = { is_core_of = GER }
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = industrial_complex
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+							is_controlled_by  = GER
+							industrial_complex > 0
+						}
+					}
+					activate_mission = GER_relocate_industry_civ
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_civ
+		}
+	}
+
+	GER_relocate_industry_mil = {
+		icon = generic_construction
+		# highlight_states = {
+		# 	state = 19
+		# }
+		available = {
+			NOT = {
+				any_state = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					is_controlled_by  = GER
+					arms_factory > 0
+				}
+			}
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 1
+
+		visible = {
+			GER = { has_war_with = ENG }
+		}
+
+        timeout_effect = {
+			random_controlled_state = {
+				limit = {
+					OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+					arms_factory > 0
+				}
+				remove_building = {type = arms_factory level = 1}
+				GER = {
+					random_owned_controlled_state = {
+						limit = { is_core_of = GER }
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+   				 			type = arms_factory
+   				 			level = 1
+  				 			instant_build = yes
+				 		}
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_state = {
+							OR = { is_core_of = FRF is_core_of = BEL is_core_of = HOL }
+							is_controlled_by  = GER
+							arms_factory > 0
+						}
+					}
+					activate_mission = GER_relocate_industry_mil
+				}
+			}
+			custom_effect_tooltip = GER_relocate_industry_mil
+		}
+	}
+
 	prevent_cuck = { 
 	icon = generic_form_nation
 		

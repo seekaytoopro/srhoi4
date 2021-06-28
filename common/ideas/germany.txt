@@ -262,7 +262,7 @@ ideas = {
 				army_org_Factor = 0.075
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
-				consumer_goods_factor = -0.05
+				# consumer_goods_factor = -0.05
 				conscription = 0.015	
 			}
 		}
@@ -848,6 +848,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.075
 				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.075
 			}
 		}
 
