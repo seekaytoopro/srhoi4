@@ -1832,34 +1832,7 @@ ideas = {
 	}
 	
 	theorist = {
-		von_braun = {
-			ledger = air
-
-						
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				rocketry = 0.15
-			}
-			
-			traits = { rocket_scientist }
-		}
-		
-		heisenberg = {
-			ledger = army
-			
-			allowed = {
-				original_tag = GER
-			}
-		
-			research_bonus = {
-				nuclear = 0.15
-			}
-			
-			traits = { nuclear_scientist }
-		}
+	
 		
 		heinz_guderian = {
 			ledger = army
@@ -1869,103 +1842,16 @@ ideas = {
 			}
 			
 			research_bonus = {
-				land_doctrine = 0.10
+					cat_mobile_warfare = 0.15
 			}
 			
 			
-			traits = { blitzkrieg_theorist }
+			traits = { blitzkrieg_theorist dive_bomber}
 		}
 		
-		manstein = {
-			ledger = army
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 175
-			
-			research_bonus = {
-				cat_mobile_warfare = 0.15
-			}
-			
-
-			traits = { mobile_warfare_expert }
-		}
 		
-		wolfram_von_richthofen = {
-			ledger = air
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 175
-			
-			research_bonus = {
-				cat_battlefield_support = 0.15
-			}
-			
-			traits = { close_air_support_proponent }
-		}
 		
-		walther_wever = {
-			ledger = air
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { air_warfare_theorist }
-		}
 		
-		ernst_udet = {
-			ledger = air
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-			
-			traits = { dive_bomber }
-		}
-		
-		alfred_saalwachter = {
-			ledger = navy
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			cost = 175
-			
-			research_bonus = {
-				cat_trade_interdiction = 0.20
-			}
-			
-			traits = { submarine_specialist }
-		}
-		
-		otto_ciliax = {
-			ledger = navy
-			
-			allowed = {
-				original_tag = GER
-			}
-			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-			
-			traits = { naval_theorist }
-		}
 	}	
 		
 	# MILITARY
