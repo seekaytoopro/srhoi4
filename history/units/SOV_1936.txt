@@ -104,7 +104,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Motostrelkovaya Diviziya"		# Motor Rifle Division
+	name = "Motostrelkovy Diviziya"		# Motor Rifle Division
 	division_names_group = SOV_MOT_01
 											# Note: only represents Moscow Proletariat Division in 1936; after 1938-40, Motor Rifle Divisions had +1 mot regiment (3 bns) 
 	regiments = {
@@ -128,43 +128,10 @@ division_template = {
 	}
 }
 
-division_template = {
-	name = "Vozdushno-Desantnaya Brigada"			# Airborne Brigade
-	division_names_group = SOV_PAR_01
 
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 0 y = 3 }
-		paratrooper = { x = 0 y = 4 }
-        paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-		paratrooper = { x = 1 y = 2 }
-		paratrooper = { x = 1 y = 3 }
-		paratrooper = { x = 1 y = 4 }
-		paratrooper = { x = 2 y = 0 }
-		paratrooper = { x = 2 y = 1 }
-		paratrooper = { x = 2 y = 2 }
-		paratrooper = { x = 2 y = 3 }
-		paratrooper = { x = 2 y = 4 }
-        paratrooper = { x = 3 y = 0 }
-		paratrooper = { x = 3 y = 1 }
-		paratrooper = { x = 3 y = 2 }
-		paratrooper = { x = 3 y = 3 }
-		paratrooper = { x = 3 y = 4 }
-	}
-	support = {
-        recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-		anti_air = { x = 0 y = 2 }
-		anti_tank = { x = 0 y = 3 }
-		artillery = { x = 0 y = 4 }
-	}
-}
 
 division_template = {
-	name = "AT Bricks"			# Anti-Tank Division
+	name = "AT "			# Anti-Tank Division
 	division_names_group = SOV_INF_01
 
 	regiments = {
@@ -180,16 +147,15 @@ division_template = {
 		infantry = { x = 1 y = 4 }
 		infantry = { x = 2 y = 0 }
 		anti_air_brigade = { x = 2 y = 1 }
-		anti_tank_brigade = { x = 2 y = 2}
-		anti_tank_brigade = { x = 2 y = 3	}
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
 		anti_tank_brigade = { x = 4 y = 0 }
 		anti_tank_brigade = { x = 4 y = 1 }
 		anti_tank_brigade = { x = 4 y = 2 }
-		anti_tank_brigade = { x = 4 y = 3 }	
-		anti_tank_brigade = { x = 4 y = 4 }	
+		anti_tank_brigade = { x = 4 y = 3}
+
 	}
 	support = {
 		recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co
