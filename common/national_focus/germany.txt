@@ -624,7 +624,9 @@ focus_tree = {
 				name = GER_coal_liquidization
 				bonus = 1.0
 				uses = 3
-				category = synth_resources
+					technology	=fuel_refining3
+			technology	=fuel_refining4
+				technology	=fuel_refining5
 			}
 				65 = {
 					add_extra_state_shared_building_slots = 3
