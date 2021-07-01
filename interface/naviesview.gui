@@ -308,6 +308,17 @@ guiTypes = {
 
 		}
 
+		#containerWindowType = {
+		#	name = "noDelete"
+		#	iconType ={
+		#		name ="btn_delete"
+		#		spriteType = "GFX_NV_btn_delete"
+		#		position = { x=0 y=0}
+		#		Orientation = "UPPER_LEFT"
+		#		frame=0
+		#	}
+		#}
+
 		# Tool/selection bar (visibility toggled by code)
 		containerWindowType = {
 			name = "tool_bar_window"
@@ -327,16 +338,15 @@ guiTypes = {
 
 			# selection toolbox
 
-			
-			#buttonType = {
-			#	name = "btn_delete"
-			#	position = {x=6 y=@nv_tb_btn_y}
-			#	spriteType = "GFX_NV_btn_delete"
-			#	clicksound = click_default
-			#	pdx_tooltip = ""
-			#}
-
 			@nv_tb_btn_y = 6
+			iconType = {
+				name = "btn_delete"
+				position = {x=6 y=@nv_tb_btn_y }
+				spriteType = "GFX_NV_btn_delete"
+				#clicksound = click_default
+				#pdx_tooltip = ""
+			}
+			
 			buttonType = {
 				name = "btn_create_new_from_selected"
 				position = {x=64 y=@nv_tb_btn_y}
