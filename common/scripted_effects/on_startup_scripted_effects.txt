@@ -67,7 +67,7 @@ ai_siam_effect = {
 
 startup_events = {
 	#Total Mob/Equipment 3 Reminder
-		news_event = { id = news.410 days = 1985 }
+		news_event = { id = news.410 days = 1975 }
 	#latewar ideas	
 		SWE = { country_event = { id = srlatewar.1 days = 2192 } }
 		SWE = { country_event = { id = srlatewar.2 days = 2557 } }
