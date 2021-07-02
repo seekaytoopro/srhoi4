@@ -196,7 +196,7 @@ operations = {
 		}
 
 		available = {
-			date > 1941.8.5
+			date > 1940.9.5
 		}
 			
 		cost = 0
@@ -283,7 +283,7 @@ operations = {
 		}
 
 		available = {
-			date > 1941.5.5
+			date > 1941.1.5
 		}
 			
 		cost = 0
