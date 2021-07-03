@@ -588,60 +588,6 @@ on_subject_autonomy_level_change = {
 				}
 				news_event = news.139
 			}
-			
-		if = {
-				limit = {
-					ROOT = {
-							tag = EFR
-							}
-					FROM.FROM = {
-				       AND = { 
-						OR = {
-						state = 539
-						state = 773
-						state = 272
-						state = 543
-						state = 554
-						state = 460
-						}
-					
-						}
-						}
-					}
-						EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=0.15} }
-				}
-				if = {
-				limit = {
-					ROOT = {
-					OR = { 
-							tag = FRA
-							tag = ENG
-							tag = USA
-							tag = BRA
-							tag = AST
-							tag = MEX
-							tag = CAN
-							tag = NZL
-							tag = IRE
-							tag = NOR
-							}
-							}
-					FROM.FROM = {
-					AND = { 
-						OR = {
-						state = 539
-						state = 773
-						state = 272
-						state = 543
-						state = 554
-						state = 460
-						}
-						}
-					}
-				}	
-										EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=-0.15} }
-
-			}
 
 			
 
