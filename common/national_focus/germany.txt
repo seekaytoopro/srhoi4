@@ -1901,7 +1901,9 @@ focus_tree = {
 		
 			hidden_effect = {
 							USA = { set_rule = { can_join_factions = yes }}
-							ENG = { add_to_faction = USA  add_to_faction = MEX add_to_faction = BRA }
+							ENG = { add_to_faction = USA
+								# add_to_faction = MEX add_to_faction = BRA
+							}
 							POL = { load_oob = "POL_spawn"}
 							FIN = { load_oob = "FIN_spawn"}
 			}
