@@ -2843,4 +2843,8 @@ SpriteType = {
 		name = "GFX_focus_SOV_stalin_constitution"
 		texturefile = "gfx/interface/goals/focus_SOV_stalin_constitution.dds"
 	}
+	SpriteType = { 
+		name = "GFX_focus_GER_anti_comintern_pact"
+		texturefile = "gfx/interface/goals/focus_GER_anti_comintern_pact.dds"
+	}
 }

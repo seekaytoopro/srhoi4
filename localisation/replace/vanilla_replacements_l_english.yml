@@ -8,3 +8,6 @@
  WAR_NAME_GER_ENG:0 "The Second World War"
  WAR_NAME_GER_USA:0 "The Second World War"
  WAR_NAME_GER_SOV:0 "The Great Patriotic War"
+ GER_naval_rearmament:0 "Kriegsmarine"
+ GER_army_innovation:0 "Wehrmacht"
+ GER_air_innovation:0 "Luftwaffe"

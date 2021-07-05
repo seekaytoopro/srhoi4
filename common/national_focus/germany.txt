@@ -13,16 +13,48 @@ focus_tree = {
 	default = no
 
 	focus = {
+		id = GER_rhineland
+		icon = GFX_goal_generic_military_sphere
+		x = 18
+		y = 0
+		cost = 10
+		available = {
+
+		}
+		bypass = {
+
+		}
+		ai_will_do = {
+			factor = 10
+		}	
+		completion_reward = {
+			42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			355 = { set_demilitarized_zone = no }
+			add_political_power = 120
+			add_war_support = 0.1 
+			army_experience = 50
+			add_named_threat = { threat = 5 name = GER_rhineland 
+				hidden_effect = {
+				news_event = { hours = 6 id = news.25 }
+				}	
+			}	
+		}		
+	}
+
+	focus = {
 		id = GER_four_year_plan
 		icon = GFX_goal_generic_construction
-		x = 3
-		y = 0
+		prerequisite = { focus = GER_rhineland }
+		relative_position_id = GER_rhineland
+		x = -12
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 12
 		}
 		
-		available = { has_completed_focus = GER_rhineland }
+		available = { }
 		
 		completion_reward = {
 			add_ideas = hjalmar_schacht
@@ -32,96 +64,10 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_west_wall
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = GER_rhineland }
-		x = -3
-		y = 1
-		relative_position_id = GER_rhineland
-		cost = 5
-		ai_will_do = {
-			factor = 8
-		}
-			
-		completion_reward = {
-			#add_ideas = todt
-			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = todt
-			50 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					custom_effect_tooltip = GER_west_wall_forts
-					hidden_effect = {
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11640
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6712
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6542
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3530
-							instant_build = yes
-						}
-					}
-				}
-			}
-			42 = {
-				custom_effect_tooltip = GER_west_wall_forts
-			}
-			hidden_effect = {
-				42 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3558
-							instant_build = yes
-						}
-						
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 563
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11531
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9575
-							instant_build = yes
-						}
-					}
-				}
-			}			
-		}
-	}
-
-	focus = {
 		id = GER_autarky
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = GER_four_year_plan }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 10
@@ -416,7 +362,7 @@ focus_tree = {
 		id = GER_grosraumwirtschaft
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = GER_four_year_plan }
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = GER_four_year_plan
 		cost = 5
@@ -736,10 +682,11 @@ focus_tree = {
 
 	focus = {
 		id = GER_air_innovation
-		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
-		x = 12
-		y = 0
+		prerequisite = { focus = GER_rhineland }
+		relative_position_id = GER_rhineland
+		x = 8
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -905,8 +852,10 @@ focus_tree = {
 	focus = {
 		id = GER_army_innovation
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 15
-		y = 0
+		prerequisite = { focus = GER_rhineland }
+		relative_position_id = GER_rhineland
+		x = -6
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1023,7 +972,7 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort focus = GER_soviet_treaty }
+		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort }
 		x = 0
 		y = 2
 		relative_position_id = GER_strategic_air_effort
@@ -1155,11 +1104,10 @@ focus_tree = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_air_innovation_2 }
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = GER_extra_tech_slot
+		relative_position_id = GER_air_innovation_2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1208,36 +1156,91 @@ focus_tree = {
 			}
 		}
 	}
-	
 
 	focus = {
-		id = GER_rhineland
-		icon = GFX_goal_generic_military_sphere
-		x = 21
-		y = 0
-		cost = 10
-		available = {
-
-		}
-		bypass = {
-
-		}
+		id = GER_west_wall
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = GER_rhineland }
+		x = -3
+		y = 1
+		relative_position_id = GER_rhineland
+		cost = 5
 		ai_will_do = {
-			factor = 10
-		}	
+			factor = 8
+		}
+			
 		completion_reward = {
-			42 = { set_demilitarized_zone = no }
-			51 = { set_demilitarized_zone = no }
-			355 = { set_demilitarized_zone = no }
-			add_political_power = 120
-			add_war_support = 0.1 
-			army_experience = 50
-			add_named_threat = { threat = 5 name = GER_rhineland 
-				hidden_effect = {
-				news_event = { hours = 6 id = news.25 }
-			}	
-		}	
-}		
+			#add_ideas = todt
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = todt
+			50 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					custom_effect_tooltip = GER_west_wall_forts
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11640
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6712
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6542
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3530
+							instant_build = yes
+						}
+					}
+				}
+			}
+			42 = {
+				custom_effect_tooltip = GER_west_wall_forts
+			}
+			hidden_effect = {
+				42 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3558
+							instant_build = yes
+						}
+						
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 563
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11531
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9575
+							instant_build = yes
+						}
+					}
+				}
+			}			
+		}
 	}
 
 	focus = {
@@ -1480,10 +1483,6 @@ focus_tree = {
 		cost = 0.2
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
 		}	
 		completion_reward = {
 		
@@ -1626,7 +1625,7 @@ focus_tree = {
 			has_war_with = ENG
 		}
 		
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = GER_danzig_or_war
 		cost = 1
@@ -1731,51 +1730,14 @@ focus_tree = {
 	# 	}
 	# }
 
-	focus = {
-		id = GER_reintegrate_luxemburg_and_alsace_lorraine
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = GER_fall_gelb }
-		available = {
-			has_full_control_of_state = 8
-			has_full_control_of_state = 28
-			FRA = { has_capitulated = yes }
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		x = -1
-		y = 1
-		relative_position_id = GER_fall_gelb
-		cost = 5
-		ai_will_do = {
-			factor = 10
-		}
-		
-		completion_reward = {
-			add_state_core = 8
-			add_state_core = 28
-			add_war_support = 0.05
-			if = {
-				limit = {
-					NOT = { owns_state = 28 }
-				}
-				transfer_state = 28
-			}
-			28 = { set_state_name = "Elsass-Lothringen" }
-			set_province_name = { id = 9503 name = "Strassburg" }
-			set_province_name = { id = 678 name = "Mulhausen" }
-			FRA = {
-				country_event = { id = wtt_germany.63 }
-			}
-		}
-	}
-
 	
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 27
-		y = 0
+		prerequisite = { focus = GER_rhineland }
+		relative_position_id = GER_rhineland
+		x = 12
+		y = 2
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -2248,48 +2210,6 @@ focus_tree = {
 		}
 	}
 	
-		focus = { 
-		id = GER_total_war
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = { focus = GER_anti_comitern_pact }
-		relative_position_id = GER_anti_comitern_pact
-		x = -2
-		y = 1
-		
-		available = {
-			OR = {
-				date > 1943.1.1
-				AND = { surrender_progress > 0.01 has_war_with = SOV }
-				AND = {
-					has_war_with = SOV
-					count_triggers = {
-						amount=3
-						NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 16={is_controlled_by_ROOT_or_ally = yes } }
-					}
-				}
-			}
-		}
-		
-		cost = 1
-		
-		completion_reward = {
-			add_ideas = the_great_turn
-		}
-	}
-	
 	
 		focus = {
 		id = GER_atlantikwall
@@ -2567,55 +2487,6 @@ focus_tree = {
 			}
 
 		focus = {
-			id = GER_ardennenoffensive
-			prerequisite = { focus = GER_anti_comitern_pact }
-			relative_position_id = GER_anti_comitern_pact
-			x = 2
-			y = 1
-			icon = GFX_focus_ger_reichskommisariats
-			available = {
-				#NOT = { has_idea = GER_fall_blau }
-				# NOT = { has_idea = GER_operation_citadel }
-				Date > 1941.1.1
-				OR = {
-					surrender_progress > 0.01
-					count_triggers={
-						amount=3
-						NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
-						NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
-					}
-				}
-			}
-			cost = 1
-			ai_will_do = { factor = 1000 }
-			available_if_capitulated = no
-			completion_reward = {
-				GER = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
-				hidden_effect={
-
-					if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-					if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-					if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-					#FIN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
-					ITA = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
-					if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-					if = { limit = { country_exists = CRO } CRO = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
-				}
-			}
-		}
-
-		focus = {
 			id = GER_flak_36
 			icon = GFX_goal_generic_construct_military
 			relative_position_id = GER_german_war_economy
@@ -2654,7 +2525,7 @@ focus_tree = {
 					Date < 1940.6.1
 					NOT={ EFR = { owns_state = 26 } }
 				}
-				x = -4
+				x = -3
 				y = 1
 		
 				relative_position_id = GER_danzig_or_war
@@ -2720,11 +2591,50 @@ focus_tree = {
 				}
 
 				focus = {
+					id = GER_reintegrate_luxemburg_and_alsace_lorraine
+					icon = GFX_goal_generic_position_armies
+					prerequisite = { focus = GER_fall_gelb }
+					available = {
+						has_full_control_of_state = 8
+						has_full_control_of_state = 28
+						FRA = { has_capitulated = yes }
+					}
+					bypass = {
+					}
+					cancel_if_invalid = yes
+					x = -1
+					y = 1
+					relative_position_id = GER_fall_gelb
+					cost = 5
+					ai_will_do = {
+						factor = 10
+					}
+					
+					completion_reward = {
+						add_state_core = 8
+						add_state_core = 28
+						add_war_support = 0.05
+						if = {
+							limit = {
+								NOT = { owns_state = 28 }
+							}
+							transfer_state = 28
+						}
+						28 = { set_state_name = "Elsass-Lothringen" }
+						set_province_name = { id = 9503 name = "Strassburg" }
+						set_province_name = { id = 678 name = "Mulhausen" }
+						FRA = {
+							country_event = { id = wtt_germany.63 }
+						}
+					}
+				}
+
+				focus = {
 					id = GER_anti_comitern_pact
-					icon = GFX_goal_anti_comintern_pact
+					icon = GFX_focus_GER_anti_comintern_pact
 					prerequisite = { focus = GER_danzig_or_war  }
 					x = 0
-					y = 2
+					y = 3
 					relative_position_id = GER_danzig_or_war
 					cost = 1
 					available = {
@@ -2742,6 +2652,97 @@ focus_tree = {
 						SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 					
 						
+						}
+					}
+
+					focus = { 
+						id = GER_total_war
+						icon = GFX_goal_generic_attack_allies
+						prerequisite = { focus = GER_anti_comitern_pact }
+						relative_position_id = GER_anti_comitern_pact
+						x = -2
+						y = 1
+						
+						available = {
+							OR = {
+								date > 1943.1.1
+								AND = { surrender_progress > 0.01 has_war_with = SOV }
+								AND = {
+									has_war_with = SOV
+									count_triggers = {
+										amount=3
+										NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+										NOT = { 16={is_controlled_by_ROOT_or_ally = yes } }
+									}
+								}
+							}
+						}
+						
+						cost = 1
+						
+						completion_reward = {
+							add_ideas = the_great_turn
+						}
+					}
+
+					focus = {
+						id = GER_ardennenoffensive
+						prerequisite = { focus = GER_anti_comitern_pact }
+						relative_position_id = GER_anti_comitern_pact
+						x = 2
+						y = 1
+						icon = GFX_focus_ger_reichskommisariats
+						available = {
+							#NOT = { has_idea = GER_fall_blau }
+							# NOT = { has_idea = GER_operation_citadel }
+							Date > 1941.1.1
+							OR = {
+								surrender_progress > 0.01
+								count_triggers={
+									amount=3
+									NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+									NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+								}
+							}
+						}
+						cost = 1
+						ai_will_do = { factor = 1000 }
+						available_if_capitulated = no
+						completion_reward = {
+							GER = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
+							hidden_effect={
+			
+								if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
+								if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
+								if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
+								#FIN = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
+								ITA = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } }
+								if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
+								if = { limit = { country_exists = CRO } CRO = { add_timed_idea = { idea = GER_ardennenoffensive days = 45 } } }
+							}
 						}
 					}
 			

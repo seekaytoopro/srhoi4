@@ -28,7 +28,7 @@ German_historical = {
         GER_mol_rib_pact
         GER_danzig_or_war
         GER_integrate_war_economies
-        GER_around_maginot
+        GER_fall_gelb
         GER_weserubung
 		GER_anti_comitern_pact
 	}
