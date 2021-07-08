@@ -2308,7 +2308,7 @@ focus = {
 		ITA = {
 			AND = {controls_state = 662 controls_state = 2}
 		}
-		date>1941.9.1
+		date>1942.5.1
 	}
 	x = 0
 	y = 2
@@ -2347,7 +2347,7 @@ focus = {
 		ITA = {
 			AND = {controls_state = 676 controls_state = 291}
 		}
-		date>1941.8.1
+		date>1942.4.1
 	}
 	x = -2
 	y = 2
@@ -2407,7 +2407,7 @@ focus = {
 	prerequisite = { focus = ITA_libyan_refineries }
 	available = {
 		has_global_flag = operation_torch_flag
-		date>1941.10.1
+		date>1942.6.1
 		ITA = {
 			AND = {controls_state = 662 controls_state = 159}
 
@@ -2445,7 +2445,7 @@ focus = {
 	prerequisite = { focus = ITA_transport_resc2}
 	available = {
 
-		date>1941.11.1
+		date>1942.7.1
 		ENG = { has_completed_focus = ENG_iran_focus  }
 		
 		ITA = {
@@ -2509,7 +2509,7 @@ focus = {
 
 	available = {
 		has_global_flag = operation_torch_flag
-		date>1942.1.1
+		date>1942.9.1
 		ITA = {
 			AND = {controls_state = 662 controls_state = 159}
 
@@ -2551,7 +2551,7 @@ focus = {
 		ITA = {
 			AND = {controls_state = 662 controls_state = 2}
 		}
-		date>1941.12.1
+		date>1942.8.1
 	}
 	x = 0
 	y = 3
