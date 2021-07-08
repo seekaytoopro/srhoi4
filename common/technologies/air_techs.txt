@@ -413,32 +413,6 @@ technologies = {
 			naval_air
 			air_equipment
 		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			modifier = {
-				factor = 2
-				tag = USA
-			}
-			
-			modifier = {
-				factor = 2
-				tag = JAP
-			}
-			modifier = {
-				factor = 1.5
-				date > "1945.1.1"
-			}
-			modifier = {
-				factor = 2.5
-				has_navy_size = { type = carrier size > 3 }# if nation has carriers, more likely
-			}
-			modifier = {
-				factor = 0
-				has_navy_size = { type = carrier size < 1 }# if nation has no carriers, don't bother
-			}
-		}
 	}
 	
 	jet_fighter1 = {
@@ -466,19 +440,8 @@ technologies = {
 		
 		categories = {
 			light_air
+			light_fighter
 			jet_technology
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
 		}
 	}
 	
@@ -498,6 +461,7 @@ technologies = {
 		
 		categories = {
 			light_air
+			light_fighter
 			jet_technology
 		}
 		

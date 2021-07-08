@@ -64,6 +64,7 @@ set_technology = {
 	tactical_bomber1 = 1
 	CAS1 = 1
 	naval_bomber1 = 1
+	heavy_fighter1 = 1
 	
 	mobile_warfare = 1
 	trade_interdiction = 1

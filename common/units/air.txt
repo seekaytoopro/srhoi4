@@ -35,14 +35,14 @@ sub_units = {
 		categories = { category_heavy_fighter }
 	}
 
-	jet_fighter = {
-		sprite = jet_plane
-		priority = 1
-		active = yes
-		type = { fighter }
-		need = { jet_fighter_equipment = 1 }
-		categories = { category_fighter }
-	}
+	# jet_fighter = {
+	# 	sprite = jet_plane
+	# 	priority = 1
+	# 	active = yes
+	# 	type = { fighter }
+	# 	need = { jet_fighter_equipment = 1 }
+	# 	categories = { category_fighter }
+	# }
 	
 	
 	cas = {

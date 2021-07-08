@@ -11,3 +11,5 @@
  GER_naval_rearmament:0 "Kriegsmarine"
  GER_army_innovation:0 "Wehrmacht"
  GER_air_innovation:0 "Luftwaffe"
+ GER_tactical_air_effort:0 "Ju 87 G \"Kanonenvogel\""
+ GER_long_range_escorts:0 "Me 410 \"Hornisse\""

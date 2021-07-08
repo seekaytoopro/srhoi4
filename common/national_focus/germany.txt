@@ -740,7 +740,7 @@ focus_tree = {
 		id = GER_tactical_air_effort
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = GER_air_innovation }
-		x = 1
+		x = -1
 		y = 2
 		relative_position_id = GER_air_innovation
 		cost = 5
@@ -762,8 +762,7 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 0.75
 				uses = 1
-				
-				category = cas_bomber			
+				technology = CAS2			
 			}
 		}
 	}
@@ -771,10 +770,10 @@ focus_tree = {
 	focus = {
 		id = GER_long_range_escorts
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
-		x = -1
+		prerequisite = { focus = GER_air_innovation }
+		x = 0
 		y = 1
-		relative_position_id = GER_tactical_air_effort
+		relative_position_id = GER_air_innovation
 		cost = 5
 		ai_will_do = {
 			factor = 0.1
@@ -786,8 +785,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_long_range_escorts
 				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+				ahead_reduction = 0.5
+				uses = 1
+				technology = heavy_fighter2
 			}
 		}
 	}
@@ -797,10 +797,10 @@ focus_tree = {
 		id = GER_naval_air_effort
 		text = naval_air_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = GER_tactical_air_effort }
+		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
 		x = 0
-		y = 2
-		relative_position_id = GER_tactical_air_effort
+		y = 3
+		relative_position_id = GER_strategic_air_effort
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -822,7 +822,7 @@ focus_tree = {
 		id = GER_strategic_air_effort
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = GER_air_innovation }
-		x = -1
+		x = 1
 		y = 2
 		relative_position_id = GER_air_innovation
 		cost = 5
@@ -843,7 +843,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.5
 				uses = 1
-				category = tactical_bomber
+				technology = tactical_bomber2
 						
 			}
 		}
@@ -974,8 +974,8 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = GER_strategic_air_effort focus = GER_tactical_air_effort }
 		x = 0
-		y = 2
-		relative_position_id = GER_strategic_air_effort
+		y = 3
+		relative_position_id = GER_tactical_air_effort
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1046,7 +1046,7 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
-		y = 1
+		y = 2
 		relative_position_id = GER_soviet_treaty
 		cost = 10
 		ai_will_do = {
@@ -1105,10 +1105,10 @@ focus_tree = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_air_innovation_2 }
-		x = 0
-		y = 1
+		x = -2
+		y = 2
 		relative_position_id = GER_air_innovation_2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -1123,23 +1123,17 @@ focus_tree = {
 				uses = 2
 				category = rocketry
 			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
-			}
 		}
 	}
 
 	focus = {
 		id = GER_wunderwaffe
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_rocketry_focus }
+		prerequisite = { focus = GER_air_innovation_2 }
 		x = 0
-		y = 1
-		relative_position_id = GER_rocketry_focus
-		cost = 10
+		y = 2
+		relative_position_id = GER_air_innovation_2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2853,7 +2847,7 @@ focus_tree = {
 				icon = GFX_goal_generic_attack_allies
 				relative_position_id = GER_ussr_war_goal
 				prerequisite = { focus = GER_ussr_war_goal }
-				x = 1
+				x = -3
 				y = 1
 				cost = 8.7
 				ai_will_do = {
@@ -2955,6 +2949,41 @@ focus_tree = {
 				}
 
 				focus = {
+					id = GER_jet_focus
+					icon = GFX_goal_generic_air_fighter
+					prerequisite = { focus = GER_wunderwaffe }
+					prerequisite = { focus = GER_rocketry_focus }
+					prerequisite = { focus = GER_air_innovation_3 }
+			
+					available = {
+						date > 1942.6.1
+					}
+					x = -2
+					y = 1
+					relative_position_id = GER_wunderwaffe
+					cost = 5
+			
+					available_if_capitulated = yes
+			
+					completion_reward = {
+						add_tech_bonus = {
+							name = "The Me-262"
+							ahead_reduction = 3
+							bonus = 1.0
+							uses = 1
+							technology = jet_engines
+						}
+						add_tech_bonus = {
+							name = "The Me-262"
+							ahead_reduction = 3
+							bonus = 0.00
+							uses = 1
+							technology = jet_fighter1
+						}
+					}
+				}
+
+				focus = {
 					id = GER_ostwall
 					icon = GFX_goal_generic_fortify_city
 					prerequisite = { focus = GER_ussr_war_goal }
@@ -2979,7 +3008,7 @@ focus_tree = {
 							}
 						}
 					}
-					x = -3
+					x = 1
 					y = 1
 					relative_position_id = GER_ussr_war_goal
 					cost = 5
