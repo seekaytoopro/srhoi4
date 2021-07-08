@@ -4,7 +4,7 @@ name="STATE_335"
 manpower = 41718200
 state_category = city
 resources={
-rubber=140
+rubber=110
 oil=10
 }
 history={
@@ -25,6 +25,12 @@ anti_air_building = 2
 7381 = {
 naval_base = 6
 }
+1413 = {
+	naval_base = 2
+	}
+1386 = {
+	naval_base = 1
+	}
 4608 = {
 naval_base = 10
 }

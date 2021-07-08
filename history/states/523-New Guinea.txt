@@ -18,20 +18,20 @@ state={
 				naval_base = 5
 			}
 			4329 = {
-				naval_base = 6
+				naval_base = 8
 			}
-			# 5310 = {
-			# 	naval_base = 5
-			# }
-			# 5301 = {
-			# 	naval_base = 5
-			# }
-			# 2343 = {
-			# 	naval_base = 5
-			# }
-			# 2429 = {
-			# 	naval_base = 5
-			# }
+			10362 = {
+				naval_base = 3
+			}
+			1389 = {
+				naval_base = 3
+			}
+			12154 = {
+				naval_base = 1
+			}
+			12135 = {
+				naval_base = 1
+			}
 			# 2340 = {
 			# 	naval_base = 5
 			# }
@@ -47,7 +47,7 @@ state={
 
 		}
 		victory_points = {
-			4329 30 
+			4329 50 
 		}
 		victory_points = {
 			12237 10 
