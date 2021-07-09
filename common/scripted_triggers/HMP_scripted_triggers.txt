@@ -146,6 +146,8 @@ original_tag = BRA
 original_tag = NOR
 original_tag = IRE
 original_tag = SIA
+original_tag = SOV
+original_tag = CRO
 }
 }
 

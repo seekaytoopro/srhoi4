@@ -13,7 +13,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ITA }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = ROM }  } } 
 	if = { limit = {ROOT = { tag = FIN   } }  		NOT = {  FROM = { tag = HUN }  } } 
-	if = { limit = {FROM = { tag = ETH   } }  		ETH = {  always = no  } } 
+	# if = { limit = {FROM = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {FROM = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
 	if = { limit = {FROM = { tag = NOR   } }  		NOR = { has_country_flag = france_is_kill }  } 
 	#if = { limit = {ROOT = { tag = JAP  } } 			NOT = { FROM = { OR = { the_axis = yes tag = SOV } } } }
@@ -28,6 +28,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  normally_played_allies = yes } } }
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  tag = SOV } } }
 	if = { limit = { ROOT = {  normally_played_allies = yes  }  } FROM = { NOT = {  the_axis = yes } } }
+	if = { limit = { FROM = { tag = FRA   } }  		FRA = {  always = no  } } 
 	
 	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
 	# if = { limit = {FROM = { normally_played_allies = yes} } 		NOT = { ROOT = { tag = SOV  } } } 
