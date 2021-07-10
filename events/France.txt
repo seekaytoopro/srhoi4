@@ -56,6 +56,10 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
+
+	immediate = {
+		horstorical_multiplayer_vichy_france = yes 
+	}
 	
 	is_triggered_only = yes
 
@@ -63,20 +67,17 @@ country_event = {
 		name = france.14.a
 		
 		trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_ENABLE_VICHY_FRANCE }  }
-		
-		horstorical_multiplayer_vichy_france = yes 
-		
 	}
 
-	option = { # Conquer everything!
-		name = france.14.b
+	# option = { # Conquer everything!
+	# 	name = france.14.b
 		
-		trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_DISABLE_VICHY_FRANCE }  }
+	# 	trigger = { has_game_rule = { rule = horst_vichy_france option = HORST_DISABLE_VICHY_FRANCE }  }
 		
-		FRA = {
-			country_event = { hours = 6 id = france.15 }
-		}
-	}
+	# 	FRA = {
+	# 		country_event = { hours = 6 id = france.15 }
+	# 	}
+	# }
 }
 
 # Germany refuses armistice! (France)
