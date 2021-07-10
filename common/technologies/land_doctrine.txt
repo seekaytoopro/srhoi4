@@ -943,6 +943,12 @@ technologies = {
 		category_line_artillery = {
 			defense = 0.20
 		}
+		anti_tank_brigade = { 
+			defense = -0.20
+		}
+		mot_anti_tank_brigade = {
+			defense = -0.20
+		}
 		
 		enable_tactic = tactic_elastic_defense
 		
