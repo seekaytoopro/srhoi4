@@ -1,5 +1,9 @@
 SOV_has_barb_debuff = {
 	if = {
+		limit = { has_idea = SOV_barb_debuff_0 }
+		has_idea = SOV_barb_debuff_0
+	}
+	else_if = {
 		limit = { has_idea = SOV_barb_debuff_1 }
 		has_idea = SOV_barb_debuff_1
 	}

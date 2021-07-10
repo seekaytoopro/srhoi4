@@ -2,6 +2,52 @@ ideas = {
 
 	country = {
 
+		SOV_barb_debuff_0 = {
+			name = "Officer Corp Purged"
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+			
+
+			removal_cost = -1
+
+			picture = officers_purged
+
+			modifier = {
+				army_org_Factor = -0.40
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				max_dig_in = -4.0
+				#army_morale_factor = -0.39
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					air_agility = -0.40
+					air_attack = -0.40
+					instant = yes
+				}
+				heavy_fighter_equipment = {
+					air_agility = -0.40
+					air_attack = -0.40
+					instant = yes
+				}
+				CAS_equipment = {
+					air_agility = -0.40
+					air_ground_attack = -0.40
+					instant = yes
+				}
+				tac_bomber_equipment = {
+					air_agility = -0.40
+					air_ground_attack = -0.40
+					instant = yes
+				}
+			}
+		}
+
 		SOV_barb_debuff_1 = {
 			name = "Officer Corp Purged"
 			allowed = {

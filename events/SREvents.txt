@@ -355,5 +355,36 @@ country_event = {
 			}
 		}
 	}
-}    
+}
+
+country_event = {
+	id = srevents.805 #recheck if soviet front is empty
+	title = "Fall Mud Season"
+	desc = news.402.d
+	picture = GFX_report_event_german_italian_pact
+ 
+	fire_only_once = no
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		every_state = {
+			limit = {
+				AND = {
+					SOV_frontline_states = yes 
+					SOV = {
+						divisions_in_state = {
+							type = infantry size < 2 state = PREV
+						}
+					}
+				}
+			}
+			GER = { set_state_controller = PREV }
+		}
+	}
+ 
+	
+	option = {
+	}
+}
 

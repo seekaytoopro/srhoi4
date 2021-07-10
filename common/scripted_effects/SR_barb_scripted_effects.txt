@@ -141,10 +141,24 @@ SOV_barb_debuff_level_up = {
 			add_idea = SOV_barb_debuff_2
 		}
 	}
+	else_if = {
+		limit = { has_idea = SOV_barb_debuff_0 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_0
+			add_idea = SOV_barb_debuff_1
+		}
+	}
 }
 
 SOV_barb_debuff_level_down = {
 	if = {
+		limit = { has_idea = SOV_barb_debuff_1 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_1
+			add_idea = SOV_barb_debuff_0
+		}
+	}
+	else_if = {
 		limit = { has_idea = SOV_barb_debuff_2 }
 		swap_ideas = {
 			remove_idea = SOV_barb_debuff_2

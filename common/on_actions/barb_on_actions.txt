@@ -164,6 +164,22 @@ on_actions = {
 					217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
 					news_event = news.105
 				}
+				if = { limit = { 206 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_minsk } } } }
+					206 = { set_state_flag = sr_fall_of_minsk } SOV = { SOV_barb_debuff_level_down = yes }
+					# news_event = news.105 no event for fall of minsk yet
+				}
+				if = { limit = { 220 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kursk } } } }
+					220 = { set_state_flag = sr_fall_of_kursk } SOV = { SOV_barb_debuff_level_down = yes }
+					# news_event = news.105 no event for fall of kursk yet
+				}
+				if = { limit = { 226 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_dnipropetrovsk } } } }
+					226 = { set_state_flag = sr_fall_of_dnipropetrovsk } SOV = { SOV_barb_debuff_level_down = yes }
+					# news_event = news.105 no event for fall of dnipropetrovsk yet
+				}
+				if = { limit = { 221 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kharkov } } } }
+					221 = { set_state_flag = sr_fall_of_kharkov } SOV = { SOV_barb_debuff_level_down = yes }
+					# news_event = news.105 no event for fall of dnipropetrovsk yet
+				}
 			}	
 		}
 	}

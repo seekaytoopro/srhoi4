@@ -144,7 +144,14 @@ on_actions = {
 				}
 				every_country = {
 					limit = { AND = { the_axis = yes NOT = { original_tag = ITA } } }
-					PREV = { add_ideas = empty_barb_speed }
+					THIS = { add_ideas = empty_barb_speed }
+				}
+				GER = {
+					country_event = { id = srevents.805 days = 1 }
+					country_event = { id = srevents.805 days = 7 }
+					country_event = { id = srevents.805 days = 14 }
+					country_event = { id = srevents.805 days = 21 }
+					country_event = { id = srevents.805 days = 28 }
 				}
 			}
 		}
