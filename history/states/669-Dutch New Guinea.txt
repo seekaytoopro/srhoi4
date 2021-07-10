@@ -10,18 +10,30 @@ state={
 		owner = HOL
 		add_core_of = SWE
 		victory_points = {
-			12371 15 
+			12371 5 
+		}
+		victory_points = {
+			4468 20 
+		}
+		victory_points = {
+			12386 5 
+		}
+		victory_points = {
+			12440 5
+		}
+		victory_points = {
+			4509 1
 		}
 		buildings = {
 			infrastructure = 4
 			4468 = {
-				naval_base = 1
+				naval_base = 4
 			}
 			12371 = {
 				naval_base = 1
 			}
 			7512 = {
-				naval_base = 1
+				naval_base = 7
 			}
 			12496 = {
 				naval_base = 1
@@ -35,7 +47,7 @@ state={
 			4509 = {
 				naval_base = 1
 			}
-			1629 = {
+			12440 = {
 				naval_base = 3
 			}
 			4524 = {
