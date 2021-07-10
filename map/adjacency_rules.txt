@@ -303,7 +303,7 @@ adjacency_rule
 	contested =
 	{
 		army = no
-		navy = no
+		navy = yes
 		submarine = yes
 		trade = no
 	}
@@ -331,7 +331,7 @@ adjacency_rule
 	
 	required_provinces = { 11767 6979 }
 	
-	icon = 6979
+	icon = 5864
 	offset = { 0.0 0.0 0.0 }
 }
 
