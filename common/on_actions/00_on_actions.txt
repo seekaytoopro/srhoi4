@@ -73,34 +73,34 @@ on_actions = {
 	on_declare_war = {
 		effect = {
 		
-		if = { 
+		if = {
 			limit = { FROM = { original_tag = POL } }
-				FRA = { activate_mission = FRA_battle_start }
-				ENG = { add_to_faction = POL }
-				GER = {
-					if = { limit = { IRE = { NOT = { is_ai = yes } } } 
-					declare_war_on = { target = IRE type = annex_everything }
-					ENG = { add_to_faction = IRE } 
-					IRE = { add_ideas = phoney_war } } 
-					declare_war_on = { target = ENG type = annex_everything } 
-					declare_war_on = { target = FRA type = annex_everything } 
-					declare_war_on = { target = CAN type = annex_everything } 
-					declare_war_on = { target = SAF type = annex_everything } 
-					declare_war_on = { target = RAJ type = annex_everything } 
-					declare_war_on = { target = AST type = annex_everything } 
-					declare_war_on = { target = NZL type = annex_everything } 
-				}
-				hidden_effect = { 
-					ENG = { add_ideas = phoney_war }
-					CAN = { add_ideas = phoney_war }
-					SAF = { add_ideas = phoney_war }
-					RAJ = { add_ideas = phoney_war }
-					AST = { add_ideas = phoney_war }
-					NZL = { add_ideas = phoney_war }
-					FRA = { add_ideas = phoney_war }
-					country_event = { id = germany.110 days = 7 }
-				}
+			FRA = { activate_mission = FRA_battle_start }
+			ENG = { add_to_faction = POL }
+			GER = {
+				if = { limit = { IRE = { NOT = { is_ai = yes } } } 
+				declare_war_on = { target = IRE type = annex_everything }
+				ENG = { add_to_faction = IRE } 
+				IRE = { add_ideas = phoney_war } } 
+				declare_war_on = { target = ENG type = annex_everything } 
+				declare_war_on = { target = FRA type = annex_everything } 
+				declare_war_on = { target = CAN type = annex_everything } 
+				declare_war_on = { target = SAF type = annex_everything } 
+				declare_war_on = { target = RAJ type = annex_everything } 
+				declare_war_on = { target = AST type = annex_everything } 
+				declare_war_on = { target = NZL type = annex_everything } 
 			}
+			hidden_effect = { 
+				ENG = { add_ideas = phoney_war }
+				CAN = { add_ideas = phoney_war }
+				SAF = { add_ideas = phoney_war }
+				RAJ = { add_ideas = phoney_war }
+				AST = { add_ideas = phoney_war }
+				NZL = { add_ideas = phoney_war }
+				FRA = { add_ideas = phoney_war }
+				country_event = { id = germany.110 days = 7 }
+			}
+		}
 		if = { 
 			limit = { FROM = { original_tag = DEN } }
 				ENG = { add_to_faction = DEN }
@@ -112,14 +112,6 @@ on_actions = {
 		if = { 
 			limit = { FROM = { original_tag = BEL } }
 				ENG = { add_to_faction = BEL }
-
-				# #France reward for holding mission
-				# FRA = {
-				# 	set_country_flag = FRA_battle_flag
-				# 	activate_mission = FRA_battle_1
-				# }
-				# #539.FRA_battle_weeks_held = 0
-				# FRA = { set_variable = { var = FRA_battle_weeks_held value = 0 } }
 			}
 
 		if = { 
@@ -127,10 +119,35 @@ on_actions = {
 				ENG = { add_to_faction = NOR }
 			}
 
-			if = { 
-			limit = { FROM = { original_tag = NOR } }
-			NOR = { add_timed_idea = { idea = NOR_no_surrender  days = 16 } }
+		if = {
+			limit = { FROM = { original_tag = SOV } }
+			hidden_effect = {
+				ITA = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+				SPR = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+				ROM = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+				HUN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+				BUL = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+				CRO = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+
+				every_state = {
+					limit = {
+						AND = {
+							SOV_frontline_states = yes 
+							SOV = {
+								divisions_in_state = {
+									type = infantry size < 2 state = PREV
+								}
+							}
+						}
+					}
+					GER = { set_state_controller = PREV }
+				}
+				every_country = {
+					limit = { AND = { the_axis = yes NOT = { original_tag = ITA } } }
+					PREV = { add_ideas = empty_barb_speed }
+				}
 			}
+		}
 			
 			## Soviet war after purge
 			if = {
@@ -231,11 +248,6 @@ on_actions = {
 					738 = { set_demilitarized_zone = yes }
 					669 = { set_demilitarized_zone = yes }
 					795 = { set_demilitarized_zone = yes }
-
-					# set_rule = {
-					# 	can_be_called_to_war = no
-					# }
-
 				}
 				HOL = { give_resource_rights = { receiver = ENG state = 333 } }
 		 		GER = { transfer_state = 35 transfer_state = 7 transfer_state = 36 36 = { set_compliance = 40 } 7 = { set_compliance = 40 } 35 = { set_compliance = 40 } }

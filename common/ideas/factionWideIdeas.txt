@@ -122,6 +122,24 @@ ideas = {
 			}
 		}
 
+		empty_barb_speed = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				SOV = { casualties > 1000 }
+			}
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				army_speed_factor = 0.5
+			}
+		}
+
 		neutral_ai_nation = {
 			picture = HUN_treaty_of_triannon
 			allowed = {
