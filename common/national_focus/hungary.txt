@@ -1691,8 +1691,7 @@ focus_tree = {
 				name = HUN_mobile_focus
 				bonus = 1.0
 				uses = 1
-				category = cat_mobile_warfare
-				category = cat_superior_firepower
+				category = land_doctrine
 			}
 		}
 	}
@@ -1959,8 +1958,7 @@ focus_tree = {
 				name = HUN_home_defense
 				bonus = 1.0
 				uses = 1
-				category = cat_grand_battle_plan
-				category = cat_mass_assault
+				category = land_doctrine
 			}
 		}
 	}
