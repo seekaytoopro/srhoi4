@@ -1342,7 +1342,10 @@ ideas = {
 			
 			allowed = {
 				original_tag = ENG
-				has_completed_focus = { ENG_special_air_service }
+			}
+
+			available = {
+				has_completed_focus = ENG_special_air_service
 			}
 			
 			traits = { montgomery_hc }
