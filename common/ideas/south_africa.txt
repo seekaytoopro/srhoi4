@@ -528,7 +528,7 @@ ideas = {
 			
 			picture = generic_democratic_reformer_western_european_2d
 			
-			traits = { democratic_reformer }
+			traits = { democratic_reformer popular_figurehead }
 
 			do_effect = {
 				NOT = {
@@ -561,7 +561,7 @@ ideas = {
 				original_tag = SAF
 			}
 			
-			traits = { backroom_backstabber }
+			traits = { war_industrialist }
 			ai_will_do = {
 				factor = 0
 			}
@@ -731,7 +731,7 @@ ideas = {
 		}
 
 		SAF_marinus_van_osterkamp = {
-			ledger = navy
+			ledger = army
 
 			picture = generic_air_europe_3
 			
@@ -739,7 +739,7 @@ ideas = {
 				original_tag = SAF
 			}
 			
-			traits = { air_naval_strike_2 }
+			traits = { army_logistics_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -806,7 +806,7 @@ ideas = {
 			allowed = {
 				original_TAG = SAF
 			}
-			
+			cost = 75
 
 			
 			research_bonus = {

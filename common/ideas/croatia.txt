@@ -35,7 +35,7 @@ ideas = {
 				original_tag = CRO
 			}
 			
-			traits = { fascist_demagogue }
+			traits = { fascist_demagogue popular_figurehead }
 
 			do_effect = {
 				NOT = {
@@ -115,7 +115,7 @@ ideas = {
 			
 
 			
-			traits = { army_chief_maneuver_2 }
+			traits = { army_chief_offensive_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -258,7 +258,7 @@ ideas = {
 		}
 
 		CRO_djuro_jakcin = {
-			ledger = navy
+			ledger = army
 
 			picture = generic_navy_europe_3
 			
@@ -266,7 +266,7 @@ ideas = {
 				original_tag = CRO
 			}
 			
-			traits = { navy_screen_2 }
+			traits = { army_logistics_2 }
 			
 			ai_will_do = {
 				factor = 1

@@ -1330,8 +1330,6 @@ ideas = {
 				original_tag = ENG
 			}
 			
-
-			
 			traits = { army_logistics_2 }
 			
 			ai_will_do = {
@@ -1344,9 +1342,8 @@ ideas = {
 			
 			allowed = {
 				original_tag = ENG
+				has_completed_focus = { ENG_special_air_service }
 			}
-			
-
 			
 			traits = { montgomery_hc }
 			
@@ -1358,12 +1355,9 @@ ideas = {
 		sholto_douglas = {
 			ledger = air
 
-
 			allowed = {
 				original_tag = ENG
 			}
-			
-
 			
 			traits = { air_air_superiority_2 }
 			
@@ -1379,8 +1373,6 @@ ideas = {
 			allowed = {
 				original_tag = ENG
 			}
-			
-
 			
 			traits = { air_bomber_interception_2 }
 			
