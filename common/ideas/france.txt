@@ -2181,6 +2181,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 						
 			research_bonus = {
 				armor = 0.15
@@ -2207,6 +2208,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 						
 			research_bonus = {
 				armor = 0.15
@@ -2229,6 +2231,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 						
 			research_bonus = {
 				armor = 0.15
@@ -2252,6 +2255,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 						
 			research_bonus = {
 				armor = 0.15
@@ -2274,6 +2278,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 						
 			research_bonus = {
 				armor = 0.15
@@ -2420,6 +2425,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 						
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2435,6 +2441,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			cost = 75
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2450,6 +2457,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			cost = 75	
 			research_bonus = {
 				naval_equipment = 0.15
@@ -2465,6 +2473,7 @@ ideas = {
 					original_tag = FRF
 				}
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			cost = 75	
 			research_bonus = {
 				naval_equipment = 0.15

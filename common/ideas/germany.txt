@@ -1366,13 +1366,12 @@ ideas = {
 		designer = yes
 		
 		porsche = {
-		cost = 75
-			
-			
+			cost = 75
 			
 			allowed = {
-				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO  }
+				OR = { original_tag = GER original_tag = SPR original_tag = HUN original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO  }
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -1437,6 +1436,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO }
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -1501,7 +1501,7 @@ ideas = {
 			allowed = {
 				OR = { original_tag = GER original_tag = SPR original_tag = HUN  original_tag = ITA original_tag = BUL original_tag = ROM original_tag = CRO }
 			}
-			
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -1569,6 +1569,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1588,6 +1589,7 @@ ideas = {
 			allowed = {
 				original_tag = GER
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			research_bonus = {
 				naval_equipment = 0.15

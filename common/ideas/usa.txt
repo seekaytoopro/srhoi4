@@ -1775,7 +1775,8 @@ ideas = {
 			
 			allowed = {
 				original_tag = USA
-			}			
+			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1795,7 +1796,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 75
-			
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1813,6 +1814,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			available = {
 				has_completed_focus = USA_main_battle_tanks
 			}
@@ -1847,6 +1849,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			cost = 75
 			available = {
 				has_completed_focus = USA_tank_destroyer_doctrine
@@ -1889,7 +1892,7 @@ ideas = {
 				original_tag = USA
 			}
 			cost = 75
-			
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1913,8 +1916,9 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
-	available = {
+			available = {
 
 			}
 			
@@ -1934,7 +1938,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1953,7 +1957,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1972,7 +1976,7 @@ ideas = {
 			allowed = {
 				original_tag = USA
 			}
-			
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			
 			research_bonus = {

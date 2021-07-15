@@ -840,6 +840,7 @@ ideas = {
 			allowed = {
 				original_TAG = RAJ
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			picture = generic_naval_manufacturer_1
 						
@@ -856,6 +857,7 @@ ideas = {
 			allowed = {
 				original_TAG = RAJ
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			picture = generic_naval_manufacturer_3
 			
@@ -871,6 +873,7 @@ ideas = {
 			allowed = {
 				original_TAG = RAJ
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			picture = generic_naval_manufacturer_2
 			

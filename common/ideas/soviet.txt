@@ -1334,14 +1334,13 @@ ideas = {
 		designer = yes
 		
 		morozov_design_bureau = {
-			
-			
 			allowed = {
 				OR = {
 					original_tag = SOV
 					original_tag = MAN
 				}
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			available = {
 				if = {
@@ -1371,12 +1370,10 @@ ideas = {
 		}
 		
 		astrov_design_bureau = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -1395,13 +1392,10 @@ ideas = {
 		}
 		
 		okmo = {
-			
-			
 			allowed = {
 				original_tag = SOV
 			}
-			
-
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -1638,6 +1632,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			available = { has_completed_focus = SOV_expand_red_fleet }
 			
@@ -1658,8 +1653,9 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
-						available = { has_completed_focus = SOV_expand_red_fleet }
+			available = { has_completed_focus = SOV_expand_red_fleet }
 
 			
 			cost = 0 
@@ -1677,14 +1673,15 @@ ideas = {
 		}
 		
 		
-			zvezda_shipyard = {
+		zvezda_shipyard = {
 			
 			
 			allowed = {
 				original_tag = SOV
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
-						available = { has_completed_focus = SOV_expand_red_fleet }
+			available = { has_completed_focus = SOV_expand_red_fleet }
 
 			
 				cost = 0 

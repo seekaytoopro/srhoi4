@@ -812,6 +812,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			cost = 75
 			available = {
 			has_completed_focus = ITA_mare_nostrum

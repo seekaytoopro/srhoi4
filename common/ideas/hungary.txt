@@ -582,6 +582,7 @@ ideas = {
 			allowed = {
 				original_tag = HUN
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			cost = 75
 			#removal_cost = 10

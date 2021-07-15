@@ -971,6 +971,7 @@ ideas = {
 			allowed = {
 				original_tag = ROM
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -1003,6 +1004,7 @@ ideas = {
 			allowed = {
 				original_tag = ROM
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.05
@@ -1065,6 +1067,7 @@ ideas = {
 			allowed = {
 				original_tag = ROM
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1089,6 +1092,7 @@ ideas = {
 			allowed = {
 				original_tag = ROM
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			available = {
 				has_completed_focus = ROM_coastal_defense_navy
@@ -1126,6 +1130,7 @@ ideas = {
 			allowed = {		
 				original_tag = ROM
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			available = {
 				has_completed_focus = ROM_black_sea_dominance

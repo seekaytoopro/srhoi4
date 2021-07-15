@@ -803,6 +803,7 @@ ideas = {
 				original_tag = MAN
 				has_completed_focus = MAN_tankplant_p
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15
@@ -824,6 +825,7 @@ ideas = {
 				original_tag = MAN
 					has_completed_focus = MAN_tankplant_h
 			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 			
 			research_bonus = {
 				armor = 0.15

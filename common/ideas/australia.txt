@@ -717,7 +717,7 @@ high_command = {
 			allowed = {
 				original_TAG = AST
 			}
-			
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
 
 			
 			research_bonus = {
@@ -744,6 +744,7 @@ high_command = {
 			allowed = {
 				original_TAG = AST
 			}
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 						
 			research_bonus = {
 				naval_equipment = 0.15
@@ -762,7 +763,7 @@ high_command = {
 			allowed = {
 				original_TAG = AST
 			}
-			
+			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			
 			research_bonus = {
