@@ -129,29 +129,33 @@ on_actions = {
 				BUL = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 				CRO = { add_to_war = { targeted_alliance = GER enemy = SOV } }
 
-				every_state = {
-					limit = {
-						AND = {
-							SOV_frontline_states = yes 
-							SOV = {
-								divisions_in_state = {
-									type = infantry size < 2 state = PREV
-								}
-							}
-						}
-					}
-					GER = { set_state_controller = PREV }
-				}
+				# every_state = {
+				# 	limit = {
+				# 		AND = {
+				# 			SOV_frontline_states = yes 
+				# 			SOV = {
+				# 				divisions_in_state = {
+				# 					type = infantry size < 2 state = PREV
+				# 				}
+				# 			}
+				# 		}
+				# 	}
+				# 	GER = { set_state_controller = PREV }
+				# }
 				every_country = {
 					limit = { AND = { the_axis = yes NOT = { original_tag = ITA } } }
 					THIS = { add_ideas = empty_barb_speed }
 				}
 				GER = {
 					country_event = { id = srevents.805 days = 1 }
-					country_event = { id = srevents.805 days = 7 }
-					country_event = { id = srevents.805 days = 14 }
+					country_event = { id = srevents.805 days = 6 }
+					country_event = { id = srevents.805 days = 11 }
+					country_event = { id = srevents.805 days = 16 }
 					country_event = { id = srevents.805 days = 21 }
-					country_event = { id = srevents.805 days = 28 }
+					country_event = { id = srevents.805 days = 26 }
+					country_event = { id = srevents.805 days = 31 }
+					country_event = { id = srevents.805 days = 36 }
+					country_event = { id = srevents.805 days = 40 }
 				}
 			}
 		}

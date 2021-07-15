@@ -371,10 +371,11 @@ country_event = {
 		every_state = {
 			limit = {
 				AND = {
-					SOV_frontline_states = yes 
+					SOV_frontline_states = yes
+					NOT = { is_controlled_by = SOV }
 					SOV = {
 						divisions_in_state = {
-							type = infantry size < 2 state = PREV
+							type = infantry size < 1 state = PREV
 						}
 					}
 				}
