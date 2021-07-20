@@ -531,8 +531,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 31
+		max_strength = 26.5
+		max_organisation = 33
 		default_morale = 0.30
 		manpower = 1200
 
@@ -540,7 +540,7 @@ sub_units = {
 		training_time = 90
 		suppression = 1
 		weight = 0.75
-		supply_consumption = 0.11
+		supply_consumption = 0.10
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -615,7 +615,7 @@ sub_units = {
 		hard_attack = 3.5
 		
 		#Size Definitions
-		max_strength = 30
+		max_strength = 31.5
 		max_organisation = 36
 		default_morale = 0.3
 		manpower = 1200
@@ -625,7 +625,7 @@ sub_units = {
 		suppression = 1
 		weight = 1
 		
-		supply_consumption = 0.145
+		supply_consumption = 0.13
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {

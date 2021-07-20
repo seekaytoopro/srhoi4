@@ -33,7 +33,7 @@ sub_units = {
 		weight = 0.1
 		supply_consumption = 0.02
 		
-		entrenchment  = 2
+		entrenchment = 2
 
 				
 		defense = 0.1
@@ -54,30 +54,30 @@ sub_units = {
 		can_be_parachuted = yes
 
 		forest = {
-			defence = 0.10
+			defence = 0.075
 			movement = 0.05
 		}
 
 		hills = {
-			defence = 0.1
+			defence = 0.075
 		}
 
 		jungle = {
-			defence = 0.10
+			defence = 0.075
 		}
 
 		marsh = {
-			defence = 0.10
+			defence = 0.075
 			movement = 0.2
 		}
 
 		fort = {
 			attack = 0.1
-			defence = 0.10
+			defence = 0.075
 		}
 
 		river = {
-			defence = 0.10
+			defence = 0.075
 			movement = 0.25
 		}
 

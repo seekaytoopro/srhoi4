@@ -47,7 +47,7 @@ NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 999.0 --0.0, 999 for balancing
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.000 -- 0.0 is vanilla, reduces savegame bloat
 
 NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015 -- (0.0001)
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.001 -- (1.00)
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.00001 -- (1.00)
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience drop if unit has different battalion when switching templates(vanilla 0.5 but can be circumvented with template editing)
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
@@ -65,9 +65,9 @@ NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.074 -- (0.05)
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0333 	-- (0.05) global damage modifier
 
-NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.54 -- (0.7)
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.50 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
-NDefines.NMilitary.STRATEGIC_SPEED_BASE = 12.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
+NDefines.NMilitary.STRATEGIC_SPEED_BASE = 15.0 -- (10.0) Increased speed to make 3 speed changes more tolerable
 
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 20 -- (12) Makes having proper recon and leadership more important
 NDefines.NMilitary.SLOWEST_SPEED = 4 -- Was 3 before 3 speed changes
@@ -135,10 +135,10 @@ NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- I
 
 NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0.0 -- we need more intel than this to get any supremacy - should hopefully make naval invasions not be blocked by intel nonesense????
 
-NDefines.NMilitary.RIVER_CROSSING_PENALTY =	-0.175 	--small river crossing
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE =	-0.30 	--large river crossing
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY =	-0.225 	--small river crossing
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE =	-0.35 	--large river crossing 
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.15
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.25
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY = -0.175           -- small river crossing
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.2     -- large river crossing
 
 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 0 -- (72) Divisions per general
@@ -170,7 +170,7 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.15                          	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7 -- Number of support companies allowed per division
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 8 -- Number of support companies allowed per division
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)

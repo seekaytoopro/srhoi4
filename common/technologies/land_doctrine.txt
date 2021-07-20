@@ -15,8 +15,7 @@ technologies = {
 		
 		category_all_armor = {
 			breakthrough = 0.20
-			#max_strength = 2.00
-			
+			max_strength = 2.00
 		}
 		
 		
@@ -559,6 +558,8 @@ technologies = {
 		signal_company = {
 			recon = 1
 			initiative = 0.15
+			max_organisation = 10
+			max_strength = 5
 		}
 		enable_tactic = tactic_overwhelming_fire
 		

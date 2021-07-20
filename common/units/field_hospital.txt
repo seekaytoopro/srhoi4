@@ -22,7 +22,7 @@ sub_units = {
 		combat_width = 0
 	
 		#Size Definitions
-		max_strength = 10
+		max_strength = 12.5
 		max_organisation = 45
 		default_morale = 0.3
 		manpower = 500
