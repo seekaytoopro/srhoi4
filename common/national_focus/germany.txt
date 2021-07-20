@@ -792,32 +792,6 @@ focus_tree = {
 		}
 	}
 	
-
-	focus = {
-		id = GER_naval_air_effort
-		text = naval_air_effort
-		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
-		x = 0
-		y = 3
-		relative_position_id = GER_strategic_air_effort
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
-		}
-	}
-
 	focus = {
 		id = GER_strategic_air_effort
 		icon = GFX_goal_generic_air_bomber
@@ -845,6 +819,31 @@ focus_tree = {
 				uses = 1
 				technology = tactical_bomber2
 						
+			}
+		}
+	}
+
+	focus = {
+		id = GER_naval_air_effort
+		text = naval_air_effort
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
+		x = 0
+		y = 3
+		relative_position_id = GER_strategic_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_bomber
 			}
 		}
 	}
