@@ -158,6 +158,8 @@ original_tag = IRE
 original_tag = SIA
 original_tag = SOV
 original_tag = CRO
+original_tag = BUL
+original_tag = FRF
 }
 }
 
