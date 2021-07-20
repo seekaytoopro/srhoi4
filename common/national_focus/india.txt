@@ -18,6 +18,12 @@ focus_tree = {
 		cost = 10
 		available = {
 			ROOT = { has_war_with = JAP }
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 9
@@ -52,6 +58,12 @@ focus_tree = {
 
 		available = {
 			threat > 0.1
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 
 		bypass = {
@@ -618,7 +630,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 
 		bypass = {
@@ -1356,7 +1373,12 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 
 		bypass = {

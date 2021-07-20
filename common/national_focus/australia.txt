@@ -24,6 +24,12 @@
 		cost = 10
 		available = {
 			ROOT = { has_war_with = JAP }
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 9
@@ -54,7 +60,12 @@
 
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {
@@ -540,7 +551,14 @@
 		x = 7
 		y = 0
 		cost = 5
-
+		available = {
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
+		}
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -931,7 +949,12 @@
 
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {
@@ -1279,7 +1302,12 @@
 		cost = 5
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {
@@ -1326,7 +1354,12 @@
 
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {
@@ -1791,6 +1824,12 @@
 		cost = 10
 
 		available = {
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {
@@ -2282,7 +2321,12 @@
 		cost = 10
 
 		available = {
-
+			NOT = {
+				has_game_rule = {
+					rule = mini_sr
+					option = ENABLE_MINI_SR
+				}
+			}
 		}
 		
 		bypass = {

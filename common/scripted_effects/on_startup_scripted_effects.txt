@@ -186,6 +186,15 @@ resource_rights = {
 		else = { JAP = { give_resource_rights = { receiver = GER state = 724 } } } }
 }
 
+mini_sr_actions = {
+	JAP = { add_ideas = no_production set_equipment_fraction = 0.0 }
+	AST = { add_ideas = no_production set_equipment_fraction = 0.0 }
+	RAJ = { add_ideas = no_production set_equipment_fraction = 0.0 }
+	#NZL = { add_ideas = no_production set_equipment_fraction = 0.0 }
+	AST = {	annex_country = { target = NZL transfer_troops = yes } }
+	JAP = {	annex_country = { target = CHI transfer_troops = yes } }
+}
+
 startup_on_actions = {
 	simulate_pop_growth = yes
 	ai_manchukuo_effect = yes
@@ -194,4 +203,13 @@ startup_on_actions = {
 	startup_ideas = yes
 	croatia_player = yes
 	resource_rights = yes
+	if = {
+		limit = { 
+			has_game_rule = {
+				rule = mini_sr
+				option = ENABLE_MINI_SR
+			}
+		}
+		mini_sr_actions = yes
+	}
 }
