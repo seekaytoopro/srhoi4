@@ -170,7 +170,8 @@ NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.15                          	-- can get more from techs
 NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
-NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 8 -- Number of support companies allowed per division
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 5 -- Number of support companies allowed per division
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
