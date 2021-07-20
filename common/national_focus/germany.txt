@@ -1729,7 +1729,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		prerequisite = { focus = GER_rhineland }
 		relative_position_id = GER_rhineland
-		x = 12
+		x = 13
 		y = 2
 		cost = 5
 		ai_will_do = {
@@ -1947,7 +1947,8 @@ focus_tree = {
 		id = GER_plan_z
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = GER_naval_effort }
-		x = -1
+		mutually_exclusive = { focus = GER_u_boat_effort }
+		x = -2
 		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
@@ -2034,7 +2035,8 @@ focus_tree = {
 		id = GER_u_boat_effort
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = GER_naval_effort }
-		x = 1
+		mutually_exclusive = { focus = GER_plan_z }
+		x = 2
 		y = 2
 		relative_position_id = GER_naval_effort
 		cost = 5
@@ -2147,7 +2149,123 @@ focus_tree = {
 		}
 	}
 
-
+	focus = {
+	    id = GER_bismarck
+		prerequisite = { focus = GER_plan_z }
+		relative_position_id = GER_plan_z
+		x = -1
+		y = 1
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		available = {
+		    GER = { has_completed_focus = GER_danzig_or_war }
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Adds construction of a Battleship 3 at 75% completion"
+			add_stability = -0.02
+			
+			create_equipment_variant = {
+				name = "Bismarck Class"
+				type = ship_hull_heavy_3
+				name_group = GER_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = ship_anti_air_2
+					fixed_ship_armor_slot = ship_armor_bb_3
+					front_1_custom_slot = ship_heavy_battery_2
+					mid_1_custom_slot = ship_secondaries_2
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_heavy_battery_2
+				}
+			}
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER" 
+						version_name = "Bismarck Class"
+					}
+					name = "Bismarck" 
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+			}
+			if = {
+				limit = {
+					not = { has_tech = improved_ship_hull_heavy }
+				}
+				set_technology = {
+					improved_ship_hull_heavy = 1
+				}
+			}
+		}
+	}
+	
+	focus = {
+	    id = GER_tirpitz
+		prerequisite = { focus = GER_plan_z }
+		relative_position_id = GER_plan_z
+		x = 1
+		y = 1
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5
+		available = {
+		    GER = { has_completed_focus = GER_danzig_or_war }
+		}
+		completion_reward = {
+			custom_effect_tooltip = "Adds construction of a Battleship 3 at 75% completion"
+			add_stability = -0.02
+			
+			create_equipment_variant = {
+				name = "Bismarck Class"
+				type = ship_hull_heavy_3
+				name_group = GER_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_2
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_3
+					fixed_ship_secondaries_slot = ship_anti_air_2
+					fixed_ship_armor_slot = ship_armor_bb_3
+					front_1_custom_slot = ship_heavy_battery_2
+					mid_1_custom_slot = ship_secondaries_2
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_heavy_battery_2
+				}
+			}
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_3
+						creator = "GER" 
+						version_name = "Bismarck Class"
+					}
+					name = "Tirpitz" 
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+			}
+			if = {
+				limit = {
+					not = { has_tech = improved_ship_hull_heavy }
+				}
+				set_technology = {
+					improved_ship_hull_heavy = 1
+				}
+			}
+		}
+	}
 
 	focus = {
 		id = GER_improve_national_spirit
@@ -2912,6 +3030,28 @@ focus_tree = {
 						bonus = 0.5
 						uses = 2
 						category = cat_anti_tank
+						}
+					}
+				}
+
+				focus = {
+					id = GER_night_vision
+					icon = GFX_focus_wonderweapons
+					prerequisite = { focus = GER_battle_russia }
+					prerequisite = { focus = GER_army_innovation_2 }
+					x = -2
+					y = 1
+					relative_position_id = GER_battle_russia
+					cost = 5
+			
+					available_if_capitulated = yes
+					
+					completion_reward = {
+						add_tech_bonus = {
+							name = "The Vampire"
+							bonus = 1.0
+							uses = 1
+							technology = night_vision
 						}
 					}
 				}

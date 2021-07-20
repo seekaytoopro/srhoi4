@@ -198,7 +198,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				conscription = 0.01
+				conscription = 0.02
 				conscription_factor = 0.2
 			}
 		}
