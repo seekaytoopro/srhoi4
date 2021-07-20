@@ -29,8 +29,8 @@ sub_units = {
 		}
 		manpower = 300
 		training_time = 120
-		max_organisation = 30
-		default_morale = 0.15
+			max_organisation = 40
+		default_morale = 0.3
 		max_strength = 0.0
 		weight = 0.1
 		
@@ -75,8 +75,8 @@ sub_units = {
 
 		manpower = 300
 		training_time = 120
-		max_organisation = 30
-		default_morale = 0.1
+		max_organisation = 40
+		default_morale = 0.3
 		max_strength = 0.0
 		weight = 0.1
 		
