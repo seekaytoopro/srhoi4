@@ -1224,10 +1224,12 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		
-		category_all_armor = {
+	category_all_armor = {
 			hard_attack = 0.10
 			soft_attack = 0.10
 			max_organisation = 2.5
+			
+			
 		}
 		category_special_forces = { 
 			soft_attack = 0.5
@@ -1278,11 +1280,6 @@ technologies = {
 		# army_bonus_air_superiority_factor = 0.20
 	
 		enable_tactic = tactic_tactical_withdrawal
-
-		category_all_armor = {
-			max_organisation = 2.0
-			default_morale = 0.03
-		}
 		
 		path = {
 			leads_to_tech = air_land_battle 
