@@ -1623,7 +1623,7 @@ guiTypes = {
 
 			iconType = {
 				name = "unit_template_tab_bg"
-				quadTextureSprite ="GFX_big_unit_stats_template_tab_bg"
+				quadTextureSprite ="GFX_unit_stats_template_tab_bg"
 				position = { x= -9 y = -1 }
 				Orientation = "UPPER_LEFT"
 				alwaystransparent = yes
@@ -1631,10 +1631,10 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "combat_header_label"
-				position = { x = 150 y = 47 }
+				position = { x = 105 y = 47 }
 				font = "hoi_18mbs"
 				text = "COMBAT_HEADER"
-				maxWidth = 326
+				maxWidth = 372
 				maxHeight = 20
 				format = right
 				pdx_tooltip = "DESIGNER_MAIN_COLUMN_TITLE"
@@ -1642,28 +1642,28 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "support_header_label"
-				position = { x = 43 y = 47 }
+				position = { x = -12 y = 47 }
 				font = "hoi_18mbs"
 				text = "SUPPORT_HEADER"
-				maxWidth = 107
+				maxWidth = 110
 				maxHeight = 20
-				format = left
+				format = center
 				pdx_tooltip = "DESIGNER_SUPPORT_COLUMN_TITLE"
 			}
 
 			gridboxtype = {
 				name = "support_grid"
-				position = { x = 0 y = 78 }
-				size = { width = 130 height = 100%% }
-				slotsize = { width = 74 height = 42 }
+				position = { x = 4 y = 78 }
+				size = { width = 85 height = 100%% }
+				slotsize = { width = 82 height = 42 }
 				format = "UPPER_LEFT"
 			}
 
 			gridboxtype = {
 				name = "regiments_grid"
-				position = { x = 148 y = 78 }
+				position = { x = 110 y = 78 }
 				size = { width = 445 height = 100%% }
-				slotsize = { width = 74 height = 51 }
+				slotsize = { width = 82 height = 51 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -1775,6 +1775,33 @@ guiTypes = {
 			}
 		}
 
+		# containerWindowType = {
+		# 	name = "adjuster_stats"
+		# 	position = { x=10 y= 353 }
+		# 	size = { width=515 height=50 }
+		# 	clipping = no
+
+		# 	gridboxtype = {
+		# 		name = "stats_grid"
+		# 		position = { x = 0 y = -2 }
+		# 		size = { width = 100%% height = 100%% }
+		# 		slotsize = { width = 110 height = 62 }
+		# 		max_slots_horizontal = 5
+		# 		max_slots_vertical = 2
+		# 		format = "UPPER_LEFT"
+		# 	}
+
+		# 	instantTextboxType = {
+		# 		name = "adjuster_label"
+		# 		position = { x = 10 y = -17 }
+		# 		font = "hoi_18mbs"
+		# 		text = "PRODUCTION_ADJUSTERS_LABEL"
+		# 		maxWidth = 150
+		# 		maxHeight = 20
+		# 		format = left
+		# 	}
+		# }
+
 		containerWindowType = {
 			name = "adjuster_container"
 			position = { x = 10 y = 336 }
@@ -1812,7 +1839,7 @@ guiTypes = {
 				}
 			}
 		}
-		
+
 		iconType = {
 			name = "template_change_icon"
 			spriteType = "GFX_upgrades_icon"

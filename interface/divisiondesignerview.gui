@@ -93,7 +93,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"		
-			spriteType ="GFX_big_division_designer_popup_bg"
+			spriteType ="GFX_ssc_division_designer_popup_bg"
 		}
 		
 		iconType = {
@@ -156,17 +156,17 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "support_grid"
-				position = { x = 15 y = 57 }
-				size = { width = 160 height = 100%% }
-				slotsize = { width = 64 height = 42 }
+				position = { x = 23 y = 52 }
+				size = { width = 85 height = 100%% }
+				slotsize = { width = 82 height = 32 }
 				format = "UPPER_LEFT"
 			}
 			
 			gridboxtype = {
 				name = "regiments_grid"
-				position = { x = 144 y = 57 }
-				size = { width = 410 height = 100%% }
-				slotsize = { width = 76 height = 51 }
+				position = { x = 115 y = 57 }
+				size = { width = 445 height = 100%% }
+				slotsize = { width = 82 height = 51 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -293,14 +293,8 @@ guiTypes = {
 			containerWindowType = {
 				name = "adjuster_stats"
 				position = { x = 15 y = 343 }	
-				size = { width = 515 height = 130 }
-				
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_window_transparent"
-				}
-				
-				verticalScrollbar = "right_vertical_slider"
+				size = { width = 515 height = 50 }
+				clipping = no
 				
 				gridboxtype = {
 					name = "stats_grid"
@@ -308,6 +302,7 @@ guiTypes = {
 					size = { width = 100%% height = 100%% }
 					slotsize = { width = 103 height = 62 }
 					max_slots_horizontal = 5
+					max_slots_vertical = 2
 					format = "UPPER_LEFT"
 				}
 			}
@@ -476,10 +471,10 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "combat_header_label"
-			position = { x = 145 y = 196 }
+			position = { x = 105 y = 196 }
 			font = "hoi_18mbs"
 			text = "COMBAT_HEADER"
-			maxWidth = 335
+			maxWidth = 372
 			maxHeight = 20
 			format = right
 			pdx_tooltip = "DESIGNER_MAIN_COLUMN_TITLE"
@@ -634,12 +629,12 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "support_header_label"
-			position = { x = 50 y = 196 }
+			position = { x = 0 y = 196 }
 			font = "hoi_18mbs"
 			text = "SUPPORT_HEADER"
-			maxWidth = 90
+			maxWidth = 110
 			maxHeight = 20
-			format = left
+			format = center
 			pdx_tooltip = "DESIGNER_SUPPORT_COLUMN_TITLE"
 		}
 		
@@ -850,7 +845,6 @@ guiTypes = {
 			name = "div_template_select_model"
 			position = { x=538 y=40 }
 			size = { width=567 height=460 }
-			show_sound = pop_up
 			
 			
 			background = {
@@ -985,7 +979,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"		
-			spriteType ="GFX_12sc_div_subunit_item_bg"
+			spriteType ="GFX_ssc_div_subunit_item_bg"
 		}
 		
 		instantTextboxType = {
@@ -1050,7 +1044,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		instantTextboxType = {
+				instantTextboxType = {
 			name = "cost"
 			position = { x = 85 y = 41 }
 			textureFile = ""
@@ -1062,6 +1056,7 @@ guiTypes = {
 			format = left
 			alwaystransparent = yes
 		}
+
 	}
 	
 	containerWindowType = {
@@ -1164,6 +1159,20 @@ guiTypes = {
 			quadTextureSprite ="GFX_mini_tooltip"
 			clicksound = click_default
 		}
+		
+				instantTextboxType = {
+			name = "cost"
+			position = { x = 300 y = 41 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Maus"
+			maxWidth = 160
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+		}
+		
 
 		instantTextboxType = {
 			name = "name"
@@ -1213,7 +1222,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "designer_adjuster_entry"	
-		size = { width = 50 height = 70 }
+		size = { width = 50 height = 50 }
 		clipping = no
 
 		iconType = {
