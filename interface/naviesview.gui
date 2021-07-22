@@ -339,13 +339,13 @@ guiTypes = {
 			# selection toolbox
 
 			@nv_tb_btn_y = 6
-			iconType = {
-				name = "btn_delete"
-				position = {x=6 y=@nv_tb_btn_y }
-				spriteType = "GFX_NV_btn_delete"
-				#clicksound = click_default
-				#pdx_tooltip = ""
-			}
+			# iconType = {
+			# 	name = "btn_delete"
+			# 	position = {x=6 y=@nv_tb_btn_y }
+			# 	spriteType = "GFX_NV_btn_delete"
+			# 	#clicksound = click_default
+			# 	#pdx_tooltip = ""
+			# }
 			
 			buttonType = {
 				name = "btn_create_new_from_selected"
