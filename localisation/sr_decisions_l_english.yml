@@ -252,4 +252,6 @@ SOV_relocate_industry_from_moscow:0 "Relocate Industry from Moscow"
  GER_invade_iran:0 "Invade Iran"
  GER_invade_iran_desc:0 "Iran is a region of central importance for the allies, and with pressure from both the British and Soviets, it seems only a mattter of time before the enemy will partition the country for use as a launchpoint for their invasion of the Middle East. We must invade and secure defensive positions before the allies do so on their terms at a time less opportune to us."
 
+ war_bonds_cancel:0 "Cancel War Bonds"
+
  

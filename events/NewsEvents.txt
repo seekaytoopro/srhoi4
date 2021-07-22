@@ -4898,3 +4898,19 @@ news_event = {
 	}
 }
 
+#How long France held mainland
+news_event = {
+	id = news.412
+	title = news.412.t
+	desc = news.412.d
+	picture = GFX_news_event_generic_sign_treaty1
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.412.a
+	}
+}
+

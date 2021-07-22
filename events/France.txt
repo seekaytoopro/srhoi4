@@ -58,7 +58,9 @@ country_event = {
 	picture = GFX_report_event_german_parade_paris
 
 	immediate = {
-		horstorical_multiplayer_vichy_france = yes 
+		hidden_effect = {
+			horstorical_multiplayer_vichy_france = yes 
+		}
 	}
 	
 	is_triggered_only = yes
@@ -387,7 +389,7 @@ country_event = {
 			}
 			
 			#GER = { declare_war_on = { target = FRF type = annex_everything } }
-			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 }
+			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 } }
 			FRF = { army_experience = 500 }
 			FRF = { add_political_power = 600 }
 			FRF = {
@@ -408,7 +410,7 @@ country_event = {
 					producer = FRF
 				}
 			}
-		}
+		# }
 		#### Stuff to replace the old France (FRA) with a brand new Free France (FRF) country ####
 
 		
@@ -428,8 +430,8 @@ country_event = {
 		# country_event = { id = gduvichy.12 days = 6 }
 		# country_event = { id = gduvichy.7 days = 8 }
 		# FRF = { news_event = { id = france.20 days = 10 } }
+		}
 	}
-}
 
 	option = {
 		name = france.800.a
