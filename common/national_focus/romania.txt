@@ -653,6 +653,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 			add_popularity = {
 				popularity = 0.35
 				ideology = fascism
@@ -926,6 +930,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_tech_bonus = {
+				name = ROM_army_maneuvers
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}
 			army_experience = 25
 		}
 	}
@@ -1025,6 +1035,12 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = artillery
+			}
+			add_tech_bonus = {
+				name = ROM_artillery_modernization
+				bonus = 1.0
+				uses = 1
+				category = rocketry
 			}
 		}
 	}
