@@ -59,18 +59,17 @@ foreign_politics = {
 		icon = generic_prepare_civil_war
 
 				
-	visible = {
+		visible = {
 			original_tag  = ITA
 		}
 		
-			activation = {
-		GER = { has_completed_focus = GER_danzig_or_war }		
-		tag = ITA
+		activation = {
+			GER = { has_completed_focus = GER_danzig_or_war }		
+			tag = ITA
 		}
 		
 		available = {
-		ITA = { has_war_with = ENG }
-
+			ITA = { has_war_with = ENG }
 		}
 
 		
@@ -79,11 +78,30 @@ foreign_politics = {
 
 		complete_effect = {
 			GER = { 
-				puppet = ITA 
-				set_autonomy = {
-    				target = ITA
-    				autonomy_state = autonomy_satellite
+				# puppet = ITA 
+				ITA = {
+					hidden_effect = {
+						set_temp_variable = { country_stab = ITA.stability }
+						set_temp_variable = { country_fasc = ITA.party_popularity_100@fascism }
+						set_temp_variable = { country_demo = ITA.party_popularity_100@democratic }
+						set_temp_variable = { country_comm = ITA.party_popularity_100@communism }
+						set_temp_variable = { country_none = ITA.party_popularity_100@neutrality }
+					}
+					GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
+					hidden_effect = {
+						set_popularities = {
+							fascism = var:ITA.country_fasc
+							democratic = var:ITA.country_demo
+							communism = var:ITA.country_comm
+							neutrality = var:ITA.country_none
+						}
+						set_stability = var:ITA.country_stab
+					}
 				}
+				# set_autonomy = {
+    			# 	target = ITA
+    			# 	autonomy_state = autonomy_satellite
+				# }
 				if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
 				# add_relation_modifier = {
     			# 	target = ITA

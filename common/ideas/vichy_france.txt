@@ -21,9 +21,7 @@ ideas = {
 			}
 			
 			available = {
-			has_completed_focus = FRA_national_regeneration
 			}
-			visible = { has_dlc = "La Resistance" }
 			cost = 0 
 			traits = { national_integralist }
 
@@ -46,9 +44,7 @@ ideas = {
 			allowed = {
 				original_tag = EFR
 			}
-			visible = { has_dlc = "La Resistance" }
 			available = {
-				has_completed_focus = FRA_national_regeneration
 			}
 			cost = 0 
 			traits = { propaganda_expert }
@@ -137,7 +133,6 @@ ideas = {
 			}
 
 			available = {
-				has_completed_focus = VIC_the_national_bureau_of_statistics
 			}
 
 			picture = generic_political_advisor_europe_1

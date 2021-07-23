@@ -455,7 +455,25 @@ focus_tree = {
 
 			SPR = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = HUN_REICH
+				#Retaining stability and popularities post cap
+				hidden_effect = {
+					set_temp_variable = { country_stab = SPR.stability }
+					set_temp_variable = { country_fasc = SPR.party_popularity_100@fascism }
+					set_temp_variable = { country_demo = SPR.party_popularity_100@democratic }
+					set_temp_variable = { country_comm = SPR.party_popularity_100@communism }
+					set_temp_variable = { country_none = SPR.party_popularity_100@neutrality }
+				}
 				GER =  { set_autonomy = { target = SPR autonomy_state = autonomy_satellite } }
+				hidden_effect = {
+					set_popularities = {
+						fascism = var:SPR.country_fasc
+						democratic = var:SPR.country_demo
+						communism = var:SPR.country_comm
+						neutrality = var:SPR.country_none
+					}
+					set_stability = var:SPR.country_stab
+				}
+				
 				41 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
@@ -476,7 +494,24 @@ focus_tree = {
 			}
 			HUN = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = HUN_REICH
+				#Retaining stability and popularities post cap
+				hidden_effect = {
+					set_temp_variable = { country_stab = HUN.stability }
+					set_temp_variable = { country_fasc = HUN.party_popularity_100@fascism }
+					set_temp_variable = { country_demo = HUN.party_popularity_100@democratic }
+					set_temp_variable = { country_comm = HUN.party_popularity_100@communism }
+					set_temp_variable = { country_none = HUN.party_popularity_100@neutrality }
+				}
 				GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+				hidden_effect = {
+					set_popularities = {
+						fascism = var:HUN.country_fasc
+						democratic = var:HUN.country_demo
+						communism = var:HUN.country_comm
+						neutrality = var:HUN.country_none
+					}
+					set_stability = var:HUN.country_stab
+				}
 				155 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }	
@@ -497,7 +532,23 @@ focus_tree = {
 			} 	
 			ROM = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = ROM_REICH 
+				hidden_effect = {
+					set_temp_variable = { country_stab = ROM.stability }
+					set_temp_variable = { country_fasc = ROM.party_popularity_100@fascism }
+					set_temp_variable = { country_demo = ROM.party_popularity_100@democratic }
+					set_temp_variable = { country_comm = ROM.party_popularity_100@communism }
+					set_temp_variable = { country_none = ROM.party_popularity_100@neutrality }
+				}
 				GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+				hidden_effect = {
+					set_popularities = {
+						fascism = var:ROM.country_fasc
+						democratic = var:ROM.country_demo
+						communism = var:ROM.country_comm
+						neutrality = var:ROM.country_none
+					}
+					set_stability = var:ROM.country_stab
+				}
 				46 = {
 					add_extra_state_shared_building_slots = 4
 					add_building_construction = { type = arms_factory level = 4 instant_build = yes }
@@ -517,7 +568,25 @@ focus_tree = {
 				}
 			} 	
 			if = { limit = { country_exists = BUL }
-				GER = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+				BUL = {
+					hidden_effect = {
+						set_temp_variable = { country_stab = BUL.stability }
+						set_temp_variable = { country_fasc = BUL.party_popularity_100@fascism }
+						set_temp_variable = { country_demo = BUL.party_popularity_100@democratic }
+						set_temp_variable = { country_comm = BUL.party_popularity_100@communism }
+						set_temp_variable = { country_none = BUL.party_popularity_100@neutrality }
+					}
+					GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+					hidden_effect = {
+						set_popularities = {
+							fascism = var:BUL.country_fasc
+							democratic = var:BUL.country_demo
+							communism = var:BUL.country_comm
+							neutrality = var:BUL.country_none
+						}
+						set_stability = var:BUL.country_stab
+					}
+				}
 				BUL = { 
 					country_event = { id = wtt_germany.72 }
 					#set_cosmetic_tag = BUL_REICH 
@@ -542,7 +611,25 @@ focus_tree = {
 			}
 			hidden_effect = {
 				if = { limit = { country_exists = CRO }
-					GER = { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }
+					CRO = {
+						hidden_effect = {
+							set_temp_variable = { country_stab = CRO.stability }
+							set_temp_variable = { country_fasc = CRO.party_popularity_100@fascism }
+							set_temp_variable = { country_demo = CRO.party_popularity_100@democratic }
+							set_temp_variable = { country_comm = CRO.party_popularity_100@communism }
+							set_temp_variable = { country_none = CRO.party_popularity_100@neutrality }
+						}
+						GER =  { set_autonomy = { target = CRO autonomy_state = autonomy_satellite } }
+						hidden_effect = {
+							set_popularities = {
+								fascism = var:CRO.country_fasc
+								democratic = var:CRO.country_demo
+								communism = var:CRO.country_comm
+								neutrality = var:CRO.country_none
+							}
+							set_stability = var:CRO.country_stab
+						}
+					}
 					CRO = {
 						country_event = { id = wtt_germany.72 }
 						#set_cosmetic_tag = BUL_REICH 
