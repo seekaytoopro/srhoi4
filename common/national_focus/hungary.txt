@@ -1808,6 +1808,17 @@ focus_tree = {
 				technology = advanced_medium_tank
 				technology = advanced_heavy_tank
 			}
+			add_tech_bonus = {
+				name = HUN_develop_tanks
+				bonus = 1.0
+				uses = 2
+				technology = improved_medium_spaa
+				technology = improved_medium_td
+				technology = improved_medium_art
+				technology = improved_heavy_spaa
+				technology = improved_heavy_td
+				technology = improved_heavy_art
+			}
 		}
 	}
 
@@ -1839,6 +1850,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = HUN_assault_gun_focus
+			add_tech_bonus = {
+				name = HUN_assault_gun
+				bonus = 2.0
+				uses = 1
+				technology = improved_medium_spaa
+				technology = improved_medium_td
+				technology = improved_medium_art
+				technology = improved_heavy_spaa
+				technology = improved_heavy_td
+				technology = improved_heavy_art
+			}
 		}
 	}
 

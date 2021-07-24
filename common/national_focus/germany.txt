@@ -1023,35 +1023,33 @@ focus_tree = {
 		completion_reward = {
 			SOV = { country_event = { id = germany.75 days = 1 } }
 			
-		add_tech_bonus = {
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				ahead_reduction = 2	
+				technology = basic_medium_tank
+			}
+					
+			add_tech_bonus = {
 			name = GER_soviet_treaty
-			ahead_reduction = 2	
-			technology = basic_medium_tank
-		}
-				
-		add_tech_bonus = {
-		name = GER_soviet_treaty
-		bonus = 1.0
-		uses = 2
-		ahead_reduction = 0.75
-		technology = improved_medium_tank
-		technology = improved_heavy_tank
-		technology = advanced_light_tank
-	
-		}
-		add_tech_bonus = {
-			name = GER_soviet_treaty
-			bonus = 2.0
+			bonus = 1.0
 			uses = 2
-			technology = improved_medium_spaa
-			technology = improved_medium_td
-			technology = improved_medium_art
-			technology = improved_heavy_spaa
-			technology = improved_heavy_td
-			technology = improved_heavy_art
-		}	
+			ahead_reduction = 0.75
+			technology = improved_medium_tank
+			technology = improved_heavy_tank
+			technology = advanced_light_tank
 		
-		
+			}
+			add_tech_bonus = {
+				name = GER_soviet_treaty
+				bonus = 2.0
+				uses = 2
+				technology = improved_medium_spaa
+				technology = improved_medium_td
+				technology = improved_medium_art
+				technology = improved_heavy_spaa
+				technology = improved_heavy_td
+				technology = improved_heavy_art
+			}
 		}
 	}
 
