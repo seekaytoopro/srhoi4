@@ -31,7 +31,7 @@ equipments = {
 			}
 			fixed_ship_radar_slot = {
 				required = no
-				allowed_module_categories = { ship_radar }
+				allowed_module_categories = { ship_radar ship_sonar }
 			}
 			fixed_ship_engine_slot = {
 				required = yes
@@ -98,7 +98,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 0
+		sub_attack = 3
 		
 		anti_air_attack = 0
 		
@@ -106,7 +106,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 1
+		sub_detection = 5
 		surface_visibility = 20
 		naval_speed = 24
 		reliability = 0.80

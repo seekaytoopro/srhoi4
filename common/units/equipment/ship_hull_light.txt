@@ -81,7 +81,7 @@ equipments = {
 		hg_attack = 0
 		
 		torpedo_attack = 0
-		sub_attack = 3
+		sub_attack = 10
 		
 		anti_air_attack = 0
 		
@@ -89,7 +89,7 @@ equipments = {
 
 		
 		surface_detection = 20
-		sub_detection = 3
+		sub_detection = 20
 		surface_visibility = 10
 		naval_speed = 35
 		reliability = 0.80
