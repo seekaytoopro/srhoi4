@@ -337,5 +337,6 @@ SOV_start_relocation = {
 		activate_mission = SOV_relocate_industry_from_zhytomyr
 		activate_mission = SOV_relocate_industry_from_wolyn
 		activate_mission = SOV_relocate_industry_from_gorodskoy
+		activate_mission = SOV_relocate_industry_from_stalingrad
 	}
 }

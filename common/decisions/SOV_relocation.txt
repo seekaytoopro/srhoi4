@@ -26,7 +26,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 4
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -173,7 +173,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 4
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -294,6 +294,153 @@ SOV_industry_relocation = {
 
 	}
 
+	SOV_relocate_industry_from_stalingrad = {
+		icon = generic_construction
+		highlight_states = {
+			state = 217
+		}
+		available = {
+			NOT = {
+				217 = { #stalingrad
+					is_owned_and_controlled_by = SOV
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+				}
+			}
+
+		}
+
+		is_good = yes
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 5
+
+		visible = {
+			SOV = { has_war_with = GER }
+		}
+
+        timeout_effect = {
+				if = {
+					limit = {
+						217 = { #Moscow
+							is_owned_and_controlled_by = SOV
+							arms_factory > 0
+						}
+					}
+					217 = { #Moscow
+						remove_building = {
+							type = arms_factory
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = arms_factory
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+							damage_building = { type = arms_factory damage = 0.2 }
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									217 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									217 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_stalingrad
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						217 = { #Moscow
+							is_owned_and_controlled_by = SOV
+							industrial_complex > 0
+						}
+					}
+					217 = { #Moscow
+						remove_building = {
+							type = industrial_complex
+							level = 1
+						}
+					}
+					random_owned_state = {
+						limit = {
+							is_core_of = SOV
+							is_on_continent = asia
+							free_building_slots = {
+								building = industrial_complex
+								size > 1
+								include_locked = yes
+							}
+						}
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+						hidden_effect = {
+							damage_building = { type = industrial_complex damage = 0.2 }
+						}
+					}
+					hidden_effect = {
+						if = {
+							limit = {
+								OR = {
+									217 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										arms_factory > 0
+									}
+									217 = { #Moscow
+										is_owned_and_controlled_by = SOV
+										industrial_complex > 0
+									}
+								}
+							}
+							activate_mission = SOV_relocate_industry_from_stalingrad
+						}
+					}
+				}
+
+				custom_effect_tooltip = relocate_industry_repair
+
+			custom_effect_tooltip = SOV_relocate_industry_from_stalingrad_tt
+        }
+
+        complete_effect = {
+
+        }
+
+	}
+
 	SOV_relocate_industry_from_yaroslavl = {
 		icon = generic_construction
 		highlight_states = {
@@ -320,7 +467,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 13
+		days_mission_timeout = 10
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -467,7 +614,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 19
+		days_mission_timeout = 10
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -614,7 +761,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 21
+		days_mission_timeout = 10
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -1349,7 +1496,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 6
+		days_mission_timeout = 5
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -2966,7 +3113,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 5
+		days_mission_timeout = 4
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -4436,7 +4583,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 17
+		days_mission_timeout = 10
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -5318,7 +5465,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 7
+		days_mission_timeout = 5
 
 		visible = {
 			SOV = { has_war_with = GER }
@@ -6056,7 +6203,7 @@ SOV_industry_relocation = {
 		}
 	
 		fire_only_once = no
-		days_mission_timeout = 21
+		days_mission_timeout = 10
 	
 		visible = {
 			SOV = { has_war_with = GER }
