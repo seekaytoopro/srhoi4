@@ -15,7 +15,7 @@ technologies = {
 		
 		category_all_armor = {
 			breakthrough = 0.20
-			max_strength = 2.00
+			# max_strength = 2.00
 		}
 		
 		
