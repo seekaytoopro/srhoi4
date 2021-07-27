@@ -18,13 +18,13 @@ GDU_Zaibatsu_category = {
 		cost = 75
 
 		complete_effect = {
-			if = {
-				limit = {
-					has_idea = JAP_zaibatsus
-				}
-				remove_ideas = JAP_zaibatsus
-				add_ideas = zaibatsu1
-			}
+			# if = {
+			# 	limit = {
+			# 		has_idea = JAP_zaibatsus
+			# 	}
+			# 	remove_ideas = JAP_zaibatsus
+			# 	add_ideas = zaibatsu1
+			# }
 			if = {
 				limit = {
 					has_idea = zaibatsu2
@@ -44,6 +44,9 @@ GDU_Zaibatsu_category = {
 					has_idea = zaibatsu4
 				}
 				remove_ideas = zaibatsu4
+				add_ideas = zaibatsu1
+			}
+			else = {
 				add_ideas = zaibatsu1
 			}
 		}
@@ -65,13 +68,13 @@ GDU_Zaibatsu_category = {
 		cost = 75
 
 		complete_effect = {
-			if = {
-				limit = {
-					has_idea = JAP_zaibatsus
-				}
-				remove_ideas = JAP_zaibatsus
-				add_ideas = zaibatsu2
-			}
+			# if = {
+			# 	limit = {
+			# 		has_idea = JAP_zaibatsus
+			# 	}
+			# 	remove_ideas = JAP_zaibatsus
+			# 	add_ideas = zaibatsu2
+			# }
 			if = {
 				limit = {
 					has_idea = zaibatsu1
@@ -91,6 +94,9 @@ GDU_Zaibatsu_category = {
 					has_idea = zaibatsu4
 				}
 				remove_ideas = zaibatsu4
+				add_ideas = zaibatsu2
+			}
+			else = {
 				add_ideas = zaibatsu2
 			}
 		}
@@ -112,13 +118,13 @@ GDU_Zaibatsu_category = {
 		cost = 75
 
 		complete_effect = {
-			if = {
-				limit = {
-					has_idea = JAP_zaibatsus
-				}
-				remove_ideas = JAP_zaibatsus
-				add_ideas = zaibatsu3
-			}
+			# if = {
+			# 	limit = {
+			# 		has_idea = JAP_zaibatsus
+			# 	}
+			# 	remove_ideas = JAP_zaibatsus
+			# 	add_ideas = zaibatsu3
+			# }
 			if = {
 				limit = {
 					has_idea = zaibatsu1
@@ -140,6 +146,9 @@ GDU_Zaibatsu_category = {
 				remove_ideas = zaibatsu4
 				add_ideas = zaibatsu3
 			}
+			else = {
+				add_ideas = zaibatsu3
+			}
 		}
 	}
 
@@ -159,13 +168,13 @@ GDU_Zaibatsu_category = {
 		cost = 75
 
 		complete_effect = {
-			if = {
-				limit = {
-					has_idea = JAP_zaibatsus
-				}
-				remove_ideas = JAP_zaibatsus
-				add_ideas = zaibatsu4
-			}
+			# if = {
+			# 	limit = {
+			# 		has_idea = JAP_zaibatsus
+			# 	}
+			# 	remove_ideas = JAP_zaibatsus
+			# 	add_ideas = zaibatsu4
+			# }
 			if = {
 				limit = {
 					has_idea = zaibatsu1
@@ -185,6 +194,9 @@ GDU_Zaibatsu_category = {
 					has_idea = zaibatsu3
 				}
 				remove_ideas = zaibatsu3
+				add_ideas = zaibatsu4
+			}
+			else = {
 				add_ideas = zaibatsu4
 			}
 		}
