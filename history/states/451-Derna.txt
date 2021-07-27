@@ -11,7 +11,7 @@ state={
 		owner = ITA
 		add_core_of = SWE
 		victory_points = { #Tobruk
-			1130 150 
+			1130 200 
 		}
 		# victory_points = { #Bardia
 		# 	10120 25 
@@ -21,7 +21,6 @@ state={
 			air_base = 6
 			1130 = {
 				naval_base = 7
-
 			}
 
 		}

@@ -9,7 +9,7 @@ state={
 
 	history={
 		victory_points = {
-			2179 100 
+			2179 250 
 		}
 		owner = ITA
 		add_core_of = SWE

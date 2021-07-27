@@ -11,7 +11,7 @@ state={
 		owner = ITA
 		add_core_of = SWE
 		victory_points = {
-			1149 250 
+			1149 375 
 		}
 		buildings = {
 			infrastructure = 4
