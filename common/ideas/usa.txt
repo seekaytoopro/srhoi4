@@ -128,6 +128,24 @@ ideas = {
 		
 		}
 
+		USA_contain_the_rising_sun = {
+			picture = generic_production_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.50
+			}
+		}
+
 		USA_the_giant_wakes = {
 			picture = generic_production_bonus
 			
@@ -143,7 +161,7 @@ ideas = {
 			
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 0.80
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
 				equipment_conversion_speed = 0.15
 			}
 		}
@@ -531,7 +549,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				spotting_chance = 0.2
+				sortie_efficiency = 0.10
 			}
 		}
 		USA_banking_sector_deregulation = {	
@@ -584,23 +602,6 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_arms_factory_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-			}
-		}
-		USA_war_powers_act = {
-			picture = generic_reserve_divisions
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				defensive_war_stability_factor = 0.2
-				offensive_war_stability_factor = 0.2
 			}
 		}
 		USA_army_of_the_united_states = {
@@ -841,12 +842,11 @@ ideas = {
 			removal_cost = -1
 			
 			research_bonus = {
-				decryption_tech = 0.05
-				encryption_tech = 0.05
+				electronics = 0.10
 			}			
 
 			modifier = {
-				decryption_factor = 0.2
+				land_reinforce_rate = 0.05
 			}
 		}
 
@@ -863,9 +863,12 @@ ideas = {
 
 			removal_cost = -1			
 
+			research_bonus = {
+				electronics = 0.10
+			}			
+
 			modifier = {
-				operation_infiltrate_outcome = 0.25
-				boost_resistance_factor = 0.25
+				land_reinforce_rate = 0.05
 			}
 		}
 
@@ -883,8 +886,7 @@ ideas = {
 			removal_cost = -1			
 
 			modifier = {
-				propaganda_mission_factor = 0.25
-				boost_ideology_mission_factor = 0.25
+				stability_factor = 0.10
 			}
 		}
 
@@ -901,9 +903,31 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.03
+				min_export = -0.10
 			}
 		}
+
+		USA_war_powers_act = {
+			picture = generic_reserve_divisions
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				defensive_war_stability_factor = 0.15
+				offensive_war_stability_factor = 0.15
+				war_support_factor = 0.50
+				political_power_gain = 0.25
+			}
+		}
+
 		USA_adjusted_compensation_payment = {
 			allowed = {
 				always = no

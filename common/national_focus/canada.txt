@@ -2449,10 +2449,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-					hidden_effect = {
-					set_technology = { lar_decryption_bonus_tech = 1 }
-				}
-				custom_effect_tooltip = lar_decryption_bonus_tt
+				# 	hidden_effect = {
+				# 	set_technology = { lar_decryption_bonus_tech = 1 }
+				# }
+				add_stability = 0.10
+				# custom_effect_tooltip = lar_decryption_bonus_tt
 		}
 	}
 

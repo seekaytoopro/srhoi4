@@ -4,6 +4,9 @@ state={
 	name="STATE_381"
 	manpower = 225564
 	state_category = town
+	resources = {
+		chromium = 45
+	}
 	
 	history={
 		owner = USA

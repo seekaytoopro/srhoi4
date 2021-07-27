@@ -949,7 +949,7 @@ leader_traits = {
 		random = no
 		trade_laws_cost_factor = -0.33
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.05
+		# consumer_goods_factor = -0.05
 	}
 
 	strict_austerity_adherent = {
