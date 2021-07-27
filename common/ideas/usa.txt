@@ -31,7 +31,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				production_speed_industrial_complex_factor = 0.50
+				production_speed_industrial_complex_factor = 0.60
 			}
 		}
 		great_depression = {
@@ -142,7 +142,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				production_speed_dockyard_factor = 0.50
+				production_speed_dockyard_factor = 0.40
 			}
 		}
 
@@ -161,7 +161,9 @@ ideas = {
 			
 			modifier = {
 				conversion_cost_civ_to_mil_factor = 0.80
-				production_factory_efficiency_gain_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_arms_factory_factor = 0.10
+				min_export = -0.10
 				equipment_conversion_speed = 0.15
 			}
 		}
@@ -1576,7 +1578,7 @@ ideas = {
 			
 
 			
-			traits = { navy_chief_reform_2 }
+			traits = { navy_chief_decisive_battle_2 }
 			
 			ai_will_do = {
 				factor = 1

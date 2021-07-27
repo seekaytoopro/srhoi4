@@ -76,7 +76,8 @@ startup_events = {
 	#Transylvania to Hungary
 		ROM = { country_event = { id = hungary.2 days = 1730 } } #1730 ~August 1940
 	#Event popup telling UK/USA that USA can join the war now, which also applies to Mexico/Brazil
-		USA = { country_event = { id = usa.999 days = 1731 } }
+		# USA = { country_event = { id = usa.999 days = 1731 } }
+		# Removed because USA only joins war at japanese declaration now
 	##### Info popup for nations
 		SOV = { country_event = { id = srevents.1 days = 0 } }
 		USA = { country_event = { id = srevents.2 days = 0 } }

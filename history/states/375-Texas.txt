@@ -10,20 +10,21 @@ state={
 	resources={
 		oil=390 # was: 580
 		aluminium=50 # was: 96
+		steel = 60
 	}
 
 
 	history={
 		owner = USA
 		buildings = {
-			infrastructure = 6
+			infrastructure = 7
 			industrial_complex = 9
 			air_base = 3
 			10337 = {
-				naval_base = 3
+				naval_base = 10
 			}
 			6785 = {
-				naval_base = 1
+				naval_base = 10
 			}
 		}
 		add_core_of = USA

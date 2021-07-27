@@ -6,6 +6,13 @@ state={
 	
 	state_category = city
 
+	resources = {
+		steel = 72
+		chromium = 15
+		tungsten = 25
+		aluminium = 30
+	}
+
 	history={
 		owner = USA
 		buildings = {
@@ -15,7 +22,7 @@ state={
 			dockyard = 1
 			air_base = 5
 				7315 = {
-				naval_base = 6
+				naval_base = 10
 			}
 		}
 		add_core_of = USA

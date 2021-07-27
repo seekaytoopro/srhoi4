@@ -19,7 +19,7 @@ ideas = {
 			}
 			
 			allowed_to_remove = {
-				has_war = yes
+				has_war_with = JAP
 			}
 			
 			cancel_if_invalid = no
@@ -43,7 +43,7 @@ ideas = {
 				fuel_gain_factor = -0.40
 			}
 			allowed_to_remove = {
-				has_war = yes
+				has_war_with = JAP
 			}
 			
 			cancel_if_invalid = no

@@ -195,6 +195,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			USA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			if = {
 				limit = {
 					country_exists = AST
