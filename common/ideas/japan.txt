@@ -749,9 +749,8 @@ ideas = {
 
 			picture = jap_supremacy_of_technology
 			
-			research_bonus = {
-				infantry_weapons = 0.05
-				armor = 0.05
+			modifier = {
+				research_speed_factor = 0.07
 			}
 		}
 
@@ -1575,7 +1574,7 @@ ideas = {
 			on_add = { hidden_effect = { make_naval_designers_free = yes } }
 
 			available = {
-				has_completed_focus = JAP_supremacy_of_the_battlefleet
+				# has_completed_focus = JAP_supremacy_of_the_battlefleet
 			}
 
 			cost = 75
