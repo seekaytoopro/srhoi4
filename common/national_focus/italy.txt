@@ -2304,8 +2304,9 @@ focus = {
 	prerequisite = { focus = ITA_libyan_infrastructure}
 	prerequisite = { focus = ITA_libyan_refineries }
 	available = {
-		has_global_flag = operation_torch_flag
+		OR = { has_global_flag = operation_torch_flag NOT = { controls_state = 456 } }
 		ITA = {
+			OR = { controls_state = 450 controls_state = 448}
 			AND = {controls_state = 662 controls_state = 2}
 		}
 		date>1942.5.1
@@ -2406,13 +2407,12 @@ focus = {
 	prerequisite = { focus = ITA_libyan_infrastructure}
 	prerequisite = { focus = ITA_libyan_refineries }
 	available = {
-		has_global_flag = operation_torch_flag
-		date>1942.6.1
+		OR = { has_global_flag = operation_torch_flag NOT = { controls_state = 456 } }
 		ITA = {
+			OR = { controls_state = 450 controls_state = 448}
 			AND = {controls_state = 662 controls_state = 159}
-
-
 		}
+		date>1942.6.1
 	}
 	x = 2
 	y = 2
@@ -2508,13 +2508,12 @@ focus = {
 	prerequisite = { focus = ITA_transport_resc3}
 
 	available = {
-		has_global_flag = operation_torch_flag
-		date>1942.9.1
+		OR = { has_global_flag = operation_torch_flag NOT = { controls_state = 456 } }
 		ITA = {
+			OR = { controls_state = 450 controls_state = 448}
 			AND = {controls_state = 662 controls_state = 159}
-
-
 		}
+		date>1942.9.1
 	}
 	x = 2
 	y = 3
@@ -2546,9 +2545,9 @@ focus = {
 	icon = GFX_goal_generic_oil_refinery
 	prerequisite = { focus = ITA_transport_resc}
 	available = {
-
-		has_global_flag = operation_torch_flag
+		OR = { has_global_flag = operation_torch_flag NOT = { controls_state = 456 } }
 		ITA = {
+			OR = { controls_state = 450 controls_state = 448}
 			AND = {controls_state = 662 controls_state = 2}
 		}
 		date>1942.8.1

@@ -249,6 +249,10 @@ SOV_relocate_industry_from_moscow:0 "Relocate Industry from Moscow"
  SOV_relocate_industry_from_gorodskoy_desc:0 "Evacuating the heavy machinery of our Gorodskoy factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
  SOV_relocate_industry_from_gorodskoy_tt:0 "§RThese effects require control of Gorodskoy when the decision times out.§!"
 
+ SOV_relocate_industry_from_stalingrad:0 "Relocate Industry from Stalingrad"
+ SOV_relocate_industry_from_stalingrad_desc:0 "Evacuating the heavy machinery of our Stalingrad factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_stalingrad_tt:0 "§RThese effects require control of Stalingrad when the decision times out.§!"
+
  GER_invade_iran:0 "Invade Iran"
  GER_invade_iran_desc:0 "Iran is a region of central importance for the allies, and with pressure from both the British and Soviets, it seems only a mattter of time before the enemy will partition the country for use as a launchpoint for their invasion of the Middle East. We must invade and secure defensive positions before the allies do so on their terms at a time less opportune to us."
 
