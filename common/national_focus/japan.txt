@@ -21,13 +21,13 @@ focus_tree = {
 		x = 3
 		y = 0
 		
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				NOT = { has_dlc = "Waking the Tiger" }
-			}
-		}
+		# offset = {
+		# 	x = -8
+		# 	y = 0
+		# 	trigger = {
+		# 		NOT = { has_dlc = "Waking the Tiger" }
+		# 	}
+		# }
 
 		cost = 10
 
@@ -489,7 +489,17 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = tooltip_jap_war
 		country_event = { id = japan.144 }
-		add_ideas = game_impact_japan
+		# AST = { add_ideas = AST_papua }
+		# NZL = { add_ideas = AST_papua }
+		every_country = { limit = { OR = { original_tag = AST original_tag = NZL } }
+			ROOT = { add_ideas = AST_papua }
+		}
+		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
+		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 180 } }
+		if = { limit = { OR = { country_exists = MAN country_exists = SIA } }
+			JAP = { add_ideas = game_impact_japan   }
+		}
+		# add_ideas = game_impact_japan
 		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
 	}
@@ -1101,9 +1111,8 @@ focus_tree = {
 			else = {
 				add_ideas = war_economy
 			}
-			MAN = {
-				add_ideas = war_economy
-			}
+			if = { limit = { country_exists = MAN } MAN = { add_ideas = war_economy } }
+			if = { limit = { country_exists = SIA } SIA = { add_ideas = war_economy } }
 		}
 	}
 
@@ -1182,9 +1191,8 @@ focus_tree = {
 			else = {
 				add_ideas = tot_economic_mobilisation
 			}
-			MAN = {
-				add_ideas = tot_economic_mobilisation
-			}
+			if = { limit = { country_exists = MAN } MAN = { add_ideas = tot_economic_mobilisation } }
+			if = { limit = { country_exists = SIA } SIA = { add_ideas = tot_economic_mobilisation } }
 		}
 	}
 
@@ -1297,7 +1305,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 	focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_army_doctrines
-		x = 11
+		x = 10
 		y = 0
 		relative_position_id = JAP_purge_the_kodoha_faction 
 
@@ -1334,14 +1342,96 @@ set_technology = { cv_naval_bomber2 = 1 }
 	}
 
 	focus = {
-		id = JAP_small_arms_modernization
-		icon = GFX_goal_generic_small_arms
+		id = JAP_supremacy_of_will
+		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = JAP_army_expansion_law }
+		#mutually_exclusive = { focus = JAP_supremacy_of_technology }
+		x = 2
+		y = 1
+		relative_position_id = JAP_army_expansion_law
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = JAP_superior_will
+			530 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_supremacy_of_technology
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = JAP_army_expansion_law }
+		#mutually_exclusive = { focus = JAP_supremacy_of_will }
 		x = -1
 		y = 1
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = JAP_supremacy_of_technology
+			533 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_small_arms_modernization
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = JAP_supremacy_of_technology }
+		x = 1
+		y = 1
+		relative_position_id = JAP_supremacy_of_technology
+
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1379,47 +1469,6 @@ set_technology = { cv_naval_bomber2 = 1 }
 	}
 
 	focus = {
-		id = JAP_supremacy_of_technology
-		icon = GFX_goal_generic_production
-		prerequisite = { focus = JAP_small_arms_modernization }
-		#mutually_exclusive = { focus = JAP_supremacy_of_will }
-		x = 0
-		y = 1
-		relative_position_id = JAP_small_arms_modernization
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_ideas = JAP_supremacy_of_technology
-			533 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_modern_artillery
 		icon = GFX_goal_generic_army_artillery2
 		prerequisite = { focus =JAP_supremacy_of_technology  }
@@ -1427,7 +1476,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		y = 1
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1472,7 +1521,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		y = 2
 		relative_position_id = JAP_supremacy_of_technology
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1515,12 +1564,54 @@ set_technology = { cv_naval_bomber2 = 1 }
 	}
 
 	focus = {
+		id = JAP_army_expansion
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = JAP_supremacy_of_will }
+		x = 0
+		y = 1
+		relative_position_id = JAP_supremacy_of_will
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = for_the_emperor_idea
+			# custom_effect_tooltip = available_chief_of_army
+			# show_ideas_tooltip = hajime_sugiyama
+			531 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = JAP_bicycle_battalions
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = JAP_supremacy_of_technology focus = JAP_supremacy_of_will }
-		x = 1
+		prerequisite = { focus = JAP_army_expansion }
+		x = -1
 		y = 1
-		relative_position_id = JAP_supremacy_of_technology
+		relative_position_id = JAP_army_expansion
 
 		cost = 5
 
@@ -1555,96 +1646,14 @@ set_technology = { cv_naval_bomber2 = 1 }
 	}
 
 	focus = {
-		id = JAP_army_expansion
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = JAP_army_expansion_law }
-		x = 1
-		y = 1
-		relative_position_id = JAP_army_expansion_law
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = hajime_sugiyama
-			531 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_supremacy_of_will
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = JAP_army_expansion }
-		#mutually_exclusive = { focus = JAP_supremacy_of_technology }
-		x = 0
-		y = 1
-		relative_position_id = JAP_army_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			add_ideas = JAP_superior_will
-			530 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
 		id = JAP_fighter_modernization
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = JAP_army_expansion_law focus = JAP_new_naval_estimates }
-		x = 3
+		x = 4
 		y = 2
 		relative_position_id = JAP_army_expansion_law
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1762,7 +1771,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		y = 1
 		relative_position_id = JAP_agility_focus
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1820,7 +1829,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		y = 2
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1858,7 +1867,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 		y = 3
 		relative_position_id = JAP_fighter_modernization
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1961,7 +1970,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 	focus = {
 		id = JAP_new_naval_estimates
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 7
+		x = 8
 		y = 0
 		relative_position_id = JAP_army_expansion_law
 

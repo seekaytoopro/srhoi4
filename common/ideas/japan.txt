@@ -301,8 +301,11 @@ ideas = {
 			picture = generic_morale_bonus
 			
 			modifier = {
-				army_org = 5
-				army_morale_factor = 0.1
+				# army_org = 5
+				# army_morale_factor = 0.1
+				experience_gain_army_unit_factor = 0.5
+				experience_loss_factor = -0.5
+				supply_consumption_factor = -0.02
 			}
 		}
 
@@ -1035,20 +1038,16 @@ ideas = {
 				naval_strike_attack_factor = 0.12
 				naval_strike_targetting_factor = 0.12
 				naval_strike_agility_factor = 0.12
-				army_attack_factor = 0.15
+				army_attack_factor = 0.10
 				army_speed_factor = 0.125
 				navy_screen_attack_factor = 0.1
 				navy_submarine_attack_factor = 0.1
 				navy_capital_ship_attack_factor = 0.1
 				invasion_preparation = -0.30
 				# special_forces_attack_factor = 0.025
-				experience_loss_factor = -0.25
+				# experience_loss_factor = -0.25
 				army_morale_factor = 0.15
 				supply_consumption_factor = -0.075
-			}
-			targeted_modifier = {
-				tag = RAJ
-				attack_bonus_against = -0.075
 			}
 		}
 
@@ -1095,6 +1094,9 @@ ideas = {
 				fighter_equipment = { 
 					build_cost_ic = -0.08 instant = yes
 				}
+				heavy_fighter_equipment = {
+					build_cost_ic = -0.08 instant = yes 
+				}
 			}
 		}
 		JAP_prioritize_naval_aircraft_construction = {
@@ -1125,10 +1127,6 @@ ideas = {
 				nav_bomber_equipment = {
 					build_cost_ic = -0.16 instant = yes
 				}
-				heavy_fighter_equipment = {
-					instant = yes
-					build_cost_ic = -0.08
-				}	
 			}
 		}
 	}

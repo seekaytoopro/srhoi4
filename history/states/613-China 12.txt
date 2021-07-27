@@ -16,7 +16,7 @@ state={
 			air_base = 6
 			dockyard = 1
 			7014 = {
-				naval_base = 10
+				naval_base = 20
 				coastal_bunker = 3
 				bunker = 3
 			}

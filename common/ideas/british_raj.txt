@@ -55,6 +55,26 @@ ideas = {
 		
 		}
 
+		Raj_ToraToraTora = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_navy_carrier_bonus
+			
+			modifier = {
+				army_core_attack_factor = 0.1			
+				army_core_defence_factor = 0.1
+			}
+		}
+
 		RAJ_marginalized_muslim_community = {
 		
 			picture = raj_marginalized_muslim_community

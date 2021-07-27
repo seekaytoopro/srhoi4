@@ -174,7 +174,6 @@ country_event = {
 	
 	option = {
 		name = japan.144.a
-		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
 		declare_war_on = { target = ENG type = annex_everything }
 		declare_war_on = { target = FRF type = annex_everything }
 		declare_war_on = { target = HOL type = annex_everything }
@@ -196,8 +195,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			AST = { add_ideas = AST_papua }
-			NZL = { add_ideas = AST_papua }
 			if = {
 				limit = {
 					country_exists = AST
