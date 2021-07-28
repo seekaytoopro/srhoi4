@@ -492,7 +492,7 @@ focus_tree = {
 		# AST = { add_ideas = AST_papua }
 		# NZL = { add_ideas = AST_papua }
 		every_country = { limit = { OR = { original_tag = AST original_tag = NZL } }
-			ROOT = { add_ideas = AST_papua }
+			add_ideas = AST_papua
 		}
 		add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 180 }
 		RAJ = { add_timed_idea = { idea = Raj_ToraToraTora days = 180 } }

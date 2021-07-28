@@ -875,6 +875,9 @@ ideas = {
 			modifier = {
 			}
 		}
+    }
+
+	hidden_ideas = {
 		free_tank_designer = {
 			allowed = { always = no }
 			removal_cost = -1 
@@ -885,5 +888,5 @@ ideas = {
 			removal_cost = -1 
 			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
-    }
+	}
 }

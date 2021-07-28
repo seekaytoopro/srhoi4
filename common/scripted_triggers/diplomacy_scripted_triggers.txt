@@ -28,7 +28,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  normally_played_allies = yes } } }
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  tag = SOV } } }
 	if = { limit = { ROOT = {  normally_played_allies = yes  }  } FROM = { NOT = {  the_axis = yes } } }
-	if = { limit = { FROM = { tag = FRA   } }  		FRA = {  always = no  } } 
+	if = { limit = { ROOT = { tag = FRA   } }  		FRA = {  always = no  } } 
 	
 	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
 	# if = { limit = {FROM = { normally_played_allies = yes} } 		NOT = { ROOT = { tag = SOV  } } } 
@@ -36,7 +36,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	}
 	
 	DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
-		if = { limit = { FROM = { tag = FRA } }		NOT = { ROOT = { normally_played_allies = yes } } }	
+		if = { limit = { FROM = { tag = FRA } }		FRA = {  always = no  } }	
 	if = { limit = {ROOT = { tag = EFR   } }  		EFR = {  always = no  } } 
 	if = { limit = {ROOT = { tag = ETH   } }  		ETH = {  always = no  } } 
 	# if = { limit = {ROOT = { tag = FRA   } }  			FRA = { has_country_flag = france_is_kill }  } 
