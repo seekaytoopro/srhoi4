@@ -1358,7 +1358,7 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 		category_front_line = {
-			max_organisation = 1
+			max_organisation = 5
 		}
 			
 		#combat advantage when air superior
