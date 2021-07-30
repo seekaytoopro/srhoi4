@@ -183,26 +183,26 @@ focus_tree = {
 				
 				news_event = { id = news.334 }
 
-			608 = { set_compliance = 100 }
-		    614 = { set_compliance = 100 }
-		    597 = { set_compliance = 100 }
-		    743 = { set_compliance = 100 }
-		    598 = { set_compliance = 100 }
-		    613 = { set_compliance = 100 }
-		    596 = { set_compliance = 100 }
-		    595 = { set_compliance = 100 }
-		    593 = { set_compliance = 100 }
-		    592 = { set_compliance = 100 }
-		    594 = { set_compliance = 100 }
-			591 = { set_compliance = 100 }
+			608 = { set_compliance = 60 }
+		    614 = { set_compliance = 60 }
+		    597 = { set_compliance = 60 }
+		    743 = { set_compliance = 60 }
+		    598 = { set_compliance = 60 }
+		    613 = { set_compliance = 60 }
+		    596 = { set_compliance = 60 }
+		    595 = { set_compliance = 60 }
+		    593 = { set_compliance = 60 }
+		    592 = { set_compliance = 60 }
+		    594 = { set_compliance = 60 }
+			591 = { set_compliance = 60 }
 			
-			599 = { set_compliance = 100 }
-			602 = { set_compliance = 100 }
-			600 = { set_compliance = 100 }
-			749 = { set_compliance = 100 }
-			606 = { set_compliance = 100 }
-			607 = { set_compliance = 100 }
-			620 = { set_compliance = 100 }
+			599 = { set_compliance = 60 }
+			602 = { set_compliance = 60 }
+			600 = { set_compliance = 60 }
+			749 = { set_compliance = 60 }
+			606 = { set_compliance = 60 }
+			607 = { set_compliance = 60 }
+			620 = { set_compliance = 60 }
 				
 				USA = {
 					add_political_power = 100
@@ -282,19 +282,19 @@ focus_tree = {
 			navy_experience = 1000
 			hidden_effect = {
 				USA = { add_war_support = 0.10 }
-				608 = { set_compliance = 100 }
-		    	325 = { set_compliance = 100 }
-		    	747 = { set_compliance = 100 }
-		    	751 = { set_compliance = 100 }
-		    	603 = { set_compliance = 100 }
-		    	748 = { set_compliance = 100 }
-		    	750 = { set_compliance = 100 }
-		    	605 = { set_compliance = 100 }
-				744 = { set_compliance = 100 }
-				622 = { set_compliance = 100 }
-				746 = { set_compliance = 100 }
-				615 = { set_compliance = 100 }
-				621 = { set_compliance = 100 }
+				608 = { set_compliance = 60 }
+		    	325 = { set_compliance = 60 }
+		    	747 = { set_compliance = 60 }
+		    	751 = { set_compliance = 60 }
+		    	603 = { set_compliance = 60 }
+		    	748 = { set_compliance = 60 }
+		    	750 = { set_compliance = 60 }
+		    	605 = { set_compliance = 60 }
+				744 = { set_compliance = 60 }
+				622 = { set_compliance = 60 }
+				746 = { set_compliance = 60 }
+				615 = { set_compliance = 60 }
+				621 = { set_compliance = 60 }
 			}
 		}
 	}
