@@ -18,13 +18,13 @@ state={
 			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 5
-			air_base = 3
+			air_base = 8
 			7798 = {
-				naval_base = 4
-				coastal_bunker = 1
+				naval_base = 8
+				coastal_bunker = 3
 			}
 			12910 = {
-				naval_base = 2
+				naval_base = 4
 			}
 		}
 		victory_points = {
