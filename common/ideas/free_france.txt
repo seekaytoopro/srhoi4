@@ -12,7 +12,7 @@ ideas = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.80		
+				production_factory_efficiency_gain_factor = 2.00		
 			}
 			
 		}

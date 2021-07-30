@@ -2018,14 +2018,17 @@ focus_tree = {
 		cost = 5
 
 		completion_reward = {
-			ITA = { add_ideas = axis_victory_in_egypt }
-			GER = { add_ideas = axis_victory_in_egypt }
-			SPR = { add_ideas = axis_victory_in_egypt }
-			if = { limit = { country_exists = ROM } ROM = {add_ideas = axis_victory_in_egypt } }
-			if = { limit = { country_exists = HUN } HUN = {add_ideas = axis_victory_in_egypt } }
-			if = { limit = { country_exists = BUL } BUL = {add_ideas = axis_victory_in_egypt } }
-			if = { limit = { country_exists = CRO } CRO = {add_ideas = axis_victory_in_egypt } }
-			if = { limit = { country_exists = CRO } FIN = {add_ideas = axis_victory_in_egypt } }
+			every_country = { limit = { the_axis = yes } add_ideas = axis_victory_in_egypt }
+			custom_effect_tooltip = "
+			This idea will be cancelled if the Allies retake Egypt!"
+			# ITA = { add_ideas = axis_victory_in_egypt }
+			# GER = { add_ideas = axis_victory_in_egypt }
+			# SPR = { add_ideas = axis_victory_in_egypt }
+			# if = { limit = { country_exists = ROM } ROM = {add_ideas = axis_victory_in_egypt } }
+			# if = { limit = { country_exists = HUN } HUN = {add_ideas = axis_victory_in_egypt } }
+			# if = { limit = { country_exists = BUL } BUL = {add_ideas = axis_victory_in_egypt } }
+			# if = { limit = { country_exists = CRO } CRO = {add_ideas = axis_victory_in_egypt } }
+			# if = { limit = { country_exists = CRO } FIN = {add_ideas = axis_victory_in_egypt } }
 		}
 	}
 	

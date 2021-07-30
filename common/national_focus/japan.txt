@@ -183,26 +183,26 @@ focus_tree = {
 				
 				news_event = { id = news.334 }
 
-			608 = { set_compliance = 60 }
-		    614 = { set_compliance = 60 }
-		    597 = { set_compliance = 60 }
-		    743 = { set_compliance = 60 }
-		    598 = { set_compliance = 60 }
-		    613 = { set_compliance = 60 }
-		    596 = { set_compliance = 60 }
-		    595 = { set_compliance = 60 }
-		    593 = { set_compliance = 60 }
-		    592 = { set_compliance = 60 }
-		    594 = { set_compliance = 60 }
-			591 = { set_compliance = 60 }
+			608 = { set_compliance = 100 }
+		    614 = { set_compliance = 100 }
+		    597 = { set_compliance = 100 }
+		    743 = { set_compliance = 100 }
+		    598 = { set_compliance = 100 }
+		    613 = { set_compliance = 100 }
+		    596 = { set_compliance = 100 }
+		    595 = { set_compliance = 100 }
+		    593 = { set_compliance = 100 }
+		    592 = { set_compliance = 100 }
+		    594 = { set_compliance = 100 }
+			591 = { set_compliance = 100 }
 			
-			599 = { set_compliance = 60 }
-			602 = { set_compliance = 60 }
-			600 = { set_compliance = 60 }
-			749 = { set_compliance = 60 }
-			606 = { set_compliance = 60 }
-			607 = { set_compliance = 60 }
-			620 = { set_compliance = 60 }
+			599 = { set_compliance = 100 }
+			602 = { set_compliance = 100 }
+			600 = { set_compliance = 100 }
+			749 = { set_compliance = 100 }
+			606 = { set_compliance = 100 }
+			607 = { set_compliance = 100 }
+			620 = { set_compliance = 100 }
 				
 				USA = {
 					add_political_power = 100
@@ -282,19 +282,19 @@ focus_tree = {
 			navy_experience = 1000
 			hidden_effect = {
 				USA = { add_war_support = 0.10 }
-				608 = { set_compliance = 60 }
-		    	325 = { set_compliance = 60 }
-		    	747 = { set_compliance = 60 }
-		    	751 = { set_compliance = 60 }
-		    	603 = { set_compliance = 60 }
-		    	748 = { set_compliance = 60 }
-		    	750 = { set_compliance = 60 }
-		    	605 = { set_compliance = 60 }
-				744 = { set_compliance = 60 }
-				622 = { set_compliance = 60 }
-				746 = { set_compliance = 60 }
-				615 = { set_compliance = 60 }
-				621 = { set_compliance = 60 }
+				608 = { set_compliance = 100 }
+		    	325 = { set_compliance = 100 }
+		    	747 = { set_compliance = 100 }
+		    	751 = { set_compliance = 100 }
+		    	603 = { set_compliance = 100 }
+		    	748 = { set_compliance = 100 }
+		    	750 = { set_compliance = 100 }
+		    	605 = { set_compliance = 100 }
+				744 = { set_compliance = 100 }
+				622 = { set_compliance = 100 }
+				746 = { set_compliance = 100 }
+				615 = { set_compliance = 100 }
+				621 = { set_compliance = 100 }
 			}
 		}
 	}
@@ -509,7 +509,7 @@ focus_tree = {
 		id = JAP_exploit_the_southern_resource_area
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
-		prerequisite = { focus = JAP_coal_liquification }
+		# prerequisite = { focus = JAP_coal_liquification }
 		x = 4
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
@@ -3275,7 +3275,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 				cancel_if_invalid = no
 				available_if_capitulated = no
 		
-				cost = 5
+				cost = 1.5
 		
 				ai_will_do = {
 					factor = 10
@@ -3329,7 +3329,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 			focus = {
 				id = Victory_in_Ast
 				icon = GFX_focus_jap_strike_south
-				prerequisite = { focus = Victory_in_Papua }		
+				# prerequisite = { focus = Victory_in_Papua }		
 				x = 4
 				y = 0
 				relative_position_id = JAP_strike_on_the_southern_resource_area
@@ -3338,7 +3338,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 				cancel_if_invalid = no
 				available_if_capitulated = no
 		
-				cost = 5
+				cost = 1.5
 		
 				ai_will_do = {
 					factor = 10
@@ -3374,7 +3374,12 @@ set_technology = { cv_naval_bomber2 = 1 }
 						NOT = { is_controlled_by = AST }
 						NOT = { is_controlled_by = NZL }
 						NOT = { is_controlled_by = ENG }
-					}		
+					}	
+					760 = {
+						NOT = { is_controlled_by = AST }
+						NOT = { is_controlled_by = NZL }
+						NOT = { is_controlled_by = ENG }
+					}	
 				}
 		
 				bypass = {
@@ -3391,12 +3396,93 @@ set_technology = { cv_naval_bomber2 = 1 }
 		
 				completion_reward = {
 					add_ideas = JAP_ast
+					custom_effect_tooltip = "
+					All of the allies will get the following debuffs:
+					"
+					every_country = {
+						limit = { OR = { normally_played_allies = yes original_tag = FRF } }
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+						add_ideas = ALLIES_AST_capitulated_idea
+					}
 					285 = {
 						add_resource = {
 							type = steel
 							amount = 60
 						}
 					}
+				}
+			}
+
+			focus = {
+				id = Victory_in_Raj
+				icon = GFX_focus_jap_strike_south	
+				x = 6
+				y = 0
+				relative_position_id = JAP_strike_on_the_southern_resource_area
+		
+				continue_if_invalid = no
+				cancel_if_invalid = no
+				available_if_capitulated = no
+		
+				cost = 1.5
+		
+				ai_will_do = {
+					factor = 10
+				}
+		
+				available = {
+					# every_state = { limit = { is_core_of = RAJ }
+					# 	NOT = { is_controlled_by = RAJ }
+					# 	NOT = { is_controlled_by = ENG }
+					# }
+					428 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					429 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					427 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					440 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					439 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					423 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					425 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					435 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					438 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+					430 = { NOT = { is_controlled_by = RAJ } NOT = { is_controlled_by = ENG } }
+				}
+		
+				bypass = {
+		
+				}
+		
+				cancel_if_invalid = no
+				continue_if_invalid = yes
+				available_if_capitulated = no
+		
+				complete_tooltip = {
+		
+				}
+		
+				completion_reward = {
+					# add_ideas = JAP_ast
+					custom_effect_tooltip = "
+					All of the allies will get the following debuffs:
+					"
+					every_country = {
+						limit = { OR = { normally_played_allies = yes original_tag = FRF } }
+						modify_building_resources = {
+							building = synthetic_refinery
+							resource = rubber
+							amount = -1
+						}
+						add_ideas = ALLIES_RAJ_capitulated_idea
+					}
+					# 285 = {
+					# 	add_resource = {
+					# 		type = steel
+					# 		amount = 60
+					# 	}
+					# }
 				}
 			}
 		}

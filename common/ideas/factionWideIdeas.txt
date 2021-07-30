@@ -34,6 +34,62 @@ ideas = {
 			}
 		}
 
+		GER_triumph_britain_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			picture = generic_manpower_bonus
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+				industrial_capacity_dockyard = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+			research_bonus = {
+				naval_equipment = 0.1
+				naval_doctrine = 0.1				
+			}				
+		}	
+	
+		ENG_triumph_sealion_idea = {
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				stability_factor = 0.10
+				army_morale_factor = 0.05
+				production_factory_efficiency_gain_factor = 40
+				industry_repair_factor = 4
+			}
+		}		
+	
+		AXIS_fail_sealion_idea = {
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				army_morale_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+			}
+		}
+
 		allies_defeat_in_egypt = {
 			picture = HUN_treaty_of_triannon
 			allowed = {
@@ -58,6 +114,61 @@ ideas = {
 			}
 		}
 
+		ALLIES_AST_capitulated_idea = { 
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				industrial_capacity_factory = -0.05
+				production_speed_synthetic_refinery_factor = -0.10
+			}
+		}
+		
+		
+		ALLIES_NZL_capitulated_idea = { 
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.025
+				production_speed_synthetic_refinery_factor = -0.05
+			}
+		}
+
+		ALLIES_RAJ_capitulated_idea = { 
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				industrial_capacity_factory = -0.05
+				production_speed_synthetic_refinery_factor = -0.10
+			}
+		}
+
 		refinery_pre_build_debuff = {
 			allowed = {
 				always = no
@@ -68,6 +179,11 @@ ideas = {
 			cancel = { has_war_with = JAP }
 			
 			removal_cost = -1
+
+			research_bonus = {
+				# industry = 0.05
+				synth_resources = -0.6
+			}
 
 			modifier = {
 				production_speed_synthetic_refinery_factor = -0.45
@@ -83,7 +199,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.075
+				production_speed_synthetic_refinery_factor = 0.05
 			}
 		}
 
