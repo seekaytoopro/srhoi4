@@ -7,17 +7,21 @@ state={
 		owner = RAJ
 		add_core_of = RAJ
 		buildings = {
-			infrastructure = 4
-			air_base = 6
-
+			infrastructure = 5
+			air_base = 10
 		}
 		victory_points = {
-			1492 30
+			1492 40
 		}
 		victory_points = {
 			4425 15
 		}
-
+		victory_points = {
+			7400 10
+		}
+		victory_points = {
+			12464 10
+		}
 	}
 
 	provinces={

@@ -12,13 +12,13 @@ state={
 		owner = AST
 		add_core_of = SWE
 		buildings = {
-			infrastructure = 3
-			air_base = 2
+			infrastructure = 5
+			air_base = 10
 			1222 = {
 				naval_base = 5
 			}
 			4329 = {
-				naval_base = 8
+				naval_base = 15
 			}
 			10362 = {
 				naval_base = 3
@@ -52,7 +52,15 @@ state={
 		victory_points = {
 			12237 10 
 		}
-
+		victory_points = {
+			12154 10
+		}
+		victory_points = {
+			10502 10
+		}
+		victory_points = {
+			1222 10
+		}
 	}
 
 	provinces={

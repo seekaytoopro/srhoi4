@@ -13,7 +13,7 @@ state={
 			12371 5 
 		}
 		victory_points = {
-			4468 20 
+			4468 40 
 		}
 		victory_points = {
 			12386 5 
@@ -25,27 +25,27 @@ state={
 			4509 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			4468 = {
-				naval_base = 4
+				naval_base = 15
 			}
 			12371 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			7512 = {
-				naval_base = 7
+				naval_base = 8
 			}
 			12496 = {
-				naval_base = 1
+				naval_base = 2
 			}
 			7627 = {
-				naval_base = 1
+				naval_base = 3
 			}
 			7529 = {
-				naval_base = 1
+				naval_base = 2
 			}
 			4509 = {
-				naval_base = 1
+				naval_base = 2
 			}
 			12440 = {
 				naval_base = 3
