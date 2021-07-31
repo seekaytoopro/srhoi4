@@ -1509,22 +1509,22 @@ ideas = {
 			}
 		}	
 		
-		soemu_toyoda = {
-			ledger = navy
+		# soemu_toyoda = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			traits = { navy_capital_ship_2 }
+		# 	traits = { navy_capital_ship_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
 		matome_ugaki = {
 			ledger = navy
