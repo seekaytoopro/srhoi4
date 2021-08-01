@@ -461,7 +461,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}	
-		available = { country_exists = FRF has_completed_focus = ITA_albania_war_goal has_completed_focus = ITA_balkan_war_goal }
+		available = { owns_state = 735 has_completed_focus = ITA_albania_war_goal has_completed_focus = ITA_balkan_war_goal }
 		
 		completion_reward = {
 			custom_effect_tooltip = "Sets level 1 coastal forts in every coastal province of every European Axis state that borders the Mediterranean
@@ -794,11 +794,14 @@ focus_tree = {
 		available = { 				
 			surrender_progress > 0.70 
 			controls_state = 159
-			date > 1941.6.1
+			# date > 1941.6.1
 		}
 		
 		completion_reward = {
-			159 = { set_building_level = { type = bunker level = 10 province = 3780 } }
+			159 = { 
+				set_building_level = { type = bunker level = 10 province = 3780 }
+				set_building_level = { type = bunker level = 5 province = 607 } 
+			}
 		}
 	}
 		
@@ -1989,6 +1992,29 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
+			every_state = {
+				limit = {
+					OR = {
+						state = 448
+						state = 661
+						state = 449
+						state = 662
+						state = 450
+						state = 663
+						state = 451
+					}
+				}
+				add_state_modifier = { modifier = { recruitable_population = 1.00 } }
+				add_state_modifier = { modifier = { local_supplies_for_controller = 0.2 } }
+				set_compliance = 100
+			}
+			# 448 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } } 
+			# 661 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } } 
+			# 449 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } }
+			# 662 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } } 
+			# 450 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } } 
+			# 663 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } }
+			# 451 = { add_state_modifier = { modifier = { local_manpower = 1.0 } } } 
 		}
 	}
 
