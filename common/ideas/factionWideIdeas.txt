@@ -639,6 +639,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.0025
 				conscription_factor = 0.075
 			}
 		}
@@ -657,6 +658,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.005
 				conscription_factor = 0.150
 			}
 		}	
@@ -675,6 +677,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.0075
 				conscription_factor = 0.225
 			}
 		}	
@@ -693,6 +696,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.01
 				conscription_factor = 0.300
 			}
 		}
@@ -711,6 +715,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.0125
 				conscription_factor = 0.375
 			}
 		}
@@ -729,6 +734,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.015
 				conscription_factor = 0.450
 			}
 		}
@@ -747,6 +753,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.0175
 				conscription_factor = 0.525
 			}
 		}
@@ -765,6 +772,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				conscription = 0.02
 				conscription_factor = 0.600
 			}
 		}	

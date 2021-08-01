@@ -67,18 +67,18 @@ ideas = {
 				has_war_support > 0.1
 				NOT = { has_idea = undisturbed_isolation }
 				NOT = { has_idea = isolation }
-				if = {
-					limit = {
-						original_tag = AST
-					}
-					has_completed_focus = AST_citizen_military_forces
-				}
-				if = {
-					limit = {
-						original_tag = CAN
-					}
-					has_completed_focus = CAN_commit_to_the_war
-				}
+				# if = {
+				# 	limit = {
+				# 		original_tag = AST
+				# 	}
+				# 	has_completed_focus = AST_citizen_military_forces
+				# }
+				# if = {
+				# 	limit = {
+				# 		original_tag = CAN
+				# 	}
+				# 	has_completed_focus = CAN_commit_to_the_war
+				# }
 				if = {
 					limit = {
 						original_tag = HUN
@@ -128,24 +128,28 @@ ideas = {
 				}
 				has_war_support > 0.2
 				#Special rules AST in TFV
-				if = {
-					limit = {
-						original_tag = AST
-					}
-					has_completed_focus = AST_citizen_military_forces
-				}				
-				if = {
-					limit = {
-						original_tag = CAN
-					}
-					has_completed_focus = CAN_commit_to_the_war
-					has_completed_focus = CAN_if_day
-				}
+				# if = {
+				# 	limit = {
+				# 		original_tag = AST
+				# 	}
+				# 	has_completed_focus = AST_citizen_military_forces
+				# }				
+				# if = {
+				# 	limit = {
+				# 		original_tag = CAN
+				# 	}
+				# 	has_completed_focus = CAN_commit_to_the_war
+				# 	has_completed_focus = CAN_if_day
+				# }
 				if = {
 					limit = {
 						original_tag = RAJ
 					}
-					is_subject = no
+					OR = {
+						is_subject = no
+						date>1942.1.1
+					}
+					
 				}
 
 				if = {
