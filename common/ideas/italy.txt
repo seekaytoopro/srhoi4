@@ -25,6 +25,34 @@ ideas = {
 				stability_factor = 0.10				
 			}
 		}
+		ITA_libya_stands = {
+
+			picture = generic_fortify_the_borders
+		
+			allowed = {
+				always = no
+			}
+
+			cancel={
+				NOT={
+					448={is_controlled_by_ROOT_or_ally = yes}
+					662={is_controlled_by_ROOT_or_ally = yes}
+					450={is_controlled_by_ROOT_or_ally = yes}
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor	= 0.20
+				army_core_defence_factor = 0.20
+			}
+		}
+
 		vittoria_mutilata = {			
 			
 			allowed = {
@@ -34,15 +62,15 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				communism_acceptance = -10
-				democratic_acceptance = -10
-				fascism_acceptance = 10
-				ai_focus_aggressive_factor = 0.5
-				justify_war_goal_time = -0.05
+				# communism_acceptance = -10
+				# democratic_acceptance = -10
+				# fascism_acceptance = 10
+				# ai_focus_aggressive_factor = 0.5
+				# justify_war_goal_time = -0.05
 				research_speed_factor = 0.05
 			}
 		}
-				vittoria_mutilata2 = {			
+			vittoria_mutilata2 = {			
 			
 			picture = vittoria_mutilata
 			
@@ -53,11 +81,11 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-			communism_acceptance = -10
-			democratic_acceptance = -10
-			fascism_acceptance = 10
-			ai_focus_aggressive_factor = 0.5
-			justify_war_goal_time = -0.05
+			# communism_acceptance = -10
+			# democratic_acceptance = -10
+			# fascism_acceptance = 10
+			# ai_focus_aggressive_factor = 0.5
+			# justify_war_goal_time = -0.05
 			research_speed_factor = 0.05
 			stability_factor = 0.05
 			war_support_factor = 0.05

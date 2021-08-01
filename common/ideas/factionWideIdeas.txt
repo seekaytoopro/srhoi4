@@ -18,7 +18,7 @@ ideas = {
 				NOT={
 					446={is_controlled_by_ROOT_or_ally = yes}
 					447={is_controlled_by_ROOT_or_ally = yes}
-					452={is_controlled_by_ROOT_or_ally = yes}
+					# 452={is_controlled_by_ROOT_or_ally = yes}
 				}
 			}
 			

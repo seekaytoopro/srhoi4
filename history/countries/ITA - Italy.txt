@@ -10,6 +10,7 @@ add_ideas = {
 	vittoria_mutilata
 	limited_conscription
 	partial_economic_mobilisation
+	ITA_libya_stands
 }
 
 add_to_tech_sharing_group = axis_research 
