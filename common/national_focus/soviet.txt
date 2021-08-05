@@ -158,6 +158,37 @@ focus_tree = {
 			# 	activate_mission = SOV_barb_debuff_mission
 			# }
 
+			hidden_effect = {
+				load_oob = "SOV_siberian_reinforcements"
+				set_temp_variable = { SOV_divs_spawned = 20 }
+				if = { limit = { SOV = { num_divisions < 100 } }
+					load_oob = "SOV_siberian_reinforcements"
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				if = { limit = { SOV = { num_divisions < 200 } }
+					load_oob = "SOV_siberian_reinforcements"
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				if = { limit = { SOV = { num_divisions < 300 } }
+					load_oob = "SOV_siberian_reinforcements"
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				if = { limit = { SOV = { NOT = { controls_state = 195 } } }
+					load_oob = "SOV_siberian_reinforcements"
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				if = { limit = { SOV = { NOT = { controls_state = 219 } } }
+					load_oob = "SOV_siberian_reinforcements"
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				if = { limit = { SOV = { NOT = { controls_state = 217 } } }
+					load_oob = "SOV_siberian_reinforcements" 
+					add_to_temp_variable = { SOV_divs_spawned = 20 }
+				}
+				
+			}
+			country_event = { id = soviet.302 }
+
 			add_ideas = georgy_zhukov_chief
 
 			create_field_marshal = {

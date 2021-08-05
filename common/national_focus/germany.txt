@@ -3063,6 +3063,8 @@ focus_tree = {
 		
 				completion_reward = {
 					army_experience = 100
+					load_oob = "GER_barbarossa_heavies"
+					add_equipment_to_stockpile = { type = heavy_tank_equipment_2 amount = 200 }
 					if = {
 						limit = { NOT = { has_tech = improved_heavy_tank } }
 						set_technology = {
@@ -3073,14 +3075,14 @@ focus_tree = {
 						name = Barbarossa_Panther_bonus
 						bonus = 1.00
 						uses = 1
-						ahead_reduction = 0.35
+						ahead_reduction = 0.65
 						technology = advanced_medium_tank
 					}
 					add_tech_bonus = {
 						name = Barbarossa_Panther_bonus
 						bonus = 1.00
 						uses = 1
-						ahead_reduction = 0.35
+						ahead_reduction = 0.65
 						technology = advanced_heavy_tank
 					}
 					add_tech_bonus = {

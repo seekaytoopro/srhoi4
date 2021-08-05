@@ -608,4 +608,24 @@ is_triggered_only = yes
 			name = soviet.301.a
 		}
 	}
+
+# Reinforcements from Siberia
+country_event = {
+	id = soviet.302
+	title = soviet.302.t
+	desc = soviet.302.d
+	picture = GFX_report_event_dead_soldiers
+	
+	is_triggered_only = yes
+
+	# immediate = {
+	# 	hidden_effect = {
+	# 		set_temp_variable 
+	# 	}
+	# }
+	
+	option = {
+		name = soviet.302.a
+	}
+}
    

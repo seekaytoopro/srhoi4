@@ -686,7 +686,7 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.14
+				attack_bonus_against = 0.15
 				defense_bonus_against = 0.12
 			}
 		}
@@ -709,8 +709,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.12
-				defense_bonus_against = 0.10
+				attack_bonus_against = 0.18
+				defense_bonus_against = 0.15
 			}
 		}
 
@@ -734,8 +734,8 @@ ideas = {
 
 			targeted_modifier = {
 				tag = SOV
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.08
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.12
 			}
 		}
 
