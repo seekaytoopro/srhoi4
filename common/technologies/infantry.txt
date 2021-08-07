@@ -102,7 +102,7 @@ technologies = {
 		path = {
 			leads_to_tech = improved_infantry_weapons
 			research_cost_coeff = 1
-		}		
+		}
 
 		research_cost = 1.5
 		start_year = 1938
@@ -1375,6 +1375,10 @@ technologies = {
 			leads_to_tech = sniper_rifle
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_mortar
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1.5
 		start_year = 1938
@@ -1453,6 +1457,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = sniper_rifle_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_mortar2
 			research_cost_coeff = 1
 		}
 		
@@ -1596,6 +1604,56 @@ technologies = {
 		folder = {
 			name = infantry_folder
 			position = { x = 1 y = @1941 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_mortar = {
+
+		category_light_infantry = {
+			breakthrough = 0.15
+		}
+		engineer = {
+			entrenchment = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = @1939 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_mortar2 = {
+
+		category_light_infantry = {
+			breakthrough = 0.15
+		}
+		engineer = {
+			entrenchment = 0.5
+		}
+
+		research_cost = 1.5
+		start_year = 1941
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = @1941 }
 		}
 		
 		categories = {

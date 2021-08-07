@@ -101,4 +101,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_sniper_rifle_04.dds"
 	}
 
+	#mortars
+
+	SpriteType = {
+		name = "GFX_tech_mortar2_medium"
+		texturefile = "gfx/interface/technologies/tech_mortar2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_tech_mortar_medium"
+		texturefile = "gfx/interface/technologies/tech_mortar.dds"
+	}
+
 }
