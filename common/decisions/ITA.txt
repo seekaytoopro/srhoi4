@@ -156,7 +156,16 @@ foreign_politics = {
 						modifier = german_trade_monopoly
 					}
 				}
-				
+				hidden_effect = {
+					if = { limit = { ITA = { has_tech = fuel_refining2 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining3 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining4 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+					if = { limit = { ITA = { has_tech = fuel_refining5 } } 
+					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
+				}
 			}
 		}
 		timeout_effect = { }
