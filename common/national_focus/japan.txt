@@ -502,6 +502,7 @@ focus_tree = {
 		# add_ideas = game_impact_japan
 		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
+		activate_mission = JAP_DEI_transfer
 	}
 	}
 
