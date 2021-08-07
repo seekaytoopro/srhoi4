@@ -529,6 +529,13 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 				}
+				hidden_effect = {
+					if = { limit = { HUN = { has_tech = synth_oil_experiments } } set_technology = { synth_oil_experiments = 1 } }
+					if = { limit = { HUN = { has_tech = fuel_refining2 } } set_technology = { fuel_refining2 = 1 } }
+					if = { limit = { HUN = { has_tech = fuel_refining3 } } set_technology = { fuel_refining3 = 1 } }
+					if = { limit = { HUN = { has_tech = fuel_refining4 } } set_technology = { fuel_refining4 = 1 } }
+					if = { limit = { HUN = { has_tech = fuel_refining5 } } set_technology = { fuel_refining5 = 1 } }
+				}
 			} 	
 			ROM = { country_event = { id = wtt_germany.72 }
 				#set_cosmetic_tag = ROM_REICH 
@@ -565,6 +572,13 @@ focus_tree = {
 						}
 					}
 					add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+				}
+				hidden_effect = {
+					if = { limit = { ROM = { has_tech = synth_oil_experiments } } set_technology = { synth_oil_experiments = 1 } }
+					if = { limit = { ROM = { has_tech = fuel_refining2 } } set_technology = { fuel_refining2 = 1 } }
+					if = { limit = { ROM = { has_tech = fuel_refining3 } } set_technology = { fuel_refining3 = 1 } }
+					if = { limit = { ROM = { has_tech = fuel_refining4 } } set_technology = { fuel_refining4 = 1 } }
+					if = { limit = { ROM = { has_tech = fuel_refining5 } } set_technology = { fuel_refining5 = 1 } }
 				}
 			} 	
 			if = { limit = { country_exists = BUL }
@@ -608,6 +622,13 @@ focus_tree = {
 						add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
 					}
 				}
+				hidden_effect = {
+					if = { limit = { BUL = { has_tech = synth_oil_experiments } } set_technology = { synth_oil_experiments = 1 } }
+					if = { limit = { BUL = { has_tech = fuel_refining2 } } set_technology = { fuel_refining2 = 1 } }
+					if = { limit = { BUL = { has_tech = fuel_refining3 } } set_technology = { fuel_refining3 = 1 } }
+					if = { limit = { BUL = { has_tech = fuel_refining4 } } set_technology = { fuel_refining4 = 1 } }
+					if = { limit = { BUL = { has_tech = fuel_refining5 } } set_technology = { fuel_refining5 = 1 } }
+				}
 			}
 			hidden_effect = {
 				if = { limit = { country_exists = CRO }
@@ -645,6 +666,13 @@ focus_tree = {
 							add_relation_modifier = { target = ITA modifier = stahlpakt }
 							add_relation_modifier = { target = SPR modifier = stahlpakt }
 							add_opinion_modifier = { target = GER modifier = german_trade_monopoly }
+						}
+						hidden_effect = {
+							if = { limit = { CRO = { has_tech = synth_oil_experiments } } set_technology = { synth_oil_experiments = 1 } }
+							if = { limit = { CRO = { has_tech = fuel_refining2 } } set_technology = { fuel_refining2 = 1 } }
+							if = { limit = { CRO = { has_tech = fuel_refining3 } } set_technology = { fuel_refining3 = 1 } }
+							if = { limit = { CRO = { has_tech = fuel_refining4 } } set_technology = { fuel_refining4 = 1 } }
+							if = { limit = { CRO = { has_tech = fuel_refining5 } } set_technology = { fuel_refining5 = 1 } }
 						}
 					}
 				}

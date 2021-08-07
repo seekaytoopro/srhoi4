@@ -109,6 +109,11 @@ foreign_politics = {
 				# }
 			}
 			hidden_effect = {
+				ENG = {
+					set_state_controller = 271
+					set_state_controller = 550
+					set_state_controller = 559
+				}
 				# GER = { 
 				# 	remove_relation_modifier = {
 				# 		target = ITA

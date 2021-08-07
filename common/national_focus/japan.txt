@@ -1795,7 +1795,12 @@ set_technology = { cv_naval_bomber2 = 1 }
 
 
 		completion_reward = {
-	custom_effect_tooltip = JAP_the_zero_tt
+			custom_effect_tooltip = JAP_the_zero_tt
+			custom_effect_tooltip = "Researches Carrier Fighter 2's instantly, make sure you have an air designer
+			
+			Creates a production line of Zero's with 50 factories at high efficiency, 
+			reassign factories to make use of this free efficiency!
+			"
 			hidden_effect = { set_technology = { cv_fighter2 = 1 } 
 			}
 			create_equipment_variant = {

@@ -91,10 +91,10 @@ categories =  {
 	}
 	
 	jungle = {
-		color = { 127 191 0 }
+		color = { 127 220 0 }
 		movement_cost = 2.70 #1.5
-		attrition = 0.6
-		combat_width = -0.25
+		attrition = 0.2
+		combat_width = -0.20
 		# ai_terrain_importance_factor = 6.0
 		match_value = 6
 		sound_type = forest

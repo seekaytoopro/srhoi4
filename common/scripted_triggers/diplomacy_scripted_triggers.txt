@@ -19,6 +19,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	#if = { limit = {ROOT = { tag = JAP  } } 			NOT = { FROM = { OR = { the_axis = yes tag = SOV } } } }
 	if = { limit = {ROOT = { the_geacps = yes  } } 	NOT = { FROM = { OR = { the_axis = yes tag = SOV }  } } }
 	if = { limit = {ROOT = { the_axis = yes } } 	NOT = { FROM = { the_geacps = yes  } } }
+	if = { limit = {ROOT = { the_geacps = yes } } 	NOT = { FROM = { normally_played_allies = yes  } } }
 	#if = { limit = {ROOT = { the_axis = yes } } 		NOT = { FROM = { tag = JAP  } } }
 	if = { limit = {FROM = { tag = EFR   } }  		EFR = {  always = no  } } 
 	if = { limit = {FROM = { tag = FIN   } }  		FIN = {  always = no  } } 
@@ -28,6 +29,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  normally_played_allies = yes } } }
 	if = { limit = { ROOT = {  the_axis = yes } }   FROM = { NOT = {  tag = SOV } } }
 	if = { limit = { ROOT = {  normally_played_allies = yes  }  } FROM = { NOT = {  the_axis = yes } } }
+	if = { limit = { ROOT = {  normally_played_allies = yes  }  } FROM = { NOT = {  the_geacps = yes } } }
 	if = { limit = { ROOT = { tag = FRA   } }  		FRA = {  always = no  } } 
 	
 	# if = { limit = {ROOT = { normally_played_allies = yes} } 		NOT = { FROM = { tag = SOV  } } }
