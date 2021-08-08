@@ -631,7 +631,7 @@ focus_tree = {
 				hidden_effect = {
 					if = { limit = { BUL = { has_tech = fuel_refining2 } } 
 					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
-					if = { limit = { BULL = { has_tech = fuel_refining3 } } 
+					if = { limit = { BUL = { has_tech = fuel_refining3 } } 
 					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
 					if = { limit = { BUL = { has_tech = fuel_refining4 } } 
 					modify_building_resources = { building = synthetic_refinery resource = rubber amount = 1 } }
