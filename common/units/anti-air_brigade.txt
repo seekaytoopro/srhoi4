@@ -93,7 +93,7 @@ sub_units = {
 		weight = 1
 		
 		supply_consumption = 0.11
-		air_attack = -0.15
+		# air_attack = -0.15
 		transport = motorized_equipment
 		need = {
 			anti_air_equipment = 60
