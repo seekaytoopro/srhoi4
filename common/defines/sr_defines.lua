@@ -399,11 +399,11 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 }
 
 NDefines.NNavy.AGGRESSION_SETTINGS_VALUES = { -- ships will use this values while deciding to attack enemies
-		2.0,		-- do not engage
-		2.0,	-- low
-		2.0,	-- medium
-		2.0,	-- high
-		2.0,	-- I am death incarnate!
+		16,	-- do not engage
+		16,	-- low
+		16,	-- medium
+		16,	-- high
+		16,	-- I am death incarnate!
 	}
 		
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
@@ -444,7 +444,7 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 	NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0                     -- vanilla is 4  , carriers immediatly start firing, capitals start after 4 hours
 	NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 0 
 	NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 1.0			   -- Base org regain per hour
-
+	NDefines.NNavy.POSITIONING_PENALTY_FOR_SHIPS_JOINED_COMBAT_AFTER_IT_STARTS = 0 -- each ship that joins the combat will have this penalty to be added into positioning, vanilla is 0.05, changed to improve smaller fleets.
 
 	NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.35		-- vanilla is 0.05. Each level of navalbase building repairs X strength and can repair as many ships as its level
 
@@ -453,9 +453,24 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 	NDefines.NNavy.MIN_HIT_PROFILE_MULT = 0.00
 	NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.3
 	NDefines.NNavy.COMBAT_MIN_DURATION = 8
+	
+	NDefines.NNavy.COMBAT_LOW_ORG_HIT_CHANCE_PENALTY = -0.25 --(0.5)
 	NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.01            -- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
-	NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.55	-- casting damage value to ship strength multiplier. Use it to balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 1.0	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+	NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 1.40	-- casting damage value to ship strength multiplier. Use it to balance the game difficulty.
+	NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+	NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 10
+	NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 0.5
+	
+
+	--Trying to make retreating similar across fleets
+	NDefines.NNavy.REPAIR_AND_RETURN_PRIO_LOW_COMBAT = 0.4						-- % of total Strength. When below, navy will go to home base to repair (in combat).
+	NDefines.NNavy.REPAIR_AND_RETURN_PRIO_MEDIUM_COMBAT = 0.45						-- % of total Strength. When below, navy will go to home base to repair (in combat).
+	NDefines.NNavy.REPAIR_AND_RETURN_PRIO_HIGH_COMBAT = 0.5					-- % of total Strength. When below, navy will go to home base to repair (in combat).
+	NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_LOW = 0.4						-- % of total damaged ships, that will be sent for repair-and-return in one call.
+	NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_MEDIUM = 0.5					-- % of total damaged ships, that will be sent for repair-and-return in one call.
+	NDefines.NNavy.REPAIR_AND_RETURN_AMOUNT_SHIPS_HIGH = 0.6						-- % of total damaged ships, that will be sent for repair-and-return in one call.
+	NDefines.NNavy.REPAIR_AND_RETURN_UNIT_DYING_STR = 0.35							-- Str below this point is considering a single ship "dying", and a high priority to send to repair
+	
 	--NDefines.NNavy.AGGRESSION_LIGHT_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 2.0 -- ratio for scoring for different gun types against light ships
 	--NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_LIGHT_SHIPS = 2.0 -- ratio for scoring for different gun types against light ships
 	--NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_LIGHT_SHIPS = 0.1	-- ratio for scoring for different gun types against light ships
@@ -481,7 +496,10 @@ NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.35  			-- AA pen
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0 	-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0
 
+NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.1
+
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 800
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 20
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 1
 
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0							-- cost to unassign/replace pride of the fleet
@@ -492,7 +510,7 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 0			-- duration 
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4         	-- how often carrier planes do battle inside naval combat
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 6.5              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 7.5              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 -- EDIT THIS TO REDUCE OUTSIDE AIR INFLUENCE
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.1		-- Max planes that can join a combat comparing to the total strength of the ships
@@ -502,8 +520,8 @@ NDefines.NNavy.SHIP_TO_FLEET_ANTI_AIR_RATIO = 0.01 -- (0.2 -> 0.01) -- SilentLeg
 NDefines.NNavy.ANTI_AIR_POW_ON_INCOMING_AIR_DAMAGE = 0.8 -- (0.2 -> 0.75) -- SilentLegion#1356, MTG 
 NDefines.NNavy.ANTI_AIR_MULT_ON_INCOMING_AIR_DAMAGE = 0.07 -- (0.15 -> 0.04) -- These ones are a bit harder to explain but in essence it makes ship aa much more important and fleet aa less important. Low aa takes more damage and higher takes less, here's a spreadsheet to make it clearer what it does (should be editable so you can test some values yourself) -- SilentLegion#1356, MTG  https://docs.google.com/spreadsheets/d/1gILOpO6VzPlscVmSTEeHuEPUKPh2Y2_bQ2ky67gxUmI/edit?usp=sharing
 NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.7 -- (0.5 -> 0.75) -- SilentLegion#1356, MTG 
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.805					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 6.6					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2.205					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 1.0					-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 
 
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0

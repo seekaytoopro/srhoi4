@@ -325,14 +325,15 @@ water_modifier_shark_infested = {
 }
 
 screening_bonus = { 
-	naval_retreat_speed = 0.4
-  	naval_hit_chance = 0.825 #0.825
-  	naval_defense_factor = 0.65 #1.000
+	naval_retreat_speed = 0.1
+  	naval_hit_chance = 0.75 #0.825
+  	naval_defense_factor = 0.75 #1.000
 }
 
 capital_screening_bonus = { 
 	naval_retreat_speed = 0.1
-	fighter_sortie_efficiency = 0.15
+	sortie_efficiency = 0.05
+	# fighter_sortie_efficiency = 0.15
 }
 
 ship_experience_bonus_max = {
@@ -342,11 +343,11 @@ ship_experience_bonus_max = {
 
 ship_experience_malus_min = {
     naval_damage_factor = -0.05
-    naval_defense_factor = -0.05
+    # naval_defense_factor = -0.05
 }
 
 carrier_experience_bonus_max = {
-	fighter_sortie_efficiency = 0.20
+	sortie_efficiency = 0.05
 }
 
 carrier_experience_malus_min = {

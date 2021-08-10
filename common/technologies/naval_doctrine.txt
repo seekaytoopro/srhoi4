@@ -227,10 +227,10 @@ technologies = {
 		
 		# EFFECT #############
 		battleship = {
-			max_organisation = 25
+			max_organisation = 35
 		}
 		
-		navy_capital_ship_defence_factor = 0.15
+		navy_capital_ship_defence_factor = 0.20
 		
 		########
 
@@ -468,6 +468,7 @@ technologies = {
 		# EFFECT #############
 		carrier = {
 			sub_detection = 0.25
+			max_organisation = 10
 		}
 		convoy_escort_efficiency = 0.15
 		####
@@ -521,6 +522,7 @@ technologies = {
 		}
 		carrier = {
 			sub_detection = 0.25
+			max_organisation = 10
 		}
 		convoy_escort_efficiency = 0.10
 		#####
@@ -1131,9 +1133,9 @@ technologies = {
 
 		battleship = {
 			max_organisation = 15
-			surface_visibility = -0.125
-			convoy_raiding_coordination = 0.5
-			surface_detection = 0.25
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.15
+			surface_detection = 0.15
 		}
 
 		naval_enemy_fleet_size_ratio_penalty_factor = 0.2
@@ -1228,7 +1230,7 @@ technologies = {
 		battleship = {
 			max_organisation = 15
 		}
-		navy_capital_ship_defence_factor = 0.08
+		navy_capital_ship_defence_factor = 0.05
 		########
 
 		path = {
