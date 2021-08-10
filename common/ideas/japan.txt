@@ -324,7 +324,7 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			
 			modifier = {
-				sortie_efficiency = 0.2
+				sortie_efficiency = 0.1
 			}
 		}
 

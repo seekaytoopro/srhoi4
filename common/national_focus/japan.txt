@@ -1243,29 +1243,30 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		custom_effect_tooltip = cost_reduced_last_stand 
-set_technology = { cv_naval_bomber2 = 1 } 
-		        create_equipment_variant = {
+			custom_effect_tooltip = "This focus will immediately unlock a highly upgraded CV Nav Bomber variant
+			Make sure you have the appropriate designer before finishing this focus"
+			set_technology = { cv_naval_bomber2 = 1 } 
+		    create_equipment_variant = {
 				name = "Nakajima B6N 'Kamikaze'"
-			type = cv_nav_bomber_equipment_2
+				type = cv_nav_bomber_equipment_2
 				parent_version = 0
 				upgrades = {
-				cv_plane_range_upgrade = 5
-				cv_plane_naval_upgrade = 5
-				plane_engine_upgrade = 3
-				plane_reliability_upgrade = 5
-			}
+					cv_plane_range_upgrade = 5
+					cv_plane_naval_upgrade = 5
+					plane_engine_upgrade = 3
+					plane_reliability_upgrade = 5
+				}
 			}
 			hidden_effect = { 		
-			GER = { add_ideas = JAP_no_license }
-			ROM = { add_ideas = JAP_no_license }
-			ITA = { add_ideas = JAP_no_license }
-			if = { limit = { country_exists = FIN } FIN = { add_ideas = JAP_no_license }	}			
-			SPR = { add_ideas = JAP_no_license }
-			if = { limit = { country_exists = BUL }	BUL = { add_ideas = JAP_no_license }	}		
-			SOV = { add_ideas = JAP_no_license }
-			HUN = { add_ideas = JAP_no_license }
-			if = { limit = { country_exists = YUG } 	YUG = { add_ideas = JAP_no_license }	}
+				GER = { add_ideas = JAP_no_license }
+				ROM = { add_ideas = JAP_no_license }
+				ITA = { add_ideas = JAP_no_license }
+				if = { limit = { country_exists = FIN } FIN = { add_ideas = JAP_no_license }	}			
+				SPR = { add_ideas = JAP_no_license }
+				if = { limit = { country_exists = BUL }	BUL = { add_ideas = JAP_no_license }	}		
+				SOV = { add_ideas = JAP_no_license }
+				HUN = { add_ideas = JAP_no_license }
+				if = { limit = { country_exists = YUG } YUG = { add_ideas = JAP_no_license }	}
 			} 
 		}
 	}
@@ -2395,7 +2396,7 @@ set_technology = { cv_naval_bomber2 = 1 }
 						}
 						name = "Yamato" 
 						requested_factories = 1
-						progress = 0.75
+						progress = 0.5
 						amount = 1
 					}
 					add_equipment_production = {
