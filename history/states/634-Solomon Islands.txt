@@ -2,7 +2,7 @@ state={
 id=634
 name="STATE_634"
 resources={
-	rubber=15
+	rubber=18
 	oil=5
 	aluminium=3
 }
@@ -10,7 +10,7 @@ history={
 owner = AST
 add_core_of=SWE
 	buildings = {
-		infrastructure = 1
+		infrastructure = 2
 			1042 = {
 				naval_base = 1
 			}	
@@ -46,10 +46,10 @@ add_core_of=SWE
 			# }
 		}
 		victory_points = {
-			1269 40 
+			1269 50 
 		}
 		victory_points = {
-			4226 20 
+			4226 30 
 		}
 }
 provinces={

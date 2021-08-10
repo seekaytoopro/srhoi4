@@ -13,14 +13,14 @@ infrastructure = 3
 industrial_complex = 2
 air_base = 10
 10265 = {
-naval_base = 4
+naval_base = 10
 }
 }
 victory_points = {
-10265 15
+10265 150
 }
 victory_points = {
-1221 1
+1221 10
 }
 }
 provinces={
