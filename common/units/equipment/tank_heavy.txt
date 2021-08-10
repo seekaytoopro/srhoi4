@@ -37,9 +37,9 @@ equipments = {
 		air_attack = 0
 
 		#Space taken in convoy
-		lend_lease_cost = 5
+		lend_lease_cost = 7
 		
-		build_cost_ic = 39 #was 26 
+		build_cost_ic = 41 #was 26 
 		resources = {
 			steel = 3
 			chromium = 3
@@ -81,7 +81,7 @@ equipments = {
 		hard_attack = 31
 		ap_attack = 111
 		
-		build_cost_ic = 41
+		build_cost_ic = 44
 		resources = {
 			steel = 3
 			chromium = 3
@@ -111,7 +111,7 @@ equipments = {
 		hard_attack = 39
 		ap_attack = 131
 		
-		build_cost_ic = 44
+		build_cost_ic = 47
 			resources = {
 			steel = 4
 			chromium = 3
@@ -157,7 +157,7 @@ equipments = {
 		ap_attack = 8
 		air_attack = 0
 		
-		build_cost_ic = 39
+		build_cost_ic = 41
 		resources = {
 			steel = 3
 			chromium = 3
@@ -202,7 +202,7 @@ equipments = {
 		soft_attack = 88
 		hard_attack = 2
 		
-		build_cost_ic = 41
+		build_cost_ic = 44
 		resources = {
 			steel = 4
 			chromium = 3
@@ -234,7 +234,7 @@ equipments = {
 		soft_attack = 100
 		hard_attack = 2.5
 		
-		build_cost_ic = 44
+		build_cost_ic = 47
 			resources = {
 			steel = 5
 			chromium = 3
@@ -280,7 +280,7 @@ equipments = {
 		ap_attack = 98
 		air_attack = 0
 		
-		build_cost_ic = 39 #was 26
+		build_cost_ic = 41 #was 26
 		resources = {
 			steel = 3
 			chromium = 3
@@ -327,7 +327,7 @@ equipments = {
 		ap_attack = 150
 		air_attack = 0
 		
-		build_cost_ic = 41
+		build_cost_ic = 44
 		resources = {
 			steel = 4
 			chromium = 3
@@ -362,7 +362,7 @@ equipments = {
 		ap_attack = 160
 		air_attack = 0
 		
-		build_cost_ic = 44
+		build_cost_ic = 47
 			resources = {
 			steel = 4
 			chromium = 4
@@ -408,7 +408,7 @@ equipments = {
 		ap_attack = 25
 		air_attack = 36
 		
-		build_cost_ic = 39 #was 26
+		build_cost_ic = 41 #was 26
 		resources = {
 			steel = 3
 			chromium = 3
@@ -455,7 +455,7 @@ equipments = {
 		ap_attack = 60
 		air_attack = 62
 		
-		build_cost_ic = 41
+		build_cost_ic = 44
 		resources = {
 			steel = 3
 			chromium = 3
@@ -491,7 +491,7 @@ equipments = {
 		ap_attack = 88
 		air_attack = 80
 		
-		build_cost_ic = 44
+		build_cost_ic = 47
 			resources = {
 				#oil = 1
 			steel = 4

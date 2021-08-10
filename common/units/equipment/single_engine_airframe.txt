@@ -32,7 +32,7 @@ equipments = {
 		naval_strike_targetting = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 8
+		lend_lease_cost = 16
 		
 		build_cost_ic = 66
 		resources = {
@@ -79,7 +79,7 @@ equipments = {
 		naval_strike_targetting = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 8
+		lend_lease_cost = 16
 		
 		build_cost_ic = 66
 		resources = {
@@ -127,6 +127,9 @@ equipments = {
 		naval_strike_targetting = 10
 		
 		build_cost_ic = 72
+
+		#Space taken in convoy
+		lend_lease_cost = 16
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -174,6 +177,8 @@ equipments = {
 		naval_strike_targetting = 10
 		
 		build_cost_ic = 76
+		#Space taken in convoy
+		lend_lease_cost = 16
 		resources = {
 			#oil = 1
 			aluminium = 2
@@ -214,6 +219,9 @@ equipments = {
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 16.5
 		naval_strike_targetting = 8
+
+		#Space taken in convoy
+		lend_lease_cost = 16
 		
 		build_cost_ic = 78
 		resources = {
@@ -258,6 +266,9 @@ equipments = {
 		# Air vs Navy - high damage / medium hit chance / easy to hurt
 		naval_strike_attack = 15
 		naval_strike_targetting = 8
+
+		#Space taken in convoy
+		lend_lease_cost = 16
 		
 		build_cost_ic = 78
 		resources = {
@@ -863,10 +874,10 @@ equipments = {
 			nav_bomber_equipment_1
 		}
 		air_range = 680
-		maximum_speed =	34
-		air_agility = 30
+		maximum_speed =	31
+		air_agility = 15
 		air_attack = 6
-		air_defence = 13
+		air_defence = 6
 		# naval_strike_attack = 25
 		
 		build_cost_ic = 82 # cv_version costs 20% more of base archetype
@@ -889,8 +900,8 @@ equipments = {
 		air_agility = 35
 		air_attack = 10
 		air_defence = 15
-		naval_strike_attack = 20
-		naval_strike_targetting = 10.5
+		naval_strike_attack = 21
+		naval_strike_targetting = 11
 		build_cost_ic = 88 # cv_version costs 20% more of base archetype
 		resources = {
 			#oil = 1
