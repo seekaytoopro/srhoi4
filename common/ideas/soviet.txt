@@ -571,6 +571,7 @@ ideas = {
 				production_speed_buildings_factor = 0.20
 				research_speed_factor = 0.10
 
+				conversion_cost_civ_to_mil_factor = 0.40
 				supply_consumption_factor = -0.20
 				drift_defence_factor = 0.5
 			}

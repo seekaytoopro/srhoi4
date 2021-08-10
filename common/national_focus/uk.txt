@@ -20,7 +20,12 @@ focus_tree = {
 		y = 0
 		cost = 10
 		available = {
-			ROOT = { has_war_with = JAP }
+			has_war_with = JAP
+			OR = {
+				NOT = { 435={is_controlled_by_ROOT_or_ally = yes } }
+				NOT = { 523={is_controlled_by_ROOT_or_ally = yes } }
+				date > 1941.6.1
+			}
 		}
 		ai_will_do = {
 			factor = 9

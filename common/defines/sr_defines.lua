@@ -46,8 +46,8 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 9999
 NDefines.NMilitary.PROMOTE_LEADER_CP_COST = 999.0 --0.0, 999 for balancing
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.000 -- 0.0 is vanilla, reduces savegame bloat
 
-NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.00015 -- (0.0001)
-NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.00001 -- (1.00)
+NDefines.NMilitary.UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.000175 -- (0.0001)
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.000001 -- (1.00)
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience drop if unit has different battalion when switching templates(vanilla 0.5 but can be circumvented with template editing)
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it

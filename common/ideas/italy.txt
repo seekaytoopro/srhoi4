@@ -36,7 +36,7 @@ ideas = {
 			cancel={
 				NOT={
 					448={is_controlled_by_ROOT_or_ally = yes}
-					662={is_controlled_by_ROOT_or_ally = yes}
+					# 	662={is_controlled_by_ROOT_or_ally = yes}
 					450={is_controlled_by_ROOT_or_ally = yes}
 				}
 			}

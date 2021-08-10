@@ -225,7 +225,7 @@ ideas = {
 			picture = generic_intel_bonus
 			
 			modifier = {
-				conscription = 0.06
+				conscription = 0.20
 			}
 		}
 

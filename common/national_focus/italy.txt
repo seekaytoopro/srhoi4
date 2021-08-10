@@ -2057,6 +2057,45 @@ focus_tree = {
 			# if = { limit = { country_exists = CRO } FIN = {add_ideas = axis_victory_in_egypt } }
 		}
 	}
+
+	focus = {
+		id = ITA_triumph_in_egypt2
+		icon = GFX_goal_generic_propaganda
+		available = {
+			date > 1942.3.1
+			OR ={
+				AND = {
+					controls_state = 447 controls_state = 446 controls_state = 452
+				}
+				AND = {
+					GER = { controls_state = 447 controls_state = 446 controls_state = 452 }
+				}
+			}
+		}
+		prerequisite = { focus = ITA_triumph_in_egypt }
+		relative_position_id = ITA_triumph_in_egypt
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+
+		available_if_capitulated = yes
+
+		x = 0
+		y = 1
+		cost = 1.5
+
+		completion_reward = {
+			every_country = { limit = { the_axis = yes }
+				swap_ideas = {
+					remove_idea = axis_victory_in_egypt
+					add_idea = axis_victory_in_egypt2
+				}
+				
+			}
+			custom_effect_tooltip = "
+			This idea will be cancelled if the Allies retake Egypt!"
+		}
+	}
 	
 	focus = {
 		id = ITA_slovenia_dalmatia_claims

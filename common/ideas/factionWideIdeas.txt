@@ -34,6 +34,54 @@ ideas = {
 			}
 		}
 
+		axis_victory_in_egypt2 = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			available = { ROOT = { has_government = fascism } }
+
+			cancel={
+				NOT={
+					446={is_controlled_by_ROOT_or_ally = yes}
+					447={is_controlled_by_ROOT_or_ally = yes}
+					# 452={is_controlled_by_ROOT_or_ally = yes}
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.06
+				industrial_capacity_factory = 0.06
+				industrial_capacity_dockyard = 0.06
+				stability_factor = 0.25
+				consumer_goods_factor = -0.03
+
+			}
+		}
+
+		USA_ships_for_victory_idea = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				
+			}
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.20
+			}
+		}
+
 		GER_triumph_britain_idea = {
 			
 			allowed = {
@@ -176,17 +224,17 @@ ideas = {
 
 			picture = generic_exploit_mines
 
-			cancel = { has_war_with = JAP }
+			cancel = { ROOT = { has_idea = refinery_effort } }
 			
 			removal_cost = -1
 
 			research_bonus = {
 				# industry = 0.05
-				synth_resources = -0.6
+				synth_resources = -0.5
 			}
 
 			modifier = {
-				production_speed_synthetic_refinery_factor = -0.45
+				production_speed_synthetic_refinery_factor = -0.25
 			}
 		}
 
@@ -199,7 +247,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.25
 			}
 		}
 

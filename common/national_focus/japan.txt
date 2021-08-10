@@ -502,7 +502,7 @@ focus_tree = {
 		# add_ideas = game_impact_japan
 		if = { limit = { country_exists = MAN } MAN = { add_ideas = game_impact_japan_puppet   } }
 		if = { limit = { country_exists = SIA } SIA = { add_ideas = game_impact_japan_puppet   } }
-		activate_mission = JAP_DEI_transfer
+		# activate_mission = JAP_DEI_transfer
 	}
 	}
 
@@ -2386,7 +2386,8 @@ focus_tree = {
 						rear_2_custom_slot = ship_super_heavy_battery_1
 					}
 				}
-				custom_effect_tooltip = JAP_yamato_tt
+				custom_effect_tooltip = "Creates two super heavy Battleships at 50% completion"
+				# custom_effect_tooltip = JAP_yamato_tt
 				hidden_effect = {
 					add_equipment_production = {
 						equipment = {

@@ -654,8 +654,8 @@ SOV_great_patriotic_war = {
 
 		#Success
 		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
+			add_stability = 0.10
+			add_war_support = 0.10
 			219 = { save_event_target_as = state }
 			country_event = wtt_soviet_hold_city.5
 		}

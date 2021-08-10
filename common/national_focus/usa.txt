@@ -22,9 +22,14 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		x = 11
 		y = 0
-		cost = 10
+		cost = 5
 		available = {
-			ROOT = { has_war_with = JAP }
+			has_war_with = JAP
+			OR = {
+				NOT = { 435={is_controlled_by_ROOT_or_ally = yes } }
+				NOT = { 523={is_controlled_by_ROOT_or_ally = yes } }
+				date > 1941.6.1
+			}
 		}
 		ai_will_do = {
 			factor = 9
@@ -573,6 +578,34 @@ focus_tree = {
 	}
 
 	focus = {
+		id = USA_ships_for_victory
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = USA_the_giant_wakes }
+		x = -1
+		y = 1
+		relative_position_id = USA_the_giant_wakes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+
+		completion_reward = {
+			add_ideas = USA_ships_for_victory_idea
+			ENG = { add_ideas = USA_ships_for_victory_idea }
+			CAN = { add_ideas = USA_ships_for_victory_idea }
+			SAF = { add_ideas = USA_ships_for_victory_idea }
+			RAJ = { add_ideas = USA_ships_for_victory_idea }
+			AST = { add_ideas = USA_ships_for_victory_idea }
+			NZL = { add_ideas = USA_ships_for_victory_idea }
+			FRF = { add_ideas = USA_ships_for_victory_idea }
+		}
+	}
+
+	focus = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
 		prerequisite = { focus = USA_the_giant_wakes }
@@ -582,7 +615,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		available = { date > 1941.1.1 }
+		available = { }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -956,7 +989,7 @@ focus_tree = {
 
 	focus = {
 		id = USA_war_powers_act
-		icon = GFX_warpowers_act
+		icon = GFX_focus_generic_diplomatic_treaty
 		x = 0
 		y = 3
 		prerequisite = { focus = USA_the_giant_wakes }
