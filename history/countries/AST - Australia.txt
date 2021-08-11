@@ -1,4 +1,4 @@
-﻿capital = 285
+﻿capital = 760
 
 oob = "AST_1936"
 set_stability = 0.8
@@ -53,9 +53,9 @@ add_equipment_to_stockpile = {
 	producer = AST
 } 
 add_equipment_to_stockpile = {
-type = anti_air_equipment_1
-amount = 233
-producer = AST
+	type = anti_air_equipment_1
+	amount = 233
+	producer = AST
 }
 
 
@@ -162,22 +162,6 @@ create_country_leader = {
 }
 
 set_convoys = 100
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		democratic = 99
-		communism = 1
-	}
-
-	set_convoys = 100
-}
 
 create_field_marshal = {
 	name = "Leslie Morshead"

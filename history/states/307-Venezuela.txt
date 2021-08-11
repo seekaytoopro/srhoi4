@@ -6,8 +6,9 @@ state={
 	history={
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			air_base = 1
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
 		}
 		add_core_of = SAF
 		owner = SAF

@@ -2,9 +2,9 @@
 state={
 	id=760
 	name="STATE_760"
-	resources = {
-		steel = 12
-		tungsten = 5
+	resources={
+		steel=12.000
+		tungsten=5.000
 	}
 
 	history={
@@ -16,10 +16,13 @@ state={
 			air_base = 8
 			12560 = {
 				naval_base = 5
+
 			}
 			7859 = {
 				bunker = 1
+
 			}
+
 		}
 		victory_points = {
 			7859 30 
@@ -30,7 +33,7 @@ state={
 	}
 
 	provinces={
-		1667 1861 2146 4673 4763 4836 5134 5161 7859 10455 10682 12532 12560 
+		1667 1861 2146 4763 4836 5134 5161 7859 10455 10682 12532 12560 
 	}
 	manpower=813341
 	buildings_max_level_factor=1.000
