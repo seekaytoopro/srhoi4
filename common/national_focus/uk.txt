@@ -1221,6 +1221,7 @@ focus_tree = {
 			681 = { add_building_construction = { type = naval_base level = 5 province = 12589 instant_build = yes } }
 			284 = { add_building_construction = { type = naval_base level = 5 province = 4543 instant_build = yes } }			
 			428 = { add_building_construction = { type = naval_base level = 5 province = 9975 instant_build = yes } }
+			316 = { add_building_construction = { type = naval_base level = 5 province = 4673 instant_build = yes } }
 			132 = { add_building_construction = { type = naval_base level = 10 province = 6384 instant_build = yes } }
 			338 = { add_building_construction = { type = naval_base level = 10 province = 3369 instant_build = yes } }
 		}
