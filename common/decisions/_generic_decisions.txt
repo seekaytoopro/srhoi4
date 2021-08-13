@@ -1101,28 +1101,28 @@ war_measures = {
         available = {
             has_war = yes
             has_idea = tot_economic_mobilisation
-            OR = {
-                AND = {
-                    has_government = democratic
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = communism
-                    has_war_support > 0.79
-                }
-                AND = {
-                    has_government = fascism
-                    OR = {
-                        has_war_support > 0.89
-                        surrender_progress > 0
-                    }
-                }
-                AND = {
-                    has_government = neutrality
-                    has_war_support > 0.84
-                    has_stability > 0.7
-                }
-            }
+            # OR = {
+            #     AND = {
+            #         has_government = democratic
+            #         has_war_support > 0.79
+            #     }
+            #     AND = {
+            #         has_government = communism
+            #         has_war_support > 0.79
+            #     }
+            #     AND = {
+            #         has_government = fascism
+            #         OR = {
+            #             has_war_support > 0.89
+            #             surrender_progress > 0
+            #         }
+            #     }
+            #     AND = {
+            #         has_government = neutrality
+            #         has_war_support > 0.84
+            #         has_stability > 0.7
+            #     }
+            # }
         }
         visible = {
             has_war = yes
