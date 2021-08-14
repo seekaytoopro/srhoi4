@@ -1382,6 +1382,32 @@ focus_tree = {
 			add_stability = 0.05
 			add_named_threat = { threat = 10 name = germany.4.t }
 			if = {
+				limit = { has_game_rule = { rule = sr_no_asia option = ENABLE_sr_no_asia } }
+				add_named_threat = { threat = 20 name = JAP_CHITWO }
+				USA = {
+					add_political_power = 100
+					add_war_support = 0.10
+					air_experience = 300
+					army_experience = 100
+				}
+				SOV = { army_experience = 1000 air_experience  = 300 }
+				GER = { air_experience  = 300 }
+				ITA = { air_experience  = 300 }
+				ENG = { army_experience = 150 }
+                FRA = { army_experience = 100 }	
+				CAN = { army_experience = 150 }
+				SAF = {	army_experience = 150 }
+				RAJ = {	army_experience = 150 }
+				AST = {	army_experience = 150 }
+				NZL = { army_experience = 150 }	
+				ROM = { army_experience = 100 }		
+				HUN = { army_experience = 100 }	
+				BUL = { army_experience = 100 }
+				IF = { limit = { country_exists = CRO } CRO = { army_experience = 100 } }
+				IF = { limit = { country_exists = CRO } SIA = { army_experience = 1000 air_experience  = 1000 } }
+				IF = { limit = { country_exists = CRO } MAN = { army_experience = 1000 air_experience  = 1000 } }
+			}
+			if = {
 				limit = {
 					country_exists = AUS
 					AUS = {

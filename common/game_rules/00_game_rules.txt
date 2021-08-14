@@ -115,6 +115,22 @@ mini_sr = {
 		desc = "This will allow the major nations to annex their minors from the start"
 	}
 }
+
+sr_no_asia = {
+	name = "sr_no_asia"
+	group = "HORST_GROUPKEY"					
+	icon = "GFX_trait_adaptable"
+	default = {
+		name = "DISABLE_sr_no_asia"
+		text = "Disable SR No Asia"
+		desc = "Normal gameplay, Asia exists."	
+	}
+	option = {	
+		name = "ENABLE_sr_no_asia"
+		text = "Enable SR No Asia"
+		desc = "This will remove Asia, and perform balancing to support such"
+	}
+}
  
 horst_sub_options = {
 	name = "HORST_SUB_OPTIONS"

@@ -389,3 +389,47 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = srevents.806
+	title = "South Africa is AI controlled"
+	desc = "Do you want to annex South Africa into Canada?"
+	picture = GFX_report_event_japan_startup
+	fire_only_once = yes
+ 	is_triggered_only = yes
+	  option = {
+	name = "Yes, South Africa won't be played"
+	country_event = { id = srevents.807 }
+	}
+	 option = {
+	name = "No, South Africa will have a player on it."
+	}  
+ }
+ 
+ country_event = {
+	id = srevents.807
+	title = "The Annexation of South Africa"
+	desc = "The annexation of South Africa is imminent."
+	picture = GFX_report_event_japan_startup
+	fire_only_once = yes
+ 	is_triggered_only = yes
+	option = {
+		name = "Confirm annexation"
+		every_state = { limit = { is_core_of = SAF }
+			add_core_of = CAN
+		}
+		CAN = { annex_country = { target = SAF transfer_troops = yes } }
+		SAF = { 
+			every_unit_leader = {
+				 set_nationality = CAN
+			 }
+			 transfer_navy = {
+				 target = CAN
+			 }
+		 }
+	}
+	option = {
+		name = "Reconsider..."
+		country_event = { id = srevents.806 }
+	}
+ }
+

@@ -486,6 +486,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = "The time has come to greatly expand the US navy, build dockyards!
+			"
 			USA_great_depression_level_down = yes
 			add_ideas = isolation
 			add_timed_idea = { idea = USA_contain_the_rising_sun days = 365 }
@@ -536,7 +538,7 @@ focus_tree = {
 			#has_war_support > 0.3
 			OR = {
 				#GER = { has_completed_focus = GER_danzig_or_war }
-				date > 1941.2.1
+				date > 1941.1.10
 				has_war_with = JAP
 				ENG = { surrender_progress > 0.15 }
 			}
@@ -557,6 +559,8 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = "The US is now allowed to join the war
+			"
 			add_timed_idea = { idea = USA_the_giant_wakes days = 1100 }
 			add_ideas = war_economy
 			random_owned_controlled_state = {
@@ -1001,7 +1005,8 @@ focus_tree = {
 		}
 
 		available = {
-			has_war_with = JAP
+			has_war = yes
+			# has_war_with = JAP
 		}
 
 		bypass = {
