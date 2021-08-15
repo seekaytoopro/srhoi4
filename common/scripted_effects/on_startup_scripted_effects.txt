@@ -208,10 +208,16 @@ sr_no_asia = {
 		#phillipenes
 		transfer_state = 623 transfer_state = 327 transfer_state = 624 transfer_state = 628 transfer_state = 625
 		transfer_state = 627 transfer_state = 626
-	}
-	ENG = {
+
 		annex_country = { target = AST transfer_troops = no }
 		annex_country = { target = NZL transfer_troops = no }
+
+		add_ideas = no_exports
+	}
+	ENG = {
+		# Having Australia/NZL is probably too much industry for UK, who doesn't even have great depression modifiers
+		# annex_country = { target = AST transfer_troops = no }
+		# annex_country = { target = NZL transfer_troops = no }
 		annex_country = { target = RAJ transfer_troops = no }
 	}
 	every_state = { limit = { is_core_of = RAJ }
