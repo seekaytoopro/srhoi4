@@ -8,17 +8,17 @@ FRA_war_measures = {
         
 }
 
-VIC_concessions_to_the_germans = {
-	allowed = {
-		original_tag = EFR
-	}
-	visible = {
-		OR = {
-			has_completed_focus = VIC_concessions_to_the_germans
-			controls_state = 16
-		}
-	}
-}
+# VIC_concessions_to_the_germans = {
+# 	allowed = {
+# 		original_tag = EFR
+# 	}
+# 	visible = {
+# 		OR = {
+# 			has_completed_focus = VIC_concessions_to_the_germans
+# 			controls_state = 16
+# 		}
+# 	}
+# }
 
 
 FRA_move_capital = {
