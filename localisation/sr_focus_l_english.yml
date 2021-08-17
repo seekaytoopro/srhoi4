@@ -530,3 +530,11 @@ cro_industrial_effort:0 "Industrial Effort"
  USA_war_resources_board_desc:0 "War Resources Board"
  USA_war_bonds:0 "War Bonds"
  USA_war_bonds_desc:0 "War Bonds"
+
+ GER_bismarck:0 "Construct The Bismarck"
+ GER_bismarck_desc:0 "Construct The Bismarck" 
+ GER_tirpitz:0 "Construct The Tirpitz"
+ GER_tirpitz_desc:0 "Construct The Tirpitz"
+
+ ENG_begin_canadian_exile:0 "Continue the Fight in Exile!"
+ ENG_begin_canadian_exile_desc:0 "Continue the Fight in Exile!"

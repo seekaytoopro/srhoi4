@@ -193,13 +193,22 @@ transfer_state = 29
 ITA = { 
 diplomatic_relation = {   country = EFR    relation = non_aggression_pact   active = yes }
 }
-if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
+if = {
+	limit = {
+		has_game_rule = {
+			rule = sr_no_asia
+			option = DISABLE_sr_no_asia
+		}
+	}
+	if = { limit = { country_exists = SIA } SIA = { transfer_state = 741  transfer_state = 670 } else = { JAP = { transfer_state = 670 transfer_state = 741 }} }
 
-JAP = { 
-transfer_state = 671
-transfer_state = 286
-transfer_state = 728
+	JAP = { 
+		transfer_state = 671
+		transfer_state = 286
+		transfer_state = 728
+	}
 }
+
 461 = { add_building_construction = {	type = naval_base	province = 7069  level = 6	instant_build = yes	}		}
 459 = { add_building_construction = {	type = naval_base	province = 7132  level = 4	instant_build = yes	}		}
 459 = { add_building_construction = {	type = naval_base	province = 1145  level = 8	instant_build = yes	}		}

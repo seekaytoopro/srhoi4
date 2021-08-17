@@ -3278,6 +3278,8 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			custom_effect_tooltip = "Gives a 50% bonus for Arty 2, AT 2, and AA 2
+			"
 			add_war_support = 0.05
 			add_stability = 0.1
 			add_tech_bonus = {
@@ -3369,6 +3371,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = "Gives a 50% bonus for Gun 2
+			"
 			army_experience = 10
 			add_ideas = british_arms_discount
 			add_tech_bonus = {

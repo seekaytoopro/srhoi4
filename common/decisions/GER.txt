@@ -91,6 +91,7 @@ operations = {
 			
 			available =  {
 				country_exists = PER
+				291 = { is_controlled_by_ROOT_or_ally = yes }
 				ITA = { has_completed_focus = ITA_triumph_in_egypt }
 			}
 		

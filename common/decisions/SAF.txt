@@ -120,12 +120,15 @@ operations = {
 				set_state_owner = 728
 			}
 
-			if = { limit = { AND = { country_exists = SIA SIA = { is_ai = no } } }
+			if = {
+				limit = { has_game_rule = { rule = sr_no_asia option = DISABLE_sr_no_asia } }
+
+				if = { limit = { AND = { country_exists = SIA SIA = { is_ai = no } } }
 				SIA = { transfer_state = 741 transfer_state = 670 }
-			} else = {
+				}
 				JAP = { transfer_state = 741 transfer_state = 670 }
+				JAP = { transfer_state = 671 transfer_state = 286 }
 			}
-			JAP = { transfer_state = 671 transfer_state = 286 }
 
 
 		    SAF = {
