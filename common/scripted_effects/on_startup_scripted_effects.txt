@@ -228,6 +228,7 @@ sr_no_asia = {
 		add_core_of = ENG
 	}
 	USA = { add_ideas = the_price_of_no_asia }
+	SWE = { give_resource_rights = { receiver = GER state = 724 } } }
 }
 
 startup_on_actions = {
