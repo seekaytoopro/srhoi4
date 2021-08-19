@@ -227,7 +227,15 @@ sr_no_asia = {
 		limit = { is_core_of = AST }
 		add_core_of = ENG
 	}
-	USA = { add_ideas = the_price_of_no_asia }
+	# USA = { add_ideas = the_price_of_no_asia }
+	# every_state = { limit = { is_core_of = USA }
+	# 	THIS = {
+	# 		remove_building = {
+	# 			type = industrial_complex
+	# 			level = 2
+	# 		}
+	# 	}
+	# }
 	SWE = { give_resource_rights = { receiver = GER state = 724 } }
 }
 

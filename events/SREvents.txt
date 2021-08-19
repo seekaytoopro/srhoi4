@@ -37,6 +37,23 @@ country_event = {
 		name = srevents.1.a 
 		add_timed_idea = { idea = economic_recovery days = 1500 }
 
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = sr_no_asia
+					option = ENABLE_sr_no_asia
+				} 
+			}
+
+			hidden_effect = {
+				every_state = { limit = { is_core_of = USA }
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+				}
+			}
+		}
 	}
 	
 }
@@ -53,6 +70,32 @@ country_event = {
 	option = { 
 		name = srevents.1.a 
 
+
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = sr_no_asia
+					option = ENABLE_sr_no_asia
+				} 
+			}
+
+			hidden_effect = {
+				every_state = { limit = { is_core_of = RAJ }
+					remove_building = {
+						type = industrial_complex
+						level = 3
+					}
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					remove_building = {
+						type = dockyard
+						level = 3
+					}
+				}
+			}
+		}
 	}
 	
 }
@@ -133,6 +176,16 @@ country_event = {
 	option = { 
 		name = srevents.1.a 
 
+		# Appears to be unneeded
+		# if = {
+		# 	limit = {
+		# 		has_game_rule = {
+		# 			rule = sr_no_asia
+		# 			option = ENABLE_sr_no_asia
+		# 		} 
+		# 	}
+		# 	SWE = { give_resource_rights = { receiver = GER state = 724 } }
+		# }
 	}
 	
 }
