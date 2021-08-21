@@ -44,7 +44,7 @@ country_event = {
 					option = ENABLE_sr_no_asia
 				} 
 			}
-
+			add_ideas = the_price_of_no_asia
 			hidden_effect = {
 				every_state = { limit = { is_core_of = USA }
 					remove_building = {
