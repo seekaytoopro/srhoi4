@@ -1558,8 +1558,8 @@ technologies = {
 		}
 		
 		category_light_infantry = {
-			soft_attack = 0.02
-			defense = 0.02
+			soft_attack = 0.05
+			defense = 0.05
 		}
 		
 		# path = {
@@ -1590,8 +1590,8 @@ technologies = {
 		}
 		
 		category_light_infantry = {
-			soft_attack = 0.02
-			defense = 0.02
+			soft_attack = 0.05
+			defense = 0.05
 		}
 		
 		# path = {
@@ -1618,7 +1618,7 @@ technologies = {
 	tech_mortar = {
 
 		category_light_infantry = {
-			breakthrough = 0.15
+			breakthrough = 0.10
 		}
 		engineer = {
 			entrenchment = 0.5
@@ -1643,7 +1643,7 @@ technologies = {
 	tech_mortar2 = {
 
 		category_light_infantry = {
-			breakthrough = 0.15
+			breakthrough = 0.10
 		}
 		engineer = {
 			entrenchment = 0.5
