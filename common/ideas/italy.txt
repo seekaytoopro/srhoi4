@@ -55,6 +55,50 @@ ideas = {
 			}
 		}
 
+		ITA_autarchia = {
+
+			allowed = {
+				original_tag = ITA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_exploit_mines
+
+			modifier = {
+				min_export = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+
+		ITA_blackshirts = {
+
+			allowed = {
+				original_tag = ITA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = german_advisors
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+
 		vittoria_mutilata = {			
 			
 			allowed = {

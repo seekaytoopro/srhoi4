@@ -15,11 +15,11 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1250 }
 
 	focus = {
-		id = ITA_ethiopian_war_logistics
-		icon = GFX_goal_generic_position_armies
-		x = 0
+		id = ITA_autarchia
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
 		y = 0
-		cost = 1
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -31,13 +31,28 @@ focus_tree = {
 		# }
 
 		completion_reward = {
-			if = { limit = { 550 = { OR = { is_owned_and_controlled_by = ITA is_owned_and_controlled_by = ETH }  } }
+			add_ideas = ITA_autarchia
+			add_tech_bonus = {
+				name = ITA_autarchia
+				bonus = 1.0
+				uses = 1
+				technology = assembly_line_production
+			}
+			add_tech_bonus = {
+				name = ITA_autarchia
+				bonus = 1.0
+				uses = 2
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+
+			hidden_effect = {
+				if = { limit = { 550 = { OR = { is_owned_and_controlled_by = ITA is_owned_and_controlled_by = ETH }  } }
 				550 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 				}
 				550 = {
 					add_building_construction = {
@@ -80,6 +95,7 @@ focus_tree = {
 			amount = 8
 			state = 271
 		}
+			}
 	}
 }
 
@@ -87,32 +103,16 @@ focus_tree = {
 		id = ITA_industrial_effort
 		icon = GFX_goal_generic_construct_civ_factory
 		text = industrial_effort
-		prerequisite = { focus = ITA_ethiopian_war_logistics }
-		x = 0
+		prerequisite = { focus = ITA_autarchia }
+		x = 2
 		y = 1
-		relative_position_id = ITA_ethiopian_war_logistics
+		relative_position_id = ITA_autarchia
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 
 		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				NOT = {
-					any_owned_state = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = industrial_complex
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-			}
-		}
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -147,49 +147,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = industrial_complex
-								size > 1
-								include_locked = yes
-							}
-							is_on_continent = europe
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}				
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.75
+				uses = 1
+				technology = construction2
 			}
 		}
 	}
@@ -359,10 +321,10 @@ focus_tree = {
 	focus = {
 		id = ITA_fortification_effort
 		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = ITA_industrial_effort_2 }
-		x = -1
+		prerequisite = { focus = ITA_autarchia }
+		x = -2
 		y = 1
-		relative_position_id = ITA_industrial_effort_2
+		relative_position_id = ITA_autarchia
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -810,11 +772,11 @@ focus_tree = {
 		id = ITA_extra_tech_slot
 		icon = GFX_focus_research
 		text = extra_tech_slot
-		prerequisite = { focus = ITA_industrial_effort_2 }
-		x = 1
+		prerequisite = { focus = ITA_autarchia }
+		x = 0
 		y = 1
-		relative_position_id = ITA_industrial_effort_2
-		cost = 10
+		relative_position_id = ITA_autarchia
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -834,11 +796,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_extra_tech_slot
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
 		completion_reward = {
+			every_state = { 
+				limit = { is_core_of = ITA }
+				add_state_modifier = { modifier = { local_building_slots_factor = 0.40  } }
+			}
 			2 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -968,6 +934,59 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = ITA_fortress_libya
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = ITA_prospect_for_oil }
+		x = 0
+		y = 1
+		relative_position_id = ITA_prospect_for_oil
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		
+		available = { has_idea = ITA_libya_stands }
+		completion_reward = {
+			custom_effect_tooltip = "Adds significant fortifications on the borders of Libya
+			"
+			# Frontline to Marsa
+			451 = {
+				add_building_construction = { type = bunker level = 4 province = 10120 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 4060 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 1060 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 12082 instant_build = yes }
+				# Reserve line
+				add_building_construction = { type = bunker level = 2 province = 9823 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 1463 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 7130 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 7206 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 4136 instant_build = yes }
+				# Tobruk
+				add_building_construction = { type = bunker level = 2 province = 12476 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 9992 instant_build = yes }
+				add_building_construction = { type = bunker level = 6 province = 1130 instant_build = yes }
+
+				# Frontline to Tunisia
+				add_building_construction = { type = bunker level = 4 province = 12039 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 10067 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 7154 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 12653 instant_build = yes }
+				# Reserve Line
+				add_building_construction = { type = bunker level = 2 province = 1122 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 10122 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 10038 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 12314 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 1189 instant_build = yes }
+				# Tripoli
+				add_building_construction = { type = bunker level = 3 province = 1149 instant_build = yes }
+				add_building_construction = { type = bunker level = 4 province = 7066 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 4194 instant_build = yes }
+				add_building_construction = { type = bunker level = 2 province = 7209 instant_build = yes }
+			}
+		}
+	}
 	
 	focus = {
 		id = ITA_libyan_refineries
@@ -980,7 +999,7 @@ focus_tree = {
 			}
 		}
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = ITA_prospect_for_oil
 		cost = 10
 
@@ -1016,7 +1035,7 @@ focus_tree = {
 		text = ITA_libyan_infrastructure
 		prerequisite = { focus = ITA_prospect_for_oil }
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = ITA_prospect_for_oil
 		cost = 10
 		ai_will_do = {
@@ -1136,7 +1155,7 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 5
+		x = 10
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1300,10 +1319,10 @@ focus_tree = {
 		icon = GFX_goal_generic_special_forces
 		text = special_forces
 		prerequisite = { focus = ITA_modernized_artillery focus = ITA_modernized_army }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_modernized_artillery
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1322,10 +1341,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ITA_blackshirts
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = ITA_modernized_artillery focus = ITA_modernized_army }
+		x = 0
+		y = 1
+		relative_position_id = ITA_modernized_army
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 50
+			add_ideas = ITA_blackshirts
+		}
+	}
+
+	focus = {
 		id = ITA_armored_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ITA_special_forces }
-		x = 0
+		prerequisite = { focus = ITA_special_forces focus = ITA_blackshirts }
+		x = 1
 		y = 1
 		relative_position_id = ITA_special_forces
 		cost = 10
@@ -1354,7 +1393,7 @@ focus_tree = {
 	focus = {
 		id = ITA_mare_nostrum
 		icon = GFX_goal_generic_build_navy
-		x = 7
+		x = 12
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1795,7 +1834,7 @@ focus_tree = {
 	focus = {
 		id = ITA_light_ship_effort
 		icon = GFX_goal_generic_navy_cruiser
-		x = 11
+		x = 16
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1985,9 +2024,9 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		x = 16
+		x = 21
 		y = 0
-		cost = 10
+		cost = 5
 
 		completion_reward = {
 			add_stability = 0.1
@@ -2379,9 +2418,9 @@ focus = {
 		}
 		date>1942.5.1
 	}
-	x = 0
-	y = 2
-	relative_position_id = ITA_prospect_for_oil
+	x = 1
+	y = 1
+	relative_position_id = ITA_libyan_refineries
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no
@@ -2418,9 +2457,9 @@ focus = {
 		}
 		date>1942.4.1
 	}
-	x = -2
-	y = 2
-	relative_position_id = ITA_prospect_for_oil
+	x = -1
+	y = 1
+	relative_position_id = ITA_libyan_refineries
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no
@@ -2482,9 +2521,9 @@ focus = {
 		}
 		date>1942.6.1
 	}
-	x = 2
-	y = 2
-	relative_position_id = ITA_prospect_for_oil
+	x = 3
+	y = 1
+	relative_position_id = ITA_libyan_refineries
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no
@@ -2520,9 +2559,9 @@ focus = {
 			AND = {controls_state = 676 controls_state = 291}
 		}
 	}
-	x = -2
-	y = 3
-	relative_position_id = ITA_prospect_for_oil
+	x = 0
+	y = 1
+	relative_position_id = ITA_transport_resc2
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no
@@ -2583,9 +2622,9 @@ focus = {
 		}
 		date>1942.9.1
 	}
-	x = 2
-	y = 3
-	relative_position_id = ITA_prospect_for_oil
+	x = 0
+	y = 1
+	relative_position_id = ITA_transport_resc3
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no
@@ -2621,8 +2660,8 @@ focus = {
 		date>1942.8.1
 	}
 	x = 0
-	y = 3
-	relative_position_id = ITA_prospect_for_oil
+	y = 1
+	relative_position_id = ITA_transport_resc
 	cost = 5
 	continue_if_invalid=no
 	cancel_if_invalid=no

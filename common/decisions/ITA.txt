@@ -204,8 +204,9 @@ ITA_annex_bul = {
 						target = BUL
 						transfer_troops = yes 
 					}
-					add_state_core = 48 add_state_core = 212 add_state_core = 211 
-					add_state_core = 184 add_state_core = 106 add_state_core = 759
+					every_state = { limit = { is_core_of = BUL } set_compliance = 100 }
+					# add_state_core = 48 add_state_core = 212 add_state_core = 211 
+					# add_state_core = 184 add_state_core = 106 add_state_core = 759
 			}
 			
 			hidden_effect = { set_country_flag = bul_annexed }
