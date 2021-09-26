@@ -545,3 +545,6 @@ cro_industrial_effort:0 "Industrial Effort"
  ITA_blackshirts_desc:0 "Blackshirts"
  ITA_fortress_libya:0 "Fortress Libya"
  ITA_fortress_libya_desc:0 "Fortress Libya"
+
+ SOV_far_east_fortification:0 "Southern Fortification"
+ SOV_far_east_fortification_desc:0 "Southern Fortification"

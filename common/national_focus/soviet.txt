@@ -81,7 +81,99 @@ focus_tree = {
 		completion_reward = {		
 			add_ideas = tot_economic_mobilisation
 			add_ideas = defend_the_motherland
+			add_timed_idea = { idea=industry_relocation days = 180 }
 			add_offsite_building = { type = industrial_complex level = 10 }
+
+			hidden_effect = {
+				219 = {
+					hidden_effect = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3391
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 6414
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9348
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 301
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9378
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 6283
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3259
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11282
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11853
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 652
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3979
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9868
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 6380
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11349
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 
 	}
@@ -142,6 +234,8 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		completion_reward = {
+			custom_effect_tooltip = "Will spawn 2 fully equipped heavy tanks, and a significant number of infantry divisions
+			"
 			# hidden_effect = {
 			# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
 			# }
@@ -159,6 +253,14 @@ focus_tree = {
 			# }
 
 			hidden_effect = {
+				if = {
+					limit = { NOT = { has_tech = improved_heavy_tank } }
+					set_technology = {
+						improved_heavy_tank = 1
+					}
+				}
+				load_oob = "SOV_defense_moscow_heavies"
+				add_equipment_to_stockpile = { type = heavy_tank_equipment_2 amount = 300 }
 				load_oob = "SOV_siberian_reinforcements"
 				set_temp_variable = { SOV_divs_spawned = 20 }
 				if = { limit = { SOV = { num_divisions < 100 } }
@@ -294,89 +396,6 @@ focus_tree = {
 				logistics_skill = 8
 			}
 		#}
-			
-			219 = {
-				hidden_effect = {
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3391
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 6414
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 9348
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 301
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 9378
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 6283
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3259
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 11282
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 11853
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 652
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 3979
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 4
-						province = 9868
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 5
-						province = 6380
-						instant_build = yes
-					}
-				}
-			}
 		}
 }
 
@@ -529,19 +548,7 @@ focus = {
 	}
 	cancel_if_invalid = no
 	continue_if_invalid = yes
-	completion_reward = {
 
-
-		217 = {
-			add_building_construction = { type = bunker level = 5 province = 3529 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 11474 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 10896 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
-			add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
-		}
-	}
 	completion_reward = {
 		create_corps_commander = {
 			name = "Konstantin Rokossovsky (Best Tank Commander)"
@@ -1288,7 +1295,7 @@ focus = {
 			id = SOV_collectivist_propaganda
 			icon = GFX_focus_SOV_collectivist_propaganda
 			prerequisite = { focus = SOV_great_purge }
-			x = -4
+			x = -5
 			y = 1
 			relative_position_id = SOV_great_purge
 	
@@ -1315,38 +1322,31 @@ focus = {
 		}
 
 		focus = {
-			id = SOV_stalin_constitution
-			icon = GFX_focus_SOV_stalin_constitution
-			prerequisite = { focus = SOV_collectivist_propaganda }
+			id = SOV_southern_fortification
+			icon = GFX_goal_generic_construct_military
+			prerequisite = { focus = SOV_great_purge }
 			x = -1
 			y = 1
-			relative_position_id = SOV_collectivist_propaganda
-			cost = 5
-			ai_will_do = {
-				factor = 1
-			}
-	
-			available_if_capitulated = yes
-	
-			completion_reward = {
-				add_political_power = 150
-			}
-		}
-
-		focus = {
-			id = SOV_far_east_fortification
-			icon = GFX_goal_generic_construct_military
-			prerequisite = { focus = SOV_collectivist_propaganda }
-			x = 1
-			y = 1
-			relative_position_id = SOV_collectivist_propaganda
-			cost = 5
+			relative_position_id = SOV_great_purge
+			cost = 2
 			ai_will_do = {
 				factor = 1
 			}
 			available = {
 			}
 			completion_reward = {
+				217 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = { type = bunker level = 5 province = 3529 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 11474 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 10896 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
+					}
+				}
 				218 = {
 					if = {
 						limit = { is_controlled_by = ROOT }
@@ -1544,6 +1544,25 @@ focus = {
 							}
 					}
 				}
+			}
+		}
+
+		focus = {
+			id = SOV_stalin_constitution
+			icon = GFX_focus_SOV_stalin_constitution
+			prerequisite = { focus = SOV_collectivist_propaganda focus = SOV_southern_fortification }
+			x = 2
+			y = 1
+			relative_position_id = SOV_collectivist_propaganda
+			cost = 5
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				add_political_power = 150
 			}
 		}
 
@@ -1925,7 +1944,7 @@ focus = {
 			id = SOV_positive_heroism
 			icon = GFX_goal_generic_cavalry
 			prerequisite = { focus = SOV_great_purge }
-			x = 4
+			x = 5
 			y = 1
 			relative_position_id = SOV_great_purge
 	
@@ -1954,33 +1973,14 @@ focus = {
 		}
 
 		focus = {
-			id = SOV_socialist_realism
-			icon = GFX_goal_generic_national_unity
-			prerequisite = { focus = SOV_positive_heroism }
-			x = 1
-			y = 1
-			relative_position_id = SOV_positive_heroism
-			cost = 5
-			ai_will_do = {
-				factor = 1
-			}
-	
-			available_if_capitulated = yes
-	
-			completion_reward = {
-				add_political_power = 150
-			}
-		}
-
-		focus = {
 			id = SOV_improve_stalin_line
 			icon = GFX_goal_generic_fortify_city
-			prerequisite = { focus = SOV_positive_heroism }
+			prerequisite = { focus = SOV_great_purge }
 			available = { has_offensive_war = no }
-			x = -1
+			x = 1
 			y = 1
-			relative_position_id = SOV_positive_heroism
-			cost = 5
+			relative_position_id = SOV_great_purge
+			cost = 2
 			ai_will_do = {
 				factor = 1
 			}
@@ -1990,55 +1990,55 @@ focus = {
 						limit = { is_controlled_by = ROOT }
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 117
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 71
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 6095
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 6035
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 70
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 11059
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 9212
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 6225
 							instant_build = yes
 						}
 						add_building_construction = {
 							type = bunker
-							level = 2
+							level = 3
 							province = 9242
 							instant_build = yes
 						}
@@ -2150,6 +2150,18 @@ focus = {
 							province = 6317
 							instant_build = yes
 						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3527
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6341
+							instant_build = yes
+						}
 					}
 				}
 				192 = {
@@ -2175,6 +2187,25 @@ focus = {
 						}
 					}
 				}
+			}
+		}
+
+		focus = {
+			id = SOV_socialist_realism
+			icon = GFX_goal_generic_national_unity
+			prerequisite = { focus = SOV_positive_heroism focus = SOV_improve_stalin_line }
+			x = -2
+			y = 1
+			relative_position_id = SOV_positive_heroism
+			cost = 5
+			ai_will_do = {
+				factor = 1
+			}
+	
+			available_if_capitulated = yes
+	
+			completion_reward = {
+				add_political_power = 150
 			}
 		}
 
