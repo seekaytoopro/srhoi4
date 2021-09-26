@@ -1241,8 +1241,8 @@ focus_tree = {
 		id = fin_continuation
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
 		available = {
-		date > 1941.6.22
-		is_ai = no
+			GER = { has_war_with = SOV }
+			is_ai = no
 		}
 				prerequisite = { focus = fin_continuation_prep }
 			relative_position_id = fin_continuation_prep
@@ -1254,10 +1254,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
-			}
+			FIN = { add_to_war = { targeted_alliance = GER enemy = SOV } }
+			# create_wargoal = {
+			# 	type = annex_everything
+			# 	target = SOV
+			# }
 		}
 	}
 
