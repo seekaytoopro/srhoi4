@@ -41,120 +41,120 @@ units = {
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 	division= {			
 		location = 7375
 		division_template = "Siberian Reinforcements"	
 		start_experience_factor = 0.6
-		start_equipment_factor = 0.20
+		start_equipment_factor = 0.40
 	}
 }
