@@ -169,90 +169,88 @@ units= {
 instant_effect = {
 
 	### Ships Under Construction Notes ###
-	# DD: Leningrad & Minsk variant (x4) ("Leningrad" "Moskva" "Kharkov" "Minsk")
 	add_equipment_production = {
 		equipment = {
-			type = ship_hull_light_2
+			type = convoy_1
 			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
 		}
-		requested_factories = 1
+		requested_factories = 6
 		progress = 0.70
 		amount = 2
 	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_light_2
-			creator = "SOV"
-			version_name = "Leningrad & Minsk Class"
-		}
-		requested_factories = 1
-		progress = 0.60
-		amount = 2
-	}
-	#CA Kirov Class (Kirov)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_1
-			creator = "SOV"
-			version_name = "Kirov Class"
-		}
-		requested_factories = 1
-		progress = 0.10
-		amount = 1
-	}
-	#CA Kirov Class (Voroshilov)
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_cruiser_1
-			creator = "SOV"
-			version_name = "Kirov Class"
-		}
-		requested_factories = 1
-		progress = 0.10
-		amount = 1
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_light_2
+	# 		creator = "SOV"
+	# 		version_name = "Leningrad & Minsk Class"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.60
+	# 	amount = 2
+	# }
+	# #CA Kirov Class (Kirov)
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_cruiser_1
+	# 		creator = "SOV"
+	# 		version_name = "Kirov Class"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.10
+	# 	amount = 1
+	# }
+	# #CA Kirov Class (Voroshilov)
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_cruiser_1
+	# 		creator = "SOV"
+	# 		version_name = "Kirov Class"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.10
+	# 	amount = 1
+	# }
 
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "SOV"
-			version_name = "Series IX Srednyaya"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 6
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "SOV"
-			version_name = "Series IX Srednyaya"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 12
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "SOV"
-			version_name = "Series IX Srednyaya"
-		}
-		requested_factories = 1
-		progress = 0.80
-		amount = 12
-	}
-	add_equipment_production = {
-		equipment = {
-			type = ship_hull_submarine_2
-			creator = "SOV"
-			version_name = "Series IX Srednyaya"
-		}
-		requested_factories = 1
-		progress = 0.70
-		amount = 5
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_submarine_2
+	# 		creator = "SOV"
+	# 		version_name = "Series IX Srednyaya"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.80
+	# 	amount = 6
+	# }
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_submarine_2
+	# 		creator = "SOV"
+	# 		version_name = "Series IX Srednyaya"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.80
+	# 	amount = 12
+	# }
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_submarine_2
+	# 		creator = "SOV"
+	# 		version_name = "Series IX Srednyaya"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.80
+	# 	amount = 12
+	# }
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = ship_hull_submarine_2
+	# 		creator = "SOV"
+	# 		version_name = "Series IX Srednyaya"
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.70
+	# 	amount = 5
+	# }
 }
 
 #####################

@@ -366,7 +366,7 @@ GER_case_anton = {
 		available = {
 		date > 1941.1.1
 		NOT = { has_completed_focus = GER_anti_comitern_pact }
-		has_manpower > 1545000 
+		has_manpower > 2430000 
 				}
 
 				allowed = {
@@ -379,13 +379,12 @@ GER_case_anton = {
 				cost = 0
 
 				visible = {
-		NOT = { has_completed_focus = GER_anti_comitern_pact }
-
+					NOT = { has_completed_focus = GER_ussr_war_goal }
 				}
 			
 				complete_effect = {	
 				load_oob = "GER_barbarossa_inf"
-				add_manpower = -1545000
+				add_manpower = -2430000
 			}
 		}
 	

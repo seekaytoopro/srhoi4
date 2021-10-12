@@ -238,6 +238,7 @@ division_template = {
 		maintenance_company = { x = 0 y = 4 }
 		field_hospital = { x = 0 y = 5 }
 		anti_air = { x = 0 y = 6 }
+		flamethrower = { x = 0 y = 7 }
 	}
 }
 division_template = {
@@ -276,6 +277,7 @@ division_template = {
 		maintenance_company = { x = 0 y = 4 }
 		field_hospital = { x = 0 y = 5 }
 		anti_air = { x = 0 y = 6 }
+		flamethrower = { x = 0 y = 7 }
 	}
 }
 
