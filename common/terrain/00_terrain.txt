@@ -129,8 +129,8 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		units = {
-			attack = -0.04
-			defence = -0.04
+			attack = -0.08
+			defence = -0.08
 		}
 	}
 
@@ -144,8 +144,8 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		units = {
-			attack = -0.12
-			defence = -0.12
+			attack = -0.15
+			defence = -0.15
 		}
 	}
 	

@@ -2924,37 +2924,50 @@ focus_tree = {
 						relative_position_id = GER_anti_comitern_pact
 						x = -2
 						y = 1
+
+						bypass = {
+							has_global_flag = total_war
+						}
+
+						complete_tooltip = {
+							add_ideas = the_great_turn
+						}
 						
 						available = {
+							always = no
+							# has_global_flag = total_war
 							OR = {
-								date > 1943.1.1
+								date > 1943.3.1
 								AND = { surrender_progress > 0.01 has_war_with = SOV }
-								AND = {
-									has_war_with = SOV
-									count_triggers = {
-										amount=3
-										NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
-										NOT = { 16={is_controlled_by_ROOT_or_ally = yes } }
-									}
-								}
+								has_global_flag = GDU_dday_started
+								# AND = {
+								# 	has_war_with = SOV
+								# 	count_triggers = {
+								# 		amount=3
+								# 		NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+								# 		NOT = { 16={is_controlled_by_ROOT_or_ally = yes } }
+								# 	}
+								# }
 							}
 						}
 						
 						cost = 1
 						
 						completion_reward = {
+							custom_effect_tooltip = "This focus is just here so you can see the effect of Total War
+							"
 							add_ideas = the_great_turn
 						}
 					}
@@ -2970,25 +2983,26 @@ focus_tree = {
 							#NOT = { has_idea = GER_fall_blau }
 							# NOT = { has_idea = GER_operation_citadel }
 							Date > 1941.1.1
-							OR = {
-								surrender_progress > 0.01
-								count_triggers={
-									amount=3
-									NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
-									NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
-								}
-							}
+							has_global_flag = GDU_dday_started
+							# OR = {
+							# 	surrender_progress > 0.01
+							# 	count_triggers={
+							# 		amount=3
+							# 		NOT = { 19={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 23={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 30={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 14={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 15={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 785={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 29={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 6={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 35={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 7={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 36={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 99={is_controlled_by_ROOT_or_ally = yes } }
+							# 		NOT = { 37={is_controlled_by_ROOT_or_ally = yes } }
+							# 	}
+							# }
 						}
 						cost = 1
 						ai_will_do = { factor = 1000 }
@@ -3690,6 +3704,9 @@ focus_tree = {
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 						}
+						hidden_effect = {
+							news_event = { hours = 6 id = news.810 }
+						}
 					}
 				}
 
@@ -3725,6 +3742,9 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
 							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_operation_citadel days = 55 }}}
+						}
+						hidden_effect = {
+							news_event = { hours = 6 id = news.811 }
 						}
 					}
 				}
@@ -3762,6 +3782,9 @@ focus_tree = {
 							ITA = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
 							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_operation_solstice days = 50 }}}
+						}
+						hidden_effect = {
+							news_event = { hours = 6 id = news.812 }
 						}
 					}
 				}

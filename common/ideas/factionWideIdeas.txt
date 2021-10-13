@@ -1047,6 +1047,38 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		GER_triumph_dday_idea = { 
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				stability_factor = 0.1
+				army_morale_factor = 0.05
+			}
+		}
+
+		ALLIES_fail_dday_idea = { 
+		
+			picture = chi_war_of_resistance	
+			
+			allowed = { 
+				always = no 
+			}
+			
+			removal_cost = -1 
+			
+			modifier = { 
+				army_morale_factor = -0.05
+				industrial_capacity_factory = -0.20
+			}
+		}
     }
 
 	hidden_ideas = {

@@ -4914,3 +4914,95 @@ news_event = {
 	}
 }
 
+ ### Germany declares Totaler Krieg
+ country_event = { 
+	id = news.808
+	title = news.808.t
+	desc = news.808.d 
+	picture = GFX_report_event_hitler_croatia_handshake  
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	major = yes
+	immediate = { set_global_flag = total_war }
+	
+	option = { 
+		name = news.808.a
+		trigger = { TAG = GER }
+		add_ideas = the_great_turn
+	}
+	option = { 
+		name = news.808.a
+		trigger = { NOT = { TAG = GER } }
+	}
+	
+}
+
+ ### DDay launched -> 1 Year for either side to win it before receiving buffs/debuffs
+ news_event = {
+	id = news.809
+	title = news.809.t
+	desc = news.809.d
+	picture = GFX_report_event_ast_troops_landing
+
+	is_triggered_only = yes
+	major = yes
+
+	fire_only_once = no
+
+	option = {
+		name = news.809.a
+	}
+
+}
+
+ ### Germans Launch Fall Blau
+news_event = {
+	id = news.810
+	title = news.810.t
+	desc = news.810.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+	major = yes
+
+	fire_only_once = no
+
+	option = {
+		name = news.810.a
+	}
+}
+
+ ### Germans Launch Citadel
+ news_event = {
+	id = news.811
+	title = news.811.t
+	desc = news.811.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+	major = yes
+
+	fire_only_once = no
+
+	option = {
+		name = news.811.a
+	}
+}
+
+ ### Germans Launch Solstice
+ news_event = {
+	id = news.812
+	title = news.812.t
+	desc = news.812.d
+	picture = GFX_report_event_fall_blau
+
+	is_triggered_only = yes
+	major = yes
+
+	fire_only_once = no
+
+	option = {
+		name = news.812.a
+	}
+}

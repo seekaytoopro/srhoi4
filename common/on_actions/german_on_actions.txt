@@ -1,0 +1,80 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#Custom DDay state array from GDU
+			735 = { add_to_array = { global.dday_state_array = THIS } }
+			21 = { add_to_array = { global.dday_state_array = THIS } }
+			18 = { add_to_array = { global.dday_state_array = THIS } }
+			31 = { add_to_array = { global.dday_state_array = THIS } }
+			19 = { add_to_array = { global.dday_state_array = THIS } }
+			23 = { add_to_array = { global.dday_state_array = THIS } }
+			30 = { add_to_array = { global.dday_state_array = THIS } }
+			14 = { add_to_array = { global.dday_state_array = THIS } }
+			15 = { add_to_array = { global.dday_state_array = THIS } }
+			785 = { add_to_array = { global.dday_state_array = THIS } }
+			29 = { add_to_array = { global.dday_state_array = THIS } }
+			6 = { add_to_array = { global.dday_state_array = THIS } }
+			7 = { add_to_array = { global.dday_state_array = THIS } }
+			36 = { add_to_array = { global.dday_state_array = THIS } }
+			56 = { add_to_array = { global.dday_state_array = THIS } }
+			59 = { add_to_array = { global.dday_state_array = THIS } }
+			58 = { add_to_array = { global.dday_state_array = THIS } }
+			99 = { add_to_array = { global.dday_state_array = THIS } }
+			61 = { add_to_array = { global.dday_state_array = THIS } }
+			62 = { add_to_array = { global.dday_state_array = THIS } }
+			63 = { add_to_array = { global.dday_state_array = THIS } }
+			85 = { add_to_array = { global.dday_state_array = THIS } }
+			788 = { add_to_array = { global.dday_state_array = THIS } }
+			763 = { add_to_array = { global.dday_state_array = THIS } }
+			340 = { add_to_array = { global.dday_state_array = THIS } }
+			346 = { add_to_array = { global.dday_state_array = THIS } }
+		}
+	}	
+	
+	on_monthly_GER = {
+		effect = {
+			#### Check for DDay. If a DDay occurs, Axis gets a mission to defeat the DDay within 1 year; if they defeat it, Axis gets some buffs and Allies lose stability/war support because of the failed DDay. Germany's Totaler Krieg event also gets triggered upon DDay, if it has not already been triggered. The idea is that this gives Allies realistic incentives for DDay; they shouldn't want to launch one until they are sure that they will succeed, because in reality a failed DDay would have been a disaster and would have resulted in large amounts of lost/captured equipment (like Dunkirk) and would have been a PR disaster for the Democracies that relied on popular support for continuing the war. ####
+			if = {
+				limit = {
+					NOT = { has_global_flag = GDU_dday_started }
+					date > 1941.1.1
+
+					#For states look in on startup
+					any_of_scopes = {
+						array = global.dday_state_array
+
+						is_controlled_by_allied_country = yes
+					}
+				}
+
+						
+					set_global_flag = GDU_dday_started
+					GER = {
+						activate_mission = GER_defeat_dday
+						annex_country = { target = EFR transfer_troops = no }
+					}
+					# ITA = {
+					# 	set_country_flag = case_anton
+					# }
+					news_event = { days = 0 id = news.809 }
+					if = {
+						limit = {
+							NOT = { has_global_flag = total_war }
+						}
+						# GER = { country_event = { id = pfu.21 } }
+						news_event = { days = 7 id = news.808 }
+					}
+				
+			}
+			# If the date is past jan 1st 1943, Germany declares Total war
+			if = { limit = { date > 1943.1.1 } 
+				if = {
+					limit = {
+						NOT = { has_global_flag = total_war }
+					}
+					news_event = { days = 1 id = news.808 }
+				}
+			}
+		}
+	}
+}

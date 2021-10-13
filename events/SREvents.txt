@@ -485,4 +485,3 @@ country_event = {
 		country_event = { id = srevents.806 }
 	}
  }
-

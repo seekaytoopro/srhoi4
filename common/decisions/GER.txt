@@ -155,10 +155,9 @@ GER_case_anton = {
 
 		days_mission_timeout = 60
 		
-		timeout_effect = {  	GER = { add_to_faction = EFR } EFR = { add_to_variable={vichy_legitimacy_mechanic_stability_factor=0.2} }	}
+		timeout_effect = {  GER = { add_to_faction = EFR } }
 	
 		complete_effect = {	GER = { puppet = EFR }	
-		# if = { limit = { EFR = { is_ai = no }}  EFR = { add_ideas = CHI_illegal_regime } }
 		}
 	
 	}
@@ -388,7 +387,237 @@ GER_case_anton = {
 			}
 		}
 	
-	} 
+
+		GER_defeat_dday = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			#added through on_action
+			tag = GER
+		}
+
+		available = {
+
+			custom_trigger_tooltip = {
+				tooltip = GER_defeat_dday_tt
+			}
+
+			340 = { is_controlled_by_allied_country = no }
+			346 = { is_controlled_by_allied_country = no }
+			735 = { is_controlled_by_allied_country = no }
+			21 = { is_controlled_by_allied_country = no }
+			18 = { is_controlled_by_allied_country = no }
+			31 = { is_controlled_by_allied_country = no }
+			19 = { is_controlled_by_allied_country = no }
+			23 = { is_controlled_by_allied_country = no }
+			30 = { is_controlled_by_allied_country = no }
+			14 = { is_controlled_by_allied_country = no }
+			15 = { is_controlled_by_allied_country = no }
+			785 = { is_controlled_by_allied_country = no }
+			29 = { is_controlled_by_allied_country = no }
+			6 = { is_controlled_by_allied_country = no }
+			7 = { is_controlled_by_allied_country = no }
+			36 = { is_controlled_by_allied_country = no }
+			56 = { is_controlled_by_allied_country = no }
+			59 = { is_controlled_by_allied_country = no }
+			58 = { is_controlled_by_allied_country = no }
+			99 = { is_controlled_by_allied_country = no }
+			61 = { is_controlled_by_allied_country = no }
+			62 = { is_controlled_by_allied_country = no }
+			63 = { is_controlled_by_allied_country = no }
+			85 = { is_controlled_by_allied_country = no }
+			788 = { is_controlled_by_allied_country = no }
+			763 = { is_controlled_by_allied_country = no }
+		}
+
+		days_mission_timeout = 999
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			set_global_flag = GDU_dday_defeated
+			clr_global_flag = GDU_dday_started
+			add_war_support = 0.2
+			add_stability = 0.2
+
+			add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 8000 producer = USA }
+			add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 2000 producer = USA }
+
+			add_equipment_to_stockpile = { type = anti_air_equipment_2 amount = 500 producer = USA }
+			add_equipment_to_stockpile = { type = anti_air_equipment_3 amount = 150 producer = USA }
+
+			add_equipment_to_stockpile = { type = artillery_equipment_2 amount = 800 producer = USA }
+			add_equipment_to_stockpile = { type = artillery_equipment_3 amount = 200 producer = USA }
+
+			add_equipment_to_stockpile = { type = anti_tank_equipment_2 amount = 600 producer = USA }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_3 amount = 150 producer = USA }
+
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = USA }
+			add_equipment_to_stockpile = { type = mechanized_equipment_2 amount = 700 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = USA }
+
+			add_equipment_to_stockpile = { type = heavy_tank_equipment_2 amount = 200 producer = USA }
+			add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 200 producer = USA }
+			add_equipment_to_stockpile = { type = medium_tank_equipment_2 amount = 1000 producer = USA }
+
+			add_timed_idea = { idea = GER_triumph_dday_idea days = 365 }
+			USA = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			ENG = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			CAN = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			SAF = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			AST = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			NZL = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			RAJ = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+			FRF = {
+				add_timed_idea = { idea = ALLIES_fail_dday_idea days = 180 }
+				add_war_support = -0.2
+				add_political_power = -100
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.05
+				}
+			}
+
+
+		}
+
+		timeout_effect = {
+			set_global_flag = GDU_dday_succeeded
+ 			set_global_flag = GDU_dday_started
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+} 
 
 #Category only allowed for GER
 GER_military_buildup = {

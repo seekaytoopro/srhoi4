@@ -175,3 +175,23 @@
  soviet.302.t:0 "Reinforcements from Siberia!"
  soviet.302.d:0 "Reinforcements have arrived from Siberia! Due to the state of the western front, §B[?SOV.SOV_divs_spawned]§! divisions have been diverted to strengthen our armies, and 2 new fully equipped heavy tank divisions fresh from our factories in the Urals have arrived!"
  soviet.302.a:0 "For The Motherland!"
+
+ news.808.t:0 "Germany Declares Total War!"
+ news.808.d:0 "With the war becoming a threat to Germany itself, German leaders have declared Totaler Krieg - Total War!"
+ news.808.a:0 "The real fighting starts now..."
+
+ news.809.t:0 "DDay - Operation Overlord"
+ news.809.d:0 "DDay, the long-awaited and much feared Allied invasion of occupied Europe, has begun. \n\n The world holds its breath.\n\n"
+ news.809.a:0 "The time has come..."
+
+ news.810.t:0 "Fall Blau Begins!"
+ news.810.d:0 "The German Armed Forces High Command (OKW) has launched FALL BLAU (Case Blue,) a massive and renewed offensive against the Soviet Union."
+ news.810.a:0 "The World Holds its Breath"
+
+ news.811.t:0 "Operation Citadel Begins!"
+ news.811.d:0 "The German Armed Forces High Command (OKW) has launched Unternehmen Zitadel (Operation Citadel) a massive and renewed offensive against the Soviet Union."
+ news.811.a:0 "The World Holds its Breath"
+
+ news.812.t:0 "Operation Solstice Begins!"
+ news.812.d:0 "The German Armed Forces High Command (OKW) has launched Unternehmen Sonnenwende (Operation Solstice) a last ditch offensive against the Soviet Union."
+ news.812.a:0 "The World Holds its Breath"

@@ -968,7 +968,7 @@ focus_tree = {
 
 	focus = {
 		id = JAP_japanese_settlement
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_focus_research
 		prerequisite = { focus = JAP_heavy_industry_development }
 		prerequisite = { focus = JAP_light_industry_development }
 		prerequisite = { focus = JAP_develop_aluminum_sources }
@@ -1017,6 +1017,7 @@ focus_tree = {
 				# technology = construction4
 				# technology = construction5
 			}
+			if = { limit = { country_exists = MAN } add_research_slot = 1 }
 			715 = { add_extra_state_shared_building_slots = 3 }
 			610 = { add_extra_state_shared_building_slots = 3 }
 			328 = { add_extra_state_shared_building_slots = 3 }
