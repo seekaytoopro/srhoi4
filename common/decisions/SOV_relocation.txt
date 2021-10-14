@@ -3995,7 +3995,7 @@ SOV_industry_relocation = {
 		}
 
 		fire_only_once = no
-		days_mission_timeout = 30
+		days_mission_timeout = 10
 
 		visible = {
 			SOV = { has_war_with = GER }
