@@ -65,7 +65,13 @@ SOV_barb_debuff_category = {
 			hidden_effect = {
 				set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
 			}
-			SOV_barb_debuff_level_up = yes
+			# Only decrease the purge penalty during the non-winter months
+			# this is to delay Soviets becoming fully operational during the winter
+			# and then easily battleplanning the axis come spring
+			if = { limit = { OR = { date < 1941.20.15 date > 1942.3.5 } }
+				SOV_barb_debuff_level_up = yes
+			}
+				
 			if = {
 				limit = {
 					check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }

@@ -2,10 +2,38 @@
 #Important to put HIGHEST first
 SOV_barb_debuff_level_up = {
 	if = {
+		limit = { has_idea = SOV_barb_debuff_24 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_24
+			add_idea = SOV_barb_debuff_ended
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_23 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_23
+			add_idea = SOV_barb_debuff_24
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_22 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_22
+			add_idea = SOV_barb_debuff_23
+		}		
+	}
+	if = {
+		limit = { has_idea = SOV_barb_debuff_21 }
+		swap_ideas = {
+			remove_idea = SOV_barb_debuff_21
+			add_idea = SOV_barb_debuff_22
+		}		
+	}
+	if = {
 		limit = { has_idea = SOV_barb_debuff_20 }
 		swap_ideas = {
 			remove_idea = SOV_barb_debuff_20
-			add_idea = SOV_barb_debuff_ended
+			add_idea = SOV_barb_debuff_21
 		}		
 	}
 	else_if = {
