@@ -18,9 +18,9 @@ ideas = {
 
 				modifier = {
 			industrial_capacity_dockyard = -10
-			production_speed_dockyard_factor = -10
-			production_speed_naval_base_factor  = -10
-			production_speed_air_base_factor = -10
+			production_speed_dockyard_factor = -1
+			production_speed_naval_base_factor  = -1
+			production_speed_air_base_factor = -1
 			air_range_factor = -10
 			}
 
@@ -44,9 +44,9 @@ SPR_no_navy2 = {
 
 				modifier = {
 			industrial_capacity_dockyard = -10
-			production_speed_dockyard_factor = -10
-			production_speed_naval_base_factor  = -10
-			production_speed_air_base_factor = -10
+			production_speed_dockyard_factor = -1
+			production_speed_naval_base_factor  = -1
+			production_speed_air_base_factor = -1
 			air_range_factor = -10
 			}
 

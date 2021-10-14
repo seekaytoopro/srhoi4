@@ -4930,6 +4930,14 @@ news_event = {
 		name = news.808.a
 		trigger = { TAG = GER }
 		add_ideas = the_great_turn
+		hidden_effect = {
+			ITA = { add_ideas = the_great_turn }
+			SPR = { add_ideas = the_great_turn }
+			HUN = { add_ideas = the_great_turn }
+			BUL = { add_ideas = the_great_turn }
+			ROM = { add_ideas = the_great_turn }
+			CRO = { add_ideas = the_great_turn }
+		}
 	}
 	option = { 
 		name = news.808.a
