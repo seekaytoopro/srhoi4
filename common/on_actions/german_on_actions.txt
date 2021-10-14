@@ -66,8 +66,8 @@ on_actions = {
 					}
 				
 			}
-			# If the date is past jan 1st 1943, Germany declares Total war
-			if = { limit = { date > 1943.1.1 } 
+			# If the date is past march 1st 1943, Germany declares Total war
+			if = { limit = { date > 1943.3.1 } 
 				if = {
 					limit = {
 						NOT = { has_global_flag = total_war }
