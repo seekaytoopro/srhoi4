@@ -88,7 +88,7 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75 -- (.75) Maximum d
 NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 20.0 -- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0 -- (20.0?)
 NDefines.NAir.DISRUPTION_FACTOR = 7  -- (4 -> 7) with decent radar coverage equal amounts of fighters vs naval bombers will disrupt almost all naval bombers if not escorted, with low detection very few bombers are intercepted still
-NDefines.NAir.ESCORT_FACTOR = 7 -- (2 -> 3) to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
+NDefines.NAir.ESCORT_FACTOR = 2.5 -- (2 -> 3) to make sure that escorted planes are still capable of bombing, with equal escorts/interceptors most of bombers get through Keep in mind that these values will also affect how cas/tac/strat bombers work, they make escorting planes much more important (which imo is 100% fine)
 
 NDefines.NAir.DISRUPTION_DEFENCE_SPEED_FACTOR = 130
 NDefines.NAir.AIR_WING_MAX_STATS_SPEED = 25000
@@ -186,7 +186,7 @@ NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.12 -- -0.12 vanilla, per level 
 
 NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 0.4
 --NDefines.NAir.DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 1
-NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.5 -- (3.0) How many of our planes can engage per enemy plane, reduced to encourage trading
+NDefines.NAir.COMBAT_MULTIPLANE_CAP = 1.6 -- (3.0) How many of our planes can engage per enemy plane, reduced to encourage trading
 NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disrupted only planes are allowed to die in a single combat
 
 NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
