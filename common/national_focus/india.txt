@@ -1593,7 +1593,7 @@ focus_tree = {
 
 	focus = {
 		id = RAJ_institute_of_fundamental_research
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_research
 		prerequisite = { focus = RAJ_indian_institute_of_science }
 		x = 0
 		y = 3
@@ -1619,14 +1619,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			custom_effect_tooltip = available_theorist
-			show_ideas_tooltip = RAJ_homi_j_bhabha
-			add_tech_bonus = {
-				name = RAJ_institute_of_fundamental_research
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
+			# custom_effect_tooltip = available_theorist
+			# show_ideas_tooltip = RAJ_homi_j_bhabha
+			add_ideas = ENG_colonial_elite
+			# add_tech_bonus = {
+			# 	name = RAJ_institute_of_fundamental_research
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = nuclear
+			# }
 		}
 	}
 
@@ -1833,6 +1834,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			787 = {
+				add_resource = {
+					type = steel
+					amount = 6
+				}			
+			}
 			add_tech_bonus = {
 				name = RAJ_screening_effort
 				bonus = 1.0
@@ -2162,7 +2169,7 @@ focus_tree = {
 		}
 
 		available = {
-			has_war = yes
+			# has_war = yes
 		}
 
 		cancel_if_invalid = no
@@ -2170,12 +2177,12 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			add_stability = 0.05
+			add_stability = 0.10
 
 		}
 
 		completion_reward = {
-			add_stability = 0.05
+			add_stability = 0.10
 		}
 	}
 

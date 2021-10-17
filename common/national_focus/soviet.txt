@@ -1961,7 +1961,7 @@ focus = {
 		focus = {
 			id = SOV_stalin_constitution
 			icon = GFX_focus_SOV_stalin_constitution
-			prerequisite = { focus = SOV_collectivist_propaganda focus = SOV_southern_fortification }
+			prerequisite = { focus = SOV_collectivist_propaganda }
 			x = 2
 			y = 1
 			relative_position_id = SOV_collectivist_propaganda
@@ -2604,7 +2604,7 @@ focus = {
 		focus = {
 			id = SOV_socialist_realism
 			icon = GFX_goal_generic_national_unity
-			prerequisite = { focus = SOV_positive_heroism focus = SOV_improve_stalin_line }
+			prerequisite = { focus = SOV_positive_heroism }
 			x = -2
 			y = 1
 			relative_position_id = SOV_positive_heroism

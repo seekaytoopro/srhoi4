@@ -1043,8 +1043,8 @@ focus_tree = {
 				uses = 1
 				technology = tech_field_hospital2
 			}
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = walther_von_brauchitsch		
+			# custom_effect_tooltip = available_chief_of_army
+			# show_ideas_tooltip = walther_von_brauchitsch		
 		}
 	}
 	
