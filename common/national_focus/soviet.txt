@@ -47,42 +47,6 @@ focus_tree = {
 
 			remove_ideas = trotskyite_plot
 			add_ideas = trotskyite_plot_purged
-		}
-	}
-
-
-	focus = {
-		id = SOV_move_industry_to_urals
-		icon = GFX_goal_generic_construct_civilian
-		x = 0
-		y = 3
-		relative_position_id = SOV_great_purge
-		prerequisite = { focus = SOV_great_purge }
-
-		cost = 0.1
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-
-		available = {
-			OR = {
-				has_war_with = GER
-				ENG = { surrender_progress > 0.15 }
-				USA = { surrender_progress > 0.15 }
-				date>1941.10.1
-			}
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		completion_reward = {		
-			add_ideas = tot_economic_mobilisation
-			add_ideas = defend_the_motherland
-			add_timed_idea = { idea=industry_relocation days = 180 }
-			add_offsite_building = { type = industrial_complex level = 10 }
 
 			hidden_effect = {
 				219 = {
@@ -173,7 +137,454 @@ focus_tree = {
 						}
 					}
 				}
+				263 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 117
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 71
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6095
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6035
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 70
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11059
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9212
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6225
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9242
+							instant_build = yes
+						}
+					}
+				}
+				242 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9954
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 306
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9858
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 10399
+							instant_build = yes
+						}
+					}
+				}
+				202 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 525
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 10781
+							instant_build = yes
+						}
+					}
+				}
+				206 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11370
+							instant_build = yes
+						}
+					}
+				}
+				246 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11349
+							instant_build = yes
+						}
+					}
+				}
+				252 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3303
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11375
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11277
+							instant_build = yes
+						}
+					}
+				}
+				260 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 413
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6317
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3527
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6341
+							instant_build = yes
+						}
+					}
+				}
+				192 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3686
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 705
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11670
+							instant_build = yes
+						}
+					}
+				}
+				217 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = { type = bunker level = 5 province = 3529 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 11474 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 10896 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
+						add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
+					}
+				}
+				218 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province = 9417
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 9417
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 3
+								province = 5082
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 2
+								province = 5082
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 3
+								province = 9430
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 2
+								province = 585
+								instant_build = yes
+							}
+						}
+					}
+				231 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province = 3653
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 3653
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province = 772
+								instant_build = yes
+							}
+						}
+					}
+				234 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = coastal_bunker
+								level = 5
+								province = 719
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 719
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 3
+								province = 717
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = coastal_bunker
+								level = 3
+								province = 11668
+								instant_build = yes
+							}
+						}
+					}
+				229 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 9715
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 11704
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 12434
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 4473
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 4614
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 1536
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 5
+								province = 7661
+								instant_build = yes
+							}
+					}
+				}
+				230 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 12320
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 6997
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 4660
+								instant_build = yes
+							}
+					}
+				}
+				419 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 7604
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 1896
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 12793
+								instant_build = yes
+							}
+					}
+				}
+				420 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 4901
+								instant_build = yes
+							}
+					}
+				}
 			}
+		}
+	}
+
+
+	focus = {
+		id = SOV_move_industry_to_urals
+		icon = GFX_goal_generic_construct_civilian
+		x = 0
+		y = 3
+		relative_position_id = SOV_great_purge
+		prerequisite = { focus = SOV_great_purge }
+
+		cost = 0.1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			OR = {
+				has_war_with = GER
+				ENG = { surrender_progress > 0.15 }
+				USA = { surrender_progress > 0.15 }
+				date>1941.10.1
+			}
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		completion_reward = {		
+			add_ideas = tot_economic_mobilisation
+			add_ideas = defend_the_motherland
+			add_timed_idea = { idea=industry_relocation days = 180 }
+			add_offsite_building = { type = industrial_complex level = 10 }
 		}
 
 	}
@@ -1321,231 +1732,231 @@ focus = {
 			}
 		}
 
-		focus = {
-			id = SOV_southern_fortification
-			icon = GFX_goal_generic_construct_military
-			prerequisite = { focus = SOV_great_purge }
-			x = -1
-			y = 1
-			relative_position_id = SOV_great_purge
-			cost = 2
-			ai_will_do = {
-				factor = 1
-			}
-			available = {
-			}
-			completion_reward = {
-				217 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = { type = bunker level = 5 province = 3529 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 11474 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 10896 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
-						add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
-					}
-				}
-				218 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = coastal_bunker
-								level = 5
-								province = 9417
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 9417
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = coastal_bunker
-								level = 3
-								province = 5082
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 2
-								province = 5082
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = coastal_bunker
-								level = 3
-								province = 9430
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 2
-								province = 585
-								instant_build = yes
-							}
-						}
-					}
-				231 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = coastal_bunker
-								level = 5
-								province = 3653
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 3653
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = coastal_bunker
-								level = 5
-								province = 772
-								instant_build = yes
-							}
-						}
-					}
-				234 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = coastal_bunker
-								level = 5
-								province = 719
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 719
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = coastal_bunker
-								level = 3
-								province = 717
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = coastal_bunker
-								level = 3
-								province = 11668
-								instant_build = yes
-							}
-						}
-					}
-				229 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 9715
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 11704
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 12434
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 4473
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 4614
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 1536
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 5
-								province = 7661
-								instant_build = yes
-							}
-					}
-				}
-				230 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 12320
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 6997
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 4660
-								instant_build = yes
-							}
-					}
-				}
-				419 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 7604
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 1896
-								instant_build = yes
-							}
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 12793
-								instant_build = yes
-							}
-					}
-				}
-				420 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-							add_building_construction = {
-								type = bunker
-								level = 3
-								province = 4901
-								instant_build = yes
-							}
-					}
-				}
-			}
-		}
+		# focus = {
+		# 	id = SOV_southern_fortification
+		# 	icon = GFX_goal_generic_construct_military
+		# 	prerequisite = { focus = SOV_great_purge }
+		# 	x = -1
+		# 	y = 1
+		# 	relative_position_id = SOV_great_purge
+		# 	cost = 2
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# 	available = {
+		# 	}
+		# 	completion_reward = {
+		# 		217 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = { type = bunker level = 5 province = 3529 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 11474 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 10896 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 10476 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 7916 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 498 instant_build = yes }
+		# 				add_building_construction = { type = bunker level = 3 province = 12769 instant_build = yes }
+		# 			}
+		# 		}
+		# 		218 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 5
+		# 						province = 9417
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 9417
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 3
+		# 						province = 5082
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 2
+		# 						province = 5082
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 3
+		# 						province = 9430
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 2
+		# 						province = 585
+		# 						instant_build = yes
+		# 					}
+		# 				}
+		# 			}
+		# 		231 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 5
+		# 						province = 3653
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 3653
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 5
+		# 						province = 772
+		# 						instant_build = yes
+		# 					}
+		# 				}
+		# 			}
+		# 		234 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 5
+		# 						province = 719
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 719
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 3
+		# 						province = 717
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = coastal_bunker
+		# 						level = 3
+		# 						province = 11668
+		# 						instant_build = yes
+		# 					}
+		# 				}
+		# 			}
+		# 		229 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 9715
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 11704
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 12434
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 4473
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 4614
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 1536
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 5
+		# 						province = 7661
+		# 						instant_build = yes
+		# 					}
+		# 			}
+		# 		}
+		# 		230 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 12320
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 6997
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 4660
+		# 						instant_build = yes
+		# 					}
+		# 			}
+		# 		}
+		# 		419 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 7604
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 1896
+		# 						instant_build = yes
+		# 					}
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 12793
+		# 						instant_build = yes
+		# 					}
+		# 			}
+		# 		}
+		# 		420 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 					add_building_construction = {
+		# 						type = bunker
+		# 						level = 3
+		# 						province = 4901
+		# 						instant_build = yes
+		# 					}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		focus = {
 			id = SOV_stalin_constitution
@@ -1972,223 +2383,223 @@ focus = {
 			}
 		}
 
-		focus = {
-			id = SOV_improve_stalin_line
-			icon = GFX_goal_generic_fortify_city
-			prerequisite = { focus = SOV_great_purge }
-			available = { has_offensive_war = no }
-			x = 1
-			y = 1
-			relative_position_id = SOV_great_purge
-			cost = 2
-			ai_will_do = {
-				factor = 1
-			}
-			completion_reward = {
-				263 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 117
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 71
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6095
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6035
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 70
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11059
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9212
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6225
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9242
-							instant_build = yes
-						}
-					}
-				}
-				242 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9954
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 306
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 9858
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 10399
-							instant_build = yes
-						}
-					}
-				}
-				202 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 525
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 10781
-							instant_build = yes
-						}
-					}
-				}
-				206 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 11370
-							instant_build = yes
-						}
-					}
-				}
-				246 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11349
-							instant_build = yes
-						}
-					}
-				}
-				252 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3303
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11375
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 11277
-							instant_build = yes
-						}
-					}
-				}
-				260 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 413
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6317
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3527
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 6341
-							instant_build = yes
-						}
-					}
-				}
-				192 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 3686
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 3
-							province = 705
-							instant_build = yes
-						}
-						add_building_construction = {
-							type = bunker
-							level = 4
-							province = 11670
-							instant_build = yes
-						}
-					}
-				}
-			}
-		}
+		# focus = {
+		# 	id = SOV_improve_stalin_line
+		# 	icon = GFX_goal_generic_fortify_city
+		# 	prerequisite = { focus = SOV_great_purge }
+		# 	available = { has_offensive_war = no }
+		# 	x = 1
+		# 	y = 1
+		# 	relative_position_id = SOV_great_purge
+		# 	cost = 2
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# 	completion_reward = {
+		# 		263 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 117
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 71
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 6095
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 6035
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 70
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 11059
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 9212
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 6225
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 9242
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		242 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 9954
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 306
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 9858
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 10399
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		202 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 4
+		# 					province = 525
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 4
+		# 					province = 10781
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		206 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 4
+		# 					province = 11370
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		246 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 11349
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		252 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 3303
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 11375
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 11277
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		260 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 413
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 6317
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 3527
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 6341
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 		192 = {
+		# 			if = {
+		# 				limit = { is_controlled_by = ROOT }
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 3686
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 3
+		# 					province = 705
+		# 					instant_build = yes
+		# 				}
+		# 				add_building_construction = {
+		# 					type = bunker
+		# 					level = 4
+		# 					province = 11670
+		# 					instant_build = yes
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		focus = {
 			id = SOV_socialist_realism

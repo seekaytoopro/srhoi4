@@ -520,7 +520,7 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Albert Kesselring"
+	name = "Albert Kesselring (VERY GOOD FOR TANKS)"
 	picture = "Portrait_Germany_Albert_Kesselring.dds"
 	traits = { media_personality old_guard trait_cautious hill_fighter unyielding_defender defensive_doctrine inspirational_leader logistics_wizard thorough_planner career_officer war_hero inflexible_strategist organizer skilled_staffer trait_mountaineer}
 	skill = 6

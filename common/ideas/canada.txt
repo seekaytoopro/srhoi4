@@ -496,21 +496,21 @@ ideas = {
 			
 			traits = { military_theorist }
 		}
-		CAN_george_volkoff = {
-			ledger = army
+		# CAN_george_volkoff = {
+		# 	ledger = army
 					
-			picture = generic_political_advisor_europe_2
+		# 	picture = generic_political_advisor_europe_2
 
-			allowed = {
-				original_tag = CAN
-			}
+		# 	allowed = {
+		# 		original_tag = CAN
+		# 	}
 			
-			research_bonus = {
-				nuclear = 0.1
-			}
+		# 	research_bonus = {
+		# 		nuclear = 0.1
+		# 	}
 			
-			traits = { nuclear_scientist }
-		}
+		# 	traits = { nuclear_scientist }
+		# }
 		CAN_robert_leckie = {
 			ledger = air
 					
@@ -530,21 +530,21 @@ ideas = {
 	# MILITARY
 	army_chief = {
 		
-		CAN_harry_crerar = {
-			picture = generic_army_europe_4
+		# CAN_harry_crerar = {
+		# 	picture = generic_army_europe_4
 			
-			allowed = {
-				original_tag = CAN
-			}
+		# 	allowed = {
+		# 		original_tag = CAN
+		# 	}
 			
 
 			
-			traits = { army_chief_old_guard }
+		# 	traits = { army_chief_old_guard }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
 		CAN_andrew_mcnaughton = {
 			picture = generic_army_europe_3
@@ -562,21 +562,21 @@ ideas = {
 			}
 		}
 
-		CAN_george_pearkes = {
-			picture = generic_army_europe_3
+		# CAN_george_pearkes = {
+		# 	picture = generic_army_europe_3
 			
-			allowed = {
-				original_tag = CAN
-			}
+		# 	allowed = {
+		# 		original_tag = CAN
+		# 	}
 			
 
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 
 	air_chief = {

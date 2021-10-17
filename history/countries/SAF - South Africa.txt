@@ -171,7 +171,7 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Dan Pienaar"
+	name = "Dan Pienaar (USE FOR INF)"
 	picture = "Portrait_SAF_Dan_Pienaar.tga"
 	traits = { brilliant_strategist trait_cautious skilled_staffer career_officer infantry_leader organizer media_personality}
 	skill = 5
@@ -181,7 +181,7 @@ create_field_marshal = {
 	logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Christiaan du Toit"
+	name = "Christiaan du Toit (USE FOR TANKS)"
 	picture = "Portrait_SAF_Christiaan_du_Toit.tga"
 	traits = { organizer harsh_leader commando desert_fox armor_officer panzer_leader career_officer}
 	skill = 5
@@ -241,7 +241,7 @@ create_corps_commander = {
 	logistics_skill = 3
 }
 create_corps_commander = {
-	name = "Nick Bierman"
+	name = "Nick Bierman (USE FOR TANKS)"
 	picture = "Portrait_SAF_Nick_Bierman.tga"
 	traits = { harsh_leader trait_reckless career_officer armor_officer organizer panzer_leader desert_fox }
 	skill = 5

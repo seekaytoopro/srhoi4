@@ -748,42 +748,42 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		ROM_emanoil_ionescu = {
-			ledger = air
+		# ROM_emanoil_ionescu = {
+		# 	ledger = air
 					
 					
-			allowed = {
-				original_tag = ROM
-			}
+		# 	allowed = {
+		# 		original_tag = ROM
+		# 	}
 			
-			picture = generic_air_europe_1
+		# 	picture = generic_air_europe_1
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		air_doctrine = 0.10
+		# 	}
 			
-			traits = { air_warfare_theorist }
-		}
+		# 	traits = { air_warfare_theorist }
+		# }
 	}
 	# MILITARY
 	army_chief = {
 
-		ROM_constantin_sanatescu = {
+		# ROM_constantin_sanatescu = {
 			
-			picture = generic_army_europe_2
+		# 	picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = ROM
-			}
+		# 	allowed = {
+		# 		original_tag = ROM
+		# 	}
 			
 
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
 		ROM_ion_antonescu = {
 			
@@ -941,21 +941,21 @@ ideas = {
 			}
 		}
 
-		ROM_gheorghe_vasiliu = {
-			ledger = air
+		# ROM_gheorghe_vasiliu = {
+		# 	ledger = air
 
-			allowed = {
-				original_tag = ROM
-			}
+		# 	allowed = {
+		# 		original_tag = ROM
+		# 	}
 
-			picture = generic_air_europe_1
+		# 	picture = generic_air_europe_1
 
-			traits = { air_airborne_2 }
+		# 	traits = { air_airborne_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	
 	

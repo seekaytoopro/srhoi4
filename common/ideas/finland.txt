@@ -84,323 +84,323 @@ ideas = {
 		
 	}
 
-	political_advisor = {
+	# political_advisor = {
 
-		FIN_ake_henrik_gartz = {
+	# 	FIN_ake_henrik_gartz = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
+	# 		traits = { captain_of_industry }
+	# 	}
 
-		FIN_antti_hackzell = {
+	# 	FIN_antti_hackzell = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			traits = { silent_workhorse }
-		}
-	}
-	theorist = {
+	# 		traits = { silent_workhorse }
+	# 	}
+	# }
+	# theorist = {
 
-		FIN_akseli_anttila = {
-			ledger = army
+	# 	FIN_akseli_anttila = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_2		
+	# 		picture = generic_army_europe_2		
 					
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 
-		FIN_vaino_valve = {
-			ledger = navy
+	# 	FIN_vaino_valve = {
+	# 		ledger = navy
 					
-			picture = generic_navy_europe_2
+	# 		picture = generic_navy_europe_2
 
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
 
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			naval_doctrine = 0.10
+	# 		}
 			
-			traits = { naval_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
+	# 		traits = { naval_theorist }
+	# 	}
+	# }
+	# # MILITARY
+	# army_chief = {
 		
 
-		FIN_lauri_malmberg = {
+	# 	FIN_lauri_malmberg = {
 			
-			picture = generic_army_europe_2
+	# 		picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = FIN
-			}
-			
-
-			
-			traits = { army_chief_drill_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FIN_hugo_osterman = {
-			
-			picture = generic_army_europe_2
-			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
 
 			
-			traits = { army_chief_offensive_2 }
+	# 		traits = { army_chief_drill_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	FIN_hugo_osterman = {
+			
+	# 		picture = generic_army_europe_2
+			
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
+			
+
+			
+	# 		traits = { army_chief_offensive_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		FIN_carl_mannerheim = {
+	# 	FIN_carl_mannerheim = {
 			
-			picture = carl_mannerheim
+	# 		picture = carl_mannerheim
 			
-			allowed = {
-				original_tag = FIN
+	# 		allowed = {
+	# 			original_tag = FIN
 			
-			}
+	# 		}
 			
-			available = { 
-				NOT = { has_completed_focus = fin_soviet_threat }
-			}
+	# 		available = { 
+	# 			NOT = { has_completed_focus = fin_soviet_threat }
+	# 		}
 
 			
-			traits = { army_chief_defensive_3 }
+	# 		traits = { army_chief_defensive_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-	air_chief = {
+	# air_chief = {
 				
 
-		FIN_jarl_lundqvist = {
+	# 	FIN_jarl_lundqvist = {
 			
-			picture = generic_air_europe_3
+	# 		picture = generic_air_europe_3
 			
-			allowed = {
-				original_tag = FIN
-			}
-			
-
-			
-			traits = { air_chief_all_weather_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FIN_olavi_sarko = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
 
 			
-			traits = { air_chief_ground_support_2 }
+	# 		traits = { air_chief_all_weather_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-	navy_chief = {
-
-		FIN_olavi_arho = {
+	# 	FIN_olavi_sarko = {
 			
-			picture = generic_navy_europe_2
+	# 		picture = generic_air_europe_1
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
 
 			
-			traits = { navy_chief_commerce_raiding_2 }
+	# 		traits = { air_chief_ground_support_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-		FIN_eero_rahola = {
+	# navy_chief = {
+
+	# 	FIN_olavi_arho = {
 			
-			picture = generic_navy_europe_1
+	# 		picture = generic_navy_europe_2
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
 
 			
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_commerce_raiding_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-	high_command = {
-		FIN_karl_oesch = {
-			ledger = army
+	# 	FIN_eero_rahola = {
+			
+	# 		picture = generic_navy_europe_1
+			
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
+			
+
+			
+	# 		traits = { navy_chief_decisive_battle_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# high_command = {
+	# 	FIN_karl_oesch = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			picture = generic_army_europe_3
+	# 		picture = generic_army_europe_3
 			
-			traits = { army_regrouping_3 }
+	# 		traits = { army_regrouping_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		FIN_valio_porvari = {
-			ledger = air
+	# 	FIN_valio_porvari = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			picture = generic_air_europe_1
+	# 		picture = generic_air_europe_1
 			
-			traits = { air_air_superiority_2 }
+	# 		traits = { air_air_superiority_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FIN_lauri_tiainen = {
-			ledger = army
+	# 	FIN_lauri_tiainen = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 			
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FIN_harald_ohquist = {
-			ledger = army
+	# 	FIN_harald_ohquist = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			picture = generic_army_europe_5
+	# 		picture = generic_army_europe_5
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }	
 
-	# TECHNOLOGY
+	# # TECHNOLOGY
 
-	naval_manufacturer = { 
+	# naval_manufacturer = { 
 		
-		designer = yes
+	# 	designer = yes
 		
-		crichton = {
+	# 	crichton = {
 			
-			picture = generic_naval_manufacturer_1
+	# 		picture = generic_naval_manufacturer_1
 
 			
-			allowed = {
-				original_tag = FIN
-			}
-			on_add = { hidden_effect = { make_naval_designers_free = yes } }
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
+	# 		on_add = { hidden_effect = { make_naval_designers_free = yes } }
 			
-			research_bonus = {
-				naval_equipment = 0.15
-			}
+	# 		research_bonus = {
+	# 			naval_equipment = 0.15
+	# 		}
 			
-			# submarine and defence ship production
+	# 		# submarine and defence ship production
 			
-			traits = { naval_manufacturer }
-		}
-	}
+	# 		traits = { naval_manufacturer }
+	# 	}
+	# }
 	
-	aircraft_manufacturer = { 
+	# aircraft_manufacturer = { 
 			
-		designer = yes
+	# 	designer = yes
 		
 		
-		valtion_lentokonetehdas = {
+	# 	valtion_lentokonetehdas = {
 			
-			picture = generic_air_manufacturer_3
+	# 		picture = generic_air_manufacturer_3
 
 			
-			allowed = {
-				original_tag = FIN
-			}
+	# 		allowed = {
+	# 			original_tag = FIN
+	# 		}
 			
-			research_bonus = {
-				air_equipment = 0.15
-			}
+	# 		research_bonus = {
+	# 			air_equipment = 0.15
+	# 		}
 			
-			traits = { light_aircraft_manufacturer }
+	# 		traits = { light_aircraft_manufacturer }
 			
-			# assembled Junkers, fast bombers
+	# 		# assembled Junkers, fast bombers
 		
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 }

@@ -1245,23 +1245,23 @@ ideas = {
 			}
 		}
 		
-		hajime_sugiyama = {
+		# hajime_sugiyama = {
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
-			available = {
-				has_completed_focus = JAP_army_expansion
-			}
+		# 	available = {
+		# 		has_completed_focus = JAP_army_expansion
+		# 	}
 			
-			traits = { army_chief_drill_3 }
+		# 	traits = { army_chief_drill_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
 		hideki_tojo = {
 			
@@ -1283,37 +1283,37 @@ ideas = {
 		
 		
 		
-		fushimi_hiroyasu = {
+		# fushimi_hiroyasu = {
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			traits = { navy_chief_naval_aviation_2 }
+		# 	traits = { navy_chief_naval_aviation_2 }
 			
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 0.2
+		# 	}
+		# }
 		
-		osami_nagano = {
+		# osami_nagano = {
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			traits = { navy_chief_commerce_raiding_1 }
+		# 	traits = { navy_chief_commerce_raiding_1 }
 			
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 0.2
+		# 	}
+		# }
 		
 		shigetaro_shimada = {
 			
@@ -1417,12 +1417,6 @@ ideas = {
 			
 			ai_will_do = {
 				factor = 3
-				modifier = {
-					factor = 3
-					NOT = {
-						JAP = { has_war_with = USA }
-					}
-				}
 			}
 		}
 		
@@ -1494,22 +1488,22 @@ ideas = {
 			}
 		}
 		
-		tateo_kato = {
-			ledger = air
+		# tateo_kato = {
+		# 	ledger = air
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			traits = { air_air_combat_training_3 }
+		# 	traits = { air_air_combat_training_3 }
 			
-			ai_will_do = {
-				factor = 0.8
-			}
-		}	
+		# 	ai_will_do = {
+		# 		factor = 0.8
+		# 	}
+		# }	
 		
 		# soemu_toyoda = {
 		# 	ledger = navy
@@ -1528,22 +1522,22 @@ ideas = {
 		# 	}
 		# }
 		
-		matome_ugaki = {
-			ledger = navy
+		# matome_ugaki = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			traits = { navy_naval_air_defense_2 }
+		# 	traits = { navy_naval_air_defense_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
 		chuichi_nagumo = {
 			ledger = air
@@ -1849,98 +1843,98 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		isoroku_yamamoto = {
-			ledger = navy
+		# isoroku_yamamoto = {
+		# 	ledger = navy
 						
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
-			cost = 150
+		# 	cost = 150
 						
-			research_bonus = {
-				cat_base_strike = 0.15
-			}
+		# 	research_bonus = {
+		# 		cat_base_strike = 0.15
+		# 	}
 			
-			traits = { naval_aviation_pioneer }
-		}
+		# 	traits = { naval_aviation_pioneer }
+		# }
 		
-		minoru_genda = {
-			ledger = navy
+		# minoru_genda = {
+		# 	ledger = navy
 						
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 						
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		naval_doctrine = 0.10
+		# 	}
 			
-			traits = { naval_theorist }
-		}
+		# 	traits = { naval_theorist }
+		# }
 		
-		yoshitoshi_tokugawa = {
-			ledger = air
+		# yoshitoshi_tokugawa = {
+		# 	ledger = air
 						
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
-			cost = 175
+		# 	cost = 175
 			
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
+		# 	research_bonus = {
+		# 		cat_operational_integrity = 0.15
+		# 	}
 			
-			traits = { assault_avaition }
-		}
+		# 	traits = { assault_avaition }
+		# }
 		
-		hino_kumazo = {
-			ledger = air
+		# hino_kumazo = {
+		# 	ledger = air
 						
-			allowed = {
-				original_tag = JAP
-			}	
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}	
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		air_doctrine = 0.10
+		# 	}
 			
-			traits = { air_warfare_theorist }
-		}
+		# 	traits = { air_warfare_theorist }
+		# }
 		
-		yoshio_nishina = {
-			ledger = army
+		# yoshio_nishina = {
+		# 	ledger = army
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			research_bonus = {
-				nuclear = 0.15
-			}
+		# 	research_bonus = {
+		# 		nuclear = 0.15
+		# 	}
 			
-			traits = { nuclear_scientist }
-		}
+		# 	traits = { nuclear_scientist }
+		# }
 		
-		hideo_itokawa = {
-			ledger = air
+		# hideo_itokawa = {
+		# 	ledger = air
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+		# 	allowed = {
+		# 		original_tag = JAP
+		# 	}
 			
 
 			
-			research_bonus = {
-				rocketry = 0.15
-			}
+		# 	research_bonus = {
+		# 		rocketry = 0.15
+		# 	}
 			
-			traits = { rocket_scientist }
-		}
+		# 	traits = { rocket_scientist }
+		# }
 	}	
 }

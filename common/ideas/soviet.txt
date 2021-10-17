@@ -1132,27 +1132,27 @@ ideas = {
 			traits = { captain_of_industry }
 		}
 		
-		nikita_khrushchev = {
+		# nikita_khrushchev = {
 			
-			allowed = {
-				original_tag = "SOV"
-			}
+		# 	allowed = {
+		# 		original_tag = "SOV"
+		# 	}
 
-			traits = { communist_revolutionary }
+		# 	traits = { communist_revolutionary }
 	
-		}	
-		soviet_vsevolod_merkulov = {
-			available = {
-				has_intelligence_agency = yes
-			}
+		# }	
+		# soviet_vsevolod_merkulov = {
+		# 	available = {
+		# 		has_intelligence_agency = yes
+		# 	}
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 			
-			traits = { head_of_intelligence }
+		# 	traits = { head_of_intelligence }
 
-		}
+		# }
 
 		SOV_lavrentiy_beria = {
 			
@@ -1176,32 +1176,32 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 
-		SOV_nikolai_yezhov = {
+		# SOV_nikolai_yezhov = {
 			
-			picture = generic_army_europe_2
+		# 	picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 			
-			traits = { prince_of_terror }
-		}
+		# 	traits = { prince_of_terror }
+		# }
 	}
 		
 	army_chief = {
 		
 		
-		semyon_timoshenko = {
+		# semyon_timoshenko = {
 			
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				NOT = { has_completed_focus = SOV_defense_of_moscow }
-			}
-			traits = { army_chief_reform_2 }
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
+		# 	available = {
+		# 		NOT = { has_completed_focus = SOV_defense_of_moscow }
+		# 	}
+		# 	traits = { army_chief_reform_2 }
 			
-		}
+		# }
 		
 		kliment_voroshilov = {
 			
@@ -1340,38 +1340,38 @@ ideas = {
 
 		}	
 				
-		stepan_krasovsky = {
-			ledger = air
+		# stepan_krasovsky = {
+		# 	ledger = air
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 			
-			traits = { air_air_combat_training_2 }
-		}	
+		# 	traits = { air_air_combat_training_2 }
+		# }	
 		
-		vladimir_kasatonov = {
-			ledger = navy
+		# vladimir_kasatonov = {
+		# 	ledger = navy
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 				
-			traits = { navy_submarine_2 }
+		# 	traits = { navy_submarine_2 }
 			
-		}
+		# }
 			
-		arseniy_golovko = {
-			ledger = army
-			#Also unit leader: 409
+		# arseniy_golovko = {
+		# 	ledger = army
+		# 	#Also unit leader: 409
 			
-			allowed = {
-				original_tag = SOV
-			}
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
 
-			traits = { navy_amphibious_assault_2 }
+		# 	traits = { navy_amphibious_assault_2 }
 			
-		}	
+		# }	
 	}
 		
 	tank_manufacturer = {

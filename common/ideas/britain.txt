@@ -1047,19 +1047,19 @@ ideas = {
 			}
 		}
 				
-		eng_stewart_menzies = {
+		# eng_stewart_menzies = {
 		
-			available = {
-				has_intelligence_agency = yes
-			}
+		# 	available = {
+		# 		has_intelligence_agency = yes
+		# 	}
 			
-			allowed = {
-				original_tag = ENG
-			}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
-			traits = { head_of_intelligence }
+		# 	traits = { head_of_intelligence }
 			
-		}
+		# }
 		
 		ENG_philip_kerr = {
 
@@ -1098,28 +1098,24 @@ ideas = {
 		}
 		
 				
-		eng_alan_turing = {
+		# eng_alan_turing = {
 		
-			picture = eng_alan_turing
+		# 	picture = eng_alan_turing
 		
-			available = {
-				has_intelligence_agency = yes
-				has_done_agency_upgrade = upgrade_form_department
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_political_power < 200
-					factor = 0
-				}
-			}
-			allowed = {
-				original_tag = ENG
-			}
+		# 	available = {
+		# 		has_intelligence_agency = yes
+		# 		has_done_agency_upgrade = upgrade_form_department
+		# 	}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
-			traits = { mastermind_code_cracker }
+		# 	traits = { mastermind_code_cracker }
 
-		}
+		# }
 
 		ENG_leslie_hore_belisha = {
 			
@@ -1163,37 +1159,37 @@ ideas = {
 			}
 		}
 		
-		edmund_ironside = {
+		# edmund_ironside = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
 
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 2
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 2
+		# 	}
+		# }
 		
-		alan_brooke = {
+		# alan_brooke = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
-			available = {
+		# 	available = {
 				
-			}
+		# 	}
 			
-			traits = { army_chief_maneuver_3 }
+		# 	traits = { army_chief_maneuver_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	navy_chief = {
 
@@ -1384,21 +1380,21 @@ ideas = {
 			}
 		}
 		
-		frederick_bowhill = {
-			ledger = navy
+		# frederick_bowhill = {
+		# 	ledger = navy
 			
-			allowed = {
-				original_tag = ENG
-			}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
 
 			
-			traits = { air_naval_strike_2 }
+		# 	traits = { air_naval_strike_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }	
 		
 		louis_mountbatten = {
 			ledger = army
@@ -1434,21 +1430,21 @@ ideas = {
 			}
 		}
 		
-		max_horton = {
-			ledger = navy
+		# max_horton = {
+		# 	ledger = navy
 			
-			allowed = {
-				original_tag = ENG
-			}
+		# 	allowed = {
+		# 		original_tag = ENG
+		# 	}
 			
 
 			
-			traits = { navy_submarine_2 }
+		# 	traits = { navy_submarine_2 }
 			
-			ai_will_do = {
-				factor = 0.2
-			}
-		}		
+		# 	ai_will_do = {
+		# 		factor = 0.2
+		# 	}
+		# }		
 
 			
 	}

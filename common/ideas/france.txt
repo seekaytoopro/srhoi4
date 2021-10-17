@@ -1767,29 +1767,29 @@ ideas = {
 			}
 		}	
 
-		FRA_paul_reynaud = {
+		# FRA_paul_reynaud = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = "FRA"
+		# 			original_tag = "FRF"
+		# 		}
+		# 	}
 
-			picture = generic_political_advisor_europe_3
+		# 	picture = generic_political_advisor_europe_3
 			
-			traits = { quartermaster_general }
+		# 	traits = { quartermaster_general }
 	
-			on_add = {
-			}
+		# 	on_add = {
+		# 	}
 	
-			do_effect = {
-			}
+		# 	do_effect = {
+		# 	}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 		
 	# MILITARY
@@ -1886,24 +1886,24 @@ ideas = {
 			}
 		}		
 		
-		alphonse_georges = {
+		# alphonse_georges = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 
 			
-			traits = { army_chief_maneuver_1 }
+		# 	traits = { army_chief_maneuver_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }	
 	}
 	navy_chief = {
 		
@@ -2106,65 +2106,65 @@ ideas = {
 			}
 		}	
 		
-		jean_de_laborde = {
-			ledger = navy
+		# jean_de_laborde = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 
 			
-			traits = { navy_capital_ship_1 }
+		# 	traits = { navy_capital_ship_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
-		emile_muselier = {
-			ledger = navy
+		# emile_muselier = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 
 			
-			traits = { navy_fleet_logistics_2 }
+		# 	traits = { navy_fleet_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
-		rene_emile_godfroy = {
-			ledger = navy
+		# rene_emile_godfroy = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 
 			
-			traits = { navy_screen_2 }
+		# 	traits = { navy_screen_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	
 	tank_manufacturer = {
@@ -2531,12 +2531,6 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-				modifier = {
-					factor = 0
-
-					GER = { is_ai = yes }
-					date < 1939.1.1
-				}
 			}
 
 		}
@@ -2557,75 +2551,69 @@ ideas = {
 
 			ai_will_do = {
 				factor = 1
-				modifier = {
-					factor = 0
-
-					GER = { is_ai = yes }
-					date < 1939.1.1
-				}
 			}
 			
 			traits = { military_theorist }
 		}
 		
-		louis_kahn = {
-			ledger = navy
+		# louis_kahn = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
-			cost = 175
+		# 	cost = 175
 						
-			research_bonus = {
-				cat_fleet_in_being = 0.15
-			}
+		# 	research_bonus = {
+		# 		cat_fleet_in_being = 0.15
+		# 	}
 			
-			traits = { grand_fleet_proponent }
-		}
+		# 	traits = { grand_fleet_proponent }
+		# }
 		
-		jean_decoux = {
-			ledger = navy
+		# jean_decoux = {
+		# 	ledger = navy
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		naval_doctrine = 0.10
+		# 	}
 			
-			traits = { naval_theorist }
-		}
+		# 	traits = { naval_theorist }
+		# }
 		
-		victor_denain = {
-			ledger = air
+		# victor_denain = {
+		# 	ledger = air
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
-			cost = 175 
+		# 	cost = 175 
 			
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
+		# 	research_bonus = {
+		# 		cat_operational_integrity = 0.15
+		# 	}
 			
-			traits = { assault_avaition }
-		}
+		# 	traits = { assault_avaition }
+		# }
 		
 		jean_marie_bergeret = {
 			ledger = air
@@ -2644,23 +2632,23 @@ ideas = {
 			traits = { air_warfare_theorist }
 		}
 		
-		frederic_irene_joliot_curie = {
-			ledger = army
+		# frederic_irene_joliot_curie = {
+		# 	ledger = army
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+		# 	allowed = {
+		# 		OR = {
+		# 			original_tag = FRA
+		# 			original_tag = FRF
+		# 		}
+		# 	}
 			
 			
-			research_bonus = {
-				nuclear = 0.15
-			}
+		# 	research_bonus = {
+		# 		nuclear = 0.15
+		# 	}
 			
-			traits = { nuclear_scientist }
-		}
+		# 	traits = { nuclear_scientist }
+		# }
 	}	
 }

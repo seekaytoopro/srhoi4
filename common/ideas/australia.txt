@@ -469,20 +469,20 @@ high_command = {
 		}
 	}
 
-	AST_john_collins = {
-		ledger = navy 
-		picture = generic_navy_europe_1
+	# AST_john_collins = {
+	# 	ledger = navy 
+	# 	picture = generic_navy_europe_1
 		
-		allowed = {
-			original_tag = AST
-		}
+	# 	allowed = {
+	# 		original_tag = AST
+	# 	}
 		
-		traits = { navy_capital_ship_2 }
+	# 	traits = { navy_capital_ship_2 }
 		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 
 	AST_edmund_herring = {
 		ledger = army
@@ -550,35 +550,35 @@ high_command = {
 	# MILITARY
 	army_chief = {
 
-		AST_john_lavarack = {
+		# AST_john_lavarack = {
 			
-			picture = generic_army_europe_5
+		# 	picture = generic_army_europe_5
 			
-			allowed = {
-				original_tag = AST
-			}
+		# 	allowed = {
+		# 		original_tag = AST
+		# 	}
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		AST_sydney_rowell = {
+		# AST_sydney_rowell = {
 			
-			picture = generic_army_europe_3
+		# 	picture = generic_army_europe_3
 			
-			allowed = {
-				original_tag = AST
-			}
+		# 	allowed = {
+		# 		original_tag = AST
+		# 	}
 			
-			traits = { army_chief_organizational_2 }
+		# 	traits = { army_chief_organizational_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
 		AST_vernon_sturdee = {
 			

@@ -418,9 +418,9 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Grigory Kulik"
+	name = "Grigory Kulik (USE FOR INF)"
 		picture = "Portrait_Soviet_Grigory_Kulik.dds"
-	traits = {  old_guard career_officer politically_connected inflexible_strategist trait_cautious }
+	traits = {  old_guard career_officer politically_connected inflexible_strategist trait_cautious unyielding_defender }
 	skill = 3
 	id = 4034
 	attack_skill = 1
@@ -479,10 +479,10 @@ create_field_marshal = {
 	id = 4025
 
 	
-	attack_skill = 2
-	defense_skill = 2
+	attack_skill = 4
+	defense_skill = 3
 	planning_skill = 1
-	logistics_skill = 5
+	logistics_skill = 3
 }
 
 create_corps_commander = {

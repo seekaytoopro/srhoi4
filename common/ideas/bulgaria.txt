@@ -67,21 +67,21 @@ ideas = {
 			}
 		}
 
-		BUL_hristo_lukov = {
-			picture = generic_army_europe_2
+		# BUL_hristo_lukov = {
+		# 	picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = BUL
-			}
+		# 	allowed = {
+		# 		original_tag = BUL
+		# 	}
 			
 
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 
 	air_chief = {
@@ -258,37 +258,37 @@ ideas = {
 			traits = { military_theorist }
 		}
 		
-		BUL_ivan_gaidimitriv = {
-			ledger = air
+		# BUL_ivan_gaidimitriv = {
+		# 	ledger = air
 			
-			picture = generic_air_europe_1
+		# 	picture = generic_air_europe_1
 			
-			allowed = {
-				original_tag = BUL
-			}
+		# 	allowed = {
+		# 		original_tag = BUL
+		# 	}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		air_doctrine = 0.10
+		# 	}
 			
-			traits = { air_warfare_theorist }
-		}
+		# 	traits = { air_warfare_theorist }
+		# }
 
-		BUL_georgi_petsov = {
-			ledger = navy
+		# BUL_georgi_petsov = {
+		# 	ledger = navy
 
-			picture = generic_navy_europe_1
+		# 	picture = generic_navy_europe_1
 			
-			allowed = {
-				original_tag = BUL
-			}
+		# 	allowed = {
+		# 		original_tag = BUL
+		# 	}
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		naval_doctrine = 0.10
+		# 	}
 			
-			traits = { naval_theorist }
-		}
+		# 	traits = { naval_theorist }
+		# }
 
 	}
 }

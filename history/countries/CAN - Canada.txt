@@ -179,7 +179,7 @@ create_corps_commander = {
 }
 
 create_field_marshal = {
-	name = "Charles Foulkes"
+	name = "Charles Foulkes (USE IF YOU NEED SUPPLY)"
 	gfx = "GFX_CAN_charles_foulkes"
 	traits = { brilliant_strategist organizer desert_fox infantry_leader old_guard skilled_staffer politically_connected}
 	skill = 5
@@ -240,7 +240,7 @@ create_field_marshal = {
 		logistics_skill = 2
 }
 create_corps_commander = {
-	name = "Kenneth Stuart"
+	name = "Kenneth Stuart (USE FOR TANKS)"
 	picture = "CAN_Leader_6.dds"
 	traits = { desert_fox career_officer trickster infantry_leader cavalry_officer panzer_leader  skilled_staffer old_guard trait_cautious brilliant_strategist}
 	skill = 5

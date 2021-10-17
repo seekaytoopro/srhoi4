@@ -471,58 +471,58 @@ ideas = {
 			traits = { military_theorist }
 		}
 
-		RAJ_anyang_bhula = {
-			ledger = air
+		# RAJ_anyang_bhula = {
+		# 	ledger = air
 					
-			picture = generic_air_arab_1
+		# 	picture = generic_air_arab_1
 				
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		air_doctrine = 0.10
+		# 	}
 			
-			traits = { air_warfare_theorist }
-		}
+		# 	traits = { air_warfare_theorist }
+		# }
 
-		RAJ_bahadur_jayla_of_khoch_bahur = {
-			ledger = navy
+		# RAJ_bahadur_jayla_of_khoch_bahur = {
+		# 	ledger = navy
 					
 					
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			picture = generic_political_advisor_arab_1
+		# 	picture = generic_political_advisor_arab_1
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+		# 	research_bonus = {
+		# 		naval_doctrine = 0.10
+		# 	}
 			
-			traits = { naval_theorist }
-		}
+		# 	traits = { naval_theorist }
+		# }
 
-		RAJ_homi_j_bhabha = {
-			ledger = army
+		# RAJ_homi_j_bhabha = {
+		# 	ledger = army
 					
-			available = {
-				has_completed_focus = RAJ_institute_of_fundamental_research
-			}
+		# 	available = {
+		# 		has_completed_focus = RAJ_institute_of_fundamental_research
+		# 	}
 
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			picture = generic_political_advisor_arab_2
+		# 	picture = generic_political_advisor_arab_2
 			
-			research_bonus = {
-				nuclear = 0.07
-			}
+		# 	research_bonus = {
+		# 		nuclear = 0.07
+		# 	}
 			
-			traits = { nuclear_scientist }
-		}
+		# 	traits = { nuclear_scientist }
+		# }
 	}
 
 	high_command = {
@@ -590,122 +590,122 @@ ideas = {
 			}
 		}
 
-		RAJ_arjan_singh_vibhusan = {
-			ledger = air
+		# RAJ_arjan_singh_vibhusan = {
+		# 	ledger = air
 
-			picture = generic_air_arab_3
+		# 	picture = generic_air_arab_3
 			
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			traits = { air_air_combat_training_3 }
+		# 	traits = { air_air_combat_training_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		RAJ_aspy_merwan_engineer = {
-			ledger = navy
+		# RAJ_aspy_merwan_engineer = {
+		# 	ledger = navy
 
-			picture = generic_air_arab_2
+		# 	picture = generic_air_arab_2
 			
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			traits = { air_naval_strike_2 }
+		# 	traits = { air_naval_strike_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		RAJ_mehar_singh = {
-			ledger = air
-			picture = generic_air_arab_1
+		# RAJ_mehar_singh = {
+		# 	ledger = air
+		# 	picture = generic_air_arab_1
 
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 
-			traits = { air_close_air_support_3 }
+		# 	traits = { air_close_air_support_3 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		RAJ_w_h_gould_bradford = {
-			ledger = navy
+		# RAJ_w_h_gould_bradford = {
+		# 	ledger = navy
 
-			picture = generic_navy_europe_1
+		# 	picture = generic_navy_europe_1
 			
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
-			traits = { navy_anti_submarine_2 }
+		# 	traits = { navy_anti_submarine_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	# MILITARY
 	army_chief = {
 
-		RAJ_arthur_a_barrett = {
+		# RAJ_arthur_a_barrett = {
 			
-			picture = generic_army_europe_2
+		# 	picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
 
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
-		RAJ_archibald_wavell = {
+		# RAJ_archibald_wavell = {
 			
-			picture = generic_army_europe_5
+		# 	picture = generic_army_europe_5
 			
-			allowed = {
-				original_tag = RAJ
-			}
-			
-
-			
-			traits = { army_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		RAJ_reginald_savory = {
-			
-			picture = generic_army_europe_1
-			
-			allowed = {
-				original_tag = RAJ
-			}
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
 			
 
 			
-			traits = { army_chief_drill_2 }
+		# 	traits = { army_chief_reform_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
+
+		# RAJ_reginald_savory = {
+			
+		# 	picture = generic_army_europe_1
+			
+		# 	allowed = {
+		# 		original_tag = RAJ
+		# 	}
+			
+
+			
+		# 	traits = { army_chief_drill_2 }
+			
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
 		RAJ_mohan_singh = {
 			

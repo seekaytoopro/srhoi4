@@ -1268,9 +1268,6 @@ SPR_no_navy2 = {
 	
 			available = {
 		
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			picture = SPA_jose_enrique_varela
@@ -1307,9 +1304,6 @@ SPR_no_navy2 = {
 
 			available = {
 				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { army_chief_offensive_2 }
@@ -1319,83 +1313,83 @@ SPR_no_navy2 = {
 			}
 		}
 
-		SPA_rafael_garcia_valino = { # Francoist/Carlist
+		# SPA_rafael_garcia_valino = { # Francoist/Carlist
 			
-			picture = SPA_rafael_garcia_valino
+		# 	picture = SPA_rafael_garcia_valino
 			
-			allowed = {
-				original_tag = SPR
-			}
+		# 	allowed = {
+		# 		original_tag = SPR
+		# 	}
 
-			visible = {
+		# 	visible = {
 				
-			}
+		# 	}
 
-			available = {
+		# 	available = {
 				
 				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
+		# 		custom_trigger_tooltip = {
+		# 			tooltip = SPA_not_republican_spain_tt
+		# 		}
+		# 	}
 			
-			traits = { army_chief_organizational_2 }
+		# 	traits = { army_chief_organizational_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		SPA_heli_rolando_de_tella = { # Francoist/Carlist
+		# SPA_heli_rolando_de_tella = { # Francoist/Carlist
 			
-			picture = SPA_heli_rolando_de_tella
+		# 	picture = SPA_heli_rolando_de_tella
 			
-			allowed = {
-				original_tag = SPR
-			}
+		# 	allowed = {
+		# 		original_tag = SPR
+		# 	}
 
-			visible = {
+		# 	visible = {
 				
-			}
+		# 	}
 
-			available = {
-			custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
+		# 	available = {
+		# 	custom_trigger_tooltip = {
+		# 			tooltip = SPA_not_republican_spain_tt
+		# 		}
+		# 	}
 			
-			traits = { army_chief_defensive_2 }
+		# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		SPA_miguel_ponte = { # Francoist
+		# SPA_miguel_ponte = { # Francoist
 			
-			picture = SPA_miguel_ponte
+		# 	picture = SPA_miguel_ponte
 			
-			allowed = {
-				original_tag = SPR
-			}
+		# 	allowed = {
+		# 		original_tag = SPR
+		# 	}
 
-			visible = {
+		# 	visible = {
 			
-			}
+		# 	}
 
-			available = {
+		# 	available = {
 				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
-			}
+		# 		custom_trigger_tooltip = {
+		# 			tooltip = SPA_not_republican_spain_tt
+		# 		}
+		# 	}
 			
-			traits = { army_chief_drill_2 }
+		# 	traits = { army_chief_drill_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
 	}
 	air_chief = {
@@ -1419,9 +1413,6 @@ SPR_no_navy2 = {
 
 			available = {
 				
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { air_chief_ground_support_2 }
@@ -1453,9 +1444,6 @@ SPR_no_navy2 = {
 
 			available = {
 			
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { navy_chief_decisive_battle_2 }
@@ -1491,9 +1479,6 @@ SPR_no_navy2 = {
 
 			available = {
 				has_completed_focus = SPA_the_condor_legion
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { army_armored_3 }
@@ -1520,9 +1505,6 @@ SPR_no_navy2 = {
 			}
 
 			available = {
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { army_logistics_2 }
@@ -1547,9 +1529,6 @@ SPR_no_navy2 = {
 
 			available = {
 
-				custom_trigger_tooltip = {
-					tooltip = SPA_not_republican_spain_tt
-				}
 			}
 			
 			traits = { army_regrouping_2 }

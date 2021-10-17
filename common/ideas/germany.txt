@@ -1863,32 +1863,32 @@ ideas = {
 	# MILITARY
 	army_chief = {
 
-		ludwig_beck = {
+		# ludwig_beck = {
 
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 			
-			traits = { army_chief_organizational_2 }			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	traits = { army_chief_organizational_2 }			
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
-		wilhelm_keitel  = {
+		# wilhelm_keitel  = {
 
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 					
-			traits = { army_chief_drill_2 }
+		# 	traits = { army_chief_drill_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	
 		franz_halder = {
 
@@ -1904,23 +1904,23 @@ ideas = {
 			}
 		}
 	
-		walther_von_brauchitsch = {
+		# walther_von_brauchitsch = {
 
 			
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_completed_focus = GER_army_innovation
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	available = {
+		# 		has_completed_focus = GER_army_innovation
+		# 	}
 
 					
-			traits = { army_chief_maneuver_2 }
+		# 	traits = { army_chief_maneuver_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 	
 	air_chief = {
@@ -2080,19 +2080,19 @@ ideas = {
 			}
 		}
 
-		erhard_milch = {
-			ledger = air
+		# erhard_milch = {
+		# 	ledger = air
 
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 
-			traits = { air_bomber_interception_2 }
+		# 	traits = { air_bomber_interception_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 
 		kurt_student = {
 			ledger = army
@@ -2108,46 +2108,46 @@ ideas = {
 			}
 		}
 
-		erich_bey = {
-		ledger = navy
+		# erich_bey = {
+		# ledger = navy
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 			
-			traits = { navy_naval_air_defense_2 }
+		# 	traits = { navy_naval_air_defense_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		
-		gunther_lutjens = {
-		ledger = navy
+		# gunther_lutjens = {
+		# ledger = navy
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 			
-			traits = { navy_fleet_logistics_2 }
+		# 	traits = { navy_fleet_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 		 
-		viktor_schutze = {
-		ledger = navy
+		# viktor_schutze = {
+		# ledger = navy
 			
-			allowed = {
-				original_tag = GER
-			}
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
 			
-			traits = { navy_submarine_2 }
+		# 	traits = { navy_submarine_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+		# 	ai_will_do = {
+		# 		factor = 1
+		# 	}
+		# }
 	}
 }
