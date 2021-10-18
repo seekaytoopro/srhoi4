@@ -2383,6 +2383,8 @@ focus_tree = {
 			ITA = { annex_country = { target = YUG	transfer_troops = no } }
 			ITA = { annex_country = { target = GRE transfer_troops = no } }
 			GER = { transfer_state = 102 }
+			# handles When germany has annexed hungary, so they get vojvodina
+			hidden_effect = { GER = { transfer_state = 45 } }
 			if = { limit = {country_exists = BUL } BUL = { transfer_state = 184 transfer_state = 106 } }
 			if = { limit = {country_exists = HUN } HUN = { transfer_state = 45 } }
 			if = { limit = {country_exists = ROM } ROM = { transfer_state = 764 } 764 = { add_core_of = ROM } }
