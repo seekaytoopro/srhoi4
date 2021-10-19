@@ -135,6 +135,66 @@ focus_tree = {
 							province = 11349
 							instant_build = yes
 						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3154
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11189
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3124
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9102
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 163
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11103
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11036
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 6017
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 9131
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 121
+							instant_build = yes
+						}
 					}
 				}
 				263 = {
@@ -374,7 +434,7 @@ focus_tree = {
 							}
 							add_building_construction = {
 								type = bunker
-								level = 2
+								level = 3
 								province = 5082
 								instant_build = yes
 							}
@@ -386,8 +446,14 @@ focus_tree = {
 							}
 							add_building_construction = {
 								type = bunker
-								level = 2
+								level = 3
 								province = 585
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = bunker
+								level = 3
+								province = 6741
 								instant_build = yes
 							}
 						}
