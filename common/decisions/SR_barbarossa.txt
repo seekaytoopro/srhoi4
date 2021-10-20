@@ -68,7 +68,7 @@ SOV_barb_debuff_category = {
 			# Only decrease the purge penalty during the non-winter months
 			# this is to delay Soviets becoming fully operational during the winter
 			# and then easily battleplanning the axis come spring
-			if = { limit = { OR = { date < 1941.20.15 date > 1942.3.5 } }
+			if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } }
 				SOV_barb_debuff_level_up = yes
 			}
 				

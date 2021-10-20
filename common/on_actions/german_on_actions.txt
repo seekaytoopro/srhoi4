@@ -62,7 +62,7 @@ on_actions = {
 							NOT = { has_global_flag = total_war }
 						}
 						# GER = { country_event = { id = pfu.21 } }
-						news_event = { days = 7 id = news.808 }
+						news_event = { days = 3 id = news.808 }
 					}
 				
 			}
@@ -73,6 +73,43 @@ on_actions = {
 						NOT = { has_global_flag = total_war }
 					}
 					news_event = { days = 1 id = news.808 }
+				}
+			}
+
+			#### If Soviets start advancing beyond the pre-Barbarossa boundaries into Poland/East Prussia after 1942 but before 1943, that is sufficient to trigger Totaler Krieg for Germany to give it one last gasping breath of life ####
+			if = {
+				limit = {
+					NOT = { has_global_flag = total_war }
+					NOT = { has_global_flag = GDU_eastern_front_Axis_danger }
+					original_tag = SOV
+					date > 1942.1.1
+					OR = {
+						any_of_scopes = {
+							array = global.owned_state_array_GER
+							is_controlled_by = SOV
+						}
+						controls_state = 188 # Memel
+						controls_state = 98 # Plock
+						controls_state = 10 # Warsazawa
+						controls_state = 92 # Lublin
+						controls_state = 88 # Krakow
+
+						# Also adding more states in Northern Germany/Denmark. Soviet meme naval invasions of Northern Germany can trigger this
+
+						controls_state = 85 # Danzig
+						controls_state = 37 # Sjaelland DK
+						controls_state = 99 # Jutland DK
+
+					}
+				}
+				hidden_effect = {
+					set_global_flag = GDU_eastern_front_Axis_danger
+					if = {
+						limit = {
+							NOT = { has_global_flag = total_war }
+						}
+						news_event = { days = 1 id = news.808 }
+					}
 				}
 			}
 		}
