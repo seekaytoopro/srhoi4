@@ -3077,7 +3077,7 @@ focus_tree = {
 				x = -1
 				y = 1
 				relative_position_id = GER_ussr_war_goal
-				cost = 8.7
+				cost = 4.4
 				ai_will_do = {
 					factor = 1
 				}
