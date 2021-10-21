@@ -3,9 +3,9 @@ state={
 	id=60
 	name="STATE_60"
 	resources={
-		steel=13.000
-		chromium=11.000
-		tungsten=3.000
+		steel=18.000
+		chromium=17.000
+		tungsten=14.000
 	}
 
 	history={
@@ -22,15 +22,6 @@ state={
 
 		}
 		add_core_of = GER
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 3
-				arms_factory = 2
-
-			}
-
-		}
-
 	}
 
 	provinces={
