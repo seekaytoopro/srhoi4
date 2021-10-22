@@ -8,11 +8,21 @@ state={
 
 	history={
 		owner = SOV
-		victory_points = { 6380 50 } #Central Moscow
-		victory_points = { 11853 15 } #South
-		victory_points = { 652 15 } #West
-		victory_points = { 3979 15 } #North
-		victory_points = { 9868 15 } #East
+		victory_points = {
+			6380 50 
+		}
+		victory_points = {
+			11853 15 
+		}
+		victory_points = {
+			652 15 
+		}
+		victory_points = {
+			3979 15 
+		}
+		victory_points = {
+			9868 15 
+		}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 7
@@ -33,7 +43,7 @@ state={
 	}
 
 	provinces={
-		301 344 366 401 652 3259 3290 3327 3358 3391 3979 6283 6290 6348 6380 6414 9282 9302 9348 9378 9868 11236 11250 11282 11326 11853 
+		301 344 366 401 652 3259 3290 3327 3358 3391 3979 6283 6290 6348 6380 6414 9278 9282 9302 9348 9378 9868 11236 11250 11282 11326 11853 
 	}
 	manpower=8335992
 	buildings_max_level_factor=1.000
