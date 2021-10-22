@@ -651,6 +651,395 @@ focus_tree = {
 			add_ideas = defend_the_motherland
 			add_timed_idea = { idea=industry_relocation days = 180 }
 			add_offsite_building = { type = industrial_complex level = 10 }
+			if = {
+				limit = { 251 = { is_controlled_by = ROOT } }
+				set_capital = 251
+			}
+
+			hidden_effect = {
+				400 = {
+					if = {
+						limit = { 400 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}					
+				247 = {
+					if = {
+						limit = { 247 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}					
+				250 = {
+					if = {
+						limit = { 250 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}		
+				349 = {
+					if = {
+						limit = { 349 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}		
+				353 = {
+					if = {
+						limit = { 353 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}						
+				300 = {
+					if = {
+						limit = { 300 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}		
+				256 = {
+					if = {
+						limit = { 256 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}						
+				302 = {
+					if = {
+						limit = { 302 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}				
+				264 = {
+					if = {
+						limit = { 264 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				264 = {
+					if = {
+						limit = { 264 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}						
+				350 = {
+					if = {
+						limit = { 809 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}				
+				510 = {
+					if = {
+						limit = { 510 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}				
+				49 = {
+					if = {
+						limit = { 49 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				403 = {
+					if = {
+						limit = { 403 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}					
+				352 = {
+					if = {
+						limit = { 352 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}				
+				# Sharya
+				# 811 = {
+				# 	if = {
+				# 		limit = { 811 = { is_controlled_by = ROOT } }
+				# 		add_building_construction = {
+				# 			type = infrastructure
+				# 			level = 1
+				# 			instant_build = yes
+				# 		}
+				# 	}
+				# }
+				399 = {
+					if = {
+						limit = { 399 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				# Buzuluk
+				# 807 = {
+				# 	if = {
+				# 		limit = { 807 = { is_controlled_by = ROOT } }
+				# 		add_building_construction = {
+				# 			type = infrastructure
+				# 			level = 6
+				# 			instant_build = yes
+				# 		}
+				# 	}
+				# }
+				399 = {
+					if = {
+						limit = { 399 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				400 = {
+					if = {
+						limit = { 400 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				301 = {
+					if = {
+						limit = { 301 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				508 = {
+					if = {
+						limit = { 508 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				407 = {
+					if = {
+						limit = { 407 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				406 = {
+					if = {
+						limit = { 406 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				587 = {
+					if = {
+						limit = { 587 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				584 = {
+					if = {
+						limit = { 584 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				251 = {
+					if = {
+						limit = { 251 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				512 = {
+					if = {
+						limit = { 512 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				348 = {
+					if = {
+						limit = { 348 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				401 = {
+					if = {
+						limit = { 401 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				652 = {
+					if = {
+						limit = { 652 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				239 = {
+					if = {
+						limit = { 239 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				249 = {
+					if = {
+						limit = { 249 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				256 = {
+					if = {
+						limit = { 256 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				250 = {
+					if = {
+						limit = { 250 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				351 = {
+					if = {
+						limit = { 351 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				255 = {
+					if = {
+						limit = { 255 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				352 = {
+					if = {
+						limit = { 352 = { is_controlled_by = ROOT } }
+						add_building_construction = {
+							type = infrastructure
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
 		}
 
 	}

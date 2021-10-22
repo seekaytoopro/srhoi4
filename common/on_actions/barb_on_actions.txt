@@ -137,48 +137,59 @@ on_actions = {
 					SOV = { AND = { has_war_with = GER NOT = { has_idea = SOV_barb_debuff_ended } } }
 				}
 				if = { limit = { 202 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kiev } } } }
-					202 = { set_state_flag = sr_fall_of_kiev } SOV = { SOV_barb_debuff_level_down = yes }
+					202 = { set_state_flag = sr_fall_of_kiev }
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.104
 				}
 				if = { limit = { 137 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_sevastopol } } } }
-					137 = { set_state_flag = sr_fall_of_sevastopol } SOV = { SOV_barb_debuff_level_down = yes }
+					137 = { set_state_flag = sr_fall_of_sevastopol }
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.107
 				}
 				if = { limit = { 242 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_smolensk } } } }
-					242 = { set_state_flag = sr_fall_of_smolensk } SOV = { SOV_barb_debuff_level_down = yes }
+					242 = { set_state_flag = sr_fall_of_smolensk }
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.336
 				}
 				if = { limit = { 218 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_rostov } } } }
-					218 = { set_state_flag = sr_fall_of_rostov } SOV = { SOV_barb_debuff_level_down = yes }
+					218 = { set_state_flag = sr_fall_of_rostov }
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.337
 				}
 				if = { limit = { 219 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_moscow } } } }
-					219 = { set_state_flag = sr_fall_of_moscow } SOV = { SOV_barb_debuff_level_down = yes }
+					219 = { set_state_flag = sr_fall_of_moscow } 
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.106
 					if = { limit = { date <  1942.5.1 } SOV = { add_ideas = SOV_Danger_To_Heartland } }
 				}
 				if = { limit = { 195 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_leningrad } } } }
-					195 = { set_state_flag = sr_fall_of_leningrad } SOV = { SOV_barb_debuff_level_down = yes }
+					195 = { set_state_flag = sr_fall_of_leningrad } 
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.103
 				}
 				if = { limit = { 217 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_stalingrad } } } }
-					217 = { set_state_flag = sr_fall_of_stalingrad } SOV = { SOV_barb_debuff_level_down = yes }
+					217 = { set_state_flag = sr_fall_of_stalingrad }
+					if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					news_event = news.105
 				}
 				# if = { limit = { 206 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_minsk } } } }
-				# 	206 = { set_state_flag = sr_fall_of_minsk } SOV = { SOV_barb_debuff_level_down = yes }
+				# 	206 = { set_state_flag = sr_fall_of_minsk }
+				# if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 				# 	# news_event = news.105 no event for fall of minsk yet
 				# }
 				if = { limit = { 220 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kursk } } } }
-					220 = { set_state_flag = sr_fall_of_kursk } SOV = { SOV_barb_debuff_level_down = yes }
+					220 = { set_state_flag = sr_fall_of_kursk } 
+					 if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 					# news_event = news.105 no event for fall of kursk yet
 				}
 				# if = { limit = { 226 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_dnipropetrovsk } } } }
-				# 	226 = { set_state_flag = sr_fall_of_dnipropetrovsk } SOV = { SOV_barb_debuff_level_down = yes }
+				# 	226 = { set_state_flag = sr_fall_of_dnipropetrovsk }
+				# if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 				# 	# news_event = news.105 no event for fall of dnipropetrovsk yet
 				# }
 				# if = { limit = { 221 = { AND = { NOT = { is_controlled_by = SOV } NOT = { has_state_flag = sr_fall_of_kharkov } } } }
-				# 	221 = { set_state_flag = sr_fall_of_kharkov } SOV = { SOV_barb_debuff_level_down = yes }
+				# 	221 = { set_state_flag = sr_fall_of_kharkov }
+				# if = { limit = { OR = { date < 1941.10.15 date > 1942.3.5 } } SOV = { SOV_barb_debuff_level_down = yes } }
 				# 	# news_event = news.105 no event for fall of dnipropetrovsk yet
 				# }
 			}	
