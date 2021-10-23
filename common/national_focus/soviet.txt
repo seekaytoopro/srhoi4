@@ -657,6 +657,10 @@ focus_tree = {
 			}
 
 			hidden_effect = {
+				add_victory_points = {
+					province = 11225
+					value = 40
+				}
 				400 = {
 					if = {
 						limit = { 400 = { is_controlled_by = ROOT } }
