@@ -73,6 +73,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	early_fighter = 1
+	tech_logistics_company = 1
 	transport = 1
 	mtg_transport = 1
 	interwar_antitank = 1
@@ -93,23 +94,24 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
+		mtg_transport = 1
 	}
 }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1600
+	amount = 3200
 	producer = ROM
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 500
+	amount = 872
 	producer = ROM
 } 
 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 4000
+	amount = 5600
 	producer = ROM
 } 
 add_equipment_to_stockpile = {
@@ -119,12 +121,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 300
+	amount = 330
 	producer = ROM
 } 
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 1000
+	amount = 1833
 	producer = ROM
 }
 
@@ -139,7 +141,7 @@ add_ideas = {
  	}
 add_ideas = neutrality_idea
 	
-set_convoys = 50
+set_convoys = 100
 
 set_politics = {
 	ruling_party = neutrality
