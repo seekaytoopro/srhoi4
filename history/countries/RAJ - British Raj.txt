@@ -79,39 +79,34 @@ if = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 2264
+	amount = 3264
 	producer = RAJ
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 730
+	amount = 1130
 	producer = RAJ
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
 	amount = 400
 	producer = RAJ
-}
+} 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 12000
+	amount = 24000
 	producer = RAJ
-} 
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 4000
-	producer = RAJ
-} 
+}
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 1222
+	amount = 2022
 	producer = RAJ
 } 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 500
+	amount = 1000
 	producer = RAJ
-} 
+}  
 
 set_cosmetic_tag = RAJ_UK # British Raj
 
