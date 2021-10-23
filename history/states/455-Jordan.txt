@@ -7,13 +7,15 @@ state={
 		owner = ENG
 		add_core_of = SWE
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 1
+			air_base = 3
 		}
 		victory_points = {
-			7151 10 
+			7151 10
 		}
-
+		victory_points = {
+			4440 40 
+		}
 	}
 
 	provinces={
