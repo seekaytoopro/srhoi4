@@ -75,6 +75,35 @@ focus_tree = {
 				add_idea = RAJ_princely_states_election
 				remove_idea = RAJ_princely_states
 			}
+			435 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			436 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}			
+			438 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}					
+			}
 		}
 	}
 
@@ -446,6 +475,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			custom_effect_tooltip = RAJ_jungle_training_effect
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			army_experience = 20
 			add_tech_bonus = {
 				name = RAJ_british_army_support
@@ -557,7 +588,7 @@ focus_tree = {
 				gfx = "GFX_RAJ_orde_wingate"
 				traits = { jungle_rat commando }
 				skill = 4
-				attack_skill = 1
+				attack_skill = 2
 				defense_skill = 7
 				planning_skill = 1
 				logistics_skill = 5
@@ -572,36 +603,36 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RAJ_jungle_training
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = RAJ_chindits }
-		prerequisite = { focus = RAJ_indian_gurkhas }
-		x = 2
-		y = 2
-		relative_position_id = RAJ_british_army_support
+	# focus = {
+	# 	id = RAJ_jungle_training
+	# 	icon = GFX_goal_generic_military_sphere
+	# 	prerequisite = { focus = RAJ_chindits }
+	# 	prerequisite = { focus = RAJ_indian_gurkhas }
+	# 	x = 2
+	# 	y = 2
+	# 	relative_position_id = RAJ_british_army_support
 
-		cost = 10
+	# 	cost = 10
 
 
 
-		available = {
+	# 	available = {
 
-		}
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
+	# 	cancel_if_invalid = no
+	# 	continue_if_invalid = yes
+	# 	available_if_capitulated = no
 
-		completion_reward = {
-			custom_effect_tooltip = RAJ_jungle_training_effect
-			hidden_effect = { set_technology = { jungle_warfare = 1 } }
-		}
-	}
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = RAJ_jungle_training_effect
+	# 		hidden_effect = { set_technology = { jungle_warfare = 1 } }
+	# 	}
+	# }
 
 
 	############################
@@ -778,7 +809,7 @@ focus_tree = {
 					logistics_skill = 3
 				}
 				create_corps_commander = {
-					name = "Kodandera Subayya Thimayya"
+					name = "Kodendera Subayya Thimayya"
 					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
 					traits = { jungle_rat infantry_leader commando inflexible_strategist trait_cautious infantry_officer politically_connected }
 					skill = 5
@@ -880,7 +911,7 @@ focus_tree = {
 
 
 		available = {
-				compare_autonomy_state > autonomy_colony
+				# compare_autonomy_state > autonomy_colony
 		}
 
 		bypass = {
@@ -1086,14 +1117,21 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 1.0
-				uses = 2
+				bonus = 0.5
+				uses = 1
 				technology = basic_medium_tank
+			}
+			add_tech_bonus = {
+				name = RAJ_indian_armor
+				bonus = 1.00
+				uses = 1
 				technology = improved_medium_tank
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
+			}
+			add_tech_bonus = {
+				name = RAJ_indian_armor
+				bonus = 1.0
+				uses = 1
+				technology = advanced_medium_tank			
 			}
 		}
 	}

@@ -1800,10 +1800,15 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank
+			}
+			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 1
 				bonus = 1.0
-				technology = basic_medium_tank
 				technology = improved_medium_tank
 				technology = improved_heavy_tank
 				technology = advanced_light_tank

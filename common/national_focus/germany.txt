@@ -1065,7 +1065,8 @@ focus_tree = {
 			
 			add_tech_bonus = {
 				name = GER_soviet_treaty
-				ahead_reduction = 2	
+				ahead_reduction = 2
+				bonus = 0.5
 				technology = basic_medium_tank
 			}
 					
