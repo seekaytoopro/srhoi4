@@ -2,17 +2,17 @@
 state={
 	id=449
 	name="STATE_449"
-	resources = {
-		rubber = 8
-		oil = 13
+	resources={
+		rubber=8.000
+		oil=13.000
 	}
 
 	history={
 		victory_points = {
-			4047 5
+			4047 5 
 		}
 		victory_points = {
-			4057 1
+			4057 1 
 		}
 		owner = ITA
 		add_core_of = SWE
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		947 1041 1198 4047 4057 6864 9799 10046 10117 11848 12088 
+		1041 4047 4057 6864 9799 10046 10117 11848 12088 
 	}
 	manpower=40431
 	buildings_max_level_factor=1.000
