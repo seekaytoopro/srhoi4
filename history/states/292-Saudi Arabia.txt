@@ -2,13 +2,14 @@
 state={
 	id=292
 	name="STATE_292"
+	impassable = yes
 
 	history={
 
 	}
 
 	provinces={
-		12727 
+		10901 11976 12727 
 	}
 	manpower=1
 	buildings_max_level_factor=1.000
