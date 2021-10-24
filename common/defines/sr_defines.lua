@@ -1,6 +1,9 @@
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 9999			
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 9999
 
+------ Recently Added -----
+NDefines.NMilitary.FUEL_FLOW_PENALTY_FOR_SUPPLY_CHUNK_EDGE_RATIO = 0.25 --snaking 
+
 -- Convoy Priorities START --- this is edited from vanilla to make lend lease be the last priority with convoys, so that you don't get your trade for resources stopped if you are getting too much LL
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1									-- Default convoy priority for naval invasions
 NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1									-- Default convoy priority for naval transports
@@ -14,7 +17,7 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100    							-- 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12 							-- WAS 48 | drastically cuts down on save file sizes after WW2 starts and well into barbarossa
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14					     	 -- WAS 60 	| less messages lying around at the top of your screen
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.50, 0.300, 0.20, 0.04, 0.0 } -- 0.375, 0.175, 0.1, 0.035, 0.0 game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.50, 0.300, 0.20, 0.03, 0.0 } -- 0.375, 0.175, 0.1, 0.035, 0.0 game speeds for each level. Must be 5 entries with last one 0 for unbound
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1						-- WAS -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 ---------------------------------------------------------------
