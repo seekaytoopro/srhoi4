@@ -1167,7 +1167,7 @@ focus_tree = {
 				name = "Georgy Zhukov (New Tank Field Marshal)"
 				id = 410
 				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-				traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer}
+				traits = { winter_specialist armor_officer organizer media_personality brilliant_strategist harsh_leader politically_connected panzer_leader trait_engineer logistics_wizard thorough_planner panzer_expert inspirational_leader }
 				skill = 6
 	
 	
@@ -1183,7 +1183,7 @@ focus_tree = {
 				traits = { winter_specialist trait_cautious career_officer old_guard infantry_officer organizer defensive_doctrine politically_connected organizer logistics_wizard}
 				skill = 5
 				attack_skill = 3
-				defense_skill = 6
+				defense_skill = 8
 				planning_skill = 2
 				logistics_skill = 7
 			}
@@ -1195,9 +1195,9 @@ focus_tree = {
 				traits = { armor_officer harsh_leader politically_connected panzer_leader trait_reckless ranger }
 				skill = 5
 				attack_skill = 5
-				defense_skill = 7
+				defense_skill = 6
 				planning_skill = 4
-				logistics_skill = 4
+				logistics_skill = 3
 			}
 	
 			create_corps_commander = {
@@ -1230,7 +1230,7 @@ focus_tree = {
 				skill = 5
 				attack_skill = 6
 				defense_skill = 7
-				planning_skill = 2
+				planning_skill = 3
 				logistics_skill = 5
 			}
 	
@@ -1248,12 +1248,12 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Dmitry Lelyushenko (New Tank Commander)"
 				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
-				traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster  }
+				traits = { armor_officer trait_reckless panzer_leader harsh_leader ranger trickster panzer_expert }
 				skill = 5
 				attack_skill = 5
-				defense_skill = 4
+				defense_skill = 5
 				planning_skill = 6
-				logistics_skill = 1
+				logistics_skill = 2
 			}
 			create_corps_commander = {
 			name = "Rodion Malinovsky"
@@ -1424,7 +1424,7 @@ focus = {
 			name = "Konstantin Rokossovsky (Best Tank Commander)"
 			id = 402
 			picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-			traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero}
+			traits = {  armor_officer panzer_leader trait_cautious brilliant_strategist harsh_leader trickster panzer_expert winter_specialist expert_improviser trait_engineer war_hero panzer_expert expert_improviser }
 			skill = 6
 			attack_skill = 6
 			defense_skill = 5
@@ -1447,7 +1447,7 @@ focus = {
 		create_field_marshal = {
 			name = "Kirill Moskalenko (Best Offensive Inf Marshal)"
 			picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
-			traits = { winter_specialist brilliant_strategist infantry_leader old_guard career_officer ranger skilled_staffer}
+			traits = { winter_specialist brilliant_strategist infantry_leader old_guard career_officer ranger skilled_staffer infantry_expert defensive_doctrine aggressive_assaulter inspirational_leader }
 			skill = 6
 			attack_skill = 6
 			defense_skill = 3

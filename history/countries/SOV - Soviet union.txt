@@ -424,7 +424,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Grigory Kulik (USE FOR INF)"
 		picture = "Portrait_Soviet_Grigory_Kulik.dds"
-	traits = {  old_guard career_officer politically_connected inflexible_strategist trait_cautious unyielding_defender }
+	traits = {  old_guard career_officer politically_connected inflexible_strategist trait_cautious unyielding_defender defensive_doctrine }
 	skill = 3
 	id = 4034
 	attack_skill = 1
@@ -688,7 +688,7 @@ create_corps_commander = {
 create_field_marshal = {
 	name = "Vasily Chuikov (Use as Tank Marshal)"
 		picture = "Portrait_Soviet_Vasily_Chuikov.dds"
-		traits = { brilliant_strategist career_officer infantry_leader panzer_leader trait_engineer urban_assault_specialist trait_cautious}
+		traits = { brilliant_strategist career_officer infantry_leader panzer_leader trait_engineer urban_assault_specialist trait_cautious panzer_expert inspirational_leader aggressive_assaulter }
 	skill = 4
 	id = 4031
 
