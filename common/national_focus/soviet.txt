@@ -657,9 +657,29 @@ focus_tree = {
 			}
 
 			hidden_effect = {
-				add_victory_points = {
-					province = 11225
-					value = 40
+				# Kuibyshev, so capital doesn't change back to moscow if you retake it
+				add_victory_points = { province = 11225 value = 75 }
+				# Behind urals, so kuibyshev doesn't make you cap quite as quickly
+				add_victory_points = { province = 10256 value = 20 }
+				add_victory_points = { province = 9292 value = 20 }
+				add_victory_points = { province = 1821 value = 20 }
+				# Kuibyshev
+				251 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type = bunker level = 7 province = 11225 instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker level = 4 province = 9243 instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker level = 4 province = 9299 instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker level = 4 province = 6275 instant_build = yes
+						}
+					}
 				}
 				400 = {
 					if = {
