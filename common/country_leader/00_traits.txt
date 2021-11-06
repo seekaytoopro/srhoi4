@@ -2429,11 +2429,11 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			capital_ship = {
-				hg_attack = 0.15
-				naval_speed = 0.15
+				hg_attack = 0.125
+				naval_speed = 0.075
 			}
-				screen_ship = {
-				naval_speed = 0.15
+			screen_ship = {
+				naval_speed = 0.075
 			}
 			submarine = {
 			naval_range = 0.25
