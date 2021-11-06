@@ -4,13 +4,14 @@ state={
 	name="STATE_519"
 	resources={
 		tungsten=2.000
+		steel = 13
 	}
 
 	history={
 		owner = AST
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 4
+			industrial_complex = 2
 
 		}
 		add_core_of = AST
