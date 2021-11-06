@@ -80,10 +80,10 @@ NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER 	= 0.035 	--air global da
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER =	0.035 	--global damage modifier 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.28 --(0.25)
 
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.35 	--effect on defense due to enemy air superiority
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.65 	--more AA attack will approach this amount of help (diminishing returns)
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 168 	--how quickly defense approaches the max impact diminishing returns curve
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.25 	--effect on speed due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT =	-0.25 	--effect on defense due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE =	0.30	--more AA attack will approach this amount of help (diminishing returns)
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 400 	--how quickly defense approaches the max impact diminishing returns curve
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT =	-0.05 	--effect on speed due to enemy air superiority
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE =	0.01 	-- (0.07) Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT =	0.0001 	-- WAS 0.005 | Lowered because vanilla CAS shootdown rates are too high | Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.80 -- (1.0) Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA. 
