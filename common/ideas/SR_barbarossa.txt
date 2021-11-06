@@ -19,8 +19,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.40
-				army_attack_factor = -0.08
-				army_defence_factor = -0.08
+				army_attack_factor = -0.04
+				army_defence_factor = -0.04
 				max_dig_in = -4.0
 				#army_morale_factor = -0.39
 			}
@@ -65,8 +65,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.38
-				army_attack_factor = -0.076
-				army_defence_factor = -0.076
+				army_attack_factor = -0.038
+				army_defence_factor = -0.038
 				max_dig_in = -3.8
 				#army_morale_factor = -0.39
 			}
@@ -110,8 +110,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.36
-				army_attack_factor = -0.072
-				army_defence_factor = -0.072
+				army_attack_factor = -0.036
+				army_defence_factor = -0.036
 				max_dig_in = -3.6
 				#army_morale_factor = -0.36
 			}
@@ -157,8 +157,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.34
-				army_attack_factor = -0.068
-				army_defence_factor = -0.068
+				army_attack_factor = -0.034
+				army_defence_factor = -0.034
 				max_dig_in = -3.4
 				#army_morale_factor = -0.33
 			}
@@ -204,8 +204,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.32
-				army_attack_factor = -0.064
-				army_defence_factor = -0.064
+				army_attack_factor = -0.032
+				army_defence_factor = -0.032
 				max_dig_in = -3.2
 				#army_morale_factor = -0.30
 			}
@@ -251,8 +251,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.30
-				army_attack_factor = -0.060
-				army_defence_factor = -0.060
+				army_attack_factor = -0.030
+				army_defence_factor = -0.030
 				max_dig_in = -3.0
 				#army_morale_factor = -0.30
 			}
@@ -298,8 +298,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.28
-				army_attack_factor = -0.056
-				army_defence_factor = -0.056
+				army_attack_factor = -0.028
+				army_defence_factor = -0.028
 				max_dig_in = -2.8
 				#army_morale_factor = -0.27
 			}
@@ -345,8 +345,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.26
-				army_attack_factor = -0.052
-				army_defence_factor = -0.052
+				army_attack_factor = -0.026
+				army_defence_factor = -0.026
 				max_dig_in = -2.6
 				#army_morale_factor = -0.24
 			}
@@ -392,8 +392,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.24
-				army_attack_factor = -0.048
-				army_defence_factor = -0.048
+				army_attack_factor = -0.024
+				army_defence_factor = -0.024
 				max_dig_in = -2.4
 				#army_morale_factor = -0.21
 			}
@@ -439,8 +439,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.22
-				army_attack_factor = -0.044
-				army_defence_factor = -0.044
+				army_attack_factor = -0.022
+				army_defence_factor = -0.022
 				max_dig_in = -2.2
 				#army_morale_factor = -0.18
 			}
@@ -485,8 +485,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.20
-				army_attack_factor = -0.040
-				army_defence_factor = -0.040
+				army_attack_factor = -0.020
+				army_defence_factor = -0.020
 				max_dig_in = -2.0
 				#army_morale_factor = -0.15
 			}
@@ -531,8 +531,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.18
-				army_attack_factor = -0.036
-				army_defence_factor = -0.036
+				army_attack_factor = -0.018
+				army_defence_factor = -0.018
 				max_dig_in = -1.8
 				#army_morale_factor = -0.12
 			}
@@ -577,8 +577,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.16
-				army_attack_factor = -0.032
-				army_defence_factor = -0.032
+				army_attack_factor = -0.016
+				army_defence_factor = -0.016
 				max_dig_in = -1.6
 				#army_morale_factor = -0.09
 			}
@@ -623,8 +623,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.14
-				army_attack_factor = -0.028
-				army_defence_factor = -0.028
+				army_attack_factor = -0.014
+				army_defence_factor = -0.014
 				max_dig_in = -1.4
 				#army_morale_factor = -0.06
 			}
@@ -669,8 +669,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.12
-				army_attack_factor = -0.024
-				army_defence_factor = -0.024
+				army_attack_factor = -0.012
+				army_defence_factor = -0.012
 				max_dig_in = -1.2
 				#army_morale_factor = -0.03
 			}
@@ -715,8 +715,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.10
-				army_attack_factor = -0.020
-				army_defence_factor = -0.020
+				army_attack_factor = -0.010
+				army_defence_factor = -0.010
 				max_dig_in = -1.0
 				#army_morale_factor = -0.00
 			}
@@ -762,8 +762,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.09
-				army_attack_factor = -0.018
-				army_defence_factor = -0.018
+				army_attack_factor = -0.009
+				army_defence_factor = -0.009
 				max_dig_in = -0.9
 				#army_morale_factor = -0.00
 			}
@@ -809,8 +809,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.08
-				army_attack_factor = -0.016
-				army_defence_factor = -0.016
+				army_attack_factor = -0.008
+				army_defence_factor = -0.008
 				max_dig_in = -0.8
 				#army_morale_factor = -0.00
 			}
@@ -856,8 +856,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.07
-				army_attack_factor = -0.014
-				army_defence_factor = -0.014
+				army_attack_factor = -0.007
+				army_defence_factor = -0.007
 				max_dig_in = -0.7
 				#army_morale_factor = -0.00
 			}
@@ -903,8 +903,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.06
-				army_attack_factor = -0.012
-				army_defence_factor = -0.012
+				army_attack_factor = -0.006
+				army_defence_factor = -0.006
 				max_dig_in = -0.6
 				#army_morale_factor = -0.00
 			}
@@ -950,8 +950,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.05
-				army_attack_factor = -0.01
-				army_defence_factor = -0.01
+				army_attack_factor = -0.005
+				army_defence_factor = -0.005
 				max_dig_in = -0.5
 				#army_morale_factor = -0.00
 			}
@@ -997,8 +997,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.04
-				army_attack_factor = -0.008
-				army_defence_factor = -0.008
+				army_attack_factor = -0.004
+				army_defence_factor = -0.004
 				max_dig_in = -0.4
 				#army_morale_factor = -0.00
 			}
@@ -1044,8 +1044,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.03
-				army_attack_factor = -0.006
-				army_defence_factor = -0.006
+				army_attack_factor = -0.003
+				army_defence_factor = -0.003
 				max_dig_in = -0.3
 				#army_morale_factor = -0.00
 			}
@@ -1091,8 +1091,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.02
-				army_attack_factor = -0.004
-				army_defence_factor = -0.004
+				army_attack_factor = -0.002
+				army_defence_factor = -0.002
 				max_dig_in = -0.2
 				#army_morale_factor = -0.00
 			}
@@ -1138,8 +1138,8 @@ ideas = {
 
 			modifier = {
 				army_org_Factor = -0.01
-				army_attack_factor = -0.002
-				army_defence_factor = -0.002
+				army_attack_factor = -0.001
+				army_defence_factor = -0.001
 				max_dig_in = -0.1
 				#army_morale_factor = -0.00
 			}

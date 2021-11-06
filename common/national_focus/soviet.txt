@@ -660,9 +660,9 @@ focus_tree = {
 				# Kuibyshev, so capital doesn't change back to moscow if you retake it
 				add_victory_points = { province = 11225 value = 75 }
 				# Behind urals, so kuibyshev doesn't make you cap quite as quickly
-				add_victory_points = { province = 10256 value = 20 }
-				add_victory_points = { province = 9292 value = 20 }
-				add_victory_points = { province = 1821 value = 20 }
+				add_victory_points = { province = 10256 value = 30 }
+				add_victory_points = { province = 9292 value = 30 }
+				add_victory_points = { province = 1821 value = 30 }
 				# Kuibyshev
 				251 = {
 					if = {
@@ -1474,6 +1474,21 @@ focus = {
 			planning_skill = 6
 			logistics_skill = 3
 		}
+		# hidden_effect = {
+				# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+				# }
+				# SOV_barb_debuff_level_up = yes
+				# if = {
+				# 	limit = {
+				# 		check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+				# 	}
+				# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
+				# }
+				# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
+	
+				# hidden_effect = {
+				# 	activate_mission = SOV_barb_debuff_mission
+				# }
 	}
 }
 
