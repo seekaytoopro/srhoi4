@@ -433,7 +433,7 @@ NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1.0				-- initially 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee of a weird bug where using too much supply while docked leads to the fleet having no range or fuel
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
-	230.0, -- heavy attack 80
+	240.0, -- heavy attack 80
 	550.0, -- torpedos 145
 	265.0 -- light attack 45
 	}
@@ -514,7 +514,7 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 0			-- duration 
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4         	-- how often carrier planes do battle inside naval combat
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 9.5              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 12.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 -- EDIT THIS TO REDUCE OUTSIDE AIR INFLUENCE
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.1		-- Max planes that can join a combat comparing to the total strength of the ships
