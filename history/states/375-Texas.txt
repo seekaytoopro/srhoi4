@@ -10,7 +10,7 @@ state={
 	resources={
 		oil=390 # was: 580
 		aluminium=50 # was: 96
-		steel = 60
+		steel = 70
 	}
 
 
@@ -18,7 +18,7 @@ state={
 		owner = USA
 		buildings = {
 			infrastructure = 7
-			industrial_complex = 9
+			industrial_complex = 12
 			air_base = 3
 			10337 = {
 				naval_base = 10
