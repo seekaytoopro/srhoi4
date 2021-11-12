@@ -1173,8 +1173,8 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_armor = {
 			breakthrough = 0.10
-			max_organisation = 6.0
-			default_morale = 0.06
+			max_organisation = 4.5
+			default_morale = 0.045
 		}
 		
 		enable_tactic = tactic_blitz
