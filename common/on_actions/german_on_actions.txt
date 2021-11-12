@@ -1,6 +1,26 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			# This adds all owned core states of a country connected to the capital to their array
+			# Usage: global.owned_state_array_GER, where GER is the tag you want the list of states from.
+			every_country = {
+				# log = "Country: [THIS.GetName]"
+				every_owned_state = {
+					limit = {
+						is_core_of = PREV
+
+						#Exception for germany which owns east prussia
+						OR = {
+							is_in_home_area = yes
+							PREV = { tag = GER }
+						}
+					}
+					add_to_array = { global.owned_state_array_@PREV = THIS }
+					# log = "State ID: [THIS.GetName]"
+				}
+			}
+
+
 			#Custom DDay state array from GDU
 			735 = { add_to_array = { global.dday_state_array = THIS } }
 			21 = { add_to_array = { global.dday_state_array = THIS } }
@@ -81,24 +101,24 @@ on_actions = {
 				limit = {
 					NOT = { has_global_flag = total_war }
 					NOT = { has_global_flag = GDU_eastern_front_Axis_danger }
-					original_tag = SOV
+					# original_tag = SOV
 					date > 1942.1.1
 					OR = {
 						any_of_scopes = {
 							array = global.owned_state_array_GER
 							is_controlled_by = SOV
 						}
-						controls_state = 188 # Memel
-						controls_state = 98 # Plock
-						controls_state = 10 # Warsazawa
-						controls_state = 92 # Lublin
-						controls_state = 88 # Krakow
+						SOV = { controls_state = 188 } # Memel
+						SOV = { controls_state = 98 }# Plock
+						SOV = { controls_state = 10 }# Warsazawa
+						SOV = { controls_state = 92 }# Lublin
+						SOV = { controls_state = 88 }# Krakow
 
 						# Also adding more states in Northern Germany/Denmark. Soviet meme naval invasions of Northern Germany can trigger this
 
-						controls_state = 85 # Danzig
-						controls_state = 37 # Sjaelland DK
-						controls_state = 99 # Jutland DK
+						SOV = { controls_state = 85 }# Danzig
+						SOV = { controls_state = 37 }# Sjaelland DK
+						SOV = { controls_state = 99 }# Jutland DK
 
 					}
 				}
