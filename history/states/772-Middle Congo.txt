@@ -14,7 +14,7 @@ victory_points = {
 8193 5
 }
 buildings = {
-infrastructure = 4
+infrastructure = 5
 12975 = {
 naval_base = 10
 }
