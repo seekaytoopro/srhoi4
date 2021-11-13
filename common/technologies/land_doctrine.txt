@@ -65,6 +65,10 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 10
 		}
+		category_light_infantry =
+		{
+			default_morale = 0.10
+		}
 		
 		
 		enable_tactic = tactic_delay
@@ -551,6 +555,18 @@ technologies = {
 		}
 		amphibious_mechanized = {
 			default_morale = 0.1
+		}
+		mot_artillery_brigade = {
+			default_morale = 0.2
+			max_organisation = 10
+		}
+		mot_anti_tank_brigade = {
+			default_morale = 0.2
+			max_organisation = 10
+		}
+		mot_anti_air_brigade = {
+			default_morale = 0.2
+			max_organisation = 10
 		}
 		land_reinforce_rate = 0.07
 		# faster planning
@@ -1222,11 +1238,9 @@ technologies = {
 			centralized_fire_control
 		}
 
-		category_all_armor = {
+		category_army = {
 			hard_attack = 0.10
-			}
-			category_all_infantry = { hard_attack = 0.10 }
-		
+		}
 		
 		path = {
 			leads_to_tech = combined_arms 
@@ -1270,8 +1284,9 @@ technologies = {
 			default_morale = 0.01
 		}
 		category_special_forces = { 
-			soft_attack = 0.5
+			soft_attack = 0.25
 			max_organisation = 1
+			default_morale = 0.01
 		}
 		infantry = { 
 			soft_attack = 0.05
@@ -2791,12 +2806,12 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		org_loss_when_moving = -0.25
+		org_loss_when_moving = -0.15
 		land_reinforce_rate = 0.05
-	rocket_artillery_brigade = { 
-	defense = 0.15
-	breakthrough = 0.1
-	}
+		rocket_artillery_brigade = { 
+			defense = 0.15
+			breakthrough = 0.1
+		}
 		category_all_armor = {
 			max_organisation = 3
 		}
