@@ -105,9 +105,17 @@ NDefines.NAir.FUEL_COST_MULT = 0.21 -- (0.35) fuel multiplier for all air missio
 
 NDefines.NMilitary.INFRA_ORG_IMPACT = 0.25				-- scale factor of infra on org regain.
 NDefines.NMilitary.LAND_SPEED_MODIFIER = 0.0375                    -- basic speed control
-NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.025	-- speed penalty per infrastucture below maximum.
-NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15 -- WAS 0.20, how much org is lost every hour while moving an army. 
-NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.020	-- speed penalty per infrastucture below maximum.
+-- NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15 -- WAS 0.20, how much org is lost every hour while moving an army. 
+-- NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.35
+
+
+--defines relating to how much org you lose while moving/advancing. This relates to snaking and how easy encirclements are and also to how quickly an offensive loses momentum and needs to stop and resupply/consolidate for further advance
+
+NDefines.NMilitary.ORG_LOSS_FACTOR_ON_CONQUER = 0.3            -- vanilla is 0.2, for a long time GDU was 0.4. percentage of (max) org loss on takign enemy province
+-- NDefines.NMilitary.LOW_ORG_FOR_ATTACK = 1.0                    -- vanilla is 0.5. at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
+-- NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.8		   -- vanilla is -0.8. speed impact at 0 org.
+NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.4		   -- vanilla is -0.2. how much org is lost every hour while moving an army.
 
 --HFU FRONTLINE AI DEFINES---------------------------------------------------------------------------------
 NDefines.NMilitary.PLAN_NEIGHBORING_ENEMY_PROVINCE_FACTOR = 0.7	-- When calculating the importance of provinces, it takes number of enemy provinces into account, factored by this
