@@ -5,6 +5,7 @@ technologies = {
 		# xp_research_type = army
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
+		xp_unlock_cost = 0
 		
 		xor = { superior_firepower trench_warfare mass_assault } 
 
@@ -880,6 +881,7 @@ technologies = {
 		# xp_research_type = army
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
+		xp_unlock_cost = 0
 		
 		xor = { mobile_warfare trench_warfare mass_assault } 
 
@@ -1622,6 +1624,7 @@ technologies = {
 		# xp_research_type = army
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
+		xp_unlock_cost = 0
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
@@ -2341,6 +2344,7 @@ technologies = {
 		# xp_research_type = army
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
+		xp_unlock_cost = 0
 		xor = { mobile_warfare superior_firepower trench_warfare } 
 
 		path = {
