@@ -17,9 +17,10 @@ equipments = {
 		maximum_speed = 10
 		reliability = 0.8
 		hardness = 0.25
+		# breakthrough = 10
 
 		#Space taken in convoy
-		lend_lease_cost = 1
+		lend_lease_cost = 1 #5
 
 		build_cost_ic = 2.5
 		resources = {
@@ -28,7 +29,7 @@ equipments = {
 			steel = 1
 		}
 		fuel_consumption = 1.2
-		
+		supply_truck = yes
 	}
 
 	motorized_equipment_1 = {
