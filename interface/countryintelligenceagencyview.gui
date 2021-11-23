@@ -99,6 +99,7 @@ guiTypes = {
 				position = { x = 138 y = 50 }
 				font = "hoi_16mbs"
 				text = "tees"
+				maxWidth = 165
 				format = left
 			}
 			
@@ -392,6 +393,8 @@ guiTypes = {
 					maxHeight = 20
 					multiline = no
 					format = left
+					fixedsize = yes
+					truncate = yes
 					alwaystransparent = yes
 				}
 				
@@ -399,7 +402,7 @@ guiTypes = {
 					name = "progressbar_days"
 					position = { x = 6 y = 4 }
 					font = "hoi_18b"
-					maxWidth = 205
+					maxWidth = 55
 					format = right
 					text = "60 days"
 					alwaystransparent = yes
@@ -437,8 +440,12 @@ guiTypes = {
 					position = { x = 10 y = 4 }
 					font = "hoi_18b"
 					maxWidth = 205
+					maxHeight = 20
+					multiline = no
 					format = left
 					alwaystransparent = yes
+					fixedsize = yes
+					truncate = yes
 				}
 				
 				instantTextboxType = {
@@ -513,6 +520,7 @@ guiTypes = {
 
 				# Scrollbar
 				verticalScrollbar = "right_vertical_slider_intel"
+				scroll_wheel_factor = 45
 				smooth_scrolling = yes
 				background = {
 					name = "Background"
@@ -628,7 +636,9 @@ guiTypes = {
 					position = { x = 0 y = 55 }
 					size = { width = 520 height = 100%% }
 					verticalScrollbar = "right_vertical_slider_intel"
-					
+					scroll_wheel_factor = 40
+					smooth_scrolling = yes
+
 					background = {
 						name = "Background"
 						quadTextureSprite = "GFX_tiled_window_transparent"
@@ -654,6 +664,7 @@ guiTypes = {
 			buttonText = "OPERATIONS"
 			borderSize = {x = 0 y = 0}
 			font = "hoi4_typewriter16"
+			clicksound = decisions_ui_tab
 		}
 	
 		buttonType = {
@@ -663,6 +674,7 @@ guiTypes = {
 			buttonText = "CRYPTOLOGY"
 			font = "hoi4_typewriter16"
 			frame = 2
+			clicksound = decisions_ui_tab
 		}
 	}
 	
@@ -782,6 +794,8 @@ guiTypes = {
 			position = { x = 12 y = 73 }
 			size = { width = -12 height = 408 }
 			verticalScrollbar = "right_vertical_slider"	
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
 			
 			margin = { top = 15 left = 17 bottom = 15 right = 25}
 			

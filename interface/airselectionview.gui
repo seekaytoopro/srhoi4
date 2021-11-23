@@ -466,6 +466,7 @@ guiTypes = {
 			Orientation = upper_left
 
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -709,6 +710,7 @@ guiTypes = {
 			spriteType = "GFX_strategicair_mission_btn_bg"
 			clicksound = "air_mission_select"
 			# shortcut = "j"
+			shortcut = "ctrl+r"
 		}		
 		iconType = {
 			name = "icon"
@@ -815,6 +817,26 @@ guiTypes = {
 			position = {x=3 y=2}	
 			spriteType = "GFX_strategicair_mission_types"
 			frame = 14
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "air_mission_entry_14"
+		position = {x=0 y=0}
+		size = { width=47 height=34 }
+		Orientation = upper_left
+
+		buttonType = {
+			name = "btn"
+			position = {x=0 y=0}	
+			spriteType = "GFX_strategicair_mission_btn_bg"
+			clicksound = "air_mission_select"
+		}		
+		iconType = {
+			name = "icon"
+			position = {x=3 y=2}	
+			spriteType = "GFX_strategicair_mission_types"
+			frame = 15
 			alwaystransparent = yes
 		}
 	}

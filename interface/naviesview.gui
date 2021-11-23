@@ -620,7 +620,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "select_all_btn"
-			spriteType = "GFX_select_all_armylist_short_btn"
+			spriteType = "GFX_select_all_armylist_btn"
 			position = { x=394 y=142 }
 			clicksound = click_default
 			font = "hoi_18mbs"
@@ -686,6 +686,14 @@ guiTypes = {
 			pdx_tooltip = "CLICK_TO_ASSIGN_TRAITS"
 		}
 
+		buttonType = {
+			name = "btn_advisor_tree"
+			position = { x=38 y = 110}
+			quadTextureSprite ="GFX_give_role_leader_strip"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_default
+			frame = 1
+		}
 		instantTextboxType = {
 			name = "leader_desc"
 			position = {x=81 y=50}

@@ -33,6 +33,7 @@ guiTypes = {
 				position = {x=-25 y=37}	
 				spriteType ="GFX_exercise_icon"		
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 				shortcut = "k"
 			}
 			buttonType = {
@@ -40,6 +41,7 @@ guiTypes = {
 				position = {x=-25 y=-507}	
 				spriteType = "GFX_tiled_window_transparent_transparent"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 				shortcut = "shift+k"
 			}
 			
@@ -50,6 +52,7 @@ guiTypes = {
 				quadTextureSprite = "GFX_BPT_execute_mid"
 				frame = 2
 				clicksound = click_default
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -57,6 +60,7 @@ guiTypes = {
 				position = {x=-24 y=38}	
 				spriteType ="GFX_exercise_icon_anim_strip_big"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 				shortcut = "k"
 			}
 			
@@ -72,6 +76,7 @@ guiTypes = {
                 position = {x=52 y=33}
                 spriteType = "GFX_BPT_order_draw_naval_inv_btn"
                 clicksound = click_battleplan
+				oversound = ui_menu_over
                 shortcut = "v" 
             }
 			
@@ -80,6 +85,7 @@ guiTypes = {
 				position = {x=87 y=33}	
 				spriteType = "GFX_BPT_order_draw_paradrop_btn"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -88,6 +94,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_draw_defence_btn"
 				shortcut = "z" 
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			iconType = {
@@ -105,6 +112,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_draw_offence_btn"
 				shortcut = "x"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			iconType = {
@@ -129,6 +137,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_draw_blitz_btn"
 				shortcut = "shift+x"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -137,6 +146,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_draw_fallback_btn"
 				shortcut = "c" 
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -144,6 +154,7 @@ guiTypes = {
 				position = {x=285 y=33}	
 				spriteType = "GFX_BPT_order_area_defense_btn"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 				shortcut = "v" 
 			}
 			
@@ -152,6 +163,7 @@ guiTypes = {
 				position = {x=330 y=33}	
 				spriteType = "GFX_BPT_order_assign_units_btn"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 
 			buttonType = {
@@ -159,6 +171,7 @@ guiTypes = {
 				position = {x=366 y=33}	
 				spriteType = "GFX_BPT_order_unassign_units_btn"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 				shortcut = "ctrl+h"
 			}
 
@@ -168,6 +181,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_reshape_btn"
 				#shortcut = "d"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			buttonType = {
@@ -176,6 +190,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_delete_btn"
 				shortcut = "DEL"
 				clicksound = click_battleplan
+				oversound = ui_menu_over
 			}
 			
 			instantTextboxType = {
@@ -230,6 +245,7 @@ guiTypes = {
 					position = {x=15 y=31}	
 					spriteType = "GFX_garr_vp"
 					clicksound = click_battleplan 
+					oversound = ui_menu_over
 					pdx_tooltip = "GARRISON_CONF_VP"
 				}
 				
@@ -238,6 +254,7 @@ guiTypes = {
 					position = {x=55 y=31}
 					spriteType = "GFX_garr_port"
 					clicksound = click_battleplan 
+					oversound = ui_menu_over
 					pdx_tooltip = "GARRISON_CONF_PORT"
 				}
 
@@ -246,6 +263,7 @@ guiTypes = {
 					position = {x=95 y=31}		
 					spriteType = "GFX_garr_coastline"
 					clicksound = click_battleplan 
+					oversound = ui_menu_over
 					pdx_tooltip = "GARRISON_CONF_COAST"
 				}
 				
@@ -254,6 +272,7 @@ guiTypes = {
 					position = {x=135 y=31}	
 					spriteType = "GFX_garr_airbase"
 					clicksound = click_battleplan 
+					oversound = ui_menu_over
 					pdx_tooltip = "GARRISON_CONF_AIRBASE"
 				}
 				
@@ -262,9 +281,17 @@ guiTypes = {
 					position = {x=175 y=31}	
 					spriteType = "GFX_garr_fort"
 					clicksound = click_battleplan 
+					oversound = ui_menu_over
 					pdx_tooltip = "GARRISON_CONF_FORT"
 				}
-				
+				buttonType = {
+					name = "btn_setting_rail" 
+					position = {x=215 y=31}		
+					spriteType = "GFX_garr_rail"
+					clicksound = click_battleplan 
+					oversound = ui_menu_over
+					pdx_tooltip = "GARRISON_CONF_RAIL"
+				}
 				iconType = {
 					name = "selected_order_overlay"
 					position = { x = 85 y = 65 }
@@ -302,6 +329,7 @@ guiTypes = {
 					pdx_tooltip_delayed = "PLAN_EXECUTE_CAREFUL_DESC"
 					frame = 1
 					clicksound = click_default
+					oversound = ui_menu_over
 				}
 				
 				buttonType = {
@@ -313,6 +341,7 @@ guiTypes = {
 					pdx_tooltip_delayed = "PLAN_EXECUTE_BALANCED_DESC"
 					frame = 2
 					clicksound = click_default
+					oversound = ui_menu_over
 				}
 				
 				buttonType = {
@@ -324,6 +353,7 @@ guiTypes = {
 					pdx_tooltip_delayed = "PLAN_EXECUTE_RUSH_DESC"
 					frame = 1
 					clicksound = click_default
+					oversound = ui_menu_over
 				}
 				
 				instantTextboxType = {
