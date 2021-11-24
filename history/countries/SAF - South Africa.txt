@@ -144,149 +144,207 @@ set_popularities = {
 	communism = 5
 }
 
-create_country_leader = {
-	name = "J. B. M. Hertzog"
-	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-	picture = "GFX_SAF_james_hertzog"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "J. B. M. Hertzog"
+# 	desc = "POLITICS_J_B_M_HERTZOG_DESC"
+# 	picture = "GFX_SAF_james_hertzog"
+# 	expire = "1965.1.1"
+# 	ideology = conservatism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "D. F. Malan"
-	desc = "POLITICS_DF_MALAN_DESC"
-	picture = "GFX_SAF_daniel_malan"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "D. F. Malan"
+# 	desc = "POLITICS_DF_MALAN_DESC"
+# 	picture = "GFX_SAF_daniel_malan"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Moses Kotane"
-	desc = "POLITICS_MOSES_KOTANE_DESC"
-	picture = "GFX_SAF_moses_kotane"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Moses Kotane"
+# 	desc = "POLITICS_MOSES_KOTANE_DESC"
+# 	picture = "GFX_SAF_moses_kotane"
+# 	expire = "1965.1.1"
+# 	ideology = marxism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Pixley Ka Isaka Seme"
-	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Pixley Ka Isaka Seme"
+# 	desc = "POLITICS_PIXLEY_SEME_DESC"
+# 	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
+# 	expire = "1965.1.1"
+# 	ideology = centrism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox old_guard trickster career_officer infantry_officer}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
+# create_corps_commander = {
+# 	name = "George Edwin Brink"
+# 	gfx = "GFX_SAF_george_edwin_brink"
+# 	traits = { desert_fox old_guard trickster career_officer infantry_officer}
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
 
-create_field_marshal = {
-	name = "Dan Pienaar (USE FOR INF)"
-	picture = "Portrait_SAF_Dan_Pienaar.tga"
-	traits = { brilliant_strategist trait_cautious skilled_staffer career_officer infantry_leader organizer media_personality}
-	skill = 5
-	attack_skill = 6
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Christiaan du Toit (USE FOR TANKS)"
-	picture = "Portrait_SAF_Christiaan_du_Toit.tga"
-	traits = { organizer harsh_leader commando desert_fox armor_officer panzer_leader career_officer}
-	skill = 5
-	attack_skill = 3
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 5
-}
-create_corps_commander = {
-	name = "Christoffel Venter"
-	picture = "Portrait_SAF_Christoffel_Venter.tga"
-	traits = { old_guard war_hero infantry_officer infantry_leader hill_fighter inflexible_strategist}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Evered Poole"
-	picture = "Portrait_SAF_Evered_Poole.tga"
-	traits = { trickster trait_mountaineer commando infantry_officer trait_cautious infantry_leader skilled_staffer}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Hendrik Klopper"
-	picture = "Portrait_SAF_Hendrik_Klopper.tga"
-	traits = { commando  naval_invader brilliant_strategist infantry_leader harsh_leader trait_engineer  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 6
-}
-create_field_marshal = {
-	name = "Jan Smuts"
-	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
-	traits = { panzer_leader organizer brilliant_strategist trait_cautious skilled_staffer career_officer politically_connected }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 7
-}
-create_corps_commander = {
-	name = "Leonard Beyers"
-	picture = "Portrait_SAF_Leonard_Beyers.tga"
-	traits = { organizer inflexible_strategist old_guard organizer skilled_staffer trait_engineer politically_connected infantry_officer}
-	skill = 4
-	attack_skill = 2
-	defense_skill = 7
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Nick Bierman (USE FOR TANKS)"
-	picture = "Portrait_SAF_Nick_Bierman.tga"
-	traits = { harsh_leader trait_reckless career_officer armor_officer organizer panzer_leader desert_fox }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
+# create_field_marshal = {
+# 	name = "Dan Pienaar (USE FOR INF)"
+# 	picture = "Portrait_SAF_Dan_Pienaar.tga"
+# 	traits = { brilliant_strategist trait_cautious skilled_staffer career_officer infantry_leader organizer media_personality}
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 2
+# 	planning_skill = 4
+# 	logistics_skill = 2
+# }
+# create_corps_commander = {
+# 	name = "Christiaan du Toit (USE FOR TANKS)"
+# 	picture = "Portrait_SAF_Christiaan_du_Toit.tga"
+# 	traits = { organizer harsh_leader commando desert_fox armor_officer panzer_leader career_officer}
+# 	skill = 5
+# 	attack_skill = 3
+# 	defense_skill = 6
+# 	planning_skill = 3
+# 	logistics_skill = 5
+# }
+# create_corps_commander = {
+# 	name = "Christoffel Venter"
+# 	picture = "Portrait_SAF_Christoffel_Venter.tga"
+# 	traits = { old_guard war_hero infantry_officer infantry_leader hill_fighter inflexible_strategist}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 5
+# 	planning_skill = 2
+# 	logistics_skill = 2
+# }
+# create_corps_commander = {
+# 	name = "Evered Poole"
+# 	picture = "Portrait_SAF_Evered_Poole.tga"
+# 	traits = { trickster trait_mountaineer commando infantry_officer trait_cautious infantry_leader skilled_staffer}
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
+# create_corps_commander = {
+# 	name = "Hendrik Klopper"
+# 	picture = "Portrait_SAF_Hendrik_Klopper.tga"
+# 	traits = { commando  naval_invader brilliant_strategist infantry_leader harsh_leader trait_engineer  }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 2
+# 	planning_skill = 1
+# 	logistics_skill = 6
+# }
+# create_field_marshal = {
+# 	name = "Jan Smuts"
+# 	picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
+# 	traits = { panzer_leader organizer brilliant_strategist trait_cautious skilled_staffer career_officer politically_connected }
+# 	skill = 5
+# 	attack_skill = 4
+# 	defense_skill = 2
+# 	planning_skill = 3
+# 	logistics_skill = 7
+# }
+# create_corps_commander = {
+# 	name = "Leonard Beyers"
+# 	picture = "Portrait_SAF_Leonard_Beyers.tga"
+# 	traits = { organizer inflexible_strategist old_guard organizer skilled_staffer trait_engineer politically_connected infantry_officer}
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 7
+# 	planning_skill = 1
+# 	logistics_skill = 3
+# }
+# create_corps_commander = {
+# 	name = "Nick Bierman (USE FOR TANKS)"
+# 	picture = "Portrait_SAF_Nick_Bierman.tga"
+# 	traits = { harsh_leader trait_reckless career_officer armor_officer organizer panzer_leader desert_fox }
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	planning_skill = 3
+# 	logistics_skill = 4
+# }
 
-create_navy_leader = {
-	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { battleship_adherent }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
+# create_navy_leader = {
+# 	name = "Guy Hallifax"
+# 	gfx = "GFX_SAF_guy_halifax"
+# 	traits = { battleship_adherent }
+# 	skill = 3
+# 	attack_skill = 4
+# 	defense_skill = 2
+# 	maneuvering_skill = 2
+# 	coordination_skill = 2
+# }
+recruit_character = SAF_j._b._m._hertzog
+recruit_character = SAF_guy_hallifax
+recruit_character = SAF_petrus_uys
+recruit_character = SAF_piet_de_wet
+recruit_character = SAF_petrus_de_beer
+recruit_character = SAF_władysław_bortnowski
+recruit_character = SAF_jayanto_nath_chaudhuri
+recruit_character = SAF_jan_smuts
+recruit_character = SAF_charles_foulkes
+recruit_character = SAF_robert_row
+recruit_character = SAF_frank_messervy
+recruit_character = SAF_horace_robertson
+recruit_character = SAF_leslie_morshead
+recruit_character = SAF_roman_abraham
+recruit_character = SAF_thomas_blamey
+recruit_character = SAF_władysław_sikorski
+recruit_character = SAF_bert_hoffmeister
+recruit_character = SAF_noel_beresfordpeirse
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_wincenty_kowalski
+recruit_character = SAF_henry_wynter
+recruit_character = SAF_kodandera_subayya_thimayya
+recruit_character = SAF_william_stevens
+recruit_character = SAF_kodandera_madappa_cariappa
+recruit_character = SAF_władysław_anders
+recruit_character = SAF_orde_wingate
+recruit_character = SAF_bernard_freyberg
+recruit_character = SAF_douglas_gracey
+recruit_character = SAF_stanisław_kopański
+recruit_character = SAF_john_northcott
+recruit_character = SAF_iven_mackay
+recruit_character = SAF_alan_vasey
+recruit_character = SAF_pierre_oliver_knoll
+recruit_character = SAF_gentlemen_saf
+recruit_character = SAF_cornelis_van_zuigenbrogge
+recruit_character = SAF_chief_manuever
+recruit_character = SAF_e_g_jansen
+recruit_character = SAF_chief_entrenchment
+recruit_character = SAF_marinus_van_osterkamp
+recruit_character = SAF_stabber_saf
+recruit_character = SAF_nicolaas_havenga
+recruit_character = SAF_crusader_saf
+recruit_character = SAF_moralle
+recruit_character = SAF_sir_patrick_duncan
+recruit_character = SAF_jeannot_de_la_tourier
+recruit_character = SAF_j_f_van_rensburg
+recruit_character = SAF_armaments_saf
+recruit_character = SAF_pierre_van_ryneveld
+recruit_character = SAF_offf
+recruit_character = SAF_orggg
+recruit_character = SAF_chief_planning
+recruit_character = SAF_army_concealment
+recruit_character = SAF_army_logistics
+recruit_character = SAF_smooth_saf
+recruit_character = SAF_leonard_beyers
+recruit_character = SAF_air_tacticalbombing
+recruit_character = SAF_c_de_weenburg_du_toit
+recruit_character = SAF_james_mitchell_baker
