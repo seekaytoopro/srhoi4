@@ -155,176 +155,58 @@ set_popularities = {
 	communism = 2
 	neutrality = 60
 }
-
-create_country_leader = {
-	name = "Gheorghe Tatarescu"
-	desc = "POLITICS_GHEORGHE_TATARESCU_DESC"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Gheorghe_Tatarescu.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "Portrait_Romania_Constantin_Parhon.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Armand Calinescu"
-	desc = "POLITICS_ARMAND_CALINESCU_DESC"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Armand_Calinescu.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Octavian Goga"
-	desc = "POLITICS_OCTAVIAN_GOGA_DESC"
-	picture = "Portrait_Romania_Octavian_Goga.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ion Antonescu"
-	desc = "POLITICS_ION_ANTONESCU_DESC"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Petre Dumitrescu"
-	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { defensive_doctrine old_guard organizer logistics_wizard unyielding_defender inflexible_strategist skilled_staffer career_officer infantry_leader politically_connected trait_cautious}
-	skill = 5
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 1
-	logistics_skill = 7
-}
-
-create_field_marshal = {
-	name = "Ion Antonescu"
-	picture = "Portrait_Romania_Ion_Antonescu.dds"
-	traits = {brilliant_strategist career_officer harsh_leader trait_engineer  war_hero politically_connected offensive_doctrine   }
-	skill = 5
-	attack_skill = 6
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { war_hero  infantry_officer infantry_leader ambusher trait_cautious fortress_buster organizer urban_assault_specialist harsh_leader trait_engineer}
-	skill = 5
-	attack_skill = 3
-	defense_skill = 7
-	planning_skill = 5
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Constantin Constantinescu-Claps"
-	picture = "Portrait_Romania_Constantin_Constantinescu_Claps.tga"
-	traits = { infantry_leader infantry_officer trait_cautious organizer politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Constantin Pantazi"
-	picture = "Portrait_Romania_Constantin_Pantazi.tga"
-	traits = { organizer trait_engineer urban_assault_specialist trait_reckless brilliant_strategist }
-	skill = 4
-	attack_skill = 6
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Dumitru Popescu"
-	picture = "Portrait_Romania_Dumitru_Popescu.tga"
-	traits = { hill_fighter trait_mountaineer  career_officer harsh_leader   }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Leonard Mociulschi"
-	picture = "Portrait_Romania_Leonard_Mociulschi.tga"
-	traits = { career_officer cavalry_leader panzer_leader trait_engineer harsh_leader brilliant_strategist career_officer trait_reckless}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Nicolae Ciuperca"
-	picture = "Portrait_Romania_Nicolae_Ciuperca.tga"
-	traits = { panzer_leader armor_officer career_officer trait_cautious substance_abuser harsh_leader commando desert_fox }
-	skill = 5
-	attack_skill = 2
-	defense_skill = 7
-	planning_skill = 3
-	logistics_skill = 6
-}
-create_corps_commander = {
-	name = "Nicolae Macici"
-	picture = "Portrait_Romania_Nicolae_Macici.tga"
-	traits = {naval_invader harsh_leader infantry_officer media_personality infantry_leader trait_reckless desert_fox }
-	skill = 3
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = {  infantry_officer infantry_leader infantry_expert trickster expert_improviser career_officer ranger harsh_leader skilled_staffer trait_engineer organizer}
-		skill = 5
-		attack_skill = 6
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 4
-}
-create_navy_leader = {
-	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { gentlemanly spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
-
+recruit_character = ROM_armand_calinescu
+recruit_character = ROM_constantin_sanatescu
+recruit_character = ROM_ion_antonescu
+recruit_character = ROM_horia_macellariu
+recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_constantin_ion_parhon
+recruit_character = ROM_charles_huntziger
+recruit_character = ROM_maurice_gamelin
+recruit_character = ROM_maxime_weygand
+recruit_character = ROM_vicente_rojo_lluch
+recruit_character = ROM_francisco_franco
+recruit_character = ROM_emilio_mola
+recruit_character = ROM_antoinemariebenoît_besson
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ROM_miguel_cabanellas
+recruit_character = ROM_josé_miaja
+recruit_character = ROM_ioan_mihail_racovita
+recruit_character = ROM_alphonse_georges
+recruit_character = ROM_gastonhenri_billotte
+recruit_character = ROM_henry_freydenberg
+recruit_character = ROM_rené_olry
+recruit_character = ROM_josé_millán_astray
+recruit_character = ROM_juan_yagüe
+recruit_character = ROM_mohamed_meziane
+recruit_character = ROM_nicolae_ciuperca
+recruit_character = ROM_josé_enrique_varela
+recruit_character = ROM_gonzalo_queipo_de_llano
+recruit_character = ROM_barbu_paraianu
+recruit_character = ROM_agustín_muñoz_grandes
+recruit_character = ROM_air_tacticalbombing
+recruit_character = ROM_gheorghe_potopeanu
+recruit_character = ROM_chief_entrenchment
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_chief_planning
+recruit_character = ROM_ermil_gheorghiu
+recruit_character = ROM_army_logistics
+recruit_character = ROM_nicolae_sova
+recruit_character = ROM_stabber_rom
+recruit_character = ROM_orggg
+recruit_character = ROM_gentlemen_rom
+recruit_character = ROM_gheorghe_argeseanu
+recruit_character = ROM_army_regrouping
+recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_armaments_rom
+recruit_character = ROM_smooth_rom
+recruit_character = ROM_army_concealment
+recruit_character = ROM_nicolae_malaxa
+recruit_character = ROM_chief_manuever
+recruit_character = ROM_crusader_rom
+recruit_character = ROM_mihail_sturdza
+recruit_character = ROM_paul_teodorescu
 
 ### VARIANTS ###
 # 1936 Start #

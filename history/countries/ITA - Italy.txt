@@ -190,240 +190,309 @@ set_popularities = {
 }
 
 
-create_country_leader = {
-	name = "Benito Mussolini"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "Portrait_Italy_Benito_Mussolini.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
+# create_country_leader = {
+# 	name = "Benito Mussolini"
+# 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+# 	picture = "Portrait_Italy_Benito_Mussolini.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 
-create_country_leader = {
-	name = "Ferruccio Parri"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_italy_ferruccio_parri"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
+# create_country_leader = {
+# 	name = "Ferruccio Parri"
+# 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+# 	picture = "GFX_portrait_italy_ferruccio_parri"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 
-create_country_leader = {
-	name = "Palmiro Togliatti"
-	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-	picture = "GFX_portrait_ita_palmiro_togliatti"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
+# create_country_leader = {
+# 	name = "Palmiro Togliatti"
+# 	desc = "POLITICS_BENITO_MUSSOLINI_DESC"
+# 	picture = "GFX_portrait_ita_palmiro_togliatti"
+# 	expire = "1965.1.1"
+# 	ideology = marxism
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 
-create_field_marshal = {
-	name = "Pietro Badoglio"
-	picture = "Portrait_Italy_Pietro_Badoglio.dds"
-	traits = { old_guard offensive_doctrine infantry_leader skilled_staffer  media_personality career_officer brilliant_strategist}
-	skill = 5
-	id = 5046
-
-
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 6
-}
-
-create_field_marshal = {
-	name = "Emilio De Bono"
-	picture = "portrait_italy_emilio_de_bono.dds"
-	traits = { defensive_doctrine old_guard infantry_officer infantry_leader  politically_connected inflexible_strategist desert_fox}
-	skill = 4
-	id = 5047
+# create_field_marshal = {
+# 	name = "Pietro Badoglio"
+# 	picture = "Portrait_Italy_Pietro_Badoglio.dds"
+# 	traits = { old_guard offensive_doctrine infantry_leader skilled_staffer  media_personality career_officer brilliant_strategist}
+# 	skill = 5
+# 	id = 5046
 
 
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	planning_skill = 5
+# 	logistics_skill = 6
+# }
 
-create_corps_commander = {
-	name = "Ugo Cavallero"
-	picture = "Portrait_Italy_Ugo_Cavallero.dds"
-	traits = { organizer career_officer cavalry_officer harsh_leader desert_fox trickster }
-	skill = 5
-	id = 5041
-
-
-	rank = 1
-	attack_skill = 3
-	defense_skill = 6
-	planning_skill = 5
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Giovanni Messe"
-	picture = "Portrait_Italy_Giovanni_Messe.dds"
-	traits = { panzer_leader trait_reckless trickster armor_officer media_personality trait_cautious war_hero brilliant_strategist trickster desert_fox  }
-	skill = 6
-	id = 5040
+# create_field_marshal = {
+# 	name = "Emilio De Bono"
+# 	picture = "portrait_italy_emilio_de_bono.dds"
+# 	traits = { defensive_doctrine old_guard infantry_officer infantry_leader  politically_connected inflexible_strategist desert_fox}
+# 	skill = 4
+# 	id = 5047
 
 
-	rank = 1
-	attack_skill = 7
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-}
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	planning_skill = 2
+# 	logistics_skill = 4
+# }
 
-create_corps_commander = {
-	name = "Sebastiano Visconti Prasca"
-	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
-	traits = { infantry_officer  hill_fighter infantry_leader war_hero inflexible_strategist old_guard naval_invader}
-	skill = 5
-	id = 5042
-
-
-	attack_skill = 5
-	defense_skill = 6
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ubaldo Soddu"
-	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
-	traits = { panzer_leader politically_connected skilled_staffer career_officer commando trait_engineer }
-	skill = 4
-	id = 5043
+# create_corps_commander = {
+# 	name = "Ugo Cavallero"
+# 	picture = "Portrait_Italy_Ugo_Cavallero.dds"
+# 	traits = { organizer career_officer cavalry_officer harsh_leader desert_fox trickster }
+# 	skill = 5
+# 	id = 5041
 
 
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 5
-}
+# 	rank = 1
+# 	attack_skill = 3
+# 	defense_skill = 6
+# 	planning_skill = 5
+# 	logistics_skill = 2
+# }
 
-create_corps_commander = {
-	name = "Italo Balbo"
-	picture = "portrait_italy_italo_balbo.dds"
-	traits = { career_officer harsh_leader old_guard infantry_officer infantry_leader urban_assault_specialist skilled_staffer politically_connected}
-	skill = 4
-	id = 5044
-
-
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 4
-}
-
-create_field_marshal = {
-	name = "Rodolfo Graziani"
-	picture = "portrait_italy_radolfo_graziani.dds"
-	traits = { old_guard infantry_officer infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
-	skill = 5
-	id = 5045
+# create_corps_commander = {
+# 	name = "Giovanni Messe"
+# 	picture = "Portrait_Italy_Giovanni_Messe.dds"
+# 	traits = { panzer_leader trait_reckless trickster armor_officer media_personality trait_cautious war_hero brilliant_strategist trickster desert_fox  }
+# 	skill = 6
+# 	id = 5040
 
 
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 3
-}
+# 	rank = 1
+# 	attack_skill = 7
+# 	defense_skill = 5
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
 
-create_corps_commander = {
-	name = "Alessandro Pirzio Biroli"
-	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_1.dds"
-	traits = {harsh_leader infantry_officer trait_mountaineer skilled_staffer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-}
+# create_corps_commander = {
+# 	name = "Sebastiano Visconti Prasca"
+# 	picture = "Portrait_Italy_Sebastiano_Visconti_Prasca.dds"
+# 	traits = { infantry_officer  hill_fighter infantry_leader war_hero inflexible_strategist old_guard naval_invader}
+# 	skill = 5
+# 	id = 5042
 
-create_corps_commander = {
-	name = "Amadeo Guillet"
-	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_2.dds"
-	traits = { media_personality career_officer cavalry_leader trickster brilliant_strategist}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 2
-}
 
-create_corps_commander = {
-	name = "Annibale Bergonzoli"
-	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_3.dds"
-	traits = {politically_connected infantry_officer old_guard organizer}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 5
-}
+# 	attack_skill = 5
+# 	defense_skill = 6
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
 
-create_corps_commander = {
-	name = "Bonessa"
-	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_4.dds"
-	traits = {harsh_leader trait_cautious trait_mountaineer hill_fighter politically_connected}
-	skill = 4
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 2
-	logistics_skill = 3
-}
+# create_corps_commander = {
+# 	name = "Ubaldo Soddu"
+# 	picture = "Portrait_Italy_Ubaldo_Soddu.dds"
+# 	traits = { panzer_leader politically_connected skilled_staffer career_officer commando trait_engineer }
+# 	skill = 4
+# 	id = 5043
 
-create_corps_commander = {
-	name = "Duca Pistoia"
-	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_5.dds"
-	traits = { politically_connected organizer skilled_staffer trait_cautious infantry_leader}
-	skill = 3
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 6
-}
 
-create_navy_leader = {
-	name = "Alberto Da Zara"
-		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
-	traits={ battleship_adherent gentlemanly fleet_protector superior_tactician ironside air_controller big_guns_expert green_water_expert destroyer_leader concealment_expert }
-	skill = 6
-	attack_skill = 7
-	defense_skill = 7
-	maneuvering_skill = 4
-	coordination_skill = 4
-}
+# 	attack_skill = 2
+# 	defense_skill = 3
+# 	planning_skill = 3
+# 	logistics_skill = 5
+# }
 
-create_navy_leader = {
-	name = "Angelo Iachino"
-		picture = "Portrait_Italy_Angelo_Iachino.dds"
-	traits = { seawolf blockade_runner spotter green_water_expert concealment_expert   }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 2
-	maneuvering_skill = 6
-	coordination_skill = 8
-}
+# create_corps_commander = {
+# 	name = "Italo Balbo"
+# 	picture = "portrait_italy_italo_balbo.dds"
+# 	traits = { career_officer harsh_leader old_guard infantry_officer infantry_leader urban_assault_specialist skilled_staffer politically_connected}
+# 	skill = 4
+# 	id = 5044
 
-create_navy_leader = {
-	name = "Carlo Bergamini"
-		picture = "Portrait_Italy_Carlo_Bergamini.dds"
-	traits = { bold superior_tactician spotter ironside green_water_expert }
-	skill = 4
-	attack_skill = 7
-	defense_skill = 3
-	maneuvering_skill = 4
-	coordination_skill = 7
-}
+
+# 	attack_skill = 4
+# 	defense_skill = 4
+# 	planning_skill = 1
+# 	logistics_skill = 4
+# }
+
+# create_field_marshal = {
+# 	name = "Rodolfo Graziani"
+# 	picture = "portrait_italy_radolfo_graziani.dds"
+# 	traits = { old_guard infantry_officer infantry_leader trait_cautious hill_fighter inflexible_strategist  politically_connected skilled_staffer }
+# 	skill = 5
+# 	id = 5045
+
+
+# 	attack_skill = 5
+# 	defense_skill = 5
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Alessandro Pirzio Biroli"
+# 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_1.dds"
+# 	traits = {harsh_leader infantry_officer trait_mountaineer skilled_staffer }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 4
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Amadeo Guillet"
+# 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_2.dds"
+# 	traits = { media_personality career_officer cavalry_leader trickster brilliant_strategist}
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 4
+# 	logistics_skill = 2
+# }
+
+# create_corps_commander = {
+# 	name = "Annibale Bergonzoli"
+# 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_3.dds"
+# 	traits = {politically_connected infantry_officer old_guard organizer}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	planning_skill = 2
+# 	logistics_skill = 5
+# }
+
+# create_corps_commander = {
+# 	name = "Bonessa"
+# 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_4.dds"
+# 	traits = {harsh_leader trait_cautious trait_mountaineer hill_fighter politically_connected}
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 6
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
+
+# create_corps_commander = {
+# 	name = "Duca Pistoia"
+# 	portrait_path = "gfx/leaders/ITA/Portrait_Italy_Generic_land_5.dds"
+# 	traits = { politically_connected organizer skilled_staffer trait_cautious infantry_leader}
+# 	skill = 3
+# 	attack_skill = 1
+# 	defense_skill = 2
+# 	planning_skill = 1
+# 	logistics_skill = 6
+# }
+
+# create_navy_leader = {
+# 	name = "Alberto Da Zara"
+# 		picture = "Portrait_Italy_Alberto_Da_Zara.dds"
+# 	traits={ battleship_adherent gentlemanly fleet_protector superior_tactician ironside air_controller big_guns_expert green_water_expert destroyer_leader concealment_expert }
+# 	skill = 6
+# 	attack_skill = 7
+# 	defense_skill = 7
+# 	maneuvering_skill = 4
+# 	coordination_skill = 4
+# }
+
+# create_navy_leader = {
+# 	name = "Angelo Iachino"
+# 		picture = "Portrait_Italy_Angelo_Iachino.dds"
+# 	traits = { seawolf blockade_runner spotter green_water_expert concealment_expert   }
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 2
+# 	maneuvering_skill = 6
+# 	coordination_skill = 8
+# }
+
+# create_navy_leader = {
+# 	name = "Carlo Bergamini"
+# 		picture = "Portrait_Italy_Carlo_Bergamini.dds"
+# 	traits = { bold superior_tactician spotter ironside green_water_expert }
+# 	skill = 4
+# 	attack_skill = 7
+# 	defense_skill = 3
+# 	maneuvering_skill = 4
+# 	coordination_skill = 7
+# }
+
+recruit_character = ITA_paolo_thaon_di_revel
+recruit_character = ITA_luigi_einaudi
+recruit_character = ITA_junio_valerio_borghese
+recruit_character = ITA_giacomo_acerbo
+recruit_character = ITA_serafino_mazzolini
+recruit_character = ITA_dino_grandi
+recruit_character = ITA_roberto_farinacci
+recruit_character = ITA_gian_galeazzo_ciano
+recruit_character = ITA_giovanni_marinelli
+recruit_character = ITA_carlo_scorza
+
+
+
+
+
+
+
+recruit_character = ITA_benito_mussolini
+recruit_character = ITA_ferruccio_parri
+recruit_character = ITA_ettore_badoglio
+recruit_character = ITA_davide_fara
+recruit_character = ITA_inigo_campioni
+recruit_character = ITA_giuseppe_fioravanzo
+recruit_character = ITA_angelo_iachino
+recruit_character = ITA_pietro_badoglio
+recruit_character = ITA_mario_berti
+recruit_character = ITA_melchiade_gabba
+recruit_character = ITA_rodolfo_graziani
+recruit_character = ITA_umberto_ii_di_savoia
+recruit_character = ITA_emilio_de_bono
+recruit_character = ITA_sebastiano_visconti_prasca
+recruit_character = ITA_ugo_cavallero
+recruit_character = ITA_vittorio_ambrosio
+recruit_character = ITA_enrico_caviglia
+recruit_character = ITA_italo_gariboldi
+recruit_character = ITA_mario_caracciolo_di_feroleto
+recruit_character = ITA_alberto_pariani
+recruit_character = ITA_ezio_rosi
+recruit_character = ITA_federico_baistrocchi
+recruit_character = ITA_ettore_bastico
+recruit_character = ITA_filiberto_di_savoiagenova
+recruit_character = ITA_renato_ricci
+recruit_character = ITA_francesco_guidi
+recruit_character = ITA_achille_starace
+recruit_character = ITA_carlo_carini
+recruit_character = ITA_amedeo_ademollo
+recruit_character = ITA_ubaldo_soddu
+recruit_character = ITA_annibale_bergonzoli
+recruit_character = ITA_italo_balbo
+recruit_character = ITA_giovanni_messe
+recruit_character = ITA_armando_pescatori
+recruit_character = ITA_giuseppe_castellano
+recruit_character = ITA_riccardo_calcagno
+recruit_character = ITA_giorgio_carlo_calvi_di_bergolo
+recruit_character = ITA_
+recruit_character = ITA_giuseppe_tellera
+recruit_character = ITA_federico_ferrariorsi
+recruit_character = ITA_amedeo_guillet
+recruit_character = ITA_attilio_teruzzi
+recruit_character = ITA_adalberto_di_savoiagenova
+recruit_character = ITA_alfredo_agnesi
+recruit_character = ITA_alfredo_guzzoni
+recruit_character = ITA_sebastiano_gallina
+recruit_character =ITA_ettore_muti
+recruit_character = ITA_mario_roatta
+recruit_character = ITA_domenico_cavagnari
+recruit_character = ITA_arturo_riccardi
+recruit_character =ITA_gaetano_crocco
 
 ### VARIANTS ###
 # 1936 Start #
