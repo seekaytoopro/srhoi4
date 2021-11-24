@@ -1,0 +1,1221 @@
+characters={
+	EFR_maxime_weygand={
+		name="Maxime Weygand"
+		advisor={
+			slot = army_chief
+			idea_token = EFR_maxime_weygand
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_defensive_3 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist panzer_leader logistics_wizard thorough_planner unyielding_defender panzer_expert }
+			skill=6
+			attack_skill=6
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFR_phillipe_pétain={
+		name="Phillipe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ lion_of_verdun }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EFR_jonas_smith={
+		name="Jonas Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Africa_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	EFR_marcus_smith={
+		name="Marcus Smith"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ captain_of_industry compassionate_gentleman }
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	EFR_alex_walker={
+		name="Alex Walker"
+		portraits={
+			civilian={
+				large="GFX_Portrait_South_Africa_Political_Leader_Generic"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ compassionate_gentleman }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	EFR_charles_huntziger={
+		name="Charles Huntziger"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_charles_huntziger.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist organizer panzer_leader winter_specialist defensive_doctrine unyielding_defender panzer_expert ambusher guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_maurice_gamelin={
+		name="Maurice Gamelin"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_maurice_gamelin.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist infantry_leader logistics_wizard defensive_doctrine unyielding_defender ambusher }
+			skill=6
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_vicente_rojo_lluch={
+		name="Vicente Rojo Lluch"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPR_vicente_rojo_lluch.dds"
+			}
+			army={
+				large="gfx/leaders/SPR/portrait_spr_vicente_rojo_lluch.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist organizer infantry_leader logistics_wizard fast_planner aggressive_assaulter organisational_leader inspirational_leader infantry_expert }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_ion_antonescu={
+		name="Ion Antonescu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_ion_antonescu.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/Portrait_Romania_Ion_Antonescu.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable brilliant_strategist infantry_leader trait_engineer naval_invader thorough_planner aggressive_assaulter infantry_expert invader_ii }
+			skill=6
+			attack_skill=6
+			defense_skill=1
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_francisco_franco={
+		name="Francisco Franco"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_francisco_franco.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist organizer trait_engineer panzer_leader desert_fox hill_fighter logistics_wizard thorough_planner aggressive_assaulter }
+			skill=6
+			attack_skill=5
+			defense_skill=1
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_emilio_mola={
+		name="Emilio Mola"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_emilio_mola.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_emilio_mola.dds"
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery trait_cautious cavalry_leader logistics_wizard defensive_doctrine combined_arms_expert cavalry_expert scavenger ambusher }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	EFR_antoinemariebenoît_besson={
+		name="Antoine-Marie-Benoît Besson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist infantry_leader trait_mountaineer logistics_wizard defensive_doctrine ambusher camouflage_expert }
+			skill=6
+			attack_skill=4
+			defense_skill=8
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_petre_dumitrescu={
+		name="Petre Dumitrescu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_petre_dumitrescu.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/Portrait_romania_petre_dumitrescu.dds"
+			}
+		}
+		field_marshal={
+			traits={ inflexible_strategist cavalry_leader urban_assault_specialist logistics_wizard defensive_doctrine unyielding_defender combined_arms_expert cavalry_expert guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=8
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_miguel_cabanellas={
+		name="Miguel Cabanellas"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_miguel_cabanellas.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_miguel_cabanellas.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable old_guard organizer cavalry_leader urban_assault_specialist fast_planner thorough_planner inspirational_leader combined_arms_expert cavalry_expert }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	EFR_josé_miaja={
+		name="José Miaja"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPR_jose_miaja.dds"
+			}
+			army={
+				large="gfx/leaders/SPR/portrait_spr_jose_miaja.dds"
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery old_guard organizer infantry_leader trickster ranger urban_assault_specialist thorough_planner fortress_buster infantry_expert }
+			skill=6
+			attack_skill=3
+			defense_skill=6
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_ioan_mihail_racovita={
+		name="Ioan Mihail Racovita"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_ioan_mihail_racovita.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/Portrait_romania_ioan_mihail_racovita.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trait_engineer naval_invader trait_mountaineer hill_fighter urban_assault_specialist fortress_buster infantry_expert }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_constantin_sanatescu={
+		name="Constantin Sanatescu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_constantin_sanatescu.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/portrait_romania_constantin_sanatescu.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_leader trickster trait_engineer ranger infantry_expert expert_improviser }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_alphonse_georges={
+		name="Alphonse Georges"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_alphonse_joseph_georges.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard inflexible_strategist cavalry_leader trickster commando combined_arms_expert cavalry_expert ambusher camouflage_expert guerilla_fighter }
+			skill=6
+			attack_skill=6
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_gastonhenri_billotte={
+		name="Gaston-Henri Billotte"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer old_guard trait_cautious infantry_leader desert_fox trait_mountaineer hill_fighter ambusher skirmisher guerilla_fighter }
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_henry_freydenberg={
+		name="Henry Freydenberg"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_leader trickster jungle_rat ranger infantry_expert expert_improviser guerilla_fighter }
+			skill=6
+			attack_skill=8
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_rené_olry={
+		name="René Olry"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable old_guard infantry_leader trait_mountaineer fortress_buster infantry_expert paratrooper }
+			skill=6
+			attack_skill=2
+			defense_skill=4
+			planning_skill=9
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	EFR_josé_millán_astray={
+		name="José Millán Astray"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_jose_millan_astray.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_jose_millan_astray.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable trait_reckless cavalry_leader commando naval_invader swamp_fox ranger urban_assault_specialist combined_arms_expert cavalry_expert skirmisher }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	EFR_juan_yagüe={
+		name="Juan Yagüe"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_juan_yague.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_juan_yague.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_reckless trickster trait_engineer panzer_leader desert_fox hill_fighter urban_assault_specialist panzer_expert }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_mohamed_meziane={
+		name="Mohamed Meziane"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_mohamed_meziane.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_mohamed_meziane.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader trickster panzer_leader urban_assault_specialist panzer_expert ambusher skirmisher }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_nicolae_ciuperca={
+		name="Nicolae Ciuperca"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/Portrait_Romania_Nicolae_Ciuperca.tga"
+			}
+		}
+		corps_commander={
+			traits={ organizer trickster panzer_leader winter_specialist ranger panzer_expert scavenger expert_improviser }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	EFR_josé_enrique_varela={
+		name="José Enrique Varela"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_jose_enrique_varela.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_jose_enrique_varela.dds"
+			}
+		}
+		corps_commander={
+			traits={ fake_skilled_staffer infantry_leader ranger fortress_buster scavenger infantry_expert camouflage_expert guerilla_fighter }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	EFR_gonzalo_queipo_de_llano={
+		name="Gonzalo Queipo de Llano"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_gonzalo_queipo_de_llano.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_gonzalo_queipo_de_llano.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable infantry_leader trickster desert_fox trait_mountaineer hill_fighter infantry_expert }
+			skill=6
+			attack_skill=2
+			defense_skill=1
+			planning_skill=7
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	EFR_barbu_paraianu={
+		name="Barbu Paraianu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_barbu_paraianu.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/portrait_romania_barbu_paraianu.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader trickster commando ranger combined_arms_expert cavalry_expert scavenger skirmisher expert_improviser guerilla_fighter }
+			skill=6
+			attack_skill=4
+			defense_skill=8
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_gheorghe_avramescu={
+		name="Gheorghe Avramescu"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_ROM_gheorghe_avramescu.dds"
+			}
+			army={
+				large="gfx/leaders/ROM/Portrait_romania_gheorghe_avramescu.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster panzer_leader hill_fighter ranger panzer_expert camouflage_expert expert_improviser }
+			skill=6
+			attack_skill=4
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	EFR_agustín_muñoz_grandes={
+		name="Agustín Muñoz Grandes"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SPA_augustin_muynoz_grandes.dds"
+			}
+			army={
+				large="gfx/leaders/SPA/portrait_spa_augustin_muynoz_grandes.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery old_guard organizer infantry_leader trickster trait_engineer ranger infantry_expert expert_improviser }
+			skill=6
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	EFR_paul_reynaud={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_paul_reynaud
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="EFR_paul_reynaud"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_VIC_offf={
+		advisor={
+			slot = army_chief
+			idea_token = VIC_offf
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+		}
+		name="VIC_offf"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_6"
+			}
+		}
+	}
+	EFR_crusader_efr={
+		advisor={
+			slot = political_advisor
+			idea_token = crusader_efr
+			allowed  = {
+					original_tag  = EFR
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="crusader_efr"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	EFR_jean_francois_darlan={
+		advisor={
+			slot = navy_chief
+			idea_token = EFR_jean_francois_darlan
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+		}
+		name="EFR_jean_francois_darlan"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_stabber_efr={
+		advisor={
+			slot = political_advisor
+			idea_token = stabber_efr
+			allowed  = {
+					original_tag  = EFR
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="stabber_efr"
+		portraits={
+			army={
+				small="GFX_idea_gre_emmanouil_tsouderos"
+			}
+		}
+	}
+	EFR_joe_biden={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_joe_biden
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+					has_completed_focus  = VIC_the_national_bureau_of_statistics 
+				}
+				cost  = 0.000
+				traits  = {
+					scientist 
+				}
+		}
+		name="EFR_joe_biden"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	EFR_army_concealment={
+		advisor={
+			slot = high_command
+			idea_token = EFR_army_concealment
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_concealment_1 
+				}
+		}
+		name="EFR_army_concealment"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_south_american_2d"
+			}
+		}
+	}
+	EFR_army_regrouping={
+		advisor={
+			slot = high_command
+			idea_token = EFR_army_regrouping
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_regrouping_1 
+				}
+		}
+		name="EFR_army_regrouping"
+		portraits={
+			army={
+				small="GFX_idea_tur_kamil_tolon"
+			}
+		}
+	}
+	EFR_charles_maurras={
+		advisor={
+			slot = political_advisor
+			idea_token = charles_maurras
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+					has_completed_focus  = FRA_national_regeneration 
+				}
+				visible  = {
+					has_dlc = "La Resistance"
+				}
+				cost  = 0.000
+				traits  = {
+					national_integralist 
+				}
+		}
+		name="charles_maurras"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_chief_manuever={
+		advisor={
+			slot = high_command
+			idea_token = EFR_chief_manuever
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_maneuver_1 
+				}
+		}
+		name="EFR_chief_manuever"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_south_american_2d"
+			}
+		}
+	}
+	EFR_smooth_efr={
+		advisor={
+			slot = political_advisor
+			idea_token = smooth_efr
+			allowed  = {
+					original_tag  = EFR
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="smooth_efr"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EFR_marius_viple={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_marius_viple
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="EFR_marius_viple"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EFR_felix_gouin={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_felix_gouin
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="EFR_felix_gouin"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_air_tacticalbombing={
+		advisor={
+			slot = high_command
+			idea_token = EFR_air_tacticalbombing
+			ledger  = air 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					air_tactical_bombing_1 
+				}
+		}
+		name="EFR_air_tacticalbombing"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_african_2d"
+			}
+		}
+	}
+	EFR_marcel_bucard={
+		advisor={
+			slot = political_advisor
+			idea_token = marcel_bucard
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+		}
+		name="marcel_bucard"
+		portraits={
+			army={
+				small="GFX_idea_marcel_bucard"
+			}
+		}
+	}
+	EFR_gaston_henry_haye={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_gaston_henry_haye
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="EFR_gaston_henry_haye"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	EFR_jean_romatet={
+		advisor={
+			slot = air_chief
+			idea_token = EFR_jean_romatet
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+		}
+		name="EFR_jean_romatet"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EFR_chief_planning={
+		advisor={
+			slot = high_command
+			idea_token = EFR_chief_planning
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_planning_1 
+				}
+		}
+		name="EFR_chief_planning"
+		portraits={
+			army={
+				small="GFX_idea_generic_naval_theorist_eastern_european_2d"
+			}
+		}
+	}
+	EFR_philippe_henriot={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_philippe_henriot
+			allowed  = {
+					original_tag  = EFR 
+				}
+				visible  = {
+					has_dlc = "La Resistance"
+				}
+				available  = {
+					has_completed_focus  = FRA_national_regeneration 
+				}
+				cost  = 0.000
+				traits  = {
+					propaganda_expert 
+				}
+		}
+		name="EFR_philippe_henriot"
+		portraits={
+			army={
+				small="GFX_idea_EFR_philippe_henriot"
+			}
+		}
+	}
+	EFR_pierre_pucheu={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_pierre_pucheu
+			allowed  = {
+					original_tag  = EFR 
+				}
+				available  = {
+				}
+				cost  = 150.000
+				traits  = {
+					technocrat 
+				}
+		}
+		name="EFR_pierre_pucheu"
+		portraits={
+			army={
+				small="GFX_idea_EFR_pierre_pucheu"
+			}
+		}
+	}
+	EFR_charles_tillon={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_charles_tillon
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="EFR_charles_tillon"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_zivony_peshkov={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_zivony_peshkov
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="EFR_zivony_peshkov"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	EFR_jean_marie_abrial={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_marie_abrial
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_organizational_3 
+				}
+		}
+		name="EFR_jean_marie_abrial"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_army_logistics={
+		advisor={
+			slot = high_command
+			idea_token = EFR_army_logistics
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_logistics_1 
+				}
+		}
+		name="EFR_army_logistics"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_african_2d"
+			}
+		}
+	}
+	EFR_VIC_orggg={
+		advisor={
+			slot = army_chief
+			idea_token = VIC_orggg
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+		}
+		name="VIC_orggg"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	EFR_chief_entrenchment={
+		advisor={
+			slot = high_command
+			idea_token = EFR_chief_entrenchment
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_entrenchment_1 
+				}
+		}
+		name="EFR_chief_entrenchment"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+	}
+	EFR_henri_giraud={
+		advisor={
+			slot = theorist
+			idea_token = EFR_henri_giraud
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				research_bonus  = {
+					land_doctrine  = 0.350
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="EFR_henri_giraud"
+		portraits={
+			army={
+				small="GFX_idea_EFR_henri_giraud"
+			}
+		}
+	}
+	EFR_jean_francois_jannekeyn={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_francois_jannekeyn
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_infantry_2 
+				}
+		}
+		name="EFR_jean_francois_jannekeyn"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	EFR_gentlemen_efr={
+		advisor={
+			slot = political_advisor
+			idea_token = gentlemen_efr
+			allowed  = {
+					original_tag  = EFR
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="gentlemen_efr"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	EFR_frederic_irene_joliot_curie={
+		advisor={
+			slot = theorist
+			idea_token = EFR_frederic_irene_joliot_curie
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				research_bonus  = {
+					nuclear  = 0.150
+				}
+				traits  = {
+					nuclear_scientist 
+				}
+		}
+		name="EFR_frederic_irene_joliot_curie"
+		portraits={
+			army={
+				small="GFX_idea_EFR_frederic_irene_joliot_curie"
+			}
+		}
+	}
+	EFR_VIC_moralle={
+		advisor={
+			slot = army_chief
+			idea_token = VIC_moralle
+			allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_chief_morale_1 
+				}
+		}
+		name="VIC_moralle"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EFR_jean_de_laborde={
+		advisor={
+			slot = high_command
+			idea_token = EFR_jean_de_laborde
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_commando_2 
+				}
+		}
+		name="EFR_jean_de_laborde"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	EFR_marcel_bruno_gensoul={
+		advisor={
+			slot = high_command
+			idea_token = EFR_marcel_bruno_gensoul
+			ledger  = army 
+				allowed  = {
+					original_tag  = EFR 
+				}
+				traits  = {
+					army_armored_2 
+				}
+		}
+		name="EFR_marcel_bruno_gensoul"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+}

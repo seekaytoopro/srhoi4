@@ -1,0 +1,126 @@
+characters={
+	ETH_haile_selassie={
+		name="Haile Selassie"
+		portraits={
+			civilian={
+				large="gfx/leaders/ETH/Portrait_Ethiopia_Haile_Selassie.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ETH_pietro_badoglio={
+		name="Pietro Badoglio"
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Pietro_Badoglio.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard brilliant_strategist trait_cautious infantry_leader commando thorough_planner aggressive_assaulter inspirational_leader infantry_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=7
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=nazism
+			traits={ duke_addis }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ETH_amare_mikael={
+		name="Amare Mikael"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Africa_Generic_4"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ reluctant_interventionist compassionate_gentleman }
+			expire="1955.1.1.12"
+			id=-1
+		}
+	}
+	ETH_saleh_melekot={
+		name="Saleh Melekot"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Africa_Generic_4"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits={ ideological_crusader reluctant_interventionist }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	ETH_guglielmo_nasi={
+		name="Guglielmo Nasi"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ETH/Portrait_Italy_Guglielmo_Nasi.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless harsh_leader infantry_leader infantry_expert }
+			skill=5
+			attack_skill=1
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	ETH_prince_amedeo={
+		name="Prince Amedeo"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ETH/Portrait_Italy_Amedeo_Savoia_Aosta.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer panzer_leader panzer_expert }
+			skill=5
+			attack_skill=1
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	ETH_pietro_gazzera={
+		name="Pietro Gazzera"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ITA/Portrait_Italy_Pietro_Gazzera_01.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist trait_cautious infantry_leader ambusher }
+			skill=5
+			attack_skill=1
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+}

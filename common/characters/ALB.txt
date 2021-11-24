@@ -1,0 +1,135 @@
+characters={
+	ALB_Mahmud_Salman={
+		name="Mahmud Salman"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_Mahmud_Salman.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster trait_engineer commando infantry_expert paratrooper camouflage_expert guerilla_fighter }
+			skill=6
+			attack_skill=5
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=9
+			legacy_id=-1
+		}
+	}
+	ALB_Fahmi_Said={
+		name="Fahmi Said"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_Fahmi_Said.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer panzer_leader desert_fox trait_mountaineer panzer_expert ambusher skirmisher }
+			skill=6
+			attack_skill=4
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	ALB_king_zog={
+		name="King Zog"
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_Albania_King_Zog.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_enver_hoxha={
+		name="Enver Hoxha"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_rashid_ali_algaylani={
+		name="Rashid Ali al-Gaylani"
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/portrait_irq_rashid_al_gaylani.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ anti_british_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	ALB_johannes_walker={
+		name="Johannes Walker"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	ALB_kamil_shabib={
+		name="Kamil Shabib"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_IRQ_Kamil_Shabib.tga"
+			}
+		}
+		field_marshal={
+			traits={ organizer infantry_leader panzer_leader logistics_wizard defensive_doctrine organisational_leader inspirational_leader }
+			skill=6
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	ALB_salah_aldin_alsabbagh={
+		name="Salah al-Din al-Sabbagh"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/ALB/Portrait_Salah_al_Din_al_Sabbagh.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer infantry_leader trickster trait_engineer commando desert_fox trait_mountaineer infantry_expert }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+}

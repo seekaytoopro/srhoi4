@@ -1,6 +1,6 @@
 characters={
 	NZL_michael_joseph_savage={
-		name=NZL_michael_joseph_savage
+		name="Michael Joseph Savage"
 		portraits={
 			civilian={
 				large="GFX_NZL_michael_joseph_savage"
@@ -12,601 +12,1206 @@ characters={
 			id=-1
 		}
 	}
-	NZL_sidney_holland={
-		name=NZL_sidney_holland
+	NZL_edmund_rupert_drummond={
+		name="Edmund Rupert Drummond"
+		portraits={
+			army={
+				small="GFX_NZL_edmund_drummond_small"
+			}
+			army={
+				large="GFX_NZL_edmund_drummond"
+			}
+		}
+		navy_leader={
+			traits={ fleet_protector spotter fly_swatter air_controller destroyer_leader hunter_killer cruiser_captain search_pattern_expert flight_deck_manager }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	NZL_hehu_anderson={
+		name="Hehu Anderson"
 		portraits={
 			civilian={
-				large="GFX_NZL_sidney_holland"
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ reichs_minister }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	NZL_tangaroa_denman={
+		name="Tangaroa Denman"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ hawk }
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+	NZL_stafford_issac={
+		name="Stafford Issac"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
 			}
 		}
 		country_leader={
 			ideology=centrism
-			expire="1965.1.1.1"
+			traits={ compassionate_gentleman }
+			expire="1946.1.1.12"
 			id=-1
 		}
 	}
-
-	NZL_john_ormond={
-		name=NZL_john_ormond
-		portraits={
-			civilian={
-				large="GFX_NZL_john_ormond"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_elsie_farrelly={
-		name=NZL_elsie_farrelly
-		portraits={
-			civilian={
-				large="GFX_NZL_elsie_farrelly"
-			}
-		}
-		gender = female
-		country_leader={
-			ideology=marxism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_peter_fraser={
-		name=NZL_peter_fraser
-		portraits={
-			civilian={
-				large="gfx/leaders/NZL/Portrait_NewZealand_Peter_Fraser.dds"
-			}
-		}
-		country_leader={
-			ideology=socialism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
-	NZL_bernard_freyberg={
-		name=NZL_bernard_freyberg
+	NZL_harold_farncomb={
+		name="Harold Farncomb"
 		portraits={
 			army={
-				large="GFX_NZL_bernard_freyberg"
-				small="gfx/interface/ideas/idea_NZL_bernard_freyberg.dds"
+				small="gfx/interface/ideas/idea_AST_harold_farncomb.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Harold_Farncomb.dds"
 			}
 		}
-		corps_commander={
+		navy_leader={
+			traits={ bold spotter air_controller concealment_expert flight_deck_manager torpedo_bomber }
 			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
 			legacy_id=-1
 		}
 	}
-
-	NZL_robert_row={
-		name=NZL_robert_row
+	NZL_victor_crutchley={
+		name="Victor Crutchley"
 		portraits={
 			army={
-				large="GFX_NZL_robert_row"
-				small="gfx/interface/ideas/idea_NZL_robert_row.dds"
+				small="GFX_Portrait_Britain_Generic_navy_3_small"
+			}
+			army={
+				large="GFX_Portrait_Britain_Generic_navy_3"
 			}
 		}
-		corps_commander={
-			traits={ naval_invader }
-			skill=3
+		navy_leader={
+			traits={ fleet_protector superior_tactician ironside destroyer_leader concealment_expert ground_pounder }
+			skill=4
 			attack_skill=3
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
 			legacy_id=-1
 		}
 	}
-
-	NZL_william_stevens={
-		name=NZL_william_stevens
+	NZL_władysław_bortnowski={
+		name="Władysław Bortnowski"
 		portraits={
 			army={
-				large="GFX_NZL_william_stevens"
-				small="gfx/interface/ideas/idea_NZL_william_stevens.dds"
+				small="gfx/interface/ideas/idea_POL_wladyslaw_bortnowski.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Bortnowski.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_reckless trickster panzer_leader naval_invader logistics_wizard offensive_doctrine aggressive_assaulter organisational_leader panzer_expert expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NZL_jayanto_nath_chaudhuri={
+		name="Jayanto Nath Chaudhuri"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_j_n_chaudhuri.dds"
+			}
+		}
+		field_marshal={
+			traits={ panzer_leader desert_fox logistics_wizard defensive_doctrine panzer_expert ambusher }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_jan_smuts={
+		name="Jan Smuts"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_SAF_jan_smuts.dds"
+			}
+			army={
+				large="gfx/leaders/SAF/Portrait_SouthAfrica_Jan_Smuts.dds"
+			}
+		}
+		field_marshal={
+			traits={ trickster panzer_leader desert_fox logistics_wizard thorough_planner organisational_leader panzer_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NZL_charles_foulkes={
+		name="Charles Foulkes"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_CAN_charles_foulkes.dds"
+			}
+			army={
+				large="gfx/leaders/CAN/Portrait_Canada_Charles_Foulkes.dds"
+			}
+		}
+		field_marshal={
+			traits={ panzer_leader logistics_wizard defensive_doctrine fast_planner panzer_expert skirmisher }
+			skill=5
+			attack_skill=3
+			defense_skill=1
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_robert_row={
+		name="Robert Row"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NZL/Portrait_New_Zeeland_Robert_Row.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable organizer cavalry_leader naval_invader logistics_wizard offensive_doctrine fast_planner combined_arms_expert cavalry_expert fortress_buster }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_frank_messervy={
+		name="Frank Messervy"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_Frank_Messervy.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_leader commando trait_mountaineer logistics_wizard defensive_doctrine ambusher camouflage_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
+	}
+	NZL_horace_robertson={
+		name="Horace Robertson"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_horace_robertson.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Horace_Robertson.dds"
+			}
+		}
+		field_marshal={
+			traits={ infantry_leader desert_fox hill_fighter urban_assault_specialist logistics_wizard defensive_doctrine ambusher }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NZL_leslie_morshead={
+		name="Leslie Morshead"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_leslie_morshead.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Leslie_Morshead.dds"
+			}
+		}
+		field_marshal={
+			traits={ organizer infantry_leader trait_engineer naval_invader trait_mountaineer jungle_rat logistics_wizard thorough_planner infantry_expert }
+			skill=5
+			attack_skill=1
+			defense_skill=2
+			planning_skill=7
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_roman_abraham={
+		name="Roman Abraham"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_POL_roman_abraham.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Roman_Abraham.dds"
+			}
+		}
+		field_marshal={
+			traits={ adaptable brilliant_strategist organizer infantry_leader naval_invader trait_mountaineer offensive_doctrine aggressive_assaulter infantry_expert invader_ii naval_liason paratrooper guerilla_fighter }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_thomas_blamey={
+		name="Thomas Blamey"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_thomas_blamey.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Thomas_Blamey.dds"
+			}
+		}
+		field_marshal={
+			traits={ cavalry_leader desert_fox logistics_wizard defensive_doctrine combined_arms_expert cavalry_expert scavenger ambusher }
+			skill=5
+			attack_skill=1
+			defense_skill=7
+			planning_skill=1
+			logistics_skill=7
+			legacy_id=-1
+		}
+	}
+	NZL_władysław_sikorski={
+		name="Władysław Sikorski"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_POL_wladyslaw_sikorski.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
+			}
+		}
+		field_marshal={
+			traits={ bearer_of_artillery old_guard inflexible_strategist trait_cautious cavalry_leader logistics_wizard thorough_planner unyielding_defender combined_arms_expert cavalry_expert skirmisher }
+			skill=5
+			attack_skill=8
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_bert_hoffmeister={
+		name="Bert Hoffmeister"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_CAN_bert_hoffmeister.dds"
+			}
+			army={
+				large="gfx/leaders/CAN/Portrait_Canada_Bert_Hoffmeister.dds"
 			}
 		}
 		corps_commander={
-			skill=4
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
+			traits={ trait_engineer panzer_leader trait_mountaineer panzer_expert fortress_buster expert_improviser }
+			skill=5
+			attack_skill=3
+			defense_skill=2
+			planning_skill=7
 			logistics_skill=4
 			legacy_id=-1
 		}
 	}
-
-	NZL_edmund_rupert_drummond={
-		name=NZL_edmund_rupert_drummond
+	NZL_noel_beresfordpeirse={
+		name="Noel Beresford-Peirse"
 		portraits={
 			army={
-				large="GFX_NZL_edmund_drummond"
-				small="gfx/interface/ideas/idea_NZL_edmund_drummond.dds"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_Noel_Beresford_Peirse.dds"
 			}
 		}
-		navy_leader={
-			skill=3
+		corps_commander={
+			traits={ trait_engineer panzer_leader swamp_fox trait_mountaineer jungle_rat panzer_expert scavenger }
+			skill=5
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_george_edwin_brink={
+		name="George Edwin Brink"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/SAF/Portrait_South_Africa_George_Edwin_Brink.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster panzer_leader desert_fox hill_fighter panzer_expert expert_improviser }
+			skill=5
 			attack_skill=3
 			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=2
+			planning_skill=4
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}
-
-	NZL_peter_phipps={
-		name=NZL_peter_phipps
+	NZL_wincenty_kowalski={
+		name="Wincenty Kowalski"
 		portraits={
 			army={
-				large="GFX_NZL_peter_phipps"
-				small="gfx/interface/ideas/idea_NZL_peter_phipps.dds"
+				small="gfx/interface/ideas/idea_POL_wincentry_kowalski.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Wincentry_Kowalski.dds"
 			}
 		}
-		navy_leader={
-			traits={ navy_career_officer }
-			skill=3
+		corps_commander={
+			traits={ adaptable organizer cavalry_leader trickster desert_fox hill_fighter combined_arms_expert cavalry_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_henry_wynter={
+		name="Henry Wynter"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_henry_wynter.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Henry_Wynter.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader trickster desert_fox combined_arms_expert cavalry_expert ambusher skirmisher guerilla_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_kodandera_subayya_thimayya={
+		name="Kodandera Subayya Thimayya"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_k_s_thimayya.dds"
+			}
+		}
+		corps_commander={
+			traits={ panzer_leader desert_fox urban_assault_specialist panzer_expert ambusher guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_william_stevens={
+		name="William Stevens"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NZL/Portrait_New_Zeeland_William_Stevens.dds"
+			}
+		}
+		corps_commander={
+			traits={ organizer infantry_leader trickster hill_fighter jungle_rat ranger infantry_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	NZL_kodandera_madappa_cariappa={
+		name="Kodandera Madappa Cariappa"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_Kodandera_Madappa_Cariappa.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable infantry_leader skilled_staffer trait_mountaineer hill_fighter infantry_expert }
+			skill=5
 			attack_skill=2
 			defense_skill=3
-			maneuvering_skill=2
-			coordination_skill=3
+			planning_skill=4
+			logistics_skill=7
 			legacy_id=-1
 		}
 	}
-
-
-	### THEORISTS ###
-
-	NZL_keith_j_holyoake={
-		name=NZL_keith_j_holyoake
+	NZL_władysław_anders={
+		name="Władysław Anders"
 		portraits={
 			army={
-				small="GFX_idea_NZL_keith_j_holyoake" #small="GFX_idea_generic_army_europe_1"
+				small="gfx/interface/ideas/idea_POL_wladyslaw_anders.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Anders.dds"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = NZL_keith_j_holyoake
-			ledger = army
-			allowed = {
-				original_tag = NZL
-			}
-			
-			traits = {
-				military_theorist
-			}
-		}		
+		corps_commander={
+			traits={ adaptable infantry_leader trait_engineer naval_invader infantry_expert invader_ii naval_liason }
+			skill=5
+			attack_skill=1
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=8
+			legacy_id=-1
+		}
 	}
-
-	NZL_r_a_cochrane={
-		name=NZL_r_a_cochrane
+	NZL_orde_wingate={
+		name="Orde Wingate"
 		portraits={
 			army={
-				small="GFX_idea_NZL_r_a_cochrane" #small="GFX_idea_generic_air_europe_1"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_Orde_Wingate.dds"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = NZL_r_a_cochrane
-			ledger = air
-			allowed = {
-				original_tag = NZL
-			}
-			
-			traits = {
-				air_warfare_theorist
-			}
-		}		
+		corps_commander={
+			traits={ infantry_leader commando trait_mountaineer jungle_rat ambusher skirmisher camouflage_expert }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=9
+			legacy_id=-1
+		}
 	}
-
-	NZL_arthur_dawes={
-		name=NZL_arthur_dawes
+	NZL_bernard_freyberg={
+		name="Bernard Freyberg"
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/NZL/Portrait_New_Zealand_Bernard_Freyberg.dds"
 			}
 		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = NZL_arthur_dawes
-			ledger = navy
-			allowed = {
-				original_tag = NZL
-			}
-			
-			traits = {
-				naval_theorist
-			}
-		}		
+		corps_commander={
+			traits={ infantry_leader trickster desert_fox ambusher skirmisher paratrooper guerilla_fighter }
+			skill=5
+			attack_skill=3
+			defense_skill=6
+			planning_skill=1
+			logistics_skill=6
+			legacy_id=-1
+		}
 	}
-
-
-	### ARMY CHIEFS ###
-
-	NZL_william_sinclair_burgess={
-		name=NZL_william_sinclair_burgess
+	NZL_douglas_gracey={
+		name="Douglas Gracey"
 		portraits={
 			army={
-				small="GFX_idea_NZL_william_sinclair_burgess" #small="GFX_idea_generic_army_europe_2"
+				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/RAJ/Portrait_The_Raj_Douglas_Gracey.dds"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = NZL_william_sinclair_burgess
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				army_chief_defensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
+		corps_commander={
+			traits={ infantry_leader trickster desert_fox trait_mountaineer infantry_expert expert_improviser }
+			skill=5
+			attack_skill=2
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=7
+			legacy_id=-1
+		}
 	}
-
-	NZL_edward_puttick={
-		name=NZL_edward_puttick
+	NZL_stanisław_kopański={
+		name="Stanisław Kopański"
 		portraits={
 			army={
-				small="GFX_idea_NZL_edward_puttick" #small="GFX_idea_generic_army_europe_1"
+				small="gfx/interface/ideas/idea_POL_stanislaw_kopamski.dds"
+			}
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Stanislaw_Kopamski.dds"
 			}
 		}
-		advisor={
-			slot = army_chief
-			idea_token = NZL_edward_puttick
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
+		corps_commander={
+			traits={ fake_skilled_staffer infantry_leader scavenger infantry_expert ambusher guerilla_fighter }
+			skill=5
+			attack_skill=2
+			defense_skill=5
+			planning_skill=1
+			logistics_skill=8
+			legacy_id=-1
+		}
 	}
-
+	NZL_john_northcott={
+		name="John Northcott"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_john_northcott.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_John_Northcott.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_leader trait_engineer trait_mountaineer urban_assault_specialist fortress_buster infantry_expert }
+			skill=5
+			attack_skill=2
+			defense_skill=2
+			planning_skill=7
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_iven_mackay={
+		name="Iven Mackay"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_iven_mackay.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Iven_Mackay.dds"
+			}
+		}
+		corps_commander={
+			traits={ adaptable trait_cautious trait_engineer panzer_leader naval_invader panzer_expert invader_ii naval_liason }
+			skill=5
+			attack_skill=2
+			defense_skill=3
+			planning_skill=9
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	NZL_alan_vasey={
+		name="Alan Vasey"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_AST_alan_vasey.dds"
+			}
+			army={
+				large="gfx/leaders/AST/Portrait_Australia_Alan_Vasey.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader naval_invader desert_fox hill_fighter jungle_rat urban_assault_specialist ambusher guerilla_fighter }
+			skill=5
+			attack_skill=1
+			defense_skill=3
+			planning_skill=7
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	NZL_nzl_chief_entrenchment={
+		advisor={
+			slot = high_command
+			idea_token = nzl_chief_entrenchment
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_entrenchment_1 
+				}
+		}
+		name="nzl_chief_entrenchment"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_4"
+			}
+		}
+	}
 	NZL_j_e_duigan={
-		name=NZL_j_e_duigan
-		portraits={
-			army={
-				small="GFX_idea_NZL_j_e_duigan" #small="GFX_idea_generic_army_europe_2"
-			}
-		}
 		advisor={
 			slot = army_chief
 			idea_token = NZL_j_e_duigan
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				army_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	NZL_n_weir={
-		name=NZL_n_weir
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_maneuver_2 
+				}
+		}
+		name="NZL_j_e_duigan"
 		portraits={
 			army={
-				small="GFX_idea_NZL_n_weir" #small="GFX_idea_generic_army_europe_3"
+				small="GFX_idea_generic_army_europe_2"
 			}
 		}
+	}
+	NZL_captain_nzl={
+		advisor={
+			slot = political_advisor
+			idea_token = captain_nzl
+			allowed  = {
+					original_tag  = NZL
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="captain_nzl"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	NZL_edward_puttick={
 		advisor={
 			slot = army_chief
-			idea_token = NZL_n_weir
-			allowed = {
-				original_tag = NZL
+			idea_token = NZL_edward_puttick
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+		}
+		name="NZL_edward_puttick"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
 			}
-			traits = {
-				army_chief_morale_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
+		}
 	}
-
-
-	### NAVY CHIEFS ###
-
+	NZL_defff={
+		advisor={
+			slot = army_chief
+			idea_token = NZL_defff
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+		}
+		name="NZL_defff"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_close_air_sup_eastern_european_2d"
+			}
+		}
+	}
+	NZL_norris_stephen_falla={
+		advisor={
+			slot = high_command
+			idea_token = NZL_norris_stephen_falla
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+		}
+		name="NZL_norris_stephen_falla"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	NZL_nzl_chief_manuever={
+		advisor={
+			slot = high_command
+			idea_token = nzl_chief_manuever
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_maneuver_1 
+				}
+		}
+		name="nzl_chief_manuever"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_south_american_2d"
+			}
+		}
+	}
+	NZL_a_j_stallworthy={
+		advisor={
+			slot = air_chief
+			idea_token = NZL_a_j_stallworthy
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+		}
+		name="NZL_a_j_stallworthy"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
 	NZL_h_e_horan={
-		name=NZL_h_e_horan
+		advisor={
+			slot = navy_chief
+			idea_token = NZL_h_e_horan
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+		}
+		name="NZL_h_e_horan"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_2"
 			}
 		}
+	}
+	NZL_w_h_stratton={
 		advisor={
 			slot = navy_chief
-			idea_token = NZL_h_e_horan
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				navy_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	NZL_w_h_stratton={
-		name=NZL_w_h_stratton
+			idea_token = NZL_w_h_stratton
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					navy_chief_naval_aviation_2 
+				}
+		}
+		name="NZL_w_h_stratton"
 		portraits={
 			army={
 				small="GFX_idea_generic_navy_europe_1"
 			}
 		}
-		advisor={
-			slot = navy_chief
-			idea_token = NZL_w_h_stratton
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				navy_chief_naval_aviation_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
 	}
-
-	NZL_eric_prendergast={
-		name=NZL_eric_prendergast
-		portraits={
-			army={
-				small="GFX_idea_generic_navy_europe_3"
-			}
-		}
-		advisor={
-			slot = navy_chief
-			idea_token = NZL_eric_prendergast
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				navy_chief_decisive_battle_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-
-	### AIR CHIEFS ###
-
-	NZL_a_j_stallworthy={
-		name=NZL_a_j_stallworthy
-		portraits={
-			army={
-				small="GFX_idea_NZL_a_j_stallworthy" #small="GFX_idea_generic_air_europe_1"
-			}
-		}
-		advisor={			
-			slot = air_chief
-			idea_token = NZL_a_j_stallworthy
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				navy_chief_naval_aviation_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
 	NZL_l_p_peterson={
-		name=NZL_l_p_peterson
+		advisor={
+			slot = air_chief
+			idea_token = NZL_l_p_peterson
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+		}
+		name="NZL_l_p_peterson"
 		portraits={
 			army={
 				small="GFX_idea_generic_air_europe_3"
 			}
 		}
-		advisor={
-			slot = air_chief
-			idea_token = NZL_l_p_peterson
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
 	}
-
-
-	### MILITARY HIGH COMMAND ###
-
-	NZL_norris_stephen_falla={
-		name=NZL_norris_stephen_falla
+	NZL_robert_manion={
+		advisor={
+			slot = political_advisor
+			idea_token = NZL_robert_manion
+			allowed  = {
+					original_tag  = NZL 
+				}
+				available  = {
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name="NZL_robert_manion"
 		portraits={
 			army={
-				small="GFX_idea_NZL_norris_stephen_falla" #small="GFX_idea_generic_army_europe_1"
+				small="GFX_idea_generic_democratic_reformer_commonwealth_2d"
 			}
 		}
+	}
+	NZL_nzl_army_concealment={
 		advisor={
 			slot = high_command
-			idea_token = NZL_norris_stephen_falla
-			ledger = army
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	NZL_j_c_nichols={
-		name=NZL_j_c_nichols
+			idea_token = nzl_army_concealment
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_concealment_1 
+				}
+		}
+		name="nzl_army_concealment"
 		portraits={
 			army={
-				small="GFX_idea_NZL_j_c_nichols" #small="GFX_idea_generic_army_europe_4"
+				small="GFX_idea_generic_air_warfare_theorist_south_american_2d"
 			}
 		}
+	}
+	NZL_walter_nash={
+		advisor={
+			slot = political_advisor
+			idea_token = NZL_walter_nash
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					armaments_organizer 
+				}
+		}
+		name="NZL_walter_nash"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	NZL_nzl_army_logistics={
+		advisor={
+			slot = high_command
+			idea_token = nzl_army_logistics
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_logistics_1 
+				}
+		}
+		name="nzl_army_logistics"
+		portraits={
+			army={
+				small="GFX_idea_generic_fascist_demagogue_african_2d"
+			}
+		}
+	}
+	NZL_j_c_nichols={
 		advisor={
 			slot = high_command
 			idea_token = NZL_j_c_nichols
-			ledger = army
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				army_cavalry_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	NZL_h_d_mcgregor={
-		name=NZL_h_d_mcgregor
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_infantry_2 
+				}
+		}
+		name="NZL_j_c_nichols"
 		portraits={
 			army={
-				small="GFX_idea_NZL_h_d_mcgregor" #small="GFX_idea_generic_air_europe_3"
+				small="GFX_idea_generic_army_europe_4"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = NZL_h_d_mcgregor
-			ledger = air
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				air_airborne_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
 	}
-	
-	NZL_trevor_handley={
-		name=NZL_trevor_handley
+	NZL_n_weir={
+		advisor={
+			slot = army_chief
+			idea_token = NZL_n_weir
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+		}
+		name="NZL_n_weir"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_1"
+				small="GFX_idea_generic_army_europe_3"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = NZL_trevor_handley
-			ledger = navy
-			allowed = {
-				original_tag = NZL
-			}
-			traits = {
-				navy_naval_air_defense_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
 	}
-
-
-	### POLITICAL ADVISORS ###
-	
-	NZL_a_e_davy={
-		name=NZL_a_e_davy
+	NZL_gentlemen_nzl={
+		advisor={
+			slot = political_advisor
+			idea_token = gentlemen_nzl
+			allowed  = {
+					original_tag  = NZL
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="gentlemen_nzl"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	NZL_crusader_nzl={
+		advisor={
+			slot = political_advisor
+			idea_token = crusader_nzl
+			allowed  = {
+					original_tag  = NZL
+				}
+				traits  = {
+					ideological_crusader 
+				}
+		}
+		name="crusader_nzl"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_1"
 			}
 		}
+	}
+	NZL_nzl_air_tacticalbombing={
+		advisor={
+			slot = high_command
+			idea_token = nzl_air_tacticalbombing
+			ledger  = air 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					air_tactical_bombing_1 
+				}
+		}
+		name="nzl_air_tacticalbombing"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_warfare_theorist_african_2d"
+			}
+		}
+	}
+	NZL_nzl_chief_planning={
+		advisor={
+			slot = high_command
+			idea_token = nzl_chief_planning
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_planning_1 
+				}
+		}
+		name="nzl_chief_planning"
+		portraits={
+			army={
+				small="GFX_idea_generic_naval_theorist_eastern_european_2d"
+			}
+		}
+	}
+	NZL_trevor_handley={
+		advisor={
+			slot = high_command
+			idea_token = NZL_trevor_handley
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_armored_2 
+				}
+		}
+		name="NZL_trevor_handley"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	NZL_stabber_nzl={
 		advisor={
 			slot = political_advisor
-			idea_token = NZL_a_e_davy
+			idea_token = stabber_nzl
 			allowed  = {
-				original_tag  = NZL
+					original_tag  = NZL
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="stabber_nzl"
+		portraits={
+			army={
+				small="GFX_idea_gre_emmanouil_tsouderos"
 			}
-			traits  = {
-				ideological_crusader 
-			}
-		}		
+		}
 	}
-
-	NZL_w_a_veitch_milne={
-		name=NZL_w_a_veitch_milne
+	NZL_keith_j_holyoake={
+		advisor={
+			slot = theorist
+			idea_token = NZL_keith_j_holyoake
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				research_bonus  = {
+					land_doctrine  = 0.350
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="NZL_keith_j_holyoake"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	NZL_orggg={
+		advisor={
+			slot = army_chief
+			idea_token = NZL_orggg
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+		}
+		name="NZL_orggg"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	NZL_eric_prendergast={
+		advisor={
+			slot = navy_chief
+			idea_token = NZL_eric_prendergast
+			allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+		}
+		name="NZL_eric_prendergast"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	NZL_smooth_nzl={
+		advisor={
+			slot = political_advisor
+			idea_token = smooth_nzl
+			allowed  = {
+					original_tag  = NZL
+				}
+				traits  = {
+					smooth_talking_charmer 
+				}
+		}
+		name="smooth_nzl"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
+	}
+	NZL_w_a_veitch_milne={
 		advisor={
 			slot = political_advisor
 			idea_token = NZL_w_a_veitch_milne
 			allowed  = {
-				original_tag  = NZL
-			}
-			traits  = {
-				prince_of_terror 
-			}
-		}		
-	}
-
-	NZL_walter_nash={
-		name=NZL_walter_nash
+					original_tag  = NZL 
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="NZL_w_a_veitch_milne"
 		portraits={
 			army={
-				small="GFX_idea_NZL_walter_nash" #small="GFX_idea_generic_political_advisor_europe_3"
+				small="GFX_idea_generic_political_advisor_europe_2"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = NZL_walter_nash
-			allowed  = {
-				original_tag  = NZL
-			}
-			traits  = {
-				armaments_organizer 
-			}
-		}		
 	}
-
-	# Ideologicy-pushing advisors auto-generated
-
-	# Illusive Gentleman auto-generated
-	
+	NZL_william_sinclair_burgess={
+		advisor={
+			slot = high_command
+			idea_token = NZL_william_sinclair_burgess
+			ledger  = army 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					army_commando_2 
+				}
+		}
+		name="NZL_william_sinclair_burgess"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	NZL_h_d_mcgregor={
+		advisor={
+			slot = high_command
+			idea_token = NZL_h_d_mcgregor
+			ledger  = air 
+				allowed  = {
+					original_tag  = NZL 
+				}
+				traits  = {
+					test_stuff2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="NZL_h_d_mcgregor"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
 }

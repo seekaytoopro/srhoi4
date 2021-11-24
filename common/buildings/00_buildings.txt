@@ -11,7 +11,7 @@ buildings = {
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
-		damage_factor = 0.75
+		# damage_factor = 0.75
 		value = 1
 		
 		show_modifier = yes
@@ -29,6 +29,7 @@ buildings = {
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
+		damage_factor = 7
 	}
 
 	industrial_complex = {
@@ -41,6 +42,7 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		damage_factor = 7
 	}
 
 	air_base = {
@@ -50,7 +52,7 @@ buildings = {
 		air_base = yes
 		max_level = 40
 		value = 1
-		damage_factor = 0.5
+		damage_factor = 0.05
 		allied_build = yes
 	}
 
@@ -87,6 +89,7 @@ buildings = {
 		is_port = yes
 		icon_frame = 6
 		max_level = 20
+		damage_factor = 0.2
 		value = 1
 		allied_build = yes
 	}
@@ -129,6 +132,7 @@ buildings = {
 		max_level = 99
 		shares_slots = yes
 		value = 5
+		damage_factor = 7
 		infrastructure_construction_effect = yes
 	}
 
@@ -158,6 +162,7 @@ buildings = {
 		
 		show_modifier = yes
 		fuel_gain_from_states = 3.0 #per hour
+		damage_factor = 0.05
 	}
 
 	fuel_silo = {
@@ -172,6 +177,7 @@ buildings = {
 		
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
+		damage_factor = 0.5
 	}
 
 	radar_station = {

@@ -103,16 +103,11 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
+				always = no
+				
 			}
 			available = {
-				has_completed_focus = SOV_the_hands_do
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
+				always = no
 			}
 			traits = {
 				the_masses_opium
@@ -156,7 +151,25 @@ characters = {
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
-
+	SOV_enrique_lister={
+		name = SPR_enrique_lister
+		portraits={
+			army={
+				large="gfx/leaders/SOV/portrait_SPR_enrique_lister.dds"
+				small = "gfx/interface/ideas/idea_SPR_enrique_lister.dds"
+			}
+		}
+		corps_commander={
+		visible = { has_completed_focus = SOV_send_military_advisors_to_spain }
+			traits = { infantry_leader  ambusher trait_engineer  scavenger trickster commando skirmisher    }
+			skill=6
+			attack_skill=2
+			defense_skill=7
+			planning_skill=3
+			logistics_skill=7
+			legacy_id=1119
+		}
+	}
 	SOV_georgy_zhukov = {
 		name = SOV_georgy_zhukov
 
@@ -168,13 +181,13 @@ characters = {
 		}
 
 		corps_commander = {
-			traits = { media_personality armor_officer war_hero winter_specialist }
-			skill = 5
-			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
-			legacy_id = 410
+							#Point Value: 16
+	traits = {  ranger logistics_wizard thorough_planner panzer_leader panzer_expert brilliant_strategist  aggressive_assaulter   winter_specialist winter_expert organizer   }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 7
+	logistics_skill = 7
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
@@ -211,13 +224,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 4
+		field_marshal = { #15.5
+			traits = {  inspirational_leader scavenger fast_planner organizer panzer_leader panzer_expert  trait_cautious brilliant_strategist aggressive_assaulter adaptable   }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 8
 			legacy_id = 402
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -228,15 +241,6 @@ characters = {
 			ledger = army
 			allowed = {
 				original_tag = SOV
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403.000
-						}
-					}
-				}
 			}
 			available = {
 				has_completed_focus = SOV_positive_heroism
@@ -266,13 +270,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer politically_connected }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
-			legacy_id = 407
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist trickster  urban_assault_specialist }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 8
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 
@@ -331,14 +334,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { career_officer trait_cautious }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = 0
+		field_marshal = {
+		traits = {  organizer offensive_doctrine infantry_leader scavenger commando expert_delegator  organisational_leader inspirational_leader logistics_wizard expert_improviser  }
+		skill = 6
+    attack_skill = 4
+    defense_skill = 5
+    planning_skill = 1
+    logistics_skill = 9
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
@@ -352,12 +354,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+		traits = { infantry_leader trickster guerilla_fighter commando infantry_expert expert_improviser fake_skilled_staffer_sov trait_reckless }
+		skill = 6
+    attack_skill = 5
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -405,13 +407,13 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { harsh_leader armor_officer politically_connected }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 5
-			planning_skill = 2
-			logistics_skill = 5
+		field_marshal = {
+		traits = {  adaptable logistics_wizard  thorough_planner panzer_leader panzer_expert	 harsh_leader guerilla_fighter ranger camouflage_expert  }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 1
+	planning_skill = 7
+	logistics_skill = 5
 			legacy_id = 408
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -455,15 +457,15 @@ characters = {
 			ai_will_do = {
 				factor = 1.000
 			}
-		}
+		} 
 
-		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
+		corps_commander = { #20 #originally has cav leader
+			traits = { panzer_leader hill_fighter trait_mountaineer panzer_expert expert_improviser trickster guerilla_fighter }
+	skill = 6
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 5
 			legacy_id = 404
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -511,12 +513,12 @@ characters = {
 		}
 
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard camouflage_expert  inflexible_strategist infantry_leader defensive_doctrine ambusher unyielding_defender  }
+	skill = 6
+	attack_skill = 8
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 7
 			legacy_id = 405
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -551,7 +553,7 @@ characters = {
 			}
 		}
 
-		field_marshal = {
+		field_marshal = { #TO-DO: If this guy isnt always purged I might need to make him useful -Thrasymachus
 			traits = { brilliant_strategist career_officer trait_reckless infantry_officer offensive_doctrine }
 			skill = 4
 			attack_skill = 3
@@ -572,12 +574,12 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = {  old_guard commando ranger bearer_of_artillery defensive_doctrine infantry_leader logistics_wizard organizer  }
+		skill = 6
+	attack_skill = 2
+	defense_skill = 5
+	planning_skill = 6
+	logistics_skill = 6
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -592,12 +594,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { armor_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+	traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist trickster  urban_assault_specialist }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 8
 			legacy_id = 413
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -612,12 +614,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		  traits = {  cavalry_leader 	cavalry_expert combined_arms_expert naval_invader adaptable trait_engineer trickster commando camouflage_expert  }
+    skill = 6
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 5
+    logistics_skill = 6
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -632,11 +634,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 2
+		traits = { cavalry_leader cavalry_expert combined_arms_expert ambusher trickster expert_improviser fake_skilled_staffer_sov } 
+		skill = 6
+    attack_skill = 2
+    defense_skill = 4
+    planning_skill = 3
+    logistics_skill = 10
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -650,13 +653,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_grigory_kulik.dds"
 			}
 		}
-		corps_commander = {
-			traits = { old_guard inflexible_strategist career_officer politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		field_marshal = {
+			traits = { old_guard inflexible_strategist organizer organisational_leader infantry_leader defensive_doctrine commando skirmisher inspirational_leader unyielding_defender  }
+	skill = 6
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 7
+	logistics_skill = 6
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -671,12 +674,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
+		traits = { infantry_leader  trickster guerilla_fighter commando infantry_expert expert_improviser fake_skilled_staffer_sov trait_reckless }
+		skill = 6
+    attack_skill = 5
+    defense_skill = 3
+    planning_skill = 3
+    logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -691,12 +694,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 1
+			traits = { cavalry_leader cavalry_expert ambusher defensive_doctrine logistics_wizard organisational_leader organizer trickster } 
+    skill = 6
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 6
+    logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -711,12 +714,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless cavalry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { panzer_leader harsh_leader ranger trait_engineer camouflage_expert panzer_expert expert_improviser trickster }
+	skill = 6
+	attack_skill = 8
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 7
 			legacy_id = 412
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -731,12 +734,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = { panzer_leader harsh_leader ranger trait_engineer camouflage_expert panzer_expert expert_improviser trickster }
+	skill = 6
+	attack_skill = 8
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -750,13 +753,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_yakov_cherevichenko.dds"
 			}
 		}
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+		corps_commander = { #originally cav guy
+		traits = { panzer_leader harsh_leader ranger trait_engineer camouflage_expert panzer_expert expert_improviser trickster }
+	skill = 6
+	attack_skill = 8
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -771,12 +774,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = {  desert_fox  trickster expert_improviser organizer  paratrooper infantry_leader infantry_expert guerilla_fighter  }
+	skill = 6
+    attack_skill = 3
+    defense_skill = 6
+    planning_skill = 1
+    logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -790,13 +793,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_nikandr_yevlampyevich_chibisov.dds"
 			}
 		}
-		corps_commander = {
-			traits = { trickster }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+		field_marshal = {
+			traits = { cavalry_leader cavalry_expert combined_arms_expert bearer_of_artillery scavenger thorough_planner logistics_wizard inspirational_leader organizer } 
+    skill = 6
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 6
+    logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -810,13 +813,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_vasily_kuznetsov.dds"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer commando }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+		corps_commander = { #21
+		traits = { commando skirmisher ranger panzer_leader panzer_expert ambusher swamp_fox  }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -831,12 +834,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer winter_specialist }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 1
-			logistics_skill = 3
+		traits = { organizer commando trait_reckless bearer_of_artillery infantry_leader  ranger infantry_expert  trickster expert_improviser  winter_specialist winter_expert guerilla_fighter }
+	skill = 6
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 4
+	logistics_skill = 8
 			legacy_id = 0
 			visible = {
 				if = {
@@ -866,12 +869,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = { infantry_leader skilled_staffer ambusher trait_engineer trickster guerilla_fighter trait_mountaineer hill_fighter  }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 6
+	planning_skill = 2
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -885,13 +888,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_maksim_purkayev.dds"
 			}
 		}
-		corps_commander = {
-			traits = { career_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
+		field_marshal = {
+			traits = { cavalry_leader cavalry_expert combined_arms_expert  bearer_of_artillery thorough_planner offensive_doctrine logistics_wizard organisational_leader organizer } 
+    skill = 6
+	attack_skill = 4
+    defense_skill = 4
+    planning_skill = 6
+    logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -906,12 +909,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { infantry_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = { infantry_leader infantry_expert ranger trait_engineer fortress_buster naval_liason  naval_invader trickster }
+	skill = 6
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -926,12 +929,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist infantry_officer winter_specialist }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
+			traits = { infantry_leader skilled_staffer infantry_expert trait_engineer winter_expert winter_specialist organizer trickster ranger  brilliant_strategist  }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 8	
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -945,13 +948,13 @@ characters = {
 				small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
 			}
 		}
-		corps_commander = {
-			traits = { infantry_officer }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 2
+		corps_commander = { #21
+				traits = { infantry_leader infantry_expert trait_mountaineer commando paratrooper skirmisher trait_engineer  fortress_buster }
+	skill = 6
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 5
+	logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -966,12 +969,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { career_officer cavalry_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
+		traits = {  desert_fox  trickster expert_improviser organizer  bearer_of_artillery infantry_leader ambusher guerilla_fighter  }
+	skill = 6
+    attack_skill = 3
+    defense_skill = 6
+    planning_skill = 1
+    logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -986,11 +989,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
+		traits = { trickster ambusher panzer_leader panzer_expert trait_mountaineer bearer_of_artillery  }
+	skill = 6
+    attack_skill = 5
+    defense_skill = 3
+    planning_skill = 4
+    logistics_skill = 6
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1005,12 +1009,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { trait_reckless armor_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = {  organizer panzer_leader panzer_expert expert_improviser ranger trait_cautious brilliant_strategist trickster  urban_assault_specialist }
+	skill = 6
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 8
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1025,12 +1029,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 3
-			attack_skill = 1
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
+		traits = { scavenger  trait_engineer naval_invader naval_liason invader_ii adaptable panzer_leader panzer_expert  }
+	skill = 6
+    attack_skill = 2
+    defense_skill = 3
+    planning_skill = 8
+    logistics_skill = 6
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1045,12 +1049,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { old_guard career_officer trait_cautious politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+		traits = { old_guard commando bearer_of_artillery infantry_leader swamp_fox commando  infantry_expert organizer  }
+		skill = 6
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 10
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1065,16 +1069,17 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { brilliant_strategist career_officer }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { panzer_leader harsh_leader ranger trait_engineer camouflage_expert panzer_expert expert_improviser trickster }
+	skill = 6
+	attack_skill = 8
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 7
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
+	
 
 ######################
 #### NAVY LEADRES ####
@@ -1089,12 +1094,12 @@ characters = {
 			}
 		}
 		navy_leader = {
-			traits = { ironside ground_pounder }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			maneuvering_skill = 1
-			coordination_skill = 1
+		traits = { ironside green_water_expert arctic_water_expert ground_pounder spotter concealment_expert big_guns_expert}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 1
+	coordination_skill = 1
 			legacy_id = 0
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1110,25 +1115,6 @@ characters = {
 				large = "gfx/leaders/SOV/Portrait_Soviet_Sergey_Gorshkov.dds"
 			}
 		}
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = sergey_gorshkov
-			ledger = navy
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				if = {
-					limit = {
-						has_character_flag = SOV_exiled_flag
-					}
-					NOT = { has_character_flag = SOV_exiled_flag }
-				}
-			}
-			traits = { naval_theorist }
-		}
-
 		navy_leader = {
 			traits = { bold navy_career_officer }
 			skill = 3
@@ -1240,12 +1226,12 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { spotter arctic_water_expert }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			maneuvering_skill = 3
-			coordination_skill = 3
+		traits = { arctic_water_expert spotter concealment_expert seawolf fleet_protector }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 2
 			legacy_id = 409
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
@@ -1338,19 +1324,6 @@ characters = {
 				small = "GFX_idea_vladimir_tributs"
 			}
 		}
-
-		advisor = {
-			cost = 150
-			slot = theorist
-			idea_token = vladimir_tributs
-			ledger = navy
-			allowed = {
-				original_tag = SOV
-			}
-			traits = {
-				grand_fleet_proponent
-			}
-		}
 	}
 
 	SOV_sergey_khudyakov = {
@@ -1409,21 +1382,7 @@ characters = {
 				small = "GFX_idea_sergei_rudenko"
 			}
 		}
-
-		advisor = {
-			cost = 150
-			
-			slot = theorist
-			idea_token = sergei_rudenko
-			ledger = air
-			allowed = {
-				original_tag = SOV
-			}
-			
-			traits = {
-				close_air_support_proponent
-			}
-		}		
+	
 	}
 
 	SOV_ivan_yumashev = {
@@ -1529,17 +1488,7 @@ characters = {
 				small = "GFX_idea_alexander_golovanov"
 			}
 		}
-
-		advisor = {
-			cost = 100
-			slot = theorist
-			idea_token = alexander_golovanov
-			ledger = air
-			allowed = {
-				original_tag = SOV
-			}
-			traits = { air_warfare_theorist }
-		}		
+	
 	}
 
 	SOV_mikhail_frinovsky = {
@@ -1812,22 +1761,23 @@ characters = {
 		}
 	}
 
-	SOV_sidor_kovpak = {
-		name = SOV_sidor_kovpak
+SOV_hazi_aslanov = {
+		name = "Hazi Aslanov"
 		portraits = {
 			army = {
-				large = "GFX_portrait_SOV_sidor_kovpak"
+				large = "GFX_portrait_sov_hazi_aslanov"
 				small = "gfx/interface/ideas/idea_SOV_sidor_kovpak.dds"
 			}
 		}
-
+	
 		corps_commander = {
-			traits = { trait_reckless war_hero commando }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
+	 traits = {  panzer_leader panzer_expert ambusher desert_fox trait_mountaineer scavenger }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 9
+
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
@@ -1836,29 +1786,32 @@ characters = {
 		}
 	}
 
-	SOV_lev_dovator = {
-		name = SOV_lev_dovator
+
+	SOV_sidor_kovpak = {
+		name = SOV_sidor_kovpak
 		portraits = {
 			army = {
-				large = "GFX_portrait_SOV_lev_dovator"
-				small = "gfx/interface/ideas/idea_SOV_lev_dovator.dds"
+				large = "GFX_portrait_SOV_sidor_kovpak"
+				small = "gfx/interface/ideas/idea_SOV_sidor_kovpak.dds"
 			}
 		}
-
+	
 		corps_commander = {
-			traits = { cavalry_officer trait_reckless cavalry_leader ranger }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
+		traits = { infantry_leader infantry_expert trickster guerilla_fighter commando camouflage_expert trait_reckless urban_assault_specialist bearer_of_artillery }
+	skill = 6
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 1
+	logistics_skill = 8
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_restore_cossack_units
+				has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
 	}
+
+	
 
 	SOV_pavel_rybalko = {
 		name = SOV_pavel_rybalko
@@ -1930,7 +1883,6 @@ characters = {
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -1954,7 +1906,6 @@ characters = {
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -1976,7 +1927,6 @@ characters = {
 			logistics_skill = 3
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -1998,7 +1948,6 @@ characters = {
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -2020,7 +1969,6 @@ characters = {
 			logistics_skill = 2
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -2042,7 +1990,6 @@ characters = {
 			logistics_skill = 1
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				ROOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 	}
@@ -2062,14 +2009,7 @@ characters = {
 				small = "GFX_idea_mikhail_kalinin"
 			}
 		}
-		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_left = yes 
-				SOV_advisor_is_aligned_right = yes 
-				SOV_advisor_is_aligned_centre = yes 
-			}
-			has_government = communism
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -2104,14 +2044,7 @@ characters = {
 				small = "GFX_idea_nikita_khrushchev"
 			}
 		}
-		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_left = yes 
-				SOV_advisor_is_aligned_right = yes 
-				SOV_advisor_is_aligned_centre = yes 
-			}
-			has_government = communism
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -2208,6 +2141,7 @@ characters = {
 			}
 		}
 	}
+	
 
 	SOV_genrikh_yagoda = {
 		name = SOV_genrikh_yagoda
@@ -2216,23 +2150,6 @@ characters = {
 			army = {
 				small = "GFX_idea_SOV_genrikh_yagoda"
 			}
-		}
-
-		allowed_civil_war = {
-			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
-					original_tag = SOV
-					NOT = { tag = SOV }
-					NOT = {
-						any_other_country = {
-							original_tag = SOV
-							has_completed_focus = SOV_the_plan_for_the_coup
-						}
-					}
-				}
-			}
-			has_government = communism
 		}
 
 		advisor = {
@@ -2269,22 +2186,6 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				has_completed_focus = SOV_the_plan_for_the_coup #Goes to right oppo if aligned via Plan for the Coup
-				AND = { #If not aligned by Right oppo, then stays with Stalin
-					original_tag = SOV
-					NOT = { tag = SOV }
-					NOT = {
-						any_other_country = {
-							original_tag = SOV
-							has_completed_focus = SOV_the_plan_for_the_coup
-						}
-					}
-				}
-			}
-			has_government = communism
-		}
 
 		advisor = {
 			slot = political_advisor
@@ -2423,15 +2324,7 @@ characters = {
 				small = "GFX_idea_soviet_vsevolod_merkulov"
 			}
 		}
-		allowed_civil_war = {
-			OR = {
-				SOV_advisor_is_aligned_left = yes 
-				SOV_advisor_is_aligned_right = yes 
-				SOV_advisor_is_aligned_centre = yes 
-			}
-			has_government = communism
-		}
-
+	
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_vsevolod_merkulov
@@ -2513,7 +2406,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_collective_security 
+				always = no 
 			}
 			traits = {
 				pc_for_foreign_affairs_litvinov 
@@ -2531,18 +2424,7 @@ characters = {
 				small = "GFX_idea_SOV_lev_trotsky"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+		
 
 		advisor = {
 			slot = political_advisor
@@ -2550,11 +2432,7 @@ characters = {
 			allowed = {
 				original_tag = SOV
 			}
-			on_add = {
-				set_global_flag = flag_trotsky_returning_to_ussr_from_mexico
-				MEX = { country_event = { id = mexico.22 } }		
-			}
-			
+		
 			visible = {
 				NOT = {
 					has_character_flag = SOV_character_purged_flag 
@@ -2564,32 +2442,14 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
-				is_country_leader = no
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
 					}
 					NOT = { has_character_flag = SOV_exiled_flag }
 				}
-				IF = {
-					limit = {
-						has_global_flag = flag_mexico_invited_trotsky_to_government
-						NOT = { has_global_flag = flag_trotsky_has_returned_to_ussr_from_mexico }
-						SOV_is_opposition = yes 
-					}
-					MEX = { 
-						NOT = { has_idea = MEX_leon_trotsky }
-						NOT = { has_country_leader = { character = MEX_leon_trotsky } } 
-					}
-				}
+				
 			}
 			traits = {
 				pc_military_naval_affairs
@@ -2607,18 +2467,7 @@ characters = {
 				small = "GFX_idea_SOV_ivan_smirnov_imprisoned"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -2631,14 +2480,8 @@ characters = {
 				
 			}
 			available = {
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
+				
+				always = no
 				is_country_leader = no
 				if = {
 					limit = {
@@ -2666,18 +2509,7 @@ characters = {
 				small = "GFX_idea_SOV_ivar_smilga_imprisoned"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -2691,10 +2523,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
@@ -2724,25 +2553,7 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				AND = {
-					tag = SOV
-					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_bring_old_trotskyists_back
-				}
-				AND = {
-					tag = SOV
-					SOV_is_right_opposition = yes 
-					has_completed_focus = SOV_cooperation_against_stalin 
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
-
+		
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_karl_radek
@@ -2755,16 +2566,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_bring_old_trotskyists_back
-					}
-					AND = {
-						SOV_is_right_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -2786,25 +2588,6 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				AND = {
-					tag = SOV
-					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_bring_old_trotskyists_back
-				}
-				AND = {
-					tag = SOV
-					SOV_is_right_opposition = yes 
-					has_completed_focus = SOV_cooperation_against_stalin 
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_yevgeny_preobrazhensky
@@ -2817,18 +2600,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					AND = {
-						tag = SOV
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_bring_old_trotskyists_back
-					}
-					AND = {
-						tag = SOV
-						SOV_is_right_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -2849,18 +2621,7 @@ characters = {
 				small = "GFX_idea_SOV_aleksandr_shlyapnikov_imprisoned"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -2874,10 +2635,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_left_opposition = yes
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
@@ -2908,21 +2666,7 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				SOV_is_right_opposition = yes 
-				AND = {
-					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_cooperation_against_stalin 
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-
-		}
-
+		
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_nikolay_bukharin
@@ -2935,13 +2679,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_right_opposition = yes 
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
+				always = no
 				is_country_leader = no
 				if = {
 					limit = {
@@ -2968,19 +2706,6 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				SOV_is_right_opposition = yes 
-				AND = {
-					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_cooperation_against_stalin 
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
 
 		advisor = {
 			slot = political_advisor
@@ -2994,13 +2719,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_right_opposition = yes 
-					AND = {
-						SOV_is_left_opposition = yes 
-						has_completed_focus = SOV_cooperation_against_stalin 
-					}
-				}
+				always = no 
 				is_country_leader = no
 				if = {
 					limit = {
@@ -3023,19 +2742,7 @@ characters = {
 				small = "GFX_idea_SOV_mikhail_tomsky"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
-
+		
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_mikhail_tomsky
@@ -3048,10 +2755,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					SOV_is_right_opposition = yes
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3088,10 +2792,7 @@ characters = {
 				}
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_the_need_for_policy_changes 
-					has_completed_focus = SOV_return_democracy_to_the_party
-				}
+			always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3115,18 +2816,7 @@ characters = {
 				small = "GFX_idea_SOV_grigory_zinovyev_imprisoned"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -3140,15 +2830,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_align_the_zinovyevites
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-					AND = {
-						has_completed_focus = SOV_the_plan_for_the_coup
-						has_completed_focus = SOV_coup_detat
-					}
-				}
+			always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_imprisoned_flag
@@ -3178,18 +2860,7 @@ characters = {
 				small = "GFX_idea_SOV_lev_kamenev_imprisoned"
 			}
 		}
-		allowed_civil_war = { 
-			OR = {
-				AND = {
-					tag = SOV 
-					has_government = communism
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism 
-				}
-			}
-		}
+	
 
 		advisor = {
 			slot = political_advisor
@@ -3203,7 +2874,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_align_the_zinovyevites
+				always= no
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3235,22 +2906,7 @@ characters = {
 			}
 		}
 
-		allowed_civil_war = {
-			OR = {
-				AND = {
-					SOV_is_left_opposition = yes 
-					has_completed_focus = SOV_liberate_ryutin
-				}
-				AND = {
-					SOV_is_right_opposition = yes 
-					has_completed_focus = SOV_liberate_ryutin 
-				}
-				AND = {
-					SOV_is_exiles = yes 
-					has_government = communism
-				}
-			}
-		}
+	
 
 
 		advisor = {
@@ -3265,7 +2921,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_liberate_ryutin
+				always = no
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3310,10 +2966,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				OR = {
-					has_completed_focus = SOV_patriarch_of_all_russia
-					has_completed_focus = SOV_the_declaration
-				}
+				always = no
 			}
 			traits = {
 				patriarch_of_moscow_and_all_russia 
@@ -3341,10 +2994,10 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			available = {
-				has_completed_focus = SOV_return_of_the_rocor
+				always = no
 			}
 			traits = {
 				orthodox_rabblerouser
@@ -3373,10 +3026,10 @@ characters = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always = no
 			}
 			traits = {
 				theocratic_diplomat
@@ -3405,10 +3058,10 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_the_declaration
+				always = no
 			}
 			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
+				always = no
 			}
 			traits = {
 				driver_of_the_faithful
@@ -3464,22 +3117,6 @@ characters = {
 			}
 		}
 
-		corps_commander = {
-			traits = { cavalry_officer cavalry_leader }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 3
-			legacy_id = 0
-			visible = {
-				OR = {
-					has_idea = SOV_grigory_semyonov
-					has_completed_focus = SOV_approach_semyonov
-				}
-			}
-		}
-
 		advisor = {
 			slot = political_advisor
 			idea_token = SOV_grigory_semyonov
@@ -3490,19 +3127,6 @@ characters = {
 				}
 			}
 			available = {
-				if = { 
-					limit = { tag = MAN }
-					custom_trigger_tooltip = {
-					 	tooltip = SOV_grigory_semyonov_man_tt
-					 	SOV_soviet_civil_war_not_started = yes 
-					 	NOT = { SOV = { has_completed_focus = SOV_approach_semyonov } }
-					}
-				}
-				
-				if = {
-					limit = { tag = SOV }
-					has_completed_focus = SOV_approach_semyonov
-				}
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3542,7 +3166,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_consolidate_power
+				always = no
 			}
 			traits = {
 				political_chameleon
@@ -3576,7 +3200,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_reconvene_the_zemsky_sobor
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3622,11 +3246,8 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
+				always = no
+			
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3662,11 +3283,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3702,11 +3319,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3743,11 +3356,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				SOV_is_exiles = yes
-				OR = {
-					has_global_flag = SOV_soviet_civil_war
-					has_global_flag = SOV_soviet_civil_war_over
-				}
+				always = no
 				if = {
 					limit = {
 						has_character_flag = SOV_exiled_flag
@@ -3873,6 +3482,7 @@ characters = {
 				}
 			}
 			available = {
+						always = no
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"
