@@ -1,18 +1,25 @@
 on_actions = {
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
-		effect = {
-			if = {
+			effect = {
+			
+					if = {
 				limit = {
-					FROM.FROM = {
-						is_core_of = SOV
+					divisions_in_state = { state = FROM.FROM size > 0 }
+					FROM.FROM = { 
+						NOT = { has_state_flag = already_sabotaged_flag }
 					}
 					FROM = {
-						tag = SOV
+						original_tag = POL
+						#has_completed_focus = POL_sabotage_polish_industry
 					}
 				}
-				SOV = { set_country_flag = achievement_lost_state }
+				FROM.FROM = { 
+					set_state_flag = poland_state_withdrawn
+					state_event = { id = poland.23 trigger_for = controller }
+				}
 			}
+		
 		}
 
 		#SOVIET - If Death to Invaders Propaganda Campaign is active, manage the appropriate state modifier
@@ -92,373 +99,13 @@ on_actions = {
 		}
 
 
-		#GERMANY - If Soviet Imports is active, remove it
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = GER }
-					FROM.FROM = { has_dynamic_modifier = { modifier = SOV_soviet_imports } }
-				}
-				FROM.FROM = { remove_dynamic_modifier = { modifier = SOV_soviet_imports } }
-			}
-		}
-	}
-	
-	#FROM - Country (owner)
-	#ROOT - leader
-	#FROMFROM - original owner for exiled leaders
-	on_unit_leader_level_up = {
-		effect = {
-			if = { 
-				limit = { 
-					FROM = { 
-						has_idea = bold_attack_spirit 
-					} 
-				}
-				character = { 
-					IF = { 
-						limit = { is_army_leader = yes }
-					
-						random_list = { 
-							50 = { add_attack = 1 } 
-							50 = {} 
-						} 
-					}
-				}
-			}
-			else_if = { #since these spirits are mutually exclusive, we can use else_if for added performance!
-				limit = {
-					FROM = { has_idea = tenacious_defense_spirit }
-				}
-				character = { 
-					IF = { 
-						limit = { is_army_leader = yes }
-					
-						random_list = {
-							50 = { add_defense = 1 }
-							50 = {}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					FROM = { has_idea = meticulous_preparation_spirit }
-				}
-				character = { 
-					IF = { 
-						limit = { is_army_leader = yes }
-					
-						random_list = {
-							50 = { 
-								add_planning = 1 
-								add_logistics = 1
-							}
-							50 = {}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					FROM = { has_idea = instilled_aggression_spirit }
-				}
-				character = { 
-					IF = { 
-						limit = { is_navy_leader = yes }
-		
-						random_list = {
-							40 = { 
-								add_attack = 1 
-							}
-							60 = {}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					FROM = { has_idea = calculated_restraint_spirit }
-				}
-				character = { 
-					IF = { 
-						limit = { is_navy_leader = yes }
-					
-						random_list = {
-							40 = { 
-								add_defense = 1 
-							}
-							60 = {}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					FROM = { has_idea = signals_training_spirit }
-				}
-				character = { 
-					IF = { 
-						limit = { is_navy_leader = yes }
-					
-						random_list = {
-							40 = { 
-								add_maneuver = 1
-								add_coordination = 1
-							}
-							60 = {}
-						}
-					}
-				}
-			}
-		}  
 	}
 
-	on_unit_leader_created = { # This uses the UNIT LEADER sub scope of a character, FROM == country
-		effect = {
-			character = {
-				if = { 
-					limit = {
-						is_army_leader = yes
-					}
-					if = {
-						limit = {	
-							FROM = { has_idea = political_loyalty_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								50 = { 
-									add_unit_leader_trait = media_personality
-								}
-								50 = { 
-									add_unit_leader_trait = politically_connected
-								}
-							}
-						}
-						
-					}
-					else_if = {
-						limit = {
-							FROM = { has_idea = mobile_warfare_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								50 = { 
-									add_unit_leader_trait = panzer_leader
-								}
-								50 = {}
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							FROM = { has_idea = inventive_leadership_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								75 = { 
-									random_list = {
-										33 = { add_unit_leader_trait = naval_invader }
-										33 = { add_unit_leader_trait = commando }
-										33 = { add_unit_leader_trait = trickster }
-									}
-								}
-								25 = {}
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							FROM = { has_idea = mass_assault_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								50 = { 
-									add_unit_leader_trait = infantry_officer
-								}
-								50 = {}
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							FROM = { has_idea = superior_firepower_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								50 = { 
-									add_unit_leader_trait = engineer_officer
-								}
-								50 = {}
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							FROM = { has_idea = theatre_training_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-						}
-						root = {
-							random_list = {
-								50 = { 
-									random_list = {
-										50 = { add_unit_leader_trait = brilliant_strategist }
-										50 = { add_unit_leader_trait = inflexible_strategist }
-									}
-								}
-								50 = {}
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						FROM = { has_idea = fleet_in_being_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-					}
-					root = {
-						random_list = {
-							50 = { 
-								add_unit_leader_trait = gunnery_expert
-							}
-							50 = {}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						FROM = { has_idea = trade_interdiction_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-					}
-					root = {
-						random_list = {
-							25 = { 
-								add_unit_leader_trait = seawolf
-							}
-							25 = { 
-								add_unit_leader_trait = blockade_runner
-							}
-							50 = {}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						FROM = { has_idea = base_strike_academy_spirit } #done here instead of the trait file to avoid some oddness with generating assignable traits under certain circumstances, makes it easier to control probabilities
-					}
-					root = {
-						random_list = {
-							50 = { 
-								add_unit_leader_trait = aviation_enthusiast 
-							}
-							50 = {}
-						}
-					}
-				}
-			}
-		}
-	}
 	
-	#ROOT - country that just went to peace
-	on_peaceconference_ended = { 
-		effect = { #SOV - Fourth Five Year Plan
-			if = {
-				limit = {
-					original_tag = SOV
-					has_country_flag = SOV_third_five_year_plan_locked_flag
-					NOT = { has_country_flag = SOV_fourth_five_year_plan_available_flag }
-					OR = {
-						NOT = {
-							any_country = {
-								has_country_flag = SOV_third_five_year_plan_disruptor_flag
-							}
-						}
-						any_country = {
-							has_country_flag = SOV_third_five_year_plan_disruptor_flag
-							NOT = { has_war_with = ROOT }
-						}
-					}
-				}
-				set_country_flag = SOV_fourth_five_year_plan_available_flag
-				clr_country_flag = SOV_great_patriotic_war_flag
-				complete_national_focus = SOV_restoration_and_development
-			}
-		}
-	}
-
 	#ROOT = attacking side
 	#FROM = defending side
 	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
 	on_war_relation_added = { # ---> Fires in 2nd place (1st is on_declare_war) -> This one is triggered ALWAYS 
-		effect = {
-			if = {
-				limit = {
-					original_tag = GER
-					FROM = {
-						original_tag = POL
-					}
-				}
-				SOV = { set_country_flag = achievement_GER_attacked_POL_first }
-			}
-		}
-		effect = { #SOV - Great Patriotic War and Third Five Year Plan
-			if = {
-				limit = {
-					OR = {
-						AND = {
-							ROOT = { original_tag = SOV }
-							FROM = {
-								is_major = yes
-								NOT = { original_tag = SOV }
-							}
-						}
-						AND = {
-							FROM = { original_tag = SOV }
-							ROOT = {
-								is_major = yes
-								NOT = { original_tag = SOV }
-							}
-						}
-					}
-				}
-				if = { ## GREAT PATRIOTIC WAR
-					limit = {
-						NOT = { has_country_flag = SOV_great_patriotic_war_flag }
-					}
-					SOV = { set_country_flag = SOV_great_patriotic_war_flag }
-				}
-				if = { ## THIRD FIVE YEAR PLAN
-					limit = {
-						SOV = { NOT = { has_country_flag = SOV_third_five_year_plan_locked_flag } }
-					}
-					SOV = {
-						set_country_flag = SOV_third_five_year_plan_locked_flag
-
-						if = { #Prio Germany if possible
-							limit = {
-								has_war_with = GER
-								GER = { is_major = yes }
-							}
-							GER = { set_country_flag = SOV_third_five_year_plan_disruptor_flag }
-						}
-						else = { #If no Germany, choose a random enemy major
-							random_enemy_country = {
-								limit = {
-									is_major = yes
-								}
-								set_country_flag = SOV_third_five_year_plan_disruptor_flag
-							}
-						}
-						random_country = {
-							limit = {
-								has_country_flag = SOV_third_five_year_plan_disruptor_flag
-							}
-							log = "The disruptor is [THIS.GetName]"
-						}
-
-						country_event = NSB_soviet_five_year_plan.01
-					}
-				}
-			}
-		}
-
 		#SOVIET - If Soviet has "Long Live to Peace" propaganda campaign active, bad shit happens if they enter a war
 		effect = {
 			if = { #SOV is attacker - bad SOV gets properly punished
@@ -481,36 +128,7 @@ on_actions = {
 				}
 				country_event = { id = NSB_soviet_propaganda_capmaign_events.3 hours = 4 random_hours = 2 }
 			}
-		}
-
-		#FINLAND - Winter War has started!
-		effect = {
-			if = {
-				limit = {
-					ROOT = { tag = SOV }
-					FROM = { tag = FIN }
-					NOT = { has_global_flag = SOV_winter_war_flag }
-				}
-				set_global_flag = SOV_winter_war_flag
-				FIN = { country_event = finland.10 }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag =  SOV } 
-					ROOT = { tag =  GER } 
-					NOT = {
-						SOV = {
-							has_country_flag = SOV_barbarossa_scorched_earth_delay
-						}
-					}
-				}
-				SOV = {
-					set_country_flag = { flag = SOV_barbarossa_scorched_earth_delay days = 45 value = 1 }
-				}
-			}
-		}
+		}	
 	}
 
 	on_weekly_SOV = {
@@ -604,13 +222,7 @@ on_actions = {
 
 	on_daily_SOV = {
 		effect = {
-			if = {
-				limit = {
-					has_country_flag = { flag = SOV_last_purge_flag days > 15 }
-				}
 				add_to_variable = { SOV_paranoia_weekly_bucket = SOV_paranoia }
-				#log = "Added [?SOV_paranoia] Paranoia. Weekly BUCKET = [?SOV_paranoia_weekly_bucket]" #Debug 
-
 				if = { #MEDIUM PARANOIA LEVEL
 					limit = {
 						SOV_paranoia_is_medium_level = yes
@@ -623,82 +235,8 @@ on_actions = {
 					}
 					add_to_variable = { SOV_high_paranoia_days = 1 } #Used to randomize having a Great or a Regular purge (so that every day kinda counts)
 				}
-				#log = "Medium Paranoia days = [?SOV_medium_paranoia_days] // High Paranoia days = [?SOV_high_paranoia_days]" #Debug
-			}
-			else = {
-				#log = "NOT A PURGE WEEK" #Debug
-			}
 		}
 	}
 
-	on_monthly_SOV = { 
-	}
-	
-	#FROM is faction leader on join faction requests. THIS DOES NOT FIRE ON ADD_TO_FACTION EFFECT! USE ON_OFFER_JOIN_FACTION!
-	on_join_faction = {
-	}
-
-	#FROM is country getting invited.
-	on_offer_join_faction = {
-	}
-
-	on_release_as_puppet = { 
-	}
-
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-	}
-
-	on_startup = {
-		effect = {
-			#Set Iranian initial states (for Anglo-Soviet invasion of Iran)
-			PER = {
-				every_owned_state = {
-					add_to_array = { SOV_iranian_initial_states = PREV }
-				}
-			}
-		}
-	}
-
-	# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
-		#Soviet / Anglo-Soviet Invasion of Iran
-	}
-	#ROOT = attacking side
-	#FROM = defending side
-	#fired when two countries end up at war with each other (on_war is fired when a country goes to war against anyone and is not fired again when it enters war against another country unless it went to peace first)
-	on_war_relation_added = {
-		effect = {
-			if = {
-				limit = {
-					tag = GER
-					FROM = { tag = SOV }
-				}
-			}
-			GER = {
-				set_country_flag = achievement_stalingrad_not_taken #will be removed in on_state_control_change if Germany takes Stalingrad
-			}
-		}
-	}
-
-	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = {
-						state = 217
-					}
-					tag = GER
-					has_country_flag = achievement_stalingrad_not_taken
-					divisions_in_state = { state = 217 size > 1 } #only happens if Germany has at least one division in the state, because state control changes before on_capitulation fires
-				}
-				clr_country_flag = achievement_stalingrad_not_taken
-			}
-		}
-	}
-
-	
 }
 
