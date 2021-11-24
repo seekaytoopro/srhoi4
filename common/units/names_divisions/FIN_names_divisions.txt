@@ -6,7 +6,7 @@ FIN_INF_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -80,7 +80,7 @@ FIN_CAV_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -155,7 +155,7 @@ FIN_MOT_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -211,7 +211,7 @@ FIN_ARM_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -268,7 +268,7 @@ FIN_MEC_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized"  }
 
@@ -325,7 +325,7 @@ FIN_GAR_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -400,7 +400,7 @@ FIN_MAR_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -454,7 +454,7 @@ FIN_MTN_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -531,7 +531,7 @@ FIN_PAR_01 =
 
 	for_countries = { FIN }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 

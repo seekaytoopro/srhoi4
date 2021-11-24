@@ -5,7 +5,7 @@ RAJ_INF_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -127,7 +127,7 @@ RAJ_CAV_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -174,7 +174,7 @@ RAJ_MOT_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -296,7 +296,7 @@ RAJ_MEC_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized" }
 
@@ -418,7 +418,7 @@ RAJ_ARM_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -483,7 +483,7 @@ RAJ_PAR_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -531,7 +531,7 @@ RAJ_MAR_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -573,7 +573,7 @@ RAJ_MNT_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -695,7 +695,7 @@ RAJ_GAR_01 =
 
 	for_countries = { RAJ }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 

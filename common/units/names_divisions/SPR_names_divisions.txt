@@ -49,7 +49,7 @@ SPR_CAV_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -81,7 +81,7 @@ SPR_MOT_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -113,7 +113,7 @@ SPR_MEC_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized" }
 
@@ -145,7 +145,7 @@ SPR_ARM_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -177,7 +177,7 @@ SPR_PAR_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -209,7 +209,7 @@ SPR_MAR_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -241,7 +241,7 @@ SPR_MNT_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -273,7 +273,7 @@ SPR_GAR_01 =
 
 	for_countries = { SPR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 

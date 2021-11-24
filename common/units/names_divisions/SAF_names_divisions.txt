@@ -6,7 +6,7 @@ SAF_INF_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -129,7 +129,7 @@ SAF_CAV_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -206,7 +206,7 @@ SAF_MOT_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -262,7 +262,7 @@ SAF_ARM_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -314,7 +314,7 @@ SAF_MEC_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized"  }
 
@@ -366,7 +366,7 @@ SAF_GAR_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -442,7 +442,7 @@ SAF_MAR_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -496,7 +496,7 @@ SAF_MTN_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -573,7 +573,7 @@ SAF_PAR_01 =
 
 	for_countries = { SAF }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 

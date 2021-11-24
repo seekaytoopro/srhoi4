@@ -5,7 +5,7 @@ NOR_INF_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -47,7 +47,7 @@ NOR_CAV_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -79,7 +79,7 @@ NOR_MOT_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -111,7 +111,7 @@ NOR_MEC_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized" }
 
@@ -143,7 +143,7 @@ NOR_ARM_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -175,7 +175,7 @@ NOR_PAR_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -207,7 +207,7 @@ NOR_MAR_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -239,7 +239,7 @@ NOR_MNT_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -271,7 +271,7 @@ NOR_GAR_01 =
 
 	for_countries = { NOR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 

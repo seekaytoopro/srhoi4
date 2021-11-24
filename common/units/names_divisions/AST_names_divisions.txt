@@ -6,7 +6,7 @@ AST_INF_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -84,7 +84,7 @@ AST_CAV_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -161,7 +161,7 @@ AST_MOT_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -208,7 +208,7 @@ AST_ARM_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -255,7 +255,7 @@ AST_MEC_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized"  }
 
@@ -302,7 +302,7 @@ AST_GAR_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -375,7 +375,7 @@ AST_MAR_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -429,7 +429,7 @@ AST_MTN_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -506,7 +506,7 @@ AST_PAR_01 =
 
 	for_countries = { AST }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 

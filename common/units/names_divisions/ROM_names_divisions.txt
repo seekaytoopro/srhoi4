@@ -6,7 +6,7 @@ ROM_INF_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -80,7 +80,7 @@ ROM_CAV_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -154,7 +154,7 @@ ROM_MOT_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -210,7 +210,7 @@ ROM_ARM_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -266,7 +266,7 @@ ROM_MEC_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized"  }
 
@@ -323,7 +323,7 @@ ROM_GAR_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -393,7 +393,7 @@ ROM_MAR_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -447,7 +447,7 @@ ROM_MTN_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -523,7 +523,7 @@ ROM_PAR_01 =
 
 	for_countries = { ROM }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 

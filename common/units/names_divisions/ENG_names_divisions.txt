@@ -4,7 +4,7 @@ ENG_INF_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -141,7 +141,7 @@ ENG_INF_02 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -192,7 +192,7 @@ ENG_INF_03 = {
 
 	for_countries = { ENG } 
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" "mechanized" } 
 
@@ -242,7 +242,7 @@ ENG_CAV_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -293,7 +293,7 @@ ENG_CAV_02 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -344,7 +344,7 @@ ENG_MOT_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -454,7 +454,7 @@ ENG_MOT_02 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -505,7 +505,7 @@ ENG_MEC_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized" }
 
@@ -615,7 +615,7 @@ ENG_ARM_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -669,7 +669,7 @@ ENG_ARM_02 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "modern_armor" }
 
@@ -722,7 +722,7 @@ ENG_ARM_03 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "heavy_armor" }
 
@@ -773,7 +773,7 @@ ENG_PAR_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -824,7 +824,7 @@ ENG_PAR_02 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -875,7 +875,7 @@ ENG_MAR_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -926,7 +926,7 @@ ENG_MNT_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -1048,7 +1048,7 @@ ENG_GAR_01 = {
 
 	for_countries = { ENG }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -1197,7 +1197,7 @@ ENG_AIR_01 = {
 
 	for_countries = { ENG } 
 
-	can_use = { always = yes } 
+	  
 
 	division_types = { "infantry" } 
 

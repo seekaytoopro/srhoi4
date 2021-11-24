@@ -6,7 +6,7 @@ GER_Inf_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -349,7 +349,7 @@ GER_ALTINF_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry"  }
 
@@ -434,7 +434,7 @@ GER_LTINF_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry"  }
 
@@ -553,7 +553,7 @@ GER_MEC_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized"  }
 
@@ -592,7 +592,7 @@ GER_Mnt_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers"  }
 
@@ -624,7 +624,7 @@ GER_MAR_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine"  }
 
@@ -650,7 +650,7 @@ GER_PAR_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper"  }
 
@@ -684,7 +684,7 @@ GER_GAR_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry"  }
 
@@ -797,7 +797,7 @@ GER_Arm_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -861,7 +861,7 @@ GER_LTARM_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" }
 
@@ -889,7 +889,7 @@ GER_Cav_01 =
 
 	for_countries = { GER }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry"  }
 

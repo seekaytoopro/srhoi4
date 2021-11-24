@@ -5,7 +5,7 @@ JAP_INF_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -190,7 +190,7 @@ JAP_CAV_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -232,7 +232,7 @@ JAP_MOT_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -416,7 +416,7 @@ JAP_MEC_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mechanized" }
 
@@ -600,7 +600,7 @@ JAP_ARM_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -652,7 +652,7 @@ JAP_PAR_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -694,7 +694,7 @@ JAP_MAR_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -740,7 +740,7 @@ JAP_MNT_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -785,7 +785,7 @@ JAP_GAR_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -849,7 +849,7 @@ JAP_IMB_01 =
 
 	for_countries = { JAP }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 

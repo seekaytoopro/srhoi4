@@ -3,9 +3,9 @@ FRA_INF_01 =
 {
 	name = "Infantry Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -172,9 +172,9 @@ FRA_CAV_01 =
 {
 	name = "Cavalry Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "cavalry" }
 
@@ -214,9 +214,9 @@ FRA_MOT_01 =
 {
 	name = "Motorized Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" }
 
@@ -273,9 +273,9 @@ FRA_MEC_01 =
 {
 	name = "Light Mechanized Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "mechanized" }
 
@@ -325,9 +325,9 @@ FRA_DLC_01 =
 {
 	name = "Light Cavalry Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR}
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "motorized" "cavalry" "mechanized" }
 
@@ -377,9 +377,9 @@ FRA_ARM_01 =
 {
 	name = "Armored Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -442,9 +442,9 @@ FRA_ARM_02 =
 {
 	name = "Tank Brigade"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR  }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
@@ -507,9 +507,9 @@ FRA_ARM_03 =
 {
 	name = "Armored Division (late)"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "medium_armor" "modern_armor" }
 
@@ -572,9 +572,9 @@ FRA_PAR_01 =
 {
 	name = "Paratrooper Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "paratrooper" }
 
@@ -608,9 +608,9 @@ FRA_MAR_01 =
 {
 	name = "Marine Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "marine" }
 
@@ -650,9 +650,9 @@ FRA_MNT_01 =
 {
 	name = "Mountain Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR}
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "mountaineers" }
 
@@ -709,9 +709,9 @@ FRA_GAR_01 =
 {
 	name = "Garrison Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
@@ -795,9 +795,9 @@ FRA_COL_01 =
 {
 	name = "Colonial Division"
 
-	for_countries = { FRA }
+	for_countries = { FRA EFR }
 
-	can_use = { always = yes }
+	 
 
 	division_types = { "infantry" }
 
