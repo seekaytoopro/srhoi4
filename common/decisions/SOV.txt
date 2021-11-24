@@ -251,7 +251,7 @@ SOV_great_patriotic_war = {
 		complete_effect = {
 				if = { 
 					limit = { 251 = { is_controlled_by = SOV } } 
-					set_capital = 251 
+					set_capital = { 251 }
 				}
 		}
 
