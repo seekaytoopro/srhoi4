@@ -1110,235 +1110,235 @@ ideas = {
 	}
 
 
-	political_advisor = {
-		mikhail_kalinin = {
+	# political_advisor = {
+	# 	mikhail_kalinin = {
 			
 			
-			allowed = {
-				original_tag = "SOV"
-			}
+	# 		allowed = {
+	# 			original_tag = "SOV"
+	# 		}
 
-			traits = { popular_figurehead }
-		}
+	# 		traits = { popular_figurehead }
+	# 	}
 
-		SOV_nikolai_voznesensky = {
+	# 	SOV_nikolai_voznesensky = {
 			
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
+	# 		traits = { captain_of_industry }
+	# 	}
 		
-		# nikita_khrushchev = {
+	# 	# nikita_khrushchev = {
 			
-		# 	allowed = {
-		# 		original_tag = "SOV"
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = "SOV"
+	# 	# 	}
 
-		# 	traits = { communist_revolutionary }
+	# 	# 	traits = { communist_revolutionary }
 	
-		# }	
-		# soviet_vsevolod_merkulov = {
-		# 	available = {
-		# 		has_intelligence_agency = yes
-		# 	}
+	# 	# }	
+	# 	# soviet_vsevolod_merkulov = {
+	# 	# 	available = {
+	# 	# 		has_intelligence_agency = yes
+	# 	# 	}
 			
-		# 	allowed = {
-		# 		original_tag = SOV
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = SOV
+	# 	# 	}
 			
-		# 	traits = { head_of_intelligence }
+	# 	# 	traits = { head_of_intelligence }
 
-		# }
+	# 	# }
 
-		SOV_lavrentiy_beria = {
+	# 	SOV_lavrentiy_beria = {
 			
-			picture = generic_army_europe_4
+	# 		picture = generic_army_europe_4
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { ideological_crusader }
-		}
+	# 		traits = { ideological_crusader }
+	# 	}
 
-		SOV_vyacheslav_molotov = {
+	# 	SOV_vyacheslav_molotov = {
 			
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { smooth_talking_charmer }
-		}
+	# 		traits = { smooth_talking_charmer }
+	# 	}
 
-		# SOV_nikolai_yezhov = {
+	# 	# SOV_nikolai_yezhov = {
 			
-		# 	picture = generic_army_europe_2
+	# 	# 	picture = generic_army_europe_2
 			
-		# 	allowed = {
-		# 		original_tag = SOV
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = SOV
+	# 	# 	}
 			
-		# 	traits = { prince_of_terror }
-		# }
-	}
+	# 	# 	traits = { prince_of_terror }
+	# 	# }
+	# }
 		
-	army_chief = {
+	# army_chief = {
 		
 		
-		# semyon_timoshenko = {
+	# 	# semyon_timoshenko = {
 			
-		# 	allowed = {
-		# 		original_tag = SOV
-		# 	}
-		# 	available = {
-		# 		NOT = { has_completed_focus = SOV_defense_of_moscow }
-		# 	}
-		# 	traits = { army_chief_reform_2 }
+	# 	# 	allowed = {
+	# 	# 		original_tag = SOV
+	# 	# 	}
+	# 	# 	available = {
+	# 	# 		NOT = { has_completed_focus = SOV_defense_of_moscow }
+	# 	# 	}
+	# 	# 	traits = { army_chief_reform_2 }
 			
-		# }
+	# 	# }
 		
-		kliment_voroshilov = {
+	# 	kliment_voroshilov = {
 			
-			allowed = {
-				original_tag = SOV
-			}
-			available = {
-				NOT = { has_completed_focus = SOV_defense_of_moscow }
-			}
-			traits = { army_chief_defensive_1 }
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
+	# 		available = {
+	# 			NOT = { has_completed_focus = SOV_defense_of_moscow }
+	# 		}
+	# 		traits = { army_chief_defensive_1 }
 
-		}
+	# 	}
 		
-		# alexander_yegorov = {
-		# 	allowed = {	original_tag = SOV }
+	# 	# alexander_yegorov = {
+	# 	# 	allowed = {	original_tag = SOV }
 		
-		# 	traits = { army_chief_defensive_2 }
-		# }
+	# 	# 	traits = { army_chief_defensive_2 }
+	# 	# }
 		
-		vasily_blucher = {		
-			allowed = { original_tag = SOV	}
-			available = {
-				NOT = { has_completed_focus = SOV_defense_of_moscow }
-			}
-			traits = { army_chief_maneuver_2 }	
-		}	
+	# 	vasily_blucher = {		
+	# 		allowed = { original_tag = SOV	}
+	# 		available = {
+	# 			NOT = { has_completed_focus = SOV_defense_of_moscow }
+	# 		}
+	# 		traits = { army_chief_maneuver_2 }	
+	# 	}	
 
-		georgy_zhukov_chief = {
+	# 	georgy_zhukov_chief = {
 		
-			picture = georgy_zhukov
+	# 		picture = georgy_zhukov
 
 
-			allowed = {
-				original_tag = SOV # Unlocked via focus
-			}
+	# 		allowed = {
+	# 			original_tag = SOV # Unlocked via focus
+	# 		}
 
-			available = {
-				has_completed_focus = SOV_defense_of_moscow
-			}
+	# 		available = {
+	# 			has_completed_focus = SOV_defense_of_moscow
+	# 		}
 
-			cost = 150
+	# 		cost = 150
 
-			traits = { marshal_of_victory }
-		}	
-	}
-	navy_chief = {
+	# 		traits = { marshal_of_victory }
+	# 	}	
+	# }
+	# navy_chief = {
 		
-		pyotr_smirnov = {
+	# 	pyotr_smirnov = {
 			
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 
-			traits = { navy_chief_naval_aviation_1 }
+	# 		traits = { navy_chief_naval_aviation_1 }
 			
-		}
+	# 	}
 		
-		mikhail_frinovsky = {	
+	# 	mikhail_frinovsky = {	
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 
-			traits = { navy_chief_commerce_raiding_1 }
+	# 		traits = { navy_chief_commerce_raiding_1 }
 			
-		}
+	# 	}
 		
-		nikolay_kuznetsov = {
+	# 	nikolay_kuznetsov = {
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { navy_chief_reform_2 }
-		}
+	# 		traits = { navy_chief_reform_2 }
+	# 	}
 		
-		ivan_yumashev = {
+	# 	ivan_yumashev = {
 				
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_decisive_battle_2 }
 			
-		}	
-	}
+	# 	}	
+	# }
 	
-	air_chief = {
+	# air_chief = {
 		
-		konstantin_vershinin = {
+	# 	konstantin_vershinin = {
 			
-		allowed = {
-				original_tag = SOV
-			}
+	# 	allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { air_chief_ground_support_2 }
-		}
+	# 		traits = { air_chief_ground_support_2 }
+	# 	}
 
 		
-	}
+	# }
 	
 	
-	high_command = {
+	# high_command = {
 	
-		ivan_konev = {
-			ledger = army
+	# 	ivan_konev = {
+	# 		ledger = army
 
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { army_infantry_1 }
-		}
+	# 		traits = { army_infantry_1 }
+	# 	}
 		
-		aleksandr_vasilevsky = {
-			ledger = army
+	# 	aleksandr_vasilevsky = {
+	# 		ledger = army
 
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 
-		}
+	# 	}
 		
-		konstantin_rokossovsky = {
-			ledger = army
-			#Also unit leader: 402
+	# 	konstantin_rokossovsky = {
+	# 		ledger = army
+	# 		#Also unit leader: 402
 			
-			allowed = {
-				original_tag = SOV # Unlocked via focus
-			}
+	# 		allowed = {
+	# 			original_tag = SOV # Unlocked via focus
+	# 		}
 
-			traits = { army_armored_3 }
+	# 		traits = { army_armored_3 }
 
-		}	
+	# 	}	
 				
 		# stepan_krasovsky = {
 		# 	ledger = air
@@ -1746,40 +1746,40 @@ ideas = {
 		
 	}
 	
-	theorist = {	
+	# theorist = {	
 		
-		boris_shaposhnikov = {
-			ledger = army
+	# 	boris_shaposhnikov = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
 
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 		
-		alexander_golovanov = {
-			ledger = air
+	# 	alexander_golovanov = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = SOV
-			}
+	# 		allowed = {
+	# 			original_tag = SOV
+	# 		}
 			
 
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			air_doctrine = 0.10
+	# 		}
 			
-			traits = { air_warfare_theorist }
-		}
-	}
+	# 		traits = { air_warfare_theorist }
+	# 	}
+	# }
 }

@@ -26,6 +26,10 @@ weather_rain_heavy = { # on Region
 	local_org_regain = -0.2
 	air_mission_efficiency = -0.3
 	naval_retreat_speed = 0.10 
+	org_loss_when_moving = 0.1
+	positioning = -0.1
+	supply_consumption_factor = 0.1
+	supply_factor = -0.05
 }
 weather_snow = { # on Region 
 	# air_detection = -0.6
@@ -59,6 +63,9 @@ weather_sandstorm = { # on Region
 	local_org_regain = -0.5
 	air_mission_efficiency = -0.5
 	heat_attrition = 0.2
+	org_loss_when_moving = 0.25
+	supply_factor = -0.15
+	truck_attrition_factor = 3.0
 }
 
 weather_arctic_water = { # on Region 
@@ -76,7 +83,10 @@ mud_simulator = {
 	# army_armor_speed_factor = -0.125	
 	army_attack_factor = -0.15
 	breakthrough_factor = -0.25
-	attrition = 0.10		
+	attrition = 0.10
+	org_loss_when_moving = 0.125
+	supply_factor = -0.075
+	truck_attrition_factor = 2.0
 }
 weather_extreme_cold = { # on Province
 	# winter_attrition = 0.3
@@ -91,6 +101,12 @@ weather_extreme_cold = { # on Province
 	air_accidents = 0.5
 	air_bombing_targetting = -0.9
 	local_org_regain = 0.85
+	org_loss_when_moving = 0.25
+	positioning = -0.2
+	supply_consumption_factor = 0.15
+	supply_factor = -0.25
+	truck_attrition_factor = 1.0
+	army_attack_speed_factor = -0.25
 }
 weather_very_cold = { # on Province
 	# winter_attrition = 0.2
@@ -104,14 +120,24 @@ weather_very_cold = { # on Province
 	air_accidents = 0.3
 	air_bombing_targetting = -0.75
 	local_org_regain = 0.7
+	org_loss_when_moving = 0.15
+	positioning = -0.1
+	supply_consumption_factor = 0.10
+	supply_factor = -0.15
+	truck_attrition_factor = 0.75
+	army_attack_speed_factor = -0.15
 }
 weather_very_hot = { # on Province
 	heat_attrition = 0.2
 	local_org_regain = -0.1
+	supply_factor = -0.05
 }
 weather_extreme_hot = { # on Province
+	army_attack_factor = -0.05
 	heat_attrition = 0.25
 	local_org_regain = -0.2
+	supply_consumption_factor = 0.5
+	truck_attrition_factor = 0.1
 }
 weather_ground_snow_medium = { # on Province
 	# army_attack_factor = -0.3
@@ -239,7 +265,7 @@ war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
 	#army_core_attack_factor = 0.1
 	army_core_defence_factor = 0.05
-	command_power_gain_mult = 0.45
+	command_power_gain_mult = 0.5
 }
 
 war_support_bad_modifier = {
@@ -503,4 +529,40 @@ lend_lease = {
 	}
 
 	trade_cost_for_target_factor = -0.6
+	}
+
+	SOV_soviet_chinese_relations = {
+		valid_relation_trigger = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+			}
+		}
+	
+		license_purchase_cost = 0 #base cost reduction
+		ai_license_acceptance = 20 #more to AI acceptance value.
+		license_production_speed = 0.25 #speed  increase for being a license
+		license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
+	}
+	
+	SOV_face_western_fascism_static = {
+		valid_relation_trigger = {
+			FROM = {
+				has_war_with = ROOT
+			}
+		}
+	
+		attack_bonus_against = 0.1
+		defense_bonus_against = 0.1
+	}
+	
+	SOV_for_the_common_good_relation = { #For Right Oppo allies
+		valid_relation_trigger = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+			}
+		}
+	
+		ai_license_acceptance = 20 #more to AI acceptance value.
+		license_production_speed = 0.25 #speed  increase for being a license
+		license_tech_difference_speed = 0.25 #less cost increase for each tech level between the license and own tech level
 	}
