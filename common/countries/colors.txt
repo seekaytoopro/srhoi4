@@ -67,10 +67,6 @@ GRE = {
 	color = rgb { 93 181 227 }
 	color_ui = rgb { 121 235 255 }
 }
-ALB = {
-	color = rgb { 149 45 102 }
-	color_ui = rgb { 194 59 133 }
-}
 NOR = {
 	color = rgb { 179 187 201 }
 	color_ui = rgb { 179 187 201 }
@@ -96,10 +92,6 @@ AST = {
 	color = rgb { 57 143 97 }
 	color_ui = rgb { 74 186 126 }
 }
-BRA = {
-	color = rgb { 76 145 63 }
-	color_ui = rgb { 99 189 82 }
-}
 CAN = {
 	color = rgb { 119 48 39 }
 	color_ui = rgb { 155 62 51 }
@@ -112,17 +104,9 @@ ETH = {
 	color = rgb { 80 120 80 }
 	color_ui = rgb { 105 155 105 }
 }
-IRQ = {
-	color = rgb { 178 114 99 }
-	color_ui = rgb { 231 148 129 }
-}
 JAP = {
 	color = rgb { 255 255 255 }
 	color_ui = rgb { 255 255 255 }
-}
-MEX = {
-	color = rgb { 104 152 83 }
-	color_ui = rgb { 135 198 108 }
 }
 NZL = {
 	color = rgb { 152 130 191 }
@@ -158,10 +142,6 @@ MAN = {
 DDR = {
     color = rgb { 120 150 80 }
     color_ui = rgb { 150 180 120 }
-}
-SPD = {
-    color = rgb { 200 100 31 }
-    color_ui = rgb { 245 123 38 }
 }
 
 EFR = {
