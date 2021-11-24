@@ -10,7 +10,7 @@ state={
 	# 	steel=6 #was 2 before Mexican steel production was centralized to allow oil concessions
 	# }
 	
-	history={
+	history={ owner = SWE
 		# owner = MEX
 		# buildings = {
 		# 	infrastructure = 5

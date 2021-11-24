@@ -1,1058 +1,1058 @@
-ideas = {
+# ideas = {
 
-	country = {
-	BRA_FEB = {
-				allowed = {
-					always = no
-				}
+# 	country = {
+# 	BRA_FEB = {
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_volunteer_expedition_bonus
+# 				picture = generic_volunteer_expedition_bonus
 				
-				modifier = {
-					send_volunteer_divisions_required = -1.0
-					send_volunteers_tension = -1.00
-					conscription = 0.01
-				}
-			}
+# 				modifier = {
+# 					send_volunteer_divisions_required = -1.0
+# 					send_volunteers_tension = -1.00
+# 					conscription = 0.01
+# 				}
+# 			}
 			
-			BRA_rural_idea = {
+# 			BRA_rural_idea = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_agrarian_society
+# 				picture = generic_agrarian_society
 	
-				modifier = {
-					consumer_goods_factor = 0.10
-					industrial_capacity_factory = -0.10
-					industrial_capacity_dockyard = -0.10
-					production_speed_arms_factory_factor = -0.10
-					production_speed_dockyard_factor = -0.10
-					production_speed_industrial_complex_factor = -0.10
-					conscription = -0.01
-				}
-			}
+# 				modifier = {
+# 					consumer_goods_factor = 0.10
+# 					industrial_capacity_factory = -0.10
+# 					industrial_capacity_dockyard = -0.10
+# 					production_speed_arms_factory_factor = -0.10
+# 					production_speed_dockyard_factor = -0.10
+# 					production_speed_industrial_complex_factor = -0.10
+# 					conscription = -0.01
+# 				}
+# 			}
 			
-			BRA_rural_idea2 = {
+# 			BRA_rural_idea2 = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_agrarian_society
+# 				picture = generic_agrarian_society
 	
-				modifier = {
-					consumer_goods_factor = 0.075
-					industrial_capacity_factory = -0.075
-					industrial_capacity_dockyard = -0.075
-					production_speed_arms_factory_factor = -0.075
-					production_speed_dockyard_factor = -0.075
-					production_speed_industrial_complex_factor = -0.075
-					conscription = -0.0075
-				}
-			}
+# 				modifier = {
+# 					consumer_goods_factor = 0.075
+# 					industrial_capacity_factory = -0.075
+# 					industrial_capacity_dockyard = -0.075
+# 					production_speed_arms_factory_factor = -0.075
+# 					production_speed_dockyard_factor = -0.075
+# 					production_speed_industrial_complex_factor = -0.075
+# 					conscription = -0.0075
+# 				}
+# 			}
 			
-			BRA_rural_idea3 = {
+# 			BRA_rural_idea3 = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_agrarian_society
+# 				picture = generic_agrarian_society
 	
-				modifier = {
-					consumer_goods_factor = 0.05
-					industrial_capacity_factory = -0.05
-					industrial_capacity_dockyard = -0.05
-					production_speed_arms_factory_factor = -0.05
-					production_speed_dockyard_factor = -0.05
-					production_speed_industrial_complex_factor = -0.05
-					conscription = -0.005
-				}
-			}
+# 				modifier = {
+# 					consumer_goods_factor = 0.05
+# 					industrial_capacity_factory = -0.05
+# 					industrial_capacity_dockyard = -0.05
+# 					production_speed_arms_factory_factor = -0.05
+# 					production_speed_dockyard_factor = -0.05
+# 					production_speed_industrial_complex_factor = -0.05
+# 					conscription = -0.005
+# 				}
+# 			}
 			
-			BRA_rural_idea4 = {
+# 			BRA_rural_idea4 = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_central_management
+# 				picture = generic_central_management
 	
-				modifier = {
-					consumer_goods_factor = -0.025
-					industrial_capacity_factory = 0.025
-					industrial_capacity_dockyard = 0.025
-					production_speed_arms_factory_factor = 0.025
-					production_speed_dockyard_factor = 0.025
-					production_speed_industrial_complex_factor = 0.025
-				}
-			}
+# 				modifier = {
+# 					consumer_goods_factor = -0.025
+# 					industrial_capacity_factory = 0.025
+# 					industrial_capacity_dockyard = 0.025
+# 					production_speed_arms_factory_factor = 0.025
+# 					production_speed_dockyard_factor = 0.025
+# 					production_speed_industrial_complex_factor = 0.025
+# 				}
+# 			}
 
-			BRA_rural_idea5 = {
+# 			BRA_rural_idea5 = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_central_management
+# 				picture = generic_central_management
 	
-				modifier = {
-					consumer_goods_factor = 0.025
-					industrial_capacity_factory = -0.025
-					industrial_capacity_dockyard = -0.025
-					production_speed_arms_factory_factor = -0.025
-					production_speed_dockyard_factor = -0.025
-					production_speed_industrial_complex_factor = -0.025
-					conscription = -0.0025
-				}
-			}
+# 				modifier = {
+# 					consumer_goods_factor = 0.025
+# 					industrial_capacity_factory = -0.025
+# 					industrial_capacity_dockyard = -0.025
+# 					production_speed_arms_factory_factor = -0.025
+# 					production_speed_dockyard_factor = -0.025
+# 					production_speed_industrial_complex_factor = -0.025
+# 					conscription = -0.0025
+# 				}
+# 			}
 			
-			BRA_labour_justice = {
+# 			BRA_labour_justice = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_pp_unity_bonus
+# 				picture = generic_pp_unity_bonus
 	
-				modifier = {
-					stability_factor = 0.1
-				}
-			}
+# 				modifier = {
+# 					stability_factor = 0.1
+# 				}
+# 			}
 			
-			BRA_labour_safety = {
+# 			BRA_labour_safety = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_central_management
+# 				picture = generic_central_management
 	
-				modifier = {
-					industrial_capacity_factory = 0.05
-					industrial_capacity_dockyard = 0.05
-					conscription = 0.01
-				}
-			}
+# 				modifier = {
+# 					industrial_capacity_factory = 0.05
+# 					industrial_capacity_dockyard = 0.05
+# 					conscription = 0.01
+# 				}
+# 			}
 			
-			BRA_workers_rights = {
+# 			BRA_workers_rights = {
 	
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = man_five_year_plan_industry
+# 				picture = man_five_year_plan_industry
 	
-				modifier = {
-					industrial_capacity_factory = -0.025
-					industrial_capacity_dockyard = -0.025
-					stability_weekly = 0.002
-				}
-			}
+# 				modifier = {
+# 					industrial_capacity_factory = -0.025
+# 					industrial_capacity_dockyard = -0.025
+# 					stability_weekly = 0.002
+# 				}
+# 			}
 			
 			
-			BRA_provisional = {
+# 			BRA_provisional = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_communism_drift_bonus
+# 				picture = generic_communism_drift_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-						stability_factor = -0.1
-						war_support_factor = -0.1
-						democratic_drift = 0.07
-						communism_drift = 0.075
-			}
-		}
+# 				modifier = {
+# 						stability_factor = -0.1
+# 						war_support_factor = -0.1
+# 						democratic_drift = 0.07
+# 						communism_drift = 0.075
+# 			}
+# 		}
 		
-		BRA_cangaco = {
+# 		BRA_cangaco = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = chi_army_corruption2
+# 				picture = chi_army_corruption2
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-						stability_factor = -0.1
-						war_support_factor = -0.1
-			}
-		}
+# 				modifier = {
+# 						stability_factor = -0.1
+# 						war_support_factor = -0.1
+# 			}
+# 		}
 		
-		BRA_polaca = {
+# 		BRA_polaca = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = HUN_treaty_of_triannon
+# 				picture = HUN_treaty_of_triannon
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-						stability_factor = 0.1
-						war_support_factor = 0.1
-						neutrality_drift = 0.2
-						generate_wargoal_tension = -1.0
-						conscription = 0.01
-			}
-		}
+# 				modifier = {
+# 						stability_factor = 0.1
+# 						war_support_factor = 0.1
+# 						neutrality_drift = 0.2
+# 						generate_wargoal_tension = -1.0
+# 						conscription = 0.01
+# 			}
+# 		}
 		
-		BRA_voz_do_brasil = {		
-				allowed = {
-					always = no
-				}
+# 		BRA_voz_do_brasil = {		
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = FRA_scw_intervention_republicans_focus
+# 				picture = FRA_scw_intervention_republicans_focus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-						stability_factor = 0.1
-						war_support_factor = 0.1
-						conscription = 0.01
-			}
-		}
+# 				modifier = {
+# 						stability_factor = 0.1
+# 						war_support_factor = 0.1
+# 						conscription = 0.01
+# 			}
+# 		}
 		
-		BRA_fascism_support = {
+# 		BRA_fascism_support = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_fascism_drift_bonus
+# 				picture = generic_fascism_drift_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				fascism_acceptance = 70	
-				fascism_drift = 0.01	
+# 				modifier = {
+# 				fascism_acceptance = 70	
+# 				fascism_drift = 0.01	
 							
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_fascism_support2 = {
+# 		BRA_fascism_support2 = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_fascism_drift_bonus
+# 				picture = generic_fascism_drift_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				fascism_acceptance = 70
-				neutrality_drift = 0.1
-				democratic_drift = -0.05
-				communism_drift = -0.05			
-				fascism_drift = 0.15	
+# 				modifier = {
+# 				fascism_acceptance = 70
+# 				neutrality_drift = 0.1
+# 				democratic_drift = -0.05
+# 				communism_drift = -0.05			
+# 				fascism_drift = 0.15	
 						
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_fascism_support3 = {
+# 		BRA_fascism_support3 = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_fascism_drift_bonus
+# 				picture = generic_fascism_drift_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				fascism_acceptance = 70	
-				democratic_drift = -0.1
-				communism_drift = -0.1
-				neutrality_drift = 0.1			
-				fascism_drift = 0.2
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				conscription = 0.0025
+# 				modifier = {
+# 				fascism_acceptance = 70	
+# 				democratic_drift = -0.1
+# 				communism_drift = -0.1
+# 				neutrality_drift = 0.1			
+# 				fascism_drift = 0.2
+# 				stability_factor = 0.1
+# 				war_support_factor = 0.1
+# 				conscription = 0.0025
 						
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_monarchist_revival = {
+# 		BRA_monarchist_revival = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = HUN_hungarian_monarchy
+# 				picture = HUN_hungarian_monarchy
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
+# 				modifier = {
 					
-				neutrality_drift = 0.20	
+# 				neutrality_drift = 0.20	
 						
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_rebuild_imperial_navy = {
+# 		BRA_rebuild_imperial_navy = {
 				
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 	
-				removal_cost = -1
+# 				removal_cost = -1
 	
-				picture = generic_navy_bonus
-				modifier = {
-						industrial_capacity_dockyard = 0.1
-					}
+# 				picture = generic_navy_bonus
+# 				modifier = {
+# 						industrial_capacity_dockyard = 0.1
+# 					}
 				
-			}
+# 			}
 		
-		BRA_indian = {
+# 		BRA_indian = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_agrarian_society
+# 				picture = generic_agrarian_society
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				conscription = 0.0025	 
-				stability_factor = 0.05
-				war_support_factor = 0.05				
-			}
-		}
+# 				modifier = {
+# 				conscription = 0.0025	 
+# 				stability_factor = 0.05
+# 				war_support_factor = 0.05				
+# 			}
+# 		}
 		
-		BRA_avante = {
+# 		BRA_avante = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = FRA_scw_intervention_republicans_focus
+# 				picture = FRA_scw_intervention_republicans_focus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				army_morale_factor = 0.04
-				stability_factor = 0.05
-				war_support_factor = 0.05			
-			}
-		}
+# 				modifier = {
+# 				army_morale_factor = 0.04
+# 				stability_factor = 0.05
+# 				war_support_factor = 0.05			
+# 			}
+# 		}
 		
-		BRA_militia = {
+# 		BRA_militia = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = chi_army_corruption3
+# 				picture = chi_army_corruption3
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				conscription = 0.01	 
-				stability_factor = 0.05
-				war_support_factor = 0.05		
-			}
-		}
+# 				modifier = {
+# 				conscription = 0.01	 
+# 				stability_factor = 0.05
+# 				war_support_factor = 0.05		
+# 			}
+# 		}
 		
-		BRA_democratic_constitution = {
+# 		BRA_democratic_constitution = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_pp_unity_bonus
+# 				picture = generic_pp_unity_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				democratic_drift = 0.3
-				conscription = 0.02	 
-				stability_factor = 0.1
-				war_support_factor = 0.1		
-			}
-		}
+# 				modifier = {
+# 				democratic_drift = 0.3
+# 				conscription = 0.02	 
+# 				stability_factor = 0.1
+# 				war_support_factor = 0.1		
+# 			}
+# 		}
 		
-		BRA_deal_with_paraguay = {
+# 		BRA_deal_with_paraguay = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = generic_pp_unity_bonus
+# 				picture = generic_pp_unity_bonus
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
+# 				modifier = {
 						
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_education_investment = {
+# 		BRA_education_investment = {
 				
-				picture = jap_duplicate_research
+# 				picture = jap_duplicate_research
 	
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
+# 				allowed_civil_war = {
 	
-				}
+# 				}
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-					research_speed_factor = 0.05
-				}
-			}
+# 				modifier = {
+# 					research_speed_factor = 0.05
+# 				}
+# 			}
 		
-		BRA_army = {
+# 		BRA_army = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = man_five_year_plan_industry
+# 				picture = man_five_year_plan_industry
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				production_speed_arms_factory_factor = 0.05
-				production_speed_fuel_silo_factor = 0.05
+# 				modifier = {
+# 				production_speed_arms_factory_factor = 0.05
+# 				production_speed_fuel_silo_factor = 0.05
 					
-			}
-		}
+# 			}
+# 		}
 		
-		BRA_antropofagism = {
+# 		BRA_antropofagism = {
 				
-				allowed = {
-					always = no
-				}
+# 				allowed = {
+# 					always = no
+# 				}
 	
-				allowed_civil_war = {
-					always = yes
-				}
+# 				allowed_civil_war = {
+# 					always = yes
+# 				}
 				
-				picture = HUN_treaty_of_triannon
+# 				picture = HUN_treaty_of_triannon
 	
-				removal_cost = -1
+# 				removal_cost = -1
 				
-				modifier = {
-				training_time_army_factor = -0.05
-				stability_factor = 0.1
-				war_support_factor = 0.1
-				non_core_manpower = 0.01
-				opinion_gain_monthly_same_ideology_factor = 0.05
-			}
-		}
+# 				modifier = {
+# 				training_time_army_factor = -0.05
+# 				stability_factor = 0.1
+# 				war_support_factor = 0.1
+# 				non_core_manpower = 0.01
+# 				opinion_gain_monthly_same_ideology_factor = 0.05
+# 			}
+# 		}
 		
-		BRA_war_prep = {
+# 		BRA_war_prep = {
 	
-				picture = generic_war_preparation
+# 				picture = generic_war_preparation
 	
-				modifier = {
-					training_time_army_factor = -0.05
-					industrial_capacity_factory = 0.05
-					conscription = 0.01
-				}
-			}
+# 				modifier = {
+# 					training_time_army_factor = -0.05
+# 					industrial_capacity_factory = 0.05
+# 					conscription = 0.01
+# 				}
+# 			}
 			
-			BRA_nationalize_subsoil = {
+# 			BRA_nationalize_subsoil = {
 	
-				picture = generic_exploit_mines
+# 				picture = generic_exploit_mines
 	
-				modifier = {
-					local_resources_factor = 0.05
-				}
-			}
+# 				modifier = {
+# 					local_resources_factor = 0.05
+# 				}
+# 			}
 	
-	}
+# 	}
 	
 	
-		political_advisor = {
-	
-			
+# 		political_advisor = {
 	
 			
+	
 			
-			BRA_artur_de_souza = {
-	
-				
-				allowed = {
-					original_tag = BRA
-				}
-	
-							available ={
-				}
-				
-				traits = { economist  }
-			}
 			
-			BRA_waldemar_cromwell = {
+# 			BRA_artur_de_souza = {
 	
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-							available ={
+# 							available ={
+# 				}
 				
-				has_completed_focus = BRA_polaca
+# 				traits = { economist  }
+# 			}
+			
+# 			BRA_waldemar_cromwell = {
+	
 				
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
+	
+# 							available ={
 				
-				traits = { captain_of_industry }
-			}
-			BRA_osvaldo_aranha = {
+# 				has_completed_focus = BRA_polaca
+				
+# 				}
+				
+# 				traits = { captain_of_industry }
+# 			}
+# 			BRA_osvaldo_aranha = {
 	
 					
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				available ={
-					has_completed_focus = BRA_osvaldo
-				}
+# 				available ={
+# 					has_completed_focus = BRA_osvaldo
+# 				}
 				
 				
-				traits = { popular_figurehead }
-			}
+# 				traits = { popular_figurehead }
+# 			}
 			
 			
-			BRA_washington_luis_pereira = {
+# 			BRA_washington_luis_pereira = {
 	
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-				available ={
-						has_government = democratic
-				}
+# 				available ={
+# 						has_government = democratic
+# 				}
 				
-				cost = 50
+# 				cost = 50
 				
-				traits = { backroom_backstabber }
-			}
+# 				traits = { backroom_backstabber }
+# 			}
 			
-			BRA_raimundo_padilha = {
+# 			BRA_raimundo_padilha = {
 	
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-					 available = {
-				has_completed_focus = BRA_alliance_with_the_integralists
-				}
+# 					 available = {
+# 				has_completed_focus = BRA_alliance_with_the_integralists
+# 				}
 				
-				cost = 50
+# 				cost = 50
 				
-				traits = { fascist_militia_leader war_industrialist }
-			}
+# 				traits = { fascist_militia_leader war_industrialist }
+# 			}
 			
-			BRA_raul_fernandes = {
+# 			BRA_raul_fernandes = {
 	
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 	
-					 available = {
-				has_government = democratic
-				}
+# 					 available = {
+# 				has_government = democratic
+# 				}
 				
-				cost = 50
+# 				cost = 50
 				
-				traits = { smooth_talking_charmer democratic_reformer }
-			}
-		}
-		industrial_concern = {
+# 				traits = { smooth_talking_charmer democratic_reformer }
+# 			}
+# 		}
+# 		industrial_concern = {
 			
 			
-			matarazzo = {
+# 			matarazzo = {
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				picture = generic_industrial_concern_2
+# 				picture = generic_industrial_concern_2
 				
-				research_bonus = {
-					industry = 0.15
-					synth_resources = 0.05
+# 				research_bonus = {
+# 					industry = 0.15
+# 					synth_resources = 0.05
 					
-				}
-				ai_will_do = {
-					factor = 2
-				}
+# 				}
+# 				ai_will_do = {
+# 					factor = 2
+# 				}
 				
-				traits = { industrial_concern }
-			}
-		}
+# 				traits = { industrial_concern }
+# 			}
+# 		}
 		
-		naval_manufacturer = { 
+# 		naval_manufacturer = { 
 			
-			arsenal_de_marinha_do_rio_de_janeiro = {
+# 			arsenal_de_marinha_do_rio_de_janeiro = {
 	
-				picture = generic_naval_manufacturer_2
+# 				picture = generic_naval_manufacturer_2
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				research_bonus = {
-					naval_equipment = 0.15
-				}
+# 				research_bonus = {
+# 					naval_equipment = 0.15
+# 				}
 				
-				equipment_bonus = {
+# 				equipment_bonus = {
 					
-				}
+# 				}
 				
-				traits = { atlantic_fleet_naval_manufacturer }
+# 				traits = { atlantic_fleet_naval_manufacturer }
 				
-			}
+# 			}
 			
-		}
+# 		}
 	
-		theorist = {
+# 		theorist = {
 	
-			BRA_newton_cavalcanti = {
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
-				available ={
-				}
+# 			BRA_newton_cavalcanti = {
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
+# 				available ={
+# 				}
 				
-				research_bonus = {
-					land_doctrine = 0.10
-				}
+# 				research_bonus = {
+# 					land_doctrine = 0.10
+# 				}
 				
-				traits = { military_theorist }
-			}
+# 				traits = { military_theorist }
+# 			}
 			
 	
-			BRA_eduardo_gomes = {
-				ledger = air
+# 			BRA_eduardo_gomes = {
+# 				ledger = air
 					
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				research_bonus = {
-					air_doctrine = 0.10
-				}
+# 				research_bonus = {
+# 					air_doctrine = 0.10
+# 				}
 				
-				traits = { air_warfare_theorist }
-			}
+# 				traits = { air_warfare_theorist }
+# 			}
 	
-					BRA_isaias_de_noronha = {
-				ledger = navy
+# 					BRA_isaias_de_noronha = {
+# 				ledger = navy
 					
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				research_bonus = {
-					naval_doctrine = 0.10
-				}
+# 				research_bonus = {
+# 					naval_doctrine = 0.10
+# 				}
 				
-				traits = { naval_theorist }
-			}
-		}
+# 				traits = { naval_theorist }
+# 			}
+# 		}
 	
-		high_command = {
+# 		high_command = {
 	
-			BRA_epaminondas_dos_santos = {
+# 			BRA_epaminondas_dos_santos = {
 	
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
+# 				available ={
 
-				}
+# 				}
 				
-				traits = { army_regrouping_2 }
+# 				traits = { army_regrouping_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 
-			BRA_henry_berger = {
+# 			BRA_henry_berger = {
 				
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={		
+# 				available ={		
 
-				}
+# 				}
 				
-				cost = 150
+# 				cost = 150
 				
-				traits = { army_logistics_3 }
+# 				traits = { army_logistics_3 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
 			
 	
-			BRA_artur_da_costa_e_silva = {
+# 			BRA_artur_da_costa_e_silva = {
 	
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { army_infantry_2 }
+# 				traits = { army_infantry_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-			BRA_moreira_lima = {
+# 			BRA_moreira_lima = {
 	
-				ledger = air
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = air
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				traits = { air_air_superiority_2 }
+# 				traits = { air_air_superiority_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 			
-			BRA_agliberto_vieira = {
+# 			BRA_agliberto_vieira = {
 	
-				picture = generic_navy_south_america_2
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				picture = generic_navy_south_america_2
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				cost = 150
+# 				cost = 150
 				
-				traits = { army_armored_2 }
+# 				traits = { army_armored_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 			
-			BRA_nelson_werneck = {
+# 			BRA_nelson_werneck = {
 	
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				cost = 150
+# 				cost = 150
 				
-				traits = { army_chief_offensive_2 }
+# 				traits = { army_chief_offensive_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-		}
-		# MILITARY
-		army_chief = {
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
+# 		}
+# 		# MILITARY
+# 		army_chief = {
 	
-			BRA_joao_neves_da_fontoura = {
+# 			BRA_joao_neves_da_fontoura = {
 				
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { army_chief_defensive_2 }
+# 				traits = { army_chief_defensive_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-			BRA_nero_fiuza_de_castro = {
+# 			BRA_nero_fiuza_de_castro = {
 				
-				ledger = army
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = army
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
 				
-				traits = { army_chief_drill_2 }
+# 				traits = { army_chief_drill_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-		}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
+# 		}
 	
-		air_chief = {
+# 		air_chief = {
 			
 			
-			BRA_salgado_filho = {
-				ledger = air	
+# 			BRA_salgado_filho = {
+# 				ledger = air	
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { air_chief_ground_support_2 }
+# 				traits = { air_chief_ground_support_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-			BRA_ismael_motta_paes = {
+# 			BRA_ismael_motta_paes = {
 				
 				
-				allowed = {
-					original_tag = BRA
-				}
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				traits = { air_chief_night_operations_2 }
+# 				traits = { air_chief_night_operations_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-		}
+# 		}
 	
-		navy_chief = {
+# 		navy_chief = {
 	
-			BRA_aristides_guilhem = {
+# 			BRA_aristides_guilhem = {
 				
-				ledger = navy
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = navy
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { navy_chief_naval_aviation_2 }
+# 				traits = { navy_chief_naval_aviation_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-			BRA_jorge_martins = {
+# 			BRA_jorge_martins = {
 				
-				ledger = navy
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = navy
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { navy_chief_decisive_battle_2 }
+# 				traits = { navy_chief_decisive_battle_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 	
-			BRA_floriano_peixoto = {
+# 			BRA_floriano_peixoto = {
 				
-				ledger = navy
-				allowed = {
-					original_tag = BRA
-				}
+# 				ledger = navy
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				}
+# 				available ={
+# 				}
 				
-				traits = { navy_chief_commerce_raiding_2 }
+# 				traits = { navy_chief_commerce_raiding_2 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
 			
-			BRA_hercolino_cascardo = {
+# 			BRA_hercolino_cascardo = {
 			
-			picture = generic_navy_south_america_1
-				ledger = navy
-				allowed = {
-					original_tag = BRA
-				}
+# 			picture = generic_navy_south_america_1
+# 				ledger = navy
+# 				allowed = {
+# 					original_tag = BRA
+# 				}
 				
-				available ={
-				has_government = democratic
-				}
+# 				available ={
+# 				has_government = democratic
+# 				}
 				
-				cost = 50
+# 				cost = 50
 				
-				traits = { navy_chief_maneuver_3 }
+# 				traits = { navy_chief_maneuver_3 }
 				
-				ai_will_do = {
-					factor = 1
-				}
-			}
-		}
-	}
+# 				ai_will_do = {
+# 					factor = 1
+# 				}
+# 			}
+# 		}
+# 	}

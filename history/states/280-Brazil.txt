@@ -7,7 +7,7 @@ state={
 	
 	impassable = yes
 
-	history={
+	history={ owner=SWE
 		# owner = BRA
 		# buildings = {
 		# 	infrastructure = 1

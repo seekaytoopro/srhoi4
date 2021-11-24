@@ -2,7 +2,7 @@ state={
 	id=616
 	name="STATE_616"
 
-	history={
+	history={ owner = SWE
 	}
 
 	provinces={ 2098

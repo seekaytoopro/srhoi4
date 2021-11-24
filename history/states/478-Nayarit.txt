@@ -10,7 +10,7 @@ state={
 	# 	tungsten=50 # was: 10
 	# }
 
-	history={
+	history={ owner = SWE
 		# owner = MEX
 		# buildings = {
 		# 	infrastructure = 3

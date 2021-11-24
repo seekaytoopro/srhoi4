@@ -20,6 +20,7 @@ state={
 		# victory_points = {
 		# 	8038 1
 		# }
+		owner = SWE
 	}
 	
 	provinces={

@@ -13,6 +13,7 @@ state={
 	#}
 
 	history={
+		owner = SWE
 		# owner = BRA
 		# buildings = {
 		# 	infrastructure = 0

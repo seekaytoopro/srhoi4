@@ -5,10 +5,10 @@ state={
 
 	history={
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 
 		}
-
+		owner = SWE
 	}
 
 	provinces={
