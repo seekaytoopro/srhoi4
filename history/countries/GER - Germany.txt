@@ -225,10 +225,10 @@ create_country_leader = {
 	}
 }
 
-add_namespace = {
-	name = "ger_unit_leader"
-	type = unit_leader
-}
+# add_namespace = {
+# 	name = "ger_unit_leader"
+# 	type = unit_leader
+# }
 
 # create_field_marshal = {
 # 	name = "Gerd von Rundstedt"
@@ -638,29 +638,29 @@ recruit_character = GER_joachim_von_ribbentrop
 recruit_character = GER_konstantin_von_neurath
 recruit_character = GER_wilhelm_canaris
 
-create_navy_leader = {
-	name = "Karl Dönitz"
-	picture = "Portrait_Germany_Karl_Donitz.dds"
-	traits = { seawolf spotter concealment_expert }
-	skill = 6
-	id = 26
-	attack_skill = 7
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 10
-}
+# create_navy_leader = {
+# 	name = "Karl Dönitz"
+# 	picture = "Portrait_Germany_Karl_Donitz.dds"
+# 	traits = { seawolf spotter concealment_expert }
+# 	skill = 6
+# 	id = 26
+# 	attack_skill = 7
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 10
+# }
 
-create_navy_leader = {
-	name = "Erich Raeder"
-		picture = "Portrait_Germany_Erich_Raeder.dds"
-	traits = { naval_lineage battleship_adherent blockade_runner ironside air_controller fly_swatter fleet_protector }
-	skill = 6
-	id = 27
-	attack_skill = 5
-	defense_skill = 4
-	maneuvering_skill = 8
-	coordination_skill = 4
-}
+# create_navy_leader = {
+# 	name = "Erich Raeder"
+# 		picture = "Portrait_Germany_Erich_Raeder.dds"
+# 	traits = { naval_lineage battleship_adherent blockade_runner ironside air_controller fly_swatter fleet_protector }
+# 	skill = 6
+# 	id = 27
+# 	attack_skill = 5
+# 	defense_skill = 4
+# 	maneuvering_skill = 8
+# 	coordination_skill = 4
+# }
 
 if = {
 	limit = {

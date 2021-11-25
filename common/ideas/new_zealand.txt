@@ -293,343 +293,343 @@ ideas = {
 
 	}
 
-	political_advisor = {
+	# political_advisor = {
 
-		NZL_robert_manion = {
+	# 	NZL_robert_manion = {
 
-			allowed = {
-				original_tag = NZL
+	# 		allowed = {
+	# 			original_tag = NZL
 				
-			}
+	# 		}
 
-			available = {
+	# 		available = {
 				
 
-			}
+	# 		}
 			
-			picture = generic_democratic_reformer_commonwealth_2d
+	# 		picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { ideological_crusader }
+	# 		traits = { ideological_crusader }
 			
 
 			
 		
-		}
+	# 	}
 
-		NZL_w_a_veitch_milne = {
+	# 	NZL_w_a_veitch_milne = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			traits = { prince_of_terror }
-		}
+	# 		traits = { prince_of_terror }
+	# 	}
 
-		NZL_walter_nash = {
+	# 	NZL_walter_nash = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			traits = { armaments_organizer }
-		}
-	}
+	# 		traits = { armaments_organizer }
+	# 	}
+	# }
 
-	theorist = {
+	# theorist = {
 
-		NZL_keith_j_holyoake = {
-			ledger = army
+	# 	NZL_keith_j_holyoake = {
+	# 		ledger = army
 					
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 
-		NZL_r_a_cochrane = {
-			ledger = air
+	# 	NZL_r_a_cochrane = {
+	# 		ledger = air
 					
-			picture = generic_air_europe_1
+	# 		picture = generic_air_europe_1
 				
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			air_doctrine = 0.10
+	# 		}
 			
-			traits = { air_warfare_theorist }
-		}
+	# 		traits = { air_warfare_theorist }
+	# 	}
 
-		NZL_arthur_dawes = {
-			ledger = navy
+	# 	NZL_arthur_dawes = {
+	# 		ledger = navy
 					
 					
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			naval_doctrine = 0.10
+	# 		}
 			
-			traits = { naval_theorist }
-		}
-	}
+	# 		traits = { naval_theorist }
+	# 	}
+	# }
 
-	high_command = {
+	# high_command = {
 
-		NZL_norris_stephen_falla = {
-			ledger = army
+	# 	NZL_norris_stephen_falla = {
+	# 		ledger = army
 
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 			
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		NZL_j_c_nichols = {
-			ledger = army
+	# 	NZL_j_c_nichols = {
+	# 		ledger = army
 
-			picture = generic_army_europe_4
+	# 		picture = generic_army_europe_4
 			
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
-			traits = { army_cavalry_2 }
+	# 		traits = { army_cavalry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		NZL_h_d_mcgregor = {
-			ledger = air
-			picture = generic_army_europe_2
+	# 	NZL_h_d_mcgregor = {
+	# 		ledger = air
+	# 		picture = generic_army_europe_2
 
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		NZL_trevor_handley = {
-			ledger = navy
-			picture = generic_army_europe_1
+	# 	NZL_trevor_handley = {
+	# 		ledger = navy
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		NZL_dropbear = {
-			ledger = army
-			allowed = {
-				original_tag = NZL
-			}
+	# 	NZL_dropbear = {
+	# 		ledger = army
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 
-			traits = { army_armored_2 }
+	# 		traits = { army_armored_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	# MILITARY
-	army_chief = {
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+	# # MILITARY
+	# army_chief = {
 
-		# NZL_william_sinclair_burgess = {
+	# 	# NZL_william_sinclair_burgess = {
 			
-		# 	picture = generic_army_europe_2
+	# 	# 	picture = generic_army_europe_2
 			
-		# 	allowed = {
-		# 		original_tag = NZL
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = NZL
+	# 	# 	}
 			
 
 			
-		# 	traits = { army_chief_defensive_2 }
+	# 	# 	traits = { army_chief_defensive_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		NZL_edward_puttick = {
+	# 	NZL_edward_puttick = {
 			
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 			
-			allowed = {
-				original_tag = NZL
-			}
-			
-
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		# NZL_j_e_duigan = {
-			
-		# 	picture = generic_army_europe_2
-			
-		# 	allowed = {
-		# 		original_tag = NZL
-		# 	}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
 
 			
-		# 	traits = { army_chief_maneuver_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		# NZL_n_weir = {
+	# 	# NZL_j_e_duigan = {
 			
-		# 	picture = generic_army_europe_3
+	# 	# 	picture = generic_army_europe_2
 			
-		# 	allowed = {
-		# 		original_tag = NZL
-		# 	}
-			
-
-			
-		# 	traits = { army_chief_morale_2 }
-			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
-
-	air_chief = {
-
-		NZL_a_j_stallworthy = {
-			
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = NZL
-			}
+	# 	# 	allowed = {
+	# 	# 		original_tag = NZL
+	# 	# 	}
 			
 
 			
-			traits = { navy_chief_naval_aviation_2 }
+	# 	# 	traits = { army_chief_maneuver_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-		NZL_l_p_peterson = {
+	# 	# NZL_n_weir = {
 			
-			picture = generic_air_europe_3
+	# 	# 	picture = generic_army_europe_3
 			
-			allowed = {
-				original_tag = NZL
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	navy_chief = {
-
-		NZL_h_e_horan = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = NZL
-			}
+	# 	# 	allowed = {
+	# 	# 		original_tag = NZL
+	# 	# 	}
 			
 
 			
-			traits = { navy_chief_maneuver_2 }
+	# 	# 	traits = { army_chief_morale_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 
-		NZL_w_h_stratton = {
-			
-			picture = generic_navy_europe_1
-			
-			allowed = {
-				original_tag = NZL
-			}
-			
+	# air_chief = {
 
+	# 	NZL_a_j_stallworthy = {
 			
-			traits = { navy_chief_naval_aviation_2 }
+	# 		picture = generic_air_europe_1
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		NZL_eric_prendergast = {
-			
-			picture = generic_navy_europe_3
-			
-			allowed = {
-				original_tag = NZL
-			}
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
 			
 
 			
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_naval_aviation_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	NZL_l_p_peterson = {
+			
+	# 		picture = generic_air_europe_3
+			
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
+			
+
+			
+	# 		traits = { air_chief_ground_support_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# navy_chief = {
+
+	# 	NZL_h_e_horan = {
+			
+	# 		picture = generic_navy_europe_2
+			
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
+			
+
+			
+	# 		traits = { navy_chief_maneuver_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	NZL_w_h_stratton = {
+			
+	# 		picture = generic_navy_europe_1
+			
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
+			
+
+			
+	# 		traits = { navy_chief_naval_aviation_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	NZL_eric_prendergast = {
+			
+	# 		picture = generic_navy_europe_3
+			
+	# 		allowed = {
+	# 			original_tag = NZL
+	# 		}
+			
+
+			
+	# 		traits = { navy_chief_decisive_battle_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
 	naval_manufacturer = {
 		

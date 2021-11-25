@@ -1,217 +1,217 @@
 ideas = {
 	
-	political_advisor = {
+	# political_advisor = {
 
 
-		BUL_konstantin_muraviev = {
+	# 	BUL_konstantin_muraviev = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 
-			traits = { compassionate_gentleman }
-		}
-		BUL_dobri_bozhilov = {
+	# 		traits = { compassionate_gentleman }
+	# 	}
+	# 	BUL_dobri_bozhilov = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
+	# 		traits = { captain_of_industry }
+	# 	}
 
-			BUL_mahmud_bughra_khan = {
+	# 		BUL_mahmud_bughra_khan = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 			
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
-			traits = { fascist_demagogue }
-		}
+	# 		traits = { fascist_demagogue }
+	# 	}
 
-		BUL_georgi_ivanov_kyoseivanov = {
+	# 	BUL_georgi_ivanov_kyoseivanov = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 
-			traits = { backroom_backstabber }
-		}
+	# 		traits = { backroom_backstabber }
+	# 	}
 		
-	}
+	# }
 
 
-	army_chief = {
+	# army_chief = {
 
-		BUL_nikola_hadzipetkov = {
-			picture = generic_army_europe_3
+	# 	BUL_nikola_hadzipetkov = {
+	# 		picture = generic_army_europe_3
 			
-			allowed = {
-				original_tag = BUL
-			}
-			
-
-			
-			traits = { army_chief_offensive_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		# BUL_hristo_lukov = {
-		# 	picture = generic_army_europe_2
-			
-		# 	allowed = {
-		# 		original_tag = BUL
-		# 	}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
 
 			
-		# 	traits = { army_chief_defensive_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-	air_chief = {
+	# 	# BUL_hristo_lukov = {
+	# 	# 	picture = generic_army_europe_2
+			
+	# 	# 	allowed = {
+	# 	# 		original_tag = BUL
+	# 	# 	}
+			
 
-		BUL_vasil_boydev = {
-			picture = generic_air_europe_3
+			
+	# 	# 	traits = { army_chief_defensive_2 }
+			
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 
-			allowed = {
-				original_tag = BUL
-			}
+	# air_chief = {
+
+	# 	BUL_vasil_boydev = {
+	# 		picture = generic_air_europe_3
+
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 						
-			traits = { air_chief_ground_support_2 }
+	# 		traits = { air_chief_ground_support_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-	navy_chief = {
+	# navy_chief = {
 
-		BUL_nikola_totev_markov = {
-			picture = generic_navy_europe_1
+	# 	BUL_nikola_totev_markov = {
+	# 		picture = generic_navy_europe_1
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 						
-			traits = { navy_chief_decisive_battle_1 }
+	# 		traits = { navy_chief_decisive_battle_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		BUL_bonyu_stoev_pironkov = {
-			picture = generic_navy_europe_2
+	# 	BUL_bonyu_stoev_pironkov = {
+	# 		picture = generic_navy_europe_2
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 						
-			traits = { navy_naval_air_defense_2 }
+	# 		traits = { navy_naval_air_defense_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-	}
-	high_command = {
+	# }
+	# high_command = {
 
-		BUL_stoyan_stoyanov = {
-			ledger = army
+	# 	BUL_stoyan_stoyanov = {
+	# 		ledger = army
 			
-			picture = generic_air_europe_2
+	# 		picture = generic_air_europe_2
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		BUL_blagoi_ivanov = {
-			ledger = army
+	# 	BUL_blagoi_ivanov = {
+	# 		ledger = army
 
-			picture = generic_army_europe_4
+	# 		picture = generic_army_europe_4
 			
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 					
-			traits = { army_regrouping_3 }
+	# 		traits = { army_regrouping_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		BUL_kiril_dimitrov_yanchule = {
-			ledger = army
+	# 	BUL_kiril_dimitrov_yanchule = {
+	# 		ledger = army
 
-			picture = generic_army_europe_2
+	# 		picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 					
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		BUL_atanas_pavlov_zhilkov = {
-			ledger = army
+	# 	BUL_atanas_pavlov_zhilkov = {
+	# 		ledger = army
 
-			picture = generic_army_europe_5
+	# 		picture = generic_army_europe_5
 			
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 					
-			traits = { army_armored_3 }
+	# 		traits = { army_armored_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		BUL_asen_dobrev_nikolov = {
-			picture = generic_air_europe_2
-			ledger = army
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# 	BUL_asen_dobrev_nikolov = {
+	# 		picture = generic_air_europe_2
+	# 		ledger = army
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }	
 	aircraft_manufacturer = { 
 		
 		designer = yes
@@ -241,22 +241,22 @@ ideas = {
 	}
 
 
-	theorist = {
-		BUL_kiril_stanchev = {
-			ledger = army
+	# theorist = {
+	# 	BUL_kiril_stanchev = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = BUL
-			}
+	# 		allowed = {
+	# 			original_tag = BUL
+	# 		}
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 		
 		# BUL_ivan_gaidimitriv = {
 		# 	ledger = air
@@ -290,5 +290,5 @@ ideas = {
 		# 	traits = { naval_theorist }
 		# }
 
-	}
+	# }
 }

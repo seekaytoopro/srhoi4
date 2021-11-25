@@ -25,304 +25,304 @@ ideas = {
 	}
 
 
-	political_advisor = {
+	# political_advisor = {
 
-		CRO_fascist_guy = {
+	# 	CRO_fascist_guy = {
 			
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { fascist_demagogue popular_figurehead }
+	# 		traits = { fascist_demagogue popular_figurehead }
 
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
+	# 		do_effect = {
+	# 			NOT = {
+	# 				has_government = fascism
+	# 			}
+	# 		}
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0
+	# 		}
+	# 	}
 
-		CRO_ivan_subasic = {
+	# 	CRO_ivan_subasic = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { backroom_backstabber }
+	# 		traits = { backroom_backstabber }
 
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0
+	# 		}
+	# 	}
 
-		CRO_alojzije_stepinac = {
+	# 	CRO_alojzije_stepinac = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { ideological_crusader }
-		}
+	# 		traits = { ideological_crusader }
+	# 	}
 
-		CRO_gaspar_njegovan = {
+	# 	CRO_gaspar_njegovan = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
-	}
+	# 		traits = { captain_of_industry }
+	# 	}
+	# }
 
 
-	# MILITARY
-	army_chief = {
+	# # MILITARY
+	# army_chief = {
 
-		CRO_vladimir_laxa = {
+	# 	CRO_vladimir_laxa = {
 			
-			picture = generic_army_europe_4
+	# 		picture = generic_army_europe_4
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 						
-			traits = { army_chief_defensive_2 }
+	# 		traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_fedor_dragojlov = {
+	# 	CRO_fedor_dragojlov = {
 			
-			picture = generic_army_europe_2
+	# 		picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
 
 			
-			traits = { army_chief_offensive_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-	air_chief = {
+	# air_chief = {
 		
 
-		CRO_friedrich_navratil = {
+	# 	CRO_friedrich_navratil = {
 			
-			picture = generic_air_europe_2
+	# 		picture = generic_air_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { air_chief_reform_2 }
+	# 		traits = { air_chief_reform_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_adalbert_rogulja = {
+	# 	CRO_adalbert_rogulja = {
 			
-			picture = generic_air_europe_3
+	# 		picture = generic_air_europe_3
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 						
-			traits = { air_chief_ground_support_2 }
+	# 		traits = { air_chief_ground_support_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-	navy_chief = {
+	# navy_chief = {
 
-		CRO_edgar_angeli = {
+	# 	CRO_edgar_angeli = {
 			
-			picture = generic_navy_europe_2
+	# 		picture = generic_navy_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 						
-			traits = { navy_chief_maneuver_2 }
+	# 		traits = { navy_chief_maneuver_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_nikola_steinfl = {
+	# 	CRO_nikola_steinfl = {
 			
-			picture = generic_navy_europe_3
+	# 		picture = generic_navy_europe_3
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 						
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_decisive_battle_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
 
-	high_command = {
+	# high_command = {
 
-		CRO_slavko_stancer = {
-			ledger = army
+	# 	CRO_slavko_stancer = {
+	# 		ledger = army
 
-			picture = generic_army_europe_2
+	# 		picture = generic_army_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		CRO_vilko_begic = {
-			ledger = army
+	# 	CRO_vilko_begic = {
+	# 		ledger = army
 
-			picture = generic_army_europe_5
+	# 		picture = generic_army_europe_5
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { army_armored_3 }
+	# 		traits = { army_armored_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_slavko_kvaternik = {
-			ledger = army
+	# 	CRO_slavko_kvaternik = {
+	# 		ledger = army
 
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_vladimir_kren = {
-			ledger = army
+	# 	CRO_vladimir_kren = {
+	# 		ledger = army
 
-			picture = generic_air_europe_1
+	# 		picture = generic_air_europe_1
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CRO_djuro_jakcin = {
-			ledger = army
+	# 	CRO_djuro_jakcin = {
+	# 		ledger = army
 
-			picture = generic_navy_europe_3
+	# 		picture = generic_navy_europe_3
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
 
-	theorist = {
-		CRO_sismundo_pejacevic = {
-			ledger = army
+	# theorist = {
+	# 	CRO_sismundo_pejacevic = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_3
+	# 		picture = generic_army_europe_3
 
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 
-		CRO_ivan_crnkovic = {
-			ledger = navy
+	# 	CRO_ivan_crnkovic = {
+	# 		ledger = navy
 
-			picture = generic_navy_europe_2
+	# 		picture = generic_navy_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			naval_doctrine = 0.10
+	# 		}
 			
-			traits = { naval_theorist }
-		}
+	# 		traits = { naval_theorist }
+	# 	}
 
-		CRO_mihajlo_tomasic = {
-			ledger = air
+	# 	CRO_mihajlo_tomasic = {
+	# 		ledger = air
 
-			picture = generic_air_europe_2
+	# 		picture = generic_air_europe_2
 			
-			allowed = {
-				original_tag = CRO
-			}
+	# 		allowed = {
+	# 			original_tag = CRO
+	# 		}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			air_doctrine = 0.10
+	# 		}
 			
-			traits = { air_warfare_theorist }
-		}
+	# 		traits = { air_warfare_theorist }
+	# 	}
 
-	}		
+	# }		
 }

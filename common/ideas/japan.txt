@@ -1384,178 +1384,178 @@ ideas = {
 	}	
 	
 	
-	high_command = {
+	# high_command = {
 		
-		hitoshi_imamura = {
-			ledger = army
+	# 	hitoshi_imamura = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 3
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 3
+	# 		}
+	# 	}
 		
-		yasuji_okamura = {
-			ledger = army
+	# 	yasuji_okamura = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 3
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 3
+	# 		}
+	# 	}
 		
-		shunroku_hata = {
-			ledger = army
+	# 	shunroku_hata = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { army_concealment_2 }
+	# 		traits = { army_concealment_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		takeichi_nichi = { 
-			ledger = army
-			picture = generic_army_asia_2 
+	# 	takeichi_nichi = { 
+	# 		ledger = army
+	# 		picture = generic_army_asia_2 
 			
-			allowed = { 
-				OR = { 
-				original_tag = JAP
-				}
-			}
+	# 		allowed = { 
+	# 			OR = { 
+	# 			original_tag = JAP
+	# 			}
+	# 		}
 			
-			traits = { army_armored_1 } 
+	# 		traits = { army_armored_1 } 
 			
-			ai_will_do = { 
-				factor = 1 
-			}
-		}
+	# 		ai_will_do = { 
+	# 			factor = 1 
+	# 		}
+	# 	}
 		
-		mitsuo_fuchida = {
-			ledger = air
+	# 	mitsuo_fuchida = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { air_tactical_bombing_2 }
+	# 		traits = { air_tactical_bombing_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		nishizo_tsukahara = {
-			ledger = army
+	# 	nishizo_tsukahara = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { army_commando_1 }
+	# 		traits = { army_commando_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		# tateo_kato = {
-		# 	ledger = air
+	# 	# tateo_kato = {
+	# 	# 	ledger = air
 			
 			
-		# 	allowed = {
-		# 		original_tag = JAP
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = JAP
+	# 	# 	}
 			
 
 			
-		# 	traits = { air_air_combat_training_3 }
+	# 	# 	traits = { air_air_combat_training_3 }
 			
-		# 	ai_will_do = {
-		# 		factor = 0.8
-		# 	}
-		# }	
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 0.8
+	# 	# 	}
+	# 	# }	
 		
-		# soemu_toyoda = {
-		# 	ledger = navy
+	# 	# soemu_toyoda = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		original_tag = JAP
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = JAP
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_capital_ship_2 }
+	# 	# 	traits = { navy_capital_ship_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		# matome_ugaki = {
-		# 	ledger = navy
+	# 	# matome_ugaki = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		original_tag = JAP
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = JAP
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_naval_air_defense_2 }
+	# 	# 	traits = { navy_naval_air_defense_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		chuichi_nagumo = {
-			ledger = air
+	# 	chuichi_nagumo = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = JAP
-			}
+	# 		allowed = {
+	# 			original_tag = JAP
+	# 		}
 			
 
 			
-			traits = { navy_carrier_2 }
+	# 		traits = { navy_carrier_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 		
 	# TECHNOLOGY
 	naval_manufacturer = {

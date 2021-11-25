@@ -1540,632 +1540,632 @@ ideas = {
 		
 	}
 
-	# POLITICAL
-	political_advisor = {
+	# # POLITICAL
+	# political_advisor = {
 			
-		leon_blum = {
+	# 	leon_blum = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			available = {
+	# 		available = {
 		
-			}
+	# 		}
 			
-			traits = { democratic_reformer }
+	# 		traits = { democratic_reformer }
 
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
+	# 		do_effect = {
+	# 			NOT = {
+	# 				has_government = democratic
+	# 			}
+	# 		}
 
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0
+	# 		}
+	# 	}
 
-		georges_bonnet = {
+	# 	georges_bonnet = {
 			
 			
-			allowed = {
-				original_tag = "FRA"
-			}
+	# 		allowed = {
+	# 			original_tag = "FRA"
+	# 		}
 			
-			available = {
-				has_completed_focus = FRA_form_the_popular_front
-			}
-			cost = 75 
-			traits = { appeaser }
+	# 		available = {
+	# 			has_completed_focus = FRA_form_the_popular_front
+	# 		}
+	# 		cost = 75 
+	# 		traits = { appeaser }
 
-			do_effect = {
+	# 		do_effect = {
 				
-			}
+	# 		}
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FRA_pierre_pucheu = {
+	# 	FRA_pierre_pucheu = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			available = {
-			}
-			cost = 150 
-			traits = { technocrat }
+	# 		available = {
+	# 		}
+	# 		cost = 150 
+	# 		traits = { technocrat }
 
-			do_effect = {
+	# 		do_effect = {
 				
-			}
+	# 		}
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FRA_gaston_henry_haye = {
+	# 	FRA_gaston_henry_haye = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			picture = generic_political_advisor_europe_5
+	# 		picture = generic_political_advisor_europe_5
 			
-			traits = { silent_workhorse }
+	# 		traits = { silent_workhorse }
 	
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 	
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		FRA_paul_baudouin = {
+	# 	FRA_paul_baudouin = {
 
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 
-			traits = { smooth_talking_charmer }
+	# 		traits = { smooth_talking_charmer }
 
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FRA_zivony_peshkov = {
+	# 	FRA_zivony_peshkov = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			picture = generic_army_europe_5
+	# 		picture = generic_army_europe_5
 			
-			traits = { war_industrialist }
+	# 		traits = { war_industrialist }
 	
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 	
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
 
-		FRA_felix_gouin = {
+	# 	FRA_felix_gouin = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			traits = { captain_of_industry }
+	# 		traits = { captain_of_industry }
 	
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 	
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
 		
 		
-		FRA_vincent_auriol = {
+	# 	FRA_vincent_auriol = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
-			available = {
-				OR = {
-					original_tag = FRF
-					has_completed_focus = FRA_form_the_popular_front
-				}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				original_tag = FRF
+	# 				has_completed_focus = FRA_form_the_popular_front
+	# 			}
 				
-			}
+	# 		}
 
 			
-			traits = { financial_expert }
+	# 		traits = { financial_expert }
 	
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 	
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FRA_charles_tillon = {
+	# 	FRA_charles_tillon = {
 			
-			allowed = {
-				OR = {
-					original_tag = "FRA"
-					original_tag = "FRF"
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = "FRA"
+	# 				original_tag = "FRF"
+	# 			}
+	# 		}
 			
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			traits = { armaments_organizer }
+	# 		traits = { armaments_organizer }
 	
-			on_add = {
-			}
+	# 		on_add = {
+	# 		}
 	
-			do_effect = {
-			}
+	# 		do_effect = {
+	# 		}
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
 
-		# FRA_paul_reynaud = {
+	# 	# FRA_paul_reynaud = {
 			
-		# 	allowed = {
-		# 		OR = {
-		# 			original_tag = "FRA"
-		# 			original_tag = "FRF"
-		# 		}
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		OR = {
+	# 	# 			original_tag = "FRA"
+	# 	# 			original_tag = "FRF"
+	# 	# 		}
+	# 	# 	}
 
-		# 	picture = generic_political_advisor_europe_3
+	# 	# 	picture = generic_political_advisor_europe_3
 			
-		# 	traits = { quartermaster_general }
+	# 	# 	traits = { quartermaster_general }
 	
-		# 	on_add = {
-		# 	}
+	# 	# 	on_add = {
+	# 	# 	}
 	
-		# 	do_effect = {
-		# 	}
+	# 	# 	do_effect = {
+	# 	# 	}
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 		
-	# MILITARY
-	army_chief = {
+	# # MILITARY
+	# army_chief = {
 		
 		
-		maurice_gamelin = {
+	# 	maurice_gamelin = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			available = {
-				OR = {
-					has_completed_focus = FRA_aggressive_focus
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				has_completed_focus = FRA_aggressive_focus
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 
-			cost = 50
+	# 		cost = 50
 			
-			traits = { army_chief_offensive_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		maxime_weygand = {
+	# 	maxime_weygand = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			available = {
-				OR = {
-					has_completed_focus = FRA_defensive_focus
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+	# 		available = {
+	# 			OR = {
+	# 				has_completed_focus = FRA_defensive_focus
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 
-			cost = 50
+	# 		cost = 50
 			
-			traits = { army_chief_defensive_2 }
+	# 		traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		FRA_henri_marie_auguste_bineau = {
+	# 	FRA_henri_marie_auguste_bineau = {
 			
-			picture = generic_army_europe_3
+	# 		picture = generic_army_europe_3
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			
-
-			
-			traits = { army_chief_offensive_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_pierre_alombert_goget = {
-			
-			picture = generic_army_europe_1
-
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { army_chief_defensive_1 }
+	# 		traits = { army_chief_offensive_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}		
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	FRA_pierre_alombert_goget = {
+			
+	# 		picture = generic_army_europe_1
+
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+			
+
+			
+	# 		traits = { army_chief_defensive_1 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}		
 		
-		# alphonse_georges = {
+	# 	# alphonse_georges = {
 			
 			
-		# 	allowed = {
-		# 		OR = {
-		# 			original_tag = FRA
-		# 			original_tag = FRF
-		# 		}
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		OR = {
+	# 	# 			original_tag = FRA
+	# 	# 			original_tag = FRF
+	# 	# 		}
+	# 	# 	}
 			
 
 			
-		# 	traits = { army_chief_maneuver_1 }
+	# 	# 	traits = { army_chief_maneuver_1 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }	
-	}
-	navy_chief = {
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }	
+	# }
+	# navy_chief = {
 		
-		francois_darlan = {
+	# 	francois_darlan = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_decisive_battle_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		marcel_gensoul = {
+	# 	marcel_gensoul = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { navy_chief_naval_aviation_1 }
+	# 		traits = { navy_chief_naval_aviation_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		jean_marie_abrial = {
+	# 	jean_marie_abrial = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			
-
-			
-			traits = { navy_chief_commerce_raiding_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-	}
-	air_chief = {
-			
-		joseph_vuillemin = {
-			
-			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { air_chief_ground_support_1 }
+	# 		traits = { navy_chief_commerce_raiding_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
+	# }
+	# air_chief = {
+			
+	# 	joseph_vuillemin = {
+			
+			
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+			
+
+			
+	# 		traits = { air_chief_ground_support_1 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		robert_odic = {
+	# 	robert_odic = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { air_chief_all_weather_1 }
+	# 		traits = { air_chief_all_weather_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		philippe_fequant = {
+	# 	philippe_fequant = {
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { air_chief_reform_2 }
+	# 		traits = { air_chief_reform_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 	
-	high_command = {
+	# high_command = {
 		
-		rene_prioux = {
-			ledger = army
+	# 	rene_prioux = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { army_armored_2 }
+	# 		traits = { army_armored_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		charles_huntziger = {
-			ledger = army
+	# 	charles_huntziger = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		philippe_leclerc = {
-			ledger = army
+	# 	philippe_leclerc = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
-			
-
-			
-			traits = { army_commando_1 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
-
-		jean_francois_jannekeyn = {
-			ledger = air
-			
-			
-			allowed = {
-				OR = {
-					original_tag = FRA
-					original_tag = FRF
-				}
-			}
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
 			
 
 			
-			traits = { air_tactical_bombing_2 }
+	# 		traits = { army_commando_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
+
+	# 	jean_francois_jannekeyn = {
+	# 		ledger = air
+			
+			
+	# 		allowed = {
+	# 			OR = {
+	# 				original_tag = FRA
+	# 				original_tag = FRF
+	# 			}
+	# 		}
+			
+
+			
+	# 		traits = { air_tactical_bombing_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
 		
-		# jean_de_laborde = {
-		# 	ledger = navy
+	# 	# jean_de_laborde = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		OR = {
-		# 			original_tag = FRA
-		# 			original_tag = FRF
-		# 		}
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		OR = {
+	# 	# 			original_tag = FRA
+	# 	# 			original_tag = FRF
+	# 	# 		}
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_capital_ship_1 }
+	# 	# 	traits = { navy_capital_ship_1 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		# emile_muselier = {
-		# 	ledger = navy
+	# 	# emile_muselier = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		OR = {
-		# 			original_tag = FRA
-		# 			original_tag = FRF
-		# 		}
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		OR = {
+	# 	# 			original_tag = FRA
+	# 	# 			original_tag = FRF
+	# 	# 		}
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_fleet_logistics_2 }
+	# 	# 	traits = { navy_fleet_logistics_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		# rene_emile_godfroy = {
-		# 	ledger = navy
+	# 	# rene_emile_godfroy = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		OR = {
-		# 			original_tag = FRA
-		# 			original_tag = FRF
-		# 		}
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		OR = {
+	# 	# 			original_tag = FRA
+	# 	# 			original_tag = FRF
+	# 	# 		}
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_screen_2 }
+	# 	# 	traits = { navy_screen_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 	
 	tank_manufacturer = {
 

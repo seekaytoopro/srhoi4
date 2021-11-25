@@ -355,409 +355,409 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	# political_advisor = {
 
 		
 
-		CAN_robert_manion = {
+	# 	CAN_robert_manion = {
 
-			allowed = {
-				original_tag = CAN
+	# 		allowed = {
+	# 			original_tag = CAN
 				
-			}
+	# 		}
 
-			available = {
-				if = {
-					has_completed_focus = CAN_strengthen_the_commonwealth_ties
-					}
-			}
+	# 		available = {
+	# 			if = {
+	# 				has_completed_focus = CAN_strengthen_the_commonwealth_ties
+	# 				}
+	# 		}
 			
-			picture = generic_democratic_reformer_commonwealth_2d
+	# 		picture = generic_democratic_reformer_commonwealth_2d
 			
-			traits = { democratic_reformer }
+	# 		traits = { democratic_reformer }
 			
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
+	# 		do_effect = {
+	# 			NOT = {
+	# 				has_government = democratic
+	# 			}
+	# 		}
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0
+	# 		}
+	# 	}
 
 		
 
 
-		CAN_ian_a_mackenzie = {
+	# 	CAN_ian_a_mackenzie = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { quartermaster_general }
-		}
+	# 		traits = { quartermaster_general }
+	# 	}
 
-		CAN_r_b_bennett = {
+	# 	CAN_r_b_bennett = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { silent_workhorse }
-		}
+	# 		traits = { silent_workhorse }
+	# 	}
 
-		CAN_newton_wesley_rowell = {
+	# 	CAN_newton_wesley_rowell = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 
-			traits = { ideological_crusader }
-		}
+	# 		traits = { ideological_crusader }
+	# 	}
 
-		CAN_leo_richer_lafleche = {
+	# 	CAN_leo_richer_lafleche = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { popular_figurehead }
-		}
+	# 		traits = { popular_figurehead }
+	# 	}
 
-		CAN_james_ilsley = {
+	# 	CAN_james_ilsley = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { war_industrialist }
-		}
+	# 		traits = { war_industrialist }
+	# 	}
 
-		CAN_louis_st_laurent = {
+	# 	CAN_louis_st_laurent = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 
-			available = {
-				has_completed_focus = CAN_compromise_with_quebec
-			}
+	# 		available = {
+	# 			has_completed_focus = CAN_compromise_with_quebec
+	# 		}
 
-			traits = { compassionate_gentleman }
-		}
+	# 		traits = { compassionate_gentleman }
+	# 	}
 
 
-		CAN_c_d_howe = {
+	# 	CAN_c_d_howe = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			cost = 0
+	# 		cost = 0
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 
-			available = {
-				has_completed_focus = CAN_crown_corporations
-			}
+	# 		available = {
+	# 			has_completed_focus = CAN_crown_corporations
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
-	}
+	# 		traits = { captain_of_industry }
+	# 	}
+	# }
 
-	theorist = {
+	# theorist = {
 
-		CAN_kenneth_stuart = {
-			ledger = army
+	# 	CAN_kenneth_stuart = {
+	# 		ledger = army
 					
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
-		# CAN_george_volkoff = {
-		# 	ledger = army
+	# 		traits = { military_theorist }
+	# 	}
+	# 	# CAN_george_volkoff = {
+	# 	# 	ledger = army
 					
-		# 	picture = generic_political_advisor_europe_2
+	# 	# 	picture = generic_political_advisor_europe_2
 
-		# 	allowed = {
-		# 		original_tag = CAN
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = CAN
+	# 	# 	}
 			
-		# 	research_bonus = {
-		# 		nuclear = 0.1
-		# 	}
+	# 	# 	research_bonus = {
+	# 	# 		nuclear = 0.1
+	# 	# 	}
 			
-		# 	traits = { nuclear_scientist }
-		# }
-		CAN_robert_leckie = {
-			ledger = air
+	# 	# 	traits = { nuclear_scientist }
+	# 	# }
+	# 	CAN_robert_leckie = {
+	# 		ledger = air
 					
-			picture = generic_air_europe_2
+	# 		picture = generic_air_europe_2
 					
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			air_doctrine = 0.10
+	# 		}
 			
-			traits = { air_warfare_theorist }
-		}
-	}
-	# MILITARY
-	army_chief = {
+	# 		traits = { air_warfare_theorist }
+	# 	}
+	# }
+	# # MILITARY
+	# army_chief = {
 		
-		# CAN_harry_crerar = {
-		# 	picture = generic_army_europe_4
+	# 	# CAN_harry_crerar = {
+	# 	# 	picture = generic_army_europe_4
 			
-		# 	allowed = {
-		# 		original_tag = CAN
-		# 	}
-			
-
-			
-		# 	traits = { army_chief_old_guard }
-			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-
-		CAN_andrew_mcnaughton = {
-			picture = generic_army_europe_3
-			
-			allowed = {
-				original_tag = CAN
-			}
+	# 	# 	allowed = {
+	# 	# 		original_tag = CAN
+	# 	# 	}
 			
 
 			
-			traits = { army_chief_offensive_2 }
+	# 	# 	traits = { army_chief_old_guard }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-		# CAN_george_pearkes = {
-		# 	picture = generic_army_europe_3
+	# 	CAN_andrew_mcnaughton = {
+	# 		picture = generic_army_europe_3
 			
-		# 	allowed = {
-		# 		original_tag = CAN
-		# 	}
-			
-
-			
-		# 	traits = { army_chief_defensive_2 }
-			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
-
-	air_chief = {
-
-
-		CAN_lloyd_samuel_breadner = {
-			picture = generic_air_europe_2
-
-			allowed = {
-				original_tag = CAN
-			}
-
-
-
-			traits = { air_air_superiority_2}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		CAN_george_croil = {
-			picture = generic_air_europe_1
-			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
 
 			
-			traits = { air_chief_safety_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CAN_harold_edwards = {
-			picture = generic_air_europe_3
+	# 	# CAN_george_pearkes = {
+	# 	# 	picture = generic_army_europe_3
 			
-			allowed = {
-				original_tag = CAN
-			}
-			
-
-			
-			traits = { air_chief_reform_2}
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		CAN_raymond_collishaw = {
-			picture = generic_air_europe_3
-			
-			allowed = {
-				original_tag = CAN
-			}
+	# 	# 	allowed = {
+	# 	# 		original_tag = CAN
+	# 	# 	}
 			
 
 			
-			traits = { air_air_combat_training_2}
+	# 	# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 
-	navy_chief = {
+	# air_chief = {
+
+
+	# 	CAN_lloyd_samuel_breadner = {
+	# 		picture = generic_air_europe_2
+
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+
+
+
+	# 		traits = { air_air_superiority_2}
+
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# 	CAN_george_croil = {
+	# 		picture = generic_air_europe_1
+			
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+			
+
+			
+	# 		traits = { air_chief_safety_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	CAN_harold_edwards = {
+	# 		picture = generic_air_europe_3
+			
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+			
+
+			
+	# 		traits = { air_chief_reform_2}
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# 	CAN_raymond_collishaw = {
+	# 		picture = generic_air_europe_3
+			
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+			
+
+			
+	# 		traits = { air_air_combat_training_2}
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# navy_chief = {
 		
-		CAN_percy_nelles = {
-			picture = generic_navy_europe_3
+	# 	CAN_percy_nelles = {
+	# 		picture = generic_navy_europe_3
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
 
 			
-			traits = { navy_chief_decisive_battle_2  }
+	# 		traits = { navy_chief_decisive_battle_2  }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
 		
 
-		CAN_alasdair_murray = {
-			picture = generic_navy_europe_1
+	# 	CAN_alasdair_murray = {
+	# 		picture = generic_navy_europe_1
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { navy_chief_commerce_raiding_2 }
+	# 		traits = { navy_chief_commerce_raiding_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		CAN_george_jones = {
-			picture = generic_navy_europe_1
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# 	CAN_george_jones = {
+	# 		picture = generic_navy_europe_1
 			
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { navy_anti_submarine_2 }
+	# 		traits = { navy_anti_submarine_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 	
-	high_command = {
+	# high_command = {
 	
 	
-		CAN_guy_simonds = {
-			ledger = army
+	# 	CAN_guy_simonds = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CAN_gino_verchiella = {
-			ledger = army
-			picture = generic_air_europe_2
+	# 	CAN_gino_verchiella = {
+	# 		ledger = army
+	# 		picture = generic_air_europe_2
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 
-			traits = { army_artillery_1 }
+	# 		traits = { army_artillery_1 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CAN_john_murchie = {
-			ledger = army
-			picture = generic_army_europe_2
+	# 	CAN_john_murchie = {
+	# 		ledger = army
+	# 		picture = generic_army_europe_2
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { army_armored_2 }
+	# 		traits = { army_armored_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		CAN_frederick_m_w_harvey = {
-			ledger = army
+	# 	CAN_frederick_m_w_harvey = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_3
+	# 		picture = generic_army_europe_3
 
-			allowed = {
-				original_tag = CAN
-			}
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
 			
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
 	industrial_concern = {
 

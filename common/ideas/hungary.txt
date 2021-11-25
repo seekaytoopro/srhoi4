@@ -228,318 +228,318 @@ ideas = {
 		}
 	}
 
-	political_advisor = {
+	# political_advisor = {
 
-		HUN_kalman_kanya = {
+	# 	HUN_kalman_kanya = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { compassionate_gentleman }
-		}
+	# 		traits = { compassionate_gentleman }
+	# 	}
 
-		HUN_lajos_remenyi_schneller = {
+	# 	HUN_lajos_remenyi_schneller = {
 
-			picture = generic_political_advisor_europe_1
+	# 		picture = generic_political_advisor_europe_1
 
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { captain_of_industry }
-		}
+	# 		traits = { captain_of_industry }
+	# 	}
 
-		HUN_vilmos_roder = {
+	# 	HUN_vilmos_roder = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { war_industrialist }
+	# 		traits = { war_industrialist }
 
-		}
+	# 	}
 
-		HUN_kalman_daranyi = {
+	# 	HUN_kalman_daranyi = {
 
-			picture = generic_political_advisor_europe_2
+	# 		picture = generic_political_advisor_europe_2
 				
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { smooth_talking_charmer }
-		}
-		HUN_zoltan_tildy = {
+	# 		traits = { smooth_talking_charmer }
+	# 	}
+	# 	HUN_zoltan_tildy = {
 
-			picture = generic_political_advisor_europe_3
+	# 		picture = generic_political_advisor_europe_3
 			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { silent_workhorse }
-		}
+	# 		traits = { silent_workhorse }
+	# 	}
 
-		HUN_gyula_gombos_de_jakfa = {
+	# 	HUN_gyula_gombos_de_jakfa = {
 
-			picture = generic_fascist_demagogue_western_european_2d
+	# 		picture = generic_fascist_demagogue_western_european_2d
 			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			available = {
-				has_completed_focus = HUN_renounce_the_treaty_of_trianon
-			}
+	# 		available = {
+	# 			has_completed_focus = HUN_renounce_the_treaty_of_trianon
+	# 		}
 			
-			traits = { fascist_demagogue }
-		}
-	}
+	# 		traits = { fascist_demagogue }
+	# 	}
+	# }
 
 
-	# MILITARY
+	# # MILITARY
 
-	army_chief = {
+	# army_chief = {
 		
 
-		# HUN_ferenc_szombathelyi = {
+	# 	# HUN_ferenc_szombathelyi = {
 			
-		# 	picture = generic_army_europe_4
+	# 	# 	picture = generic_army_europe_4
 			
-		# 	allowed = {
-		# 		original_tag = HUN
-		# 	}
-			
-
-			
-		# 	traits = { army_chief_defensive_2 }
-			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-
-		HUN_hugo_sonyi = {
-			
-			picture = generic_army_europe_5
-			
-			allowed = {
-				original_tag = HUN
-			}
+	# 	# 	allowed = {
+	# 	# 		original_tag = HUN
+	# 	# 	}
 			
 
 			
-			traits = { army_chief_offensive_2 }
+	# 	# 	traits = { army_chief_defensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-	air_chief = {
+	# 	HUN_hugo_sonyi = {
+			
+	# 		picture = generic_army_europe_5
+			
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
+			
+
+			
+	# 		traits = { army_chief_offensive_2 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# air_chief = {
 		
 
-		HUN_bela_rakosi = {
+	# 	HUN_bela_rakosi = {
 			
-			picture = generic_air_europe_1
+	# 		picture = generic_air_europe_1
 			
-			allowed = {
-				original_tag = HUN
-			}
-			
-
-			
-			traits = { air_chief_ground_support_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HUN_sandor_magyarossy = {
-			
-			picture = generic_air_europe_2
-			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
 
 			
-			traits = { air_air_combat_training_1 }
+	# 		traits = { air_chief_ground_support_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-	navy_chief = {
+	# 	HUN_sandor_magyarossy = {
+			
+	# 		picture = generic_air_europe_2
+			
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
+			
+
+			
+	# 		traits = { air_air_combat_training_1 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# navy_chief = {
 		
 
-		HUN_francois_deak = {
+	# 	HUN_francois_deak = {
 			
-			picture = generic_navy_europe_1
+	# 		picture = generic_navy_europe_1
 			
-			allowed = {
-				original_tag = HUN
-			}
-			
-
-			
-			traits = { navy_chief_reform_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		HUN_reszo_kastner = {
-			
-			picture = generic_navy_europe_2
-			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
 
 			
-			traits = { navy_chief_maneuver_2 }
+	# 		traits = { navy_chief_reform_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-	high_command = {
-
-		HUN_gusztav_jany = {
-			ledger = army
+	# 	HUN_reszo_kastner = {
 			
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = HUN
-			}
+	# 		picture = generic_navy_europe_2
+			
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
 
 			
-			traits = { army_armored_3 }
+	# 		traits = { navy_chief_maneuver_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
+
+	# high_command = {
+
+	# 	HUN_gusztav_jany = {
+	# 		ledger = army
+			
+	# 		picture = generic_army_europe_3
+
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
+			
+
+			
+	# 		traits = { army_armored_3 }
+			
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 	
-		HUN_dezso_laszlo = {
-			ledger = army
+	# 	HUN_dezso_laszlo = {
+	# 		ledger = army
 			
-			picture = generic_army_europe_2			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		picture = generic_army_europe_2			
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
 
 			
-			traits = { army_regrouping_3 }
+	# 		traits = { army_regrouping_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 	
-		# HUN_jeno_ratz = {
-		# 	ledger = air
+	# 	# HUN_jeno_ratz = {
+	# 	# 	ledger = air
 			
-		# 	picture = generic_air_europe_3
+	# 	# 	picture = generic_air_europe_3
 
-		# 	allowed = {
-		# 		original_tag = HUN
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = HUN
+	# 	# 	}
 			
-		# 	traits = { air_air_combat_training_2 }
+	# 	# 	traits = { air_air_combat_training_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-		HUN_henrik_werth = {
-			ledger = army
+	# 	HUN_henrik_werth = {
+	# 		ledger = army
 
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		HUN_shvoy_kalman2 = {
-			ledger = army
+	# 	HUN_shvoy_kalman2 = {
+	# 		ledger = army
 
-			picture = generic_army_europe_1
+	# 		picture = generic_army_europe_1
 
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			traits = { army_commando_2 }
+	# 		traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}	
 
 
-	}
+	# }
 	
-	theorist = {
-		HUN_shvoy_kalman = {
-			ledger = army
+	# theorist = {
+	# 	HUN_shvoy_kalman = {
+	# 		ledger = army
 		
-			picture = generic_army_europe_2
+	# 		picture = generic_army_europe_2
 
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
+	# 		traits = { military_theorist }
+	# 	}
 		
-		HUN_gyorgy_jendrassik = {
-			ledger = air
+	# 	HUN_gyorgy_jendrassik = {
+	# 		ledger = air
 
-			picture = generic_air_europe_2
+	# 		picture = generic_air_europe_2
 			
-			allowed = {
-				original_tag = HUN
-			}
+	# 		allowed = {
+	# 			original_tag = HUN
+	# 		}
 			
-			research_bonus = {
-				air_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			air_doctrine = 0.10
+	# 		}
 			
-			traits = { air_warfare_theorist }
-		}
+	# 		traits = { air_warfare_theorist }
+	# 	}
 
-	}	
+	# }	
 	
 	aircraft_manufacturer = {
 			

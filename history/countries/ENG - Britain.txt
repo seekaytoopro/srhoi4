@@ -659,100 +659,100 @@ create_navy_leader = {
 	maneuvering_skill = 7
 	coordination_skill = 8
 }
-create_navy_leader = {
-	name = "Henry Harwood" # Aristocrat
-	id = 984
-		picture = "Portrait_Britain_Henry_Harwood.dds"
-	traits = {  bold fly_swatter blue_water_expert }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
+# create_navy_leader = {
+# 	name = "Henry Harwood" # Aristocrat
+# 	id = 984
+# 		picture = "Portrait_Britain_Henry_Harwood.dds"
+# 	traits = {  bold fly_swatter blue_water_expert }
+# 	skill = 3
+# 	attack_skill = 3
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 2
+# }
 
-create_navy_leader = {
-	name = "Andrew Cunningham"
-	id = 985
-	picture = "Portrait_Britain_Andrew_Cunningham.dds"
-	traits = { bold blockade_runner superior_tactician ironside air_controller inshore_fighter }
-	skill = 7
-	attack_skill = 7
-	defense_skill = 4
-	maneuvering_skill = 6
-	coordination_skill = 6
-}
+# create_navy_leader = {
+# 	name = "Andrew Cunningham"
+# 	id = 985
+# 	picture = "Portrait_Britain_Andrew_Cunningham.dds"
+# 	traits = { bold blockade_runner superior_tactician ironside air_controller inshore_fighter }
+# 	skill = 7
+# 	attack_skill = 7
+# 	defense_skill = 4
+# 	maneuvering_skill = 6
+# 	coordination_skill = 6
+# }
 
-create_navy_leader = {
-	name = "Bruce Fraser"
-	id = 986
-		picture = "Portrait_Britain_Bruce_Fraser.dds"
-	traits = { blockade_runner air_controller arctic_water_expert  }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 4
-	coordination_skill = 4
-}
+# create_navy_leader = {
+# 	name = "Bruce Fraser"
+# 	id = 986
+# 		picture = "Portrait_Britain_Bruce_Fraser.dds"
+# 	traits = { blockade_runner air_controller arctic_water_expert  }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 2
+# 	maneuvering_skill = 4
+# 	coordination_skill = 4
+# }
 
-create_navy_leader = {
-	name = "John Tovey" # Aristocrat
-	id = 987
-		picture = "Portrait_Britain_John_Tovey.dds"
-	traits = { superior_tactician spotter fly_swatter arctic_water_expert }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 2
-	coordination_skill = 5
-}
+# create_navy_leader = {
+# 	name = "John Tovey" # Aristocrat
+# 	id = 987
+# 		picture = "Portrait_Britain_John_Tovey.dds"
+# 	traits = { superior_tactician spotter fly_swatter arctic_water_expert }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	maneuvering_skill = 2
+# 	coordination_skill = 5
+# }
 
-create_navy_leader = {
-	name = "Bernard Rawlings" # Aristocrat
-	id = 988
-		picture = "Portrait_Britain_Bernard_Rawlings.dds"
-	traits = { fleet_protector ironside }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 6
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
+# create_navy_leader = {
+# 	name = "Bernard Rawlings" # Aristocrat
+# 	id = 988
+# 		picture = "Portrait_Britain_Bernard_Rawlings.dds"
+# 	traits = { fleet_protector ironside }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 6
+# 	maneuvering_skill = 3
+# 	coordination_skill = 4
+# }
 
-create_navy_leader = {
-	name = "John Cunningham"
-	id = 989
-		picture = "Portrait_Britain_John_Cunningham.dds"
-	traits = { ironside fly_swatter green_water_expert }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	maneuvering_skill = 4
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Charles Forbes"
-	id = 990
-		picture = "Portrait_Britain_Charles_Forbes.dds"
-	traits = { fly_swatter cruiser_captain fleet_protector destroyer_leader  arctic_water_expert    }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 6
-}
+# create_navy_leader = {
+# 	name = "John Cunningham"
+# 	id = 989
+# 		picture = "Portrait_Britain_John_Cunningham.dds"
+# 	traits = { ironside fly_swatter green_water_expert }
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 4
+# 	maneuvering_skill = 4
+# 	coordination_skill = 3
+# }
+# create_navy_leader = {
+# 	name = "Charles Forbes"
+# 	id = 990
+# 		picture = "Portrait_Britain_Charles_Forbes.dds"
+# 	traits = { fly_swatter cruiser_captain fleet_protector destroyer_leader  arctic_water_expert    }
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 6
+# }
 
-create_navy_leader = {
-	name = "Algernon Willis"
-	id = 991
-		picture = "Portrait_Britain_Algernon_Willis.dds"
-	traits = { spotter blockade_runner smoke_screen_expert concealment_expert }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 6
-}
+# create_navy_leader = {
+# 	name = "Algernon Willis"
+# 	id = 991
+# 		picture = "Portrait_Britain_Algernon_Willis.dds"
+# 	traits = { spotter blockade_runner smoke_screen_expert concealment_expert }
+# 	skill = 3
+# 	attack_skill = 2
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 6
+# }
 
 
 ### Ship Variants ###

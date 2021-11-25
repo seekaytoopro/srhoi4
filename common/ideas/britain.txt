@@ -1022,432 +1022,432 @@ ideas = {
 	}
 	
 	
-	political_advisor = {
+	# political_advisor = {
 		
 			
-		clement_attlee = {
+	# 	clement_attlee = {
 
-			available = {
-			}
+	# 		available = {
+	# 		}
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { democratic_reformer }
+	# 		traits = { democratic_reformer }
 	
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
+	# 		do_effect = {
+	# 			NOT = {
+	# 				has_government = democratic
+	# 			}
+	# 		}
 			
-			ai_will_do = {
-				factor = 0
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0
+	# 		}
+	# 	}
 				
-		# eng_stewart_menzies = {
+	# 	# eng_stewart_menzies = {
 		
-		# 	available = {
-		# 		has_intelligence_agency = yes
-		# 	}
+	# 	# 	available = {
+	# 	# 		has_intelligence_agency = yes
+	# 	# 	}
 			
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
-		# 	traits = { head_of_intelligence }
+	# 	# 	traits = { head_of_intelligence }
 			
-		# }
+	# 	# }
 		
-		ENG_philip_kerr = {
+	# 	ENG_philip_kerr = {
 
-			available = {
+	# 		available = {
 
-			}
+	# 		}
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { silent_workhorse }
+	# 		traits = { silent_workhorse }
 
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_country_leader = { name = "Stanley Baldwin" ruling_only = yes }
-					factor = 10
-				}
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 			modifier = {
+	# 				has_country_leader = { name = "Stanley Baldwin" ruling_only = yes }
+	# 				factor = 10
+	# 			}
+	# 		}
+	# 	}
 
 	
 
-		ENG_maxwell_aitken = {
+	# 	ENG_maxwell_aitken = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { war_industrialist }
+	# 		traits = { war_industrialist }
 
-			ai_will_do = {
-				factor = 2
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 		}
+	# 	}
 		
 				
-		# eng_alan_turing = {
+	# 	# eng_alan_turing = {
 		
-		# 	picture = eng_alan_turing
+	# 	# 	picture = eng_alan_turing
 		
-		# 	available = {
-		# 		has_intelligence_agency = yes
-		# 		has_done_agency_upgrade = upgrade_form_department
-		# 	}
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	available = {
+	# 	# 		has_intelligence_agency = yes
+	# 	# 		has_done_agency_upgrade = upgrade_form_department
+	# 	# 	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
-		# 	traits = { mastermind_code_cracker }
+	# 	# 	traits = { mastermind_code_cracker }
 
-		# }
+	# 	# }
 
-		ENG_leslie_hore_belisha = {
+	# 	ENG_leslie_hore_belisha = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { armaments_organizer }
-		}
+	# 		traits = { armaments_organizer }
+	# 	}
 
-		ENG_ernest_bevin = {
+	# 	ENG_ernest_bevin = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { quartermaster_general }
+	# 		traits = { quartermaster_general }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 		
 		
 
-	army_chief = {
-		john_vereker = {
-			allowed = {
-				original_tag = ENG
-			}
+	# army_chief = {
+	# 	john_vereker = {
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 			
-			traits = { army_chief_offensive_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-			ai_will_do = {
-				factor = 2
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 		}
+	# 	}
 		
-		# edmund_ironside = {
+	# 	# edmund_ironside = {
 			
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
 
 			
-		# 	traits = { army_chief_defensive_2 }
+	# 	# 	traits = { army_chief_defensive_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 2
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 2
+	# 	# 	}
+	# 	# }
 		
-		# alan_brooke = {
+	# 	# alan_brooke = {
 			
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
-		# 	available = {
+	# 	# 	available = {
 				
-		# 	}
+	# 	# 	}
 			
-		# 	traits = { army_chief_maneuver_3 }
+	# 	# 	traits = { army_chief_maneuver_3 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
-	navy_chief = {
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
+	# navy_chief = {
 
-		ernle_chatfield = {
+	# 	ernle_chatfield = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
 
 			
-			traits = { navy_chief_maneuver_2 }
+	# 		traits = { navy_chief_maneuver_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		dudley_pound = {
+	# 	dudley_pound = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { navy_chief_decisive_battle_1 }
+	# 		traits = { navy_chief_decisive_battle_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		andrew_cunningham = {
+	# 	andrew_cunningham = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { navy_chief_naval_aviation_2 }	
+	# 		traits = { navy_chief_naval_aviation_2 }	
 	
-		}
-	}
+	# 	}
+	# }
 	
-	air_chief = {
+	# air_chief = {
 
-		cyril_newall = {
+	# 	cyril_newall = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
 
 			
-			traits = { air_chief_reform_2 }
+	# 		traits = { air_chief_reform_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		charles_portal = {
+	# 	charles_portal = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
 
 			
-			traits = { air_chief_night_operations_2 }
-			# REVISIT Stratetic bombing as secondary trait?
+	# 		traits = { air_chief_night_operations_2 }
+	# 		# REVISIT Stratetic bombing as secondary trait?
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		edward_ellington = {
+	# 	edward_ellington = {
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
 
 			
-			traits = { air_chief_safety_2 }
+	# 		traits = { air_chief_safety_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 	
-	high_command = {
+	# high_command = {
 
-		ENG_jfc_fuller_a = {
-			ledger = army
-			picture = "Portrait_Britain_Richard_OConnor.dds"
+	# 	ENG_jfc_fuller_a = {
+	# 		ledger = army
+	# 		picture = "Portrait_Britain_Richard_OConnor.dds"
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { army_armored_2 }
+	# 		traits = { army_armored_2 }
 
-			ai_will_do = {
-				factor = 1
-			}
-		}
-		archibald_wavell = {
-			ledger = army
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# 	archibald_wavell = {
+	# 		ledger = army
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			available = {
+	# 		available = {
 			
-			}
+	# 		}
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		claude_auchinleck = {
-			ledger = army
+	# 	claude_auchinleck = {
+	# 		ledger = army
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 2
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 		}
+	# 	}
 		
-		kenneth_anderson = {
-			ledger = army
+	# 	kenneth_anderson = {
+	# 		ledger = army
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 
-			available = {
-				has_completed_focus = ENG_special_air_service
-			}
+	# 		available = {
+	# 			has_completed_focus = ENG_special_air_service
+	# 		}
 			
-			traits = { montgomery_hc }
+	# 		traits = { montgomery_hc }
 			
-			ai_will_do = {
-				factor = 2
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 		}
+	# 	}
 
-		sholto_douglas = {
-			ledger = air
+	# 	sholto_douglas = {
+	# 		ledger = air
 
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { air_air_superiority_2 }
+	# 		traits = { air_air_superiority_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		trafford_leigh_mallory = {
-			ledger = air
+	# 	trafford_leigh_mallory = {
+	# 		ledger = air
 
 
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			traits = { air_bomber_interception_2 }
+	# 		traits = { air_bomber_interception_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		# frederick_bowhill = {
-		# 	ledger = navy
+	# 	# frederick_bowhill = {
+	# 	# 	ledger = navy
 			
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
 
 			
-		# 	traits = { air_naval_strike_2 }
+	# 	# 	traits = { air_naval_strike_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }	
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }	
 		
-		louis_mountbatten = {
-			ledger = army
+	# 	louis_mountbatten = {
+	# 		ledger = army
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 			
-			traits = { navy_amphibious_assault_3 }
+	# 		traits = { navy_amphibious_assault_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		henry_harwood = {
-			ledger = navy
+	# 	henry_harwood = {
+	# 		ledger = navy
 			
-			allowed = {
-				original_tag = ENG
-			}
+	# 		allowed = {
+	# 			original_tag = ENG
+	# 		}
 			
 
 			
-			traits = { navy_screen_2 }
+	# 		traits = { navy_screen_2 }
 			
-			ai_will_do = {
-				factor = 0.7
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 0.7
+	# 		}
+	# 	}
 		
-		# max_horton = {
-		# 	ledger = navy
+	# 	# max_horton = {
+	# 	# 	ledger = navy
 			
-		# 	allowed = {
-		# 		original_tag = ENG
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ENG
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_submarine_2 }
+	# 	# 	traits = { navy_submarine_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 0.2
-		# 	}
-		# }		
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 0.2
+	# 	# 	}
+	# 	# }		
 
 			
-	}
+	# }
 	
 	
 	naval_manufacturer = {

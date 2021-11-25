@@ -1110,432 +1110,432 @@ SPR_no_navy2 = {
 		}
 	}
 
-	political_advisor = {
+	# political_advisor = {
 
-		### Vanilla ###
+	# 	### Vanilla ###
 
-		### La Resistance ###
+	# 	### La Resistance ###
 
-		SPA_jose_antonio_giron = {
+	# 	SPA_jose_antonio_giron = {
 
-			picture = SPA_jose_antonio_giron
+	# 		picture = SPA_jose_antonio_giron
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
-	available = {
-			date > 1936.7.18
-			}
+	# 		}
+	# available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { falangist_industrialist }
-		}
+	# 		traits = { falangist_industrialist }
+	# 	}
 
-		SPA_raimundo_fernandez_cuesta = {
+	# 	SPA_raimundo_fernandez_cuesta = {
 
-			picture = SPA_raimundo_fernandez_cuesta
+	# 		picture = SPA_raimundo_fernandez_cuesta
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 				
-			}
+	# 		}
 
-				available = {
-			date > 1936.7.18
-			}
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { loyal_falangist }
-		}
+	# 		traits = { loyal_falangist }
+	# 	}
 
-		SPA_tomas_dominguez_arevalo = {
+	# 	SPA_tomas_dominguez_arevalo = {
 
-			picture = SPA_tomas_dominguez_arevalo
+	# 		picture = SPA_tomas_dominguez_arevalo
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-				available = {
-			date > 1936.7.18
-			}
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { lifelong_carlist }
-		}
+	# 		traits = { lifelong_carlist }
+	# 	}
 
-		SPA_diego_hidalgo_y_duran = {
+	# 	SPA_diego_hidalgo_y_duran = {
 
-			picture = SPA_diego_hidalgo_y_duran
+	# 		picture = SPA_diego_hidalgo_y_duran
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-				available = {
-			date > 1936.7.18
-			}
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { war_industrialist }
-		}
+	# 		traits = { war_industrialist }
+	# 	}
 
-		SPA_ramon_serrano_suner = {
+	# 	SPA_ramon_serrano_suner = {
 
-			picture = SPA_ramon_serrano_suner
+	# 		picture = SPA_ramon_serrano_suner
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-				available = {
-			date > 1936.7.18
-			}
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { silent_workhorse }
-		}
+	# 		traits = { silent_workhorse }
+	# 	}
 
-		SPA_luis_hernando_de_larramendi = {
+	# 	SPA_luis_hernando_de_larramendi = {
 
-			picture = SPA_luis_hernando_de_larramendi
+	# 		picture = SPA_luis_hernando_de_larramendi
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 				
-			}
-	available = {
-			date > 1936.7.18
-			}
+	# 		}
+	# available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { traditionalist_theorist }
-		}
+	# 		traits = { traditionalist_theorist }
+	# 	}
 
-		SPA_jose_antonio_primo_de_rivera = {
+	# 	SPA_jose_antonio_primo_de_rivera = {
 
-			picture = SPA_jose_antonio_primo_de_rivera
+	# 		picture = SPA_jose_antonio_primo_de_rivera
 
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-				available = {
-			date > 1936.7.18
-			}
+	# 			available = {
+	# 		date > 1936.7.18
+	# 		}
 			
-			traits = { falangist_figurehead }
-		}
-	}
+	# 		traits = { falangist_figurehead }
+	# 	}
+	# }
 
-	theorist = {
+	# theorist = {
 
-		### Vanilla ###
+	# 	### Vanilla ###
 
 
-		### La Resistance ###
+	# 	### La Resistance ###
 
-		SPA_jose_enrique_varela = { # Carlist
-			ledger = army
+	# 	SPA_jose_enrique_varela = { # Carlist
+	# 		ledger = army
 				
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 	
-			visible = {
+	# 		visible = {
 				
-			}
+	# 		}
 	
-			available = {
+	# 		available = {
 		
-			}
+	# 		}
 			
-			picture = SPA_jose_enrique_varela
+	# 		picture = SPA_jose_enrique_varela
 			
-			research_bonus = {
-				land_doctrine = 0.10
-			}
+	# 		research_bonus = {
+	# 			land_doctrine = 0.10
+	# 		}
 			
-			traits = { military_theorist }
-		}
-	}
+	# 		traits = { military_theorist }
+	# 	}
+	# }
 
-	# MILITARY
-	army_chief = {
+	# # MILITARY
+	# army_chief = {
 
-		### Vanilla ###
+	# 	### Vanilla ###
 
-		### La Resistance ###
+	# 	### La Resistance ###
 		
-		SPA_juan_yague = { # Falangist
+	# 	SPA_juan_yague = { # Falangist
 			
-			picture = SPA_juan_yague
+	# 		picture = SPA_juan_yague
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
+	# 		visible = {
+	# 			NOT = {
+	# 				tag = SPD
+	# 				tag = SPC
+	# 			}
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 			
-			traits = { army_chief_offensive_2 }
+	# 		traits = { army_chief_offensive_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		# SPA_rafael_garcia_valino = { # Francoist/Carlist
+	# 	# SPA_rafael_garcia_valino = { # Francoist/Carlist
 			
-		# 	picture = SPA_rafael_garcia_valino
+	# 	# 	picture = SPA_rafael_garcia_valino
 			
-		# 	allowed = {
-		# 		original_tag = SPR
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
 
-		# 	visible = {
+	# 	# 	visible = {
 				
-		# 	}
+	# 	# 	}
 
-		# 	available = {
+	# 	# 	available = {
 				
 				
-		# 		custom_trigger_tooltip = {
-		# 			tooltip = SPA_not_republican_spain_tt
-		# 		}
-		# 	}
+	# 	# 		custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
 			
-		# 	traits = { army_chief_organizational_2 }
+	# 	# 	traits = { army_chief_organizational_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-		# SPA_heli_rolando_de_tella = { # Francoist/Carlist
+	# 	# SPA_heli_rolando_de_tella = { # Francoist/Carlist
 			
-		# 	picture = SPA_heli_rolando_de_tella
+	# 	# 	picture = SPA_heli_rolando_de_tella
 			
-		# 	allowed = {
-		# 		original_tag = SPR
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
 
-		# 	visible = {
+	# 	# 	visible = {
 				
-		# 	}
+	# 	# 	}
 
-		# 	available = {
-		# 	custom_trigger_tooltip = {
-		# 			tooltip = SPA_not_republican_spain_tt
-		# 		}
-		# 	}
+	# 	# 	available = {
+	# 	# 	custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
 			
-		# 	traits = { army_chief_defensive_2 }
+	# 	# 	traits = { army_chief_defensive_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-		# SPA_miguel_ponte = { # Francoist
+	# 	# SPA_miguel_ponte = { # Francoist
 			
-		# 	picture = SPA_miguel_ponte
+	# 	# 	picture = SPA_miguel_ponte
 			
-		# 	allowed = {
-		# 		original_tag = SPR
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = SPR
+	# 	# 	}
 
-		# 	visible = {
+	# 	# 	visible = {
 			
-		# 	}
+	# 	# 	}
 
-		# 	available = {
+	# 	# 	available = {
 				
-		# 		custom_trigger_tooltip = {
-		# 			tooltip = SPA_not_republican_spain_tt
-		# 		}
-		# 	}
+	# 	# 		custom_trigger_tooltip = {
+	# 	# 			tooltip = SPA_not_republican_spain_tt
+	# 	# 		}
+	# 	# 	}
 			
-		# 	traits = { army_chief_drill_2 }
+	# 	# 	traits = { army_chief_drill_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 
-	}
-	air_chief = {
+	# }
+	# air_chief = {
 
-		### Vanilla ###
+	# 	### Vanilla ###
 
 
-		### La Resistance ###
+	# 	### La Resistance ###
 
-		SPA_joaquin_garcia_morato = { # Francoist
+	# 	SPA_joaquin_garcia_morato = { # Francoist
 			
-			picture = SPA_joaquin_garcia_morato
+	# 		picture = SPA_joaquin_garcia_morato
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-			available = {
+	# 		available = {
 				
-			}
+	# 		}
 			
-			traits = { air_chief_ground_support_2 }
+	# 		traits = { air_chief_ground_support_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
-	navy_chief = {
+	# navy_chief = {
 
-		### Vanilla ###
+	# 	### Vanilla ###
 
 
-		### La Resistance ###
+	# 	### La Resistance ###
 
-		SPA_luis_carrero_blanco = { # Francoist
+	# 	SPA_luis_carrero_blanco = { # Francoist
 			
-			picture = SPA_luis_carrero_blanco
+	# 		picture = SPA_luis_carrero_blanco
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 				
-			}
+	# 		}
 
-			available = {
+	# 		available = {
 			
-			}
+	# 		}
 			
-			traits = { navy_chief_decisive_battle_2 }
+	# 		traits = { navy_chief_decisive_battle_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 
 	
-	high_command = {
+	# high_command = {
 
-		### Vanilla ###
-
-
-		### La Resistance ###
+	# 	### Vanilla ###
 
 
+	# 	### La Resistance ###
 
-		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
-			ledger = army
+
+
+	# 	SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
+	# 		ledger = army
 			
-			picture = SPA_wilhelm_ritter_von_thoma
+	# 		picture = SPA_wilhelm_ritter_von_thoma
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 		
-			}
+	# 		}
 
-			available = {
-				has_completed_focus = SPA_the_condor_legion
-			}
+	# 		available = {
+	# 			has_completed_focus = SPA_the_condor_legion
+	# 		}
 			
-			traits = { army_armored_3 }
+	# 		traits = { army_armored_3 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		SPA_enrique_canovas_lacruz = { # Francoist
-			ledger = army
+	# 	SPA_enrique_canovas_lacruz = { # Francoist
+	# 		ledger = army
 			
-			picture = SPA_enrique_canovas_lacruz
+	# 		picture = SPA_enrique_canovas_lacruz
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
-				NOT = {
-					tag = SPD
-					tag = SPC
-				}
-			}
+	# 		visible = {
+	# 			NOT = {
+	# 				tag = SPD
+	# 				tag = SPC
+	# 			}
+	# 		}
 
-			available = {
-			}
+	# 		available = {
+	# 		}
 			
-			traits = { army_logistics_2 }
+	# 		traits = { army_logistics_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 
-		SPA_miguel_cabanellas = { # Carlist
-			ledger = army
+	# 	SPA_miguel_cabanellas = { # Carlist
+	# 		ledger = army
 			
-			picture = SPA_miguel_cabanellas
+	# 		picture = SPA_miguel_cabanellas
 			
-			allowed = {
-				original_tag = SPR
-			}
+	# 		allowed = {
+	# 			original_tag = SPR
+	# 		}
 
-			visible = {
+	# 		visible = {
 			
-			}
+	# 		}
 
-			available = {
+	# 		available = {
 
-			}
+	# 		}
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+	# }
 }

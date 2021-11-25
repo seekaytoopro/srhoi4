@@ -555,170 +555,170 @@ ideas = {
 		}	
 	}	
 	
-	high_command = {
+	# high_command = {
 	
-		giovanni_messe_hc = {
-			ledger = army
-			picture = giovanni_messe 
+	# 	giovanni_messe_hc = {
+	# 		ledger = army
+	# 		picture = giovanni_messe 
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
-			traits = { army_armored_3 }
-		}
-		mario_roatta = {
-			ledger = army
+	# 		traits = { army_armored_3 }
+	# 	}
+	# 	mario_roatta = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-			traits = { army_regrouping_2 }
+	# 		traits = { army_regrouping_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		vittorio_ambrosio = {
-			ledger = army
+	# 	vittorio_ambrosio = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-			traits = { army_cavalry_1 }
+	# 		traits = { army_cavalry_1 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		alfredo_guzzoni = {
-			ledger = army
+	# 	alfredo_guzzoni = {
+	# 		ledger = army
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-			traits = { army_infantry_2 }
+	# 		traits = { army_infantry_2 }
 			
-			ai_will_do = {
-				factor = 2
-			}
-		}	
+	# 		ai_will_do = {
+	# 			factor = 2
+	# 		}
+	# 	}	
 		
-		ettore_muti = {
-			ledger = air
+	# 	ettore_muti = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-			traits = { air_tactical_bombing_2 }
+	# 		traits = { air_tactical_bombing_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		marziale_cerutti = {
-			ledger = air
+	# 	marziale_cerutti = {
+	# 		ledger = air
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
-			
-
-			
-			traits = { air_air_combat_training_2 }
-			
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		# silvio_scaroni = {
-		# 	ledger = air
-			
-		# 	allowed = {
-		# 		original_tag = ITA
-		# 	}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-		# 	traits = { air_bomber_interception_2 }
+	# 		traits = { air_air_combat_training_2 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
+
+	# 	# silvio_scaroni = {
+	# 	# 	ledger = air
+			
+	# 	# 	allowed = {
+	# 	# 		original_tag = ITA
+	# 	# 	}
+			
+
+			
+	# 	# 	traits = { air_bomber_interception_2 }
+			
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		# alberto_da_zara = {
-		# 	ledger = navy
+	# 	# alberto_da_zara = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		original_tag = ITA
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ITA
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_anti_submarine_1 }
+	# 	# 	traits = { navy_anti_submarine_1 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
 		
-		carlo_bergamini = {
-			ledger = navy
+	# 	carlo_bergamini = {
+	# 		ledger = navy
 			
 			
-			allowed = {
-				original_tag = ITA
-			}
+	# 		allowed = {
+	# 			original_tag = ITA
+	# 		}
 			
 
 			
-			traits = { navy_capital_ship_2 }
+	# 		traits = { navy_capital_ship_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+	# 		ai_will_do = {
+	# 			factor = 1
+	# 		}
+	# 	}
 		
-		# luigi_mascherpa = {
-		# 	ledger = navy
+	# 	# luigi_mascherpa = {
+	# 	# 	ledger = navy
 			
 			
-		# 	allowed = {
-		# 		original_tag = ITA
-		# 	}
+	# 	# 	allowed = {
+	# 	# 		original_tag = ITA
+	# 	# 	}
 			
 
 			
-		# 	traits = { navy_naval_air_defense_1 }
+	# 	# 	traits = { navy_naval_air_defense_1 }
 			
-		# 	ai_will_do = {
-		# 		factor = 1
-		# 	}
-		# }
-	}
+	# 	# 	ai_will_do = {
+	# 	# 		factor = 1
+	# 	# 	}
+	# 	# }
+	# }
 	
 	
 	tank_manufacturer = {
