@@ -117,7 +117,7 @@ focus_tree = {
 					}
 					ENG = { transfer_state = 466 }
 					466 = { add_extra_state_shared_building_slots = 15 set_compliance = 100 }
-					ENG = { set_capital = 466 }
+					ENG = { set_capital =  { state = 466 } }
 				}
 				ENG = {
 					#add_ideas = ENG_Canadian_exile

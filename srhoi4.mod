@@ -1,4 +1,4 @@
-version="1.9.*"
+version="1.11.0"
 tags={
 	"Fixes"
 	"Gameplay"
@@ -76,8 +76,6 @@ replace_path="common/units"
 replace_path="common/wargoals"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
-
-replace_path="common/characters"
 name="SRHoi4 MP"
 supported_version="1.11.*"
 path="mod/srhoi4"
