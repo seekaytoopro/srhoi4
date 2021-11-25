@@ -302,11 +302,11 @@ sub_units = {
 		ap_attack = -4.9
 		armor_value = -1.0
 		essential = {
-			light_tank_equipment
+			light_tank_chassis
 		}
 
 		need = {
-			light_tank_equipment = 24
+			light_tank_chassis = 24
 		}
 
 		forest = {

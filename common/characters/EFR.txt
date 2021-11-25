@@ -682,7 +682,7 @@ characters={
 					original_tag  = EFR 
 				}
 				available  = {
-					has_completed_focus  = VIC_the_national_bureau_of_statistics 
+					# has_completed_focus  = VIC_the_national_bureau_of_statistics 
 				}
 				cost  = 0.000
 				traits  = {
@@ -742,7 +742,7 @@ characters={
 					original_tag  = EFR 
 				}
 				available  = {
-					has_completed_focus  = FRA_national_regeneration 
+					# has_completed_focus  = FRA_national_regeneration 
 				}
 				visible  = {
 					has_dlc = "La Resistance"
@@ -935,7 +935,7 @@ characters={
 					has_dlc = "La Resistance"
 				}
 				available  = {
-					has_completed_focus  = FRA_national_regeneration 
+					# has_completed_focus  = FRA_national_regeneration 
 				}
 				cost  = 0.000
 				traits  = {

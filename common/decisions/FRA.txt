@@ -127,7 +127,7 @@ original_tag = FRF
 		cost = 0
 		
 		complete_effect = {
-		FRF = { set_capital = 461 }
+		FRF = { set_capital = { state = 461 } }
 		}
 	}
 		
@@ -148,7 +148,7 @@ original_tag = FRF
 		cost = 0
 		
 		complete_effect = {
-		FRF = { set_capital = 539 }
+		FRF = { set_capital = { state = 539 } }
 		}
 }
 FRA_move_capital_guiana = {
@@ -168,7 +168,7 @@ FRA_move_capital_guiana = {
 			cost = 0
 			
 			complete_effect = {
-			FRF = { set_capital = 310 }
+			FRF = { set_capital = { state = 310 } }
 			}
 	}
 }

@@ -296,7 +296,7 @@ on_actions = {
 				news_event = news.412
 
 				clear_variable = FRA_battle_weeks_held
-				FRA = { set_capital = 310 }
+				FRA = { set_capital = { state = 310 } }
 				310 = { 
 					add_building_construction = {
 						type = infrastructure
@@ -523,7 +523,7 @@ on_subject_autonomy_level_change = {
 					
 						if = { 
 	limit = { original_tag = SPR }
-	set_capital = 41 
+	set_capital = { state = 41 } 
 	}
 		}
 	}

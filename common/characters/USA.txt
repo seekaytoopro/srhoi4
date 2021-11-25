@@ -628,7 +628,7 @@ characters={
 		}
 		
 			field_marshal = { 
-		visible = {has_completed_focus = USA_overlord }
+		# visible = {has_completed_focus = USA_overlord }
 		traits = { organizer fake_skilled_staffer logistics_wizard fast_planner infantry_leader infantry_expert trickster expert_improviser offensive_doctrine brilliant_strategist aggressive_assaulter  }
 	skill = 7
 
@@ -867,7 +867,6 @@ characters={
 				}
 				allowed  = {
 					original_tag  = USA 
-					has_dlc = "La Resistance"
 				}
 				traits  = {
 					head_of_intelligence 

@@ -66,3 +66,142 @@ SOV_barb_debuff_category = {
 		original_tag = SOV
 	}
 }
+
+####### NO STEP BACK! #######
+
+SOV_paranoia_system = {
+
+	priority = 101
+
+	icon = SOV_paranoia
+
+	scripted_gui = sov_paranoia_system_ui
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		OR = {
+			has_country_flag = SOV_paranoia_system_active_flag
+			has_country_flag = SOV_third_moscow_trial_flag
+			has_country_flag = SOV_debug_show_paranoia_system_flag #Debug
+		}
+	}
+
+	visible_when_empty = yes
+}
+
+SOV_propaganda_campaigns = {
+	priority = 100
+
+	icon = SOV_propaganda
+
+	scripted_gui = sov_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = SOV_expand_the_agitprop
+			has_country_flag = SOV_debug_show_propaganda_system_flag #Debug
+		}
+	}
+}
+
+SOV_gosproyektstroy_decision_category = {
+	priority = 29
+
+	icon = generic_industry
+
+	picture = SOV_civil_puppet_interaction 
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		OR = {
+			has_idea = SOV_gosproyektstroy_1
+			has_country_flag = SOV_gosproyektstroy_level_2_flag
+			has_country_flag = SOV_gosproyektstroy_level_3_flag
+		}
+	}
+}
+
+SOV_national_academy_of_sciences_dec_cat = {
+	priority = 30
+
+	icon = SOV_soviet_academy_of_sciences
+
+	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences 
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_national_academies_of_sciences
+		has_civil_war = no
+	}
+}
+
+SOV_merge_designers_dec_cat = {
+	priority = 28
+
+	icon = SOV_merge_designers
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_civil_war = no
+	}
+}
+
+SOV_kill_trotsky_dec_cat = {
+	priority = 9
+
+	icon = spr_political_assassination
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_behead_the_snake
+	}
+}
+
+SOV_infiltrate_foreign_atomic_programs_dec_cat = {
+	priority = 10
+
+	icon = eng_move_to_secure_the_dominions
+
+	allowed = {
+		original_tag = SOV
+		NOT = { has_dlc = "La Resistance" }
+	}
+
+	visible = {
+		has_completed_focus = SOV_soviet_atomic_bomb_project
+	}
+}
+
+SOV_comecon_dec_cat = {
+	priority = 13
+
+	icon = SOV_civil_puppet_interaction
+	picture = GFX_decision_cat_picture_soviet_comecon
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		has_completed_focus = SOV_found_the_comecon
+	}
+}

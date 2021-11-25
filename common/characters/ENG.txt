@@ -322,9 +322,9 @@ characters={
 				original_tag = ENG
 			}
 			available = {
-				NOT = {
-					has_completed_focus = ENG_eliminate_the_upper_class
-				}
+				# NOT = {
+				# 	has_completed_focus = ENG_eliminate_the_upper_class
+				# }
 			}
 			traits = {
 				military_theorist
@@ -566,12 +566,13 @@ characters={
 			available  = {
 				if  = {
 					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_completed_focus  = ENG_no_further_appeasement 
-					}
+						# has_dlc = "Man the Guns"
+					# }
+					# NOT = {
+					# 	has_completed_focus  = ENG_no_further_appeasement 
+					# }
 					has_government  = democratic 
+					}
 				}
 			}
 			allowed  = {
@@ -689,7 +690,6 @@ characters={
 			}
 			allowed  = {
 				original_tag  = ENG
-				has_dlc = "La Resistance"
 			}
 			traits  = {
 				head_of_intelligence 
@@ -723,7 +723,6 @@ characters={
 			}
 			allowed  = {
 				original_tag  = ENG
-				has_dlc = "La Resistance"
 			}
 			traits  = {
 				mastermind_code_cracker 
