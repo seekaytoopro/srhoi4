@@ -150,7 +150,7 @@ country_event = {
 			if = {
 			limit = { 461 = { is_owned_by = FRA }
 			}
-			set_capital = 461 
+			set_capital = { state = 461 }
 		}
 		}
 	}

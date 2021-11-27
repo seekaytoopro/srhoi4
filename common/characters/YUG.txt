@@ -1,4 +1,137 @@
 characters={
+	YUG_prince_paul={
+		name=YUG_prince_paul
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_milan_stojadinovic={
+		name=YUG_milan_stojadinovic
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_milan_grol={
+		name=YUG_milan_grol
+		portraits={
+			civilian={
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_peter_ii={
+		name=YUG_peter_ii
+		portraits={
+			civilian={
+				large="GFX_portrait_yugoslavia_peter_ii_young"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ underage_monarch }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	YUG_josip_broz_tito={
+		name=YUG_josip_broz_tito
+		advisor={
+			slot = army_chief
+			idea_token = YUG_josip_broz_tito
+			allowed = {
+					original_tag = YUG
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = tito_is_not_dead_tt
+						not = {
+							has_global_flag = Tito_killed
+						}
+					}
+				}
+				traits = {
+					army_chief_morale_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1966.1.1.1"
+			id=-1
+		}
+		portraits={
+			army={
+				small="GFX_idea_YUG_josip_broz_tito"
+			}
+			civilian={
+				large="gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
+			}
+		}
+	}
+	YUG_vladimir_Cukavac={
+		name=YUG_vladimir_Cukavac
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_vladimir_cukavac"
+				small="gfx/interface/ideas/idea_YUG_vladimir_cukavac.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	YUG_ivan_gosnjak={
+		name=YUG_ivan_gosnjak
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_ivan_gosnjak"
+				small="gfx/interface/ideas/idea_YUG_ivan_gosnjak.dds"
+			}
+		}
+		corps_commander={
+			traits={ urban_assault_specialist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
 	YUG_danilo_kalafatovic={
 		name=YUG_danilo_kalafatovic
 		portraits={
@@ -7,7 +140,14 @@ characters={
 				small="gfx/interface/ideas/idea_YUG_danilo_kalafatovic.dds"
 			}
 		}
-	
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
 		advisor={
 			slot = high_command
 			idea_token = YUG_danilo_kalafatovic
@@ -33,7 +173,15 @@ characters={
 				small="gfx/interface/ideas/idea_YUG_milutin_nedic.dds"
 			}
 		}
-		
+		field_marshal={
+			traits={ thorough_planner }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
 		advisor={
 			slot = army_chief
 			idea_token = YUG_milutin_nedic
@@ -57,7 +205,14 @@ characters={
 				small="gfx/interface/ideas/idea_YUG_petar_kosic.dds"
 			}
 		}
-	
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
 		advisor={
 			slot = navy_chief
 			idea_token = YUG_petar_kosic
@@ -73,7 +228,100 @@ characters={
 				}
 		}
 	}
-
+	YUG_josef_depre={
+		name=YUG_josef_depre
+		portraits={
+			army={
+				large="GFX_portrait_yugoslavia_josef_depre"
+				small="gfx/interface/ideas/idea_YUG_josef_depre.dds"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	YUG_marijan_polic={
+		name=YUG_marijan_polic
+		portraits={
+			army={
+				large="GFX_Portrait_yugoslavia_marijan_polic"
+				small="gfx/interface/ideas/idea_YUG_marijan_polic.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy navy_career_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+		advisor={
+			cost = 100		
+			slot = theorist
+			idea_token = YUG_marijan_polic
+			ledger = navy
+				allowed = {
+					original_tag = YUG
+				}
+				
+				traits = {
+					naval_theorist
+				}
+		}
+	}
+	YUG_borivoje_mirkovic={
+		advisor={			
+			slot = high_command
+			idea_token = YUG_borivoje_mirkovic
+			ledger = air
+				allowed = {
+					original_tag = YUG
+				}
+				traits = {
+					air_bomber_interception_1
+				}
+				cost =  50
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=YUG_borivoje_mirkovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_borivoje_mirkovic"
+			}
+		}
+	}
+	YUG_dusan_simovic={
+		advisor={
+			slot = air_chief
+			idea_token = YUG_dusan_simovic
+			allowed = {
+					original_tag = YUG
+				}
+				traits = {
+					air_chief_safety_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+		name=YUG_dusan_simovic
+		portraits={
+			army={
+				small="GFX_idea_YUG_dusan_simovic"
+			}
+		}
+	}
 	YUG_draza_mihailovic={
 		advisor={
 			slot = army_chief
@@ -225,7 +473,34 @@ characters={
 			}
 		}
 	}
-
+	YUG_milovan_djilas={
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_milovan_djilas
+			available  = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						not  = {
+							has_autonomy_state  = autonomy_supervised_state
+						}
+					}
+				}
+				allowed  = {
+					original_tag  = YUG
+				}
+				traits  = {
+					democratic_reformer 
+				}
+		}
+		name=YUG_milovan_djilas
+		portraits={
+			army={
+				small="GFX_idea_YUG_milovan_djilas"
+			}
+		}
+	}
 	YUG_milan_nedic={
 		advisor={
 			slot = political_advisor
@@ -290,627 +565,45 @@ characters={
 			}
 		}
 	}
+	YUG_ivo_lola_ribar={
+		advisor={
+			slot = political_advisor
+			idea_token = YUG_ivo_lola_ribar
+			allowed  = {
+					original_tag  = YUG
+				}
+				available  = {
+					if  = {
+						limit  = {
+							has_dlc = "Man the Guns"
+						}
+						not  = {
+							has_autonomy_state  = autonomy_supervised_state
+						}
+					}
+				}
+				traits  = {
+					communist_revolutionary 
+				}
+		}
+		name=YUG_ivo_lola_ribar
+		portraits={
+			army={
+				small="GFX_idea_YUG_ivo_lola_ribar"
+			}
+		}
+	}
 
 
+	#Characters added elsewhere 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	YUG_prince_paul={
-		name="Prince Paul"
+	CRO_nikola_mandic = {
+		name=CRO_nikola_mandic
 		portraits={
 			civilian={
-				large="gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
 			}
 		}
-		country_leader={
-			ideology=despotism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	YUG_ante_pavelic={
-		name="Ante Pavelic"
-		portraits={
-			civilian={
-				large="gfx/leaders/CRO/Portrait_Croatia_Ante_Pavelic.dds"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	YUG_milan_grol={
-		name="Milan Grol"
-		portraits={
-			civilian={
-				large="gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	YUG_josip_broz_tito={
-		name="Josip Broz Tito"
-		portraits={
-			civilian={
-				large="gfx/leaders/YUG/Portrait_Yugoslavia_Josip_Broz_Tito.dds"
-			}
-		}
-		country_leader={
-			ideology=leninism
-			traits={ nationalist_symbol }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	YUG_atanas_shalapatov={
-		name="Atanas Shalapatov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_navy_7_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_navy_7"
-			}
-		}
-		navy_leader={
-			traits={ fleet_protector superior_tactician spotter fly_swatter ironside air_controller green_water_expert concealment_expert big_guns_expert ground_pounder }
-			skill=5
-			attack_skill=4
-			defense_skill=6
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	YUG_lajos_veress={
-		name="Lajos Veress"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/HUN/portrait_lajos_veress.dds"
-			}
-		}
-		field_marshal={
-			traits={ organizer trickster trait_engineer panzer_leader urban_assault_specialist logistics_wizard organisational_leader inspirational_leader panzer_expert expert_improviser }
-			skill=6
-			attack_skill=5
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	YUG_jure_francetic={
-		name="Jure Francetic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Jure_Francetic.dds"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious trait_engineer panzer_leader desert_fox trait_mountaineer hill_fighter logistics_wizard thorough_planner fortress_buster }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_nikola_stoychev={
-		name="Nikola Stoychev"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_8_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_8"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious panzer_leader logistics_wizard defensive_doctrine panzer_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=4
-			planning_skill=7
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_georgi_markov={
-		name="Georgi Markov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_17_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_17"
-			}
-		}
-		field_marshal={
-			traits={ adaptable old_guard cavalry_leader trickster ranger offensive_doctrine fast_planner inspirational_leader combined_arms_expert cavalry_expert expert_improviser }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	YUG_ivan_markov={
-		name="Ivan Markov"
-		portraits={
-			army={
-				small="GFX_Portrait_europe_generic_land_6_small"
-			}
-			army={
-				large="GFX_Portrait_europe_generic_land_6"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trait_reckless cavalry_leader trickster trait_engineer combined_arms_expert cavalry_expert scavenger expert_improviser }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	YUG_ivan_babic={
-		name="Ivan Babic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Ivan_Babic.dds"
-			}
-		}
-		field_marshal={
-			traits={ bearer_of_artillery old_guard cavalry_leader desert_fox swamp_fox hill_fighter urban_assault_specialist defensive_doctrine combined_arms_expert cavalry_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=9
-			legacy_id=-1
-		}
-	}
-	YUG_konstantin_lukash={
-		name="Konstantin Lukash"
-		portraits={
-			army={
-				small="GFX_Portrait_Europe_Generic_land_2_small"
-			}
-			army={
-				large="GFX_Portrait_Europe_Generic_land_2"
-			}
-		}
-		field_marshal={
-			traits={ organizer infantry_leader trickster commando ranger thorough_planner inspirational_leader infantry_expert camouflage_expert }
-			skill=6
-			attack_skill=4
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	YUG_franjo_simic={
-		name="Franjo Simic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_Franjo_Simic.dds"
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader ranger urban_assault_specialist logistics_wizard defensive_doctrine scavenger ambusher }
-			skill=6
-			attack_skill=4
-			defense_skill=8
-			planning_skill=1
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_nikola_mihailov_mihov={
-		name="Nikola Mihailov Mihov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_8_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_8"
-			}
-		}
-		field_marshal={
-			traits={ harsh_leader organizer infantry_leader trickster ranger offensive_doctrine thorough_planner inspirational_leader infantry_expert }
-			skill=6
-			attack_skill=6
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-	YUG_asen_nikolov={
-		name="Asen Nikolov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_17_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_17"
-			}
-		}
-		field_marshal={
-			traits={ bearer_of_artillery infantry_leader ranger logistics_wizard defensive_doctrine ambusher camouflage_expert guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=6
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_károly_beregfy={
-		name="Károly Beregfy"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/HUN/portrait_karoly_beregfy.dds"
-			}
-		}
-		field_marshal={
-			traits={ organizer infantry_leader trait_engineer ranger urban_assault_specialist logistics_wizard thorough_planner infantry_expert }
-			skill=6
-			attack_skill=4
-			defense_skill=6
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_ferenc_feketehalmyczeydner={
-		name="Ferenc Feketehalmy-Czeydner"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/HUN/portrait_ferenc_feketehalmy_czeydner.dds"
-			}
-		}
-		field_marshal={
-			traits={ inflexible_strategist infantry_leader trickster logistics_wizard unyielding_defender inspirational_leader infantry_expert expert_improviser guerilla_fighter }
-			skill=6
-			attack_skill=2
-			defense_skill=7
-			planning_skill=1
-			logistics_skill=9
-			legacy_id=-1
-		}
-	}
-	YUG_slavko_stancer={
-		name="Slavko Stancer"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_slavko_stancer.dds"
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist trickster panzer_leader desert_fox hill_fighter urban_assault_specialist panzer_expert expert_improviser }
-			skill=6
-			attack_skill=4
-			defense_skill=4
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_damian_velchev={
-		name="Damian Velchev"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_17_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_17"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery trait_reckless harsh_leader trickster panzer_leader ranger panzer_expert naval_liason camouflage_expert expert_improviser }
-			skill=6
-			attack_skill=3
-			defense_skill=3
-			planning_skill=7
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_augustin_malar={
-		name="Augustin Malar"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_Slovakia_Augustin_Malar.dds"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery trait_cautious trickster panzer_leader winter_specialist panzer_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_rafael_boban={
-		name="Rafael Boban"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_Rafael_Boban.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trickster trait_engineer panzer_leader winter_specialist panzer_expert guerilla_fighter }
-			skill=6
-			attack_skill=1
-			defense_skill=4
-			planning_skill=8
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_stefan_jurech={
-		name="Stefan Jurech"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_Stefan_Jurech.tga"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery organizer trickster trait_mountaineer hill_fighter combined_arms_expert cavalry_expert ambusher }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_anton_pulanish={
-		name="Anton Pulanish"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Anton_Pulanish_Portrait.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable harsh_leader infantry_leader skilled_staffer trickster infantry_expert expert_improviser }
-			skill=6
-			attack_skill=5
-			defense_skill=1
-			planning_skill=8
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_géza_lakatos={
-		name="Géza Lakatos"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/HUN/portrait_geza_lakatos.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader trickster commando ranger ambusher camouflage_expert expert_improviser }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	YUG_georgi_popov={
-		name="Georgi Popov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_8_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_8"
-			}
-		}
-		corps_commander={
-			traits={ organizer infantry_leader trickster desert_fox trait_mountaineer hill_fighter infantry_expert camouflage_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=9
-			legacy_id=-1
-		}
-	}
-	YUG_iván_hindy={
-		name="Iván Hindy"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/HUN/portrait_ivan_hindy.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer panzer_leader swamp_fox ranger urban_assault_specialist panzer_expert scavenger expert_improviser }
-			skill=6
-			attack_skill=4
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_stjepan_sarkotic={
-		name="Stjepan Sarkotic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Stjepan_Sarkotic.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader commando desert_fox trait_mountaineer hill_fighter ambusher skirmisher paratrooper guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-	YUG_angel_dotsev={
-		name="Angel Dotsev"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_7_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_7"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery old_guard organizer infantry_leader trickster trait_engineer ranger urban_assault_specialist infantry_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=6
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	YUG_junuz_ajanovic={
-		name="Junuz Ajanovic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_junuz_ajanovic.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable infantry_leader trickster commando jungle_rat infantry_expert }
-			skill=6
-			attack_skill=5
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_franza_karmasin={
-		name="Franza Karmasin"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/portrait_SLO_Franza_Karmasin.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader trait_engineer naval_invader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert invader_ii }
-			skill=6
-			attack_skill=4
-			defense_skill=7
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	YUG_jozef_turanec={
-		name="Jozef Turanec"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_SLO_jozef_turanec.dds"
-			}
-		}
-		corps_commander={
-			traits={ fake_skilled_staffer old_guard infantry_leader winter_specialist ranger urban_assault_specialist ambusher skirmisher guerilla_fighter }
-			skill=6
-			attack_skill=2
-			defense_skill=7
-			planning_skill=5
-			logistics_skill=5
-			legacy_id=-1
-		}
+
 	}
 }

@@ -45,7 +45,7 @@ axis_defeat = {
 		add_to_faction = SPR
 	}
 	GER = { 
-		set_capital = 355 set_politics = { ruling_party = democratic } 
+		set_capital = { state= 355 } set_politics = { ruling_party = democratic } 
 		add_popularity = { ideology = democratic popularity = 1.0 }
 		set_cosmetic_tag = GER_west_ger
 	}
