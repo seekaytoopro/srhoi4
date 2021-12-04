@@ -54,52 +54,52 @@ ideas = {
 				}
 			}
 	
-			trotskyite_plot_purged = {
-				removal_cost = -1
+			# trotskyite_plot_purged = {
+			# 	removal_cost = -1
 				
-				allowed = {
-					always = no # Added via focus
-				}
+			# 	allowed = {
+			# 		always = no # Added via focus
+			# 	}
 	
-				allowed_civil_war = {
-					has_government = communism
-				}
+			# 	allowed_civil_war = {
+			# 		has_government = communism
+			# 	}
 				
-				modifier = {
-					stability_factor = -0.05
-				}
-			}
+			# 	modifier = {
+			# 		stability_factor = -0.05
+			# 	}
+			# }
 			
-			home_of_revolution = {
-				removal_cost = -1
+			# home_of_revolution = {
+			# 	removal_cost = -1
 				
-				allowed = {
-					always = no # Added via focus
-				}
+			# 	allowed = {
+			# 		always = no # Added via focus
+			# 	}
 	
-				allowed_civil_war = {
-					has_government = communism
-				}
+			# 	allowed_civil_war = {
+			# 		has_government = communism
+			# 	}
 				
-				modifier = {
-					research_speed_factor = 0.1
-				}
-			}
+			# 	modifier = {
+			# 		research_speed_factor = 0.1
+			# 	}
+			# }
 	
-			SOV_molotov_ribbentrop_pact = {
-				removal_cost = -1
+			# SOV_molotov_ribbentrop_pact = {
+			# 	removal_cost = -1
 				
-				picture = soviet_german_friendship
+			# 	picture = soviet_german_friendship
 	
-				allowed = {
-					always = no # Added via event
-				}
-				available = { NOT = {has_war_with = GER } }
+			# 	allowed = {
+			# 		always = no # Added via event
+			# 	}
+			# 	available = { NOT = {has_war_with = GER } }
 	
-				allowed_civil_war = {
-					has_government = communism
-				}
-			}
+			# 	allowed_civil_war = {
+			# 		has_government = communism
+			# 	}
+			# }
 	
 			SOV_understaffed_bureaucracy = {
 				removal_cost = -1
@@ -1620,7 +1620,7 @@ ideas = {
 				}
 	
 				modifier = {
-					industrial_concern_cost_factor = -0.5
+					# industrial_concern_cost_factor = -0.5
 				}
 			}
 	

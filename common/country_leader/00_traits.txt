@@ -2051,19 +2051,19 @@ experience_gain_army = 0.09
 	
 	test_stuff = {
 			sprite = 5
-	modifier_army_sub_unit_paratrooper_defence_factor = 0.2
+	# modifier_army_sub_unit_paratrooper_defence_factor = 0.2
 	experience_gain_army = 0.09
 		command_cap = @tier2	
 	}
 		test_stuff1 = {
 			sprite = 5
-	modifier_army_sub_unit_paratrooper_defence_factor = 0.1
+	# modifier_army_sub_unit_paratrooper_defence_factor = 0.1
 	experience_gain_army = 0.09
 		command_cap = @tier2	
 	}
 		test_stuff2 = {
 			sprite = 5
-	modifier_army_sub_unit_paratrooper_defence_factor = 0.15
+	# modifier_army_sub_unit_paratrooper_defence_factor = 0.15
 	experience_gain_army = 0.09
 		command_cap = @tier2	
 	}
