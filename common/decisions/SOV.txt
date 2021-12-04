@@ -523,146 +523,146 @@ SOV_great_patriotic_war = {
 
 
 	#217 "Stalingrad"
-	SOV_hold_stalingrad = {
+	# SOV_hold_stalingrad = {
 
-		icon = generic_civil_support
+	# 	icon = generic_civil_support
 
-		allowed = {
-			original_tag = SOV
-		}
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
 
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 217 }
-		}
+	# 	#Fail trigger
+	# 	available = {
+	# 		NOT = { controls_state = 217 }
+	# 	}
 
-		days_mission_timeout = 180
+	# 	days_mission_timeout = 180
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 
-		is_good = yes
+	# 	is_good = yes
 
-		activation = {
-			has_war_with = GER
-			217 = {
-				is_controlled_by = SOV
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = GER
-						OWNER = { tag = SOV }
-					}
-					NOT = { is_fully_controlled_by = SOV }
-				}
-			}
-		}
+	# 	activation = {
+	# 		has_war_with = GER
+	# 		217 = {
+	# 			is_controlled_by = SOV
+	# 			OR = {
+	# 				any_neighbor_state = {
+	# 					is_controlled_by = GER
+	# 					OWNER = { tag = SOV }
+	# 				}
+	# 				NOT = { is_fully_controlled_by = SOV }
+	# 			}
+	# 		}
+	# 	}
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			217 = { save_event_target_as = state }			
-			country_event = wtt_soviet_hold_city.1
-		}
-		#Fail
-		complete_effect = {
-			217 = { save_event_target_as = state }			
-			country_event = wtt_soviet_hold_city.2
-		}
-	}
+	# 	#Success
+	# 	timeout_effect = {
+	# 		add_stability = 0.05
+	# 		add_war_support = 0.05
+	# 		217 = { save_event_target_as = state }			
+	# 		country_event = wtt_soviet_hold_city.1
+	# 	}
+	# 	#Fail
+	# 	complete_effect = {
+	# 		217 = { save_event_target_as = state }			
+	# 		country_event = wtt_soviet_hold_city.2
+	# 	}
+	# }
 	
-	#195 "Leningrad"
-	SOV_hold_leningrad = {
+	# #195 "Leningrad"
+	# SOV_hold_leningrad = {
 
-		icon = generic_civil_support
+	# 	icon = generic_civil_support
 
-		allowed = {
-			original_tag = SOV
-		}
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
 
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 195 }
-		}
+	# 	#Fail trigger
+	# 	available = {
+	# 		NOT = { controls_state = 195 }
+	# 	}
 
-		days_mission_timeout = 180
+	# 	days_mission_timeout = 180
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 
-		is_good = yes
+	# 	is_good = yes
 
-		activation = {
-			has_war_with = GER
-			195 = {
-				is_controlled_by = SOV
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = GER
-						OWNER = { tag = SOV }
-					}
-					NOT = { is_fully_controlled_by = SOV }
-				}
-			}
-		}
+	# 	activation = {
+	# 		has_war_with = GER
+	# 		195 = {
+	# 			is_controlled_by = SOV
+	# 			OR = {
+	# 				any_neighbor_state = {
+	# 					is_controlled_by = GER
+	# 					OWNER = { tag = SOV }
+	# 				}
+	# 				NOT = { is_fully_controlled_by = SOV }
+	# 			}
+	# 		}
+	# 	}
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.3
-		}
-		#Fail
-		complete_effect = {
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.4
-		}
-	}
+	# 	#Success
+	# 	timeout_effect = {
+	# 		add_stability = 0.05
+	# 		add_war_support = 0.05
+	# 		195 = { save_event_target_as = state }
+	# 		country_event = wtt_soviet_hold_city.3
+	# 	}
+	# 	#Fail
+	# 	complete_effect = {
+	# 		195 = { save_event_target_as = state }
+	# 		country_event = wtt_soviet_hold_city.4
+	# 	}
+	# }
 
-	#219 "Moscow"
-	SOV_hold_moscow = {
+	# #219 "Moscow"
+	# SOV_hold_moscow = {
 
-		icon = generic_civil_support
+	# 	icon = generic_civil_support
 
-		allowed = {
-			original_tag = SOV
-		}
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
 
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 219 }
-		}
+	# 	#Fail trigger
+	# 	available = {
+	# 		NOT = { controls_state = 219 }
+	# 	}
 
-		days_mission_timeout = 180
+	# 	days_mission_timeout = 180
 
-		fire_only_once = yes
+	# 	fire_only_once = yes
 
-		is_good = yes
+	# 	is_good = yes
 
-		activation = {
-			has_war_with = GER
-			219 = {
-				is_controlled_by = SOV
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = GER
-						OWNER = { tag = SOV }
-					}
-					NOT = { is_fully_controlled_by = SOV }
-				}
-			}
-		}
+	# 	activation = {
+	# 		has_war_with = GER
+	# 		219 = {
+	# 			is_controlled_by = SOV
+	# 			OR = {
+	# 				any_neighbor_state = {
+	# 					is_controlled_by = GER
+	# 					OWNER = { tag = SOV }
+	# 				}
+	# 				NOT = { is_fully_controlled_by = SOV }
+	# 			}
+	# 		}
+	# 	}
 
-		#Success
-		timeout_effect = {
-			add_stability = 0.10
-			add_war_support = 0.10
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.5
-		}
-		#Fail
-		complete_effect = {
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.6
-		}
-	}
+	# 	#Success
+	# 	timeout_effect = {
+	# 		add_stability = 0.10
+	# 		add_war_support = 0.10
+	# 		219 = { save_event_target_as = state }
+	# 		country_event = wtt_soviet_hold_city.5
+	# 	}
+	# 	#Fail
+	# 	complete_effect = {
+	# 		219 = { save_event_target_as = state }
+	# 		country_event = wtt_soviet_hold_city.6
+	# 	}
+	# }
 }

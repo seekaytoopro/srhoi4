@@ -1,26 +1,4 @@
 characters={
-MAN_guan_xingde={
-		name=MAN_guan_xingde
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_4"
-			}
-		}
-		advisor={	
-			slot = army_chief
-			idea_token = MAN_guan_xingde
-			allowed = {
-				original_tag = MAN
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
 		MAN_yonimitsu_kasahara={
 		name=MAN_yonimitsu_kasahara
 		portraits={

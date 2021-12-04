@@ -17,12 +17,12 @@ characters={
 		name="Jozef Tiso"
 		portraits={
 			civilian={
-				large="gfx/leaders/SLO/Portrait_Slovakia_Jozef_Tiso.dds"
+				large="GFX_portrait_europe_generic_8"
 			}
 		}
 		country_leader={
 			ideology=nazism
-			traits={ anti_communist_crusader }
+			traits={ }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -31,7 +31,7 @@ characters={
 		name="Klement Gottwald"
 		portraits={
 			civilian={
-				large="gfx/leaders/CZE/Portrait_Czech_Klement_Gottwald.dds"
+				large="GFX_portrait_europe_generic_8"
 			}
 		}
 		country_leader={

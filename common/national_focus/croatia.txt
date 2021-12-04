@@ -593,7 +593,7 @@
 				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
 			}
 			CRO = { add_ideas = yugoslav_partisans }
-			CRO = { set_capital = 109 }
+			CRO = { set_capital = { state = 109 } }
 		}
 	}
 	focus = {

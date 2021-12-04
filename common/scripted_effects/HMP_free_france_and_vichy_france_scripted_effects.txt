@@ -82,7 +82,7 @@ add_ideas =  vichy_trade
 ###SOUTHERN FRANCE###
 transfer_state = 26
 add_state_core = 26
-set_capital = 26
+set_capital = { state = 26 }
 transfer_state = 33 
 add_state_core = 33 
 transfer_state = 20

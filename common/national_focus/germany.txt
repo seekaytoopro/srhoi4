@@ -1636,7 +1636,7 @@ focus_tree = {
 							ENG = { add_to_faction = USA
 								# add_to_faction = MEX add_to_faction = BRA
 							}
-							if = { limit = { GER { is_ai = no } } POL = { load_oob = "POL_spawn" } }
+							if = { limit = { GER = { is_ai = no } } POL = { load_oob = "POL_spawn" } }
 							FIN = { load_oob = "FIN_spawn"}
 			}
 			# SOV = {

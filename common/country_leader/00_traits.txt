@@ -1515,6 +1515,15 @@ tank_refurbishment_plant = { #NSB
 			}
 		}
 	}
+
+	tank_manufacturer = {
+		random = no
+		equipment_bonus = {
+			armor = {
+				soft_attack = 0.05 reliability = 0.05 
+			}
+		}
+	}
 	
 	medium_tank_manufacturer = {
 		random = no
