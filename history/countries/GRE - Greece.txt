@@ -72,49 +72,49 @@ set_popularities = {
 
 set_stability = 0.75
 
-create_country_leader = {
-	name = "Ioannis Metaxas"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
-	picture = "Portrait_Greece_Ioannis_Metaxas.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Ioannis Metaxas"
+# 	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+# 	picture = "Portrait_Greece_Ioannis_Metaxas.dds"
+# 	expire = "1965.1.1"
+# 	ideology = despotism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Markos Vafiadis"
-	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
-	picture = "Portrait_Greece_Markos_Vafiadis.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Markos Vafiadis"
+# 	desc = "POLITICS_MARKOS_VAFIADIS_DESC"
+# 	picture = "Portrait_Greece_Markos_Vafiadis.dds"
+# 	expire = "1965.1.1"
+# 	ideology = marxism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Konstantinos Tsaldaris"
-	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Konstantinos Tsaldaris"
+# 	desc = "POLITICS_KONSTANTINOS_TSALDARIS_DESC"
+# 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
+# 	expire = "1965.1.1"
+# 	ideology = conservatism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Georgios Kosmidis"
-	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Georgios Kosmidis"
+# 	desc = "POLITICS_GEORGIOS_KOSMIDIS_DESC"
+# 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+# 	expire = "1965.1.1"
+# 	ideology = nazism
+# 	traits = {
+# 		#
+# 	}
+# }
 
 
 # create_corps_commander = {
@@ -127,35 +127,35 @@ create_country_leader = {
 # 	planning_skill = 3
 # 	logistics_skill = 3
 # }
-recruit_character = GRE_alexandros_papagos
+# recruit_character = GRE_alexandros_papagos
 recruit_character = GRE_ioannis_metaxas
 recruit_character = GRE_konstantinos_tsaldaris
 recruit_character = GRE_alexander_brown
 recruit_character = GRE_johannes_williams
-recruit_character = GRE_nelson_mello
-recruit_character = GRE_françois_darlan
-recruit_character = GRE_joão_baptista_de_mattos
-recruit_character = GRE_markos_drakos
-recruit_character = GRE_charles_de_gaulle
-recruit_character = GRE_king_haakon_vii
-recruit_character = GRE_alphonse_juin
-recruit_character = GRE_izaak_reijnders
-recruit_character = GRE_henri_winkelman
-recruit_character = GRE_jean_de_lattre_de_tassigny
-recruit_character = GRE_philippe_leclerc
-recruit_character = GRE_petrus_wilhelmus_best
-recruit_character = GRE_eurico_gaspar_dutra
-recruit_character = GRE_mariepierre_koenig
-recruit_character = GRE_antoinemariebenoît_besson
-recruit_character = GRE_godfried_van_voorst_tot_voorst
-recruit_character = GRE_euclides_zenobio_da_costa
-recruit_character = GRE_mascarenhas_de_morais
-recruit_character = GRE_carl_gustav_fleischer
-recruit_character = GRE_otto_ruge
-recruit_character = GRE_charalambos_katsimitros
-recruit_character = GRE_kristian_laake
-recruit_character = GRE_henri_giraud
-recruit_character = GRE_georges_catroux
+# recruit_character = GRE_nelson_mello
+# recruit_character = GRE_françois_darlan
+# recruit_character = GRE_joão_baptista_de_mattos
+# recruit_character = GRE_markos_drakos
+# recruit_character = GRE_charles_de_gaulle
+# recruit_character = GRE_king_haakon_vii
+# recruit_character = GRE_alphonse_juin
+# recruit_character = GRE_izaak_reijnders
+# recruit_character = GRE_henri_winkelman
+# recruit_character = GRE_jean_de_lattre_de_tassigny
+# recruit_character = GRE_philippe_leclerc
+# recruit_character = GRE_petrus_wilhelmus_best
+# recruit_character = GRE_eurico_gaspar_dutra
+# recruit_character = GRE_mariepierre_koenig
+# recruit_character = GRE_antoinemariebenoît_besson
+# recruit_character = GRE_godfried_van_voorst_tot_voorst
+# recruit_character = GRE_euclides_zenobio_da_costa
+# recruit_character = GRE_mascarenhas_de_morais
+# recruit_character = GRE_carl_gustav_fleischer
+# recruit_character = GRE_otto_ruge
+# recruit_character = GRE_charalambos_katsimitros
+# recruit_character = GRE_kristian_laake
+# recruit_character = GRE_henri_giraud
+# recruit_character = GRE_georges_catroux
 
 ### VARIANTS ###
 # 1936 Start #
