@@ -35,9 +35,9 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	basic_heavy_tank = 1  # PLACEHOLDER	
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1  # PLACEHOLDER	
 	early_fighter = 1
 	naval_bomber1 = 1
 	early_bomber = 1
@@ -84,21 +84,21 @@ add_equipment_to_stockpile = {
 	amount = 230
 	producer = CAN
 }
-add_equipment_to_stockpile = {
-	type = heavy_tank_equipment_1
-	amount = 400
-	producer = CAN
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_2
-	amount = 800
-	producer = CAN
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 400
-	producer = CAN
-} 
+# add_equipment_to_stockpile = {
+# 	type = heavy_tank_equipment_1
+# 	amount = 400
+# 	producer = CAN
+# }
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_2
+# 	amount = 800
+# 	producer = CAN
+# }
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_1
+# 	amount = 400
+# 	producer = CAN
+# } 
 
 add_equipment_to_stockpile = {
 type = anti_air_equipment_1
@@ -165,49 +165,49 @@ set_popularities = {
 	communism = 0
 }
 
-create_country_leader = {
-	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Mackenzie King"
+# 	desc = "POLITICS_MACKENZIE_KING_DESC"
+# 	picture = "Portrait_Canada_Mackenzie_King.dds"
+# 	expire = "1965.1.1"
+# 	ideology = liberalism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Adrien Arcand"
+# 	desc = "POLITICS_ADRIEN_ARCAND_DESC"
+# 	picture = "GFX_CAN_adrien_arcand"
+# 	expire = "1965.1.1"
+# 	ideology = nazism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Tim Buck"
+# 	desc = "POLITICS_TIM_BUCK_DESC"
+# 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+# 	expire = "1965.1.1"
+# 	ideology = marxism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "J. S. Woodsworth"
+# 	desc = "POLITICS_JS_WOODSWORTH_DESC"
+# 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+# 	expire = "1965.1.1"
+# 	ideology = centrism
+# 	traits = {
+# 		#
+# 	}
+# }
 
 set_convoys = 100
 set_stability = 0.75
@@ -349,27 +349,27 @@ recruit_character = CAN_c_d_howe
 # 		logistics_skill = 2
 # }
 
-create_navy_leader = {
-	name = "Leonard W. Murray"
-	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
+# create_navy_leader = {
+# 	name = "Leonard W. Murray"
+# 	gfx = "GFX_CAN_leonard_warren_murray"
+# 	traits = { }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	maneuvering_skill = 3
+# 	coordination_skill = 3
+# }
 
-create_navy_leader = {
-	name = "Harry DeWolf"
-	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician bold fleet_protector destroyer_leader cruiser_captain hunter_killer search_pattern_expert fly_swatter air_controller }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
+# create_navy_leader = {
+# 	name = "Harry DeWolf"
+# 	gfx = "GFX_CAN_harry_dewolf"
+# 	traits = { superior_tactician bold fleet_protector destroyer_leader cruiser_captain hunter_killer search_pattern_expert fly_swatter air_controller }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 5
+# }
 
 ### VARIANTS ###
 # 1936 Start #

@@ -35,9 +35,9 @@ set_technology = {
 	interwar_antiair = 1
 	interwar_antitank = 1
 	gwtank = 1
-	basic_light_tank = 1
-	basic_heavy_tank = 1
-	improved_light_tank = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1
 	early_fighter = 1
 	fighter1 = 1
 	naval_bomber1 = 1
@@ -73,21 +73,21 @@ add_equipment_to_stockpile = {
 	amount = 8000
 	producer = FRA
 } 
-add_equipment_to_stockpile = {
-	type = gw_tank_equipment
-	amount = 950
-	producer = FRA
-} 
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 750
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_2
-	amount = 1200
-	producer = FRA
-}
+# add_equipment_to_stockpile = {
+# 	type = gw_tank_equipment
+# 	amount = 950
+# 	producer = FRA
+# } 
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_1
+# 	amount = 750
+# 	producer = FRA
+# }
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_2
+# 	amount = 1200
+# 	producer = FRA
+# }
 
 add_equipment_to_stockpile = {
 type = anti_air_equipment_1
@@ -99,11 +99,11 @@ add_equipment_to_stockpile = {
 	amount = 4000
 	producer = FRA
 } 
-add_equipment_to_stockpile = {
-	type = heavy_tank_equipment_1
-	amount = 520
-	producer = FRA
-}
+# add_equipment_to_stockpile = {
+# 	type = heavy_tank_equipment_1
+# 	amount = 520
+# 	producer = FRA
+# }
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -172,38 +172,38 @@ add_ideas = {
 }
 
 #Order matters here Daladier will start as leaders because added last
-create_country_leader = {
-	name = "Édouard Daladier"
-	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
-	picture = "Portrait_France_Edouard_Daladier.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		stout_defender
-	}
-}
+# create_country_leader = {
+# 	name = "Édouard Daladier"
+# 	desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+# 	picture = "Portrait_France_Edouard_Daladier.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		stout_defender
+# 	}
+# }
 
-create_country_leader = {
-	name = "Maurice Thorez"
-	desc = "POLITICS_MAURICE_THOREZ_DESC"
-	picture = "GFX_portrait_fra_maurice_thorez"
-	expire = "1965.1.1"
-	ideology = 	stalinism
-	traits = {
+# create_country_leader = {
+# 	name = "Maurice Thorez"
+# 	desc = "POLITICS_MAURICE_THOREZ_DESC"
+# 	picture = "GFX_portrait_fra_maurice_thorez"
+# 	expire = "1965.1.1"
+# 	ideology = 	stalinism
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 
-create_country_leader = {
-	name = "Philippe Pétain"
-	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-	picture = "Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
+# create_country_leader = {
+# 	name = "Philippe Pétain"
+# 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+# 	picture = "Portrait_France_Philippe_Petain.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
 		
-	}
-}
+# 	}
+# }
 
 # create_corps_commander = {
 # 	name = "Jean de Lattre de Tassigny"
@@ -413,16 +413,16 @@ recruit_character = FRA_armaments_fra
 recruit_character = FRA_rene_prioux
 recruit_character = FRA_pierre_alombert_goget
 
-create_navy_leader = {
-	name = "François Darlan"
-		picture = "Portrait_France_Francois_Darlan.dds"
-	traits = { spotter blockade_runner bold concealment_expert superior_tactician }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
+# create_navy_leader = {
+# 	name = "François Darlan"
+# 		picture = "Portrait_France_Francois_Darlan.dds"
+# 	traits = { spotter blockade_runner bold concealment_expert superior_tactician }
+# 	skill = 3
+# 	attack_skill = 2
+# 	defense_skill = 2
+# 	maneuvering_skill = 3
+# 	coordination_skill = 3
+# }
 
 ### VARIANTS ###
 # 1936 Start #

@@ -228,13 +228,13 @@ recruit_character = EFR_VIC_moralle
 recruit_character = EFR_jean_de_laborde
 recruit_character = EFR_marcel_bruno_gensoul
 
-create_country_leader = {
-	name = "Phillipe Pétain"
-	desc = "POLITICS_PHILLIPE_PETAIN_DESC"
-	picture = "gfx/leaders/EFR/Portrait_France_Philippe_Petain.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		lion_of_verdun		
-	}
-}
+# create_country_leader = {
+# 	name = "Phillipe Pétain"
+# 	desc = "POLITICS_PHILLIPE_PETAIN_DESC"
+# 	picture = "gfx/leaders/EFR/Portrait_France_Philippe_Petain.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 		lion_of_verdun		
+# 	}
+# }

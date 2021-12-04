@@ -1,9 +1,5 @@
 ﻿division_template = {
-	name = "Trigonikó Pezikoú" 				# Triangular Infantry Division
-	division_names_group = GRE_INF_01
-	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
-	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
-	# Note: sources have all Greek regular infantry as mountain-trained
+	name = "Trigonikó Pezikoú"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -17,9 +13,7 @@
 	}
 }
 division_template = {
-	name = "Tetrágono Pezikoú" 				# Square Infantry Division
-	division_names_group = GRE_MNT_01
-	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	name = "Tetrágono Pezikoú"
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -32,9 +26,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Merarchía Ippikoú" 			# Cavalry Division
-	division_names_group = GRE_CAV_01
-
+	name = "Merarchía Ippikoú"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -44,14 +36,10 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+		recon = { x = 0 y = 0 }
 	}
 }
 
-##### No Air units -- Greece did not start to modernize air force until 1937 #####
-
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -62,13 +50,4 @@ instant_effect = {
 		progress = 0.00
 		efficiency = 0.00
 	}
-	# add_equipment_production = {
-	# 	equipment = {
-	# 		type = support_equipment_1
-	# 		creator = "GRE"
-	# 	}
-	# 	requested_factories = 1
-	# 	progress = 0.56
-	# 	efficiency = 100
-	# }
 }
