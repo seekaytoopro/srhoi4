@@ -86,21 +86,21 @@ add_equipment_to_stockpile = {
 	amount = 250
 	producer = SAF
 }
-add_equipment_to_stockpile = {
-	type = heavy_tank_equipment_1
-	amount = 300
-	producer = SAF
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_2
-	amount = 400
-	producer = SAF
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 200
-	producer = SAF
-} 
+# add_equipment_to_stockpile = {
+# 	type = heavy_tank_equipment_1
+# 	amount = 300
+# 	producer = SAF
+# }
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_2
+# 	amount = 400
+# 	producer = SAF
+# }
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_1
+# 	amount = 200
+# 	producer = SAF
+# } 
 
 if = {
 	limit = {

@@ -303,49 +303,49 @@ add_to_faction = RAJ
 
 # Order matters - here Chamberlain becomes starting leader
 
-create_country_leader = {
-	name = "Winston Churchill"
-	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
-	picture = "Portrait_Britain_Winston_Churchill.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
-	}
-}
+# create_country_leader = {
+# 	name = "Winston Churchill"
+# 	desc = "POLITICS_WINSTON_CHURCHILL_DESC"
+# 	picture = "Portrait_Britain_Winston_Churchill.dds"
+# 	expire = "1965.1.1"
+# 	ideology = conservatism
+# 	traits = {
+# 		#traits here need to also be added to events britain.9 and britain.10. Don't ask why.
+# 	}
+# }
 
 
-create_country_leader = {
-	name = "Stanley Baldwin"
-	desc = "POLITICS_STANLEY_BALDWIN_DESC"
-	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
-	expire = "1938.1.1"
-	ideology = liberalism
-	traits = {
-		conservative_grandee
-	}
-}
+# create_country_leader = {
+# 	name = "Stanley Baldwin"
+# 	desc = "POLITICS_STANLEY_BALDWIN_DESC"
+# 	picture = "gfx//leaders//ENG//Portrait_Britain_Stanley_Baldwin.dds"
+# 	expire = "1938.1.1"
+# 	ideology = liberalism
+# 	traits = {
+# 		conservative_grandee
+# 	}
+# }
 
 
-create_country_leader = {
-	name = "Oswald Mosley"
-	desc = "POLITICS_OSWALD_MOSLEY_DESC"
-	picture = "Portrait_Britain_Oswald_Mosley.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
+# create_country_leader = {
+# 	name = "Oswald Mosley"
+# 	desc = "POLITICS_OSWALD_MOSLEY_DESC"
+# 	picture = "Portrait_Britain_Oswald_Mosley.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 	}
+# }
 
-create_country_leader = {
-	name = "Harry Pollitt"
-	desc = "POLITICS_HARRY_POLLITT_DESC"
-	picture = "portrait_eng_harry_pollitt.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-	}
-}
+# create_country_leader = {
+# 	name = "Harry Pollitt"
+# 	desc = "POLITICS_HARRY_POLLITT_DESC"
+# 	picture = "portrait_eng_harry_pollitt.dds"
+# 	expire = "1965.1.1"
+# 	ideology = leninism
+# 	traits = {
+# 	}
+# }
 
 
 # create_field_marshal = {
@@ -648,17 +648,17 @@ recruit_character = ENG_ernest_bevin
 recruit_character = ENG_stewart_menzies
 recruit_character = ENG_alan_turing
 
-create_navy_leader = {
-	name = "James Fownes Somerville" # Aristocrat
-	id = 983
-	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
-	traits = { superior_tactician spotter air_controller blue_water_expert }
-	skill = 6
-	attack_skill = 6
-	defense_skill = 3
-	maneuvering_skill = 7
-	coordination_skill = 8
-}
+# create_navy_leader = {
+# 	name = "James Fownes Somerville" # Aristocrat
+# 	id = 983
+# 	picture = "Portrait_Britain_James_Fownes_Somerville.dds"
+# 	traits = { superior_tactician spotter air_controller blue_water_expert }
+# 	skill = 6
+# 	attack_skill = 6
+# 	defense_skill = 3
+# 	maneuvering_skill = 7
+# 	coordination_skill = 8
+# }
 # create_navy_leader = {
 # 	name = "Henry Harwood" # Aristocrat
 # 	id = 984

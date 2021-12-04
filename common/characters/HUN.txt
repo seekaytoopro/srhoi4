@@ -84,151 +84,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	HUN_jure_francetic={
-		name="Jure Francetic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Jure_Francetic.dds"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious trait_engineer panzer_leader desert_fox trait_mountaineer hill_fighter logistics_wizard thorough_planner fortress_buster }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	HUN_nikola_stoychev={
-		name="Nikola Stoychev"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_11_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_11"
-			}
-		}
-		field_marshal={
-			traits={ trait_cautious panzer_leader logistics_wizard defensive_doctrine panzer_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=4
-			planning_skill=7
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	HUN_georgi_markov={
-		name="Georgi Markov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_17_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_17"
-			}
-		}
-		field_marshal={
-			traits={ adaptable old_guard cavalry_leader trickster ranger offensive_doctrine fast_planner inspirational_leader combined_arms_expert cavalry_expert expert_improviser }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	HUN_ivan_markov={
-		name="Ivan Markov"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_14_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_14"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trait_reckless cavalry_leader trickster trait_engineer combined_arms_expert cavalry_expert scavenger expert_improviser }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	HUN_ivan_babic={
-		name="Ivan Babic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Ivan_Babic.dds"
-			}
-		}
-		field_marshal={
-			traits={ bearer_of_artillery old_guard cavalry_leader desert_fox swamp_fox hill_fighter urban_assault_specialist defensive_doctrine combined_arms_expert cavalry_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=9
-			legacy_id=-1
-		}
-	}
-	
-		HUN_shvoy_kalman={
-		name=HUN_shvoy_kalman
-		portraits={
-			army={
-				small=GFX_idea_HUN_shvoy_kalman
-			}
-		}
-		advisor={
-			cost = 100
-			slot = theorist
-			idea_token = HUN_shvoy_kalman
-			ledger = army
-			allowed = {
-				original_tag = HUN
-			}
-			
-			traits = {
-				military_theorist
-			}
-		}
-	}
-	
-	HUN_konstantin_lukash={
-		name="Konstantin Lukash"
-		portraits={
-			army={
-				small="GFX_portrait_europe_generic_land_15_small"
-			}
-			army={
-				large="GFX_portrait_europe_generic_land_15"
-			}
-		}
-		field_marshal={
-			traits={ organizer infantry_leader trickster commando ranger thorough_planner inspirational_leader infantry_expert camouflage_expert }
-			skill=6
-			attack_skill=4
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	
-	
 	HUN_ferenc_szombathelyi={
 		name=HUN_ferenc_szombathelyi
 		portraits={
@@ -249,28 +104,6 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}
-	}
-	
-	
-	HUN_franjo_simic={
-		name="Franjo Simic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_Franjo_Simic.dds"
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader ranger urban_assault_specialist logistics_wizard defensive_doctrine scavenger ambusher }
-			skill=6
-			attack_skill=4
-			defense_skill=8
-			planning_skill=1
-			logistics_skill=6
-			legacy_id=-1
 		}
 	}
 	
@@ -402,26 +235,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	HUN_slavko_stancer={
-		name="Slavko Stancer"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_slavko_stancer.dds"
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist trickster panzer_leader desert_fox hill_fighter urban_assault_specialist panzer_expert expert_improviser }
-			skill=6
-			attack_skill=4
-			defense_skill=4
-			planning_skill=6
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
 	
 	
 	HUN_gusztav_jany={
@@ -491,87 +304,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	HUN_augustin_malar={
-		name="Augustin Malar"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_Slovakia_Augustin_Malar.dds"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery trait_cautious trickster panzer_leader winter_specialist panzer_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	HUN_rafael_boban={
-		name="Rafael Boban"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_Rafael_Boban.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trickster trait_engineer panzer_leader winter_specialist panzer_expert guerilla_fighter }
-			skill=6
-			attack_skill=1
-			defense_skill=4
-			planning_skill=8
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	HUN_stefan_jurech={
-		name="Stefan Jurech"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_Stefan_Jurech.tga"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery organizer trickster trait_mountaineer hill_fighter combined_arms_expert cavalry_expert ambusher }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	HUN_anton_pulanish={
-		name="Anton Pulanish"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Anton_Pulanish_Portrait.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable harsh_leader infantry_leader skilled_staffer trickster infantry_expert expert_improviser }
-			skill=6
-			attack_skill=5
-			defense_skill=1
-			planning_skill=8
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	
+
 	HUN_henrik_werth={
 		name=HUN_henrik_werth
 		portraits={
@@ -756,28 +489,6 @@ characters={
 			}
 		}
 	}
-
-	
-	HUN_stjepan_sarkotic={
-		name="Stjepan Sarkotic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/Portrait_Stjepan_Sarkotic.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader commando desert_fox trait_mountaineer hill_fighter ambusher skirmisher paratrooper guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=6
-			planning_skill=6
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
 	HUN_angel_dotsev={
 		name="Angel Dotsev"
 		portraits={
@@ -795,66 +506,6 @@ characters={
 			defense_skill=6
 			planning_skill=4
 			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	HUN_junuz_ajanovic={
-		name="Junuz Ajanovic"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/YUG/r56_portrait_CRO_junuz_ajanovic.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable infantry_leader trickster commando jungle_rat infantry_expert }
-			skill=6
-			attack_skill=5
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	HUN_franza_karmasin={
-		name="Franza Karmasin"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/portrait_SLO_Franza_Karmasin.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader trait_engineer naval_invader trait_mountaineer hill_fighter urban_assault_specialist infantry_expert invader_ii }
-			skill=6
-			attack_skill=4
-			defense_skill=7
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	HUN_jozef_turanec={
-		name="Jozef Turanec"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/CZE/Portrait_SLO_jozef_turanec.dds"
-			}
-		}
-		corps_commander={
-			traits={ fake_skilled_staffer old_guard infantry_leader winter_specialist ranger urban_assault_specialist ambusher skirmisher guerilla_fighter }
-			skill=6
-			attack_skill=2
-			defense_skill=7
-			planning_skill=5
-			logistics_skill=5
 			legacy_id=-1
 		}
 	}
