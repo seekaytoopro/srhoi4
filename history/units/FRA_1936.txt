@@ -608,66 +608,66 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
-	division = {
-		location = 11420
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 11420
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 8187
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 8187
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 10943
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 10943
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 3402
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 3402
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 3447
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-	division = {
-		location = 3447
-		division_template = "Mediums"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
+	# division = {
+	# 	location = 11420
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 11420
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 8187
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 8187
+	# 	division_template = "Division Légère Mécanique"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 10943
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 10943
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 3402
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 3402
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 3447
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
+	# division = {
+	# 	location = 3447
+	# 	division_template = "Mediums"
+	# 	start_experience_factor = 0.3
+	# 	start_equipment_factor = 0.01
+	# }
 }
 
 #########################

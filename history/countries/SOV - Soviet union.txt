@@ -256,7 +256,7 @@ set_variable = { SOV_paranoia_inspection_re_enable_days = 180 } #Inpsection deci
 set_variable = { SOV_paranoia_inspection_remove_days = 7 } #Inspection decisions time to complete
 set_variable = { SOV_paranoia_inspection_decision_cost = 50 } #Inspection decisions cost
 
-country_event = { id = NSB_soviet_paranoia_system_events.01 days = 90 random_days = 10 } # EVENT ACTIVATING THE PARANOIA SYSTEM
+# country_event = { id = NSB_soviet_paranoia_system_events.01 days = 90 random_days = 10 } # EVENT ACTIVATING THE PARANOIA SYSTEM
 
 # Civil war preparation 
 set_variable = { SOV_army_framejob_decision_cost = 25 } #Frame general decisions cost
@@ -511,7 +511,7 @@ add_ideas = {
 	closed_economy
 	production_targets_idea
 	limited_conscription
-	SOV_genrikh_yagoda #NKVD Chief (political advisor)
+	# SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
 
 create_country_leader = {
@@ -1129,7 +1129,7 @@ recruit_character = SOV_vitaly_primakov
 #Not available at game start
 recruit_character = SOV_vasily_korzh
 recruit_character = SOV_sidor_kovpak
-recruit_character = SOV_lev_dovator
+# recruit_character = SOV_lev_dovator
 recruit_character = SOV_pavel_rybalko
 
 ### VARIANTS ###

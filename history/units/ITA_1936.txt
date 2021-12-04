@@ -303,51 +303,51 @@ units = {
 		start_experience_factor = 0.3 
 		start_equipment_factor = 0.50
 	}
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 7206 
-		division_template = "Mediums" 
-		start_experience_factor = 0.3
-	} 
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 7130 
-		division_template = "Mediums" 
-		start_experience_factor = 0.3 
-	} 
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 1463 
-		division_template = "Mediums" 
-		start_experience_factor = 0.3
-	} 
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 9823 
-		division_template = "Mediums" 
-		start_experience_factor = 0.3
-	}
-	division = { # 
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 4136 
-		division_template = "Mediums" 
-		start_experience_factor = 0.3
-	} 
+	# division = { # 
+	# 	division_name = {
+	# 		is_name_ordered = yes
+	# 		name_order = 5
+	# 	}
+	# 	location = 7206 
+	# 	division_template = "Mediums" 
+	# 	start_experience_factor = 0.3
+	# } 
+	# division = { # 
+	# 	division_name = {
+	# 		is_name_ordered = yes
+	# 		name_order = 5
+	# 	}
+	# 	location = 7130 
+	# 	division_template = "Mediums" 
+	# 	start_experience_factor = 0.3 
+	# } 
+	# division = { # 
+	# 	division_name = {
+	# 		is_name_ordered = yes
+	# 		name_order = 5
+	# 	}
+	# 	location = 1463 
+	# 	division_template = "Mediums" 
+	# 	start_experience_factor = 0.3
+	# } 
+	# division = { # 
+	# 	division_name = {
+	# 		is_name_ordered = yes
+	# 		name_order = 5
+	# 	}
+	# 	location = 9823 
+	# 	division_template = "Mediums" 
+	# 	start_experience_factor = 0.3
+	# }
+	# division = { # 
+	# 	division_name = {
+	# 		is_name_ordered = yes
+	# 		name_order = 5
+	# 	}
+	# 	location = 4136 
+	# 	division_template = "Mediums" 
+	# 	start_experience_factor = 0.3
+	# } 
 
 
 	### Armata dell'Africa Orientale Italiana ###

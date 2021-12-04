@@ -151,25 +151,25 @@ characters = {
  #     #  #   #   #    #    #        #        #       #    #  #    #  #       #   #   #    # 
  #     #  #    #  #    #    #        #######  ######  #    #  #####   ######  #    #   ####  
                                                                                              
-	SOV_enrique_lister={
-		name = SPR_enrique_lister
-		portraits={
-			army={
-				large="gfx/leaders/SOV/portrait_SPR_enrique_lister.dds"
-				small = "gfx/interface/ideas/idea_SPR_enrique_lister.dds"
-			}
-		}
-		corps_commander={
-		visible = { has_completed_focus = SOV_send_military_advisors_to_spain }
-			traits = { infantry_leader  ambusher trait_engineer  scavenger trickster commando skirmisher    }
-			skill=6
-			attack_skill=2
-			defense_skill=7
-			planning_skill=3
-			logistics_skill=7
-			legacy_id=1119
-		}
-	}
+	# SOV_enrique_lister={
+	# 	name = SPR_enrique_lister
+	# 	portraits={
+	# 		army={
+	# 			large="gfx/leaders/SOV/portrait_SPR_enrique_lister.dds"
+	# 			small = "gfx/interface/ideas/idea_SPR_enrique_lister.dds"
+	# 		}
+	# 	}
+	# 	corps_commander={
+	# 	visible = { has_completed_focus = SOV_send_military_advisors_to_spain }
+	# 		traits = { infantry_leader  ambusher trait_engineer  scavenger trickster commando skirmisher    }
+	# 		skill=6
+	# 		attack_skill=2
+	# 		defense_skill=7
+	# 		planning_skill=3
+	# 		logistics_skill=7
+	# 		legacy_id=1119
+	# 	}
+	# }
 	SOV_georgy_zhukov = {
 		name = SOV_georgy_zhukov
 

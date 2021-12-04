@@ -727,7 +727,7 @@ characters={
 		name="charles_de_gaulle"
 			portraits={
 			army={
-				small="gfx/interface/ideas/GFX_idea_charles_de_gaulle.dds"
+				small="GFX_idea_charles_de_gaulle"
 			}
 			army={
 				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"

@@ -899,43 +899,43 @@ characters={
 		}
 	}
 
-	GER_wilhelm_keitel={
-		name=GER_wilhelm_keitel
-			portraits={
-			army={
-				small="gfx/interface/ideas/GFX_idea_wilhelm_keitel.dds"
-			}
-			army={
-				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_Keitel.dds"
-			}
-		}
-		field_marshal={
-			traits={ harsh_leader organizer infantry_leader trickster ranger offensive_doctrine thorough_planner organisational_leader inspirational_leader infantry_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-		advisor={
-			slot = army_chief
-			idea_token = wilhelm_keitel
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				has_government = fascism
-			}
-			traits = {
-				army_chief_drill_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
+	# GER_wilhelm_keitel={
+	# 	name=GER_wilhelm_keitel
+	# 		portraits={
+	# 		army={
+	# 			small="gfx/interface/ideas/GFX_idea_wilhelm_keitel.dds"
+	# 		}
+	# 		army={
+	# 			large="gfx/leaders/GER/Portrait_Germany_Wilhelm_Keitel.dds"
+	# 		}
+	# 	}
+	# 	field_marshal={
+	# 		traits={ harsh_leader organizer infantry_leader trickster ranger offensive_doctrine thorough_planner organisational_leader inspirational_leader infantry_expert }
+	# 		skill=6
+	# 		attack_skill=3
+	# 		defense_skill=5
+	# 		planning_skill=4
+	# 		logistics_skill=7
+	# 		legacy_id=-1
+	# 	}
+	# 	advisor={
+	# 		slot = army_chief
+	# 		idea_token = wilhelm_keitel
+	# 		allowed = {
+	# 			original_tag = GER
+	# 		}
+	# 		available = {
+	# 			has_government = fascism
+	# 		}
+	# 		traits = {
+	# 			army_chief_drill_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}		
+	# }
 
 	GER_franz_halder={
 		name=GER_franz_halder
