@@ -11612,24 +11612,24 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
-			PER = {
-				set_country_flag = SOV_ultimatum_sent_flag
-				country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
-			}
+			# PER = {
+			# 	set_country_flag = SOV_ultimatum_sent_flag
+			# 	country_event = { id = NSB_soviet_foreign_politics_events.210 hours = 16 random_hours = 8 }
+			# }
 
-			effect_tooltip = {
-				custom_effect_tooltip = if_they_accept_tt
-				ROOT = {
-					puppet = PER
-				}
+			# effect_tooltip = {
+			# 	custom_effect_tooltip = if_they_accept_tt
+			# 	ROOT = {
+			# 		puppet = PER
+			# 	}
 
-				custom_effect_tooltip = if_they_refuse_tt
-				effect_tooltip = {
-					activate_mission = SOV_preparations_for_operation_countenance
-					custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
-				}
-				custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
-			}
+			# 	custom_effect_tooltip = if_they_refuse_tt
+			# 	effect_tooltip = {
+			# 		activate_mission = SOV_preparations_for_operation_countenance
+			# 		custom_effect_tooltip = SOV_preparations_for_operation_countenance_tt
+			# 	}
+			# 	custom_effect_tooltip = SOV_preemptive_invasion_of_iran_tt
+			# }
 		}
 	}
 

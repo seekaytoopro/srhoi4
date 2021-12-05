@@ -254,7 +254,7 @@ focus_tree = {
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 280 }
 			USA_congress_medium_oppositiona = yes
 			# custom_effect_tooltip = USA_great_depression_cooldown_tt
-			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
+			# unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
 		}
 	}
 	focus = {

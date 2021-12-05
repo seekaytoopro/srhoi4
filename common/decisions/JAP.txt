@@ -114,67 +114,67 @@ JAP_intervene_in_china = {
 
 foreign_politics = { 
 
-	JAP_DEI_transfer = {
-		allowed = { always = no original_tag = JAP }
+	# JAP_DEI_transfer = {
+	# 	allowed = { always = no original_tag = JAP }
 
-		icon = officers_purged
+	# 	icon = officers_purged
 
-		available = { 
-			NOT = { has_idea = JAP_tora_tora_tora_idea } 
-		}
-		activation = {
-			always=no
-		}
+	# 	available = { 
+	# 		NOT = { has_idea = JAP_tora_tora_tora_idea } 
+	# 	}
+	# 	activation = {
+	# 		always=no
+	# 	}
 
-		highlight_states = {
-			OR = {
-				state = 623 state = 327 state = 625 state = 627 state = 333
-				state = 334 state = 672 state = 733 state = 422 state = 335
-				state = 667 state = 721 state = 673 state = 668 
-				# Papua
-				# state = 669 state = 523
-				state = 737 state = 634 state = 635 state = 626
-				state = 628 state = 336 state = 624 state = 738 state = 672
-			}
-		}
+	# 	highlight_states = {
+	# 		OR = {
+	# 			state = 623 state = 327 state = 625 state = 627 state = 333
+	# 			state = 334 state = 672 state = 733 state = 422 state = 335
+	# 			state = 667 state = 721 state = 673 state = 668 
+	# 			# Papua
+	# 			# state = 669 state = 523
+	# 			state = 737 state = 634 state = 635 state = 626
+	# 			state = 628 state = 336 state = 624 state = 738 state = 672
+	# 		}
+	# 	}
 
-		selectable_mission = no
-		# Check is run ~30+ times because tora is 180 days, could be done daily but I dont want a huge performance impact,
-		# and this already seemed like the faster alternative to on_state_control_changed, and also allows you to see
-		# the states that are allowed to be transferred via highlights, which disqualifies on_weekly as well
-		days_mission_timeout = 5
-		is_good = yes
-		fire_only_once = yes
-		timeout_effect = {
-			custom_effect_tooltip = "Will transfer complete control of each of the highlighted states to you if
-			the allies have no troops in said state"
+	# 	selectable_mission = no
+	# 	# Check is run ~30+ times because tora is 180 days, could be done daily but I dont want a huge performance impact,
+	# 	# and this already seemed like the faster alternative to on_state_control_changed, and also allows you to see
+	# 	# the states that are allowed to be transferred via highlights, which disqualifies on_weekly as well
+	# 	days_mission_timeout = 5
+	# 	is_good = yes
+	# 	fire_only_once = yes
+	# 	timeout_effect = {
+	# 		custom_effect_tooltip = "Will transfer complete control of each of the highlighted states to you if
+	# 		the allies have no troops in said state"
 
-			every_state = {
-				limit = { 
-					NOT = { has_state_flag = rubber_state_transfered } 
-					OR = {
-						state = 623 state = 327 state = 625 state = 627 state = 333
-						state = 334 state = 672 state = 733 state = 422 state = 335
-						state = 667 state = 721 state = 673 state = 668 
-						# Papua
-						# state = 669 state = 523
-						state = 737 state = 634 state = 635 state = 626
-						state = 628 state = 336 state = 624 state = 738 state = 672
-					}
-					is_controlled_by = JAP
-				}
-				THIS = {
-					set_state_flag = rubber_state_transfered
-				}
-				JAP = { set_state_controller = PREV }
-			}
+	# 		every_state = {
+	# 			limit = { 
+	# 				NOT = { has_state_flag = rubber_state_transfered } 
+	# 				OR = {
+	# 					state = 623 state = 327 state = 625 state = 627 state = 333
+	# 					state = 334 state = 672 state = 733 state = 422 state = 335
+	# 					state = 667 state = 721 state = 673 state = 668 
+	# 					# Papua
+	# 					# state = 669 state = 523
+	# 					state = 737 state = 634 state = 635 state = 626
+	# 					state = 628 state = 336 state = 624 state = 738 state = 672
+	# 				}
+	# 				is_controlled_by = JAP
+	# 			}
+	# 			THIS = {
+	# 				set_state_flag = rubber_state_transfered
+	# 			}
+	# 			JAP = { set_state_controller = PREV }
+	# 		}
 			
-			if = { limit = { JAP = { has_idea = JAP_tora_tora_tora_idea } } 
-				activate_mission = JAP_DEI_transfer
-			}
-		 }
-		complete_effect = {}
-	}
+	# 		if = { limit = { JAP = { has_idea = JAP_tora_tora_tora_idea } } 
+	# 			activate_mission = JAP_DEI_transfer
+	# 		}
+	# 	 }
+	# 	complete_effect = {}
+	# }
 
 	JAP_garrison_pacific = {
 
