@@ -95,8 +95,8 @@ add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 17200 produ
 add_equipment_to_stockpile = { type = support_equipment amount = 5500 producer = GER } 
 add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 145000 producer = GER } 
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 5000 producer = GER } 
-add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 1700 producer = GER } 
-add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = GER } 
+# add_equipment_to_stockpile = { type = light_tank_equipment_2 amount = 1700 producer = GER } 
+# add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 1000 producer = GER } 
 add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 4000 producer = GER }
 add_equipment_to_stockpile = { type = anti_tank_equipment_1 amount = 4500 producer = GER }
 
@@ -194,36 +194,36 @@ add_ideas = {
 
 activate_mission = GER_mefo_bills_mission
 
-create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		dictator
-	}
-}
+# create_country_leader = {
+# 	name = "Adolf Hitler"
+# 	desc = "POLITICS_ADOLF_HITLER_DESC"
+# 	picture = "Portrait_Germany_Adolf_Hitler.dds"
+# 	expire = "1965.1.1"
+# 	ideology = nazism
+# 	traits = {
+# 		dictator
+# 	}
+# }
 
-create_country_leader = {
-	name = "Konrad Adenauer"
-	desc = "POLITICS_KONRAD_ADENAUER_DESC"
-	picture = "Portrait_Germany_Konrad_Adenauer.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-	}
-}
+# create_country_leader = {
+# 	name = "Konrad Adenauer"
+# 	desc = "POLITICS_KONRAD_ADENAUER_DESC"
+# 	picture = "Portrait_Germany_Konrad_Adenauer.dds"
+# 	expire = "1965.1.1"
+# 	ideology = conservatism
+# 	traits = {
+# 	}
+# }
 
-create_country_leader = {
-	name = "Wilhelm Pieck"
-	desc = "POLITICS_WILHELM_PIECK_DESC"
-	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-	}
-}
+# create_country_leader = {
+# 	name = "Wilhelm Pieck"
+# 	desc = "POLITICS_WILHELM_PIECK_DESC"
+# 	picture = "Portrait_Germany_Wilhelm_Pieck.dds"
+# 	expire = "1965.1.1"
+# 	ideology = stalinism
+# 	traits = {
+# 	}
+# }
 
 # add_namespace = {
 # 	name = "ger_unit_leader"
@@ -590,7 +590,7 @@ recruit_character = GER_ritter_von_greim
 recruit_character = GER_hermann_goring
 recruit_character = GER_walther_von_brauchitsch
 recruit_character = GER_franz_halder
-recruit_character = GER_wilhelm_keitel
+# recruit_character = GER_wilhelm_keitel
 recruit_character = GER_ludwig_beck
 recruit_character = GER_von_braun
 recruit_character = GER_heisenberg
