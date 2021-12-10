@@ -1,0 +1,23 @@
+
+state={
+	id=301
+	name="STATE_301"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 4
+			air_base = 7
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		282 325 3315 3361 6224 6307 6372 6383 6403 9270 9280 9305 9381 9390 9402 11149 11255 11263 11286 11354 11387 
+	}
+	manpower=399541
+	buildings_max_level_factor=1.000
+	state_category=town
+}

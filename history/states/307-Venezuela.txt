@@ -1,0 +1,23 @@
+
+state={
+	id=307
+	name="STATE_307"
+
+	history={
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+			air_base = 5
+		}
+		add_core_of = SAF
+		owner = SAF
+	}
+
+	provinces={
+		1509 4528 5203 10442 10668 10697 12419 
+	}
+	manpower=401201
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
