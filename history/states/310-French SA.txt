@@ -1,0 +1,26 @@
+state={
+id=310
+name="STATE_310"
+manpower = 47341
+state_category = town
+resources={
+	# rubber=19 # was: 30 Removed because it made japan have even less impact
+	oil = 14
+}
+history={
+owner = FRA
+add_core_of=FRA
+buildings = {
+infrastructure = 4
+12885 = {
+naval_base = 1
+}
+}
+victory_points = {
+12885 5
+}
+}
+provinces={
+4934 12885
+}
+}
