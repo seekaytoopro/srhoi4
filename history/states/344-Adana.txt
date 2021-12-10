@@ -1,0 +1,27 @@
+
+state={
+	id=344
+	name="STATE_344"
+
+	history={
+		owner = GER
+		victory_points = {
+			3530 5 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			air_base = 5
+
+		}
+		# set_demilitarized_zone = yes
+		add_core_of = GER
+	}
+
+	provinces={
+		3530 3679 3692 6542 6568 6581 6712 11640 
+	}
+	manpower=2189473
+	buildings_max_level_factor=1.000
+	state_category=city
+}
