@@ -5,7 +5,7 @@ tags={
 	"Historical"
 	"National Focuses"
 }
-
+replace_path="history/units"
 replace_path="events"
 replace_path="common/abilities"
 replace_path="common/aces"
