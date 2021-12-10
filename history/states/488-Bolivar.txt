@@ -1,0 +1,34 @@
+
+state={
+	id=488
+	name="STATE_488"
+
+	history={
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 1
+			air_base = 5
+			12725 = {
+				naval_base = 5
+				coastal_bunker = 2
+				bunker = 2
+			}
+
+		}
+		victory_points = {
+			12725 50 
+		}
+		# victory_points = {
+		# 	8105 1 
+		# }
+
+	}
+
+	provinces={
+		933 960 961 1948 1977 2017 3870 3935 4602 4963 5020 6920 8053 8105 9755 9777 9861 10126 10745 10902 11866 11894 12409 12725 12871 
+	}
+	manpower=330312
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
