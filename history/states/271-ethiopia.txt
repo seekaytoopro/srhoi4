@@ -1,0 +1,40 @@
+state=
+{
+	id=271
+	name="STATE_271"
+	manpower = 16859000
+	resources={
+		rubber=2 # was: 2
+		steel = 1
+	}
+	
+	state_category = town
+
+	history=
+	{
+		set_demilitarized_zone = yes
+		#owner = ETH
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+			#arms_factory = 2
+			#industrial_complex = 2
+			air_base = 1
+		}
+		victory_points = { 
+			5010 5 
+		}
+		victory_points = { 
+			1984 1.0 
+		}
+		victory_points = { 
+			7980 1.0 
+		}
+		#add_core_of = ETH
+		add_core_of = SWE
+	}
+
+	provinces=
+	{
+1984 2009 2040 2072 4954 4995 5010 5041 5097 7912 7944 7980 8019 8036 8062 10734 10775 12714 12757 12812 12856 13137 784 856 981 3856 3876 3983 6877 6945 10041 11796 11831 11907 3907 3951 6808 6908 9806 11784 6894	}
+}
