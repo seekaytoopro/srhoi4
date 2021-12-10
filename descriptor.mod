@@ -5,10 +5,7 @@ tags={
 	"Historical"
 	"National Focuses"
 }
-replace_path="history/countries"
-replace_path="history/states"
-replace_path="history/general"
-replace_path="history/units"
+
 replace_path="events"
 replace_path="common/abilities"
 replace_path="common/aces"
@@ -26,7 +23,7 @@ replace_path="common/characters"
 replace_path="common/continuous_focus"
 replace_path="common/country_leader"
 replace_path="common/country_tag_aliases"
-replace_path="common/country_tags"
+
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/difficulty_settings"
