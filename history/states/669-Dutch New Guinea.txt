@@ -1,0 +1,81 @@
+
+state={
+	id=669
+	name="STATE_669"
+	resources={
+		rubber=19.000
+	}
+
+	history={
+		owner = HOL
+		add_core_of = SWE
+		victory_points = {
+			12371 5 
+		}
+		victory_points = {
+			4468 40 
+		}
+		victory_points = {
+			12386 5 
+		}
+		victory_points = {
+			12440 5
+		}
+		victory_points = {
+			4509 1
+		}
+		buildings = {
+			infrastructure = 5
+			4468 = {
+				naval_base = 15
+			}
+			12371 = {
+				naval_base = 3
+			}
+			7512 = {
+				naval_base = 8
+			}
+			12496 = {
+				naval_base = 2
+			}
+			7627 = {
+				naval_base = 3
+			}
+			7529 = {
+				naval_base = 2
+			}
+			4509 = {
+				naval_base = 2
+			}
+			12440 = {
+				naval_base = 3
+			}
+			4524 = {
+				naval_base = 3
+			}
+			# 10505 = {
+			# 	naval_base = 3
+			# }
+			4593 = {
+				naval_base = 3
+			}
+			7542 = {
+				naval_base = 3
+			}
+			1546 = {
+				naval_base = 5
+			}
+			# 55 = {
+			# 	naval_base = 5
+			# }
+		}
+
+	}
+
+	provinces={
+		1546 1602 1613 1617 1624 1629 1654 4468 4509 4524 4552 4573 4593 4643 7269 7487 7512 7529 7542 7570 7585 7621 7627 8235 8250 10369 10396 10436 10505 10515 10981 10990 12315 12364 12371 12379 12386 12440 12457 12481 12496 
+	}
+	manpower=314300
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
