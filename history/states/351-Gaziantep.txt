@@ -1,0 +1,25 @@
+
+state={
+	id=351
+	name="STATE_351"
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 5
+			air_base = 10
+		}
+		add_core_of = SOV
+		victory_points = {
+			9131 3 
+		}
+
+	}
+
+	provinces={
+		60 75 81 129 160 163 166 890 2996 3057 3124 3154 3157 3160 3175 6017 6073 6097 6182 6189 6871 9102 9131 9168 9199 9207 11036 11062 11095 11103 11107 11168 11177 11189 11213 
+	}
+	manpower=2354971
+	buildings_max_level_factor=1.000
+	state_category=town
+}
