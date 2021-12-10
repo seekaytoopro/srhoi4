@@ -1,0 +1,25 @@
+
+state={
+	id=462
+	name="STATE_462"
+
+	history={
+		owner = FRA
+		add_core_of = SWE
+		victory_points = {
+			4108 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		789 1102 1152 1207 1989 4022 4108 4154 4933 5046 7041 7203 7908 7958 8046 8088 10107 11747 12842 13235 13236 13242 
+	}
+	manpower=2265552
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
