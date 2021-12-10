@@ -1,0 +1,23 @@
+
+state={
+	id=619
+	name="STATE_619"
+
+	history={
+		owner = POL
+		victory_points = {
+			3254 1 
+		}
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = POL
+	}
+
+	provinces={
+		3254 
+	}
+	manpower=85712
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

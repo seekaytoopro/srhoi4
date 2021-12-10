@@ -1,0 +1,11 @@
+state={
+	id=604
+	name="STATE_604"
+	history={ owner = SWE
+	}
+	provinces={ 2014
+	}
+	manpower = 1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
