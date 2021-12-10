@@ -1,0 +1,20 @@
+
+state={
+	id=487
+	name="STATE_487"
+
+	history={
+		buildings = {
+			infrastructure = 0
+
+		}
+		owner = SWE
+	}
+
+	provinces={
+		2212 2226 5166 5188 8160 8191 8211 8240 10940 10982 10996 12902 12916 12917 12973 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}
