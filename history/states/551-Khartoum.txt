@@ -1,0 +1,27 @@
+
+state={
+	id=551
+	name="STATE_551"
+
+	history={
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			air_base = 3
+
+		}
+		victory_points = {
+			12806 750 
+		}
+
+	}
+
+	provinces={
+		1914 2003 2046 2088 2101 3862 3903 3964 3965 4918 6976 6977 6978 7989 9871 9886 10743 10784 10789 12806 12862 12881 
+	}
+	manpower=1153507
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
