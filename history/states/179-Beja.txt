@@ -1,0 +1,18 @@
+
+state={
+	id=179
+	name="STATE_179"
+	provinces={
+		801 3941 3975 4627 6850 6958 6971 7466 7588 7646 9923 10441 11888 
+	}
+	manpower=1729205
+	state_category = large_city
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = USA
+	}
+	buildings_max_level_factor=1.000
+}
