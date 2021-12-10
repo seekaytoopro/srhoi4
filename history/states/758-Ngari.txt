@@ -1,0 +1,28 @@
+
+state={
+	id=758
+	name="STATE_758"
+
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			684 3 
+		}
+		victory_points = {
+			6700 5 
+		}
+		add_core_of = HUN
+	}
+
+	provinces={
+		684 6670 6700 11625 
+	}
+	manpower=901213
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

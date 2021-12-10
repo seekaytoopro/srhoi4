@@ -1,0 +1,27 @@
+
+state={
+	id=759
+	name="STATE_759"
+
+	history={
+		owner = BUL
+		victory_points = { #Ruse
+			9612 3
+		}
+		victory_points = { #Pleven
+			3796 3
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+		add_core_of = BUL
+
+	}
+	provinces={
+		3796 3819 3952 6842 9610 9612 
+	}
+	manpower=931011
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

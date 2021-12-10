@@ -1,0 +1,31 @@
+
+state={
+	id=755
+	name="STATE_755"
+	resources={
+		steel=8.000
+	}
+
+	history={
+		owner = CAN
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 4
+
+		}
+		add_core_of = CAN
+		victory_points = {
+			3775 20 
+		}
+
+	}
+
+	provinces={
+		722 749 774 779 3763 3775 6607 6610 9667 9711 9743 11695 11725 13156 
+	}
+	manpower=1112612
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}
