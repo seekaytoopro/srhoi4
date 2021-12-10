@@ -1,0 +1,25 @@
+
+state={
+	id=783
+	name="STATE_783" # Sidi Ifni
+	manpower = 1
+	impassable = yes
+	
+	state_category = wasteland
+
+	history={ owner = SWE
+		# owner = SPR
+		# buildings = {
+		# 	infrastructure = 1
+		# 	# 12857 = {
+		# 	# 	naval_base = 1
+		# 	# }
+		# }
+				# add_core_of = SPR
+
+	}
+
+	provinces={
+		12857
+	}
+}
