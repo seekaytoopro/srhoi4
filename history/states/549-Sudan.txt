@@ -1,0 +1,26 @@
+
+state={
+	id=549
+	name="STATE_549"
+
+	history={
+		victory_points = {
+			2027 10 
+		}
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+
+	}
+
+	provinces={
+		1568 1923 1960 2016 2027 2095 4902 5060 8052 8073 8084 8092 9900 10739 10786 10795 10827 10835 10857 11860 12101 12376 12870 
+	}
+	manpower=2194293
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=494
+	name="STATE_494"
+
+	history={
+		victory_points = {
+			2096 10 
+		}
+		owner = ENG
+		add_core_of = SWE
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+
+	}
+
+	provinces={
+		1033 1953 2096 4033 7996 10764 10851 10859 10877 10908 12744 12800 12887 
+	}
+	manpower=1523473
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
