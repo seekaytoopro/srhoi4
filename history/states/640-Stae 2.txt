@@ -1,0 +1,36 @@
+
+state={
+	id=640
+	name="STATE_640"
+	resources = {
+		rubber = 5
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 5
+			air_base = 10
+		}
+		victory_points = {
+			1492 40
+		}
+		victory_points = {
+			4425 15
+		}
+		victory_points = {
+			7400 10
+		}
+		victory_points = {
+			12464 10
+		}
+	}
+
+	provinces={
+		1082 1170 1197 1492 1566 1607 1934 2061 2174 4087 4175 4210 4318 4425 4585 4588 4654 4996 5179 7400 7441 7469 7562 7603 7647 7909 7974 8063 8208 8216 8229 8253 10386 10486 10920 10944 10975 11022 12317 12335 12363 12404 12453 12464 12492 12901 12922 12928 
+	}
+	manpower=3944600
+	buildings_max_level_factor=1.000
+	state_category=town
+}
