@@ -1,0 +1,36 @@
+
+state={
+	id=450
+	name="STATE_450"
+	resources={
+		oil=17.000
+		rubber=5.000
+	}
+
+	history={
+		owner = ITA
+		add_core_of = SWE
+		victory_points = {
+			11954 300 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 8
+			11954 = {
+				naval_base = 8
+				bunker = 3
+				coastal_bunker = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1062 1204 4063 4120 4151 4583 7139 10123 11954 12094 
+	}
+	manpower=102535
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

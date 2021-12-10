@@ -1,0 +1,36 @@
+
+state={
+	id=448
+	name="STATE_448"
+	resources={
+		oil=13.000
+		rubber=6.000
+	}
+
+	history={
+		owner = ITA
+		add_core_of = SWE
+		victory_points = {
+			1149 375 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 8
+			1149 = {
+				naval_base = 15
+				bunker = 3
+				coastal_bunker = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1118 1149 1174 1189 4051 4176 4194 7066 7209 9887 9980 10038 10067 11867 12009 12039 12096 12314 12387 
+	}
+	manpower=509136
+	buildings_max_level_factor=1.000
+	state_category=town
+}
