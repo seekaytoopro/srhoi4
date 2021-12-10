@@ -1,0 +1,27 @@
+state={
+id=507
+name="STATE_507"
+manpower = 453101
+state_category = rural
+history = {
+	owner = ROM
+	add_core_of = ROM
+	buildings = {
+		infrastructure = 4
+		657 = {
+			naval_base = 8
+		}
+		687 = {
+			naval_base = 1
+		}
+		dockyard = 1
+	}
+	victory_points = {
+		657 3 
+	}
+}
+
+provinces={
+687 3076 9635 657
+}
+}
