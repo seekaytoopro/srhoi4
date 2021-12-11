@@ -1,0 +1,28 @@
+
+state={
+	id=407
+	name="STATE_407"
+	resources={
+		chromium=25.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 4
+			air_base = 8
+		}
+		add_core_of = SOV
+		victory_points = {
+			11537 1 
+		}
+
+	}
+
+	provinces={
+		432 508 576 1290 1318 3502 4351 6491 7438 9462 9526 9528 11473 11480 11510 11537 
+	}
+	manpower=268572
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
