@@ -1,0 +1,25 @@
+
+state={
+	id=416
+	name="STATE_416"
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			5029 1 
+		}
+		add_core_of = PER
+
+	}
+
+	provinces={
+		1521 2000 4580 4637 5029 7573 7602 8093 10351 10385 10768 11671 
+	}
+	manpower=332362
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

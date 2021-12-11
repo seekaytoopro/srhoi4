@@ -1,0 +1,24 @@
+
+state={
+	id=417
+	name="STATE_417"
+	impassable = yes
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+
+		}
+		add_core_of = PER
+
+	}
+
+	provinces={
+		4943 8125 9816 10523 
+	}
+	manpower=3446250
+	buildings_max_level_factor=1.000
+	state_category=town
+}
