@@ -1,0 +1,22 @@
+state={
+id=799
+name="STATE_799"
+manpower = 876590
+state_category = pastoral
+resources={
+rubber=2
+tungsten = 7
+}
+history={
+owner = RAJ
+add_core_of=RAJ
+add_core_of=SIA
+buildings = {
+	air_base = 6
+infrastructure = 4
+}
+}
+provinces={
+10217 4275 1296 12292 1385 1315 7295 12125 1403 4408 12238
+}
+}
