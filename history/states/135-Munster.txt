@@ -1,0 +1,23 @@
+
+state={
+	id=135
+	name="STATE_135"
+	provinces={
+		3501 13070 
+	}
+	history={
+		owner = ENG
+		add_core_of = ENG
+		victory_points = { 3501 20 }
+		buildings = {
+			infrastructure = 7
+			3501 = {
+				naval_base = 6
+				coastal_bunker = 3
+			}
+		}
+	}
+	manpower=320212
+	state_category=large_town
+	buildings_max_level_factor=1.000
+}
