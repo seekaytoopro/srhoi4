@@ -1,0 +1,28 @@
+
+state={
+	id=742
+	name="STATE_742"
+	resources = {
+		oil = 32
+	}
+
+	history={
+		owner = SOV
+		victory_points = {
+			1384 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = SOV
+
+	}
+
+	provinces={
+		756 1216 1384 1573 1632 1919 7224 7639 10205 10671 12218 12239 12250 12430 12722 
+	}
+	manpower=230000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}
