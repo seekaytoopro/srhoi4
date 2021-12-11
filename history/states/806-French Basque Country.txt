@@ -1,0 +1,22 @@
+state={
+	id=806
+	name="STATE_806"
+	resources={
+		steel=20.000
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = USA
+	}
+
+	provinces={
+		9832 11830 
+	}
+	manpower=686000
+	state_category=city
+	buildings_max_level_factor=1.000
+}
