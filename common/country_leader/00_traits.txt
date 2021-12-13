@@ -5736,6 +5736,38 @@ tank_refurbishment_plant = { #NSB
 			factor = 3
 		}
 	}
+
+	army_CombinedArms_1 = { # +4 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.04
+		motorized_defence_factor = 0.04
+		mechanized_attack_factor = 0.04
+		mechanized_defence_factor = 0.04		
+		experience_gain_army = 0.06
+		command_cap = @tier2
+		
+	}
+	
+	army_CombinedArms_2 = { # +8 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.08
+		motorized_defence_factor = 0.08
+		mechanized_attack_factor = 0.08
+		mechanized_defence_factor = 0.08	
+		experience_gain_army = 0.06
+		command_cap = @tier2
+		
+	}
+	
+	army_CombinedArms_3 = { # +12 cavalry/motorized efficiency
+		sprite = 8
+		motorized_attack_factor = 0.12
+		motorized_defence_factor = 0.12
+		mechanized_attack_factor = 0.12
+		mechanized_defence_factor = 0.12
+		experience_gain_army = 0.06
+		command_cap = @tier2
+	}
 	
 	
 	army_armored_1 = { # +4 armor efficiency

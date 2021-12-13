@@ -124,6 +124,26 @@ characters={
 			legacy_id=-1
 		}
 	}
+	GER_walter_model={
+		name="Walter Model"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_GER_walter_model.dds"
+			}
+			army={
+				large="gfx/leaders/GER/Portrait_Germany_Walter_Model.dds"
+			}
+		}
+		field_marshal={
+			traits = { politically_connected infantry_officer defensive_doctrine panzer_leader trickster media_personality war_hero organizer infantry_leader inflexible_strategist}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+			legacy_id=-1
+		}
+	}
 	GER_friedrich_paulus={
 		name="Friedrich Paulus"
 		portraits={
@@ -255,7 +275,7 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Fedor_von_Bock.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { offensive_doctrine career_officer old_guard harsh_leader organizer thorough_planner aggressive_assaulter brilliant_strategist urban_assault_specialist}
 			skill = 5
 			attack_skill = 4
@@ -295,7 +315,7 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Alfred_Jodl.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { organizer skilled_staffer infantry_officer brilliant_strategist old_guard}
 			skill = 5
 			attack_skill = 5
@@ -315,7 +335,7 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Johannes_Blaskowitz.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { infantry_leader trait_cautious inflexible_strategist infantry_officer}
 			skill = 4
 			attack_skill = 2
@@ -390,7 +410,7 @@ characters={
 				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_Ritter_von_Leeb.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { offensive_doctrine infantry_officer harsh_leader career_officer old_guard infantry_leader trait_engineer fortress_buster ranger organizer fast_planner }
 			skill = 5
 			attack_skill = 6
@@ -480,7 +500,7 @@ characters={
 				mobile_warfare_expert
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { combined_arms_expert aggressive_assaulter offensive_doctrine panzer_leader skilled_staffer thorough_planner media_personality trait_reckless war_hero armor_officer career_officer brilliant_strategist infantry_leader trickster trait_engineer cavalry_officer }
 			skill = 6
 			attack_skill = 7
