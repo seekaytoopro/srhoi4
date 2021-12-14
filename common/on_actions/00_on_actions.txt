@@ -17,6 +17,20 @@ on_actions = {
 		effect = {
 			SWE = { anti_cross_faction_trade_all = yes }
 			SWE = { startup_on_actions = yes }
+
+			every_country = {
+				# limit = { country_exists = yes }
+				set_technology = { basic_train = 1 }
+				add_equipment_to_stockpile = { type = train_equipment_1 amount = 20 }
+				# if = { limit = { THIS = { is_ai = no } } 
+				# 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 20 }
+				# }
+				# if = { 
+				# 	limit = { THIS = { OR = { TAG = SOV TAG = GER TAG = ITA TAG = USA 
+				# 							  TAG = FRA TAG = JAP TAG = ENG } } } 
+				# 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 260 }
+				# }
+			}
 			########################################################
 			# set_variable = {
 			# 	var = global.horst_acesCounterJAP
