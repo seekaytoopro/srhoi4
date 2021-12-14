@@ -383,7 +383,7 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				army_regrouping_2
+				rund_hc
 			}
 			cost = 100
 			ai_will_do = {
@@ -441,7 +441,7 @@ characters={
 				has_completed_focus = GER_army_innovation
 			}
 			traits = {
-				army_armored_3
+				rommel_hc
 			}
 			cost = 200
 			ai_will_do = {
@@ -1243,24 +1243,24 @@ characters={
 		}
 	}
 
-	GER_albert_speer={ 
-		name=GER_albert_speer
-		portraits={
-			army={
-				small="GFX_idea_speer"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = speer
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				reichs_minister
-			}
-		}		
-	}
+	# GER_albert_speer={ 
+	# 	name=GER_albert_speer
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_speer"
+	# 		}
+	# 	}
+	# 	advisor={
+	# 		slot = political_advisor
+	# 		idea_token = speer
+	# 		allowed = {
+	# 			original_tag = GER
+	# 		}
+	# 		traits = {
+	# 			reichs_minister
+	# 		}
+	# 	}		
+	# }
 
 	GER_hjalmar_schacht={
 		name=GER_hjalmar_schacht
