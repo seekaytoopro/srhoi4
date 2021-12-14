@@ -1040,10 +1040,10 @@ technologies = {
 	
 	antitank2 = {
 		
-		mot_anti_tank_brigade = {
-			hard_attack = 0.08
-			breakthrough = 0.08
-		}
+		# mot_anti_tank_brigade = {
+		# 	hard_attack = 0.08
+		# 	breakthrough = 0.08
+		# }
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
@@ -1156,6 +1156,22 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.08
 			breakthrough = 0.08
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.08
+			ap_attack = 0.08
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.08
+			ap_attack = 0.08
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.08
+			ap_attack = 0.08
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.08
+			ap_attack = 0.08
 		}
 		
 		path = {
