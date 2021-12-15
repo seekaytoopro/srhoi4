@@ -87,16 +87,16 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
-create_country_leader = {
-	name = "Michael Joseph Savage"
-	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
-	picture = "GFX_NZL_michael_joseph_savage"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Michael Joseph Savage"
+# 	desc = "POLITICS_MICHAEL_JOSEPH_SAVAGE_DESC"
+# 	picture = "GFX_NZL_michael_joseph_savage"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
 
 # create_country_leader = {
 # 	name = "Sidney Holland"
@@ -188,69 +188,31 @@ set_convoys = 70
 # 	coordination_skill = 5
 # }
 recruit_character = NZL_michael_joseph_savage
-recruit_character = NZL_edmund_rupert_drummond
-recruit_character = NZL_hehu_anderson
-recruit_character = NZL_tangaroa_denman
-recruit_character = NZL_stafford_issac
-recruit_character = NZL_harold_farncomb
-recruit_character = NZL_victor_crutchley
-recruit_character = NZL_władysław_bortnowski
-recruit_character = NZL_jayanto_nath_chaudhuri
-recruit_character = NZL_jan_smuts
-recruit_character = NZL_charles_foulkes
-recruit_character = NZL_robert_row
-recruit_character = NZL_frank_messervy
-recruit_character = NZL_horace_robertson
-recruit_character = NZL_leslie_morshead
-recruit_character = NZL_roman_abraham
-recruit_character = NZL_thomas_blamey
-recruit_character = NZL_władysław_sikorski
-recruit_character = NZL_bert_hoffmeister
-recruit_character = NZL_noel_beresfordpeirse
-recruit_character = NZL_george_edwin_brink
-recruit_character = NZL_wincenty_kowalski
-recruit_character = NZL_henry_wynter
-recruit_character = NZL_kodandera_subayya_thimayya
-recruit_character = NZL_william_stevens
-recruit_character = NZL_kodandera_madappa_cariappa
-recruit_character = NZL_władysław_anders
-recruit_character = NZL_orde_wingate
+recruit_character = NZL_sidney_holland
+recruit_character = NZL_john_ormond
+recruit_character = NZL_elsie_farrelly
 recruit_character = NZL_bernard_freyberg
-recruit_character = NZL_douglas_gracey
-recruit_character = NZL_stanisław_kopański
-recruit_character = NZL_john_northcott
-recruit_character = NZL_iven_mackay
-recruit_character = NZL_alan_vasey
-recruit_character = NZL_nzl_chief_entrenchment
-recruit_character = NZL_j_e_duigan
-recruit_character = NZL_captain_nzl
-recruit_character = NZL_edward_puttick
-recruit_character = NZL_defff
-recruit_character = NZL_norris_stephen_falla
-recruit_character = NZL_nzl_chief_manuever
-recruit_character = NZL_a_j_stallworthy
-recruit_character = NZL_h_e_horan
-recruit_character = NZL_w_h_stratton
+recruit_character = NZL_robert_row
+recruit_character = NZL_william_stevens
+recruit_character = NZL_edmund_rupert_drummond
+recruit_character = NZL_neil_anderson
+recruit_character = NZL_r_a_cochrane
 recruit_character = NZL_l_p_peterson
 recruit_character = NZL_robert_manion
-recruit_character = NZL_nzl_army_concealment
 recruit_character = NZL_walter_nash
-recruit_character = NZL_nzl_army_logistics
 recruit_character = NZL_j_c_nichols
-recruit_character = NZL_n_weir
-recruit_character = NZL_gentlemen_nzl
-recruit_character = NZL_crusader_nzl
-recruit_character = NZL_nzl_air_tacticalbombing
-recruit_character = NZL_nzl_chief_planning
+recruit_character = NZL_dropbear
+recruit_character = NZL_edward_puttick
+recruit_character = NZL_norris_stephen_falla
 recruit_character = NZL_trevor_handley
-recruit_character = NZL_stabber_nzl
 recruit_character = NZL_keith_j_holyoake
-recruit_character = NZL_orggg
+recruit_character = NZL_a_j_stallworthy
 recruit_character = NZL_eric_prendergast
-recruit_character = NZL_smooth_nzl
+recruit_character = NZL_arthur_dawes
 recruit_character = NZL_w_a_veitch_milne
-recruit_character = NZL_william_sinclair_burgess
+recruit_character = NZL_h_e_horan
 recruit_character = NZL_h_d_mcgregor
+recruit_character = NZL_w_h_stratton
 
 ### VARIANTS ###
 # 1936 Start #

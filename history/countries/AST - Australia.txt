@@ -135,175 +135,208 @@ set_popularities = {
 	communism = 2
 }
 
-create_country_leader = {
-	name = "John Curtin"
-	desc = "POLITICS_JOHN_CURTIN_DESC"
-	picture = "Portrait_Australia_John_Curtin.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_curtin
+recruit_character = AST_eric_campbell
+recruit_character = AST_richard_dixon
+recruit_character = AST_earle_page
+recruit_character = AST_rod_hull
+recruit_character = AST_leslie_morshead
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_john_northcott
+recruit_character = AST_frank_berryman
+recruit_character = AST_brudenell_white
+recruit_character = AST_iven_mackay
+recruit_character = AST_john_lavarack
+recruit_character = AST_harold_farncomb
+recruit_character = AST_richard_williams
+recruit_character = AST_ragnar_colvin
+recruit_character = AST_norman_makin
+recruit_character = AST_james_fairbairn
+recruit_character = AST_arthur_calwell
+recruit_character = AST_robert_g_menzies
+recruit_character = AST_arthur_allen
+recruit_character = AST_alexander_hore_ruthven
+recruit_character = AST_jack_beasley
+recruit_character = AST_vernon_sturdee
+recruit_character = AST_jack_crace
+recruit_character = AST_cederic_hicks
+recruit_character = AST_herbert_v_evatt
+recruit_character = AST_charles_burnett
+recruit_character = AST_edmund_herring
+recruit_character = AST_arthur_drakeford
 
-create_country_leader = {
-	name = "Eric Campbell"
-	desc = "POLITICS_ERIC_CAMPBELL_DESC"
-	picture = "GFX_AST_eric_campbell"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "John Curtin"
+# 	desc = "POLITICS_JOHN_CURTIN_DESC"
+# 	picture = "Portrait_Australia_John_Curtin.dds"
+# 	expire = "1965.1.1"
+# 	ideology = socialism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Richard Dixon"
-	desc = "POLITICS_RICHARD_DIXON_DESC"
-	picture = "GFX_AST_richard_dixon"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Eric Campbell"
+# 	desc = "POLITICS_ERIC_CAMPBELL_DESC"
+# 	picture = "GFX_AST_eric_campbell"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Earle Page"
-	desc = "POLITICS_EARLE_PAGE_DESC"
-	picture = "GFX_AST_earle_page"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Richard Dixon"
+# 	desc = "POLITICS_RICHARD_DIXON_DESC"
+# 	picture = "GFX_AST_richard_dixon"
+# 	expire = "1965.1.1"
+# 	ideology = stalinism
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_country_leader = {
-	name = "Rod Hull"
-	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Earle Page"
+# 	desc = "POLITICS_EARLE_PAGE_DESC"
+# 	picture = "GFX_AST_earle_page"
+# 	expire = "1965.1.1"
+# 	ideology = centrism
+# 	traits = {
+# 		#
+# 	}
+# }
+
+# create_country_leader = {
+# 	name = "Rod Hull"
+# 	desc = ""
+# 	picture = "Portrait_Australia_Rod_Hull.dds"
+# 	expire = "1965.1.1"
+# 	ideology = despotism
+# 	traits = {
+# 		#
+# 	}
+# }
 
 set_convoys = 100
 
-create_field_marshal = {
-	name = "Leslie Morshead"
-	gfx = "GFX_AST_leslie_morshead"
-	traits = { naval_invader infantry_leader organizer inflexible_strategist old_guard career_officer jungle_rat war_hero}
-	skill = 5
+# create_field_marshal = {
+# 	name = "Leslie Morshead"
+# 	gfx = "GFX_AST_leslie_morshead"
+# 	traits = { naval_invader infantry_leader organizer inflexible_strategist old_guard career_officer jungle_rat war_hero}
+# 	skill = 5
 
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 3
-}
+# 	attack_skill = 5
+# 	defense_skill = 5
+# 	planning_skill = 3
+# 	logistics_skill = 3
+# }
 
-create_field_marshal = {
-	name = "Thomas Blamey"
-	gfx = "GFX_AST_thomas_blamey"
-	traits = { old_guard skilled_staffer organizer infantry_officer politically_connected trait_cautious }
-	skill = 5
-	attack_skill = 2
-	defense_skill = 5
-	planning_skill = 3
-	logistics_skill = 6
-}
-create_corps_commander = {
-	name = "Henry Wynter"
-	gfx = "GFX_AST_henry_wynter"
-	traits = { infantry_leader infantry_officer harsh_leader desert_fox jungle_rat infantry_leader organizer  }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Alan Vasey"
-	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter infantry_leader infantry_officer politically_connected skilled_staffer}
-	skill = 4
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 7
-}
-create_corps_commander = {
-	name = "Horace Robertson"
-	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox infantry_leader cavalry_officer harsh_leader trait_reckless panzer_leader}
-	skill = 5
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 7
-}
-create_corps_commander = {
-	name = "John Northcott"
-	gfx = "GFX_AST_john_northcott"
-	traits = { panzer_leader armor_officer jungle_rat trait_cautious }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 1
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Frank Berryman"
-	picture = "Portrait_AST_Frank_Berryman.tga"
-	traits = { infantry_leader infantry_officer old_guard career_officer jungle_rat}
-	skill = 5
-	attack_skill = 2
-	defense_skill = 6
-	planning_skill = 3
-	logistics_skill = 5
-}
-create_corps_commander = {
-	name = "Brudenell White"
-	picture = "Portrait_AST_Brudenell_White.tga"
-	traits = { harsh_leader trait_cautious old_guard naval_invader jungle_rat war_hero commando}
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Iven Mackay"
-	picture = "Portrait_AST_Iven_Mackay.tga"
-	traits = { desert_fox old_guard infantry_leader skilled_staffer career_officer harsh_leader brilliant_strategist trickster}
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "John Lavarack"
-	picture = "Portrait_AST_John_Lavarack.tga"
-	traits = { career_officer hill_fighter trait_mountaineer trickster inflexible_strategist trait_cautious }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 2
-}
-create_navy_leader = {
-	name = "Harold Farncomb"
-	gfx = "GFX_AST_harold_farncomb"
-	traits = { air_controller bold spotter flight_deck_manager torpedo_bomber concealment_expert blue_water_expert }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
+# create_field_marshal = {
+# 	name = "Thomas Blamey"
+# 	gfx = "GFX_AST_thomas_blamey"
+# 	traits = { old_guard skilled_staffer organizer infantry_officer politically_connected trait_cautious }
+# 	skill = 5
+# 	attack_skill = 2
+# 	defense_skill = 5
+# 	planning_skill = 3
+# 	logistics_skill = 6
+# }
+# create_corps_commander = {
+# 	name = "Henry Wynter"
+# 	gfx = "GFX_AST_henry_wynter"
+# 	traits = { infantry_leader infantry_officer harsh_leader desert_fox jungle_rat infantry_leader organizer  }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 5
+# 	planning_skill = 2
+# 	logistics_skill = 3
+# }
+# create_corps_commander = {
+# 	name = "Alan Vasey"
+# 	gfx = "GFX_AST_alan_vasey"
+# 	traits = { hill_fighter infantry_leader infantry_officer politically_connected skilled_staffer}
+# 	skill = 4
+# 	attack_skill = 2
+# 	defense_skill = 2
+# 	planning_skill = 2
+# 	logistics_skill = 7
+# }
+# create_corps_commander = {
+# 	name = "Horace Robertson"
+# 	gfx = "GFX_AST_horace_robertson"
+# 	traits = { desert_fox infantry_leader cavalry_officer harsh_leader trait_reckless panzer_leader}
+# 	skill = 5
+# 	attack_skill = 4
+# 	defense_skill = 2
+# 	planning_skill = 4
+# 	logistics_skill = 7
+# }
+# create_corps_commander = {
+# 	name = "John Northcott"
+# 	gfx = "GFX_AST_john_northcott"
+# 	traits = { panzer_leader armor_officer jungle_rat trait_cautious }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 4
+# 	planning_skill = 1
+# 	logistics_skill = 4
+# }
+# create_corps_commander = {
+# 	name = "Frank Berryman"
+# 	picture = "Portrait_AST_Frank_Berryman.tga"
+# 	traits = { infantry_leader infantry_officer old_guard career_officer jungle_rat}
+# 	skill = 5
+# 	attack_skill = 2
+# 	defense_skill = 6
+# 	planning_skill = 3
+# 	logistics_skill = 5
+# }
+# create_corps_commander = {
+# 	name = "Brudenell White"
+# 	picture = "Portrait_AST_Brudenell_White.tga"
+# 	traits = { harsh_leader trait_cautious old_guard naval_invader jungle_rat war_hero commando}
+# 	skill = 5
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
+# create_corps_commander = {
+# 	name = "Iven Mackay"
+# 	picture = "Portrait_AST_Iven_Mackay.tga"
+# 	traits = { desert_fox old_guard infantry_leader skilled_staffer career_officer harsh_leader brilliant_strategist trickster}
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	planning_skill = 1
+# 	logistics_skill = 4
+# }
+# create_corps_commander = {
+# 	name = "John Lavarack"
+# 	picture = "Portrait_AST_John_Lavarack.tga"
+# 	traits = { career_officer hill_fighter trait_mountaineer trickster inflexible_strategist trait_cautious }
+# 	skill = 4
+# 	attack_skill = 3
+# 	defense_skill = 3
+# 	planning_skill = 5
+# 	logistics_skill = 2
+# }
+# create_navy_leader = {
+# 	name = "Harold Farncomb"
+# 	gfx = "GFX_AST_harold_farncomb"
+# 	traits = { air_controller bold spotter flight_deck_manager torpedo_bomber concealment_expert blue_water_expert }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	maneuvering_skill = 3
+# 	coordination_skill = 3
+# }
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
