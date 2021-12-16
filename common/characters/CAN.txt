@@ -1,15 +1,246 @@
 characters={
+	CAN_guy_simonds={
+		name="Guy Simonds"
+		portraits={
+			army={
+				small="GFX_idea_CAN_guy_simonds"
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_4.dds"
+			}
+		}
+		advisor={	
+			slot = high_command
+			idea_token = CAN_guy_simonds
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless media_personality infantry_leader trait_engineer commando naval_invader urban_assault_specialist }
+			skill=4
+			attack_skill=6
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
 	CAN_mackenzie_king={
-		name=CAN_mackenzie_king
+		name="Mackenzie King"
 		portraits={
 			civilian={
 				large="gfx/leaders/CAN/Portrait_Canada_Mackenzie_King.dds"
 			}
 		}
 		country_leader={
+			desc="POLITICS_MACKENZIE_KING_DESC"
 			ideology=liberalism
 			expire="1965.1.1.1"
 			id=-1
+		}
+	}
+	CAN_adrien_arcand={
+		name="Adrien Arcand"
+		portraits={
+			civilian={
+				large="GFX_CAN_adrien_arcand"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ADRIEN_ARCAND_DESC"
+			ideology=nazism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAN_tim_buck={
+		name="Tim Buck"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_TIM_BUCK_DESC"
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAN_j._s._woodsworth={
+		name="J. S. Woodsworth"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JS_WOODSWORTH_DESC"
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAN_thomas_victor_anderson={
+		name="Thomas Victor Anderson"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_cautious infantry_leader trait_engineer trait_mountaineer ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAN_charles_foulkes={
+		name="Charles Foulkes (USE IF YOU NEED SUPPLY)"
+		portraits={
+			army={
+				small="GFX_CAN_charles_foulkes_small"
+			}
+			army={
+				large="GFX_CAN_charles_foulkes"
+			}
+		}
+		field_marshal={
+			traits={ old_guard brilliant_strategist politically_connected organizer infantry_leader skilled_staffer desert_fox }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=6
+			legacy_id=-1
+		}
+	}
+	CAN_john_montague={
+		name="John Montague"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_2.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer trickster panzer_leader hill_fighter }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+	CAN_bert_hoffmeister={
+		name="Bert Hoffmeister"
+		portraits={
+			army={
+				small="GFX_CAN_bert_hoffmeister_small"
+			}
+			army={
+				large="GFX_CAN_bert_hoffmeister"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless harsh_leader infantry_officer trait_engineer hill_fighter }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAN_georges_vanier={
+		name="Georges Vanier"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_7.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious politically_connected organizer skilled_staffer desert_fox }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	CAN_harry_crerar={
+		name="Harry Crerar"
+		portraits={
+			army={
+				small="GFX_idea_CAN_harry_crerar"
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_5.dds"
+			}
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CAN_harry_crerar
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer media_personality war_hero infantry_leader naval_invader }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	CAN_kenneth_stuart={
+		name="Kenneth Stuart (USE FOR TANKS)"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/CAN/CAN_Leader_6.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard brilliant_strategist career_officer trait_cautious cavalry_officer infantry_leader skilled_staffer trickster panzer_leader desert_fox }
+			skill=5
+			attack_skill=8
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
 	CAN_leonard_w._murray={
@@ -51,227 +282,8 @@ characters={
 			legacy_id=-1
 		}
 	}
-	CAN_charles_young={
-		name="Charles Young"
-		portraits={
-			civilian={
-				large="GFX_Portrait_Europe_Generic_1"
-			}
-		}
-		country_leader={
-			ideology=leninism
-			expire="1945.1.1.12"
-			id=-1
-		}
-	}
-	CAN_campbell_campbell={
-		name="Campbell Campbell"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1943.1.1.12"
-			id=-1
-		}
-	}
-	CAN_john_windham={
-		name="John Windham"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=oligarchism
-			expire="1941.1.1.12"
-			id=-1
-		}
-	}
-	CAN_harold_farncomb={
-		name="Harold Farncomb"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_harold_farncomb.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Harold_Farncomb.dds"
-			}
-		}
-		navy_leader={
-			traits={ bold spotter air_controller concealment_expert flight_deck_manager torpedo_bomber }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CAN_victor_crutchley={
-		name="Victor Crutchley"
-		portraits={
-			army={
-				small="GFX_Portrait_Britain_Generic_navy_2_small"
-			}
-			army={
-				large="GFX_Portrait_Britain_Generic_navy_2"
-			}
-		}
-		navy_leader={
-			traits={ fleet_protector superior_tactician ironside destroyer_leader concealment_expert ground_pounder }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-	}
-	CAN_władysław_bortnowski={
-		name="Władysław Bortnowski"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_wladyslaw_bortnowski.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Bortnowski.dds"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist trait_reckless trickster panzer_leader naval_invader logistics_wizard offensive_doctrine aggressive_assaulter organisational_leader panzer_expert expert_improviser }
-			skill=5
-			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_jayanto_nath_chaudhuri={
-		name="Jayanto Nath Chaudhuri"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_j_n_chaudhuri.dds"
-			}
-		}
-		field_marshal={
-			traits={ panzer_leader desert_fox logistics_wizard defensive_doctrine panzer_expert ambusher }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	CAN_jan_smuts={
-		name="Jan Smuts"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SAF_jan_smuts.dds"
-			}
-			army={
-				large="gfx/leaders/SAF/Portrait_SouthAfrica_Jan_Smuts.dds"
-			}
-		}
-		field_marshal={
-			traits={ trickster panzer_leader desert_fox logistics_wizard thorough_planner organisational_leader panzer_expert }
-			skill=5
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_charles_foulkes={
-		name="Charles Foulkes"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_CAN_charles_foulkes.dds"
-			}
-			army={
-				large="gfx/leaders/CAN/Portrait_Canada_Charles_Foulkes.dds"
-			}
-		}
-		field_marshal={
-			traits={ panzer_leader logistics_wizard defensive_doctrine fast_planner panzer_expert skirmisher }
-			skill=5
-			attack_skill=3
-			defense_skill=1
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_robert_row={
-		name="Robert Row"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/NZL/Portrait_New_Zeeland_Robert_Row.dds"
-			}
-		}
-		field_marshal={
-			traits={ adaptable organizer cavalry_leader naval_invader logistics_wizard offensive_doctrine fast_planner combined_arms_expert cavalry_expert fortress_buster }
-			skill=5
-			attack_skill=3
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_frank_messervy={
-		name="Frank Messervy"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_Frank_Messervy.dds"
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader commando trait_mountaineer logistics_wizard defensive_doctrine ambusher camouflage_expert }
-			skill=5
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	CAN_horace_robertson={
-		name="Horace Robertson"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_horace_robertson.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Horace_Robertson.dds"
-			}
-		}
-		field_marshal={
-			traits={ infantry_leader desert_fox hill_fighter urban_assault_specialist logistics_wizard defensive_doctrine ambusher }
-			skill=5
-			attack_skill=3
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
 	
-		CAN_kenneth_stuart={
+		CAN_kenneth_stuart_theorist={
 		name=CAN_kenneth_stuart
 		portraits={
 			army={
@@ -317,90 +329,27 @@ characters={
 		}
 	}
 	
-	
-	
-	
-	CAN_leslie_morshead={
-		name="Leslie Morshead"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_leslie_morshead.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Leslie_Morshead.dds"
-			}
-		}
-		field_marshal={
-			traits={ organizer infantry_leader trait_engineer naval_invader trait_mountaineer jungle_rat logistics_wizard thorough_planner infantry_expert }
-			skill=5
-			attack_skill=1
-			defense_skill=2
-			planning_skill=7
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_roman_abraham={
-		name="Roman Abraham"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_roman_abraham.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_POL_Roman_Abraham.dds"
-			}
-		}
-		field_marshal={
-			traits={ adaptable brilliant_strategist organizer infantry_leader naval_invader trait_mountaineer offensive_doctrine aggressive_assaulter infantry_expert invader_ii naval_liason paratrooper guerilla_fighter }
-			skill=5
-			attack_skill=2
-			defense_skill=2
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_thomas_blamey={
-		name="Thomas Blamey"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_thomas_blamey.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Thomas_Blamey.dds"
-			}
-		}
-		field_marshal={
-			traits={ cavalry_leader desert_fox logistics_wizard defensive_doctrine combined_arms_expert cavalry_expert scavenger ambusher }
-			skill=5
-			attack_skill=1
-			defense_skill=7
-			planning_skill=1
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_harry_crerar={
-		name=CAN_harry_crerar
-		portraits={
-			army={
-				small="GFX_idea_CAN_harry_crerar" #small="GFX_idea_generic_army_europe_4"
-			}
-		}
-		advisor={	
-			slot = army_chief
-			idea_token = CAN_harry_crerar
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_old_guard
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	# CAN_harry_crerar={
+	# 	name=CAN_harry_crerar
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_CAN_harry_crerar" #small="GFX_idea_generic_army_europe_4"
+	# 		}
+	# 	}
+	# 	advisor={	
+	# 		slot = army_chief
+	# 		idea_token = CAN_harry_crerar
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+	# 		traits = {
+	# 			army_chief_old_guard
+	# 		}
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}
+	# }
 
 	CAN_andrew_mcnaughton={
 		name=CAN_andrew_mcnaughton
@@ -521,194 +470,29 @@ characters={
 		}
 	}
 	
-	CAN_władysław_sikorski={
-		name="Władysław Sikorski"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_wladyslaw_sikorski.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_Poland_Wladyslaw_Sikorski.dds"
-			}
-		}
-		field_marshal={
-			traits={ bearer_of_artillery old_guard inflexible_strategist trait_cautious cavalry_leader logistics_wizard thorough_planner unyielding_defender combined_arms_expert cavalry_expert skirmisher }
-			skill=5
-			attack_skill=8
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	
-	
-
-	
-	CAN_bert_hoffmeister={
-		name="Bert Hoffmeister"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_CAN_bert_hoffmeister.dds"
-			}
-			army={
-				large="gfx/leaders/CAN/Portrait_Canada_Bert_Hoffmeister.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer panzer_leader trait_mountaineer panzer_expert fortress_buster expert_improviser }
-			skill=5
-			attack_skill=3
-			defense_skill=2
-			planning_skill=7
-			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-	CAN_noel_beresfordpeirse={
-		name="Noel Beresford-Peirse"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_Noel_Beresford_Peirse.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer panzer_leader swamp_fox trait_mountaineer jungle_rat panzer_expert scavenger }
-			skill=5
-			attack_skill=5
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	CAN_george_edwin_brink={
-		name="George Edwin Brink"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/SAF/Portrait_South_Africa_George_Edwin_Brink.dds"
-			}
-		}
-		corps_commander={
-			traits={ trickster panzer_leader desert_fox hill_fighter panzer_expert expert_improviser }
-			skill=5
-			attack_skill=3
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_wincenty_kowalski={
-		name="Wincenty Kowalski"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_wincentry_kowalski.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_POL_Wincentry_Kowalski.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable organizer cavalry_leader trickster desert_fox hill_fighter combined_arms_expert cavalry_expert }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	CAN_henry_wynter={
-		name="Henry Wynter"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_henry_wynter.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Henry_Wynter.dds"
-			}
-		}
-		corps_commander={
-			traits={ cavalry_leader trickster desert_fox combined_arms_expert cavalry_expert ambusher skirmisher guerilla_fighter }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	CAN_kodandera_subayya_thimayya={
-		name="Kodandera Subayya Thimayya"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_k_s_thimayya.dds"
-			}
-		}
-		corps_commander={
-			traits={ panzer_leader desert_fox urban_assault_specialist panzer_expert ambusher guerilla_fighter }
-			skill=5
-			attack_skill=3
-			defense_skill=6
-			planning_skill=1
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_william_stevens={
-		name="William Stevens"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/NZL/Portrait_New_Zeeland_William_Stevens.dds"
-			}
-		}
-		corps_commander={
-			traits={ organizer infantry_leader trickster hill_fighter jungle_rat ranger infantry_expert }
-			skill=5
-			attack_skill=4
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	
-		CAN_guy_simonds={
-		name=CAN_guy_simonds
-		portraits={
-			army={
-				small="GFX_idea_CAN_guy_simonds" #small="GFX_idea_generic_army_europe_1"
-			}
-		}
-		advisor={	
-			slot = high_command
-			idea_token = CAN_guy_simonds
-			ledger = army
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_regrouping_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	# 	CAN_guy_simonds={
+	# 	name=CAN_guy_simonds
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_CAN_guy_simonds" #small="GFX_idea_generic_army_europe_1"
+	# 		}
+	# 	}
+	# 	advisor={	
+	# 		slot = high_command
+	# 		idea_token = CAN_guy_simonds
+	# 		ledger = army
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+	# 		traits = {
+	# 			army_regrouping_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}
+	# }
 
 	CAN_gino_verchiella={
 		name=CAN_gino_verchiella
@@ -779,169 +563,6 @@ characters={
 			ai_will_do = {
 				factor = 1.000
 			}
-		}
-	}
-
-	
-	
-	CAN_kodandera_madappa_cariappa={
-		name="Kodandera Madappa Cariappa"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_Kodandera_Madappa_Cariappa.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable infantry_leader skilled_staffer trait_mountaineer hill_fighter infantry_expert }
-			skill=5
-			attack_skill=2
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_władysław_anders={
-		name="Władysław Anders"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_wladyslaw_anders.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Anders.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable infantry_leader trait_engineer naval_invader infantry_expert invader_ii naval_liason }
-			skill=5
-			attack_skill=1
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	CAN_orde_wingate={
-		name="Orde Wingate"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_Orde_Wingate.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader commando trait_mountaineer jungle_rat ambusher skirmisher camouflage_expert }
-			skill=5
-			attack_skill=3
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=9
-			legacy_id=-1
-		}
-	}
-	CAN_bernard_freyberg={
-		name="Bernard Freyberg"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/NZL/Portrait_New_Zealand_Bernard_Freyberg.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader trickster desert_fox ambusher skirmisher paratrooper guerilla_fighter }
-			skill=5
-			attack_skill=3
-			defense_skill=6
-			planning_skill=1
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	CAN_douglas_gracey={
-		name="Douglas Gracey"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/RAJ/Portrait_The_Raj_Douglas_Gracey.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader trickster desert_fox trait_mountaineer infantry_expert expert_improviser }
-			skill=5
-			attack_skill=2
-			defense_skill=5
-			planning_skill=2
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	CAN_stanisław_kopański={
-		name="Stanisław Kopański"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_POL_stanislaw_kopamski.dds"
-			}
-			army={
-				large="gfx/leaders/POL/Portrait_POL_Stanislaw_Kopamski.dds"
-			}
-		}
-		corps_commander={
-			traits={ fake_skilled_staffer infantry_leader scavenger infantry_expert ambusher guerilla_fighter }
-			skill=5
-			attack_skill=2
-			defense_skill=5
-			planning_skill=1
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	CAN_john_northcott={
-		name="John Northcott"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_john_northcott.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_John_Northcott.dds"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery infantry_leader trait_engineer trait_mountaineer urban_assault_specialist fortress_buster infantry_expert }
-			skill=5
-			attack_skill=2
-			defense_skill=2
-			planning_skill=7
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	CAN_iven_mackay={
-		name="Iven Mackay"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_iven_mackay.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Iven_Mackay.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trait_cautious trait_engineer panzer_leader naval_invader panzer_expert invader_ii naval_liason }
-			skill=5
-			attack_skill=2
-			defense_skill=3
-			planning_skill=9
-			logistics_skill=2
-			legacy_id=-1
 		}
 	}
 	
@@ -1087,27 +708,6 @@ characters={
 			traits = {
 				captain_of_industry 
 			}
-		}
-}
-	
-	CAN_alan_vasey={
-		name="Alan Vasey"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_AST_alan_vasey.dds"
-			}
-			army={
-				large="gfx/leaders/AST/Portrait_Australia_Alan_Vasey.dds"
-			}
-		}
-		corps_commander={
-			traits={ infantry_leader naval_invader desert_fox hill_fighter jungle_rat urban_assault_specialist ambusher guerilla_fighter }
-			skill=5
-			attack_skill=1
-			defense_skill=3
-			planning_skill=7
-			logistics_skill=5
-			legacy_id=-1
 		}
 	}
 }

@@ -537,7 +537,7 @@ characters={
 				}
 				cost  = 100.000
 				available  = {
-					has_completed_focus  = AST_australian_army_catering_corps 
+					# has_completed_focus  = AST_australian_army_catering_corps 
 				}
 				traits  = {
 					army_logistics_2 

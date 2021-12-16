@@ -347,4 +347,4 @@ recruit_character = SAF_smooth_saf
 recruit_character = SAF_leonard_beyers
 recruit_character = SAF_air_tacticalbombing
 recruit_character = SAF_c_de_weenburg_du_toit
-recruit_character = SAF_james_mitchell_baker
+# recruit_character = SAF_james_mitchell_baker
