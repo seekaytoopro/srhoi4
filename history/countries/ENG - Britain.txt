@@ -626,7 +626,7 @@ recruit_character = ENG_arthur_percival
 recruit_character = ENG_alan_cunningham
 recruit_character = ENG_neil_ritchie
 recruit_character = ENG_william_slim
-recruit_character = ENG_tom_moore
+
 recruit_character = ENG_richard_oconnor
 recruit_character = ENG_henry_wilson
 recruit_character = ENG_william_platt
@@ -646,7 +646,6 @@ recruit_character = ENG_leslie_hore_belisha
 recruit_character = ENG_maxwell_aitken
 recruit_character = ENG_ernest_bevin
 recruit_character = ENG_stewart_menzies
-recruit_character = ENG_alan_turing
 
 # create_navy_leader = {
 # 	name = "James Fownes Somerville" # Aristocrat
