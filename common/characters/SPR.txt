@@ -1,4 +1,48 @@
 characters={
+	SPR_manuel_azaña={
+		name="Manuel Azaña"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MANUEL_AZANA_DESC"
+			ideology=conservatism
+			traits={ figurehead_president }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_josé_díaz={
+		name="José Díaz"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_Spain_Jose_Diaz.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSE_DIAZ_DESC"
+			ideology=stalinism
+			traits={ veteran_communist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_josé_antonio_primo_de_rivera={
+		name="José Antonio Primo de Rivera"
+		portraits={
+			civilian={
+				large="GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
+			ideology=falangism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	SPR_francisco_franco={
 		name="Francisco Franco"
 		portraits={
@@ -6,754 +50,240 @@ characters={
 				large="GFX_portrait_spain_francisco_franco"
 			}
 		}
-		advisor = {
-				slot = army_chief
-				idea_token = SPA_francisco_franco
-				name = SPR_fransisco_franco
-				allowed = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-					original_tag = SPR
-				}
-				traits = {
-					army_chief_offensive_3
-				}
-				cost = 200
-		}
 		field_marshal={
-			traits={ brilliant_strategist organizer trait_engineer panzer_leader desert_fox hill_fighter logistics_wizard thorough_planner aggressive_assaulter }
-			skill=6
+			traits={ old_guard inflexible_strategist trait_cautious infantry_officer politically_connected infantry_leader skilled_staffer hill_fighter }
+			skill=5
 			attack_skill=5
-			defense_skill=1
-			planning_skill=6
-			logistics_skill=7
-			legacy_id=-1
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1108
 		}
 		country_leader={
+			desc="POLITICS_FRANCISCO_FRANCO_DESC"
 			ideology=despotism
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-	SPR_mariano_aranda={
-		name="Mariano Aranda"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_5"
-			}
-		}
-		country_leader={
-			ideology=liberalism
-			traits={ economist }
-			expire="1952.1.1.12"
-			id=-1
-		}
-	}
-	SPR_raimundo_márquez={
-		name="Raimundo Márquez"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=marxism
-			traits={ armaments_organizer fortification_engineer }
-			expire="1955.1.1.12"
-			id=-1
-		}
-	}
-	SPR_agustín_acuña={
-		name="Agustín Acuña"
-		portraits={
-			civilian={
-				large="GFX_portrait_europe_generic_6"
-			}
-		}
-		country_leader={
-			ideology=nazism
-			traits={ appeaser }
-			expire="1941.1.1.12"
-			id=-1
-		}
-	}
-	SPR_charles_huntziger={
-		name="Charles Huntziger"
+	SPR_josé_asensio_torrado={
+		name="José Asensio Torrado"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_FRA_charles_huntziger.dds"
+				small="GFX_portrait_SPR_jose_asensio_torrado_small"
 			}
 			army={
-				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
+				large="GFX_portrait_SPR_jose_asensio_torrado"
 			}
 		}
 		field_marshal={
-			traits={ old_guard inflexible_strategist organizer panzer_leader winter_specialist defensive_doctrine unyielding_defender panzer_expert ambusher guerilla_fighter }
-			skill=6
-			attack_skill=6
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
+			traits={ defensive_doctrine organisational_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=1101
 		}
 	}
-	SPR_maurice_gamelin={
-		name="Maurice Gamelin"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_maurice_gamelin.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
-			}
-		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist infantry_leader logistics_wizard defensive_doctrine unyielding_defender ambusher }
-			skill=6
-			attack_skill=4
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	SPR_maxime_weygand={
-		name="Maxime Weygand"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_maxime_weygand.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
-			}
-		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist panzer_leader logistics_wizard thorough_planner unyielding_defender panzer_expert }
-			skill=6
-			attack_skill=6
-			defense_skill=7
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-		SPA_wilhelm_ritter_von_thoma = { # Falangist/Francoist
-		name=SPA_wilhelm_ritter_von_thoma
-		portraits={
-			army={
-				small="GFX_idea_SPA_wilhelm_ritter_von_thoma"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = SPA_wilhelm_ritter_von_thoma
-			ledger = army
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			
-			available = {
-				has_completed_focus = SPA_the_condor_legion
-				
-			}
-			traits = {
-				army_armored_2
-			}
-			cost = 100
-		}
-	}
-
 	SPR_vicente_rojo_lluch={
 		name="Vicente Rojo Lluch"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SPR_vicente_rojo_lluch.dds"
+				small="GFX_portrait_SPR_vicente_rojo_lluch_small"
 			}
 			army={
-				large="gfx/leaders/SPR/portrait_spr_vicente_rojo_lluch.dds"
+				large="GFX_portrait_SPR_vicente_rojo_lluch"
 			}
 		}
-			advisor={
-				slot = army_chief
-				idea_token = SPR_vincente_rojo_lluch
-				name = SPR_vincente_rojo_lluch
-				allowed = {
-					NOT = {
-						has_dlc = "La Resistance"
-					}
-					original_tag = SPR
-				}
-				traits = {
-					army_chief_maneuver_2
-				}
-				cost = 100
-			}
-		field_marshal={
-			traits={ brilliant_strategist organizer infantry_leader logistics_wizard fast_planner aggressive_assaulter organisational_leader inspirational_leader infantry_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	SPR_ion_antonescu={
-		name="Ion Antonescu"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ROM_ion_antonescu.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/Portrait_Romania_Ion_Antonescu.dds"
-			}
-		}
-		field_marshal={
-			traits={ adaptable brilliant_strategist infantry_leader trait_engineer naval_invader thorough_planner aggressive_assaulter infantry_expert invader_ii }
-			skill=6
-			attack_skill=6
-			defense_skill=1
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_emilio_mola={
-		name="Emilio Mola"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SPA_emilio_mola.dds"
-			}
-			army={
-				large="gfx/leaders/SPA/portrait_spa_emilio_mola.dds"
-			}
-		}
-		advisor={	
-				slot = high_command
-				idea_token = SPA_emilio_mola
-				ledger = army
-				allowed = {
-					has_dlc = "La Resistance"
-					original_tag = SPR
-				}
-		
-				traits = {
-					army_infantry_2
-				}
-				cost = 100
-			}
-		field_marshal={
-			traits={ bearer_of_artillery trait_cautious cavalry_leader logistics_wizard defensive_doctrine combined_arms_expert cavalry_expert scavenger ambusher }
-			skill=6
-			attack_skill=4
+		corps_commander={
+			traits={ career_officer politically_connected skilled_staffer trait_engineer panzer_leader commando }
+			skill=4
+			attack_skill=2
 			defense_skill=3
-			planning_skill=4
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	SPR_antoinemariebenoît_besson={
-		name="Antoine-Marie-Benoît Besson"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_generic_land_2.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
-			}
-		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist infantry_leader trait_mountaineer logistics_wizard defensive_doctrine ambusher camouflage_expert }
-			skill=6
-			attack_skill=4
-			defense_skill=8
-			planning_skill=1
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	SPR_petre_dumitrescu={
-		name="Petre Dumitrescu"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ROM_petre_dumitrescu.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/Portrait_romania_petre_dumitrescu.dds"
-			}
-		}
-		field_marshal={
-			traits={ inflexible_strategist cavalry_leader urban_assault_specialist logistics_wizard defensive_doctrine unyielding_defender combined_arms_expert cavalry_expert guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=8
 			planning_skill=3
 			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	SPR_miguel_cabanellas={
-		name="Miguel Cabanellas"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SPA_miguel_cabanellas.dds"
-			}
-			army={
-				large="gfx/leaders/SPA/portrait_spa_miguel_cabanellas.dds"
-			}
-		}
-		field_marshal={
-			traits={ adaptable old_guard organizer cavalry_leader urban_assault_specialist fast_planner thorough_planner inspirational_leader combined_arms_expert cavalry_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
+			legacy_id=1102
 		}
 	}
 	SPR_josé_miaja={
 		name="José Miaja"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SPR_jose_miaja.dds"
+				small="GFX_portrait_SPR_jose_miaja_small"
 			}
 			army={
-				large="gfx/leaders/SPR/portrait_spr_jose_miaja.dds"
-			}
-		}
-		field_marshal={
-			traits={ bearer_of_artillery old_guard organizer infantry_leader trickster ranger urban_assault_specialist thorough_planner fortress_buster infantry_expert }
-			skill=6
-			attack_skill=3
-			defense_skill=6
-			planning_skill=4
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_ioan_mihail_racovita={
-		name="Ioan Mihail Racovita"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ROM_ioan_mihail_racovita.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/Portrait_romania_ioan_mihail_racovita.dds"
+				large="GFX_portrait_SPR_jose_miaja"
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader trait_engineer naval_invader trait_mountaineer hill_fighter urban_assault_specialist fortress_buster infantry_expert }
-			skill=6
+			traits={ old_guard career_officer harsh_leader infantry_officer politically_connected infantry_leader skilled_staffer urban_assault_specialist }
+			skill=4
 			attack_skill=4
-			defense_skill=3
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_constantin_sanatescu={
-		name="Constantin Sanatescu"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ROM_constantin_sanatescu.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/portrait_romania_constantin_sanatescu.dds"
-			}
-		}
-		corps_commander={
-			traits={ bearer_of_artillery infantry_leader trickster trait_engineer ranger infantry_expert expert_improviser }
-			skill=6
-			attack_skill=4
-			defense_skill=3
-			planning_skill=6
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_alphonse_georges={
-		name="Alphonse Georges"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_alphonse_joseph_georges.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard inflexible_strategist cavalry_leader trickster commando combined_arms_expert cavalry_expert ambusher camouflage_expert guerilla_fighter }
-			skill=6
-			attack_skill=6
 			defense_skill=4
-			planning_skill=2
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	SPR_gastonhenri_billotte={
-		name="Gaston-Henri Billotte"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_generic_land_1.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
-			}
-		}
-		corps_commander={
-			traits={ fake_skilled_staffer old_guard trait_cautious infantry_leader desert_fox trait_mountaineer hill_fighter ambusher skirmisher guerilla_fighter }
-			skill=6
-			attack_skill=3
-			defense_skill=3
-			planning_skill=6
-			logistics_skill=7
-			legacy_id=-1
-		}
-	}
-	SPR_henry_freydenberg={
-		name="Henry Freydenberg"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_generic_land_3.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard infantry_leader trickster jungle_rat ranger infantry_expert expert_improviser guerilla_fighter }
-			skill=6
-			attack_skill=8
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	SPR_rené_olry={
-		name="René Olry"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_FRA_generic_land_5.dds"
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable old_guard infantry_leader trait_mountaineer fortress_buster infantry_expert paratrooper }
-			skill=6
-			attack_skill=2
-			defense_skill=4
-			planning_skill=9
+			planning_skill=1
 			logistics_skill=4
-			legacy_id=-1
-		}
-	}
-	SPR_josé_millán_astray={
-		name="José Millán Astray"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SPA_jose_millan_astray.dds"
-			}
-			army={
-				large="gfx/leaders/SPA/portrait_spa_jose_millan_astray.dds"
-			}
-		}
-		corps_commander={
-			traits={ adaptable trait_reckless cavalry_leader commando naval_invader swamp_fox ranger urban_assault_specialist combined_arms_expert cavalry_expert skirmisher }
-			skill=6
-			attack_skill=3
-			defense_skill=5
-			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
-		}
-	}
-	SPR_juan_yagüe={
-		name="Juan Yagüe"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SPA_juan_yague.dds"
-			}
-			army={
-				large="gfx/leaders/SPA/portrait_spa_juan_yague.dds"
-			}
-		}
-		corps_commander={
-			traits={ brilliant_strategist trait_reckless trickster trait_engineer panzer_leader desert_fox hill_fighter urban_assault_specialist panzer_expert }
-			skill=6
-			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
+			legacy_id=1103
 		}
 	}
 	SPR_mohamed_meziane={
 		name="Mohamed Meziane"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SPA_mohamed_meziane.dds"
+				small="GFX_portrait_SPA_mohamed_meziane_small"
 			}
 			army={
-				large="gfx/leaders/SPA/portrait_spa_mohamed_meziane.dds"
+				large="GFX_portrait_SPA_mohamed_meziane"
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader trickster panzer_leader urban_assault_specialist panzer_expert ambusher skirmisher }
-			skill=6
+			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies skilled_staffer desert_fox }
+			skill=4
 			attack_skill=5
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_nicolae_ciuperca={
-		name="Nicolae Ciuperca"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_europe_generic_land_4.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/Portrait_Romania_Nicolae_Ciuperca.tga"
-			}
-		}
-		corps_commander={
-			traits={ organizer trickster panzer_leader winter_specialist ranger panzer_expert scavenger expert_improviser }
-			skill=6
-			attack_skill=5
-			defense_skill=5
-			planning_skill=4
-			logistics_skill=5
-			legacy_id=-1
-		}
-	}
-	
-	
-	SPA_tomas_dominguez_arevalo={
-		name=SPA_tomas_dominguez_arevalo
-		portraits={
-			army={
-				small="GFX_idea_SPA_tomas_dominguez_arevalo"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_tomas_dominguez_arevalo
-			name = SPA_tomas_dominguez_arevalo 
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			
-			traits = {
-				lifelong_carlist 
-			}
-		}
-	}
-		SPA_ramon_serrano_suner={
-		name=SPA_ramon_serrano_suner
-		portraits={
-			army={
-				small="GFX_idea_SPA_ramon_serrano_suner"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_ramon_serrano_suner
-			name = SPA_ramon_serrano_suner 
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			
-			traits = {
-				silent_workhorse 
-			}
-		}
-	}
-
-	SPA_jose_antonio_giron={
-		name=SPA_jose_antonio_giron
-		portraits={
-			army={
-				small="GFX_idea_SPA_jose_antonio_giron"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_jose_antonio_giron
-			name = SPA_jose_antonio_giron 
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			
-			traits = {
-				falangist_industrialist 
-			}
-		}
-	}
-	SPA_fidel_davila_arrondo={
-		name=SPA_fidel_davila_arrondo
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_4"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_fidel_davila_arrondo
-			name = SPA_fidel_davila_arrondo 
-			allowed = {
-				original_tag = SPR
-				has_government = fascism
-			}
-			traits = {
-				war_industrialist 
-			}
-		}
-	}
-	SPA_tomas_garciano_goni={
-		name=SPA_tomas_garciano_goni
-		portraits={
-			army={
-				small="GFX_idea_generic_political_advisor_europe_1"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SPA_tomas_garciano_goni
-			name = SPA_tomas_garciano_goni 
-			allowed = {
-				original_tag = SPR
-				has_government = fascism
-			}
-			traits = {
-				compassionate_gentleman 
-			}
-		}
-	}
-	
-	SPR_josé_enrique_varela={
-		name="José Enrique Varela"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_SPA_jose_enrique_varela.dds"
-			}
-			army={
-				large="gfx/leaders/SPA/portrait_spa_jose_enrique_varela.dds"
-			}
-		}
-			advisor={
-				cost = 100
-				slot = theorist
-				idea_token = SPA_jose_enrique_varela
-				ledger = army
-				allowed = {
-					has_dlc = "La Resistance"
-					original_tag = SPR
-				}
-				
-				traits = {
-					military_theorist
-				}
-			}
-
-		corps_commander={
-			traits={ fake_skilled_staffer infantry_leader ranger fortress_buster scavenger infantry_expert camouflage_expert guerilla_fighter }
-			skill=6
-			attack_skill=4
-			defense_skill=3
-			planning_skill=5
-			logistics_skill=7
-			legacy_id=-1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1109
 		}
 	}
 	SPR_gonzalo_queipo_de_llano={
 		name="Gonzalo Queipo de Llano"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SPA_gonzalo_queipo_de_llano.dds"
+				small="GFX_portrait_SPA_gonzalo_queipo_de_llano_small"
 			}
 			army={
-				large="gfx/leaders/SPA/portrait_spa_gonzalo_queipo_de_llano.dds"
+				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
 			}
 		}
 		corps_commander={
-			traits={ adaptable infantry_leader trickster desert_fox trait_mountaineer hill_fighter infantry_expert }
-			skill=6
-			attack_skill=2
+			traits={ old_guard brilliant_strategist career_officer trait_reckless cavalry_officer trait_SPA_nationalist_sympathies infantry_leader skilled_staffer trickster panzer_leader desert_fox }
+			skill=5
+			attack_skill=7
 			defense_skill=1
-			planning_skill=7
-			logistics_skill=8
-			legacy_id=-1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1110
 		}
 	}
-	SPR_barbu_paraianu={
-		name="Barbu Paraianu"
+	SPR_emilio_mola={
+		name="Emilio Mola"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_ROM_barbu_paraianu.dds"
+				small="GFX_portrait_SPA_emilio_mola_small"
 			}
 			army={
-				large="gfx/leaders/ROM/portrait_romania_barbu_paraianu.dds"
+				large="GFX_portrait_SPA_emilio_mola"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=1111
+		}
+	}
+	SPR_juan_yagüe={
+		name="Juan Yagüe"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_juan_yague_small"
+			}
+			army={
+				large="GFX_portrait_SPA_juan_yague"
 			}
 		}
 		corps_commander={
-			traits={ cavalry_leader trickster commando ranger combined_arms_expert cavalry_expert scavenger skirmisher expert_improviser guerilla_fighter }
-			skill=6
+			traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+			skill=3
 			attack_skill=4
-			defense_skill=8
-			planning_skill=1
-			logistics_skill=6
-			legacy_id=-1
-		}
-	}
-	SPR_gheorghe_avramescu={
-		name="Gheorghe Avramescu"
-		portraits={
-			army={
-				small="gfx/interface/ideas/idea_ROM_gheorghe_avramescu.dds"
-			}
-			army={
-				large="gfx/leaders/ROM/Portrait_romania_gheorghe_avramescu.dds"
-			}
-		}
-		corps_commander={
-			traits={ trickster panzer_leader hill_fighter ranger panzer_expert camouflage_expert expert_improviser }
-			skill=6
-			attack_skill=4
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=6
-			legacy_id=-1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1112
 		}
 	}
 	SPR_agustín_muñoz_grandes={
 		name="Agustín Muñoz Grandes"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_SPA_augustin_muynoz_grandes.dds"
+				small="GFX_portrait_SPA_augustin_muynoz_grandes_small"
 			}
 			army={
-				large="gfx/leaders/SPA/portrait_spa_augustin_muynoz_grandes.dds"
+				large="GFX_portrait_SPA_augustin_muynoz_grandes"
 			}
 		}
 		corps_commander={
-			traits={ bearer_of_artillery old_guard organizer infantry_leader trickster trait_engineer ranger infantry_expert expert_improviser }
-			skill=6
-			attack_skill=3
+			traits={ trait_cautious armor_officer trait_SPA_nationalist_sympathies trickster panzer_leader hill_fighter }
+			skill=4
+			attack_skill=4
 			defense_skill=5
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=1113
+		}
+	}
+	SPR_josé_enrique_varela={
+		name="José Enrique Varela"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_jose_enrique_varela_small"
+			}
+			army={
+				large="GFX_portrait_SPA_jose_enrique_varela"
+			}
+		}
+		corps_commander={
+			traits={ trait_SPA_nationalist_sympathies organizer infantry_leader hill_fighter }
+			skill=4
+			attack_skill=6
+			defense_skill=2
 			planning_skill=3
-			logistics_skill=8
-			legacy_id=-1
+			logistics_skill=2
+			legacy_id=1114
+		}
+	}
+	SPR_miguel_cabanellas={
+		name="Miguel Cabanellas"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_miguel_cabanellas_small"
+			}
+			army={
+				large="GFX_portrait_SPA_miguel_cabanellas"
+			}
+		}
+		corps_commander={
+			traits={ old_guard cavalry_officer armor_officer trait_SPA_nationalist_sympathies organizer }
+			skill=4
+			attack_skill=1
+			defense_skill=7
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1115
+		}
+	}
+	SPR_josé_millán_astray={
+		name="José Millán Astray"
+		portraits={
+			army={
+				small="GFX_portrait_SPA_jose_millan_astray_small"
+			}
+			army={
+				large="GFX_portrait_SPA_jose_millan_astray"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless war_hero trait_SPA_nationalist_sympathies }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=5
+			legacy_id=1116
 		}
 	}
 }

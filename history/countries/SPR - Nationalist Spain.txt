@@ -128,6 +128,23 @@ add_equipment_to_stockpile = {
 	producer = SPR
 } 
 
+recruit_character = SPR_manuel_azaña
+recruit_character = SPR_josé_díaz
+recruit_character = SPR_josé_antonio_primo_de_rivera
+recruit_character = SPR_francisco_franco
+recruit_character = SPR_josé_asensio_torrado
+recruit_character = SPR_vicente_rojo_lluch
+recruit_character = SPR_josé_miaja
+recruit_character = SPR_mohamed_meziane
+recruit_character = SPR_gonzalo_queipo_de_llano
+recruit_character = SPR_emilio_mola
+recruit_character = SPR_juan_yagüe
+recruit_character = SPR_agustín_muñoz_grandes
+recruit_character = SPR_josé_enrique_varela
+recruit_character = SPR_miguel_cabanellas
+recruit_character = SPR_josé_millán_astray
+
+
 set_convoys = 100
 set_stability = 0.5
 

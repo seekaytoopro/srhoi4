@@ -530,6 +530,20 @@ characters={
 				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
 			}
 		}
+		advisor={
+			slot = theorist
+			idea_token = ferenc_feketehalmyczeydner
+			ledger  = army 
+				allowed  = {
+					original_tag  = HUN
+				}
+				research_bonus  = {
+					land_doctrine  = 0.150
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
 		field_marshal={
 			traits={ old_guard inflexible_strategist career_officer politically_connected organizer skilled_staffer ranger logistics_wizard thorough_planner inspirational_leader }
 			skill=5
