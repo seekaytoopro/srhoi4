@@ -1,20 +1,20 @@
 characters={
-	FRA_Edouard_daladier={
-		name="Édouard Daladier"
-		portraits={
-			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
-			}
-		}
-		country_leader={
-			desc="POLITICS_EDOUARD_DALADIER_DESC"
-			ideology=socialism
-			traits={ stout_defender }
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-	FRA_maurice_thorez={
+	# FRF_Edouard_daladier={
+	# 	name="Édouard Daladier"
+	# 	portraits={
+	# 		civilian={
+	# 			large="gfx/leaders/FRA/Portrait_France_Edouard_Daladier.dds"
+	# 		}
+	# 	}
+	# 	country_leader={
+	# 		desc="POLITICS_EDOUARD_DALADIER_DESC"
+	# 		ideology=socialism
+	# 		traits={ stout_defender }
+	# 		expire="1965.1.1.1"
+	# 		id=-1
+	# 	}
+	# }
+	FRF_maurice_thorez={
 		name="Maurice Thorez"
 		portraits={
 			civilian={
@@ -28,7 +28,7 @@ characters={
 			id=-1
 		}
 	}
-	FRA_philippe_petain={
+	FRF_philippe_petain={
 		name="Philippe Pétain"
 		portraits={
 			civilian={
@@ -42,7 +42,7 @@ characters={
 			id=-1
 		}
 	}
-	FRA_jean_de_lattre_de_tassigny={
+	FRF_jean_de_lattre_de_tassigny={
 		name="Jean de Lattre de Tassigny"
 		portraits={
 			army={
@@ -53,16 +53,16 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist harsh_leader cavalry_officer war_hero cavalry_leader trickster }
-			skill=4
-			attack_skill=4
-			defense_skill=2
-			planning_skill=5
-			logistics_skill=2
+			traits = { trickster brilliant_strategist cavalry_officer war_hero cavalry_leader harsh_leader expert_improviser }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id=-1
 		}
 	}
-	FRA_alphonse_juin={
+	FRF_alphonse_juin={
 		name="Alphonse Juin"
 		portraits={
 			army={
@@ -73,20 +73,20 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_cautious armor_officer skilled_staffer panzer_leader }
-			skill=4
-			attack_skill=2
-			defense_skill=6
-			planning_skill=4
-			logistics_skill=1
+			traits = {infantry_leader trait_reckless war_hero old_guard politically_connected career_officer skilled_staffer inflexible_strategist defensive_doctrine}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 6
+			planning_skill = 3
+			logistics_skill = 5
 			legacy_id=-1
 		}
 	}
-	FRA_maurice_gamelin={
+	FRF_maurice_gamelin={
 		name="Maurice Gamelin"
 		advisor={
 			slot = army_chief
-			idea_token = maurice_gamelin
+			idea_token = FRF_maurice_gamelin
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -94,10 +94,7 @@ characters={
 					}
 				}
 				available  = {
-					or  = {
-						has_completed_focus  = FRA_aggressive_focus 
-						original_tag  = FRF
-					}
+					original_tag  = FRF
 				}
 				cost  = 50.000
 				traits  = {
@@ -125,11 +122,11 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_maxime_weygand={
+	FRF_maxime_weygand={
 		name="Maxime Weygand"
 		advisor={
 			slot = army_chief
-			idea_token = maxime_weygand
+			idea_token = FRF_maxime_weygand
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -137,10 +134,7 @@ characters={
 					}
 				}
 				available  = {
-					or  = {
-						has_completed_focus  = FRA_defensive_focus 
-						original_tag  = FRF
-					}
+					original_tag  = FRF
 				}
 				cost  = 50.000
 				traits  = {
@@ -168,7 +162,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_alphonse_georges={
+	FRF_alphonse_georges={
 		name="Alphonse Georges"
 		portraits={
 			army={
@@ -188,7 +182,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_antoinemariebenoit_besson={
+	FRF_antoinemariebenoit_besson={
 		name="Antoine-Marie-Benoît Besson"
 		portraits={
 			army={
@@ -208,7 +202,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_charles_de_gaulle={
+	FRF_charles_de_gaulle={
 		name="Charles De Gaulle"
 		portraits={
 			army={
@@ -217,6 +211,16 @@ characters={
 			army={
 				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
 			}
+			civilian={
+				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_CHARLES_DE_GAULLE_DESC"
+			ideology=conservatism
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
 		}
 		advisor={
 			slot = theorist
@@ -243,20 +247,20 @@ characters={
 				}
 		}
 		corps_commander={
-			traits={ trait_reckless media_personality harsh_leader armor_officer organizer panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=5
-			legacy_id=101
+			traits = {  armor_officer harsh_leader media_personality trait_reckless panzer_leader trickster desert_fox}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+			# legacy_id=101
 		}
 	}
-	FRA_philippe_leclerc={
+	FRF_philippe_leclerc={
 		name="Philippe Leclerc"
 		advisor={
 			slot = high_command
-			idea_token = philippe_leclerc
+			idea_token = FRF_philippe_leclerc
 			ledger  = army 
 				allowed  = {
 					or  = {
@@ -265,7 +269,7 @@ characters={
 					}
 				}
 				traits  = {
-					army_commando_1 
+					army_commando_2 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -280,20 +284,20 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer trait_reckless armor_officer politically_connected panzer_leader }
-			skill=3
-			attack_skill=1
-			defense_skill=1
-			planning_skill=6
-			logistics_skill=1
+			traits = {infantry_leader desert_fox armor_officer trait_reckless old_guard inflexible_strategist trickster}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 5
 			legacy_id=-1
 		}
 	}
-	FRA_henri_giraud={
+	FRF_henri_giraud={
 		name="Henri Giraud"
 		advisor={
 			slot = theorist
-			idea_token = henri_giraud
+			idea_token = FRF_henri_giraud
 			ledger  = army 
 				allowed  = {
 					or  = {
@@ -329,11 +333,11 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_charles_huntziger={
+	FRF_charles_huntziger={
 		name="Charles Huntziger"
 		advisor={
 			slot = high_command
-			idea_token = charles_huntziger
+			idea_token = FRF_charles_huntziger
 			ledger  = army 
 				allowed  = {
 					or  = {
@@ -366,7 +370,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_gastonhenri_billotte={
+	FRF_gastonhenri_billotte={
 		name="Gaston-Henri Billotte"
 		portraits={
 			army={
@@ -386,7 +390,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_henry_freydenberg={
+	FRF_henry_freydenberg={
 		name="Henry Freydenberg"
 		portraits={
 			army={
@@ -406,7 +410,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_rene_olry={
+	FRF_rene_olry={
 		name="René Olry"
 		portraits={
 			army={
@@ -426,11 +430,11 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_francois_darlan={
+	FRF_francois_darlan={
 		name="François Darlan"
 		advisor={
 			slot = navy_chief
-			idea_token = francois_darlan
+			idea_token = FRF_francois_darlan
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -465,7 +469,7 @@ characters={
 			legacy_id=-1
 		}
 	}
-	FRA_georges_caillard={
+	FRF_georges_caillard={
 		name="Georges Caillard"
 		portraits={
 			civilian={
@@ -479,10 +483,10 @@ characters={
 			id=-1
 		}
 	}
-	FRA_gaston_henry_haye={
+	FRF_gaston_henry_haye={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_gaston_henry_haye
+			idea_token = FRF_gaston_henry_haye
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -507,10 +511,10 @@ characters={
 			}
 		}
 	}
-	FRA_georges_bonnet={
+	FRF_georges_bonnet={
 		advisor={
 			slot = political_advisor
-			idea_token = georges_bonnet
+			idea_token = FRF_georges_bonnet
 			allowed  = {
 					original_tag  = FRA
 				}
@@ -534,10 +538,10 @@ characters={
 			}
 		}
 	}
-	FRA_joseph_vuillemin={
+	FRF_joseph_vuillemin={
 		advisor={
 			slot = air_chief
-			idea_token = joseph_vuillemin
+			idea_token = FRF_joseph_vuillemin
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -558,10 +562,10 @@ characters={
 			}
 		}
 	}
-	FRA_pierre_pucheu={
+	FRF_pierre_pucheu={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_pierre_pucheu
+			idea_token = FRF_pierre_pucheu
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -587,10 +591,10 @@ characters={
 			}
 		}
 	}
-	FRA_charles_tillon={
+	FRF_charles_tillon={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_charles_tillon
+			idea_token = FRF_charles_tillon
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -615,10 +619,10 @@ characters={
 			}
 		}
 	}
-	FRA_vincent_auriol={
+	FRF_vincent_auriol={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_vincent_auriol
+			idea_token = FRF_vincent_auriol
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -626,10 +630,7 @@ characters={
 					}
 				}
 				available  = {
-					or  = {
-						original_tag  = FRF
-						has_completed_focus  = FRA_form_the_popular_front 
-					}
+					original_tag  = FRF
 				}
 				traits  = {
 					financial_expert 
@@ -649,10 +650,10 @@ characters={
 			}
 		}
 	}
-	# FRA_charles_de_gaulle={
+	# FRF_charles_de_gaulle={
 	# 	advisor={
 	# 		slot = theorist
-	# 		idea_token = charles_de_gaulle
+	# 		idea_token = FRF_charles_de_gaulle
 	# 		ledger  = army 
 	# 			allowed  = {
 	# 				or  = {
@@ -661,10 +662,7 @@ characters={
 	# 				}
 	# 			}
 	# 			available  = {
-	# 				or  = {
-	# 					has_completed_focus  = FRA_begin_rearmament 
-	# 					original_tag  = FRF
-	# 				}
+	# 				original_tag  = FRF
 	# 			}
 	# 			cost  = 75.000
 	# 			research_bonus  = {
@@ -684,10 +682,10 @@ characters={
 	# 		}
 	# 	}
 	# }
-	FRA_henri_marie_auguste_bineau={
+	FRF_henri_marie_auguste_bineau={
 		advisor={
 			slot = army_chief
-			idea_token = FRA_henri_marie_auguste_bineau
+			idea_token = FRF_henri_marie_auguste_bineau
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -701,17 +699,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="Henri Marie Auguste Bineau"
+		name="FRA_henri_marie_auguste_bineau"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_3"
 			}
 		}
 	}
-	FRA_zivony_peshkov={
+	FRF_zivony_peshkov={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_zivony_peshkov
+			idea_token = FRF_zivony_peshkov
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -736,10 +734,10 @@ characters={
 			}
 		}
 	}
-	FRA_philippe_fequant={
+	FRF_philippe_fequant={
 		advisor={
 			slot = air_chief
-			idea_token = philippe_fequant
+			idea_token = FRF_philippe_fequant
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -753,17 +751,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="philippe_fequant"
+		name="Philippe Fequant"
 		portraits={
 			army={
 				small="GFX_idea_philippe_fequant"
 			}
 		}
 	}
-	FRA_robert_odic={
+	FRF_robert_odic={
 		advisor={
 			slot = air_chief
-			idea_token = robert_odic
+			idea_token = FRF_robert_odic
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -777,17 +775,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="robert_odic"
+		name="Robert Odic"
 		portraits={
 			army={
 				small="GFX_idea_robert_odic"
 			}
 		}
 	}
-	FRA_jean_francois_jannekeyn={
+	FRF_jean_francois_jannekeyn={
 		advisor={
 			slot = high_command
-			idea_token = jean_francois_jannekeyn
+			idea_token = FRF_jean_francois_jannekeyn
 			ledger  = air 
 				allowed  = {
 					or  = {
@@ -802,17 +800,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="jean_francois_jannekeyn"
+		name="Jean Francois Jannekeyn"
 		portraits={
 			army={
 				small="GFX_idea_jean_francois_jannekeyn"
 			}
 		}
 	}
-	FRA_jean_marie_abrial={
+	FRF_jean_marie_abrial={
 		advisor={
 			slot = navy_chief
-			idea_token = jean_marie_abrial
+			idea_token = FRF_jean_marie_abrial
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -826,17 +824,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="jean_marie_abrial"
+		name="Jean Marie Abrial"
 		portraits={
 			army={
 				small="GFX_idea_jean_marie_abrial"
 			}
 		}
 	}
-	FRA_jean_marie_bergeret={
+	FRF_jean_marie_bergeret={
 		advisor={
 			slot = theorist
-			idea_token = jean_marie_bergeret
+			idea_token = FRF_jean_marie_bergeret
 			ledger  = air 
 				allowed  = {
 					or  = {
@@ -851,17 +849,17 @@ characters={
 					air_warfare_theorist 
 				}
 		}
-		name="jean_marie_bergeret"
+		name="Jean Marie Bergeret"
 		portraits={
 			army={
 				small="GFX_idea_jean_marie_bergeret"
 			}
 		}
 	}
-	FRA_leon_blum={
+	FRF_leon_blum={
 		advisor={
 			slot = political_advisor
-			idea_token = leon_blum
+			idea_token = FRF_leon_blum
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -882,17 +880,17 @@ characters={
 					factor  = 0.000
 				}
 		}
-		name="leon_blum"
+		name="Leon Blum"
 		portraits={
 			army={
 				small="GFX_idea_leon_blum"
 			}
 		}
 	}
-	FRA_marcel_gensoul={
+	FRF_marcel_gensoul={
 		advisor={
 			slot = navy_chief
-			idea_token = marcel_gensoul
+			idea_token = FRF_marcel_gensoul
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -906,17 +904,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="marcel_gensoul"
+		name="Marcel Gensoul"
 		portraits={
 			army={
 				small="GFX_idea_marcel_gensoul"
 			}
 		}
 	}
-	FRA_felix_gouin={
+	FRF_felix_gouin={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_felix_gouin
+			idea_token = FRF_felix_gouin
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -934,17 +932,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="FRA_felix_gouin"
+		name="Felix Gouin"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
 			}
 		}
 	}
-	FRA_rene_prioux={
+	FRF_rene_prioux={
 		advisor={
 			slot = high_command
-			idea_token = rene_prioux
+			idea_token = FRF_rene_prioux
 			ledger  = army 
 				allowed  = {
 					or  = {
@@ -959,17 +957,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="rene_prioux"
+		name="Rene Prioux"
 		portraits={
 			army={
 				small="GFX_idea_rene_prioux"
 			}
 		}
 	}
-	FRA_paul_baudouin={
+	FRF_paul_baudouin={
 		advisor={
 			slot = political_advisor
-			idea_token = FRA_paul_baudouin
+			idea_token = FRF_paul_baudouin
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -987,17 +985,17 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="FRA_paul_baudouin"
+		name="Paul Baudouin"
 		portraits={
 			army={
 				small="GFX_idea_generic_political_advisor_europe_3"
 			}
 		}
 	}
-	FRA_pierre_alombert_goget={
+	FRF_pierre_alombert_goget={
 		advisor={
 			slot = army_chief
-			idea_token = FRA_pierre_alombert_goget
+			idea_token = FRF_pierre_alombert_goget
 			allowed  = {
 					or  = {
 						original_tag  = FRA
@@ -1011,7 +1009,7 @@ characters={
 					factor  = 1.000
 				}
 		}
-		name="FRA_pierre_alombert_goget"
+		name="Pierre Alombert Goget"
 		portraits={
 			army={
 				small="GFX_idea_generic_army_europe_1"
