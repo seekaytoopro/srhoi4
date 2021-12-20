@@ -583,16 +583,27 @@ focus_tree = {
 		completion_reward = {
 		custom_effect_tooltip = RAJ_orde_wingate_tt
 		hidden_effect = {
-			create_corps_commander = {
-				name = "Orde Wingate"
-				gfx = "GFX_RAJ_orde_wingate"
+			# create_corps_commander = {
+			# 	name = "Orde Wingate"
+			# 	gfx = "GFX_RAJ_orde_wingate"
+			# 	traits = { jungle_rat commando }
+			# 	skill = 4
+			# 	attack_skill = 2
+			# 	defense_skill = 7
+			# 	planning_skill = 1
+			# 	logistics_skill = 5
+			# 	}
+
+			}
+			# recruit_character = RAJ_orde_wingate
+			add_corps_commander_role = {
+				Character = RAJ_orde_wingate
 				traits = { jungle_rat commando }
 				skill = 4
 				attack_skill = 2
 				defense_skill = 7
 				planning_skill = 1
 				logistics_skill = 5
-				}
 			}
 			add_tech_bonus = {
 				name = RAJ_chindits
@@ -798,9 +809,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = "Get 3 Powerful 5 Skill Commanders"
 			#custom_effect_tooltip = RAJ_indian_sandhurst_tt 
-				create_corps_commander = {
-					name = "Kodandera Madappa Cariappa"
-					gfx = "GFX_RAJ_kodandera_madappa_cariappa"
+			# recruit_character = RAJ_kodandera_madappa_cariappa
+			# recruit_character = RAJ_kodendera_subayya_thimayya
+			# recruit_character = RAJ_jayanto_nath_chaudhuri
+				add_corps_commander_role = {
+					character = RAJ_kodandera_madappa_cariappa
 					traits = { infantry_leader organizer skilled_staffer career_officer  trait_reckless harsh_leader hill_fighter trait_engineer}
 					skill = 5
 					attack_skill = 5
@@ -808,9 +821,8 @@ focus_tree = {
 					planning_skill = 4
 					logistics_skill = 3
 				}
-				create_corps_commander = {
-					name = "Kodendera Subayya Thimayya"
-					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
+				add_corps_commander_role = {
+					character = RAJ_kodendera_subayya_thimayya
 					traits = { jungle_rat infantry_leader commando inflexible_strategist trait_cautious infantry_officer politically_connected }
 					skill = 5
 					attack_skill = 4
@@ -818,9 +830,8 @@ focus_tree = {
 					planning_skill = 1
 					logistics_skill = 7
 				}
-				create_corps_commander = {
-					name = "Jayanto Nath Chaudhuri"
-					gfx = "GFX_RAJ_jayanto_nath_chaudhuri"
+				add_corps_commander_role = {
+					character = RAJ_jayanto_nath_chaudhuri
 					traits = { desert_fox cavalry_leader  trickster panzer_leader career_officer trait_reckless armor_officer}
 					skill = 5
 					attack_skill = 6
