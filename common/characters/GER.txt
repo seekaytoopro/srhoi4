@@ -225,46 +225,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	# GER_hans_von_luck={
-	# 	name="Hans von Luck"
-	# 	portraits={
-	# 		army={
-	# 			small="GFX_portrait_GER_hans_von_luck_small"
-	# 		}
-	# 		army={
-	# 			large="GFX_portrait_GER_hans_von_luck"
-	# 		}
-	# 	}
-	# 	corps_commander={
-	# 		traits={ bearer_of_artillery brilliant_strategist organizer infantry_leader trickster desert_fox trait_mountaineer hill_fighter infantry_expert }
-	# 		skill=6
-	# 		attack_skill=4
-	# 		defense_skill=2
-	# 		planning_skill=8
-	# 		logistics_skill=5
-	# 		legacy_id=-1
-	# 	}
-	# }
-	# GER_wilhelm_ritter_von_thoma={
-	# 	name="Wilhelm Ritter von Thoma"
-	# 	portraits={
-	# 		army={
-	# 			small="GFX_portrait_GER_wilhelm_ritter_von_thoma_small"
-	# 		}
-	# 		army={
-	# 			large="GFX_portrait_GER_wilhelm_ritter_von_thoma"
-	# 		}
-	# 	}
-	# 	corps_commander={
-	# 		traits={ bearer_of_artillery brilliant_strategist infantry_leader commando desert_fox hill_fighter ambusher skirmisher guerilla_fighter }
-	# 		skill=6
-	# 		attack_skill=4
-	# 		defense_skill=2
-	# 		planning_skill=8
-	# 		logistics_skill=5
-	# 		legacy_id=-1
-	# 	}
-	# }
 	GER_fedor_von_bock={
 		name="Fedor von Bock"
 		portraits={
@@ -385,7 +345,7 @@ characters={
 			traits = {
 				rund_hc
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.500
 			}
@@ -521,7 +481,7 @@ characters={
 			}
 		}
 			advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = heinz_guderian
 			ledger = army
