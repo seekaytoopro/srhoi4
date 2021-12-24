@@ -550,3 +550,5 @@ cro_industrial_effort:0 "Industrial Effort"
  SOV_southern_fortification_desc:0 "Southern Fortification"
 
  RAJ_institute_of_fundamental_research:0 "Encourage Colonial Elite"
+
+ SOV_masterful_blitz_change:0 "Replaces §YBlitz§! Tactic:\nEffective Change:\n    §GAttacker Offense +5%\n    Defender Offense -5%§!"
