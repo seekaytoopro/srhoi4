@@ -760,8 +760,8 @@ tank_refurbishment_plant = { #NSB
 	random = no
 		war_support_factor = 0.3
 		defensive_war_stability_factor = 0.3
-		army_attack_factor = 0.15
-		army_defence_factor =  0.15
+		army_attack_factor = 0.10
+		army_defence_factor =  0.10
 	}
 
 	lombardy = {

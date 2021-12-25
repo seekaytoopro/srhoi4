@@ -105,7 +105,7 @@ SOV_propaganda_campaigns = {
 
 	visible = {
 		OR = {
-			has_completed_focus = SOV_expand_the_agitprop
+			has_completed_focus = SOV_great_purge
 			has_country_flag = SOV_debug_show_propaganda_system_flag #Debug
 		}
 	}

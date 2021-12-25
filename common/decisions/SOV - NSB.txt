@@ -745,7 +745,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -806,7 +806,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -865,7 +865,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -927,7 +927,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -981,7 +981,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -1031,7 +1031,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -1089,7 +1089,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -1161,7 +1161,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -1264,7 +1264,7 @@ SOV_propaganda_campaigns = {
 
 		visible = {
 			OR = {
-				has_completed_focus = SOV_expand_the_agitprop
+				has_completed_focus = SOV_great_purge
 				has_country_flag = SOV_debug_unlock_propaganda_campaigns_flag #debug
 			}
 		}
@@ -4670,12 +4670,12 @@ SOV_great_patriotic_war = {
 		}
 
 		available = {
-			has_country_flag = { flag = SOV_penal_units_raised_flag days > 365 }
+			has_country_flag = { flag = SOV_penal_units_raised_flag days > 180 }
 			custom_trigger_tooltip = {
 				tooltip = SOV_raise_penal_units_days_tt
 				has_country_flag = {
 					flag = SOV_penal_units_raised_flag
-					days > 365
+					days > 180
 				}
 			}
 		}
@@ -4686,7 +4686,7 @@ SOV_great_patriotic_war = {
 
 		cost = 50
 
-		days_remove = 35
+		days_remove = 15
 
 		complete_effect = {
 		}
@@ -4716,7 +4716,7 @@ SOV_great_patriotic_war = {
 		}
 
 		target_root_trigger = {
-			has_completed_focus = SOV_desperate_measures
+			has_completed_focus = SOV_the_germans_invade
 		}
 
 		allowed = { 
@@ -4804,7 +4804,7 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_desperate_measures
+			has_completed_focus = SOV_the_germans_invade
 			NOT = { has_country_flag = SOV_order_227_flag }
 			FROM = {
 				is_controlled_by = ROOT
@@ -4876,7 +4876,7 @@ SOV_great_patriotic_war = {
 		}
 
 		visible = {
-			has_completed_focus = SOV_desperate_measures
+			has_completed_focus = SOV_the_germans_invade
 			NOT = { has_country_flag = SOV_order_227_flag }
 		}
 

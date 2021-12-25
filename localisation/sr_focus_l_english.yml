@@ -552,3 +552,50 @@ cro_industrial_effort:0 "Industrial Effort"
  RAJ_institute_of_fundamental_research:0 "Encourage Colonial Elite"
 
  SOV_masterful_blitz_change:0 "Replaces §YBlitz§! Tactic:\nEffective Change:\n    §GAttacker Offense +5%\n    Defender Offense -5%§!"
+
+ SOV_defense_industry_dynamic_modifier:0 "Production Targets"
+
+SOV_modify_defense_industry_ns_intro:0 "Modify §Y$SOV_defense_industry_dynamic_modifier$§! by"
+ SOV_found_the_pcdi_ns_tt:0 "Add §Y$SOV_defense_industry_dynamic_modifier$§!, which grants (Civilian to Military Factory conversion cost: §G-20.00%§!, Production Efficiency Retention: §R-10.00%§!, £prod_eff_cap Production Efficiency Cap: §G+5.00%§!, £prod_eff Production Efficiency growth: §R-5.00%§!) \n\n"
+ SOV_pc_of_mechanical_engineering_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \n £prod_eff_cap Production Efficiency Cap: §G+5.00%§! \n £prod_eff Production Efficiency growth: §R-5.00%§! \n\n"
+ SOV_superior_war_machines_ns_tt:1 "$SOV_modify_defense_industry_ns_intro$ \n$tank_manufacturer_cost_factor$: §G-25%§! \n\n"
+ SOV_the_means_to_wage_war_ns_tt:1 "$SOV_modify_defense_industry_ns_intro$ \n$materiel_manufacturer_cost_factor$: §G-25%§! \n\n"
+ SOV_development_of_tankograd_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nLand Equipment Experience Cost: §G-10%§! \n\n"
+ SOV_pc_of_mortar_armament_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nBreakthrough: §G+5.00%§! \nArtillery Defense: §G+5.0%§! \n\n"
+ SOV_military_engineering_university_ns_tt:0 "$SOV_modify_defense_industry_ns_intro$ \nMax Entrenchment: §G+5.0%§! \n§YLand Fort§! construction speed: §G+5.00%§! \n§YCoastal Fort§! construction speed: §G+5.00%§! \n\n"
+ SOV_soviet_atomic_bomb_project_tech_bonus_name:0 "National Atomic Bomb Project"
+ NSB_soviet_soviet_german_trade_agreement_tech_bonus_name:0 "Soviet-German Trade Agreement"
+ NSB_soviet_soviet_german_trade_agreement_tech_bonus_name_alt:0 "Russo-German Trade Agreement"
+ SOV_move_industry_to_the_urals_trains_tt:0 "§R[?SOV_industrial_relocation_trains_focus] $train_equipment$s§! will be used for the duration of this focus.\n\n"
+
+ SOV_modify_the_red_army_ns_intro:0 "Modify §Y[GetAppropriateRedArmyNsName]§! by"
+ SOV_modify_the_red_army_ns_name_default:0 "$SOV_the_red_army_dynamic_modifier$"
+ SOV_modify_the_red_army_ns_name_alt:0 "$SOV_the_red_army_dynamic_modifier_alt$"
+ SOV_strengthen_the_mobilization_plan_SR_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nMobilization speed: §G+15.00%§! \nRecruitable Population: §Y3.00%§! \n\n"
+ SOV_restore_cossack_units_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nCavalry Attack: §G+5.0%§! \nCavalry Speed: §G+5.0%§! \n\n"
+ SOV_cohesion_first_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Organization: §G+5.0%§! \nTraining time: §R+10.00%§! \n\n"
+
+ SOV_rehabilitated_military_SR_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Recovery Rate: §G+10.0%§! \nDivision Reinforce Rate: §G+10.0%§! \n\n"
+
+ SOV_an_adaptable_army_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nWinter Attrition: §G-10.0%§! \nHeat Attrition: §G-10.0%§! \nCold accmlimatization gain factor: §G+15.0%§! \nHot accmlimatization gain factor: §G+15.0%§! \nTerrain Penalty Reduction: §G+5.0%§! \n\n"
+ SOV_organization_of_the_partisans_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nOperative slots: §G+1§! \n\n"
+ SOV_barrier_troops_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nArmy Organization Regain: §G+10.00%§! \n\n"
+ SOV_experts_in_camouflage_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nEntrenchment speed: §G+5.0%§! \nMax Entrenchment: §G+5.0§! \nDamage Reduction Against CAS: §G+5.0%§! \n\n"
+ SOV_keep_commissars_organization_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Organization: §G+5.0%§! \nDivision Recovery Rate: §R-10.0%§! \nMaximum Command Power Increase: §G+50§! \n\n"
+ SOV_swap_to_political_advisors_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Organization: §R-5.0%§! \nDivision Recovery Rate: §G+10.0%§! \nDaily Command Power Gain Multiplier: §G+10%§! \n\n"
+ SOV_the_glory_of_the_red_army_ns_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nSpecial Forces Capacity Multiplier: §G+10.0%§! \nLand Doctrine Cost: §G-10.00%§! \n\n"
+ SOV_military_reorganization_ns_tt:0 "\n$SOV_modify_the_red_army_ns_intro$ \nInfantry Unit Design Cost: §G-10.00%§! \nArtillery Unit Design Cost: §G-10.00%§! \n\n"
+ SOV_restore_cossack_units_spawn_tt:0 "§Y4 Cavalry Divisions§! and §Y1 Infantry Division§! will be created in §Y[ROOT.Capital.GetName]§!."
+ SOV_penal_battalions_spawn_tt:0 "§Y10 Penal Divisions§! will be created in §Y[ROOT.Capital.GetName]§!. Unlocks decision §Y$SOV_raise_penal_units$§!, allowing to raise §Y10 Penal Divisions§! every 6 months."
+ SOV_penal_units_raised_flag:1 "Last time Penal Units were raised"
+
+SOV_keep_commissars_organization_SR_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Reinforce Rate: §G+10.0%§! \n\n"
+SOV_swap_to_political_advisors_SR_tt:0 "$SOV_modify_the_red_army_ns_intro$ \nDivision Reinforce Rate: §G+5.0%§! \n\n"
+SOV_finish_the_five_year_plan_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nConsumer Goods Factories: §Y-3.0%§!\n\n"
+SOV_third_five_year_plan_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nIndustrial Concern Cost: §G-33%§!\n\n"
+
+SOV_optimize_production_lines_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nProduction Efficiency Base: §G+5.0%§! \nFactory Output §G+2.0%§!\n\n"
+
+SOV_stalinist_architecture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YCivilian Factory§! Construction Speed: §G+10.0%§! \n§YMilitary Factory§! Construction Speed §G+5.0%§!\n\n"
+
+SOV_workers_culture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nConstruction Speed: §G+10.0%§! \n\n"
