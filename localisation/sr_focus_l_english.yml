@@ -596,6 +596,6 @@ SOV_third_five_year_plan_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nIndustrial Concern
 
 SOV_optimize_production_lines_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nProduction Efficiency Base: §G+5.0%§! \nFactory Output §G+2.0%§!\n\n"
 
-SOV_stalinist_architecture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YCivilian Factory§! Construction Speed: §G+10.0%§! \n§YMilitary Factory§! Construction Speed §G+5.0%§!\n\n"
+SOV_stalinist_architecture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YMilitary Factory§! Construction Speed §G+10.0%§! \n§YCivilian Factory§! Construction Speed: §G+5.0%§! \n\n"
 
 SOV_workers_culture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nConstruction Speed: §G+10.0%§! \n\n"
