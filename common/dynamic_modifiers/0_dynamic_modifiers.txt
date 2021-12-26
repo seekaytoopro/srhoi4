@@ -525,7 +525,7 @@ SOV_second_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT
 
 SOV_third_five_year_plan_dynamic_modifier = { #NATIONAL SPIRIT - Basic
 	enable = { always = yes }
-	production_speed_building_factor = SOV_fyp_production_speed_building_factor
+	production_speed_buildings_factor = SOV_fyp_production_speed_building_factor
 	icon = GFX_idea_SOV_third_five_year_plan
 
 	#PREVIOUS -> Third Five Year Plan
