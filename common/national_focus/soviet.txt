@@ -3062,7 +3062,7 @@ focus = {
 			id = SOV_positive_heroism
 			icon = GFX_focus_SOV_stalins_cult_of_personality
 			prerequisite = { focus = SOV_great_purge }
-			x = 5
+			x = 4
 			y = 1
 			relative_position_id = SOV_great_purge
 	
