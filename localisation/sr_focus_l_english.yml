@@ -599,3 +599,7 @@ SOV_optimize_production_lines_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nProduction Ef
 SOV_stalinist_architecture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \n§YMilitary Factory§! Construction Speed §G+10.0%§! \n§YCivilian Factory§! Construction Speed: §G+5.0%§! \n\n"
 
 SOV_workers_culture_SR_tt:0 "$SOV_modify_fyp_ns_intro$ \nConstruction Speed: §G+10.0%§! \n\n"
+
+SOV_defense_of_moscow_generals:0 "§YGeorgy Zhukov (New Tank Field Marshal)§! available as Field Marshal \n§YBoris Shaposhnikov (New Inf Field Marshal)§! available as Field Marshal \n§YDmitry Lelyushenko (New Tank Commander)§! available as General \n§YNikolai Berzarin (New Inf General)§! available as General \n§YIvan Konev§! available as General \n§YVasily Kuznetsov§! available as General \n§YMarkian Popov§! available as General \n§YAlexander Gorbatov§! available as General \n§YRodion Malinovsky§! available as General "
+
+SOV_war_for_communism_generals:0 "§YKonstantin Rokossovsky (Best Tank Commander)§! available as General \n§YKirill Moskalenko (Best Offensive Inf Marshal)§! available as Field Marshal \n§YAleksandr Vasilevsky§! available as General"
