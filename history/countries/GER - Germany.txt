@@ -8,6 +8,8 @@ add_to_tech_sharing_group = axis_research
 
 add_intel = { target = JAP civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
+diplomatic_relation = {   country = AUS relation = military_access  active = yes  }
+
 add_relation_modifier = {
     target = ITA
     modifier = stahlpakt
