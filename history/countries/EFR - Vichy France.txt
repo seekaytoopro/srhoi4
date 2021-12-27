@@ -164,7 +164,7 @@ add_ideas = {
 # 	logistics_skill = 2
 # }
 
-recruit_character = EFR_maxime_weygand
+# recruit_character = EFR_maxime_weygand
 recruit_character = EFR_phillipe_pétain
 recruit_character = EFR_jonas_smith
 recruit_character = EFR_marcus_smith

@@ -147,3 +147,5 @@ recruit_character = NOR_edgar_otto
 recruit_character = NOR_adolf_indrebo
 recruit_character = NOR_halvdan_koht
 recruit_character = NOR_trygve_halvdan_lie
+
+

@@ -387,3 +387,4 @@ recruit_character = HUN_hugo_miklos
 # recruit_character = HUN_ferenc_feketehalmyczeydner
 recruit_character = HUN_szilard_bakay
 recruit_character = HUN_vilmos_nagy_de_nagybaczon
+
