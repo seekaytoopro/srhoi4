@@ -54,11 +54,20 @@ technologies = {
 			secondary_turret_hmg
 			additional_machine_guns
 			tank_torsion_bar_suspension
-			tank_riveted_armor
-			tank_gasoline_engine
+			tank_riveted_armor 
 			tank_medium_cannon_1
+			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
+				tank_gasoline_engine_H
+			tank_diesel_engine_H
+			tank_petrol_electric_engine_H
+				tank_gasoline_engine_L
+			tank_diesel_engine_L
+			tank_petrol_electric_engine_L
+				tank_gasoline_engine_SH
+			tank_diesel_engine_SH
+			tank_petrol_electric_engine_SH
 			tank_cast_armor
 			tank_christie_suspension
 			tank_bogie_suspension
@@ -88,32 +97,7 @@ technologies = {
 			heavy_armor
 			
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-
+		
 		path = {
 			leads_to_tech = basic_light_tank_chassis
 			research_cost_coeff = 1
@@ -139,7 +123,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
-			
+			generic 
 		}
 	}
 
@@ -155,32 +139,7 @@ technologies = {
 			light_armor
 		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-
+	
 		path = {
 			leads_to_tech = improved_light_tank_chassis
 			research_cost_coeff = 1
@@ -199,8 +158,8 @@ technologies = {
 		}
 
 		categories = {
-			armor
-			cat_light_armor
+			armor 
+			cat_light_armor generic
 		}
 	}
 
@@ -229,6 +188,7 @@ technologies = {
 		categories = {
 			armor
 			cat_light_armor
+			generic
 		}
 	}
 
@@ -263,7 +223,7 @@ technologies = {
 
 		categories = {
 			armor
-			tp_tech
+			tp_tech generic
 		}
 	}
 
@@ -300,7 +260,7 @@ technologies = {
 
 		categories = {
 			armor
-			tp_tech
+			tp_tech generic
 		}
 	}
 
@@ -313,7 +273,7 @@ light_flame_tank
 }
 
 enable_equipment_modules = {
-
+tank_close_support_gun2
 easy_maintenance
 dozer_blade
 			flamethrower
@@ -339,10 +299,10 @@ tank_rocket_launcher
 			light_tank_aa_chassis_3
 		}
 
-		#path = {
-		#	leads_to_tech = advanced_light_tank_chassis2
-		#	research_cost_coeff = 1
-		#}
+		path = {
+			leads_to_tech = advanced_light_tank2_chassis
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1941
@@ -353,11 +313,51 @@ tank_rocket_launcher
 		}
 
 		categories = {
-			armor
-			cat_light_armor
+			armor cat_1941_tanks
+			cat_light_armor generic
 		}
 	}
 	
+# 	advanced_light_tank2_chassis = { #Leopard
+# enable_equipment_modules = {
+# 	tank_close_support_gun3
+# 		tank_radio_3
+# tank_rocket_launcher_2
+# tank_medium_howitzer_3
+# tank_medium_cannon_3
+# 		tank_heavy_howitzer3
+# 	tank_heavy_cannon_3
+# 			tank_anti_air_cannon_3
+# 			auto_loader
+# 	tank_high_velocity_cannon_m3
+# 	tank_high_velocity_cannon_h3
+# 	tank_high_velocity_cannon_l3
+# 					tank_super_heavy_cannon_3
+# }
+# 		enable_equipments = {
+# 			light_tank_chassis_4
+# 			light_tank_destroyer_chassis_4
+# 			light_tank_artillery_chassis_4
+# 			light_tank_aa_chassis_4
+# 		}
+
+# 		path = {
+# 			leads_to_tech = modern_armor
+# 			research_cost_coeff = 1
+# 		}
+# 		research_cost = 2
+# 		start_year = 1943
+
+# 		folder = {
+# 			name = nsb_armour_folder
+# 			position = { x = -4 y = 10 }
+# 		}
+
+# 		categories = {
+# 			armor cat_1943_tanks
+# 			cat_light_armor generic
+# 		}
+# 	}
 	
 
 	basic_medium_tank_chassis = { #Panzer III
@@ -373,32 +373,7 @@ tank_rocket_launcher
 			medium_armor
 		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
-
+		
 		path = {
 			leads_to_tech = improved_medium_tank_chassis
 			research_cost_coeff = 1
@@ -419,7 +394,7 @@ tank_rocket_launcher
 
 		
 		categories = {
-			armor
+			armor generic
 			cat_medium_armor
 		}
 	}
@@ -441,7 +416,7 @@ light_flame_tank
 		}
 
 enable_equipment_modules = {
-
+tank_close_support_gun2
 easy_maintenance
 dozer_blade
 			flamethrower
@@ -474,8 +449,8 @@ tank_rocket_launcher
 		}
 
 		categories = {
-			armor
-			cat_medium_armor
+			armor cat_1941_tanks
+			cat_medium_armor generic
 		}
 	}
 
@@ -488,6 +463,7 @@ tank_rocket_launcher
 			medium_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
+		tank_close_support_gun3
 		tank_radio_3
 tank_rocket_launcher_2
 tank_medium_howitzer_3
@@ -515,8 +491,8 @@ tank_medium_cannon_3
 		}
 
 		categories = {
-			armor
-			cat_medium_armor
+			armor cat_1943_tanks
+			cat_medium_armor generic
 		}
 	}
 
@@ -541,7 +517,7 @@ tank_medium_cannon_3
 		}
 
 		categories = {
-			armor 
+			armor  generic
 			cat_medium_armor
 		}
 	}
@@ -560,31 +536,7 @@ tank_medium_cannon_3
 			heavy_armor
 		}
 
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-
-					load_oob = "unlock_tanks"
-				}
-			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-		}
+		
 
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
@@ -600,7 +552,7 @@ tank_medium_cannon_3
 		}
 
 		categories = {
-			armor
+			armor generic
 			cat_heavy_armor
 		}
 	}
@@ -619,7 +571,7 @@ light_flame_tank
 			heavy_tank_aa_chassis_2
 		}
 		enable_equipment_modules = {  
-		
+		tank_close_support_gun2
 easy_maintenance
 dozer_blade
 			flamethrower
@@ -650,7 +602,7 @@ tank_rocket_launcher
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1940
 
 		folder = {
@@ -659,8 +611,8 @@ tank_rocket_launcher
 		}
 
 		categories = {
-			armor
-			cat_heavy_armor
+			armor cat_1941_tanks
+			cat_heavy_armor generic
 		}
 	}
 
@@ -674,6 +626,7 @@ tank_rocket_launcher
 			heavy_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
+		tank_close_support_gun3
 		tank_heavy_howitzer3
 		tank_medium_cannon_3
 		tank_medium_howitzer_3
@@ -692,7 +645,7 @@ tank_rocket_launcher_2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1943
 
 		folder = {
@@ -701,8 +654,8 @@ tank_rocket_launcher_2
 		}
 
 		categories = {
-			armor
-			cat_heavy_armor
+			armor cat_1943_tanks
+			cat_heavy_armor generic
 		}
 	}
 
@@ -716,6 +669,7 @@ tank_rocket_launcher_2
 		}
 		enable_equipment_modules = { 
 		tank_medium_cannon_3
+		tank_close_support_gun3
 			tank_radio_3
 tank_rocket_launcher_2
 	tank_heavy_cannon_3
@@ -731,22 +685,21 @@ tank_rocket_launcher_2
 		enable_subunits = {
 			super_heavy_armor
 		}
+	path = {
+			leads_to_tech = modern_armor
+			research_cost_coeff = 1
+		}
 
-
-		research_cost = 2.5
+		research_cost = 2
 		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 8 y = @1943 }
 		}
 
-		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
-		}
-
-		categories = {
-			armor
-			cat_heavy_armor
+			categories = {
+			armor cat_1943_tanks
+			cat_heavy_armor generic
 		}
 	}
 
@@ -774,7 +727,7 @@ tank_rocket_launcher_2
 
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -801,7 +754,7 @@ tank_rocket_launcher_2
 		}
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -826,7 +779,7 @@ tank_rocket_launcher_2
 		}
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -845,7 +798,7 @@ tank_rocket_launcher_2
 		show_effect_as_desc = yes
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -869,7 +822,7 @@ tank_rocket_launcher_2
 
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -894,7 +847,7 @@ tank_rocket_launcher_2
 		}
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -917,7 +870,7 @@ tank_rocket_launcher_2
 		}
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 
@@ -935,7 +888,7 @@ tank_rocket_launcher_2
 		show_effect_as_desc = yes
 
 		categories = {
-			armor
+			armor generic
 		}
 	}
 }
