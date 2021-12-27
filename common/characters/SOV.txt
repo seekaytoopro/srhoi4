@@ -59,15 +59,16 @@ characters = {
 			large="gfx/leaders/SOV/Portrait_Soviet_Aleksandr_Vasilevsky.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ trait_cautious harsh_leader armor_officer politically_connected organizer skilled_staffer panzer_leader winter_specialist }
-	# 	skill=6
-	# 	attack_skill=4
-	# 	defense_skill=3
-	# 	planning_skill=8
-	# 	logistics_skill=4
-	# 	legacy_id=407
-	# }
+	corps_commander={
+		traits={ trait_cautious harsh_leader armor_officer politically_connected organizer skilled_staffer panzer_leader winter_specialist }
+		skill=6
+		attack_skill=4
+		defense_skill=3
+		planning_skill=8
+		logistics_skill=4
+		legacy_id=407
+		visible = { has_completed_focus = SOV_defense_of_stalingrad }
+	}
 	advisor = {
 		slot = high_command
 		idea_token = aleksandr_vasilevsky
@@ -111,15 +112,16 @@ SOV_ivan_konev={
 			large="gfx/leaders/SOV/Portrait_Soviet_Ivan_Konev.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ trait_reckless harsh_leader armor_officer politically_connected panzer_leader ranger }
-	# 	skill=5
-	# 	attack_skill=5
-	# 	defense_skill=6
-	# 	planning_skill=4
-	# 	logistics_skill=3
-	# 	legacy_id=408
-	# }
+	corps_commander={
+		traits={ trait_reckless harsh_leader armor_officer politically_connected panzer_leader ranger }
+		skill=5
+		attack_skill=5
+		defense_skill=6
+		planning_skill=4
+		logistics_skill=3
+		legacy_id=408
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 	advisor = {
 		slot = high_command
 		idea_token = ivan_konev
@@ -409,15 +411,16 @@ SOV_vasily_kuznetsov={
 			large="gfx/leaders/SOV/Portrait_Soviet_Vasily_Kuznetsov.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ brilliant_strategist media_personality infantry_officer politically_connected war_hero infantry_leader commando winter_specialist }
-	# 	skill=5
-	# 	attack_skill=4
-	# 	defense_skill=4
-	# 	planning_skill=3
-	# 	logistics_skill=3
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ brilliant_strategist media_personality infantry_officer politically_connected war_hero infantry_leader commando winter_specialist }
+		skill=5
+		attack_skill=4
+		defense_skill=4
+		planning_skill=3
+		logistics_skill=3
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+		legacy_id=-1
+	}
 }
 SOV_andrey_vlasov={
 	name="Andrey Vlasov"
@@ -489,15 +492,16 @@ SOV_markian_popov={
 			large="gfx/leaders/SOV/Portrait_Soviet_Matkian_Popov.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ brilliant_strategist infantry_officer war_hero infantry_leader trait_engineer urban_assault_specialist }
-	# 	skill=5
-	# 	attack_skill=6
-	# 	defense_skill=4
-	# 	planning_skill=3
-	# 	logistics_skill=3
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ brilliant_strategist infantry_officer war_hero infantry_leader trait_engineer urban_assault_specialist }
+		skill=5
+		attack_skill=6
+		defense_skill=4
+		planning_skill=3
+		logistics_skill=3
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 }
 SOV_rodion_malinovsky={
 	name="Rodion Malinovsky"
@@ -509,15 +513,16 @@ SOV_rodion_malinovsky={
 			large="gfx/leaders/SOV/Portrait_Soviet_Rodion_Malinovsky.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ old_guard career_officer trait_cautious politically_connected winter_specialist swamp_fox }
-	# 	skill=5
-	# 	attack_skill=4
-	# 	defense_skill=3
-	# 	planning_skill=1
-	# 	logistics_skill=8
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ old_guard career_officer trait_cautious politically_connected winter_specialist swamp_fox }
+		skill=5
+		attack_skill=4
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=8
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 }
 SOV_georgy_zhukov={
 	name="Georgy Zhukov (New Tank Field Marshal)"
@@ -529,30 +534,31 @@ SOV_georgy_zhukov={
 			large="gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
 		}
 	}
-	# field_marshal={
-	# 	traits={ brilliant_strategist media_personality harsh_leader armor_officer politically_connected organizer trait_engineer panzer_leader winter_specialist logistics_wizard thorough_planner inspirational_leader panzer_expert }
-	# 	skill=6
-	# 	attack_skill=6
-	# 	defense_skill=4
-	# 	planning_skill=4
-	# 	logistics_skill=5
-	# 	legacy_id=410
-	# }
-	advisor = {
-		cost = 150
-		slot = theorist
-		idea_token = georgy_zhukov
-		ledger = army
-		allowed = {
-			original_tag = SOV
-		}
-		available = {
-			# has_completed_focus = SOV_positive_heroism
-		}
-		traits = {
-			mass_assault_expert
-		}
-	}	
+	field_marshal={
+		traits={ brilliant_strategist media_personality harsh_leader armor_officer politically_connected organizer trait_engineer panzer_leader winter_specialist logistics_wizard thorough_planner inspirational_leader panzer_expert }
+		skill=6
+		attack_skill=6
+		defense_skill=4
+		planning_skill=4
+		logistics_skill=5
+		legacy_id=410
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
+	# advisor = {
+	# 	cost = 150
+	# 	slot = theorist
+	# 	idea_token = georgy_zhukov
+	# 	ledger = army
+	# 	allowed = {
+	# 		original_tag = SOV
+	# 	}
+	# 	available = {
+	# 		# has_completed_focus = SOV_positive_heroism
+	# 	}
+	# 	traits = {
+	# 		mass_assault_expert
+	# 	}
+	# }	
 }
 SOV_boris_shaposhnikov={
 	name="Boris Shaposhnikov (New Inf Field Marshal)"
@@ -564,15 +570,16 @@ SOV_boris_shaposhnikov={
 			large="gfx/leaders/SOV/Portrait_Soviet_Boris_Shaposhnikov.dds"
 		}
 	}
-	# field_marshal={
-	# 	traits={ old_guard career_officer trait_cautious infantry_officer politically_connected organizer winter_specialist logistics_wizard defensive_doctrine }
-	# 	skill=5
-	# 	attack_skill=3
-	# 	defense_skill=8
-	# 	planning_skill=2
-	# 	logistics_skill=7
-	# 	legacy_id=-1
-	# }
+	field_marshal={
+		traits={ old_guard career_officer trait_cautious infantry_officer politically_connected organizer winter_specialist logistics_wizard defensive_doctrine }
+		skill=5
+		attack_skill=3
+		defense_skill=8
+		planning_skill=2
+		logistics_skill=7
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 	advisor = {
 		cost = 150
 		slot = theorist
@@ -594,15 +601,16 @@ SOV_nikolai_berzarin={
 			small="gfx/interface/ideas/idea_SOV_nikolai_berzarin.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ old_guard trait_reckless infantry_officer war_hero infantry_leader skilled_staffer ranger infantry_expert }
-	# 	skill=5
-	# 	attack_skill=6
-	# 	defense_skill=7
-	# 	planning_skill=3
-	# 	logistics_skill=5
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ old_guard trait_reckless infantry_officer war_hero infantry_leader skilled_staffer ranger infantry_expert }
+		skill=5
+		attack_skill=6
+		defense_skill=7
+		planning_skill=3
+		logistics_skill=5
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 }
 SOV_alexander_gorbatov={
 	name="Alexander Gorbatov"
@@ -612,15 +620,16 @@ SOV_alexander_gorbatov={
 			small="gfx/interface/ideas/idea_SOV_alexander_gorbatov.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ career_officer trait_reckless harsh_leader cavalry_officer infantry_leader }
-	# 	skill=5
-	# 	attack_skill=4
-	# 	defense_skill=4
-	# 	planning_skill=4
-	# 	logistics_skill=4
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ career_officer trait_reckless harsh_leader cavalry_officer infantry_leader }
+		skill=5
+		attack_skill=4
+		defense_skill=4
+		planning_skill=4
+		logistics_skill=4
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 }
 SOV_dmitry_lelyushenko={
 	name="Dmitry Lelyushenko (New Tank Commander)"
@@ -632,15 +641,16 @@ SOV_dmitry_lelyushenko={
 			large="gfx/leaders/SOV/Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ trait_reckless harsh_leader armor_officer trickster panzer_leader ranger panzer_expert }
-	# 	skill=5
-	# 	attack_skill=5
-	# 	defense_skill=5
-	# 	planning_skill=6
-	# 	logistics_skill=2
-	# 	legacy_id=-1
-	# }
+	corps_commander={
+		traits={ trait_reckless harsh_leader armor_officer trickster panzer_leader ranger panzer_expert }
+		skill=5
+		attack_skill=5
+		defense_skill=5
+		planning_skill=6
+		logistics_skill=2
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_moscow }
+	}
 }
 SOV_konstantin_rokossovsky={
 	name="Konstantin Rokossovsky (Best Tank Commander)"
@@ -652,15 +662,16 @@ SOV_konstantin_rokossovsky={
 			large="gfx/leaders/SOV/Portrait_Soviet_Konstantin_Rokossovsky.dds"
 		}
 	}
-	# corps_commander={
-	# 	traits={ brilliant_strategist trait_cautious harsh_leader armor_officer war_hero trickster trait_engineer panzer_leader winter_specialist ranger panzer_expert expert_improviser }
-	# 	skill=6
-	# 	attack_skill=6
-	# 	defense_skill=5
-	# 	planning_skill=5
-	# 	logistics_skill=3
-	# 	legacy_id=402
-	# }
+	corps_commander={
+		traits={ brilliant_strategist trait_cautious harsh_leader armor_officer war_hero trickster trait_engineer panzer_leader winter_specialist ranger panzer_expert expert_improviser }
+		skill=6
+		attack_skill=6
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=3
+		legacy_id=402
+		visible = { has_completed_focus = SOV_defense_of_stalingrad }
+	}
 	advisor = {
 		slot = high_command
 		idea_token = konstantin_rokossovsky
@@ -690,15 +701,16 @@ SOV_kirill_moskalenko={
 			large="gfx/leaders/SOV/Portrait_Soviet_Kirill_Moskalenko.dds"
 		}
 	}
-	# field_marshal={
-	# 	traits={ old_guard brilliant_strategist career_officer infantry_leader skilled_staffer winter_specialist ranger defensive_doctrine aggressive_assaulter inspirational_leader infantry_expert }
-	# 	skill=6
-	# 	attack_skill=6
-	# 	defense_skill=3
-	# 	planning_skill=6
-	# 	logistics_skill=3
-	# 	legacy_id=-1
-	# }
+	field_marshal={
+		traits={ old_guard brilliant_strategist career_officer infantry_leader skilled_staffer winter_specialist ranger defensive_doctrine aggressive_assaulter inspirational_leader infantry_expert }
+		skill=6
+		attack_skill=6
+		defense_skill=3
+		planning_skill=6
+		logistics_skill=3
+		legacy_id=-1
+		visible = { has_completed_focus = SOV_defense_of_stalingrad }
+	}
 }
 SOV_nikolai_vatutin={
 	name="Nikolai Vatutin"
