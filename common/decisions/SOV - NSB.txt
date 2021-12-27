@@ -706,29 +706,6 @@ SOV_propaganda_campaigns = {
 
 		icon = eng_propaganda_campaigns
 
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				surrender_progress > 0.4
-			}
-			modifier = {
-				add = 10
-				has_manpower < 500000
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { SOV_propaganda_motherland_calls_cost > 30 } #Less likely to do it a third time
-			}
-			modifier = {
-				factor = 0.1
-				check_variable = { SOV_propaganda_motherland_calls_cost > 45 } #Even less likely to do it a fourth time
-			}
-			modifier = {
-				factor = 0
-				check_variable = { SOV_propaganda_motherland_calls_cost > 90 } #Shouldn't even consider doing it a fifth time
-			}
-		}
 
 		allowed = { 
 			original_tag = SOV
@@ -757,7 +734,7 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_motherland_calls_cost
 
 		modifier = {
-			weekly_manpower = 1000
+			weekly_manpower = 25000
 			training_time_factor = -0.1
 			minimum_training_level = -0.1
 		}
@@ -793,14 +770,7 @@ SOV_propaganda_campaigns = {
 			SOV_propaganda_poster_slot_available = yes
 			has_war = yes
 			surrender_progress < 0.01
-			any_enemy_country = {
-				is_major = yes
-				ROOT = {
-					any_controlled_state = {
-						is_core_of = PREV.PREV
-					}
-				}
-			}
+			date > 1942.1.1 
 			SOV_propaganda_victory_at_hand_available = yes
 		}
 
@@ -940,9 +910,9 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_fight_to_the_last_cost
 
 		modifier = {
-			army_org_factor = 0.05
-			out_of_supply_factor = -0.1
-			no_supply_grace = 70
+			pocket_penalty = -0.2
+			out_of_supply_factor = -0.2
+			no_supply_grace = 72
 		}
 
 		complete_effect = {
@@ -1043,8 +1013,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_transport_cost
 
 		modifier = {
-			production_speed_supply_node_factor = 0.15
-			production_speed_rail_way_factor = 0.15
+			production_speed_supply_node_factor = 0.25
+			production_speed_rail_way_factor = 0.25
 			supply_consumption_factor = -0.1
 		}
 
@@ -1101,9 +1071,9 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_oil_for_the_motherland_cost
 
 		modifier = {
-			fuel_gain_factor = 0.1
-			army_fuel_consumption_factor = -0.1
-			air_fuel_consumption_factor = -0.1
+			fuel_gain_factor = 0.25
+			army_fuel_consumption_factor = -0.25
+			air_fuel_consumption_factor = -0.25
 		}
 
 		complete_effect = {
@@ -1190,7 +1160,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_steel_bonus = 1 } }
+					capital_scope = { add_to_variable = { SOV_steel_bonus = 3 } }
 				}
 
 				every_controlled_state = {
@@ -1200,7 +1170,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_aluminium_bonus = 1 } }
+					capital_scope = { add_to_variable = { SOV_aluminium_bonus = 3 } }
 				}
 
 				every_controlled_state = {
@@ -1210,7 +1180,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_chromium_bonus = 1 } }
+					capital_scope = { add_to_variable = { SOV_chromium_bonus = 3 } }
 				}
 
 				every_controlled_state = {
@@ -1220,7 +1190,7 @@ SOV_propaganda_campaigns = {
 							amount > 0
 						}
 					}
-					capital_scope = { add_to_variable = { SOV_tungsten_bonus = 1 } }
+					capital_scope = { add_to_variable = { SOV_tungsten_bonus = 3 } }
 				}
 			}
 
@@ -1330,8 +1300,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_for_the_motherland_cost
 
 		modifier = {
-			experience_gain_army_factor = 0.15
-			command_power_gain_mult = 0.15
+			experience_gain_army_factor = 0.25
+			command_power_gain_mult = 0.25
 			breakthrough_factor = 0.1
 		}
 
@@ -1875,7 +1845,7 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_sweep_scum_out_cost
 
 		modifier = {
-			army_core_attack_factor = 0.1
+			army_core_attack_factor = 0.05
 			army_core_defence_factor = 0.05
 		}
 
@@ -1925,7 +1895,7 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_knowledge_cost
 
 		modifier = {
-			research_speed_factor = 0.05
+			research_speed_factor = 0.1
 		}
 
 		complete_effect = {
@@ -1974,7 +1944,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_builders_of_communism_cost
 
 		modifier = {
-			research_speed_factor = 0.02
+			research_speed_factor = 0.025
+			production_speed_buildings_factor = 0.05
 			communism_drift = 0.1
 		}
 
@@ -4099,7 +4070,7 @@ SOV_industry_relocation = {
 
 		cancel_if_not_visible = no
 
-		cost = 25
+		cost = 10
 
 		days_remove = SOV_industrial_relocation_days
 
@@ -4686,7 +4657,7 @@ SOV_great_patriotic_war = {
 
 		cost = 50
 
-		days_remove = 15
+		days_remove = 1
 
 		complete_effect = {
 		}
@@ -4907,8 +4878,8 @@ SOV_great_patriotic_war = {
 		
 		available = {
 			has_completed_focus = SOV_lessons_of_war
-			surrender_progress > 0.15
-			always = no
+			# surrender_progress > 0.15
+			# always = no
 		}
 
 		custom_cost_trigger = {
@@ -4922,11 +4893,11 @@ SOV_great_patriotic_war = {
 			has_war = yes
 		}
 
-		days_remove = 720
+		days_remove = 365
 
 		modifier = {
-			army_core_defence_factor = 0.25
-			mobilization_speed = 0.15
+			mobilization_speed = 0.25
+			org_loss_when_moving = -0.1
 		}
 
 		complete_effect = {
@@ -5012,7 +4983,7 @@ SOV_great_patriotic_war = {
 		complete_effect = { #SUCCESS
 			SOV_clean_military_offensive_effect = yes
 
-			add_war_support = 0.1
+			# add_war_support = 0.1
 			add_political_power = 50
 		}
 	}
