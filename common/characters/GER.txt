@@ -350,7 +350,7 @@ characters={
 				factor = 1.500
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { defensive_doctrine infantry_leader unyielding_defender logistics_wizard panzer_leader skilled_staffer armor_officer infantry_officer cavalry_officer inspirational_leader fast_planner organizer trait_cautious career_officer inflexible_strategist }
 			skill = 6
 			attack_skill = 5
