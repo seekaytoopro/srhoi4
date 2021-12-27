@@ -6,8 +6,8 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 500
-		per_level_extra_cost = 500 
+		base_cost = 600
+		per_level_extra_cost = 600 
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
@@ -17,6 +17,7 @@ buildings = {
 		show_modifier = yes
 		max_fuel_building = 1.5 #k
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	arms_factory = {
@@ -47,13 +48,14 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
-		base_cost = 600
+		base_cost = 800
 		icon_frame = 5
 		air_base = yes
 		max_level = 40
 		value = 1
 		damage_factor = 0.05
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	supply_node = {
@@ -68,6 +70,7 @@ buildings = {
 		damage_factor = 0.1
 		allied_build = yes
 		always_shown = yes
+		infrastructure_construction_effect = yes
 	}	
 	
 	rail_way = {
@@ -77,13 +80,15 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
+		infrastructure_construction_effect = yes
 	}
 
 	naval_base = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 3000
+		base_cost = 5000
+		per_level_extra_cost = 1000
 		provincial = yes
 		only_costal = yes
 		is_port = yes
@@ -92,6 +97,7 @@ buildings = {
 		damage_factor = 0.2
 		value = 1
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	bunker = {
@@ -105,6 +111,7 @@ buildings = {
 		land_fort = 1
 		max_level = 15
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	coastal_bunker = {
@@ -119,6 +126,7 @@ buildings = {
 		naval_fort = 1
 		max_level = 10
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	dockyard = {
@@ -139,7 +147,7 @@ buildings = {
 	
 	anti_air_building = {
 		show_on_map = 3
-		base_cost = 1200
+		base_cost = 1500
 		icon_frame = 9
 		anti_air = yes
 		disabled_in_dmz = yes
@@ -147,6 +155,7 @@ buildings = {
 		max_level = 6 # This is the max unlock level
 		damage_factor = 0.1
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	synthetic_refinery = {
@@ -191,6 +200,7 @@ buildings = {
 		value = 4
 		centered = yes
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	rocket_site = {
