@@ -131,77 +131,77 @@ SOV_gosproyektstroy_decision_category = {
 	}
 }
 
-SOV_national_academy_of_sciences_dec_cat = {
-	priority = 30
+# SOV_national_academy_of_sciences_dec_cat = {
+# 	priority = 30
 
-	icon = SOV_soviet_academy_of_sciences
+# 	icon = SOV_soviet_academy_of_sciences
 
-	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences 
+# 	picture = GFX_decision_cat_picture_soviet_national_academy_of_sciences 
 
-	allowed = {
-		original_tag = SOV
-	}
+# 	allowed = {
+# 		original_tag = SOV
+# 	}
 
-	visible = {
-		has_completed_focus = SOV_national_academies_of_sciences
-		has_civil_war = no
-	}
-}
+# 	visible = {
+# 		has_completed_focus = SOV_national_academies_of_sciences
+# 		has_civil_war = no
+# 	}
+# }
 
-SOV_merge_designers_dec_cat = {
-	priority = 28
+# SOV_merge_designers_dec_cat = {
+# 	priority = 28
 
-	icon = SOV_merge_designers
+# 	icon = SOV_merge_designers
 
-	allowed = {
-		original_tag = SOV
-	}
+# 	allowed = {
+# 		original_tag = SOV
+# 	}
 
-	visible = {
-		has_civil_war = no
-	}
-}
+# 	visible = {
+# 		has_civil_war = no
+# 	}
+# }
 
-SOV_kill_trotsky_dec_cat = {
-	priority = 9
+# SOV_kill_trotsky_dec_cat = {
+# 	priority = 9
 
-	icon = spr_political_assassination
+# 	icon = spr_political_assassination
 
-	allowed = {
-		original_tag = SOV
-	}
+# 	allowed = {
+# 		original_tag = SOV
+# 	}
 
-	visible = {
-		has_completed_focus = SOV_behead_the_snake
-	}
-}
+# 	visible = {
+# 		has_completed_focus = SOV_behead_the_snake
+# 	}
+# }
 
-SOV_infiltrate_foreign_atomic_programs_dec_cat = {
-	priority = 10
+# SOV_infiltrate_foreign_atomic_programs_dec_cat = {
+# 	priority = 10
 
-	icon = eng_move_to_secure_the_dominions
+# 	icon = eng_move_to_secure_the_dominions
 
-	allowed = {
-		original_tag = SOV
-		NOT = { has_dlc = "La Resistance" }
-	}
+# 	allowed = {
+# 		original_tag = SOV
+# 		NOT = { has_dlc = "La Resistance" }
+# 	}
 
-	visible = {
-		has_completed_focus = SOV_soviet_atomic_bomb_project
-	}
-}
+# 	visible = {
+# 		has_completed_focus = SOV_soviet_atomic_bomb_project
+# 	}
+# }
 
-SOV_comecon_dec_cat = {
-	priority = 13
+# SOV_comecon_dec_cat = {
+# 	priority = 13
 
-	icon = SOV_civil_puppet_interaction
-	picture = GFX_decision_cat_picture_soviet_comecon
+# 	icon = SOV_civil_puppet_interaction
+# 	picture = GFX_decision_cat_picture_soviet_comecon
 
-	allowed = {
-		original_tag = SOV
-	}
+# 	allowed = {
+# 		original_tag = SOV
+# 	}
 
-	visible = {
-		has_completed_focus = SOV_found_the_comecon
-	}
-}
+# 	visible = {
+# 		has_completed_focus = SOV_found_the_comecon
+# 	}
+# }

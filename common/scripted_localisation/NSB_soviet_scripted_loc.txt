@@ -777,13 +777,13 @@ defined_text = {
 	name = GetPropagandaCampaignsRequirementTooltip
 	text = {
 		trigger = {
-			has_completed_focus = SOV_expand_the_agitprop
+			has_completed_focus = SOV_great_purge
 		}
 		localization_key = propaganda_campaign_requirement_met_tt
 	}
 	text = {
 		trigger = {
-			NOT = { has_completed_focus = SOV_expand_the_agitprop }
+			NOT = { has_completed_focus = SOV_great_purge }
 		}
 		localization_key = propaganda_campaign_requirement_not_met_tt
 	}
@@ -1110,18 +1110,18 @@ defined_text = {
 }
 
 
-defined_text = {
-	name = GetAppropriateSovietProgressInJapan
-	text = {
-		trigger = {
-			has_completed_focus = SOV_the_centre
-		}
-		localization_key = NSB_soviet_foreign_politics_events.264.desc_hokkaido
-	}
-	text = {
-		localization_key = NSB_soviet_foreign_politics_events.264.desc_default
-	}
-}
+# defined_text = {
+# 	name = GetAppropriateSovietProgressInJapan
+# 	text = {
+# 		trigger = {
+# 			has_completed_focus = SOV_the_centre
+# 		}
+# 		localization_key = NSB_soviet_foreign_politics_events.264.desc_hokkaido
+# 	}
+# 	text = {
+# 		localization_key = NSB_soviet_foreign_politics_events.264.desc_default
+# 	}
+# }
 
 defined_text = {
 	name = GetPolandIncludedOrNot

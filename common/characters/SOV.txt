@@ -1386,7 +1386,7 @@ SOV_arseniy_golovko={
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				# has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
 	}
@@ -1401,17 +1401,17 @@ SOV_hazi_aslanov = {
 		}
 	
 		corps_commander = {
-	 traits = {  panzer_leader panzer_expert ambusher desert_fox trait_mountaineer scavenger }
-	skill = 6
-	attack_skill = 5
+	 traits = { ambusher desert_fox trait_mountaineer scavenger }
+	skill = 3
+	attack_skill = 2
 	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 9
+	planning_skill = 3
+	logistics_skill = 5
 
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				# has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
 	}
@@ -1427,16 +1427,16 @@ SOV_hazi_aslanov = {
 		}
 	
 		corps_commander = {
-		traits = { infantry_leader infantry_expert trickster guerilla_fighter commando camouflage_expert trait_reckless urban_assault_specialist bearer_of_artillery }
-	skill = 6
-	attack_skill = 5
-	defense_skill = 5
+		traits = { infantry_leader infantry_expert guerilla_fighter commando camouflage_expert }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
 	planning_skill = 1
-	logistics_skill = 8
+	logistics_skill = 3
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_organization_of_the_partisans
+				# has_completed_focus = SOV_organization_of_the_partisans
 			}
 		}
 	}
@@ -1455,14 +1455,14 @@ SOV_hazi_aslanov = {
 		corps_commander = {
 			traits = { cavalry_officer armor_officer panzer_leader panzer_expert }
 			skill = 3
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 1
 			planning_skill = 2
-			logistics_skill = 3
+			logistics_skill = 4
 			legacy_id = 0
 			visible = {
 				NOT = { has_character_flag = SOV_exiled_flag }
-				has_completed_focus = SOV_the_glory_of_the_red_army
+				# has_completed_focus = SOV_the_glory_of_the_red_army
 			}
 		}
 	}
@@ -2005,7 +2005,7 @@ SOV_hazi_aslanov = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_policy_of_individual_security
+				# has_completed_focus = SOV_policy_of_individual_security
 			}
 			traits = {
 				pc_for_foreign_affairs_molotov 
