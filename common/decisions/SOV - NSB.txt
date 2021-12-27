@@ -4660,11 +4660,47 @@ SOV_great_patriotic_war = {
 		days_remove = 1
 
 		complete_effect = {
+					
+			division_template = {
+				name = "Penal Battalion"
+				division_names_group = SOV_PEN_01
+				is_locked = yes
+
+				regiments = {
+					penal_battalion = { x = 0 y = 0 }
+					penal_battalion = { x = 0 y = 1 }
+					penal_battalion = { x = 0 y = 2 }
+					penal_battalion = { x = 0 y = 3 }
+					penal_battalion = { x = 0 y = 4 }
+					penal_battalion = { x = 1 y = 0 }
+					penal_battalion = { x = 1 y = 1 }
+					penal_battalion = { x = 1 y = 2 }
+					penal_battalion = { x = 1 y = 3 }
+					penal_battalion = { x = 1 y = 4 }
+					penal_battalion = { x = 2 y = 0 }
+					penal_battalion = { x = 2 y = 1 }
+				
+					anti_air_brigade = { x = 2 y = 1 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+					artillery_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 3 y = 4 }
+					anti_tank_brigade = { x = 4 y = 0 }
+					
+				}
+				support = {
+					recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } anti_air = { x = 0 y = 2 }
+					anti_tank = { x = 0 y = 3 } artillery = { x = 0 y = 4 }
+				}
+			}
+
+			SOV_spawn_penal_divisions_effect = yes
 		}
 
 		remove_effect = {
 			clr_country_flag = SOV_penal_units_raised_flag
-			SOV_spawn_penal_divisions_effect = yes
+			# SOV_spawn_penal_divisions_effect = yes
 		}
 	}
 
