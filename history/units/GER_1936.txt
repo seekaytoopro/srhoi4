@@ -394,20 +394,12 @@ units = {
 ### Air oob
 air_wings = {
 	### II. Luftkreiskommando -- Berlin ###
-	64 = { 
+	55 = { 
 		# Jagdgeschwader 132 'Richtofen'		
 		fighter_equipment_1 =  {		# Ar 68
 			owner = "GER" 
 			amount = 800
 			version_name = "Bf 109 E"
-		}
-		name = "Jagdgeschwader 132"
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			# modifier="fighter_genius"
-			name="Erich"
-			surname="Hartmann"
-			callsign="Bubi"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
 		# Kampfgeschwader 153		
 		tac_bomber_equipment_0 = {		# Do 23
@@ -420,19 +412,16 @@ air_wings = {
 			owner = "GER" 
 			amount = 100
 		}
-		name = "Kampfgeschwader 253"
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
 			amount = 200
 		}
-		name = "Sturzkampfgeschwader 162"	
 		# Küstenfliegergruppe 106		
 		nav_bomber_equipment_1 =  {		# He 59, Do 18
 			owner = "GER" 
 			amount = 100
 		}
-		name = "Küstenfliegergruppe 106"
 		# Küstenfliegergruppe 206
 	}
 }
