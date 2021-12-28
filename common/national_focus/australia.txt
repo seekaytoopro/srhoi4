@@ -435,7 +435,7 @@
 	focus = {
 		id = AST_introduce_unconventional_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = AST_sentinel_project focus = AST_airborne_defence }
+		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
 		x = 0
 		y = 5
 		relative_position_id = AST_additional_militia_training
