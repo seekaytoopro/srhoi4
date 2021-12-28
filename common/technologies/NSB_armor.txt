@@ -32,18 +32,18 @@ technologies = {
 		}
 		
 		enable_equipment_modules = {
-		squeezebore_adaptor
-				tank_auto_cannon
-				tank_super_heavy_cannon_1
+			squeezebore_adaptor
+			tank_auto_cannon
+			tank_super_heavy_cannon_1
 			tank_anti_air_cannon
 			tank_heavy_cannon
 			tank_high_velocity_cannon_h1
 			tank_high_velocity_cannon_l1
 			tank_high_velocity_cannon_m1
-		tank_heavy_howitzer
-		tank_small_cannon
+			tank_heavy_howitzer
+			tank_small_cannon
 			secondary_turret_small_cannon
-				tank_medium_howitzer
+			tank_medium_howitzer
 			tank_small_cannon_2
 			tank_close_support_gun
 			secondary_turret_close_support_gun
@@ -55,8 +55,8 @@ technologies = {
 			additional_machine_guns
 			tank_torsion_bar_suspension
 			tank_riveted_armor
-			tank_gasoline_engine
 			tank_medium_cannon_1
+			tank_gasoline_engine
 			tank_diesel_engine
 			tank_petrol_electric_engine
 			tank_cast_armor
@@ -313,7 +313,7 @@ light_flame_tank
 }
 
 enable_equipment_modules = {
-
+	# tank_close_support_gun2
 easy_maintenance
 dozer_blade
 			flamethrower
@@ -358,7 +358,46 @@ tank_rocket_launcher
 		}
 	}
 	
-	
+# 	advanced_light_tank2_chassis = { #Leopard
+# enable_equipment_modules = {
+# 	tank_close_support_gun3
+# 		tank_radio_3
+# tank_rocket_launcher_2
+# tank_medium_howitzer_3
+# tank_medium_cannon_3
+# 		tank_heavy_howitzer3
+# 	tank_heavy_cannon_3
+# 			tank_anti_air_cannon_3
+# 			auto_loader
+# 	tank_high_velocity_cannon_m3
+# 	tank_high_velocity_cannon_h3
+# 	tank_high_velocity_cannon_l3
+# 					tank_super_heavy_cannon_3
+# }
+# 		enable_equipments = {
+# 			light_tank_chassis_4
+# 			light_tank_destroyer_chassis_4
+# 			light_tank_artillery_chassis_4
+# 			light_tank_aa_chassis_4
+# 		}
+
+# 		path = {
+# 			leads_to_tech = modern_armor
+# 			research_cost_coeff = 1
+# 		}
+# 		research_cost = 2
+# 		start_year = 1943
+
+# 		folder = {
+# 			name = nsb_armour_folder
+# 			position = { x = -4 y = 10 }
+# 		}
+
+# 		categories = {
+# 			armor cat_1943_tanks
+# 			cat_light_armor generic
+# 		}
+# 	}	
 
 	basic_medium_tank_chassis = { #Panzer III
 
@@ -441,7 +480,7 @@ light_flame_tank
 		}
 
 enable_equipment_modules = {
-
+	# tank_close_support_gun2
 easy_maintenance
 dozer_blade
 			flamethrower
@@ -480,6 +519,44 @@ tank_rocket_launcher
 	}
 
 	advanced_medium_tank_chassis = { #Panther
+		allow = {
+			#date > 1941.1.1
+		OR = {
+				has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_ENABLE_FREE_RESEARCH
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1940
+			}
+			date > 1940.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1941
+			}
+			date > 1941.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = SR_tank_limit_barbarossa
+			}
+			date > 1941.6.1
+			}
+				AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1942
+			}
+			date > 1942.1.1
+			}
+
+			}
+		}
 
 		enable_equipments = {
 			medium_tank_chassis_3
@@ -488,6 +565,7 @@ tank_rocket_launcher
 			medium_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
+			# tank_close_support_gun3
 		tank_radio_3
 tank_rocket_launcher_2
 tank_medium_howitzer_3
@@ -521,6 +599,45 @@ tank_medium_cannon_3
 	}
 
 	main_battle_tank_chassis = { #E-50
+
+		allow = {
+			#date > 1941.1.1
+		OR = {
+				has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_ENABLE_FREE_RESEARCH
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1940
+			}
+			date > 1940.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1941
+			}
+			date > 1941.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = SR_tank_limit_barbarossa
+			}
+			date > 1941.6.1
+			}
+				AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1942
+			}
+			date > 1942.1.1
+			}
+
+			}
+		}
 
 		enable_equipments = {
 			modern_tank_chassis_1
@@ -619,6 +736,7 @@ light_flame_tank
 			heavy_tank_aa_chassis_2
 		}
 		enable_equipment_modules = {  
+			# tank_close_support_gun2
 		
 easy_maintenance
 dozer_blade
@@ -666,6 +784,44 @@ tank_rocket_launcher
 
 
 	advanced_heavy_tank_chassis = { #King Tiger
+		allow = {
+			#date > 1941.1.1
+		OR = {
+				has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_ENABLE_FREE_RESEARCH
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1940
+			}
+			date > 1940.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1941
+			}
+			date > 1941.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = SR_tank_limit_barbarossa
+			}
+			date > 1941.6.1
+			}
+				AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1942
+			}
+			date > 1942.1.1
+			}
+
+			}
+		}
 
 		enable_equipments = {
 			heavy_tank_chassis_3
@@ -674,6 +830,7 @@ tank_rocket_launcher
 			heavy_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
+			# tank_close_support_gun3
 		tank_heavy_howitzer3
 		tank_medium_cannon_3
 		tank_medium_howitzer_3
@@ -716,6 +873,7 @@ tank_rocket_launcher_2
 		}
 		enable_equipment_modules = { 
 		tank_medium_cannon_3
+		# tank_close_support_gun3
 			tank_radio_3
 tank_rocket_launcher_2
 	tank_heavy_cannon_3
@@ -738,10 +896,6 @@ tank_rocket_launcher_2
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 8 y = @1943 }
-		}
-
-		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
 		}
 
 		categories = {
