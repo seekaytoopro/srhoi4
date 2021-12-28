@@ -113,4 +113,116 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/tech_mortar.dds"
 	}
 
+
+	# Additional Tank Guns
+
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_h1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_h2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_h3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_m1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_close_support_gun2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_close_support_gun3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_m2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+spriteType = {  
+		name = "GFX_EMI_tank_high_velocity_cannon_l1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {  
+		name = "GFX_EMI_tank_high_velocity_cannon_l2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {  
+		name = "GFX_EMI_tank_high_velocity_cannon_l3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_high_velocity_cannon_m3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_EMI_tank_medium_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_howitzer_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_2.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_howitzer2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_howitzer3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_2.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+
+
+
+
+
+
+
+	spriteType = {
+		name = "GFX_EMI_tank_super_heavy_cannon_1"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_super_heavy_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_super_heavy_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_super_heavy_cannon.dds"
+		legacy_lazy_load = no
+	}
+
 }
