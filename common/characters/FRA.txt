@@ -229,7 +229,7 @@ characters={
 					}
 				}
 				available  = {
-					original_tag  = FRF
+					original_tag  = FRA
 				}
 				cost  = 75.000
 				research_bonus  = {
