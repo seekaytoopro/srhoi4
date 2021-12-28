@@ -1170,7 +1170,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_army_innovation_2
-		icon = GFX_goal_generic_armys
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 0
 		y = 2
@@ -3154,7 +3154,7 @@ focus_tree = {
 						}
 					}
 					load_oob = "GER_barbarossa_heavies"
-					add_equipment_to_stockpile = { type = heavy_equipment_2 amount = 300 }
+					add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 300 }
 					
 					add_tech_bonus = {
 						name = Barbarossa_Panther_bonus
@@ -3201,7 +3201,7 @@ focus_tree = {
 						name = at_bonus
 						bonus = 0.5
 						uses = 2
-						category = cat_anti
+						category = cat_anti_tank
 						}
 					}
 				}

@@ -1188,7 +1188,7 @@ focus_tree = {
 					}
 				}
 				load_oob = "SOV_defense_moscow_heavies"
-				add_equipment_to_stockpile = { type = heavy_tank_chassis_equipment_2 amount = 300 }
+				add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 300 }
 				load_oob = "SOV_siberian_reinforcements"
 				set_temp_variable = { SOV_divs_spawned = 20 }
 				if = { limit = { SOV = { num_divisions < 100 } }
@@ -3465,9 +3465,9 @@ focus = {
 				custom_effect_tooltip = SOV_national_specialists_tt
 
 				SOV_replace_industrial_designer = yes #"National" Industrial Designers get +5% research bonus
-				hidden_effect = {
-					add_ideas = SOV_national_specialists_ns
-				}
+				# hidden_effect = {
+				# 	add_ideas = SOV_national_specialists_ns
+				# }
 				
 			}
 		}
