@@ -1659,7 +1659,7 @@ focus_tree = {
 				}
 				hidden_effect = { 188 = { remove_core_of = SOV } }
 
-				army_experience = 300
+				army_experience = 100
 				air_experience = 300
 				add_political_power = -150
 				country_event = finland.20

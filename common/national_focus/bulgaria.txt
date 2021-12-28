@@ -1019,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = BUL_Modernize_Fighters
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = BUL_Advanced_Artillery focus = BUL_Development }
+		prerequisite = { focus = BUL_Advanced_Artillery focus = BUL_Tank_Development }
 		x = 14
 		y = 4
 		cost = 10
@@ -1142,7 +1142,7 @@ focus_tree = {
 
 	focus = {
 		id = BUL_Mobile_Support
-		icon = GFX_goal_generic_build
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = BUL_Mobile_Army focus = BUL_Infantry_Weapons }
 		x = 15
 		y = 2
@@ -1175,9 +1175,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_Development
-		icon = GFX_goal_generic_armys
-		prerequisite = { focus = BUL_Mobile_Support }
+		id = BUL_Tank_Development
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = BUL_Mobile_Support focus = BUL_Infantry_Support }
 		x = 15
 		y = 3
 		cost = 10

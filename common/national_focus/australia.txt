@@ -358,8 +358,8 @@
 	}
 
 	focus = {
-		id = AST_sentinel_project
-		icon = GFX_goal_generic_armys
+		id = AST_sentinel_tank_project
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = AST_daimler_dingo }
 		x = -2
 		y = 4

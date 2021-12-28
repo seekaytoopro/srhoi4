@@ -154,9 +154,9 @@ focus_tree = {
 			add_named_threat = { threat = 10 name = JAP_CHIONE }
 			add_ideas = JAP_war_with_chi1
 			
-			army_experience = 1000
+			army_experience = 500
 			air_experience = 1000
-			navy_experience = 1000
+			navy_experience = 500
 			
 			transfer_state = 608
 		    transfer_state = 614
@@ -210,7 +210,7 @@ focus_tree = {
 					air_experience = 300
 					army_experience = 100
 				}
-				SOV = { army_experience = 1000 air_experience  = 300 }
+				SOV = { army_experience = 500 air_experience  = 300 }
 				GER = { air_experience  = 300 }
 				ITA = { air_experience  = 300 }
 				ENG = { army_experience = 150 }

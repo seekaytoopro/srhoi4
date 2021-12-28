@@ -36,14 +36,14 @@ SPR_recovery_from_civil_war = {
 SPR_the_fire_rises = {
 
 	add_ideas = SPA_recovering_from_civil_war
-			SOV = { air_experience = 300 }
-			GER = { air_experience = 300 }
-			ITA = { air_experience = 300 }
-			SOV = { army_experience = 300 }
-			GER = { army_experience = 500 }
-			ITA = { army_experience = 400 }
-			SPR = { army_experience = 500 }
-			SPR = { air_experience = 300 }
+			SOV = { air_experience = 200 }
+			GER = { air_experience = 200 }
+			ITA = { air_experience = 200 }
+			SOV = { army_experience = 200 }
+			GER = { army_experience = 350 }
+			ITA = { army_experience = 300 }
+			SPR = { army_experience = 350 }
+			SPR = { air_experience = 200 }
 			ENG = { army_experience = 100 air_experience = 100 }
 			FRA = { army_experience = 100 air_experience = 100 }
 			CAN = { army_experience = 100 air_experience = 100 }
