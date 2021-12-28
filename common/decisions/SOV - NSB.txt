@@ -2771,7 +2771,7 @@ SOV_propaganda_campaigns = {
 	# 		clr_country_flag = SOV_gosproyektstroy_upgrade_in_progress_flag
 	# 	}
 	# }
-}
+# }
 
 ##     ## ######## ########   ######   ########    ########  ########  ######  ####  ######   ##    ## ######## ########   ######  
 ###   ### ##       ##     ## ##    ##  ##          ##     ## ##       ##    ##  ##  ##    ##  ###   ## ##       ##     ## ##    ## 
@@ -5502,4 +5502,4 @@ SOV_great_patriotic_war = {
 			country_event = wtt_soviet_hold_city.6
 		}
 	}
-	}
+}
