@@ -358,8 +358,8 @@
 	}
 
 	focus = {
-		id = AST_sentinel_tank_project
-		icon = GFX_goal_generic_army_tanks
+		id = AST_sentinel_project
+		icon = GFX_goal_generic_armys
 		prerequisite = { focus = AST_daimler_dingo }
 		x = -2
 		y = 4
@@ -384,17 +384,17 @@
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
-				name = AST_sentinel_tank_project
+				name = AST_sentinel_project
 				bonus = 1.0
 				uses = 2
-				technology = improved_medium_tank
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
 			}
 		}
 	}
@@ -435,7 +435,7 @@
 	focus = {
 		id = AST_introduce_unconventional_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
+		prerequisite = { focus = AST_sentinel_project focus = AST_airborne_defence }
 		x = 0
 		y = 5
 		relative_position_id = AST_additional_militia_training

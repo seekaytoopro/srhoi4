@@ -1382,7 +1382,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = NZL_bob_semple_tank
 			custom_effect_tooltip = NZL_bob_semple_tank_tt
-			hidden_effect = { set_technology = { basic_light_tank  = 1 } }
+			hidden_effect = { set_technology = { basic_light_tank_chassis  = 1 } }
 		}
 	}
 
@@ -1478,15 +1478,15 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = NZL_schofield_tank
 				bonus = 1.0
 				uses = 2
-				technology = improved_medium_tank
-				technology = advanced_light_tank
-				technology = advanced_medium_tank		}
+				technology = improved_medium_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis		}
 		}
 	}
 
@@ -1606,7 +1606,7 @@ focus_tree = {
 				ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
-				technology = super_heavy_tank
+				technology = super_heavy_tank_chassis
 			}
 		}
 	}

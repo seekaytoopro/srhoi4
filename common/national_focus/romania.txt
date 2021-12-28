@@ -1225,23 +1225,23 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = ROM_the_maresal
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = improved_heavy_tank
-				# technology = advanced_heavy_tank
+				technology = improved_heavy_tank_chassis
+				# technology = advanced_heavy_tank_chassis
 			}
 			add_tech_bonus = {
 				name = ROM_mediums
 				bonus = 1.0
 				uses = 2
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
-				technology = advanced_light_tank
+				technology = improved_medium_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_light_tank_chassis
 			}
 		}
 	}

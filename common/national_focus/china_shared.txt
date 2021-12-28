@@ -217,8 +217,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = CHI_purchase_tanks
-	icon = GFX_goal_generic_army_tanks
+	id = CHI_purchases
+	icon = GFX_goal_generic_armys
 	prerequisite = { focus = CHI_closer_ties_with_germany focus = CHI_rapprochement_with_soviet_union }
 	x = 1
 	y = 1
@@ -240,7 +240,7 @@ shared_focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		custom_effect_tooltip = CHI_purchase_tanks_tt
+		custom_effect_tooltip = CHI_purchases_tt
 		hidden_effect = {
 			if = {
 				limit = {
@@ -254,13 +254,13 @@ shared_focus = {
 				limit = {
 					has_completed_focus = CHI_closer_ties_with_germany
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = GER }
+				add_equipment_to_stockpile = { type = light_equipment_1 amount = 100 producer = GER }
 			}
 			if = {
 				limit = {
 					has_completed_focus = CHI_rapprochement_with_soviet_union
 				}
-				add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = SOV }
+				add_equipment_to_stockpile = { type = light_equipment_1 amount = 100 producer = SOV }
 			}
 		}
 	}
@@ -269,11 +269,11 @@ shared_focus = {
 shared_focus = {
 	id = CHI_chinese_panzers
 	icon = GFX_goal_generic_production2
-	prerequisite = { focus = CHI_purchase_tanks }
+	prerequisite = { focus = CHI_purchases }
 	prerequisite = { focus = CHI_closer_ties_with_germany }
 	x = -2
 	y = 1
-	relative_position_id = CHI_purchase_tanks
+	relative_position_id = CHI_purchases
 
 	cost = 10
 
@@ -297,17 +297,17 @@ shared_focus = {
 			category = armor
 		}
 		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = german_chinese_tank_designer
+		show_ideas_tooltip = german_chinese_designer
 	}
 }
 
 shared_focus = {
-	id = CHI_tank_plant
+	id = CHI_plant
 	icon = GFX_goal_generic_construct_mil_factory
 	prerequisite = { focus = CHI_chinese_panzers }
 	x = -2
 	y = 3
-	relative_position_id = CHI_purchase_tanks
+	relative_position_id = CHI_purchases
 
 	cost = 10
 
@@ -326,7 +326,7 @@ shared_focus = {
 	complete_tooltip = {
 		random_state = {
 			limit = {
-				has_state_flag = CHI_tank_plant_AF
+				has_state_flag = CHI_plant_AF
 			}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -353,7 +353,7 @@ shared_focus = {
 				level = 2
 				instant_build = yes
 			}
-			set_state_flag = CHI_tank_plant_AF
+			set_state_flag = CHI_plant_AF
 		}
 	}
 }
@@ -361,10 +361,10 @@ shared_focus = {
 shared_focus = {
 	id = CHI_experimental_mechanised_unit
 	icon = GFX_goal_generic_cavalry
-	prerequisite = { focus = CHI_purchase_tanks }
+	prerequisite = { focus = CHI_purchases }
 	x = 0
 	y = 2
-	relative_position_id = CHI_purchase_tanks
+	relative_position_id = CHI_purchases
 
 	cost = 10
 
@@ -443,7 +443,7 @@ shared_focus = {
 	prerequisite = { focus = CHI_experimental_mechanised_unit }
 	x = 0
 	y = 4
-	relative_position_id = CHI_purchase_tanks
+	relative_position_id = CHI_purchases
 
 	cost = 10
 
@@ -472,11 +472,11 @@ shared_focus = {
 shared_focus = {
 	id = CHI_hire_soviet_designer
 	icon = GFX_goal_generic_soviet_construction
-	prerequisite = { focus = CHI_purchase_tanks }
+	prerequisite = { focus = CHI_purchases }
 	prerequisite = { focus = CHI_rapprochement_with_soviet_union }
 	x = 2
 	y = 1
-	relative_position_id = CHI_purchase_tanks
+	relative_position_id = CHI_purchases
 
 	cost = 10
 
@@ -910,7 +910,7 @@ shared_focus = {
 
 shared_focus = {
 	id = CHI_french_drill
-	icon = GFX_goal_generic_build_tank
+	icon = GFX_goal_generic_build
 	prerequisite = { focus = CHI_heavy_weapons }
 	prerequisite = { focus = CHI_french_military_mission }
 	x = 0

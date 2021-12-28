@@ -368,7 +368,7 @@ focus_tree = {
 		    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1200 producer = FRF }
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRF }
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = FRF }
-			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_equipment_1  amount = 500 producer = FRF }
 			add_equipment_to_stockpile = { type = motorized_equipment amount = 300 producer = FRF }
 	    }
 	}
@@ -424,7 +424,7 @@ focus_tree = {
 	
 	focus = {
 		id = FRF_modernize_our_armor_force
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_armys
 		mutually_exclusive = { focus = FRF_modernize_our_equipment }
 		prerequisite = { focus = FRF_colonial_recruitment }
 		x = 12
@@ -438,17 +438,17 @@ focus_tree = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = FRF_armor
 				bonus = 1.00 
 				# ahead_reduction = 0.5
 				uses = 1
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = improved_medium_tank
-				technology = improved_heavy_tank
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
 			}
 			add_tech_bonus = {
 				name = FRF_mechanized_focus
@@ -668,7 +668,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FRF_france_libre }
 	    mutually_exclusive = { 
-		    focus = FRF_tanks
+		    focus = FRFs
 			}
 		x = 10
 		y = 1
@@ -682,8 +682,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRF_tanks
-		icon = GFX_goal_generic_army_tanks
+		id = FRFs
+		icon = GFX_goal_generic_armys
 		prerequisite = { focus = FRF_france_libre }
 	    mutually_exclusive = { 
 			focus = FRF_infantry
@@ -695,8 +695,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = FRF_tank_spawn
-			load_oob = "FRF_tanks"
+			custom_effect_tooltip = FRF_spawn
+			load_oob = "FRFs"
 		}
 	}
 		focus = {

@@ -215,7 +215,7 @@
 	
 # 	focus = {
 # 		id = BRA_motorization2
-# 		icon = GFX_goal_generic_build_tank
+# 		icon = GFX_goal_generic_build
 # 		prerequisite = { focus = BRA_motorization}
 # 		x = 0
 # 		y = 2
@@ -236,7 +236,7 @@
 	
 # 	focus = {
 # 		id = BRA_cavalry
-# 		icon = GFX_goal_generic_army_tanks
+# 		icon = GFX_goal_generic_armys
 # 		prerequisite = { focus = BRA_motorization }
 # 		x = -1
 # 		y = 1

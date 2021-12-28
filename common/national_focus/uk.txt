@@ -247,17 +247,17 @@ focus_tree = {
 			add_tech_bonus = {
 				name = medium1_bonus
 				bonus = 0.5
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}		
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
 				uses = 2				
-				technology = advanced_light_tank
-				technology = improved_medium_tank
-				technology = advanced_medium_tank				
-				technology = improved_heavy_tank
-				technology = advanced_heavy_tank
+				technology = advanced_light_tank_chassis
+				technology = improved_medium_tank_chassis
+				technology = advanced_medium_tank_chassis				
+				technology = improved_heavy_tank_chassis
+				technology = advanced_heavy_tank_chassis
 			}
 		}
 	}

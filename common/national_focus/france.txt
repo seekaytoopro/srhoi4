@@ -704,7 +704,7 @@ if = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 		}
 	}
@@ -736,7 +736,7 @@ if = {
 				name = FRA_heavy_armor_focus
 				bonus = 2.25
 				uses = 1
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis
 			}
 		}
 	}
@@ -817,7 +817,7 @@ if = {
 				name = FRA_light_medium_armor
 				bonus = 2.25
 				uses = 1
-				technology = improved_medium_tank				
+				technology = improved_medium_tank_chassis				
 			}
 			add_tech_bonus = {
 				name = FRA_air_ground_cooperation
@@ -988,9 +988,9 @@ if = {
 				name = FRA_army_reform
 				bonus = 1.0
 				uses = 1
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
-				technology = super_heavy_tank
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+				technology = super_heavy
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = FRA_AMX

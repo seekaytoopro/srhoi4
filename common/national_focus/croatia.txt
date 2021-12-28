@@ -136,7 +136,7 @@
 
 	focus = {
 		id = cro_mechanization_effort
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_goal_generic_build
 		prerequisite = { focus = cro_motorization_effort }
 		x = 0
 		y = 2
@@ -211,7 +211,7 @@
 
 	focus = {
 		id = cro_armor_effort
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_goal_generic_armys
 		prerequisite = { focus = cro_mechanization_effort }
 		x = 0
 		y = 2
@@ -228,17 +228,17 @@
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 2	
 				uses = 1
-				technology = improved_medium_tank
-				technology = improved_heavy_tank
-				technology = advanced_light_tank
-				technology = advanced_medium_tank
-				technology = advanced_heavy_tank
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
 			}
 		}
 	}

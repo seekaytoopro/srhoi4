@@ -544,7 +544,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_department_of_munitions_and_supply
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_goal_generic_build
 		prerequisite = { focus = CAN_crown_corporations }
 		prerequisite = { focus = CAN_defence_of_canada_regulations }
 		prerequisite = { focus = CAN_war_bonds }
@@ -1916,7 +1916,7 @@ focus_tree = {
 
 	focus = {
 		id = CAN_a_motorized_army
-		icon = GFX_goal_generic_build_tank
+		icon = GFX_goal_generic_build
 		prerequisite = { focus = CAN_cmp_truck }
 		x = 1
 		y = 3
@@ -2109,8 +2109,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CAN_the_valentine_tank
-		icon = GFX_goal_generic_army_tanks
+		id = CAN_the_valentine
+		icon = GFX_goal_generic_armys
 		prerequisite = { focus = CAN_red_deer_training_camp }
 		x = 0
 		y = 6
@@ -2137,24 +2137,24 @@ focus_tree = {
 		completion_reward = {
 			
 			# add_tech_bonus = {
-			# 	name = CAN_the_valentine_tank
+			# 	name = CAN_the_valentine
 			# 	ahead_reduction = 2
 			# 	bonus = 1.0
 			# 	uses = 1
 			# 	category = cat_light_armor
 			# }
 			add_tech_bonus = {
-				name = CAN_the_valentine_tank
+				name = CAN_the_valentine
 				bonus = 0.5
 				uses = 1
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis
 			}
 			add_tech_bonus = {
-				name = CAN_the_valentine_tank
+				name = CAN_the_valentine
 				bonus = 1.0
 				uses = 2
-				technology = improved_medium_tank
-				technology = advanced_medium_tank
+				technology = improved_medium_tank_chassis
+				technology = advanced_medium_tank_chassis
 			}
 			
 		}
