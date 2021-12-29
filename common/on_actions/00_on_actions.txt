@@ -21,9 +21,9 @@ on_actions = {
 			every_country = {
 				# limit = { country_exists = yes }
 				# set_technology = { basic_train = 1 }
-				add_equipment_to_stockpile = { type = train_equipment_1 amount = 20 }
+				add_equipment_to_stockpile = { type = train_equipment_1 amount = 40 }
 				if = { limit = { num_of_factories > 59 } 
-					add_equipment_to_stockpile = { type = train_equipment_1 amount = 180 }
+					add_equipment_to_stockpile = { type = train_equipment_1 amount = 160 }
 				}
 				# if = { limit = { THIS = { is_ai = no } } 
 				# 	add_equipment_to_stockpile = { type = train_equipment_1 amount = 20 }
