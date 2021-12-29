@@ -148,7 +148,7 @@ SOV_ivan_konev={
 			# }
 		}
 		traits = {
-			army_concealment_2
+			army_infantry_1
 		}
 		cost = 100
 		ai_will_do = {

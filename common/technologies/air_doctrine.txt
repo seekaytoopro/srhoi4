@@ -61,7 +61,8 @@ technologies = {
 		air_interception_detect_factor = 0.15
 		###########		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -110,7 +111,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -146,7 +148,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -183,7 +186,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -226,7 +230,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -264,7 +269,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -301,7 +307,8 @@ technologies = {
 		}
 
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -337,7 +344,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -381,7 +389,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -413,7 +422,8 @@ technologies = {
 		###########
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -444,7 +454,8 @@ technologies = {
 		###########
 	
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -478,7 +489,8 @@ technologies = {
 		###########
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -524,7 +536,8 @@ technologies = {
 		# }
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -565,7 +578,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -604,7 +618,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -641,7 +656,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -684,7 +700,8 @@ technologies = {
 		
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -720,7 +737,8 @@ technologies = {
 		}
 		
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine
@@ -751,7 +769,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########	
 		doctrine = yes	
-		research_cost = 1.5
+		# research_cost = 1.5
+		xp_unlock_cost = 30
 		
 		categories = {
 			air_doctrine

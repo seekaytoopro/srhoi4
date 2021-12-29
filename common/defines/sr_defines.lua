@@ -207,7 +207,7 @@ NDefines.NAir.AIR_COMBAT_FINAL_DAMAGE_SCALE = 0.2  -- 0.015	 % how many max disr
 NDefines.NAir.DISRUPTION_DETECTION_FACTOR = 1.0
 
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 250.0
-NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.0015				-- base value for daily command power gain
+NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 0.5				-- base value for daily command power gain
 NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 ---------------------------------------------------------------
 --HORST/SR AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--

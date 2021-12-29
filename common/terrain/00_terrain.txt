@@ -164,8 +164,8 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		units = {
-			attack = -0.08
-			defence = -0.08
+			attack = -0.1
+			defence = -0.1
 		}
 		supply_flow_penalty_factor = 0.14
 		
@@ -184,8 +184,8 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		units = {
-			attack = -0.15
-			defence = -0.15
+			attack = -0.20
+			defence = -0.20
 		}
 		supply_flow_penalty_factor = 0.18
 		
