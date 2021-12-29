@@ -1,7 +1,7 @@
 ﻿capital = 328
 set_war_support = 0.6
 oob = "MAN_1936"
-set_technology = {
+set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1 

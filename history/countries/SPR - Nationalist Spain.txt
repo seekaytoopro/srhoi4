@@ -71,7 +71,7 @@ add_ideas = { weak_ai free_trade }
 
 set_research_slots = 3
 
-set_technology = {
+set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	motorised_infantry = 1

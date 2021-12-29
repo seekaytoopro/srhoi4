@@ -25,7 +25,7 @@ add_intel = { target = FIN civilian_intel = 200 army_intel = 200 navy_intel = 20
 
 
 # Starting tech
-set_technology = {
+set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_support = 1

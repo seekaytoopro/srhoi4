@@ -11,11 +11,11 @@ set_rule = { can_be_spymaster = no }
 
 add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 200 airforce_intel = 200 }
 
-set_technology = {
+set_technology = { basic_train = 1
 	interwar_antiair = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	gwtank = 1
+	gwtank_chassis = 1
 	gw_artillery = 1
 	tech_support = 1
 	tech_engineers = 1

@@ -38,7 +38,7 @@ if = { limit = { country_exists = CRO }
 }
 
 # Starting tech
-set_technology = {
+set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	support_weapons = 1
@@ -55,7 +55,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
-	gwtank = 1
+	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
 	# improved_light_art = 1

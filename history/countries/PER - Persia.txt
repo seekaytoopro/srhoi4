@@ -3,7 +3,7 @@
 oob = "PER_1936"
 
 # Starting tech
-set_technology = {
+set_technology = { basic_train = 1
 }
 
 set_research_slots = 0

@@ -20,7 +20,7 @@ add_intel = { target = SOV civilian_intel = 200 army_intel = 200 navy_intel = 20
 add_to_tech_sharing_group = commonwealth_research
 
 # Starting tech
-set_technology = {
+set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_engineers = 1
@@ -34,7 +34,7 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
-	gwtank = 1
+	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	basic_heavy_tank_chassis = 1
 	improved_light_tank_chassis = 1
@@ -144,7 +144,7 @@ if = {
 		mtg_transport = 1
 	}
 }
-set_technology = {
+set_technology = { basic_train = 1
 	armored_car1 = 1	
 }
 
