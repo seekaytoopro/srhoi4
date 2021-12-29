@@ -1845,8 +1845,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_sweep_scum_out_cost
 
 		modifier = {
-			army_core_attack_factor = 0.05
-			army_core_defence_factor = 0.05
+			army_core_attack_factor = 0.03
+			army_core_defence_factor = 0.03
 		}
 
 		complete_effect = {
@@ -4914,6 +4914,7 @@ SOV_great_patriotic_war = {
 		
 		available = {
 			has_completed_focus = SOV_lessons_of_war
+			date > 1942.3.1
 			# surrender_progress > 0.15
 			# always = no
 		}

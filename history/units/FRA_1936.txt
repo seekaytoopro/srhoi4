@@ -632,42 +632,42 @@ units = {
 	# 	start_experience_factor = 0.3
 	# 	start_equipment_factor = 0.01
 	# }
-	# division = {
-	# 	location = 10943
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
-	# division = {
-	# 	location = 10943
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
-	# division = {
-	# 	location = 3402
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
-	# division = {
-	# 	location = 3402
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
-	# division = {
-	# 	location = 3447
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
-	# division = {
-	# 	location = 3447
-	# 	division_template = "Mediums"
-	# 	start_experience_factor = 0.3
-	# 	start_equipment_factor = 0.01
-	# }
+	division = {
+		location = 10943
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 10943
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3402
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3402
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3447
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3447
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
 }
 
 #########################
@@ -705,15 +705,15 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "FRA" 
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = light_tank_equipment_2
+	# 		creator = "FRA" 
+	# 	}
+	# 	requested_factories = 1
+	# 	progress = 0.4
+	# 	efficiency = 50
+	# }
 
 	add_equipment_production = {
 		equipment = {
@@ -766,11 +766,20 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 50
 	}
+	# add_equipment_production = {
+	# 	equipment = {
+	# 		type = heavy_tank_equipment_1
+	# 		creator = "FRA"
+	# 	}
+	# 	progress = 0.15
+	# 	efficiency = 50
+	# }
 	add_equipment_production = {
 		equipment = {
-			type = heavy_tank_equipment_1
-			creator = "FRA"
+			type = train_equipment_1
+			creator = "FRA" 
 		}
+		requested_factories = 2
 		progress = 0.15
 		efficiency = 50
 	}

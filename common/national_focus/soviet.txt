@@ -45,8 +45,11 @@ focus_tree = {
 					news_event = { hours = 6 id = news.219 }
 				}
 
-			remove_ideas = trotskyite_plot
-			add_ideas = trotskyite_plot_purged
+				swap_ideas = {
+					remove_idea = trotskyite_plot
+					add_idea = trotskyite_plot_purged
+				}
+			
 
 			custom_effect_tooltip = "          "
 			hidden_effect = {
