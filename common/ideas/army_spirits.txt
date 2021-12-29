@@ -102,7 +102,7 @@ ideas = {
 			ledger = army
 			visible = { has_tech = mass_assault }
 			modifier = {
-				modifier_army_sub_unit_infantry_speed_factor = 0.25  
+				org_loss_when_moving = -0.10  
 			}
 								cost = 50
 

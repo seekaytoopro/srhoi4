@@ -1372,112 +1372,115 @@ ideas = {
 		# 	traits = { navy_amphibious_assault_2 }
 			
 		# }	
-	}
-		
-	# tank_manufacturer = {
-		
-	# 	designer = yes
-		
-	# 	morozov_design_bureau = {
-	# 		allowed = {
-	# 			OR = {
-	# 				original_tag = SOV
-	# 				original_tag = MAN
-	# 			}
-	# 		}
-	# 		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-
-	# 		available = {
-	# 			if = {
-	# 				limit = {
-	# 						tag = MAN
-	# 				}
-	# 				has_completed_focus = CHI_hire_soviet_designer
-	# 				NOT = {
-	# 					has_war_with = SOV
-	# 				}
-	# 			}
-	# 		}
-	# 		cost = 75
-			
-	# 		research_bonus = {
-	# 			armor = 0.15
-	# 		}
-			
-	# 		equipment_bonus = {
-	# 			armor = {
-	# 				soft_attack = 0.05 hard_attack = 0.05 build_cost_ic = -0.05
-	# 			}
-	# 		}
-			
-	# 		modifier = {
-	# 		}
-	# 	}
-		
-	# 	astrov_design_bureau = {
-	# 		allowed = {
-	# 			original_tag = SOV
-	# 		}
-	# 		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-
-			
-	# 		research_bonus = {
-	# 			armor = 0.15
-	# 		}
-	# 		cost = 75
-			
-	# 		equipment_bonus = {
-	# 			armor = {
-	# 				reliability = -0.05 build_cost_ic = -0.10
-	# 			}
-	# 		}
-			
-	# 		modifier = {
-	# 		}
-	# 	}
-		
-	# 	okmo = {
-	# 		allowed = {
-	# 			original_tag = SOV
-	# 		}
-	# 		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-			
-	# 		research_bonus = {
-	# 			armor = 0.15
-	# 		}
-
-	# 		cost = 75
-			
-	# 		equipment_bonus = {
-	# 			armor = {
-	# 				maximum_speed = -0.10 defense = 0.10 soft_attack = 0.10 hard_attack = 0.10 build_cost_ic = 0.10
-	# 			}
-	# 		}
-			
-	# 		modifier = {
-	# 		}
-	# 	}
-		
-	# 	# 		uralmash = {
-				
-	# 	# 		picture = GFX_idea_uralmash
-			
-	# 	# 	allowed = {
-	# 	# 		original_tag = SOV
-	# 	# 	}
-			
-	# 	# 	cost = 0
-			
-	# 	# 	# research_bonus = {
-	# 	# 	# 	armor = 0.15
-	# 	# 	# }
-			
-	# 	# 	traits = { fix_it_again_tony }
-			
-	# 	# 	modifier = {
-	# 	# 	}
-	# 	# }
 	# }
+		
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		morozov_design_bureau = {
+			visible = {
+				always = yes
+			}
+			allowed = {
+				OR = {
+					original_tag = SOV
+					original_tag = MAN
+				}
+			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			available = {
+				if = {
+					limit = {
+							tag = MAN
+					}
+					has_completed_focus = CHI_hire_soviet_designer
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+			}
+			cost = 75
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.05 hard_attack = 0.05 build_cost_ic = -0.05
+				}
+			}
+			
+			modifier = {
+			}
+		}
+		
+		astrov_design_bureau = {
+			allowed = {
+				original_tag = SOV
+			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			cost = 75
+			
+			equipment_bonus = {
+				armor = {
+					reliability = -0.05 build_cost_ic = -0.10
+				}
+			}
+			
+			modifier = {
+			}
+		}
+		
+		okmo = {
+			allowed = {
+				original_tag = SOV
+			}
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			
+			research_bonus = {
+				armor = 0.15
+			}
+
+			cost = 75
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = -0.10 defense = 0.10 soft_attack = 0.10 hard_attack = 0.10 build_cost_ic = 0.10
+				}
+			}
+			
+			modifier = {
+			}
+		}
+		
+		# 		uralmash = {
+				
+		# 		picture = GFX_idea_uralmash
+			
+		# 	allowed = {
+		# 		original_tag = SOV
+		# 	}
+			
+		# 	cost = 0
+			
+		# 	# research_bonus = {
+		# 	# 	armor = 0.15
+		# 	# }
+			
+		# 	traits = { fix_it_again_tony }
+			
+		# 	modifier = {
+		# 	}
+		# }
+	}
 	
 	# aircraft_manufacturer = {
 		
@@ -1558,7 +1561,8 @@ ideas = {
 	# 		modifier = {
 	# 		}
 	# 	}
-	# }	
+	# }
+}	
 	
 	
 	# industrial_concern = {

@@ -2230,3697 +2230,3809 @@ ideas = {
 	   ##    ##     ## ##    ## ##    ##  ######  
 	
 			
-		tank_manufacturer = {
+	   tank_manufacturer = {
 			
-			designer = yes
-			
-			### NSB ###
-	
-	
-	 #    #   ####   #####    ####   ######   ####   #    # 
-	 ##  ##  #    #  #    #  #    #      #   #    #  #    # 
-	 # ## #  #    #  #    #  #    #     #    #    #  #    # 
-	 #    #  #    #  #####   #    #    #     #    #  #    # 
-	 #    #  #    #  #   #   #    #   #      #    #   #  #  
-	 #    #   ####   #    #   ####   ######   ####     ##   
-															
-	
-			SOV_morozov_design_bureau = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-			
-				allowed = {
-					OR = {
-						original_tag = SOV
-						original_tag = MAN
-					}
-				}
-				
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
-					}
-				}
-	
-				available = {
-					if = {
-						limit = {
-								tag = MAN
-						}
-						NOT = {
-							has_war_with = SOV
-						}
-					}
-				}
-	
-				removal_cost = -1
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_morozov_design_bureau_1 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
+		designer = yes
+		
+		### NSB ###
+
+
+ #    #   ####   #####    ####   ######   ####   #    # 
+ ##  ##  #    #  #    #  #    #      #   #    #  #    # 
+ # ## #  #    #  #    #  #    #     #    #    #  #    # 
+ #    #  #    #  #####   #    #    #     #    #  #    # 
+ #    #  #    #  #   #   #    #   #      #    #   #  #  
+ #    #   ####   #    #   ####   ######   ####     ##   
+														
+
+		SOV_morozov_design_bureau = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+		
+			allowed = {
+				OR = {
 					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_2 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_3 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_1_2 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_1_flag
-						has_country_flag = SOV_merge_tank_morozov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_1_3 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_1_flag
-						has_country_flag = SOV_merge_tank_morozov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_2_3 = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_2_flag
-						has_country_flag = SOV_merge_tank_morozov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_morozov_design_bureau_final = {
-				name = morozov_design_bureau
-	
-				picture = morozov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_morozov_1_flag
-						has_country_flag = SOV_merge_tank_morozov_2_flag
-						has_country_flag = SOV_merge_tank_morozov_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { fast_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-	
-	   ##     ####   #####  #####    ####   #    # 
-	  #  #   #         #    #    #  #    #  #    # 
-	 #    #   ####     #    #    #  #    #  #    # 
-	 ######       #    #    #####   #    #  #    # 
-	 #    #  #    #    #    #   #   #    #   #  #  
-	 #    #   ####     #    #    #   ####     ##   
-												   
-			
-			SOV_astrov_design_bureau = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_astrov_design_bureau_1 = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_2 = {
-				name = astrov_design_bureau
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_3 = {
-				name = astrov_design_bureau
-				on_add = { hidden_effect = { make_tank_designers_free = yes } }	
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_1_2 = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_1_flag
-						has_country_flag = SOV_merge_tank_astrov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_1_3 = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_1_flag
-						has_country_flag = SOV_merge_tank_astrov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_2_3 = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_2_flag
-						has_country_flag = SOV_merge_tank_astrov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_astrov_design_bureau_final = {
-				name = astrov_design_bureau
-				
-				picture = astrov_design_bureau
-	
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_astrov_1_flag
-						has_country_flag = SOV_merge_tank_astrov_2_flag
-						has_country_flag = SOV_merge_tank_astrov_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { medium_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
+					original_tag = MAN
 				}
 			}
 			
-	
-	  ####   #    #  #    #   ####  
-	 #    #  #   #   ##  ##  #    # 
-	 #    #  ####    # ## #  #    # 
-	 #    #  #  #    #    #  #    # 
-	 #    #  #   #   #    #  #    # 
-	  ####   #    #  #    #   ####  
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
+				}
+			}
+
+			available = {
+				if = {
+					limit = {
+							tag = MAN
+					}
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+			}
+
+			removal_cost = -1
 			
-			SOV_volgograd_tractor_plant = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
-					}
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_1 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_2 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_3 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_1_2 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_1_3 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_2_3 = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_volgograd_tractor_plant_final = {
-				name = volgograd_tractor_plant
-	
-				picture = volgograd_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-		on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
-						has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cruiser_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			SOV_uralmash = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_uralmash_1 = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_uralmash_2 = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_uralmash_3 = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralmash_1_2 = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_1_flag
-						has_country_flag = SOV_merge_tank_uralmash_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_uralmash_1_3 = {
-				name = uralmash
-	
-				picture = uralmash
-				
-				allowed = {
-					original_tag = SOV
-				}
-					on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_1_flag
-						has_country_flag = SOV_merge_tank_uralmash_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralmash_2_3 = {
-				name = uralmash
-	
-				picture = uralmash
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_2_flag
-						has_country_flag = SOV_merge_tank_uralmash_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralmash_final = {
-				name = uralmash
-	
-				picture = uralmash
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralmash_1_flag
-						has_country_flag = SOV_merge_tank_uralmash_2_flag
-						has_country_flag = SOV_merge_tank_uralmash_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mass_tank_manufactuer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-				}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-			SOV_kharkiv = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { mbt_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_kharkiv_1 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_kharkiv_2 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_kharkiv_3 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kharkiv_1_2 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_1_flag
-						has_country_flag = SOV_merge_tank_kharkiv_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_kharkiv_1_3 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_1_flag
-						has_country_flag = SOV_merge_tank_kharkiv_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kharkiv_2_3 = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_2_flag
-						has_country_flag = SOV_merge_tank_kharkiv_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kharkiv_final = {
-				name = kharkiv
-	
-				picture = kharkiv
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kharkiv_1_flag
-						has_country_flag = SOV_merge_tank_kharkiv_2_flag
-						has_country_flag = SOV_merge_tank_kharkiv_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mbt_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-				}
-	
-	
-	
-	
-	
-	
-	
-	
-			SOV_chelyabinsk_tractor_plant = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_1 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_2 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_3 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_1_2 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_1_3 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_2_3 = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_chelyabinsk_tractor_plant_final = {
-				name = chelyabinsk_tractor_plant
-	
-				picture = chelyabinsk_tractor_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-							on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
-						has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { cavalry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-				
-				}
-	
-	
-	
-	
-	
-	
-	
-	
-			SOV_okmo = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_okmo_1 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_okmo_2 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_okmo_3 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_okmo_1_2 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_1_flag
-						has_country_flag = SOV_merge_tank_okmo_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_okmo_1_3 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_1_flag
-						has_country_flag = SOV_merge_tank_okmo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_okmo_2_3 = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_2_flag
-						has_country_flag = SOV_merge_tank_okmo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_okmo_final = {
-				name = okmo
-	
-				picture = okmo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_okmo_1_flag
-						has_country_flag = SOV_merge_tank_okmo_2_flag
-						has_country_flag = SOV_merge_tank_okmo_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { infantry_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-	
-	
-	
-	
-			SOV_krasnoye_sormovo = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { brawler_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_krasnoye_sormovo_1 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
-					}
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_2 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { brawler_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_3 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_1_2 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
-					}
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_1_3 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
-					}
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_2_3 = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_krasnoye_sormovo_final = {
-				name = krasnoye_sormovo
-	
-				picture = krasnoye_sormovo
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
-						has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { brawler_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-	
-	
-	
-	
-	
-				
-	
-			SOV_avtomobilnoe_moskovskoe = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_1 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_2 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_3 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_1_2 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_1_3 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_2_3 = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_avtomobilnoe_moskovskoe_final = {
-				name = avtomobilnoe_moskovskoe
-	
-				picture = avtomobilnoe_moskovskoe
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
-						has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { light_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				SOV_factory_no_174_k_e_voroshilov = {
-				name = factory_no_174_k_e_voroshilov
-	
-				picture = factory_no_174_k_e_voroshilov
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_1 = {
-				name = factory_no_174_k_e_voroshilov
-	
-				picture = factory_no_174_k_e_voroshilov
-				
-				allowed = {
-					original_tag = SOV
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_2 = {
-				name = factory_no_174_k_e_voroshilov
-	
-				picture = factory_no_174_k_e_voroshilov
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_3 = {
-				name = factory_no_174_k_e_voroshilov
-	
-				picture = factory_no_174_k_e_voroshilov
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_1_2 = {
-				name = factory_no_174_k_e_voroshilov
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = factory_no_174_k_e_voroshilov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_1_3 = {
-				name = factory_no_174_k_e_voroshilov
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = factory_no_174_k_e_voroshilov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_2_3 = {
-				name = factory_no_174_k_e_voroshilov
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = factory_no_174_k_e_voroshilov
-				
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_factory_no_174_k_e_voroshilov_final = {
-				name = factory_no_174_k_e_voroshilov
-	
-				picture = factory_no_174_k_e_voroshilov
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
-						has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { mobile_heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
+			research_bonus = {
+				armor = 0.15
 			}
 			
+			traits = { fast_tank_manufacturer }
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				SOV_uralvagonazavod = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-				
-				modifier = {
+			modifier = {
+			}
+		}
+
+		SOV_morozov_design_bureau_1 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
 				}
 			}
-	
-			SOV_uralvagonazavod_1 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_2 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_3 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_1_2 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
-						has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_1_3 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
-						has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_2_3 = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
-						has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_uralvagonazavod_final = {
-				name = uralvagonazavod
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = uralvagonazavod
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
-						has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
-						has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { blitzkrieg_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			research_bonus = {
+				armor = 0.15
 			}
 			
+			traits = { fast_tank_manufacturer }
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-				SOV_nizhegorodsky_avtomobilny = {
-				name = nizhegorodsky_avtomobilny
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { tank_destroyer_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_1 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { tank_destroyer_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_2 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
-					}
-				}
-											on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { tank_destroyer_manufacturer }
-				
-				modifier = {
-				}
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_3 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
-					}
-				}
-											on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { tank_destroyer_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_1_2 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-											on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { tank_destroyer_manufacturer }
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_1_3 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				traits = { tank_destroyer_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_2_3 = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
-					}
-				}
-									on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { tank_destroyer_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_nizhegorodsky_avtomobilny_final = {
-				name = nizhegorodsky_avtomobilny
-	
-				picture = nizhegorodsky_avtomobilny
-				
-				allowed = {
-					original_tag = SOV
-				}
-								on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
-						has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { tank_destroyer_manufacturer }
-						on_add = { hidden_effect = { make_tank_designers_free = yes } }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-																
-	 #    #  #   #  #####  #   ####   #    #   ####   #    #  # 
-	 ##  ##   # #     #    #  #       #    #  #    #  #    #  # 
-	 # ## #    #      #    #   ####   ######  #       ######  # 
-	 #    #    #      #    #       #  #    #  #       #    #  # 
-	 #    #    #      #    #  #    #  #    #  #    #  #    #  # 
-	 #    #    #      #    #   ####   #    #   ####   #    #  # 
-																
-	
-			SOV_mytishchy_machine_building_plant = {
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_1 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_2 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_3 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_1_2 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_1_flag
-						has_country_flag = SOV_merge_tank_mytishchy_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_1_3 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_1_flag
-						has_country_flag = SOV_merge_tank_mytishchy_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_2_3 = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_2_flag
-						has_country_flag = SOV_merge_tank_mytishchy_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_mytishchy_machine_building_plant_final = {
-				name = SOV_mytishchy_machine_building_plant
-	
-				picture = SOV_mytishchy_machine_building_plant
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_mytishchy_1_flag
-						has_country_flag = SOV_merge_tank_mytishchy_2_flag
-						has_country_flag = SOV_merge_tank_mytishchy_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.1
-				}
-				
-				traits = { tank_refurbishment_plant }
-				
-				modifier = {
-					equipment_conversion_speed = 0.15
-					equipment_capture_factor = 0.15
-					land_equipment_upgrade_xp_cost = -0.1
-				}
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-				 
-	
-	 #    #  #  #####    ####   #    # 
-	 #   #   #  #    #  #    #  #    # 
-	 ####    #  #    #  #    #  #    # 
-	 #  #    #  #####   #    #  #    # 
-	 #   #   #  #   #   #    #   #  #  
-	 #    #  #  #    #   ####     ##   
-									   
-	
-			SOV_kirov = {
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-				
-				modifier = {
-				}
-			}
-	
-			SOV_kirov_1 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_1_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-					}
-				}
-			}
-	
-			SOV_kirov_2 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-				
-				modifier = {
-				}
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_kirov_3 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
-						NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kirov_1_2 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_1_flag
-						has_country_flag = SOV_merge_tank_kirov_2_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-					}
-				}
-			}
-	
-			SOV_kirov_1_3 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_1_flag
-						has_country_flag = SOV_merge_tank_kirov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kirov_2_3 = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_2_flag
-						has_country_flag = SOV_merge_tank_kirov_3_flag
-						NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-	
-				equipment_bonus = {
-					armor = {
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
-				}
-			}
-	
-			SOV_kirov_final = {
-				name = SOV_kirov
-	
-				picture = SOV_kirov
-				
-				allowed = {
-					original_tag = SOV
-				}
-	
-				visible = {
-					hidden_trigger = {
-						has_country_flag = SOV_merge_tank_kirov_1_flag
-						has_country_flag = SOV_merge_tank_kirov_2_flag
-						has_country_flag = SOV_merge_tank_kirov_3_flag
-					}
-				}
-				
-				research_bonus = {
-					armor = 0.15
-				}
-				
-				traits = { heavy_tank_manufacturer }
-				
-				equipment_bonus = {
-					armor = {
-						maximum_speed = 0.03
-						build_cost_ic = -0.05
-						soft_attack = 0.03
-					}
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
 				}
 			}
 		}
+
+		SOV_morozov_design_bureau_2 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
+				}
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_morozov_design_bureau_3 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
+				}
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_morozov_design_bureau_1_2 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_1_flag
+					has_country_flag = SOV_merge_tank_morozov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_morozov_design_bureau_1_3 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_1_flag
+					has_country_flag = SOV_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_2_flag }
+				}
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_morozov_design_bureau_2_3 = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_2_flag
+					has_country_flag = SOV_merge_tank_morozov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_morozov_1_flag }
+				}
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_morozov_design_bureau_final = {
+			name = morozov_design_bureau
+
+			picture = morozov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_morozov_1_flag
+					has_country_flag = SOV_merge_tank_morozov_2_flag
+					has_country_flag = SOV_merge_tank_morozov_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+
+   ##     ####   #####  #####    ####   #    # 
+  #  #   #         #    #    #  #    #  #    # 
+ #    #   ####     #    #    #  #    #  #    # 
+ ######       #    #    #####   #    #  #    # 
+ #    #  #    #    #    #   #   #    #   #  #  
+ #    #   ####     #    #    #   ####     ##   
+											   
+		
+		SOV_astrov_design_bureau = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_astrov_design_bureau_1 = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_2 = {
+			name = astrov_design_bureau
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_3 = {
+			name = astrov_design_bureau
+			on_add = { hidden_effect = { make_tank_designers_free = yes } }	
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_1_2 = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_1_flag
+					has_country_flag = SOV_merge_tank_astrov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_1_3 = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_1_flag
+					has_country_flag = SOV_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_2_3 = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_2_flag
+					has_country_flag = SOV_merge_tank_astrov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_astrov_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_astrov_design_bureau_final = {
+			name = astrov_design_bureau
+			
+			picture = astrov_design_bureau
+
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_astrov_1_flag
+					has_country_flag = SOV_merge_tank_astrov_2_flag
+					has_country_flag = SOV_merge_tank_astrov_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+		
+
+  ####   #    #  #    #   ####  
+ #    #  #   #   ##  ##  #    # 
+ #    #  ####    # ## #  #    # 
+ #    #  #  #    #    #  #    # 
+ #    #  #   #   #    #  #    # 
+  ####   #    #  #    #   ####  
+		
+		SOV_volgograd_tractor_plant = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
+				}
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_volgograd_tractor_plant_1 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_2 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_3 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_1_2 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_1_3 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_2_3 = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_volgograd_tractor_plant_final = {
+			name = volgograd_tractor_plant
+
+			picture = volgograd_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+	on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_2_flag
+					has_country_flag = SOV_merge_tank_volgograd_tractor_plant_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cruiser_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+
+
+
+
+
+
+
+
+		SOV_uralmash = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_uralmash_1 = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_uralmash_2 = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_uralmash_3 = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralmash_1_2 = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_1_flag
+					has_country_flag = SOV_merge_tank_uralmash_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_uralmash_1_3 = {
+			name = uralmash
+
+			picture = uralmash
+			
+			allowed = {
+				original_tag = SOV
+			}
+				on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_1_flag
+					has_country_flag = SOV_merge_tank_uralmash_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralmash_2_3 = {
+			name = uralmash
+
+			picture = uralmash
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_2_flag
+					has_country_flag = SOV_merge_tank_uralmash_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralmash_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralmash_final = {
+			name = uralmash
+
+			picture = uralmash
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralmash_1_flag
+					has_country_flag = SOV_merge_tank_uralmash_2_flag
+					has_country_flag = SOV_merge_tank_uralmash_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mass_tank_manufactuer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+		SOV_kharkiv = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { mbt_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_kharkiv_1 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_kharkiv_2 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_kharkiv_3 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kharkiv_1_2 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_1_flag
+					has_country_flag = SOV_merge_tank_kharkiv_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_kharkiv_1_3 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_1_flag
+					has_country_flag = SOV_merge_tank_kharkiv_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kharkiv_2_3 = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_2_flag
+					has_country_flag = SOV_merge_tank_kharkiv_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kharkiv_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kharkiv_final = {
+			name = kharkiv
+
+			picture = kharkiv
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kharkiv_1_flag
+					has_country_flag = SOV_merge_tank_kharkiv_2_flag
+					has_country_flag = SOV_merge_tank_kharkiv_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mbt_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+			}
+
+
+
+
+
+
+
+
+		SOV_chelyabinsk_tractor_plant = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_1 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_2 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_3 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_1_2 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_1_3 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_2_3 = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_chelyabinsk_tractor_plant_final = {
+			name = chelyabinsk_tractor_plant
+
+			picture = chelyabinsk_tractor_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+						on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_1_flag
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_2_flag
+					has_country_flag = SOV_merge_tank_chelyabinsk_tractor_plant_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { cavalry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+			
+			}
+
+
+
+
+
+
+
+
+		SOV_okmo = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_okmo_1 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_okmo_2 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_okmo_3 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_okmo_1_2 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_1_flag
+					has_country_flag = SOV_merge_tank_okmo_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_okmo_1_3 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_1_flag
+					has_country_flag = SOV_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_okmo_2_3 = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_2_flag
+					has_country_flag = SOV_merge_tank_okmo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_okmo_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_okmo_final = {
+			name = okmo
+
+			picture = okmo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_okmo_1_flag
+					has_country_flag = SOV_merge_tank_okmo_2_flag
+					has_country_flag = SOV_merge_tank_okmo_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { infantry_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+
+
+
+
+		SOV_krasnoye_sormovo = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { brawler_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_krasnoye_sormovo_1 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
+				}
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_2 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { brawler_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_3 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_1_2 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag }
+				}
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_1_3 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag }
+				}
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_2_3 = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_krasnoye_sormovo_final = {
+			name = krasnoye_sormovo
+
+			picture = krasnoye_sormovo
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_1_flag
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_2_flag
+					has_country_flag = SOV_merge_tank_krasnoye_sormovo_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { brawler_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+
+
+
+
+
+			
+
+		SOV_avtomobilnoe_moskovskoe = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_1 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_2 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_3 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_1_2 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_1_3 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_2_3 = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_avtomobilnoe_moskovskoe_final = {
+			name = avtomobilnoe_moskovskoe
+
+			picture = avtomobilnoe_moskovskoe
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_1_flag
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_2_flag
+					has_country_flag = SOV_merge_tank_avtomobilnoe_moskovskoe_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { light_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			SOV_factory_no_174_k_e_voroshilov = {
+			name = factory_no_174_k_e_voroshilov
+
+			picture = factory_no_174_k_e_voroshilov
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_1 = {
+			name = factory_no_174_k_e_voroshilov
+
+			picture = factory_no_174_k_e_voroshilov
+			
+			allowed = {
+				original_tag = SOV
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_2 = {
+			name = factory_no_174_k_e_voroshilov
+
+			picture = factory_no_174_k_e_voroshilov
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_3 = {
+			name = factory_no_174_k_e_voroshilov
+
+			picture = factory_no_174_k_e_voroshilov
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_1_2 = {
+			name = factory_no_174_k_e_voroshilov
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = factory_no_174_k_e_voroshilov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_1_3 = {
+			name = factory_no_174_k_e_voroshilov
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = factory_no_174_k_e_voroshilov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_2_3 = {
+			name = factory_no_174_k_e_voroshilov
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = factory_no_174_k_e_voroshilov
+			
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_factory_no_174_k_e_voroshilov_final = {
+			name = factory_no_174_k_e_voroshilov
+
+			picture = factory_no_174_k_e_voroshilov
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_1_flag
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_2_flag
+					has_country_flag = SOV_merge_tank_factory_no_174_k_e_voroshilov_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { mobile_heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			SOV_uralvagonazavod = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_uralvagonazavod_1 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_2 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_3 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_1_2 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
+					has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_1_3 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
+					has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_2_3 = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
+					has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_uralvagonazavod_final = {
+			name = uralvagonazavod
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = uralvagonazavod
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_uralvagonazavod_1_flag
+					has_country_flag = SOV_merge_tank_uralvagonazavod_2_flag
+					has_country_flag = SOV_merge_tank_uralvagonazavod_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { blitzkrieg_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			SOV_nizhegorodsky_avtomobilny = {
+			name = nizhegorodsky_avtomobilny
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { tank_destroyer_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_1 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { tank_destroyer_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_2 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
+				}
+			}
+										on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_destroyer_manufacturer }
+			
+			modifier = {
+			}
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_3 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
+				}
+			}
+										on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { tank_destroyer_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_1_2 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+										on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { tank_destroyer_manufacturer }
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_1_3 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			traits = { tank_destroyer_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_2_3 = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag }
+				}
+			}
+								on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_destroyer_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_nizhegorodsky_avtomobilny_final = {
+			name = nizhegorodsky_avtomobilny
+
+			picture = nizhegorodsky_avtomobilny
+			
+			allowed = {
+				original_tag = SOV
+			}
+							on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_1_flag
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_2_flag
+					has_country_flag = SOV_merge_tank_nizhegorodsky_avtomobilny_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_destroyer_manufacturer }
+					on_add = { hidden_effect = { make_tank_designers_free = yes } }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+															
+ #    #  #   #  #####  #   ####   #    #   ####   #    #  # 
+ ##  ##   # #     #    #  #       #    #  #    #  #    #  # 
+ # ## #    #      #    #   ####   ######  #       ######  # 
+ #    #    #      #    #       #  #    #  #       #    #  # 
+ #    #    #      #    #  #    #  #    #  #    #  #    #  # 
+ #    #    #      #    #   ####   #    #   ####   #    #  # 
+															
+
+		SOV_mytishchy_machine_building_plant = {
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_1 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_2 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_3 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_1_2 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_1_flag
+					has_country_flag = SOV_merge_tank_mytishchy_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_1_3 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_1_flag
+					has_country_flag = SOV_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_2_3 = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_2_flag
+					has_country_flag = SOV_merge_tank_mytishchy_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_mytishchy_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_mytishchy_machine_building_plant_final = {
+			name = SOV_mytishchy_machine_building_plant
+
+			picture = SOV_mytishchy_machine_building_plant
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_mytishchy_1_flag
+					has_country_flag = SOV_merge_tank_mytishchy_2_flag
+					has_country_flag = SOV_merge_tank_mytishchy_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { tank_refurbishment_plant }
+			
+			modifier = {
+				equipment_conversion_speed = 0.15
+				equipment_capture_factor = 0.15
+				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+			 
+
+ #    #  #  #####    ####   #    # 
+ #   #   #  #    #  #    #  #    # 
+ ####    #  #    #  #    #  #    # 
+ #  #    #  #####   #    #  #    # 
+ #   #   #  #   #   #    #   #  #  
+ #    #  #  #    #   ####     ##   
+								   
+
+		SOV_kirov = {
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+		}
+
+		SOV_kirov_1 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_1_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+				}
+			}
+		}
+
+		SOV_kirov_2 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			modifier = {
+			}
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_kirov_3 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+					NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kirov_1_2 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_1_flag
+					has_country_flag = SOV_merge_tank_kirov_2_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_3_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+				}
+			}
+		}
+
+		SOV_kirov_1_3 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_1_flag
+					has_country_flag = SOV_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_2_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kirov_2_3 = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_2_flag
+					has_country_flag = SOV_merge_tank_kirov_3_flag
+					NOT = { has_country_flag = SOV_merge_tank_kirov_1_flag }
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+
+		SOV_kirov_final = {
+			name = SOV_kirov
+
+			picture = SOV_kirov
+			
+			allowed = {
+				original_tag = SOV
+			}
+
+			visible = {
+				original_tag = SWE
+				hidden_trigger = {
+					has_country_flag = SOV_merge_tank_kirov_1_flag
+					has_country_flag = SOV_merge_tank_kirov_2_flag
+					has_country_flag = SOV_merge_tank_kirov_3_flag
+				}
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
+			
+			equipment_bonus = {
+				armor = {
+					maximum_speed = 0.03
+					build_cost_ic = -0.05
+					soft_attack = 0.03
+				}
+			}
+		}
+	}
 	
 		naval_manufacturer = {
 		
@@ -7997,7 +8109,7 @@ ideas = {
 					air_equipment = 0.15
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 				}
@@ -8028,7 +8140,7 @@ ideas = {
 					air_equipment = 0.15
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 				}
@@ -8065,7 +8177,7 @@ ideas = {
 					air_equipment = 0.15
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_agility_factor = 0.05
@@ -8098,7 +8210,7 @@ ideas = {
 					radar_tech = 0.1
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_mission_efficiency = 0.05
@@ -8130,7 +8242,7 @@ ideas = {
 					air_equipment = 0.15
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_agility_factor = 0.05
@@ -8169,7 +8281,7 @@ ideas = {
 					radar_tech = 0.1
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_mission_efficiency = 0.05
@@ -8208,7 +8320,7 @@ ideas = {
 					radar_tech = 0.1
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_agility_factor = 0.05
@@ -8242,7 +8354,7 @@ ideas = {
 					radar_tech = 0.1
 				}
 				
-				traits = { medium_aircraft_manufacturer }
+				traits = { CAS_manufacturer }
 				
 				modifier = {
 					air_agility_factor = 0.05
