@@ -7,6 +7,7 @@ NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 300
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NSupply.MAX_RAILWAY_LEVEL = 5
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1
+NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 25					-- pp cost to scorch a state
 
 -- Convoy Priorities START --- this is edited from vanilla to make lend lease be the last priority with convoys, so that you don't get your trade for resources stopped if you are getting too much LL
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1									-- Default convoy priority for naval invasions
