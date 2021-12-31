@@ -13,6 +13,9 @@ focus_tree = {
 	
 	
 		focus = {
+		ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_anti_meme1
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -160,6 +163,9 @@ focus_tree = {
 		}
 		
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_anti_meme2
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -265,6 +271,9 @@ focus_tree = {
 	
 	
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_anti_meme33
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -284,6 +293,9 @@ focus_tree = {
 		
 	
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_anti_meme
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -338,6 +350,9 @@ focus_tree = {
 		
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource4
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -354,6 +369,9 @@ focus_tree = {
 		}
 		
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource11
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -372,6 +390,9 @@ focus_tree = {
 		}
 		
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource5
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -388,6 +409,9 @@ focus_tree = {
 		}
 		
 				focus = {
+					ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource312
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -409,6 +433,9 @@ focus_tree = {
 		
 		
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource3
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -447,6 +474,9 @@ focus_tree = {
 		}
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource3332
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -468,6 +498,9 @@ focus_tree = {
 
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource1337
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -501,6 +534,9 @@ focus_tree = {
 		}
 		
 	focus = {
+		ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource1338
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -532,6 +568,9 @@ focus_tree = {
 		
 		
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource2
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -555,6 +594,9 @@ focus_tree = {
 		}
 		
 					focus = {
+						ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource20
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -576,6 +618,9 @@ focus_tree = {
 		
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_resource
 		icon = GFX_goal_generic_consumer_goods
 	
@@ -595,6 +640,9 @@ focus_tree = {
 		}
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_iraq
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = TIB_resource }
@@ -634,6 +682,9 @@ focus_tree = {
 		}
 		
 			focus = {
+				ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_nothing2
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = TIB_iraq }
@@ -649,6 +700,9 @@ focus_tree = {
 	
 		}
 		focus = {
+			ai_will_do = {
+			factor = 1000
+		}
 		id = TIB_nothing
 		icon = GFX_goal_generic_consumer_goods
 		prerequisite = { focus = TIB_nothing2 }

@@ -1,0 +1,40 @@
+SWE_historical_plan = {
+	name = "Swedish historical plan"
+	desc = "Essentially historical behaviour for Sweden"
+
+    enable = {
+        always = yes
+    }
+
+	allowed = {
+		original_tag = SWE
+	}
+
+	ai_national_focuses = {
+		TIB_anti_meme1
+		TIB_anti_meme2
+		TIB_anti_meme33
+		TIB_anti_meme
+		TIB_resource4
+		TIB_resource11
+		TIB_resource5
+		TIB_resource312
+		TIB_resource3
+		TIB_resource3332
+		TIB_resource1337
+		TIB_resource1338
+		TIB_resource2
+		TIB_resource20
+		TIB_nothing2
+	}
+
+	research = {
+	}
+
+	ideas = {
+	}
+
+	traits = {
+	}
+
+}

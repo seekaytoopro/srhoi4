@@ -2,7 +2,7 @@ continuous_focus_palette = {
 	id = generic_focus
 	
 	country = {
-		factor = 1
+		factor = 0
 	}
 	
 	default = yes
@@ -22,7 +22,7 @@ continuous_focus_palette = {
 		idea = continuous_naval_production
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		supports_ai_strategy = ai_focus_naval
@@ -59,7 +59,7 @@ continuous_focus_palette = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -82,7 +82,7 @@ continuous_focus_palette = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 		
 		supports_ai_strategy = ai_focus_defense
@@ -105,7 +105,7 @@ continuous_focus_palette = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 0
 				
@@ -130,11 +130,11 @@ continuous_focus_palette = {
 				
 		modifier = {
 			industry_repair_factor = 0.5
-			industry_free_repair_factor = 1.0
+			industry_free_repair_factor = 0.0
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 0
 				
