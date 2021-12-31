@@ -26,7 +26,6 @@ replace_path="common/characters"
 replace_path="common/continuous_focus"
 replace_path="common/country_leader"
 replace_path="common/country_tag_aliases"
-
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="common/difficulty_settings"

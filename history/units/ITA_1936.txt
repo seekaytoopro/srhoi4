@@ -311,6 +311,7 @@ units = {
 		location = 7206 
 		division_template = "Mediums" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.05
 	} 
 	division = { # 
 		division_name = {
@@ -319,7 +320,8 @@ units = {
 		}
 		location = 7130 
 		division_template = "Mediums" 
-		start_experience_factor = 0.3 
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.05
 	} 
 	division = { # 
 		division_name = {
@@ -329,6 +331,7 @@ units = {
 		location = 1463 
 		division_template = "Mediums" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.05
 	} 
 	division = { # 
 		division_name = {
@@ -338,6 +341,7 @@ units = {
 		location = 9823 
 		division_template = "Mediums" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.05
 	}
 	division = { # 
 		division_name = {
@@ -347,6 +351,7 @@ units = {
 		location = 4136 
 		division_template = "Mediums" 
 		start_experience_factor = 0.3
+		start_equipment_factor = 0.05
 	} 
 
 
