@@ -669,7 +669,7 @@ focus_tree = {
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FRF_france_libre }
 	    mutually_exclusive = { 
-		    focus = FRFs
+		    focus = FRF_tanks
 			}
 		x = 10
 		y = 1
@@ -683,7 +683,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = FRFs
+		id = FRF_tanks
 		icon = GFX_goal_generic_armys
 		prerequisite = { focus = FRF_france_libre }
 	    mutually_exclusive = { 
@@ -696,8 +696,25 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = FRF_spawn
-			load_oob = "FRFs"
+			create_equipment_variant = {
+				name = "Improved Medium Tank Chassis"
+				type = medium_tank_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon_m2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = extra_ammo_storage
+					special_type_slot_4 = wet_ammo_storage
+				}
+			}
+			custom_effect_tooltip = "    "
+			custom_effect_tooltip = FRF_tank_spawn
+			load_oob = "FRF_tanks"
 		}
 	}
 		focus = {
