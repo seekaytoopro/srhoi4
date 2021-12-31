@@ -71,5 +71,7 @@ sub_units = {
 		amphibious = {
 			movement = -0.05
 		}
+
+		same_support_type = flame
 	}
 }

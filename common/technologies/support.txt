@@ -823,7 +823,39 @@ technologies = {
 				movement = 0.1
 			}
 		}
-		
+		light_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			soft_attack = 0.03
+			fort = {
+				defence = 0.05
+				attack = 0.10
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
 		
 		path = {
 			leads_to_tech = tech_flamethrower3
@@ -859,6 +891,41 @@ technologies = {
 				movement = 0.1
 			}
 		}
+		light_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+		heavy_flame_tank = {
+			soft_attack = 0.03
+			urban = {
+				attack = 0.05	
+				defence = 0.05
+			}
+			jungle = {
+				attack = 0.1
+				movement = 0.1
+			}
+		}
+
+
 		path = {
 			leads_to_tech = tech_flamethrower4
 			research_cost_coeff = 1
@@ -883,6 +950,24 @@ technologies = {
 	tech_flamethrower4 = {
 		
 		flamethrower = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		light_flame_tank = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		medium_flame_tank = {
+			soft_attack = 0.05
+			fort = {
+				attack = 0.1
+			}
+		}
+		heavy_flame_tank = {
 			soft_attack = 0.05
 			fort = {
 				attack = 0.1

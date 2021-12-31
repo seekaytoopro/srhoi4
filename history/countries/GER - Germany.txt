@@ -83,8 +83,8 @@ set_technology = { basic_train = 1
 	synth_oil_experiments = 1
 	jaegers = 1 
 	shocktroops = 1
-	improved_light_spaa = 1
-	improved_light_td = 1
+	# improved_light_spaa = 1
+	# improved_light_td = 1
 
 	air_superiority = 1
 	forward_interception = 1 
