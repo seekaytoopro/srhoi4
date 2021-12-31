@@ -890,6 +890,45 @@ tank_rocket_launcher_2
 			super_heavy_armor
 		}
 
+		allow = {
+			#date > 1941.1.1
+		OR = {
+				has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_ENABLE_FREE_RESEARCH
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1940
+			}
+			date > 1940.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1941
+			}
+			date > 1941.1.1
+			}
+			AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = SR_tank_limit_barbarossa
+			}
+			date > 1941.6.1
+			}
+				AND = { 
+			has_game_rule = {
+				rule = horst_tank_research_options
+				option = HORST_DISABLE_LIMIT_1942
+			}
+			date > 1942.1.1
+			}
+
+			}
+		}
+
 
 		research_cost = 2.5
 		start_year = 1943
