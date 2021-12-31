@@ -584,7 +584,7 @@ tank_medium_cannon_3
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 		start_year = 1943
 
 		folder = {
@@ -849,7 +849,7 @@ tank_rocket_launcher_2
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2.5
+		research_cost = 3
 		start_year = 1943
 
 		folder = {
