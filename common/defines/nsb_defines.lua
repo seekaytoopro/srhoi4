@@ -74,7 +74,7 @@ NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.58 --vanilla 0.7
 --NDefines.NSupply.FLOATING_HARBOR_DECAY_NO_CONTROL_PENALTY = 1.0, -- If adjacent land province is not held, change decay rate by this many "hours" per hour
 
 --NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30, -- max infrastructure level will reduce the supply flow drop off by this ratio
---NDefines.NSupply.SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.20, -- crossing rivers introduces additional penalty
+NDefines.NSupply.SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.10 -- crossing rivers introduces additional penalty
 
  -- node flow terrain falloff is scaled by logistics curve based on distance(d) (scalar / (1+e^(-k(d-midpoint))))
 --NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.3, -- How steep the curve is
@@ -94,7 +94,7 @@ NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 200 --vanilla 50
 -- used for calculating "flow" from a naval node to another naval node when it is connected via a convoy route
 -- NAVAL_BASE_MAX_SUPPLY_FLOW_FACTOR = 0.9, -- flow of the parent node is factored to this ratio (so at most it can transfer parent naval node flow * this define)
 NDefines.NSupply.NAVAL_BASE_FLOW = 0 -- max output/input of a naval node is limited by this base value + additional ratio for each level
-NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 4.5 -- max output/input of a naval node is limited by previous base value + this define per its level
+NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 9 -- max output/input of a naval node is limited by previous base value + this define per its level
 -- defines that are used for supply reach for dockyards
 NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2  --3.5
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.8 --  vanilla 0.8
