@@ -672,12 +672,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_lessons_of_the_great_war
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 35
+			# add_tech_bonus = {
+			# 	name = RAJ_lessons_of_the_great_war
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 		}
 	}
 
@@ -1171,12 +1172,13 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = RAJ_modernizing_army
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 35
+			# add_tech_bonus = {
+			# 	name = RAJ_modernizing_army
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 		}
 	}
 

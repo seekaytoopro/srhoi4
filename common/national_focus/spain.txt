@@ -514,13 +514,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 25
-			add_tech_bonus = {
-				name = SPA_the_army_of_africa_model
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = SPA_the_army_of_africa_model
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	category = land_doctrine
+			# }
 		add_tech_bonus = {
 				name = SPA_equipment_modernization
 				bonus = 3.0
@@ -1199,12 +1199,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = SPA_doctrinal_advancements
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 25
+			# add_tech_bonus = {
+			# 	name = SPA_doctrinal_advancements
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 			add_tech_bonus = {
 				name = SPA_doctrinal_advancements
 				bonus = 1.0

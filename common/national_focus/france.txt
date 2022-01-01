@@ -725,12 +725,12 @@ if = {
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_army
 			show_ideas_tooltip = maxime_weygand
-			add_tech_bonus = {
-				name = FRA_methodical_battle
-				category = land_doctrine
-				uses = 2
-				bonus = 1.5
-			}
+			# add_tech_bonus = {
+			# 	name = FRA_methodical_battle
+			# 	category = land_doctrine
+			# 	uses = 2
+			# 	bonus = 1.5
+			# }
 			army_experience = 15
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
@@ -978,12 +978,12 @@ if = {
 			add_idea = FRA_victors_of_wwi2
 			}
 			army_experience = 10
-			add_tech_bonus = {
-				name = FRA_army_reform
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			# add_tech_bonus = {
+			# 	name = FRA_army_reform
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	category = land_doctrine
+			# }
 			add_tech_bonus = {
 				name = FRA_army_reform
 				bonus = 1.0

@@ -390,7 +390,7 @@ country_event = {
 			
 			#GER = { declare_war_on = { target = FRF type = annex_everything } }
 			FRF = { add_timed_idea = { idea = france_production_regrowth days = 90 } }
-			FRF = { army_experience = 500 }
+			FRF = { army_experience = 100 }
 			FRF = { add_political_power = 600 }
 			FRF = {
 				transfer_state = 295 

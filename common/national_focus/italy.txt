@@ -1243,13 +1243,13 @@ focus_tree = {
 					}
 				}				
 			}
-
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	category = land_doctrine
+			# }
 		}
 	}
 
@@ -1305,12 +1305,13 @@ focus_tree = {
 				technology = tech_engineers3
 				technology = tech_engineers4
 			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 2
+			# 	category = land_doctrine
+			# }
 		}
 	}
 

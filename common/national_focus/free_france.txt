@@ -344,12 +344,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = FRF_army_reform
-				bonus = 1.0
-				uses = 3
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = FRF_army_reform
+			# 	bonus = 1.0
+			# 	uses = 3
+			# 	category = land_doctrine
+			# }
 
 		}
 	}

@@ -995,12 +995,12 @@ focus_tree = {
 			army_experience = 50
 
 			
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 3
-				category = land_doctrine
-			}
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 3
+			# 	category = land_doctrine
+			# }
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.00
@@ -1185,12 +1185,12 @@ focus_tree = {
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 3
-				category = land_doctrine
-			}
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 3
+			# 	category = land_doctrine
+			# }
 			
 			add_tech_bonus = {
 				bonus = 1.5
@@ -1198,33 +1198,33 @@ focus_tree = {
 				name = mech_army_bonus
 				technology = mechanised_infantry
 			}	
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_TD_bonus
-				technology = advanced_light_td
-				technology = improved_medium_td
-				technology = improved_heavy_td
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_ART_bonus
-				technology = advanced_light_art
-				technology = improved_medium_art
-				technology = improved_heavy_art
-			}
-			add_tech_bonus = {
-				bonus = 0.00
-				uses = 3
-				ahead_reduction = 4.0
-				name = mech_army_SPAA_bonus
-				technology = advanced_light_spaa
-				technology = improved_medium_spaa
-				technology = improved_heavy_spaa
-			}
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_TD_bonus
+			# 	technology = advanced_light_td
+			# 	technology = improved_medium_td
+			# 	technology = improved_heavy_td
+			# }
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_ART_bonus
+			# 	technology = advanced_light_art
+			# 	technology = improved_medium_art
+			# 	technology = improved_heavy_art
+			# }
+			# add_tech_bonus = {
+			# 	bonus = 0.00
+			# 	uses = 3
+			# 	ahead_reduction = 4.0
+			# 	name = mech_army_SPAA_bonus
+			# 	technology = advanced_light_spaa
+			# 	technology = improved_medium_spaa
+			# 	technology = improved_heavy_spaa
+			# }
 		}
 	}
 

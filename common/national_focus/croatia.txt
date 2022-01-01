@@ -27,13 +27,13 @@
 		
 
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 		}
 	}
 
@@ -98,13 +98,13 @@
 
 		
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 		}
 	}
 
@@ -173,13 +173,13 @@
 
 		
 		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = land_doc_bonus
+			# 	bonus = 1.0
+			# 	uses = 1
+			# 	category = land_doctrine
+			# }
 		}
 	}
 
@@ -1319,12 +1319,13 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_tech_bonus = {
-				name = CRO_analyze_our_defeat
-				category = land_doctrine
-				uses = 2
-				bonus = 1
-			}
+			army_experience = 50
+			# add_tech_bonus = {
+			# 	name = CRO_analyze_our_defeat
+			# 	category = land_doctrine
+			# 	uses = 2
+			# 	bonus = 1
+			# }
 		}
 	}
 	focus = {

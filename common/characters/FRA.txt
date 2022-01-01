@@ -233,9 +233,6 @@ characters={
 					has_completed_focus = FRA_begin_rearmament
 				}
 				cost = 150.000
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
 				traits  = {
 					blitzkrieg_theorist 
 				}
@@ -304,9 +301,6 @@ characters={
 					}
 				}
 				cost = 150.000
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
 				ai_will_do  = {
 					factor  = 1.000
 				}
