@@ -154,7 +154,7 @@ focus_tree = {
 			add_named_threat = { threat = 10 name = JAP_CHIONE }
 			add_ideas = JAP_war_with_chi1
 			
-			army_experience = 500
+			army_experience = 300
 			air_experience = 1000
 			navy_experience = 500
 			
@@ -208,24 +208,24 @@ focus_tree = {
 					add_political_power = 100
 					add_war_support = 0.10
 					air_experience = 300
-					army_experience = 100
+					army_experience = 50
 				}
-				SOV = { army_experience = 500 air_experience  = 300 }
+				SOV = { army_experience = 200 air_experience  = 300 }
 				GER = { air_experience  = 300 }
 				ITA = { air_experience  = 300 }
-				ENG = { army_experience = 150 }
-                FRA = { army_experience = 100 }	
-				CAN = { army_experience = 150 }
-				SAF = {	army_experience = 150 }
-				RAJ = {	army_experience = 150 }
-				AST = {	army_experience = 150 }
-				NZL = { army_experience = 150 }	
+				ENG = { army_experience = 50 }
+                FRA = { army_experience = 25 }	
+				CAN = { army_experience = 50 }
+				SAF = {	army_experience = 50 }
+				RAJ = {	army_experience = 50 }
+				AST = {	army_experience = 50 }
+				NZL = { army_experience = 50 }	
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
 				BUL = { army_experience = 100 }
 				IF = { limit = { country_exists = CRO } CRO = { army_experience = 100 } }
-				IF = { limit = { country_exists = CRO } SIA = { army_experience = 1000 air_experience  = 1000 } }
-				IF = { limit = { country_exists = CRO } MAN = { army_experience = 1000 air_experience  = 1000 } }
+				IF = { limit = { country_exists = CRO } SIA = { army_experience = 300 air_experience  = 1000 } }
+				IF = { limit = { country_exists = CRO } MAN = { army_experience = 300 air_experience  = 1000 } }
 			}
 		}
 	}
@@ -277,8 +277,8 @@ focus_tree = {
 			hidden_effect = { CHI = { set_equipment_fraction = 0.00 } }
 			annex_country = { target = CHI transfer_troops = no }
 
-			army_experience = 1000
-			air_experience = 1000
+			army_experience = 250
+			air_experience = 800
 			navy_experience = 1000
 			hidden_effect = {
 				USA = { add_war_support = 0.10 }

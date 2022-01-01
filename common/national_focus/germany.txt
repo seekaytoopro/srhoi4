@@ -1391,18 +1391,18 @@ focus_tree = {
 					add_political_power = 100
 					add_war_support = 0.10
 					air_experience = 300
-					army_experience = 100
+					army_experience = 50
 				}
-				SOV = { army_experience = 1000 air_experience  = 300 }
+				SOV = { army_experience = 200 air_experience  = 300 }
 				GER = { air_experience  = 300 }
 				ITA = { air_experience  = 300 }
-				ENG = { army_experience = 150 }
-                FRA = { army_experience = 100 }	
-				CAN = { army_experience = 150 }
-				SAF = {	army_experience = 150 }
-				RAJ = {	army_experience = 150 }
-				AST = {	army_experience = 150 }
-				NZL = { army_experience = 150 }	
+				ENG = { army_experience = 50 }
+                FRA = { army_experience = 25 }	
+				CAN = { army_experience = 50 }
+				SAF = {	army_experience = 50 }
+				RAJ = {	army_experience = 50 }
+				AST = {	army_experience = 50 }
+				NZL = { army_experience = 50 }	
 				ROM = { army_experience = 100 }		
 				HUN = { army_experience = 100 }	
 				BUL = { army_experience = 100 }
@@ -1659,7 +1659,7 @@ focus_tree = {
 				}
 				hidden_effect = { 188 = { remove_core_of = SOV } }
 
-				army_experience = 100
+				army_experience = 50
 				air_experience = 300
 				add_political_power = -150
 				country_event = finland.20

@@ -220,7 +220,7 @@ characters={
 		}
 		advisor={
 			slot = theorist
-			idea_token = FRF_charles_de_gaulle
+			idea_token = FRA_charles_de_gaulle
 			ledger  = army 
 				allowed  = {
 					or  = {
