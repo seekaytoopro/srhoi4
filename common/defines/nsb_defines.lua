@@ -118,8 +118,8 @@ NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.5          --0.15 vanilla      --
 --NDefines.NSupply.SUPPLY_BASE_MULT = 0.2,							-- multiplier on supply base values
 --NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
---NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 10, -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
---NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 5,
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 4 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 4
 --NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CIVILWAR = 0,
 
 --NDefines.NSupply.DEFAULT_STARTING_TRUCK_RATIO = 1.5, -- countries get this ratio of starting truck in their buffers compared to their need

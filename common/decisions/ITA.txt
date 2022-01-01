@@ -102,7 +102,7 @@ foreign_politics = {
     			# 	target = ITA
     			# 	autonomy_state = autonomy_satellite
 				# }
-				if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
+				# if = { limit = { ITA = { owns_state = 187 }}  transfer_state =  187 transfer_state = 182 }
 				# add_relation_modifier = {
     			# 	target = ITA
     			# 	modifier = stahlpakt
