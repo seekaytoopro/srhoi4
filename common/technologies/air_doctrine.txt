@@ -12,7 +12,7 @@ technologies = {
 		# EFFECT ########
 		air_superiority_detect_factor = 0.15
 		###########
-
+		xp_unlock_cost = 1
 	
 
 		path = {
