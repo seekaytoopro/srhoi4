@@ -137,6 +137,10 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
+			module = smoke_launchers
+			count < 3
+		}
+		module_count_limit = {
 			module = additional_machine_guns
 			count < 2
 		}
@@ -325,6 +329,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = stabilizer
+			count < 3
+		}
+		module_count_limit = {
+			module = smoke_launchers
 			count < 3
 		}
 		module_count_limit = {
@@ -583,6 +591,10 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
+			module = smoke_launchers
+			count < 3
+		}
+		module_count_limit = {
 			module = amphibious_drive
 			count < 2
 		}
@@ -824,6 +836,10 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
+			module = smoke_launchers
+			count < 3
+		}
+		module_count_limit = {
 			module = squeezebore_adaptor
 			count < 2
 		}
@@ -995,6 +1011,10 @@ equipments = {
 			count < 3
 		}
 		module_count_limit = {
+			module = smoke_launchers
+			count < 3
+		}
+		module_count_limit = {
 			module = squeezebore_adaptor
 			count < 2
 		}
@@ -1146,6 +1166,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = stabilizer
+			count < 3
+		}
+		module_count_limit = {
+			module = smoke_launchers
 			count < 3
 		}
 		module_count_limit = {

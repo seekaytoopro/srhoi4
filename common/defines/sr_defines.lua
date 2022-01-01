@@ -9,6 +9,22 @@ NDefines.NSupply.MAX_RAILWAY_LEVEL = 5
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 25					-- pp cost to scorch a state
 
+
+
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 150	-- When an advisor does not have cost assigned this is the default used
+NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 150
+-- NDefines.NCharacter.DEFAULT_CP_COST_FOR_ADVISOR = 0	-- For Starting Advisors
+-- NDefines.NCharacter.DEFAULT_CP_COST_FOR_DYNAMIC_ADVISORS = 0	-- For Advisors created during gameplay
+NDefines.NCharacter.ADVISOR_PROMOTION_COST = 9999	-- Cost to promote someone to advisor
+
+
+NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 10
+NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 10
+NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 10
+
+
+
+
 -- Convoy Priorities START --- this is edited from vanilla to make lend lease be the last priority with convoys, so that you don't get your trade for resources stopped if you are getting too much LL
 NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1									-- Default convoy priority for naval invasions
 NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1									-- Default convoy priority for naval transports
@@ -59,7 +75,7 @@ NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.000001 -- (1.00)
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0 --Division experience drop if unit has different battalion when switching templates(vanilla 0.5 but can be circumvented with template editing)
 
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all the factories in a territory when you annex it
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.2 -- how to weight in highest armor & pen vs the division average
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.15 -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 1.0
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.50 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage reduction if armor outclassing enemy
