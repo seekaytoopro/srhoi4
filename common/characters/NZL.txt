@@ -163,9 +163,7 @@ characters={
 				allowed  = {
 					original_tag  = NZL
 				}
-				research_bonus  = {
-					air_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					air_warfare_theorist 
 				}
@@ -187,6 +185,7 @@ characters={
 				traits  = {
 					air_chief_ground_support_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -247,6 +246,7 @@ characters={
 				traits  = {
 					army_cavalry_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -269,6 +269,7 @@ characters={
 				traits  = {
 					army_armored_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -290,6 +291,7 @@ characters={
 				traits  = {
 					army_chief_offensive_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -312,6 +314,7 @@ characters={
 				traits  = {
 					army_regrouping_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -334,6 +337,7 @@ characters={
 				traits  = {
 					army_infantry_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -353,9 +357,7 @@ characters={
 				allowed  = {
 					original_tag  = NZL
 				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					military_theorist 
 				}
@@ -377,6 +379,7 @@ characters={
 				traits  = {
 					navy_chief_naval_aviation_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -398,6 +401,7 @@ characters={
 				traits  = {
 					navy_chief_decisive_battle_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -417,9 +421,7 @@ characters={
 				allowed  = {
 					original_tag  = NZL
 				}
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					naval_theorist 
 				}
@@ -459,6 +461,7 @@ characters={
 				traits  = {
 					navy_chief_maneuver_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -481,6 +484,7 @@ characters={
 				traits  = {
 					army_commando_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -502,6 +506,7 @@ characters={
 				traits  = {
 					navy_chief_naval_aviation_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}

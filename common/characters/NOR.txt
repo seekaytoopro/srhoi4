@@ -89,7 +89,7 @@ characters={
 	}
 	NOR_skule_storheil={
 		advisor={
-			cost = 100
+			cost = 150
 			
 			slot = theorist
 			idea_token = NOR_skule_storheil
@@ -122,7 +122,7 @@ characters={
 				traits = {
 					air_chief_reform_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -137,7 +137,7 @@ characters={
 	}
 	NOR_tryggve_gran={
 		advisor={
-			cost = 100
+			cost = 150
 			
 			slot = theorist
 			idea_token = NOR_tryggve_gran
@@ -171,7 +171,7 @@ characters={
 				traits = {
 					army_commando_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -196,7 +196,7 @@ characters={
 				traits = {
 					navy_chief_decisive_battle_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -222,7 +222,7 @@ characters={
 				traits = {
 					army_infantry_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -263,7 +263,7 @@ characters={
 	}
 	NOR_konrad_sundlo={
 		advisor={
-			cost = 100
+			cost = 150
 			
 			slot = theorist
 			idea_token = NOR_konrad_sundlo
@@ -296,7 +296,7 @@ characters={
 				traits = {
 					army_chief_offensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -347,7 +347,7 @@ characters={
 				traits = {
 					army_chief_defensive_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -372,7 +372,7 @@ characters={
 				traits = {
 					air_chief_all_weather_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -397,7 +397,7 @@ characters={
 				traits = {
 					army_chief_organizational_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -422,7 +422,7 @@ characters={
 				traits = {
 					air_chief_safety_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}
@@ -447,7 +447,7 @@ characters={
 				traits = {
 					navy_chief_naval_aviation_2
 				}
-				cost = 100
+				cost = 150
 				ai_will_do = {
 					factor = 1.000
 				}

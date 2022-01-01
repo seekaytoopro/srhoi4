@@ -115,7 +115,7 @@ characters={
 			traits = {
 				montgomery_hc
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -150,7 +150,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -245,7 +245,7 @@ characters={
 			traits = {
 				army_armored_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -311,7 +311,7 @@ characters={
 			legacy_id=995
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = harold_alexander
 			ledger = army
@@ -454,7 +454,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -609,7 +609,7 @@ characters={
 			traits = {
 				army_logistics_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 2.000
 			}
@@ -803,7 +803,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.100
 			}

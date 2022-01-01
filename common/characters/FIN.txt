@@ -137,7 +137,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = FIN_akseli_anttila
 			ledger = army
@@ -159,7 +159,7 @@ characters={
 			}
 		}
 		advisor={
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = FIN_vaino_valve
 			ledger = navy
@@ -193,7 +193,7 @@ characters={
 			traits = {
 				army_chief_drill_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -216,7 +216,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -242,7 +242,7 @@ characters={
 			traits = {
 				navy_chief_commerce_raiding_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -265,7 +265,7 @@ characters={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -291,7 +291,7 @@ characters={
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -314,7 +314,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -365,7 +365,7 @@ characters={
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -389,7 +389,7 @@ characters={
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -413,7 +413,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

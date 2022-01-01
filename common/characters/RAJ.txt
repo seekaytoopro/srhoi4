@@ -263,6 +263,7 @@ characters={
 				traits  = {
 					navy_chief_commerce_raiding_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -284,6 +285,7 @@ characters={
 				traits  = {
 					army_chief_offensive_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -323,6 +325,7 @@ characters={
 				traits  = {
 					air_chief_safety_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -362,6 +365,7 @@ characters={
 				traits  = {
 					air_chief_ground_support_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -384,6 +388,7 @@ characters={
 				traits  = {
 					army_armored_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -406,6 +411,7 @@ characters={
 				traits  = {
 					army_commando_1 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -427,6 +433,7 @@ characters={
 				traits  = {
 					navy_chief_decisive_battle_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -446,9 +453,7 @@ characters={
 				allowed  = {
 					original_tag  = RAJ
 				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					military_theorist 
 				}
@@ -470,6 +475,7 @@ characters={
 				traits  = {
 					air_chief_night_operations_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -519,6 +525,7 @@ characters={
 				traits  = {
 					navy_chief_reform_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -540,6 +547,7 @@ characters={
 				traits  = {
 					navy_chief_maneuver_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -562,6 +570,7 @@ characters={
 				traits  = {
 					army_chief_morale_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -602,6 +611,7 @@ characters={
 				traits  = {
 					army_infantry_3 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}

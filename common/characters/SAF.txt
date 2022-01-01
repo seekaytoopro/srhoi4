@@ -27,6 +27,7 @@ characters={
 				ai_will_do  = {
 					factor  = 0.000
 				}
+				cost = 150.000
 		}
 		portraits={
 			army={
@@ -284,6 +285,7 @@ characters={
 				ai_will_do  = {
 					factor  = 1.000
 				}
+				cost = 150.000
 		}
 		name="SAF_pierre_oliver_knoll"
 		portraits={
@@ -302,6 +304,7 @@ characters={
 				traits  = {
 					navy_chief_commerce_raiding_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -341,6 +344,7 @@ characters={
 				traits  = {
 					air_chief_all_weather_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -363,6 +367,7 @@ characters={
 				traits  = {
 					army_logistics_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -429,9 +434,7 @@ characters={
 				allowed  = {
 					original_tag  = SAF
 				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					military_theorist 
 				}
@@ -454,6 +457,7 @@ characters={
 				traits  = {
 					army_commando_2 
 				}
+				cost = 150.000
 		}
 		name="evered_poole_hc"
 		portraits={
@@ -472,6 +476,7 @@ characters={
 				traits  = {
 					air_chief_ground_support_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -494,6 +499,7 @@ characters={
 				traits  = {
 					army_infantry_2 
 				}
+				cost = 150.000
 		}
 		name="j_f_van_rensburg_hc"
 		portraits={
@@ -513,6 +519,7 @@ characters={
 				traits  = {
 					army_regrouping_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -535,6 +542,7 @@ characters={
 				traits  = {
 					army_armored_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -556,6 +564,7 @@ characters={
 				traits  = {
 					army_chief_offensive_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}

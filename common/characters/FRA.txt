@@ -88,10 +88,10 @@ characters={
 			slot = army_chief
 			idea_token = maurice_gamelin
 			allowed  = {
-					or  = {
+					# or  = {
 						original_tag  = FRA
-						original_tag  = FRF
-					}
+						# original_tag  = FRF
+					# }
 				}
 				available  = {
 					or  = {
@@ -99,7 +99,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
-				cost  = 50.000
+				cost  = 75.000
 				traits  = {
 					army_chief_offensive_2 
 				}
@@ -137,12 +137,12 @@ characters={
 					}
 				}
 				available  = {
-					or  = {
+					# or  = {
 						has_completed_focus  = FRA_defensive_focus 
-						original_tag  = FRF
-					}
+						# original_tag  = FRF
+					# }
 				}
-				cost  = 50.000
+				cost  = 75.000
 				traits  = {
 					army_chief_defensive_2 
 				}
@@ -230,8 +230,9 @@ characters={
 				}
 				available  = {
 					original_tag  = FRA
+					has_completed_focus = FRA_begin_rearmament
 				}
-				cost  = 75.000
+				cost = 150.000
 				research_bonus  = {
 					land_doctrine  = 0.100
 				}
@@ -264,6 +265,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					army_commando_1 
 				}
@@ -301,6 +303,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				research_bonus  = {
 					land_doctrine  = 0.100
 				}
@@ -341,6 +344,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					army_infantry_2 
 				}
@@ -440,6 +444,7 @@ characters={
 				traits  = {
 					navy_chief_decisive_battle_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -492,6 +497,7 @@ characters={
 				traits  = {
 					silent_workhorse 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -547,6 +553,7 @@ characters={
 				traits  = {
 					air_chief_ground_support_1 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -600,6 +607,7 @@ characters={
 				traits  = {
 					armaments_organizer 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -634,6 +642,7 @@ characters={
 				traits  = {
 					financial_expert 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -697,6 +706,7 @@ characters={
 				traits  = {
 					army_chief_offensive_1 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -721,6 +731,7 @@ characters={
 				traits  = {
 					war_industrialist 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -749,6 +760,7 @@ characters={
 				traits  = {
 					air_chief_reform_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -770,6 +782,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					air_chief_all_weather_1 
 				}
@@ -798,6 +811,7 @@ characters={
 				traits  = {
 					air_tactical_bombing_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -819,6 +833,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					navy_chief_commerce_raiding_2 
 				}
@@ -844,6 +859,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				research_bonus  = {
 					air_doctrine  = 0.100
 				}
@@ -873,6 +889,7 @@ characters={
 				traits  = {
 					democratic_reformer 
 				}
+				cost = 75.000
 				do_effect  = {
 					not  = {
 						has_government  = democratic 
@@ -905,6 +922,7 @@ characters={
 				traits  = {
 					navy_chief_naval_aviation_1 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -929,6 +947,7 @@ characters={
 				traits  = {
 					captain_of_industry 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -955,6 +974,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					army_armored_2 
 				}
@@ -982,6 +1002,7 @@ characters={
 				traits  = {
 					smooth_talking_charmer 
 				}
+				cost = 150.000
 				on_add  = {
 				}
 				do_effect  = {
@@ -1007,6 +1028,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				cost = 150.000
 				traits  = {
 					army_chief_defensive_1 
 				}

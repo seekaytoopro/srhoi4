@@ -11,6 +11,7 @@ characters={
 				traits  = {
 					army_armored_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -312,6 +313,7 @@ characters={
 				traits  = {
 					air_chief_safety_3 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -333,6 +335,7 @@ characters={
 				traits  = {
 					navy_chief_reform_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -352,9 +355,7 @@ characters={
 				allowed  = {
 					original_tag  = AST
 				}
-				research_bonus  = {
-					naval_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					naval_theorist 
 				}
@@ -375,10 +376,7 @@ characters={
 				allowed  = {
 					original_tag  = AST
 				}
-				research_bonus  = {
-					air_doctrine  = 0.100
-					land_doctrine  = 0.100
-				}
+				cost = 150.000
 				traits  = {
 					military_theorist 
 				}
@@ -437,6 +435,7 @@ characters={
 				traits  = {
 					army_infantry_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -495,6 +494,7 @@ characters={
 				traits  = {
 					army_chief_offensive_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -516,6 +516,7 @@ characters={
 				traits  = {
 					navy_chief_decisive_battle_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -535,7 +536,7 @@ characters={
 				allowed  = {
 					original_tag  = AST
 				}
-				cost  = 100.000
+				cost = 150.000
 				available  = {
 					# has_completed_focus  = AST_australian_army_catering_corps 
 				}
@@ -560,17 +561,12 @@ characters={
 			allowed  = {
 					original_tag  = AST
 				}
-				cost  = 100.000
+				cost = 150.000
 				traits  = {
 					silent_workhorse 
 				}
 				available  = {
-					if  = {
-						limit  = {
-							has_dlc = "Together for Victory"
-						}
-						has_completed_focus  = AST_support_the_policy_of_appeasement 
-					}
+					has_completed_focus  = AST_support_the_policy_of_appeasement 
 				}
 		}
 		name="AST_herbert_v_evatt"
@@ -590,6 +586,7 @@ characters={
 				traits  = {
 					air_chief_reform_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -612,6 +609,7 @@ characters={
 				traits  = {
 					army_artillery_2 
 				}
+				cost = 150.000
 				ai_will_do  = {
 					factor  = 1.000
 				}
@@ -634,6 +632,7 @@ characters={
 				traits  = {
 					army_commando_2 
 				}
+				cost = 150.000
 		}
 		name="AST_arthur_drakeford"
 		portraits={

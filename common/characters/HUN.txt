@@ -49,7 +49,7 @@ characters={
 			traits = {
 				army_commando_3
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -72,7 +72,7 @@ characters={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -97,7 +97,7 @@ characters={
 			traits = {
 				army_armored_3
 			}
-			cost =  50
+			cost = 150.000
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -121,7 +121,7 @@ characters={
 			traits = {
 				army_infantry_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -261,7 +261,7 @@ characters={
 			traits = {
 				army_chief_offensive_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -296,7 +296,7 @@ characters={
 			traits = {
 				army_regrouping_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -543,6 +543,7 @@ characters={
 				traits  = {
 					military_theorist 
 				}
+				cost = 150.000
 		}
 		field_marshal={
 			traits={ old_guard inflexible_strategist career_officer politically_connected organizer skilled_staffer ranger logistics_wizard thorough_planner inspirational_leader }

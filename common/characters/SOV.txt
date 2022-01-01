@@ -96,7 +96,7 @@ characters = {
 		traits = {
 			army_regrouping_2
 		}
-			cost = 100
+			cost = 150
 		ai_will_do = {
 			factor = 1.000
 		}
@@ -150,7 +150,7 @@ SOV_ivan_konev={
 		traits = {
 			army_infantry_1
 		}
-		cost = 100
+		cost = 150
 		ai_will_do = {
 			factor = 1.000
 		}
@@ -187,7 +187,7 @@ SOV_semyon_timoshenko={
 		traits = {
 			army_chief_reform_2
 		}
-			cost = 100
+			cost = 150
 		ai_will_do = {
 			factor = 1.000
 		}
@@ -892,7 +892,7 @@ SOV_filipp_oktyabrskiy={
 		traits = {
 			navy_capital_ship_2
 		}
-		cost = 100
+		cost = 150
 		ai_will_do = {
 			factor = 0.200
 		}
@@ -946,7 +946,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_air_combat_training_2
 			}
-				cost = 100
+				cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -980,7 +980,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_close_air_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1004,7 +1004,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_chief_ground_support_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1038,7 +1038,7 @@ SOV_arseniy_golovko={
 			traits = {
 				navy_chief_decisive_battle_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1062,7 +1062,7 @@ SOV_arseniy_golovko={
 			traits = {
 				navy_chief_reform_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1086,7 +1086,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_chief_safety_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1110,7 +1110,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_chief_all_weather_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1144,7 +1144,7 @@ SOV_arseniy_golovko={
 			traits = {
 				navy_chief_commerce_raiding_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1160,7 +1160,7 @@ SOV_arseniy_golovko={
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = igor_kurchatov
 			ledger = army
@@ -1185,7 +1185,7 @@ SOV_arseniy_golovko={
 		}
 
 		advisor = {
-			cost = 100
+			cost = 150
 			slot = theorist
 			idea_token = sergei_korolev
 			ledger = air
@@ -1219,7 +1219,7 @@ SOV_arseniy_golovko={
 			traits = {
 				air_airborne_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1248,7 +1248,7 @@ SOV_arseniy_golovko={
 			traits = {
 				navy_chief_naval_aviation_1
 			}
-				cost = 50
+				cost = 150
 			ai_will_do = {
 				factor = 0.200
 			}
@@ -1275,7 +1275,7 @@ SOV_arseniy_golovko={
 			traits = {
 				army_chief_defensive_1
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1313,7 +1313,7 @@ SOV_arseniy_golovko={
 			traits = {
 				army_chief_maneuver_2
 			}
-			cost = 100
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -1510,7 +1510,7 @@ SOV_hazi_aslanov = {
 			traits = {
 				army_chief_drill_1
 			}
-			cost = 50
+			cost = 150
 			ai_will_do = {
 				factor = 1.000
 			}

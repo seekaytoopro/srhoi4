@@ -13,6 +13,17 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = manuel_azana
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				war_industrialist
+			}
+			cost = 150.000
+		}
 	}
 	SPR_josé_díaz={
 		name="José Díaz"
@@ -36,6 +47,16 @@ characters={
 				large="GFX_portrait_SPA_jose_antonio_primo_de_rivera"
 			}
 		}
+		advisor={
+			slot = political_advisor
+			idea_token = jose_antonio_primo_de_rivera
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				captain_of_industry 
+			}
+		}
 		country_leader={
 			desc="POLITICS_JOSE_ANTONIO_PRIMO_DE_RIVERA_DESC"
 			ideology=falangism
@@ -48,6 +69,21 @@ characters={
 		portraits={
 			civilian={
 				large="GFX_portrait_spain_francisco_franco"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = francisco_franco
+			ledger = army 
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				army_chief_offensive_2 
+			}
+			cost = 150.000
+			ai_will_do  = {
+				factor  = 1.000
 			}
 		}
 		field_marshal={
@@ -156,6 +192,21 @@ characters={
 				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
 			}
 		}
+		advisor={
+			slot = high_command
+			idea_token = gonzalo_queipo_de_llano
+			ledger  = army 
+			allowed  = {
+				original_tag  = SPR 
+			}
+			traits  = {
+				army_armored_3 
+			}
+			cost = 150.000
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
 		corps_commander={
 			traits={ old_guard brilliant_strategist career_officer trait_reckless cavalry_officer trait_SPA_nationalist_sympathies infantry_leader skilled_staffer trickster panzer_leader desert_fox }
 			skill=5
@@ -175,6 +226,21 @@ characters={
 			army={
 				large="GFX_portrait_SPA_emilio_mola"
 			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = emilio_mola
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				cost = 150.000
+				ai_will_do  = {
+					factor  = 1.000
+				}
 		}
 		field_marshal={
 			traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
@@ -284,6 +350,21 @@ characters={
 			planning_skill=2
 			logistics_skill=5
 			legacy_id=1116
+		}
+		advisor={
+			slot = theorist
+			idea_token = jose_millan_astray
+			ledger  = army 
+				allowed  = {
+					original_tag  = SPR 
+				}
+				research_bonus  = {
+					land_doctrine  = 0.150
+				}
+				traits  = {
+					military_theorist 
+				}
+				cost = 150.000
 		}
 	}
 }
