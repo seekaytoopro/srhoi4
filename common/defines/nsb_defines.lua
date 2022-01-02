@@ -45,9 +45,9 @@ NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.03	 -- each assigned plane giv
 --NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
 
 -- defines that are used for supply reach for built nodes
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 2.8   --vanilla 2.8
-NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.38  --vanilla 0.5
-NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.58 --vanilla 0.7
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 2.75   --vanilla 2.8
+NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.34  --vanilla 0.5
+NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.53 --vanilla 0.7
 
 
 
@@ -103,7 +103,7 @@ NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.0 -- vanilla 1.0
 
 -- used for calculating "flow" for railways.
 NDefines.NSupply.RAILWAY_BASE_FLOW = 15.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
-NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 6.0 	-- how much additional flow a railway level gives
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.0 	-- how much additional flow a railway level gives
 --NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 5.0 -- penalty to flow per damaged railway
 --NDefines.NSupply.RAILWAY_MIN_FLOW = 5.0 		-- minimum railway flow can be reduced to
 
@@ -118,8 +118,8 @@ NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.5          --0.15 vanilla      --
 --NDefines.NSupply.SUPPLY_BASE_MULT = 0.2,							-- multiplier on supply base values
 --NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 4 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 4
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 3 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 3
 --NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CIVILWAR = 0,
 
 --NDefines.NSupply.DEFAULT_STARTING_TRUCK_RATIO = 1.5, -- countries get this ratio of starting truck in their buffers compared to their need
