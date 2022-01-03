@@ -3154,7 +3154,7 @@ focus_tree = {
 						}
 					}
 					create_equipment_variant = {
-						name = "Improved Heavy Tank Chassis"
+						name = "Panzerkampfwagen VI Tiger Ausf. E"
 						type = heavy_tank_chassis_2
 						parent_version = 0
 						modules = {
@@ -3171,6 +3171,8 @@ focus_tree = {
 					}
 					load_oob = "GER_barbarossa_heavies"
 					add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 300 }
+
+					custom_effect_tooltip = "     "
 					
 					add_tech_bonus = {
 						name = Barbarossa_Panther_bonus
@@ -3186,33 +3188,33 @@ focus_tree = {
 						ahead_reduction = 0.65
 						technology = advanced_heavy_tank_chassis
 					}
-					add_tech_bonus = {
-						bonus = 0.00
-						uses = 1
-						ahead_reduction = 1.0
-						name = Barbarossa_TD_bonus
-						technology = advanced_light_td
-						technology = advanced_medium_td
-						technology = advanced_heavy_td
-					}
-					add_tech_bonus = {
-						bonus = 0.00
-						uses = 1
-						ahead_reduction = 1.0
-						name = Barbarossa_ART_bonus
-						technology = advanced_light_art
-						technology = advanced_medium_art
-						technology = advanced_heavy_art
-					}
-					add_tech_bonus = {
-						bonus = 0.00
-						uses = 1
-						ahead_reduction = 1.0
-						name = Barbarossa_SPAA_bonus
-						technology = advanced_light_spaa
-						technology = advanced_medium_spaa
-						technology = advanced_heavy_spaa
-					}
+					# add_tech_bonus = {
+					# 	bonus = 0.00
+					# 	uses = 1
+					# 	ahead_reduction = 1.0
+					# 	name = Barbarossa_TD_bonus
+					# 	technology = advanced_light_td
+					# 	technology = advanced_medium_td
+					# 	technology = advanced_heavy_td
+					# }
+					# add_tech_bonus = {
+					# 	bonus = 0.00
+					# 	uses = 1
+					# 	ahead_reduction = 1.0
+					# 	name = Barbarossa_ART_bonus
+					# 	technology = advanced_light_art
+					# 	technology = advanced_medium_art
+					# 	technology = advanced_heavy_art
+					# }
+					# add_tech_bonus = {
+					# 	bonus = 0.00
+					# 	uses = 1
+					# 	ahead_reduction = 1.0
+					# 	name = Barbarossa_SPAA_bonus
+					# 	technology = advanced_light_spaa
+					# 	technology = advanced_medium_spaa
+					# 	technology = advanced_heavy_spaa
+					# }
 					add_tech_bonus = {
 						name = at_bonus
 						bonus = 0.5

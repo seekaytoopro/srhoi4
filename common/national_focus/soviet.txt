@@ -1191,7 +1191,7 @@ focus_tree = {
 					}
 				}
 				create_equipment_variant = {
-					name = "Improved Heavy Tank Chassis"
+					name = "KV-1 Heavy Tank"
 					type = heavy_tank_chassis_2
 					parent_version = 0
 					modules = {
