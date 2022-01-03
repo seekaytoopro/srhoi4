@@ -57,7 +57,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				party_popularity_stability_factor = 0.25
+				party_popularity_stability_factor = 0.125
 			}
 									cost = 50
 
