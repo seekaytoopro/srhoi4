@@ -46,7 +46,8 @@ technologies = {
 
 		doctrine = yes	
 		research_cost = 0.01
-		xp_unlock_cost = 0
+		xp_unlock_cost = 1
+		xp_research_type = navy
 		
 		categories = {
 			# naval_doctrine
@@ -795,7 +796,8 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 0.01
-		xp_unlock_cost = 0
+		xp_unlock_cost = 1
+		xp_research_type = navy
 		
 		categories = {
 			# naval_doctrine
@@ -1553,7 +1555,8 @@ technologies = {
 
 		doctrine = yes	
 		research_cost = 0.01
-		xp_unlock_cost = 0
+		xp_unlock_cost = 1
+		xp_research_type = navy
 		
 		categories = {
 			# naval_doctrine
