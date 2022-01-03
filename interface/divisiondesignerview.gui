@@ -316,7 +316,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "equipment_stats"
 				position = { x = 353 y = 55 }
-				size = { width = 172 height = 244 }
+				size = { width = 192 height = 244 }
 				clipping = yes
 				
 				background = {
@@ -1145,7 +1145,7 @@ guiTypes = {
 
 		background = {
 			name = "Background"		
-			spriteType ="GFX_div_subunit_item_bg"
+			spriteType ="GFX_ssc_div_subunit_item_bg"
 		}
 		
 		instantTextboxType = {
@@ -1163,7 +1163,7 @@ guiTypes = {
 		buttonType = {
 			name = "unit_icon"
 			spriteType = "GFX_locked_icon"
-			position = {x=2 y=20}
+			position = {x=2 y=11}
 			Orientation = CENTER_LOWER
 			scale = 0.8
 			clicksound = click_default
@@ -1171,7 +1171,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "invisible_icon"
-			position = { x = 2 y = 21 }
+			position = { x = 2 y = 12 }
 			spriteType = "GFX_cost_textbox_inv"
 			Orientation = CENTER_LOWER
 			scale = 0.8
