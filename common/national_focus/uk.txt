@@ -1710,9 +1710,12 @@ focus_tree = {
 		available = { 
 			GER = { has_completed_focus = GER_pressure_sweden } 
 			GER = {
-				NOT = { 110 = { is_controlled_by_ROOT_or_ally = yes } }
-				NOT = { 143 = { is_controlled_by_ROOT_or_ally = yes } }
-				NOT = { 142 = { is_controlled_by_ROOT_or_ally = yes } }
+				NOT = { controls_state = 110 }
+				NOT = { controls_state = 143 }
+				NOT = { controls_state = 142 }
+				# 110 = { is_controlled_by_ROOT_or_ally = no }
+				# 143 = { is_controlled_by_ROOT_or_ally = no }
+				# 142 = { is_controlled_by_ROOT_or_ally = no }
 			}
 		}
 	

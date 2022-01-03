@@ -3171,6 +3171,9 @@ focus_tree = {
 					}
 					load_oob = "GER_barbarossa_heavies"
 					add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 300 }
+					custom_effect_tooltip = "     "
+					
+					custom_effect_tooltip = "Will spawn 2 fully equipped heavy tanks"
 
 					custom_effect_tooltip = "     "
 					
