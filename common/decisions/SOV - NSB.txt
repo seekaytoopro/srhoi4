@@ -1015,7 +1015,7 @@ SOV_propaganda_campaigns = {
 		modifier = {
 			production_speed_supply_node_factor = 0.25
 			production_speed_rail_way_factor = 0.25
-			supply_consumption_factor = -0.1
+			# supply_consumption_factor = -0.1
 		}
 
 		complete_effect = {
