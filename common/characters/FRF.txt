@@ -52,7 +52,7 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = { trickster brilliant_strategist cavalry_officer war_hero cavalry_leader harsh_leader expert_improviser }
 			skill = 5
 			attack_skill = 5
@@ -72,7 +72,7 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Alphonse_Juin.dds"
 			}
 		}
-		corps_commander={
+		field_marshal={
 			traits = {infantry_leader trait_reckless war_hero old_guard politically_connected career_officer skilled_staffer inflexible_strategist defensive_doctrine}
 			skill = 5
 			attack_skill = 3
@@ -112,15 +112,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Maurice_Gamelin.dds"
 			}
 		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer trait_cautious infantry_leader defensive_doctrine unyielding_defender ambusher }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=1
-			legacy_id=-1
-		}
+		# field_marshal={
+		# 	traits={ old_guard inflexible_strategist career_officer trait_cautious infantry_leader defensive_doctrine unyielding_defender ambusher }
+		# 	skill=3
+		# 	attack_skill=2
+		# 	defense_skill=3
+		# 	planning_skill=3
+		# 	logistics_skill=1
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_maxime_weygand={
 		name="Maxime Weygand"
@@ -152,15 +152,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Maxime_Weygand.dds"
 			}
 		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist career_officer trait_cautious infantry_officer defensive_doctrine }
-			skill=4
-			attack_skill=4
-			defense_skill=1
-			planning_skill=5
-			logistics_skill=3
-			legacy_id=-1
-		}
+		# field_marshal={
+		# 	traits={ old_guard inflexible_strategist career_officer trait_cautious infantry_officer defensive_doctrine }
+		# 	skill=4
+		# 	attack_skill=4
+		# 	defense_skill=1
+		# 	planning_skill=5
+		# 	logistics_skill=3
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_alphonse_georges={
 		name="Alphonse Georges"
@@ -172,15 +172,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Alphonse_Joseph_Georges.dds"
 			}
 		}
-		field_marshal={
-			traits={ old_guard trait_cautious armor_officer panzer_leader ranger offensive_doctrine fast_planner }
-			skill=4
-			attack_skill=6
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
+		# field_marshal={
+		# 	traits={ old_guard trait_cautious armor_officer panzer_leader ranger offensive_doctrine fast_planner }
+		# 	skill=4
+		# 	attack_skill=6
+		# 	defense_skill=1
+		# 	planning_skill=2
+		# 	logistics_skill=3
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_antoinemariebenoit_besson={
 		name="Antoine-Marie-Benoît Besson"
@@ -192,15 +192,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Generic_land_2.dds"
 			}
 		}
-		field_marshal={
-			traits={ old_guard defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# field_marshal={
+		# 	traits={ old_guard defensive_doctrine }
+		# 	skill=2
+		# 	attack_skill=1
+		# 	defense_skill=2
+		# 	planning_skill=2
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_charles_de_gaulle={
 		name="Charles De Gaulle"
@@ -246,7 +246,7 @@ characters={
 					factor  = 1.000
 				}
 		}
-		corps_commander={
+		field_marshal={
 			traits = {  armor_officer harsh_leader media_personality trait_reckless panzer_leader trickster desert_fox}
 			skill = 5
 			attack_skill = 6
@@ -323,15 +323,15 @@ characters={
 				large="gfx/leaders/FRA/portrait_france_henri_giraud.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard career_officer trait_cautious infantry_officer infantry_leader trickster }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	traits={ old_guard career_officer trait_cautious infantry_officer infantry_leader trickster }
+		# 	skill=4
+		# 	attack_skill=3
+		# 	defense_skill=3
+		# 	planning_skill=4
+		# 	logistics_skill=3
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_charles_huntziger={
 		name="Charles Huntziger"
@@ -360,15 +360,15 @@ characters={
 				large="gfx/leaders/FRA/portrait_france_charles_huntziger.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard trait_reckless infantry_officer war_hero }
-			skill=5
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=5
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	traits={ old_guard trait_reckless infantry_officer war_hero }
+		# 	skill=5
+		# 	attack_skill=4
+		# 	defense_skill=4
+		# 	planning_skill=2
+		# 	logistics_skill=5
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_gastonhenri_billotte={
 		name="Gaston-Henri Billotte"
@@ -380,15 +380,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Generic_land_1.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard trait_cautious infantry_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=3
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	traits={ old_guard trait_cautious infantry_officer }
+		# 	skill=2
+		# 	attack_skill=1
+		# 	defense_skill=3
+		# 	planning_skill=1
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_henry_freydenberg={
 		name="Henry Freydenberg"
@@ -400,15 +400,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Generic_land_3.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard infantry_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	traits={ old_guard infantry_officer }
+		# 	skill=2
+		# 	attack_skill=1
+		# 	defense_skill=2
+		# 	planning_skill=2
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_rene_olry={
 		name="René Olry"
@@ -420,15 +420,15 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Generic_land_5.dds"
 			}
 		}
-		corps_commander={
-			traits={ old_guard infantry_officer trait_mountaineer }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=-1
-		}
+		# corps_commander={
+		# 	traits={ old_guard infantry_officer trait_mountaineer }
+		# 	skill=3
+		# 	attack_skill=2
+		# 	defense_skill=4
+		# 	planning_skill=2
+		# 	logistics_skill=2
+		# 	legacy_id=-1
+		# }
 	}
 	FRF_francois_darlan={
 		name="François Darlan"
