@@ -74,9 +74,9 @@ weather_arctic_water = { # on Region
 	# positioning = -0.2
 }
 weather_mud = { # on Province
-	attrition = 0.5
-	army_speed_factor = -0.8
-	army_attack_factor = -0.6
+	attrition = 0.4
+	army_speed_factor = -0.5
+	army_attack_factor = -0.45
 }
 mud_simulator = { 
 	army_speed_factor = -0.15
