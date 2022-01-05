@@ -46,8 +46,8 @@ NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.03	 -- each assigned plane giv
 
 -- defines that are used for supply reach for built nodes
 NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 2.75   --vanilla 2.8
-NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.34  --vanilla 0.5
-NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.53 --vanilla 0.7
+NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.30  --vanilla 0.5
+NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.48 --vanilla 0.7
 
 
 
@@ -96,9 +96,9 @@ NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 200 --vanilla 50
 NDefines.NSupply.NAVAL_BASE_FLOW = 0 -- max output/input of a naval node is limited by this base value + additional ratio for each level
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 9 -- max output/input of a naval node is limited by previous base value + this define per its level
 -- defines that are used for supply reach for dockyards
-NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2  --3.5
-NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.8 --  vanilla 0.8
-NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.0 -- vanilla 1.0
+NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2.2  --3.5
+NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.7 --  vanilla 0.8
+NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.9 -- vanilla 1.0
 
 
 -- used for calculating "flow" for railways.
