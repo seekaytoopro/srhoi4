@@ -26,6 +26,7 @@ sub_units = {
 			light_tank_destroyer_chassis = 38
 		}
 		manpower = 500
+		soft_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 3
@@ -95,6 +96,7 @@ sub_units = {
 			medium_tank_destroyer_chassis = 37
 		}
 		manpower = 500
+		soft_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 3
@@ -169,6 +171,7 @@ sub_units = {
 			heavy_tank_destroyer_chassis = 28
 		}
 		manpower = 500
+		soft_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 3
@@ -242,6 +245,7 @@ sub_units = {
 			super_heavy_tank_destroyer_chassis = 10 #was 7, but IC was halved
 		}
 		manpower = 500
+		soft_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 3
@@ -314,6 +318,7 @@ sub_units = {
 			modern_tank_destroyer_chassis = 32
 		}
 		manpower = 500
+		soft_attack = -0.75
 		max_organisation = 0
 		default_morale = 0.3
 		max_strength = 3
