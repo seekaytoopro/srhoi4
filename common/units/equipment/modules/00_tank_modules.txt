@@ -734,8 +734,8 @@ equipment_modules = {
 		forbid_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 26
-			hard_attack = 12
+			soft_attack = 15.5
+			hard_attack = 6.4
 			ap_attack = 35
 			build_cost_ic = 2.5
 			maximum_speed = -0.15
@@ -755,8 +755,8 @@ equipment_modules = {
 		parent = tank_small_cannon
 		forbid_equipment_type = artillery
 		add_stats = {
-			soft_attack = 33
-			hard_attack = 16
+			soft_attack = 21.84
+			hard_attack = 9.6
 			ap_attack = 60
 			build_cost_ic = 3.25
 			maximum_speed = -0.2
@@ -768,6 +768,7 @@ equipment_modules = {
 			convert_cost_ic = 5
 		}
 	}
+	# Advanced Light Tank Gun
 	tank_high_velocity_cannon = {
 		abbreviation = "hv1"
 		category = tank_small_main_armament
@@ -777,8 +778,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 36
-			hard_attack = 22
+			soft_attack = 27.48
+			hard_attack = 15
 			ap_attack = 90
 			build_cost_ic = 4.00
 			maximum_speed = -0.2
@@ -962,9 +963,9 @@ equipment_modules = {
 			maximum_speed = -0.1
 			reliability = -0.1
 			breakthrough = 10
-			build_cost_resources = {
-				tungsten = 2
-			}
+		}
+		build_cost_resources = {
+			tungsten = 2
 		}
 		xp_cost = 0
 		can_convert_from = {
@@ -988,9 +989,9 @@ equipment_modules = {
 			maximum_speed = -0.2
 			reliability = -0.1
 			breakthrough = 14
-			build_cost_resources = {
-				tungsten = 2
-			}
+		}
+		build_cost_resources = {
+			tungsten = 2
 		}
 		xp_cost = 0
 		can_convert_from = {

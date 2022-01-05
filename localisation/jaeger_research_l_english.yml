@@ -100,3 +100,8 @@ tank_close_support_gun:0 "Close Support Gun"
  tank_close_support_gun3:0 "Advanced Close Support Gun"
  tank_close_support_gun3_desc:0 "A small weapon designed to fire high-explosive shells against enemy field fortifications to help the infantry on the attack. While capable of engaging tanks, its short barrel and limited ammunition make it unable to deal with more powerful enemy tanks."
  light_tank_flame_equipment_4:0 "Light Flame Tank IV"
+
+
+tank_high_velocity_cannon_1:0 "Advanced Small Cannon"
+tank_high_velocity_cannon_2:0 "Advanced Medium Cannon"
+tank_high_velocity_cannon_3:0 "Advanced Heavy Cannon"
