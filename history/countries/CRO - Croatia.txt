@@ -95,79 +95,115 @@ set_popularities = {
 	communism = 10
 }
 
-create_country_leader = {
-	name = "Ante Pavelic"
-	desc = "ANTE_PAVELIC_DESC"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
+# create_country_leader = {
+# 	name = "Ante Pavelic"
+# 	desc = "ANTE_PAVELIC_DESC"
+# 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
+# 	expire = "1965.1.1"
+# 	ideology = fascism_ideology
+# 	traits = {
+# 		#
+# 	}
+# }
 
-create_field_marshal = {
-	name = "Ante Pavelic"
-	picture = "Portrait_Croatia_Ante_Pavelic.dds"
-	traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer ranger}
-	skill = 5
-	attack_skill = 6
-	defense_skill = 6
-	planning_skill = 4
-	logistics_skill = 4
-}
+# create_field_marshal = {
+# 	name = "Ante Pavelic"
+# 	picture = "Portrait_Croatia_Ante_Pavelic.dds"
+# 	traits = { old_guard inflexible_strategist politically_connected defensive_doctrine organizer ranger}
+# 	skill = 5
+# 	attack_skill = 6
+# 	defense_skill = 6
+# 	planning_skill = 4
+# 	logistics_skill = 4
+# }
 
-create_field_marshal = {
-	name = "Ferenc Feketehalmy-Czeydner"
-	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
-	traits = { old_guard inflexible_strategist skilled_staffer politically_connected organizer defensive_doctrine career_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 7
-}
+# create_field_marshal = {
+# 	name = "Ferenc Feketehalmy-Czeydner"
+# 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
+# 	traits = { old_guard inflexible_strategist skilled_staffer politically_connected organizer defensive_doctrine career_officer }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 5
+# 	logistics_skill = 7
+# }
 
-create_corps_commander = {
-	name = "Vladimir Laxa"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { naval_invader trait_engineer commando infantry_officer old_guard inflexible_strategist }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 1
-}
+# create_corps_commander = {
+# 	name = "Vladimir Laxa"
+# 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
+# 	traits = { naval_invader trait_engineer commando infantry_officer old_guard inflexible_strategist }
+# 	skill = 4
+# 	attack_skill = 4
+# 	defense_skill = 3
+# 	planning_skill = 5
+# 	logistics_skill = 1
+# }
 
-create_corps_commander = {
-	name = "Fedor Dragojlov"
-	portrait_path = "gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
-	traits = { panzer_leader trait_engineer trickster cavalry_leader cavalry_officer trait_reckless }
-	skill = 5
-	attack_skill = 7
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 5
-}
+# create_corps_commander = {
+# 	name = "Fedor Dragojlov"
+# 	portrait_path = "gfx/leaders/Europe/portrait_europe_generic_land_11.dds"
+# 	traits = { panzer_leader trait_engineer trickster cavalry_leader cavalry_officer trait_reckless }
+# 	skill = 5
+# 	attack_skill = 7
+# 	defense_skill = 1
+# 	planning_skill = 3
+# 	logistics_skill = 5
+# }
 
-create_corps_commander = {
-	name = "Ante Vokić"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox career_officer trait_reckless brilliant_strategist }
-	skill = 4
-	attack_skill = 6
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 5
-}
+# create_corps_commander = {
+# 	name = "Ante Vokić"
+# 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+# 	traits = { harsh_leader infantry_officer infantry_leader infantry_expert swamp_fox career_officer trait_reckless brilliant_strategist }
+# 	skill = 4
+# 	attack_skill = 6
+# 	defense_skill = 1
+# 	planning_skill = 4
+# 	logistics_skill = 5
+# }
 
-create_navy_leader = {
-	name = "Nikola Steinfl"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_5.dds"
-	traits = { blockade_runner spotter green_water_expert concealment_expert }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
+# create_navy_leader = {
+# 	name = "Nikola Steinfl"
+# 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_5.dds"
+# 	traits = { blockade_runner spotter green_water_expert concealment_expert }
+# 	skill = 4
+# 	attack_skill = 5
+# 	defense_skill = 3
+# 	maneuvering_skill = 3
+# 	coordination_skill = 2
+# }
+
+recruit_character = CRO_vladimir_laxa
+recruit_character = CRO_fedor_dragojlov
+recruit_character = CRO_nikola_steinfl
+recruit_character = CRO_ante_pavelic
+recruit_character = CRO_ferenc_feketehalmyczeydner
+recruit_character = CRO_ante_vokic
+recruit_character = CRO_peter_williams
+recruit_character = CRO_john_wilson
+recruit_character = CRO_peter_walker
+
+recruit_character = CRO_vladimir_pavlec
+recruit_character = CRO_ivan_subasic
+recruit_character = CRO_alojzije_stepinac
+recruit_character = CRO_gaspar_njegovan
+
+
+# # army chief
+# recruit_character = CRO_vladimir_laxa
+# recruit_character = CRO_fedor_dragojlov
+
+# recruit_character = CRO_friedrich_navratil
+recruit_character = CRO_adalbert_rogulja
+
+# recruit_character = CRO_edgar_angeli
+# recruit_character = CRO_nikola_steinfl
+
+# recruit_character = CRO_slavko_stancer
+# recruit_character = CRO_vilko_begic
+# recruit_character = CRO_slavko_kvaternik
+recruit_character = CRO_vladimir_kren
+recruit_character = CRO_djuro_jakcin
+recruit_character = CRO_sismundo_pejacevic
+
+
+
