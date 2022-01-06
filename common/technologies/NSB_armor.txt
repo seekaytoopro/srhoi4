@@ -407,7 +407,7 @@ technologies = {
 			tank_half_track_suspension
 			tank_radio_2
 			stabilizer
-			tank_heavy_howitzer2
+			tank_heavy_howitzer_2
 			tank_medium_howitzer_2
 			tank_medium_cannon_2
 			tank_rocket_launch
@@ -481,10 +481,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_radio_3
 			tank_rocket_launcher_2
-			tank_medium_howitzer_3
-			tank_medium_cannon_3
-			tank_heavy_howitzer3
-			tank_heavy_cannon_3
+			# tank_medium_howitzer_3
+			# tank_medium_cannon_3
+			# tank_heavy_howitzer3
+			# tank_heavy_cannon_3
 			tank_anti_air_cannon_3
 			auto_loader
 			tank_high_velocity_cannon_1
@@ -644,7 +644,7 @@ technologies = {
 			tank_half_track_suspension
 			tank_radio_2
 			stabilizer
-			tank_heavy_howitzer2
+			tank_heavy_howitzer_2
 			tank_medium_howitzer_2
 			tank_medium_cannon_2
 			tank_rocket_launcher
@@ -726,10 +726,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_radio_3
 			tank_rocket_launcher_2
-			tank_medium_howitzer_3
-			tank_medium_cannon_3
-			tank_heavy_howitzer3
-			tank_heavy_cannon_3
+			# tank_medium_howitzer_3
+			# tank_medium_cannon_3
+			# tank_heavy_howitzer_2
+			# tank_heavy_cannon_3
 			tank_anti_air_cannon_3
 			auto_loader
 			tank_high_velocity_cannon_1
