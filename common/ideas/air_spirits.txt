@@ -5,48 +5,53 @@ ideas = {
 			modifier = {
 				air_advisor_cost_factor = -0.75
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		industrial_destruction_spirit = {
 			ledger = air
-			visible = { has_tech = air_superiority }
+			# visible = { has_tech = air_superiority }
 			research_bonus = {
 				heavy_air = 0.05
 			}
 			modifier = {
-				strat_bomber_equipment_design_cost_factor = -0.75
-				jet_strat_bomber_equipment_design_cost_factor = -0.75
+
+				# strat_bomber_equipment_design_cost_factor = -0.75
+				# jet_strat_bomber_equipment_design_cost_factor = -0.75
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		dive_bombing_spirit = {
 			ledger = air
-			visible = { has_tech = formation_flying }
+			# visible = { has_tech = formation_flying }
 			research_bonus = {
 				cas_bomber = 0.05
 			}
 			modifier = {
-				CAS_equipment_design_cost_factor = -0.75
-				cv_CAS_equipment_design_cost_factor = -0.75
+				# CAS_equipment_design_cost_factor = -0.75
+				# cv_CAS_equipment_design_cost_factor = -0.75
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		material_destruction_spirit = {
 			ledger = air
-			visible = { has_tech = force_rotation }
+			# visible = { has_tech = force_rotation }
 			research_bonus = {
 				tactical_bomber = 0.05
 			}
 			modifier = {
-				tac_bomber_equipment_design_cost_factor = -0.75
-				jet_tac_bomber_equipment_design_cost_factor = -0.75
+				# tac_bomber_equipment_design_cost_factor = -0.75
+				# jet_tac_bomber_equipment_design_cost_factor = -0.75
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -59,6 +64,7 @@ ideas = {
 				heavy_air = 0.15
 				naval_air = 0.15
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -69,6 +75,7 @@ ideas = {
 			modifier = {
 				air_training_xp_gain_factor = 0.25
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -79,6 +86,7 @@ ideas = {
 				experience_gain_air = 0.1
 				airforce_intel_to_others = -5
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -89,6 +97,7 @@ ideas = {
 				air_doctrine_cost_factor = -0.15
 				air_accidents_factor = -0.25
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -102,6 +111,7 @@ ideas = {
 				ground_attack_factor = 0.05
 				air_escort_efficiency = 0.05
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -112,6 +122,7 @@ ideas = {
 			modifier = {
 				air_carrier_night_penalty_reduction_factor = 0.33
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -119,8 +130,10 @@ ideas = {
 		veteran_air_instructors_spirit = {
 			ledger = air
 			modifier = {
-				air_wing_xp_loss_when_killed_factor = -0.25
+				experience_gain_air = 0.05
+				# air_wing_xp_loss_when_killed_factor = -0.25
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -131,6 +144,7 @@ ideas = {
 				air_superiority_detect_factor = 0.1
 				air_mission_efficiency = 0.1
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -141,6 +155,7 @@ ideas = {
 			modifier = {
 				air_untrained_pilots_penalty_factor = -0.33
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -150,6 +165,7 @@ ideas = {
 			modifier = {
 				air_home_defence_factor = 0.1
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -159,36 +175,40 @@ ideas = {
 			modifier = {
 				air_power_projection_factor = 0.1
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		massed_strike_spirit = {
 			ledger = air
-			visible = { has_tech = force_rotation }
+			# visible = { has_tech = force_rotation }
 			modifier = {
 				army_bonus_air_superiority_factor = 0.05
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		continuous_strike_spirit = {
 			ledger = air
-			visible = { has_tech = formation_flying }
+			# visible = { has_tech = formation_flying }
 			modifier = {
-				air_cas_efficiency = 0.25
+				air_cas_efficiency = 0.10
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		strategic_strike_spirit = { 
 			ledger = air
-			visible = { has_tech = air_superiority }
+			# visible = { has_tech = air_superiority }
 			modifier = {
 				air_strategic_bomber_bombing_factor = 0.1
 			}
+			cost = 5.00
 			ai_will_do = {
 				factor = 1
 			}

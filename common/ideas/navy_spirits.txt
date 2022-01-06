@@ -5,6 +5,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = instilled_aggression_spirit_tt
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -14,6 +15,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = calculated_restraint_spirit_tt
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -23,6 +25,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = signals_training_spirit_tt
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -35,6 +38,7 @@ ideas = {
 				trait_ironside_xp_gain_factor = 0.2
 				trait_superior_tactician_xp_gain_factor = 0.2
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -47,6 +51,7 @@ ideas = {
 				trait_seawolf_xp_gain_factor = 0.2
 				trait_blockade_runner_xp_gain_factor = 0.2
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -59,6 +64,7 @@ ideas = {
 				trait_air_controller_xp_gain_factor = 0.2
 				trait_fleet_protector_xp_gain_factor = 0.2
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -70,6 +76,7 @@ ideas = {
 				navy_intel_to_others = -5.0
 				custom_modifier_tooltip = best_of_the_best_naval_academy_spirit_tt
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -81,6 +88,7 @@ ideas = {
 				navy_leader_cost_factor = -0.4
 				custom_modifier_tooltip = naval_academy_scholarships_spirit_tt
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -91,11 +99,12 @@ ideas = {
 		jeune_ecole_spirit = {
 			ledger = navy
 			research_bonus = {
-				dd_tech = 0.20
+				dd_tech = 0.15
 			}
 			modifier = {
-				ship_hull_light_design_cost_factor = -0.6
+				# ship_hull_light_design_cost_factor = -0.6
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -123,20 +132,23 @@ ideas = {
 		flexible_contracts_spirit = {
 			ledger = navy
 			modifier = {
-				naval_manufacturer_cost_factor = -0.8
-				ship_hull_cruiser_design_cost_factor = -0.6
+				industrial_capacity_dockyard = 0.04
+				# naval_manufacturer_cost_factor = -0.8
+				# ship_hull_cruiser_design_cost_factor = -0.6
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		integrated_designers_spirit = {
 			ledger = navy
-			visible = { has_dlc = "Man the Guns" }
+			# visible = { has_dlc = "Man the Guns" }
 			research_bonus = {
-				ship_modules_tech = 0.20
-				naval_equipment = 0.20
+				ship_modules_tech = 0.15
+				naval_equipment = 0.15
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -146,6 +158,7 @@ ideas = {
 			modifier = {
 				experience_gain_navy_factor = 0.15
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -156,6 +169,7 @@ ideas = {
 				navy_refit_speed = 0.25
 				repair_speed_factor = 0.15
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -169,12 +183,13 @@ ideas = {
 			ledger = navy
 			visible = { has_tech = fleet_in_being }
 			research_bonus = {
-				bb_tech = 0.20
-				ca_tech = 0.20 
+				bb_tech = 0.15
+				ca_tech = 0.15 
 			}
 			modifier = {
-				ship_hull_heavy_design_cost_factor = -0.6
+				# ship_hull_heavy_design_cost_factor = -0.6
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -183,11 +198,12 @@ ideas = {
 			ledger = navy
 			visible = { has_tech = trade_interdiction }
 			research_bonus = {
-				ss_tech = 0.20
+				ss_tech = 0.15
 			}
 			modifier = {
-				ship_hull_submarine_design_cost_factor = -0.6
+				# ship_hull_submarine_design_cost_factor = -0.6
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -196,11 +212,12 @@ ideas = {
 			ledger = navy
 			visible = { has_tech = base_strike }
 			research_bonus = {
-				cv_tech = 0.20
+				cv_tech = 0.15
 			}
 			modifier = {
-				ship_hull_carrier_design_cost_factor = -0.6
+				# ship_hull_carrier_design_cost_factor = -0.6
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -214,6 +231,7 @@ ideas = {
 				navy_screen_attack_factor = 0.05
 				naval_torpedo_screen_penetration_factor = 0.05
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -222,9 +240,10 @@ ideas = {
 			ledger = navy
 			modifier = {
 				night_spotting_chance = 0.1
-				naval_night_attack = 0.1
-				navy_visibility = -0.05
+				naval_night_attack = 0.075
+				navy_visibility = -0.025
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -236,6 +255,7 @@ ideas = {
 				naval_retreat_speed_after_initial_combat = 0.1
 				naval_retreat_chance_after_initial_combat = 0.1
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -243,8 +263,9 @@ ideas = {
 		efficient_communications_spirit = {
 			ledger = navy
 			modifier = {
-				positioning = 0.15
+				positioning = 0.03
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -260,9 +281,10 @@ ideas = {
 			visible = { has_tech = trade_interdiction }
 			modifier = {
 				screening_without_screens = 0.2
-				naval_retreat_speed = 0.1
-				naval_retreat_chance = 0.1
+				naval_retreat_speed = 0.05
+				naval_retreat_chance = 0.05
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -271,11 +293,12 @@ ideas = {
 			ledger = navy
 			visible = { has_tech = fleet_in_being }
 			modifier = {
-				naval_retreat_chance = -0.1
-				naval_retreat_speed = -0.1
+				naval_retreat_chance = -0.05
+				naval_retreat_speed = -0.05
 				naval_torpedo_hit_chance_factor = 0.1
-				naval_hit_chance = 0.1
+				naval_hit_chance = 0.025
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -283,8 +306,9 @@ ideas = {
 		inclimate_weather_experience_spirit = {
 			ledger = navy
 			modifier = {
-				navy_weather_penalty = -0.4
+				navy_weather_penalty = -0.20
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1.5
 			}
@@ -292,9 +316,10 @@ ideas = {
 		brave_commanders_spirit = {
 			ledger = navy
 			modifier = {
-				naval_critical_score_chance_factor = 0.15
+				naval_critical_score_chance_factor = 0.075
 				naval_retreat_chance = -0.05
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 1
 			}
@@ -305,6 +330,7 @@ ideas = {
 			modifier = {
 				naval_torpedo_hit_chance_factor = -0.1
 			}
+			cost = 35.00
 			ai_will_do = {
 				factor = 0
 			}
