@@ -198,8 +198,8 @@ buildings = {
 		max_level = 6 
 		damage_factor = 0.5
 		value = 4
-		centered = yes
-		allied_build = yes
+		# centered = yes
+		# allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 
