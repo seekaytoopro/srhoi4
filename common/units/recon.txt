@@ -1,5 +1,6 @@
 sub_units = {
 	recon = {
+		abbreviation = "CREC"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -31,7 +32,7 @@ sub_units = {
 		training_time = 120
 
 		#Misc Abilities
-		weight = 0.1
+		weight = 0.05
 		supply_consumption = 0.02
 		recon = 1
 		can_be_parachuted = yes
@@ -83,6 +84,7 @@ sub_units = {
 	}
 
 	mot_recon = { #trucks, motorcyles, ill-placed cars
+		abbreviation = "MREC"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -109,13 +111,13 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength 		= 2
-		max_organisation 	= 20
+		max_organisation 	= 35
 		default_morale 		= 0.3
 		manpower 			= 500
 		training_time 		= 120
 
 		#Misc Abilities
-		weight 				= 0.1
+		weight 				= 0.075
 		supply_consumption 	= 0.02
 		recon 				= 1.5
 		can_be_parachuted 	= yes
@@ -171,6 +173,7 @@ sub_units = {
 	}
 
 	armored_car_recon = { #armored_cars
+		abbreviation = "AREC"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -197,7 +200,7 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 20
+		max_organisation = 30
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
@@ -210,7 +213,7 @@ sub_units = {
 		ap_attack = -4.9
 
 		# Support nerfs to combat abilities
-		breakthrough 	= -0.75
+		breakthrough 	= -0.2
 		defense 		= -0.5		
 		soft_attack 	= -0.9
 		hard_attack 	= -0.9
@@ -246,7 +249,7 @@ sub_units = {
 			movement = 0.15
 		}
 		deep_desert = {
-			movement = 0.075
+			movement = 0.10
 		}
 		river = {
 			movement = 0.1
@@ -256,6 +259,7 @@ sub_units = {
 	}
 
 	light_tank_recon = { #light tanks
+		abbreviation = "TREC"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -283,22 +287,22 @@ sub_units = {
 	
 		#Size Definitions
 		max_strength = 2
-		max_organisation = 20
+		max_organisation = 30
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
 
 		#Misc Abilities
-		weight = 0.1
+		weight = 0.075
 		supply_consumption = 0.02
 		recon = 1
 		can_be_parachuted = yes
 
 		# Support nerfs to combat abilities
 		defense = -0.5
-		breakthrough = -0.75
-		soft_attack = -0.9
-		hard_attack = -0.9
+		breakthrough = -0.5
+		soft_attack = -0.8
+		hard_attack = -0.8
 		ap_attack = -4.9
 		armor_value = -1.0
 		essential = {
@@ -331,7 +335,7 @@ sub_units = {
 			movement = 0.1
 		}
 		deep_desert = {
-			movement = 0.05
+			movement = 0.10
 		}
 		river = {
 			movement = 0.1

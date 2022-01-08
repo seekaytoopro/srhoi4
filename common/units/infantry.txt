@@ -218,7 +218,7 @@ sub_units = {
 		suppression = 1
 		weight = 0.5
 		
-		supply_consumption = 0.08
+		supply_consumption = 0.07
 		breakthrough = 0.20
 	
 		need = {
@@ -326,7 +326,7 @@ sub_units = {
 		training_time = 150
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.08
+		supply_consumption = 0.07
 		breakthrough = 0.20
 	
 		need = {
@@ -440,7 +440,7 @@ sub_units = {
 		training_time = 120
 		suppression = 1
 		weight = 0.5
-		supply_consumption = 0.09
+		supply_consumption = 0.07
 		breakthrough = 0.2
 	
 		need = {
@@ -550,7 +550,7 @@ sub_units = {
 		training_time = 90
 		suppression = 1
 		weight = 0.75
-		supply_consumption = 0.10
+		supply_consumption = 0.08
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
@@ -635,7 +635,7 @@ sub_units = {
 		suppression = 1
 		weight = 1
 		
-		supply_consumption = 0.13
+		supply_consumption = 0.10
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
