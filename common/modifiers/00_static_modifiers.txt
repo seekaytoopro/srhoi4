@@ -28,8 +28,8 @@ weather_rain_heavy = { # on Region
 	naval_retreat_speed = 0.10 
 	org_loss_when_moving = 0.1
 	positioning = -0.1
-	supply_consumption_factor = 0.1
-	supply_factor = -0.05
+	# supply_consumption_factor = 0.1
+	# supply_factor = -0.05
 }
 weather_snow = { # on Region 
 	# air_detection = -0.6
