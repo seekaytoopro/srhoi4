@@ -45,7 +45,7 @@ NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.03	 -- each assigned plane giv
 --NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
 
 -- defines that are used for supply reach for built nodes
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 2.75   --vanilla 2.8
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.00   --vanilla 2.8
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.30  --vanilla 0.5
 NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.48 --vanilla 0.7
 
