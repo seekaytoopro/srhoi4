@@ -34,7 +34,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = train_equipment_1 amount = 150 }
 			add_equipment_to_stockpile = {
 				type = convoy_1
-				amount = 100
+				amount = 150
 				producer = FRF
 			}
 			add_popularity = {
