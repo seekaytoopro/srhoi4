@@ -23,17 +23,17 @@ NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.7 -- max trucks we 
 
 --defines to calculate the capitals supply. This will be also used for max supply of other nodes depending on how well they are connected to capital. Using the formula:
 --CapitalSupply = CAPITAL_SUPPLY_BASE + (NumberOfCivilianFactories * CAPITAL_SUPPLY_CIVILIAN_FACTORIES) + (NumberOfMilitaryFactories * CAPITAL_SUPPLY_MILITARY_FACTORIES) + (NumberOfDockyards * CAPITAL_SUPPLY_DOCKYARDS)
-NDefines.NSupply.CAPITAL_SUPPLY_BASE = 45 -- base supply for capital
+NDefines.NSupply.CAPITAL_SUPPLY_BASE = 50 -- base supply for capital
 NDefines.NSupply.CAPITAL_SUPPLY_CIVILIAN_FACTORIES = 0 -- supply from one civilian factory
 NDefines.NSupply.CAPITAL_SUPPLY_MILITARY_FACTORIES = 0 -- supply from one military factory
 NDefines.NSupply.CAPITAL_SUPPLY_DOCKYARDS = 0 --supply from one naval factory
 
 NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.03	 -- each assigned plane gives this much supply at full efficiency
 
---NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.20     -- attack combat penalty for attacker if out of supply
---NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.70     -- defend combat penalty for attacker if out of supply
---NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50     -- attack combat penalty for defender if out of supply
---NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15     -- defend combat penalty for defender if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.15    -- attack combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.50     -- defend combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.50     -- attack combat penalty for defender if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15     -- defend combat penalty for defender if out of supply
 
 
 
@@ -45,14 +45,14 @@ NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.03	 -- each assigned plane giv
 --NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
 
 -- defines that are used for supply reach for built nodes
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.00   --vanilla 2.8
-NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.30  --vanilla 0.5
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.50   --vanilla 2.8
+NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.10  --vanilla 0.5
 NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.48 --vanilla 0.7
 
 
 
 -- Node Flow (i.e. province caps) increase by this amount per railway level of the node's bottleneck
---NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.34,
+NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.00
 
 --rivers will transfer in between nodes as if they were this level
 --NDefines.NSupply.RIVER_RAILWAY_LEVEL = 1  
@@ -74,13 +74,13 @@ NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.48 --vanilla 0.7
 --NDefines.NSupply.FLOATING_HARBOR_DECAY_NO_CONTROL_PENALTY = 1.0, -- If adjacent land province is not held, change decay rate by this many "hours" per hour
 
 --NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30, -- max infrastructure level will reduce the supply flow drop off by this ratio
-NDefines.NSupply.SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.10 -- crossing rivers introduces additional penalty
+NDefines.NSupply.SUPPLY_FLOW_PENALTY_CROSSING_RIVERS = 0.00 -- crossing rivers introduces additional penalty
 
  -- node flow terrain falloff is scaled by logistics curve based on distance(d) (scalar / (1+e^(-k(d-midpoint))))
---NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.3, -- How steep the curve is
---NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIDPOINT = 2.3, -- sigmoid inflection point
---NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_SCALAR = 0.9, -- Max Penalty adjustment due to distance
---NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIN_PENALTY_SCALE = 0.25, -- Logistics curve never reduces penalty facor below this limit
+NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_K = 1.3 -- (1.3) How steep the curve is
+NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIDPOINT = 2.3 -- (2.3) sigmoid inflection point
+NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_SCALAR = 0.9 -- (0.9) Max Penalty adjustment due to distance
+NDefines.NSupply.SUPPLY_FLOW_DIST_LOGISTICS_FALLOFF_MIN_PENALTY_SCALE = 0.25 -- (0.25) Logistics curve never reduces penalty facor below this limit
 
 -- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above.
 --NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2,
@@ -90,7 +90,6 @@ NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_TRUCK_COST = 200 --vanilla 50
 --NDefines.NSupply.SUPPLY_HUB_MOTORIZATION_MARGINAL_EFFECT_DECAY = 1.6 --vanilla 1.6 
 
 
---Naval bases will get hard nerfed here to avoid ridiculous supply behavior -Thrasymachus
 -- used for calculating "flow" from a naval node to another naval node when it is connected via a convoy route
 -- NAVAL_BASE_MAX_SUPPLY_FLOW_FACTOR = 0.9, -- flow of the parent node is factored to this ratio (so at most it can transfer parent naval node flow * this define)
 NDefines.NSupply.NAVAL_BASE_FLOW = 0 -- max output/input of a naval node is limited by this base value + additional ratio for each level
@@ -102,8 +101,8 @@ NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.9 -- vanilla 1.0
 
 
 -- used for calculating "flow" for railways.
-NDefines.NSupply.RAILWAY_BASE_FLOW = 15.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
-NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.0 	-- how much additional flow a railway level gives
+NDefines.NSupply.RAILWAY_BASE_FLOW = 16.0 		-- how much base flow railway gives when a node connected to its capital/a naval node by a railway
+NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 8.0 	-- how much additional flow a railway level gives
 --NDefines.NSupply.RAILWAY_FLOW_PENALTY_PER_DAMAGED = 5.0 -- penalty to flow per damaged railway
 --NDefines.NSupply.RAILWAY_MIN_FLOW = 5.0 		-- minimum railway flow can be reduced to
 
@@ -111,15 +110,15 @@ NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 7.0 	-- how much additional flow a rai
 
 --NDefines.NSupply.SUPPLY_NODE_MIN_SUPPLY_THRESHOLD = 1.0, -- if supply of a node is below this value it will be set to 0 -- Currently unused?
 
---NDefines.NSupply.INFRA_TO_SUPPLY = 0.3,							-- each level of infra gives this many supply
-NDefines.NSupply.VP_TO_SUPPLY_BASE = 0.1							-- Bonus to supply from a VP, no matter the level
-NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.025			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
-NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.5          --0.15 vanilla      -- damaged infrastructure counts as this in supply calcs
---NDefines.NSupply.SUPPLY_BASE_MULT = 0.2,							-- multiplier on supply base values
+NDefines.NSupply.INFRA_TO_SUPPLY = 1.0							-- each level of infra gives this many supply
+NDefines.NSupply.VP_TO_SUPPLY_BASE = 1.0							-- Bonus to supply from a VP, no matter the level
+NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.05			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
+NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.75          --0.15 vanilla      -- damaged infrastructure counts as this in supply calcs
+NDefines.NSupply.SUPPLY_BASE_MULT = 0.2							-- multiplier on supply base values
 --NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 3 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 3
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 1 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 1
 --NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CIVILWAR = 0,
 
 --NDefines.NSupply.DEFAULT_STARTING_TRUCK_RATIO = 1.5, -- countries get this ratio of starting truck in their buffers compared to their need
@@ -175,7 +174,7 @@ NDefines.NSupply.SUPPLY_FLOW_REDUCTION_THRESHOLD = 0.1 --vanilla  0.1 -- if supp
 --NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 1.2, -- each assigned plane gives this much supply at full efficiency
 
 -- reinforcements depends on distance to capital and following defines are used for calculating reinforcement time
---NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 15,	-- max time it can take
+NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 25	-- max time it can take
 --NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.3, -- time factor for total railway distance
 --NDefines.NSupply.TRUCK_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.01, -- time factor for total truck distance
 --NDefines.NSupply.NAVAL_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.08, -- time factor for total naval distance
@@ -189,5 +188,5 @@ NDefines.NSupply.SUPPLY_FLOW_REDUCTION_THRESHOLD = 0.1 --vanilla  0.1 -- if supp
 --NDefines.NSupply.SUPPLY_THRESHOLD_FOR_ARMY_ATTRITION = 0.35, -- armies will only get attrition below this supply
 --NDefines.NSupply.NUMBER_OF_SHOWN_SUPPLY_SOURCES_IN_SUPPLY_MAPMODE = 3, -- number of supply flow sources shown in breakdown tooltip
 --NDefines.NSupply.ESTIMATED_DIVISION_WEIGHT_FOR_SUPPLY_ESTIMATIONS_GUI = 1.0,	--Division supply consumption used for estimating frontline weight for order tooltips
-NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.09						--Factor for state supply from max manpower (population)
+NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.5						--Factor for state supply from max manpower (population)
 --NDefines.NSupply.STORED_SUPPLY_CONSUMPTION_RATE_FACTOR = 0.75,				--Multiplies consumption rate of stored supply (more/less easement)

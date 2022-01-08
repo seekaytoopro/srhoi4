@@ -8,7 +8,7 @@ NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NSupply.MAX_RAILWAY_LEVEL = 5
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 9999					-- pp cost to scorch a state
-NDefines.NAir.SUPPLY_NEED_FACTOR = 0
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01
 
 
 
