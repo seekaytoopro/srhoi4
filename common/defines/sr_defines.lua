@@ -8,6 +8,7 @@ NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NSupply.MAX_RAILWAY_LEVEL = 5
 NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 9999					-- pp cost to scorch a state
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0
 
 
 
@@ -296,17 +297,17 @@ NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowe
 --Supply modifications--
 ---------------------------------------------------------------
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 1.5
-NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 15
-NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.1                -- damaged infrastructure counts as this in supply calcs
-NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0.6					-- % of supply bonus from input area. Look at this as a possible balancing tool. 
+-- NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 15
+-- NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.1                -- damaged infrastructure counts as this in supply calcs
+-- NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0.6					-- % of supply bonus from input area. Look at this as a possible balancing tool. 
 NDefines.NCountry.EQUIPMENT_UPGRADE_CHUNK_MAX_SIZE = 1000			-- Maximum chunk size of equipment upgrade distribution per update.
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.7 
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30.0
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1
 NDefines.NProduction.EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 2.25
 
-NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
-NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
+-- NDefines.NBuildings.INFRA_TO_SUPPLY = 2.4
+-- NDefines.NBuildings.INFRA_TO_SUPPLY_COEFF = 1 -- Testing, 1 in vanilla -- TW/WTT 
 ---------------------------------------------------------------
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20                       --up from 10, should allow for more flexibility with picking focuses while doing something else, like tank templates
 ---------------------------------------------------------------
