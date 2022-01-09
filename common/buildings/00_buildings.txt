@@ -191,15 +191,15 @@ buildings = {
 
 	radar_station = {
 		show_on_map = 1
-		base_cost = 2500
-		per_level_extra_cost = 750
+		base_cost = 3375
 		icon_frame = 11
 		radar = yes
-		max_level = 6 
+		#max_level = 0 # max: 5
+		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
 		value = 4
-		# centered = yes
-		# allied_build = yes
+		centered = yes
+		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
 
