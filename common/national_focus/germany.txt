@@ -3061,14 +3061,14 @@ focus_tree = {
 						}
 					}
 					
-					GER = { add_timed_idea = { idea = GER_barbarossa days = 100 }  }
+					GER = { add_timed_idea = { idea = GER_barbarossa days = 180 }  }
 					hidden_effect={
-						ITA = { add_timed_idea = { idea = GER_barbarossa days = 100 } }
-						if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
-						if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
-						if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
-						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
-						if = { limit = {country_exists = CRO } CRO = { add_timed_idea = { idea = GER_barbarossa days = 100 } } }
+						ITA = { add_timed_idea = { idea = GER_barbarossa days = 180 } }
+						if = { limit = {country_exists = SPR } SPR = { add_timed_idea = { idea = GER_barbarossa days = 180 } } }
+						if = { limit = {country_exists = ROM } ROM = { add_timed_idea = { idea = GER_barbarossa days = 180 } } }
+						if = { limit = {country_exists = HUN } HUN = { add_timed_idea = { idea = GER_barbarossa days = 180 } } }
+						if = { limit = {country_exists = BUL } BUL = { add_timed_idea = { idea = GER_barbarossa days = 180 } } }
+						if = { limit = {country_exists = CRO } CRO = { add_timed_idea = { idea = GER_barbarossa days = 180 } } }
 					}	
 				}
 			}
