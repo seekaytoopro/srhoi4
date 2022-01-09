@@ -12,13 +12,15 @@ state={
 			air_base = 10
 			12049 = {
 				naval_base = 1
+
 			}
 			4073 = {
 				naval_base = 1
+
 			}
 
 		}
-		victory_points = { #Cairo
+		victory_points = {
 			7011 130 
 		}
 		victory_points = {
@@ -30,9 +32,6 @@ state={
 		victory_points = {
 			3996 10 
 		}
-		# victory_points = { #Suez
-		# 	4073 3 
-		# }
 		victory_points = {
 			10127 10 
 		}
@@ -45,12 +44,14 @@ state={
 		victory_points = {
 			7188 5 
 		}
+
 	}
 
 	provinces={
-		1068 2064 2224 3788 3919 3927 3996 4055 4073 4143 7011 7117 7188 7216 7454 8060 8157 9929 10005 10127 11753 11898 11917 12004 12016 12049 12930 
+		1068 2064 2224 3788 3919 3927 3996 4055 4073 4143 7011 7117 7188 7216 7454 8060 8157 9929 10005 10127 11753 11898 11917 11976 12004 12016 12049 12930 
 	}
 	manpower=6786596
 	buildings_max_level_factor=1.000
 	state_category=town
+	local_supplies=0.000
 }
