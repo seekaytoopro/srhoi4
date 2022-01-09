@@ -109,6 +109,16 @@ foreign_politics = {
 				# }
 			}
 			hidden_effect = {
+				every_country = {
+					limit = { the_axis = yes }
+					add_timed_idea = { idea = battle_of_north_africa_axis days = 365 }
+				}
+	
+				every_country = {
+					limit = { normally_played_allies = yes }
+					add_timed_idea = { idea = battle_of_north_africa_allies days = 365 }
+				}
+
 				ENG = {
 					set_state_controller = 271
 					set_state_controller = 550

@@ -67,6 +67,52 @@ ideas = {
 			}
 		}
 
+		battle_of_north_africa_axis = { 
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				# conscription = 0.01
+				# motorized = { max_strength = 3 }
+				# mechanized = { max_strength = 3 }
+				# artillery_brigade = { max_strength = 9 }
+				# anti_tank_brigade = { max_strength = 3 }
+				# anti_air_brigade = { max_strength = 6 }
+				army_strength_factor = 0.35
+			}
+		}
+
+		battle_of_north_africa_allies = { 
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				always = yes
+			}
+	
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			
+			modifier = {
+				# conscription = 0.01
+				# motorized = { max_strength = 3 }
+				# mechanized = { max_strength = 3 }
+				# artillery_brigade = { max_strength = 9 }
+				# anti_tank_brigade = { max_strength = 3 }
+				# anti_air_brigade = { max_strength = 6 }
+				army_strength_factor = 0.20
+			}
+		}
+
 		USA_ships_for_victory_idea = {
 			picture = HUN_treaty_of_triannon
 			allowed = {

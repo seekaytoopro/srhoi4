@@ -1717,9 +1717,10 @@ focus_tree = {
 			# custom_effect_tooltip = GER_speer_reminder_tt
 			# custom_effect_tooltip = available_theorist 
 			# show_ideas_tooltip = speer	
-				add_timed_idea= {  idea = german_wartime_economy days = 700 }
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-			add_political_power = 150
+			add_timed_idea= {  idea = german_wartime_economy days = 700 }
+
+			custom_effect_tooltip = "   "
+			
 				
 			GER = {
 				create_wargoal = {
@@ -1727,14 +1728,16 @@ focus_tree = {
 					generator = { 85 }
 					target = POL 
 				}
-				add_state_core = 85
 			}
 			POL = { country_event = { id = germany.86 } }
+			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+
 			hidden_effect = {
-				GER = {	remove_resource_rights = 724 }
-				if = { limit = { YUG = { is_ai = no } }  
-					ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } } 
-				}
+				add_political_power = 150
+				GER = {	remove_resource_rights = 724 add_state_core = 85 }
+				# if = { limit = { YUG = { is_ai = no } }  
+				# 	ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } } 
+				# }
 				ENG = { add_war_support = 0.1 }
 				FRA = { add_war_support = 0.1 }
 				SAF = {	country_event = tfv_south_africa.133 }
@@ -1817,31 +1820,18 @@ focus_tree = {
 		cost = 5
 		
 		available = {
-		NOR = { has_capitulated = yes }
+			NOR = { has_capitulated = yes }
 		}
 		
 		completion_reward = {
-					add_war_support = 0.05
-
-					ENG = {
-				country_event = britain.193
-			}
-			
-				FRA = {
-				country_event = britain.193
-			}
-			
-				NOR = {
-				country_event = britain.193
-			}
-		
-		 SWE = {
-					give_resource_rights = { receiver = GER state = 666 }
-					
-					}
+			add_war_support = 0.05
+			ENG = { country_event = britain.193 }
+			FRA = { country_event = britain.193 }
+			NOR = { country_event = britain.193 }
+			SWE = { give_resource_rights = { receiver = GER state = 666 } }
 		}
 		
-		}
+	}
 	
 
 	# focus = {
@@ -2850,6 +2840,8 @@ focus_tree = {
 					available_if_capitulated = yes
 			
 					completion_reward = {
+						custom_effect_tooltip = "Will relocate every mil/civ from France/Benelux to Germany"
+						custom_effect_tooltip = "    "
 						activate_mission = GER_relocate_industry_civ
 						activate_mission = GER_relocate_industry_mil
 					}
