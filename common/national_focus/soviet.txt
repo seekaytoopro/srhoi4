@@ -2722,7 +2722,7 @@ focus = {
 				add_tech_bonus = {
 		name = GER_soviet_treaty
 		uses = 1
-		ahead_reduction = 4
+		ahead_reduction = 2
 		technology = improved_heavy_tank_chassis
 	
 		}
