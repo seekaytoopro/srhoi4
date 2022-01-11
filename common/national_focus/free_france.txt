@@ -712,9 +712,14 @@ focus_tree = {
 					special_type_slot_3 = extra_ammo_storage
 					special_type_slot_4 = wet_ammo_storage
 				}
+				upgrades={
+					tank_nsb_engine_upgrade=5
+					tank_nsb_armor_upgrade=5
+				}
 			}
 			custom_effect_tooltip = "    "
-			custom_effect_tooltip = FRF_tank_spawn
+			# custom_effect_tooltip = FRF_tank_spawn
+			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
 			load_oob = "FRF_tanks"
 		}
 	}
