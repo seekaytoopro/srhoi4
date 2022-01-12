@@ -86,7 +86,7 @@ ideas = {
 				# artillery_brigade = { max_strength = 9 }
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
-				army_strength_factor = 0.35
+				army_strength_factor = 0.55
 			}
 		}
 
@@ -109,7 +109,7 @@ ideas = {
 				# artillery_brigade = { max_strength = 9 }
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
-				army_strength_factor = 0.20
+				army_strength_factor = 0.40
 			}
 		}
 
