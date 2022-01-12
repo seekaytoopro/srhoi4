@@ -155,8 +155,8 @@ categories =  {
 	
 	desert = {
 		color = { 255 127 0 }
-		movement_cost = 1.90 #1.10
-		heat_attrition = 0.20
+		movement_cost = 2.20 #1.10
+		heat_attrition = 0.18
 		# local_supplies = -0.2
 		combat_width = 80
 		combat_support_width = 40
@@ -174,9 +174,9 @@ categories =  {
 
 	deep_desert = {
 		color = { 255 0 0 }
-		movement_cost = 2.50 #1.50
+		movement_cost = 2.60 #1.50
 		#attrition = 0.2
-		heat_attrition = 0.40
+		heat_attrition = 0.30
 		# local_supplies = -0.2
 		combat_width = 80
 		combat_support_width = 40
