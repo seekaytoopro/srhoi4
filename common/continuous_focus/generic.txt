@@ -19,7 +19,7 @@ continuous_focus_palette = {
 		available = {
 		}
 		
-		idea = continuous_naval_production
+		# idea = continuous_naval_production
 		
 		ai_will_do = {
 			factor = 0
@@ -28,7 +28,9 @@ continuous_focus_palette = {
 		supports_ai_strategy = ai_focus_naval
 		
 		daily_cost = 1
-		
+		modifier = { 
+			industrial_capacity_dockyard = 0.15
+		}
 		available_if_capitulated = yes
 	}
 	
