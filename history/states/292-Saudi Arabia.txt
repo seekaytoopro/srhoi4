@@ -2,6 +2,7 @@
 state={
 	id=292
 	name="STATE_292"
+	impassable = yes
 
 	history={
 		owner = SWE
