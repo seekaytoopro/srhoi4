@@ -45,9 +45,9 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.15     -- defend comb
 --NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2, -- added penalty as we move away from origin
 
 -- defines that are used for supply reach for built nodes
-NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.50   --vanilla 2.8
+NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.25   --vanilla 2.8
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.10  --vanilla 0.5
-NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.48 --vanilla 0.7
+NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.50 --vanilla 0.7
 
 
 
@@ -113,7 +113,7 @@ NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 8.0 	-- how much additional flow a rai
 NDefines.NSupply.INFRA_TO_SUPPLY = 1.0							-- each level of infra gives this many supply
 NDefines.NSupply.VP_TO_SUPPLY_BASE = 1.0							-- Bonus to supply from a VP, no matter the level
 NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.05			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
-NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.75          --0.15 vanilla      -- damaged infrastructure counts as this in supply calcs
+NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.65          --0.15 vanilla      -- damaged infrastructure counts as this in supply calcs
 NDefines.NSupply.SUPPLY_BASE_MULT = 0.2							-- multiplier on supply base values
 --NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5,		-- every day nodes recover this much of their accumulated disruption.
 
