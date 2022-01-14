@@ -3083,7 +3083,14 @@ focus_tree = {
 					#has_ideas = speer
 				}
 				completion_reward = {
-					add_ideas = GER_armaments_miracle
+					every_country = {
+						limit = { the_axis = yes }
+						add_ideas = GER_armaments_miracle
+					}
+					# add_ideas = GER_armaments_miracle
+					custom_effect_tooltip = "   "
+					add_ideas = tot_economic_mobilisation
+					custom_effect_tooltip = "   "
 					random_owned_controlled_state = {
 						limit = {
 							free_building_slots = { building = arms_factory size > 1 include_locked = yes }
@@ -3720,6 +3727,17 @@ focus_tree = {
 							if = {limit = {country_exists = SPR } SPR = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 							if = {limit = {country_exists = CRO } CRO = {add_timed_idea = { idea = GER_fall_blau days = 60 }}}
 						}
+
+						custom_effect_tooltip = "   "
+						custom_effect_tooltip = "Will form an Integrated Axis High Command"
+						custom_effect_tooltip = "   "
+						every_country = {
+							limit = { OR = { original_tag = HUN original_tag = ROM original_tag = SPR
+											 original_tag = BUL original_tag = CRO original_tag = ITA } }
+							add_ideas = general_staff
+						}
+						ITA = { remove_ideas = ITA_libya_stands }
+
 						hidden_effect = {
 							news_event = { hours = 6 id = news.810 }
 						}
