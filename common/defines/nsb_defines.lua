@@ -110,7 +110,7 @@ NDefines.NSupply.RAILWAY_FLOW_PER_LEVEL = 8.0 	-- how much additional flow a rai
 
 --NDefines.NSupply.SUPPLY_NODE_MIN_SUPPLY_THRESHOLD = 1.0, -- if supply of a node is below this value it will be set to 0 -- Currently unused?
 
-NDefines.NSupply.INFRA_TO_SUPPLY = 1.0							-- each level of infra gives this many supply
+NDefines.NSupply.INFRA_TO_SUPPLY = 0.9							-- each level of infra gives this many supply
 NDefines.NSupply.VP_TO_SUPPLY_BASE = 1.0							-- Bonus to supply from a VP, no matter the level
 NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.05			-- Bonus to supply local supplies from Victory Points, multiplied by this aspect and rounded to closest integer
 NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.65          --0.15 vanilla      -- damaged infrastructure counts as this in supply calcs
