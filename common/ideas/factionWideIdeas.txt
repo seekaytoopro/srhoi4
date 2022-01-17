@@ -1,6 +1,19 @@
 ideas = {
     country = {
 		
+		allied_rearmament = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+			}
+			
+			equipment_bonus = {
+				medium_tank_chassis = {
+					build_cost_ic = -0.25 instant = yes
+				}
+			}
+		}
+		
 		axis_victory_in_egypt = {
 			picture = HUN_treaty_of_triannon
 			allowed = {

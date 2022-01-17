@@ -1503,6 +1503,16 @@ focus_tree = {
 				ENG = {
 					country_event = germany.40
 				}
+				CAN = {
+					add_timed_idea = {
+						idea = allied_rearmament days = 365 
+					}
+				}
+				SAF = {
+					add_timed_idea = {
+						idea = allied_rearmament days = 365 
+					}
+				}
 				
 						69 = { add_core_of = GER }
 		GER = { transfer_state = 69 }

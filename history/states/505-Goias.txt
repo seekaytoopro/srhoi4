@@ -2,23 +2,17 @@
 state={
 	id=505
 	name="STATE_505"
-	
-	state_category = wasteland
 
-	history={ owner=SWE
-		# owner = BRA
-		# buildings = {
-		# 	infrastructure = 2
-
-		# }
-		# add_core_of = BRA
+	history={
+		owner = ITA
 
 	}
 
 	provinces={
-		2168 5115 5148 5151 5208 8140 12959 12987 
+		975 1060 1463 4968 4974 7448 9823 9878 9893 9977 10104 10785 10815 11951 12082 12318 
 	}
-	# manpower=1662200
-	manpower = 1
+	manpower=1
 	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

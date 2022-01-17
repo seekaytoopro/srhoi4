@@ -13,34 +13,37 @@ state={
 		buildings = {
 			infrastructure = 5
 			air_base = 8
+
 		}
 		victory_points = {
-			10992 1
+			10992 1 
 		}
 		victory_points = {
-			4112 1
+			4112 1 
 		}
 		victory_points = {
-			1127 10
+			1127 10 
 		}
 		victory_points = {
-			12318 1
+			12318 1 
 		}
 		victory_points = {
-			806 10
+			806 10 
 		}
 		victory_points = {
-			4191 1
+			4191 1 
 		}
 		victory_points = {
-			947 10
+			947 10 
 		}
+
 	}
 
 	provinces={
-		806 864 947 975 1060 1127 1140 1198 1463 4060 4112 4133 4191 4200 4968 4974 6935 7026 7063 7130 7448 7470 9823 9878 9893 9932 9977 10104 10120 10785 10815 10992 11746 11759 11829 11951 12082 12318 13078 
+		806 864 947 1127 1140 1198 4112 4133 4191 4200 6935 7026 7063 9932 11746 11759 11829 
 	}
 	manpower=8808
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+	local_supplies=0.000
 }
