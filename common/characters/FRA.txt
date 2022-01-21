@@ -241,11 +241,11 @@ characters={
 		# 		}
 		# }
 		corps_commander={
-			traits={ trait_reckless media_personality harsh_leader armor_officer organizer panzer_leader }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=2
+			traits={ trait_reckless media_personality harsh_leader armor_officer organizer trickster panzer_leader }
+			skill=5
+			attack_skill=5
+			defense_skill=5
+			planning_skill=3
 			logistics_skill=5
 			legacy_id=101
 		}
@@ -358,7 +358,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_reckless infantry_officer war_hero }
+			traits={ old_guard trait_reckless infantry_officer war_hero infantry_leader }
 			skill=5
 			attack_skill=4
 			defense_skill=4
