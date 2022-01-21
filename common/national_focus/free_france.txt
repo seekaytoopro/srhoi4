@@ -669,9 +669,9 @@ focus_tree = {
 		id = FRF_infantry
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = FRF_france_libre }
-	    mutually_exclusive = { 
-		    focus = FRF_tanks
-			}
+	    # mutually_exclusive = { 
+		#     focus = FRF_tanks
+		# 	}
 		x = 10
 		y = 1
 		cost = 1
@@ -687,9 +687,9 @@ focus_tree = {
 		id = FRF_tanks
 		icon = GFX_goal_generic_armys
 		prerequisite = { focus = FRF_france_libre }
-	    mutually_exclusive = { 
-			focus = FRF_infantry
-			}
+	    # mutually_exclusive = { 
+		# 	focus = FRF_infantry
+		# 	}
 		x = 12
 		y = 1
 		cost = 1
