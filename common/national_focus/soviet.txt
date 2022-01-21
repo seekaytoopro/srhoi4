@@ -1238,6 +1238,12 @@ focus_tree = {
 			}
 			country_event = { id = soviet.302 }
 
+			hidden_effect = {
+				if = { limit = { has_idea = semyon_timoshenko } remove_ideas = semyon_timoshenko }
+				if = { limit = { has_idea = SOV_aleksandr_yegorov } remove_ideas = SOV_aleksandr_yegorov }
+				if = { limit = { has_idea = SOV_vasily_blyukher } remove_ideas = SOV_vasily_blyukher }
+			}
+
 			# add_ideas = georgy_zhukov_chief
 			add_advisor_role = {
 				Character = SOV_georgy_zhukov

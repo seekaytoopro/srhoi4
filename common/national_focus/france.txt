@@ -699,12 +699,41 @@ if = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 4 }
-			add_ideas =  FRA_charles_de_gaulle
+			# add_ideas =  FRA_charles_de_gaulle
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 0.5
 				uses = 1
 				technology = basic_medium_tank_chassis
+			}
+
+			hidden_effect = {
+				if = { limit = { has_idea = henri_giraud } remove_ideas = henri_giraud }
+				if = { limit = { has_idea = jean_marie_bergeret } remove_ideas = jean_marie_bergeret }
+			}
+
+
+			add_advisor_role = {
+				Character = FRA_charles_de_gaulle
+				advisor={
+					slot = theorist
+					idea_token = charles_de_gaulle
+					ledger  = army 
+					allowed  = {
+						original_tag  = FRA
+					}
+					available  = {
+						original_tag  = FRA
+					}
+					cost = 0
+					traits  = {
+						blitzkrieg_theorist 
+					}
+					ai_will_do  = {
+						factor  = 1.000
+					}
+				}
+			  	activate = yes
 			}
 		}
 	}

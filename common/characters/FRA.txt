@@ -218,28 +218,28 @@ characters={
 				large="gfx/leaders/FRA/Portrait_France_Charles_De_Gaulle.dds"
 			}
 		}
-		advisor={
-			slot = theorist
-			idea_token = FRA_charles_de_gaulle
-			ledger  = army 
-				allowed  = {
-					or  = {
-						original_tag  = FRA
-						original_tag  = FRF
-					}
-				}
-				available  = {
-					original_tag  = FRA
-					has_completed_focus = FRA_begin_rearmament
-				}
-				cost = 150.000
-				traits  = {
-					blitzkrieg_theorist 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
+		# advisor={
+		# 	slot = theorist
+		# 	idea_token = FRA_charles_de_gaulle
+		# 	ledger  = army 
+		# 		allowed  = {
+		# 			or  = {
+		# 				original_tag  = FRA
+		# 				original_tag  = FRF
+		# 			}
+		# 		}
+		# 		available  = {
+		# 			original_tag  = FRA
+		# 			has_completed_focus = FRA_begin_rearmament
+		# 		}
+		# 		cost = 150.000
+		# 		traits  = {
+		# 			blitzkrieg_theorist 
+		# 		}
+		# 		ai_will_do  = {
+		# 			factor  = 1.000
+		# 		}
+		# }
 		corps_commander={
 			traits={ trait_reckless media_personality harsh_leader armor_officer organizer panzer_leader }
 			skill=4
@@ -299,6 +299,9 @@ characters={
 						original_tag  = FRA
 						original_tag  = FRF
 					}
+				}
+				available = {
+					NOT = { has_completed_focus = FRA_begin_rearmament }
 				}
 				cost = 150.000
 				ai_will_do  = {
@@ -853,6 +856,7 @@ characters={
 						original_tag  = FRF
 					}
 				}
+				available = { NOT = { has_completed_focus = FRA_begin_rearmament } }
 				cost = 150.000
 				research_bonus  = {
 					air_doctrine  = 0.100
