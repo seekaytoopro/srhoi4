@@ -165,11 +165,11 @@ add_equipment_to_stockpile = {
 	producer = ENG
 } 
 
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_2
-	amount = 1440
-	producer = ENG
-} 
+# add_equipment_to_stockpile = {
+# 	type = light_tank_equipment_2
+# 	amount = 1440
+# 	producer = ENG
+# } 
 
 add_equipment_to_stockpile = {
 type = anti_air_equipment_1
