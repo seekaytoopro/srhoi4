@@ -44,15 +44,15 @@ SPR_the_fire_rises = {
 			ITA = { army_experience = 300 }
 			SPR = { army_experience = 300 }
 			SPR = { air_experience = 200 }
-			ENG = { army_experience = 10 air_experience = 100 }
-			FRA = { army_experience = 10 air_experience = 100 }
-			CAN = { army_experience = 10 air_experience = 100 }
-			SAF = { army_experience = 10 air_experience = 100 }
-			AST = { army_experience = 10 air_experience = 100 }
-			NZL = { army_experience = 10 air_experience = 100 }
-			RAJ = { army_experience = 10 air_experience = 100 }
-			BRA = { army_experience = 10 air_experience = 100 }
-			MEX = { army_experience = 10 air_experience = 100 }
+			ENG = { army_experience = 100 air_experience = 100 }
+			FRA = { army_experience = 100 air_experience = 100 }
+			CAN = { army_experience = 100 air_experience = 100 }
+			SAF = { army_experience = 100 air_experience = 100 }
+			AST = { army_experience = 100 air_experience = 100 }
+			NZL = { army_experience = 100 air_experience = 100 }
+			RAJ = { army_experience = 100 air_experience = 100 }
+			BRA = { army_experience = 100 air_experience = 100 }
+			MEX = { army_experience = 100 air_experience = 100 }
 			news_event = { hours = 1 id = news.63 }
 
 # SPD = {
