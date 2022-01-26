@@ -1346,6 +1346,7 @@ equipment_modules = {
 			build_cost_ic = 0.6
 			defense = 5
 			breakthrough = 1
+			reliability = -0.05
 		}
 		xp_cost = 0
 		multiply_stats = {
