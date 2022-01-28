@@ -665,23 +665,23 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = FRF_infantry
-		icon = GFX_goal_generic_axis_build_infantry
-		prerequisite = { focus = FRF_france_libre }
-	    # mutually_exclusive = { 
-		#     focus = FRF_tanks
-		# 	}
-		x = 10
-		y = 1
-		cost = 1
+	# focus = {
+	# 	id = FRF_infantry
+	# 	icon = GFX_goal_generic_axis_build_infantry
+	# 	prerequisite = { focus = FRF_france_libre }
+	#     # mutually_exclusive = { 
+	# 	#     focus = FRF_tanks
+	# 	# 	}
+	# 	x = 10
+	# 	y = 1
+	# 	cost = 1
 
-		available_if_capitulated = yes
-		completion_reward = {
-			custom_effect_tooltip = FRF_inf_spawn
-			load_oob = "FRF_infantry"
-		}
-	}
+	# 	available_if_capitulated = yes
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = FRF_inf_spawn
+	# 		load_oob = "FRF_infantry"
+	# 	}
+	# }
 
 	focus = {
 		id = FRF_tanks
@@ -690,7 +690,7 @@ focus_tree = {
 	    # mutually_exclusive = { 
 		# 	focus = FRF_infantry
 		# 	}
-		x = 12
+		x = 11
 		y = 1
 		cost = 1
 
@@ -721,6 +721,10 @@ focus_tree = {
 			# custom_effect_tooltip = FRF_tank_spawn
 			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
 			load_oob = "FRF_tanks"
+
+			custom_effect_tooltip = "    "
+			custom_effect_tooltip = FRF_inf_spawn
+			load_oob = "FRF_infantry"
 		}
 	}
 		focus = {
