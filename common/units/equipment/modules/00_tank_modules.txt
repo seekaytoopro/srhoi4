@@ -1337,22 +1337,22 @@ equipment_modules = {
 
 	}
 
-	smoke_launchers = {
-		abbreviation = "smok"
-		category = tank_special_module
-		sfx = sfx_ui_sd_module_turret
+	# smoke_launchers = {
+	# 	abbreviation = "smok"
+	# 	category = tank_special_module
+	# 	sfx = sfx_ui_sd_module_turret
 
-		add_stats = {
-			build_cost_ic = 0.6
-			defense = 5
-			breakthrough = 1
-			reliability = -0.05
-		}
-		xp_cost = 0
-		multiply_stats = {
+	# 	add_stats = {
+	# 		build_cost_ic = 0.6
+	# 		defense = 5
+	# 		breakthrough = 1
+	# 		reliability = -0.05
+	# 	}
+	# 	xp_cost = 0
+	# 	multiply_stats = {
 
-		}
-	}
+	# 	}
+	# }
 
 	extra_ammo_storage = {
 		abbreviation = "extra"
