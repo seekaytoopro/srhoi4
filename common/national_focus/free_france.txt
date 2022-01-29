@@ -37,6 +37,12 @@ focus_tree = {
 				amount = 150
 				producer = FRF
 			}
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 7000 producer = FRF }
+		    add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 600 producer = FRF }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FRF }
 			add_popularity = {
 				popularity = 0.15
 				ideology = democratic
@@ -717,6 +723,7 @@ focus_tree = {
 					tank_nsb_armor_upgrade=5
 				}
 			}
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
 			custom_effect_tooltip = "    "
 			# custom_effect_tooltip = FRF_tank_spawn
 			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
