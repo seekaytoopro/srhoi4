@@ -358,7 +358,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_secondary_turret
-			count < 3 #two secondary turrets only
+			count < 2 #one secondary turrets only
 		}
 		module_count_limit = {
 			module = amphibious_drive
@@ -394,7 +394,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_machine_guns
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = extra_ammo_storage
@@ -670,7 +670,7 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_machine_guns
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = extra_ammo_storage
