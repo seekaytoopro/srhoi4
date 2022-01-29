@@ -14,16 +14,13 @@
 		desertinfantry = { x = 1 y = 3 }
 		desertinfantry = { x = 1 y = 4 }
 		desertinfantry = { x = 2 y = 0 }
-		desertinfantry = { x = 2 y = 1 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		artillery_brigade = { x = 3 y = 4 }
 		anti_air_brigade = { x = 3 y = 3 }
 		anti_tank_brigade = { x = 4 y = 0 }
-		anti_tank_brigade = { x = 4 y = 1 }
-		anti_tank_brigade = { x = 4 y = 2 }
-		anti_tank_brigade = { x = 4 y = 3 }	
-		anti_tank_brigade = { x = 4 y = 4 }	
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -70,6 +67,42 @@ division_template = {
 ##### OOB #####
 units = {
 	# XVe Corps d'Armée (Région Militaire in 1936) -- Marseille
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 12806
+		division_template = "Mountaineers" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 12806
+		division_template = "Desert Infantry" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 12806
+		division_template = "Mountaineers" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
+	division= {	# "29ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 12806
+		division_template = "Desert Infantry" 	# Frontline, best equipment
+		start_experience_factor = 0.35
+	}
 	division= {	# "29ème Division d'Infanterie Alpine"
 		division_name = {
 			is_name_ordered = yes
