@@ -38,26 +38,27 @@ division_template = {
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
 		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
+		anti_air_brigade = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
 		artillery_brigade = { x = 4 y = 0 }
 		artillery_brigade = { x = 4 y = 1 }
-		artillery_brigade = { x = 4 y = 2 }
-		artillery_brigade = { x = 4 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		recon =  { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }	
-		anti_air = { x = 0 y = 3 }	
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
 	}
 }
 division_template = {
@@ -106,14 +107,13 @@ division_template = {
 		desertinfantry = { x = 1 y = 3 }
 		desertinfantry = { x = 1 y = 4 }
 		desertinfantry = { x = 2 y = 0 }
-		desertinfantry = { x = 2 y = 1 }
+		anti_air_brigade = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
 		artillery_brigade = { x = 3 y = 0 }
 		artillery_brigade = { x = 3 y = 1 }
 		artillery_brigade = { x = 3 y = 2 }
-		anti_air_brigade = { x = 3 y = 3 }
-		anti_tank_brigade = { x = 4 y = 0 }
-		anti_tank_brigade = { x = 4 y = 1 }
-		artillery_brigade = { x = 4 y = 2 }
+		artillery_brigade = { x = 4 y = 0 }
+		artillery_brigade = { x = 4 y = 1 }
 	}
 	support = {
 		recon = { x = 0 y = 0 }
@@ -211,7 +211,7 @@ units = {
 		location = 4115
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -221,7 +221,7 @@ units = {
 		location = 4017
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -231,7 +231,7 @@ units = {
 		location = 7073
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -241,7 +241,7 @@ units = {
 		location = 7073
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -251,7 +251,7 @@ units = {
 		location = 7151
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -261,7 +261,7 @@ units = {
 		location = 7170
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -271,7 +271,7 @@ units = {
 		location = 10099
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -282,7 +282,7 @@ units = {
 		location = 4115
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -292,7 +292,7 @@ units = {
 		location = 4115
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -302,7 +302,7 @@ units = {
 		location = 4115
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -312,7 +312,7 @@ units = {
 		location = 4017
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -322,7 +322,7 @@ units = {
 		location = 4017
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -332,7 +332,7 @@ units = {
 		location = 4017
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -342,18 +342,7 @@ units = {
 		location = 7151
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
-	}
-
-	division= {	# "1st Infantry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 7151
-		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -364,7 +353,18 @@ units = {
 		location = 7151
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
+	}
+
+	division= {	# "1st Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7151
+		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -375,7 +375,7 @@ units = {
 		location = 7170
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -386,7 +386,7 @@ units = {
 		location = 7170
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -397,7 +397,7 @@ units = {
 		location = 7170
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -407,7 +407,7 @@ units = {
 		location = 1074
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -417,7 +417,7 @@ units = {
 		location = 1074
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -427,7 +427,7 @@ units = {
 		location = 1074
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -437,7 +437,7 @@ units = {
 		location = 1074
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 	division= {	# "1st Infantry Division"
@@ -448,7 +448,7 @@ units = {
 		location = 11919
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -458,7 +458,7 @@ units = {
 		location = 11919
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -468,7 +468,7 @@ units = {
 		location = 11919
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -478,7 +478,7 @@ units = {
 		location = 11919
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -488,7 +488,7 @@ units = {
 		location = 1977
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -498,7 +498,7 @@ units = {
 		location = 10902
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -508,7 +508,7 @@ units = {
 		location = 8053
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -518,7 +518,7 @@ units = {
 		location = 9755
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -528,7 +528,7 @@ units = {
 		location = 10126
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -538,7 +538,7 @@ units = {
 		location = 12725
 		division_template = "Use these to entrench in the various mountain fallback lines (Sharm-El-Sheikh, Jordan, Sudan, etc.), or else africa will fall in a day when commonwealth tanks inevitably fail to click first"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 
 
@@ -550,7 +550,7 @@ units = {
 		location = 10127
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -560,7 +560,7 @@ units = {
 		location = 10127
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -570,7 +570,7 @@ units = {
 		location = 10127
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -580,7 +580,7 @@ units = {
 		location = 1071
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -590,7 +590,7 @@ units = {
 		location = 1071
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -600,7 +600,7 @@ units = {
 		location = 1071
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -610,7 +610,7 @@ units = {
 		location = 1155
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -620,7 +620,7 @@ units = {
 		location = 1155
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -630,7 +630,7 @@ units = {
 		location = 9947
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -640,7 +640,7 @@ units = {
 		location = 9947
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -650,7 +650,7 @@ units = {
 		location = 1151
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -660,7 +660,7 @@ units = {
 		location = 10028
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -670,7 +670,7 @@ units = {
 		location = 7030
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -680,7 +680,7 @@ units = {
 		location = 11999
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -690,7 +690,7 @@ units = {
 		location = 11999
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -700,7 +700,7 @@ units = {
 		location = 1151
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -710,7 +710,7 @@ units = {
 		location = 10028
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -720,7 +720,7 @@ units = {
 		location = 7030
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -730,7 +730,7 @@ units = {
 		location = 10403
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -740,7 +740,7 @@ units = {
 		location = 10403
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -750,7 +750,7 @@ units = {
 		location = 7188
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -760,7 +760,7 @@ units = {
 		location = 7188
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -770,7 +770,7 @@ units = {
 		location = 4143
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -780,7 +780,7 @@ units = {
 		location = 4143
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -790,7 +790,7 @@ units = {
 		location = 12004
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -800,7 +800,7 @@ units = {
 		location = 12004
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -810,7 +810,7 @@ units = {
 		location = 7011
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -820,7 +820,7 @@ units = {
 		location = 7011
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -830,7 +830,7 @@ units = {
 		location = 12016
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -840,7 +840,7 @@ units = {
 		location = 10073
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -850,7 +850,7 @@ units = {
 		location = 10073
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -860,7 +860,7 @@ units = {
 		location = 928
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -870,7 +870,7 @@ units = {
 		location = 928
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -880,7 +880,7 @@ units = {
 		location = 7091
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -890,7 +890,7 @@ units = {
 		location = 7091
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -900,7 +900,7 @@ units = {
 		location = 4076
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -910,7 +910,7 @@ units = {
 		location = 4076
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -920,7 +920,7 @@ units = {
 		location = 12013
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -930,7 +930,7 @@ units = {
 		location = 12013
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -940,7 +940,7 @@ units = {
 		location = 12836
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -950,7 +950,7 @@ units = {
 		location = 12796
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 	division= {	# "1st Infantry Division"
 		division_name = {
@@ -960,7 +960,7 @@ units = {
 		location = 12806
 		division_template = "Use These all over Africa (especially Egypt), or have one of the commonwealth cucks do it"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.10
+		start_equipment_factor = 0.20
 	}
 }
 

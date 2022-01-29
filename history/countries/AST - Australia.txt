@@ -8,6 +8,7 @@ set_research_slots = 3
 set_technology = { basic_train = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	interwar_antitank = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
@@ -38,22 +39,22 @@ set_rule = { can_be_spymaster = no }
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 1233
+	amount = 2500
 	producer = AST
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 287
+	amount = 600
 	producer = AST
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 200
+	amount = 600
 	producer = AST
 } 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 4000
+	amount = 15000
 	producer = AST
 } 
 add_equipment_to_stockpile = {
@@ -64,12 +65,12 @@ add_equipment_to_stockpile = {
 
 add_equipment_to_stockpile = {
 type = anti_air_equipment_1
-amount = 733
+amount = 1300
 producer = AST
 }
 add_equipment_to_stockpile = {
 type = anti_tank_equipment_1
-amount = 250
+amount = 900
 producer = AST
 }
 

@@ -79,32 +79,32 @@ if = {
 
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 3264
+	amount = 4000
 	producer = RAJ
 }  
 add_equipment_to_stockpile = {
 	type = support_equipment
-	amount = 1130
+	amount = 1300
 	producer = RAJ
 } 
 add_equipment_to_stockpile = {
 	type = motorized_equipment_1
-	amount = 400
+	amount = 800
 	producer = RAJ
 } 
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 24000
+	amount = 30000
 	producer = RAJ
 }
 add_equipment_to_stockpile = {
 	type = anti_air_equipment_1
-	amount = 2022
+	amount = 2100
 	producer = RAJ
 } 
 add_equipment_to_stockpile = {
 	type = anti_tank_equipment_1
-	amount = 1000
+	amount = 1500
 	producer = RAJ
 }  
 
