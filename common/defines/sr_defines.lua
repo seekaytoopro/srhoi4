@@ -16,6 +16,27 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus 
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
 
 
+
+
+--//////////////// Block of possibly useful future defines
+-- NDefines.NMilitary.ATTRITION_DAMAGE_ORG = 0.08					   -- damage from attrition to Organisation
+-- NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.1		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+-- NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.1 -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+-- NDefines.NMilitary.ATTRITION_WHILE_MOVING_FACTOR = 1
+-- NDefines.NMilitary.RELIABILITY_ORG_REGAIN = -0.3                 -- how much reliability affects org regain
+-- NDefines.NMilitary.RELIABILITY_ORG_MOVING = -1.0                 -- how much reliability affects org loss on moving
+-- NDefines.NMilitary.RELIABILITY_WEATHER = 3.0                     -- how much reliability is afffecting weather impact
+-- NDefines.NMilitary.RELIABILTY_RECOVERY = 0.1                     -- factor affecting how much equipment is returned "from the dead"
+-- NDefines.NMilitary.COMBAT_MOVEMENT_SPEED = 0.33	               -- speed reduction base modifier in combat
+NDefines.NMilitary.PREFERRED_TACTIC_CHARACTER_SKILL_LEVEL_REQUIRED = 5 -- Which level a field marhal or general has to be before they can pick their preferred tactic
+NDefines.NMilitary.COUNTRY_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.075  -- extra weight multiplier for the country preferred tactic when doing weighted random
+NDefines.NMilitary.ARMY_GENERAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.15   -- extra weight multiplier for the army general preferred tactic when doing weighted random
+NDefines.NMilitary.FIELD_MARSHAL_PREFERRED_TACTIC_WEIGHT_FACTOR = 0.10 -- extra weight multiplier for the field marhsal preferred tactic when doing weighted random
+NDefines.NMilitary.PREFERRED_TACTIC_COMMAND_POWER_COST = 20	   -- command point cost for changing preferred tactic
+NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 0.25 -- advantage per leader level for picking a counter
+-- End of Block ////////////////////////
+
+
 NDefines.NCharacter.DEFAULT_PP_COST_FOR_MILITARY_ADVISOR = 150	-- When an advisor does not have cost assigned this is the default used
 NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 150
 -- NDefines.NCharacter.DEFAULT_CP_COST_FOR_ADVISOR = 0	-- For Starting Advisors
