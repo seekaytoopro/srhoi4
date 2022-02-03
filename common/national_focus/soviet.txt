@@ -1507,7 +1507,7 @@ focus = {
 	relative_position_id = SOV_wartime_propaganda
 	x = 2
 	y = 1
-	cost = 20
+	cost = 25
 	ai_will_do = {
 		factor = 100
 	}
