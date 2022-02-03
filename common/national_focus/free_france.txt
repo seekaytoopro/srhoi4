@@ -47,7 +47,54 @@ focus_tree = {
 				popularity = 0.15
 				ideology = democratic
 			}
-			custom_effect_tooltip = FRF_france_libre				
+			custom_effect_tooltip = FRF_france_libre
+			
+			custom_effect_tooltip = "     "
+
+			create_equipment_variant = {
+				name = "Improved Medium Tank Chassis"
+				type = medium_tank_chassis_2
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = tank_radio_2
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = extra_ammo_storage
+					special_type_slot_4 = wet_ammo_storage
+				}
+				upgrades={
+					tank_nsb_engine_upgrade=5
+					tank_nsb_armor_upgrade=5
+				}
+			}
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
+			custom_effect_tooltip = "    "
+			# custom_effect_tooltip = FRF_tank_spawn
+			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
+			load_oob = "FRF_tanks"
+
+			custom_effect_tooltip = "    "
+			custom_effect_tooltip = FRF_inf_spawn
+			load_oob = "FRF_infantry"
+
+			539 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+				add_resource = {
+					type = tungsten
+					amount = 5
+				}
+				add_resource = {
+					type = chromium
+					amount = 5
+				}
+			}
 		}
 	}
 	
@@ -162,15 +209,15 @@ focus_tree = {
 			539 = {
 				add_resource = {
 					type = steel
-					amount = 30
+					amount = 25
 				}
 				add_resource = {
 					type = tungsten
-					amount = 20
+					amount = 15
 				}
 				add_resource = {
 					type = chromium
-					amount = 10
+					amount = 5
 				}
 			}
 		}
@@ -689,51 +736,51 @@ focus_tree = {
 	# 	}
 	# }
 
-	focus = {
-		id = FRF_tanks
-		icon = GFX_goal_generic_armys
-		prerequisite = { focus = FRF_france_libre }
-	    # mutually_exclusive = { 
-		# 	focus = FRF_infantry
-		# 	}
-		x = 11
-		y = 1
-		cost = 1
+	# focus = {
+	# 	id = FRF_tanks
+	# 	icon = GFX_goal_generic_armys
+	# 	prerequisite = { focus = FRF_france_libre }
+	#     # mutually_exclusive = { 
+	# 	# 	focus = FRF_infantry
+	# 	# 	}
+	# 	x = 11
+	# 	y = 1
+	# 	cost = 1
 
-		available_if_capitulated = yes
+	# 	available_if_capitulated = yes
 
-		completion_reward = {
-			create_equipment_variant = {
-				name = "Improved Medium Tank Chassis"
-				type = medium_tank_chassis_2
-				parent_version = 0
-				modules = {
-					main_armament_slot = tank_medium_cannon_2
-					turret_type_slot = tank_medium_three_man_tank_turret
-					suspension_type_slot = tank_interleaved_suspension
-					armor_type_slot = tank_welded_armor
-					engine_type_slot = tank_gasoline_engine
-					special_type_slot_1 = tank_radio_2
-					special_type_slot_2 = secondary_turret_small_cannon
-					special_type_slot_3 = extra_ammo_storage
-					special_type_slot_4 = wet_ammo_storage
-				}
-				upgrades={
-					tank_nsb_engine_upgrade=5
-					tank_nsb_armor_upgrade=5
-				}
-			}
-			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
-			custom_effect_tooltip = "    "
-			# custom_effect_tooltip = FRF_tank_spawn
-			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
-			load_oob = "FRF_tanks"
+	# 	completion_reward = {
+	# 		create_equipment_variant = {
+	# 			name = "Improved Medium Tank Chassis"
+	# 			type = medium_tank_chassis_2
+	# 			parent_version = 0
+	# 			modules = {
+	# 				main_armament_slot = tank_medium_cannon_2
+	# 				turret_type_slot = tank_medium_three_man_tank_turret
+	# 				suspension_type_slot = tank_interleaved_suspension
+	# 				armor_type_slot = tank_welded_armor
+	# 				engine_type_slot = tank_gasoline_engine
+	# 				special_type_slot_1 = tank_radio_2
+	# 				special_type_slot_2 = secondary_turret_small_cannon
+	# 				special_type_slot_3 = extra_ammo_storage
+	# 				special_type_slot_4 = wet_ammo_storage
+	# 			}
+	# 			upgrades={
+	# 				tank_nsb_engine_upgrade=5
+	# 				tank_nsb_armor_upgrade=5
+	# 			}
+	# 		}
+	# 		add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
+	# 		custom_effect_tooltip = "    "
+	# 		# custom_effect_tooltip = FRF_tank_spawn
+	# 		custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
+	# 		load_oob = "FRF_tanks"
 
-			custom_effect_tooltip = "    "
-			custom_effect_tooltip = FRF_inf_spawn
-			load_oob = "FRF_infantry"
-		}
-	}
+	# 		custom_effect_tooltip = "    "
+	# 		custom_effect_tooltip = FRF_inf_spawn
+	# 		load_oob = "FRF_infantry"
+	# 	}
+	# }
 		focus = {
 			id = FRF_restart_production 
 			icon = GFX_goal_generic_construct_mil_factory
