@@ -1,8 +1,8 @@
 
 state={
+	impassable = yes
 	id=305
 	name="STATE_305"
-	impassable = yes
 
 	history={
 		owner = ENG
@@ -11,9 +11,10 @@ state={
 	}
 
 	provinces={
-		869 886 979 2033 3889 3905 5024 5081 5099 6925 6938 6956 7934 7970 7987 8030 8118 8128 10748 10791 10900 11883 12455 12740 12768 12771 
+		869 886 979 3889 3905 5024 5081 5099 6925 6938 6956 7934 7970 7987 8030 8118 10791 10900 11883 12455 12740 12768 12771 
 	}
 	manpower=1032
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+	local_supplies=0.000
 }
