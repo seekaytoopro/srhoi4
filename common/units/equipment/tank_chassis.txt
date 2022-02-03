@@ -632,6 +632,10 @@ equipments = {
 			module = stabilizer
 			count < 3
 		}
+		module_count_limit = {
+			category = tank_secondary_turret
+			count < 2 #one secondary turrets only
+		}
 		# module_count_limit = {
 		# 	module = smoke_launchers
 		# 	count < 3
