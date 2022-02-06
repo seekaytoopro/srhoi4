@@ -304,7 +304,7 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_turret
 			add_equipment_type = capital_ship
 			add_stats = {
-				hg_attack = 6.75
+				hg_attack = 11
 				build_cost_ic = 750
 				surface_visibility = 0.0
 			}
@@ -314,7 +314,7 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				hg_armor_piercing = 11
-				surface_visibility = 15
+				surface_visibility = 10
 			}
 			can_convert_from = {
 				module_category = ship_light_battery
@@ -333,7 +333,7 @@ equipment_modules = {
 	
 			add_equipment_type = capital_ship
 			add_stats = {
-				hg_attack = 7.5
+				hg_attack = 12.5
 				build_cost_ic = 800
 				surface_visibility = 0.0
 			}
@@ -343,7 +343,7 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				hg_armor_piercing = 12
-				surface_visibility = 15			
+				surface_visibility = 10		
 			}
 			can_convert_from = {
 				module_category = ship_medium_battery
@@ -362,7 +362,7 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_turret
 	
 			add_stats = {
-				hg_attack = 8.5
+				hg_attack = 14.25
 				build_cost_ic = 850
 				surface_visibility = 0.0
 			}
@@ -372,7 +372,7 @@ equipment_modules = {
 			}
 			add_average_stats = {
 				hg_armor_piercing = 13
-				surface_visibility = 15
+				surface_visibility = 10
 			}
 			can_convert_from = {
 				module_category = ship_medium_battery
@@ -391,10 +391,10 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_turret
 	
 			add_stats = {
-				hg_attack = 9.75
+				hg_attack = 16.25
 				build_cost_ic = 900
 				surface_visibility = 0.0
-				surface_visibility = 15			
+				surface_visibility = 10			
 			}
 			multiply_stats = {
 				naval_speed = -0.04
@@ -421,6 +421,7 @@ equipment_modules = {
 	
 			add_stats = {	
 				lg_attack = 4
+				torpedo_attack = 2
 				build_cost_ic = 225
 			}
 			multiply_stats = {
@@ -444,6 +445,7 @@ equipment_modules = {
 	
 			add_stats = {	
 				lg_attack = 5.25
+				torpedo_attack = 4
 				build_cost_ic = 275
 			}
 			multiply_stats = {
@@ -470,7 +472,7 @@ equipment_modules = {
 			sfx = sfx_ui_sd_module_turret
 			
 			add_stats = {
-				
+				torpedo_attack = 6
 				lg_attack = 6.5
 				build_cost_ic = 300
 			}
@@ -499,7 +501,7 @@ equipment_modules = {
 			gui_category = ship_light_battery
 			parent = ship_light_medium_battery_3
 			add_stats = {
-				
+				torpedo_attack = 8
 				lg_attack = 8.25
 				
 				build_cost_ic = 350

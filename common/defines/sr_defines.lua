@@ -489,12 +489,12 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee 
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
 	240.0, -- heavy attack 80
-	550.0, -- torpedos 145
+	450.0, -- torpedos 145
 	265.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		3.0,	-- heavy attack
-		8.0,	-- torpedos
+		7.0,	-- torpedos
 		1.5	--  light attack	
 	}
 
@@ -513,7 +513,7 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 	NDefines.NNavy.COMBAT_MIN_DURATION = 8
 	
 	NDefines.NNavy.COMBAT_LOW_ORG_HIT_CHANCE_PENALTY = -0.25 --(0.5)
-	NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.01            -- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
+	NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.001            -- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 	NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 1.40	-- casting damage value to ship strength multiplier. Use it to balance the game difficulty.
 	NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4	-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 	NDefines.NNavy.COMBAT_CRITICAL_DAMAGE_MULT = 10
