@@ -176,10 +176,10 @@ startup_ideas = {
 }
 
 croatia_player = {
-	if = { limit = { CRO = { is_ai = yes } }
-		YUG = { annex_country = { target = CRO transfer_troops = no } }
-		else = { 800 = { add_core_of = CRO } }
-	}
+	# if = { limit = { CRO = { is_ai = yes } }
+	# 	YUG = { annex_country = { target = CRO transfer_troops = no } }
+	# 	else = { 800 = { add_core_of = CRO } }
+	# }
 }
 
 resource_rights = {

@@ -186,6 +186,7 @@ operations = {
 		}
 
 		available = {
+			is_ai = no
 			SAF = { 
 				is_ai = yes 
 			}

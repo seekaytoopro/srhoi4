@@ -170,6 +170,7 @@ GER_case_anton = {
 		}
 
 		available = {
+			is_ai = no
 		EFR = { is_ai = yes }
 		OR = { 
 			EFR = { is_puppet_of = GER	}
@@ -202,6 +203,7 @@ GER_case_anton = {
 		}
 
 		available = {
+			is_ai = no
 			HUN = { 
 				is_ai = yes 
 			}

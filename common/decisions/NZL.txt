@@ -9,9 +9,9 @@ foreign_politics = {
 		}
 
 		available = {
+			is_ai = no
 			AST = { 
 				is_ai = yes 
-				surrender_progress < 0.01
 			}
 			#date > 1940.7.1
 		}
