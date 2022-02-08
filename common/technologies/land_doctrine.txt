@@ -69,7 +69,7 @@ technologies = {
 		}
 		category_light_infantry =
 		{
-			default_morale = 0.10
+			default_morale = 0.15
 		}
 		
 		
