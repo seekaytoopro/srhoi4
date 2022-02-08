@@ -700,8 +700,8 @@ characters={
 			skill=7
 			attack_skill=7
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=5
+			coordination_skill=7
 			legacy_id=-1
 		}
 	}
@@ -720,8 +720,8 @@ characters={
 			skill=6
 			attack_skill=7
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=5
+			coordination_skill=6
 			legacy_id=-1
 		}
 	}
@@ -740,8 +740,8 @@ characters={
 			skill=6
 			attack_skill=6
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=9
+			coordination_skill=4
 			legacy_id=-1
 		}
 	}
@@ -760,8 +760,8 @@ characters={
 			skill=5
 			attack_skill=5
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=4
+			coordination_skill=8
 			legacy_id=-1
 		}
 	}
@@ -780,8 +780,8 @@ characters={
 			skill=3
 			attack_skill=6
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=5
+			coordination_skill=5
 			legacy_id=-1
 		}
 	}
@@ -800,8 +800,8 @@ characters={
 			skill=2
 			attack_skill=2
 			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=5
+			coordination_skill=2
 			legacy_id=-1
 		}
 	}
@@ -820,8 +820,8 @@ characters={
 			skill=3
 			attack_skill=3
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=5
+			coordination_skill=6
 			legacy_id=-1
 		}
 	}
