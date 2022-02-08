@@ -864,8 +864,8 @@ equipment_modules = {
 		forbid_equipment_type = artillery
 		parent = tank_medium_cannon
 		add_stats = {
-			soft_attack = 30
-			hard_attack = 30.5
+			soft_attack = 29
+			hard_attack = 29.5
 			ap_attack = 90
 			build_cost_ic = 6
 			maximum_speed = -0.3
@@ -885,15 +885,15 @@ equipment_modules = {
 
 	tank_high_velocity_cannon_2 = {
 		abbreviation = "hv2"
-		category = tank_medium_main_armament
-		parent = tank_medium_cannon_2
+		category = tank_medium_main_armament_3
+		# parent = tank_medium_cannon_2
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = artillery
-		allow_equipment_type = anti_tank
+		# allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 33
-			hard_attack = 35
+			soft_attack = 33.5
+			hard_attack = 35.5
 			ap_attack = 125
 			build_cost_ic = 7
 			maximum_speed = -0.3
@@ -901,10 +901,10 @@ equipment_modules = {
 			breakthrough = 5
 		}
 		xp_cost = 0
-		can_convert_from = {
-			module_category = tank_medium_main_armament
-			convert_cost_ic = 7
-		}
+		# can_convert_from = {
+		# 	module_category = tank_medium_main_armament
+		# 	convert_cost_ic = 7
+		# }
 		build_cost_resources = {
 			tungsten = 1
 			steel = 1
