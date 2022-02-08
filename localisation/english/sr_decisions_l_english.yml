@@ -19,6 +19,8 @@
  SOV_barb_debuff_category_desc:0 "Our armed forces are in disarray as a result of Comrade Stalin's efforts to root out subversive counter-revolutionary elements in the Soviet high command. We must hurry to replace those officers lost with competent new men, lest the Fascist Pigs conquer the Motherland! \n\nDebuff: \n§GDecreases by 3%§! every 10 days \n§RIncreases by 3%§! when we lose any of the following cities: Leningrad, Moscow, Smolensk, Kiev, Rostov, Stalingrad, Sevastopol"
  SOV_barb_debuff_mission:0 "Improve Officer Corp"
  SOV_barb_debuff_mission_tt:0 "Officer Corp Purged"
+ SOV_barb_debuff_slow_mission:0 "Improve Officer Corp"
+ SOV_barb_debuff_slow_mission_tt:0 "Officer Corp Purged"
  JAP_Marines:0 "Deploy Marines for War"
  JAP_Marines_desc:0 "We will deploy §W24 Marines§!, requiring the following: §Y410k men§! , §Y102k Infantry Equipment§! , §Y3.74k Artillery§! and §Y960 Support Equipment§!."
  SOV_baltic-novgorod:0 "Deploy Baltic-Novgorod Garrisons"
