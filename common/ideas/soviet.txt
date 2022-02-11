@@ -608,7 +608,7 @@ ideas = {
 				research_speed_factor = 0.10
 
 				conversion_cost_civ_to_mil_factor = 0.40
-				supply_consumption_factor = -0.20
+				supply_consumption_factor = -0.125
 				drift_defence_factor = 0.5
 			}
 			equipment_bonus = {
