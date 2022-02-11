@@ -8,6 +8,180 @@ phases = { # phase = no is the standard phase
 	tactical_withdrawal
 	seize_bridge
 	hold_bridge
+	naval_invade
+	naval_assault
+}
+
+tactic_preplanned_landing_site_counterattack = {
+	
+	is_attacker = no
+	trigger = { # combined scope for both country and combatant
+		is_attacker = no
+		phase = naval_invade
+		has_reserves = yes		
+	}
+		
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = preplanned_landing_site_counterattack
+
+	defender = 0.15
+	attacker = 0.10
+	attacker_movement_speed = -0.25
+}
+
+tactic_presighted_fortified_invasion_defense = {
+	
+	is_attacker = no
+	trigger = { # combined scope for both country and combatant
+		is_attacker = no
+		OR = {
+			phase = naval_invade
+			phase = naval_assault
+		}
+		has_reserves = no		
+	}
+		
+	active = yes
+	
+	base =  { factor = 4 }
+	picture = presighted_fortified_invasion_defense
+
+	combat_width = -0.5
+
+	attacker = -0.2
+	defender = -0.2
+	attacker_movement_speed = -0.9
+}
+
+tactic_basic_naval_invasion_defend = {
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		OR = {
+			phase = naval_invade
+			phase = naval_assault
+		}		
+	}
+
+	active = yes
+
+	base =  { factor = 4 }
+	picture = basic_naval_invasion_defend
+	defender = 0.05	
+}
+
+tactic_basic_naval_invasion_attack = {
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		OR = {
+			phase = naval_invade
+			phase = naval_assault
+		}		
+	}
+
+	active = no
+
+	base =  { factor = 1 }
+	picture = basic_naval_invasion_attack
+	attacker = -0.2
+	defender = -0.2
+}
+
+tactic_advanced_naval_landing = {
+
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		phase = no
+		is_amphibious_invasion = yes		
+	}
+	
+	active = no
+
+	base =  { factor = 800 }
+	picture = advanced_naval_landing
+	
+	countered_by = tactic_counterattack
+
+	attacker = -0.45
+	defender = -0.60
+	
+	phase = naval_invade #changes phase to naval invade 
+}
+
+
+tactic_multi_wave_invasion = {
+	
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		is_amphibious_invasion = yes
+		frontage_full = yes
+		has_reserves = yes
+		phase = naval_invade		
+	}
+		
+	active = no
+	
+	base =  { factor = 6 }
+	picture = multi_wave_invasion
+
+	combat_width = 0.5
+
+	attacker = -0.50
+	defender = -0.70
+}
+
+tactic_storm_machine_gun_nests = {
+	
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		is_amphibious_invasion = yes
+		frontage_full = yes
+		has_reserves = yes
+		phase = naval_invade		
+	}
+		
+	active = no
+	
+	base =  { factor = 4 }
+	picture = storm_machine_gun_nests
+
+	combat_width = 0.5
+
+	attacker = -0.25
+	defender = -0.2
+	combat_width = 0.5
+
+	phase = naval_assault #swap to a phase of the invasion where you assault machine gun nests and bunkers, damage goes up in this phase
+}
+
+tactic_clear_coastal_bunkers = {
+	
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		is_amphibious_invasion = yes
+		frontage_full = yes
+		has_reserves = yes
+		phase = naval_assault		
+	}
+		
+	active = no
+
+	combat_width = 0.5
+	
+	base =  { factor = 4 }
+	picture = clear_coastal_bunkers
+
+	attacker = -0.35
+	defender = -0.55
+
+	phase = naval_invade #swap phase back to naval invade, the assault on the MGs/bunkers is over
 }
 
 tactic_basic_attack = {

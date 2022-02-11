@@ -3165,5 +3165,21 @@ technologies = {
 			always = no
 		}
 	}
+
+	naval_invasion_tactics = {
+
+		enable_tactic = tactic_advanced_naval_landing
+		enable_tactic = tactic_multi_wave_invasion
+		enable_tactic = tactic_storm_machine_gun_nests
+		enable_tactic = tactic_clear_coastal_bunkers
+		enable_tactic = tactic_basic_naval_invasion_attack
+
+		doctrine = yes
+		research_cost = 0.01
+
+		allow = {
+			always = no
+		}
+	}
 	
 }
