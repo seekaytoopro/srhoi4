@@ -1039,9 +1039,15 @@ technologies = {
 		}
 
 	
-		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.15
+		# category_support_battalions = {
+		# 	max_organisation = 10
+		# 	soft_attack = 0.15
+		# }
+		category_all_infantry = {
+			max_organisation = 5
+			default_morale = 0.08
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		path = {
@@ -1080,9 +1086,15 @@ technologies = {
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
-		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.15
+		# category_support_battalions = {
+		# 	max_organisation = 10
+		# 	soft_attack = 0.15
+		# }
+		category_all_infantry = {
+			max_organisation = 5
+			default_morale = 0.08
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -1361,8 +1373,11 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 
 		category_all_armor = {
-			max_organisation = 3.0
+			max_organisation = 5.0
 			default_morale = 0.03
+		}
+		category_tanks = {
+			max_organisation = 5
 		}
 		
 		path = {
@@ -1400,8 +1415,14 @@ technologies = {
 		# xp_research_cost = 100
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
-		category_front_line = {
+		# category_front_line = {
+		# 	max_organisation = 5
+		# }
+		category_army = {
 			max_organisation = 5
+		}
+		category_support_battalions = {
+			max_organisation = -10
 		}
 			
 		#combat advantage when air superior
