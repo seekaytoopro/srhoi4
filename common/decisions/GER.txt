@@ -1359,7 +1359,7 @@ special_projects = {
 		allowed = { original_tag = GER }
 			
 		available = {
-			has_tech = improved_heavy_tank	
+			has_tech = improved_heavy_tank_chassis	
 		}
 		
 		fire_only_once = no
@@ -1395,7 +1395,7 @@ special_projects = {
 		allowed = { original_tag = GER }
 			
 		available = {
-			has_tech = improved_heavy_tank
+			has_tech = improved_heavy_tank_chassis
 		}
 		
 		fire_only_once = no
