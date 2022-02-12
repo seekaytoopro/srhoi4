@@ -260,4 +260,4 @@ recruit_character = BUL_bonyu_stoev_pironkov
 recruit_character = BUL_kiril_dimitrov_yanchule
 recruit_character = BUL_vasil_boydev
 recruit_character = BUL_nikola_hadzipetkov
-# recruit_character = BUL_atanas_pavlov_zhilkov
+recruit_character = BUL_atanas_pavlov_zhilkov
