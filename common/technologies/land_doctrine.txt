@@ -2654,7 +2654,7 @@ technologies = {
 			default_morale = 0.2
 		}
 		infantry = {
-			max_strength = 7.5
+			max_strength = 3.0
 		}
 		# category_light_infantry = { 
 			
