@@ -585,6 +585,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_country_leader_trait = emergency_powers
+			800 = { add_core_of = CRO }
 			103 = { add_core_of = CRO }	104 = { add_core_of = CRO }	109 = { add_core_of = CRO }
 			CRO = { transfer_state = 104 transfer_state = 109 transfer_state = 103 }
 			103 = {
