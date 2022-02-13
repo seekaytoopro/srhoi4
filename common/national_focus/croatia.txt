@@ -324,7 +324,7 @@
 			}
 			add_offsite_building = {
 				type = industrial_complex
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -352,7 +352,7 @@
 		completion_reward = {
 		add_offsite_building = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 		}
@@ -585,6 +585,7 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_country_leader_trait = emergency_powers
+			800 = { add_core_of = CRO }
 			103 = { add_core_of = CRO }	104 = { add_core_of = CRO }	109 = { add_core_of = CRO }
 			CRO = { transfer_state = 104 transfer_state = 109 transfer_state = 103 }
 			103 = {

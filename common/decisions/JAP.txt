@@ -239,6 +239,7 @@ JAP_annex_siam = {
 			}
 
 			available = {
+				is_ai = no
 				country_exists = SIA
 				SIA = { is_ai = yes }
 				GER = { has_completed_focus = GER_danzig_or_war }
@@ -277,6 +278,7 @@ JAP_annex_siam = {
 		}
 			
 		available = {
+			is_ai = no
 			country_exists = MAN
 			MAN = { is_ai = yes }
 			GER = { has_completed_focus = GER_danzig_or_war }

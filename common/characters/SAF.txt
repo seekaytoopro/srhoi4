@@ -263,12 +263,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ battleship_adherent }
-			skill=3
-			attack_skill=4
+			traits={ battleship_adherent ironside }
+			skill=4
+			attack_skill=5
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			maneuvering_skill=4
+			coordination_skill=4
 			legacy_id=-1
 		}
 	}

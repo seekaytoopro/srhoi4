@@ -2726,12 +2726,13 @@ focus = {
 			completion_reward = {
 			army_experience = 100
 				add_tech_bonus = {
-		name = GER_soviet_treaty
-		uses = 1
-		ahead_reduction = 2
-		technology = improved_heavy_tank_chassis
-	
-		}
+					name = GER_soviet_treaty
+					uses = 1
+					bonus = 1.00
+					ahead_reduction = 0.2
+					technology = improved_heavy_tank_chassis
+				
+				}
 				257 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {

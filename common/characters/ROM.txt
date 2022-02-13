@@ -118,11 +118,11 @@ characters={
 		}
 		navy_leader={
 			traits={ gentlemanly spotter }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=6
+			coordination_skill=4
 			legacy_id=-1
 		}
 	}

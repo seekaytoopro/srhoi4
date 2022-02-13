@@ -10,6 +10,7 @@ operations = {
 		}
 
 		available = {
+			is_ai = no
 			FRF = { 
 				is_ai = yes 
 			}

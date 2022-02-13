@@ -626,3 +626,75 @@ adjacency_rule={
 	icon = 2919
 	offset = { 0 0 10 }
 }
+
+#Cape of Good Hope
+adjacency_rule={
+	name = "Cape of Good Hope"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = { 12589 4696 12547 }
+	icon = 1695
+	offset = { 0 0 0 }
+}
+
+#Cape Horn
+adjacency_rule={
+	name = "Cape Horn"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = { 12960 }
+	icon = 2777
+	offset = { 0 0 0 }
+}

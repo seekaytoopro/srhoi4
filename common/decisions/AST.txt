@@ -7,8 +7,9 @@ AST_annex_nzl = {
 			}
 
 			available = {
+				is_ai = no
 				NZL = { is_ai = yes }
-				NZL = { surrender_progress < 0.01 }
+				# NZL = { surrender_progress < 0.01 }
 				#GER = { has_completed_focus = GER_danzig_or_war }
 			}
 			

@@ -901,9 +901,9 @@ SOV_filipp_oktyabrskiy={
 		traits={ spotter ironside arctic_water_expert green_water_expert concealment_expert big_guns_expert }
 		skill=4
 		attack_skill=7
-		defense_skill=7
-		maneuvering_skill=1
-		coordination_skill=1
+		defense_skill=4
+		maneuvering_skill=5
+		coordination_skill=4
 		legacy_id=-1
 	}
 }
@@ -922,8 +922,8 @@ SOV_arseniy_golovko={
 		skill=4
 		attack_skill=4
 		defense_skill=3
-		maneuvering_skill=1
-		coordination_skill=1
+		maneuvering_skill=3
+		coordination_skill=6
 		legacy_id=409
 	}
 }

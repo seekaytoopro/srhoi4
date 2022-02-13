@@ -344,6 +344,7 @@ characters={
 			}
 			traits = {
 				rund_hc
+				army_logistics_2
 			}
 			cost = 150
 			ai_will_do = {
@@ -1058,21 +1059,21 @@ characters={
 				small="GFX_idea_werner_von_fritsch"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = werner_von_fritsch
-			ledger = army
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				army_logistics_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.500
-			}
-		}
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = werner_von_fritsch
+		# 	ledger = army
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	traits = {
+		# 		army_logistics_2
+		# 	}
+		# 	cost = 150
+		# 	ai_will_do = {
+		# 		factor = 1.500
+		# 	}
+		# }
 	}
 
 	GER_hugo_sperrle={
@@ -1109,21 +1110,21 @@ characters={
 				small="GFX_idea_erhard_milch"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = erhard_milch
-			ledger = air
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				air_bomber_interception_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = erhard_milch
+		# 	ledger = air
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	traits = {
+		# 		air_bomber_interception_2
+		# 	}
+		# 	cost = 150
+		# 	ai_will_do = {
+		# 		factor = 1.000
+		# 	}
+		# }
 	}
 
 	GER_erich_bey={
@@ -1133,21 +1134,21 @@ characters={
 				small="GFX_idea_erich_bey"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = erich_bey
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_naval_air_defense_2
-			}
-			cost = 150
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = erich_bey
+		# 	ledger = navy
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	traits = {
+		# 		navy_naval_air_defense_2
+		# 	}
+		# 	cost = 150
+		# 	ai_will_do = {
+		# 		factor = 1.000
+		# 	}
+		# }
 	}
 	
 	GER_viktor_schutze={
@@ -1157,21 +1158,21 @@ characters={
 				small="GFX_idea_viktor_schutze"
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = viktor_schutze
-			ledger = navy
-			allowed = {
-				original_tag = GER
-			}
-			traits = {
-				navy_anti_submarine_1
-			}
-			cost =  50
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = viktor_schutze
+		# 	ledger = navy
+		# 	allowed = {
+		# 		original_tag = GER
+		# 	}
+		# 	traits = {
+		# 		navy_anti_submarine_1
+		# 	}
+		# 	cost =  50
+		# 	ai_will_do = {
+		# 		factor = 1.000
+		# 	}
+		# }
 	}
 	
 

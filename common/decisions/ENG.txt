@@ -288,6 +288,7 @@ foreign_politics = {
 						option = ENABLE_MINI_SR
 					}
 				}
+				ENG = { is_ai = no }
 				AST = { is_ai = yes }
 				# AST = { surrender_progress < 0.01 }
 			}
@@ -355,6 +356,7 @@ foreign_politics = {
 					option = ENABLE_MINI_SR
 				}
 			}
+			ENG = { is_ai = no }
 			NZL = { is_ai = yes }
 		}
 
@@ -406,6 +408,7 @@ foreign_politics = {
 					option = ENABLE_MINI_SR
 				}
 			}
+			ENG = { is_ai = no }
 			FRF = { is_ai = yes }
 		}
 		}
@@ -469,6 +472,7 @@ foreign_politics = {
 					option = ENABLE_MINI_SR
 				}
 			}
+			ENG = { is_ai = no }
 			SAF = { is_ai = yes }
 		}
 		}
@@ -517,6 +521,7 @@ foreign_politics = {
 							option = ENABLE_MINI_SR
 						}
 					}
+					ENG = { is_ai = no }
 					SAF = { is_ai = yes }
 				}
 			}
@@ -562,6 +567,7 @@ foreign_politics = {
 						option = ENABLE_MINI_SR
 					}
 				}
+				ENG = { is_ai = no }
 				RAJ = { is_ai = yes }
 			}
 			}
@@ -603,6 +609,7 @@ foreign_politics = {
 		}
 
 		available = {
+			ENG = { is_ai = no }
 			CAN = { 
 				is_ai = yes 
 			}

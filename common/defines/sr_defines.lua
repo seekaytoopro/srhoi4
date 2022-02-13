@@ -16,6 +16,9 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus 
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
 
 
+NDefines.NMilitary.COMBAT_STACKING_START = 4						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.05                -- vanilla is -0.02 -- how much stacking penalty per division
 
 
 --//////////////// Block of possibly useful future defines
@@ -624,7 +627,7 @@ NDefines.NNavy.CONVOY_EFFICIENCY_LOSS_MODIFIER = 1								-- How much efficiency
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 5							-- Convoy starts regaining it's efficiency after X days without any convoys being sink.
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04						-- How much efficiency regains every day.
 NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.04								-- To avoid complete 0% efficiency, set the lower limit.
-NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.25                             	-- base % of convoys that get interceptedy
+NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.125                             	-- base % of convoys that get interceptedy
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 6.0	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
@@ -647,7 +650,7 @@ NDefines.NNavy.DEPTH_CHARGES_DAMAGE_MULT = 1.0 									-- early application of 
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.2								-- Balancing value to convert averaged equipment stats (anti_air_targetting and naval_strike_agility) to probability chances of airplane being hit by navies AA.
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.006								-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
 
-NDefines.NNavy.CONVOY_HIT_PROFILE = 250.0  									-- convoys has this contant hit profile
+NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  									-- convoys has this contant hit profile
 NDefines.NNavy.CONVOY_SINKING_SPILLOVER = 1.5                 				-- Damaged convoys roll for if they sink in the end of combat by accumulating the damage. This scales that chance.
 
 --NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
