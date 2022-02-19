@@ -16,9 +16,9 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus 
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
 
 
-NDefines.NMilitary.COMBAT_STACKING_START = 4						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.COMBAT_STACKING_START = 3						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.05                -- vanilla is -0.02 -- how much stacking penalty per division
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.08                -- vanilla is -0.02 -- how much stacking penalty per division
 
 
 --//////////////// Block of possibly useful future defines
