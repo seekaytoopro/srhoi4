@@ -856,18 +856,19 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	trigger = {
 		is_attacker = no
 		phase = no
+		hardness < 0.2
 	}
 	
 	active = no
 	
 	base =  {
-		factor = 4
+		factor = 3
 	}
 	picture = tactic_guerrilla_tactics
 	countered_by = tactic_blitz
 	combat_width = -0.5
-	attacker = -0.7
-	defender = -0.6
+	attacker = -0.6
+	defender = -0.5
 }
 
 tactic_human_wave_tactics = { #People's army attacker tactic
