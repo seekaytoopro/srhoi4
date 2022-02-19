@@ -492,12 +492,12 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee 
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
 	240.0, -- heavy attack 80
-	450.0, -- torpedos 145
+	500.0, -- torpedos 145
 	265.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		3.0,	-- heavy attack
-		7.0,	-- torpedos
+		7.5,	-- torpedos
 		1.5	--  light attack	
 	}
 
