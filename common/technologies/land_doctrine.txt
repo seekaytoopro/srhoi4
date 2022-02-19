@@ -2372,7 +2372,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		land_reinforce_rate = 0.04
+		land_reinforce_rate = 0.03
 		minimum_training_level = -0.2		
 
 		doctrine = yes	
@@ -2885,7 +2885,7 @@ technologies = {
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
 		org_loss_when_moving = -0.15
-		land_reinforce_rate = 0.05
+		land_reinforce_rate = 0.03
 		rocket_artillery_brigade = { 
 			defense = 0.15
 			breakthrough = 0.1
@@ -2941,7 +2941,7 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 #10% more partisan effects 
 		#Land Units take less attrition
 		attrition = -0.2 #take 20% less attrition losses
-		land_reinforce_rate = 0.1
+		land_reinforce_rate = 0.05
 		conscription = 0.01
 		
 		enable_tactic = tactic_human_wave_tactics
@@ -2982,9 +2982,9 @@ technologies = {
 		# xp_research_bonus = 1.00
 		xp_unlock_cost = 100
 		category_light_infantry = {
-			default_morale = 0.30
+			default_morale = 0.25
 		}
-		land_reinforce_rate = 0.05	
+		land_reinforce_rate = 0.03	
 		conscription = 0.01	
 		
 		path = {
@@ -3071,7 +3071,7 @@ technologies = {
 			combat_width = -0.4
 		}
 
-		land_reinforce_rate = 0.08		
+		land_reinforce_rate = 0.03		
 		
 		path = {
 			leads_to_tech = guerilla_warfare
