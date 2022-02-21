@@ -34,7 +34,7 @@ sub_units = {
 		max_strength = 0.0
 		weight = 0.1
 		
-		supply_consumption = 0.09
+		supply_consumption = 0.14
 
 		# Support nerfs to combat abilities
 		defense = -0.65
@@ -80,7 +80,7 @@ sub_units = {
 		max_strength = 0.0
 		weight = 0.1
 		
-		supply_consumption = 0.09
+		supply_consumption = 0.16
 
 		# Support nerfs to combat abilities
 		defense = -0.5
