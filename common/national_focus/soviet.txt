@@ -1135,11 +1135,6 @@ focus_tree = {
 
 				add_timed_idea = { idea = shattered_retreat days = 75 }
 
-				add_timed_idea = {
-					idea = SOV_the_road_of_life_ns
-					days = 730
-				}
-
 				custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}
@@ -1167,6 +1162,11 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = "Will spawn 2 fully equipped heavy tanks, and a significant number of infantry divisions
 			"
+
+			add_timed_idea = {
+				idea = SOV_the_road_of_life_ns
+				days = 730
+			}
 			# hidden_effect = {
 			# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
 			# }
