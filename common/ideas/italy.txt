@@ -95,7 +95,7 @@ ideas = {
 			picture = german_advisors
 
 			modifier = {
-				conscription = 0.015
+				conscription = 0.02
 			}
 		}
 

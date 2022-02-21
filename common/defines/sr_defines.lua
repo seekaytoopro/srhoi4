@@ -11,14 +11,23 @@ NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 9999					-- pp cost to scorch a st
 NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01
 NDefines.NBuildings.RADAR_INTEL_EFFECT = 160			-- Province covered by radar increases intel by 10 (where 255 is max). Province may be covered by multiple radars, then the value sums up.
 
+NDefines.NTechnology.USE_BONUS_REGRET_TIMER = 10						-- Number of days the player has to regret using a limited tech bonus
+
 
 NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus when retreating
 NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
 
+NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 5 		-- VANILLA 1     Multiplier on TotalOrganisation when determining the combat value of a division
+NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 -- VANILLA 1      Multiplier on TotalStrength when determining the combat value of a division
+NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0		-- 1.0 How much we care about potential soft attacks when evaluating priority combat target
+NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 100.0		-- 1.2 How much we care about potential hard attacks when evaluating priority combat target
 
-NDefines.NMilitary.COMBAT_STACKING_START = 4						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 0.00	-- how much enemy combat width we are allowed to engage per width of our own
+NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.90			--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
+
+NDefines.NMilitary.COMBAT_STACKING_START = 3						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                      -- vanilla is 4 -- extra stacking from directions
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.05                -- vanilla is -0.02 -- how much stacking penalty per division
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.20                -- vanilla is -0.02 -- how much stacking penalty per division
 
 
 --//////////////// Block of possibly useful future defines
@@ -107,7 +116,7 @@ NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1.0 -- You get all 
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.15 -- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 1.0
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.50 -- damage reduction if armor outclassing enemy, will look at increasing if AT is too deadly to org. 
-NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.75 -- damage reduction if armor outclassing enemy
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.70 -- damage reduction if armor outclassing enemy
 
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 4                 -- nr of damage dice
 NDefines.NMilitary.LAND_COMBAT_STR_DICE_SIZE = 2                 -- nr of damage dice
@@ -116,7 +125,7 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   -- extra damage
 
 NDefines.NMilitary.CHANCE_TO_AVOID_HIT_AT_NO_DEF = 60
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.074 -- (0.05)
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0333 	-- (0.05) global damage modifier
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER =	0.0370 	-- (0.0333) (0.05) global damage modifier
 
 NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.50 -- (0.7)
 NDefines.NMilitary.TRAINING_ATTRITION = 0.00 -- (0.06) Because losing tons of equipment to training is not fun
@@ -231,7 +240,7 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2 -- (4) Changed to make micro more res
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_DECAY = 0.015
 NDefines.NMilitary.PLANNING_MAX = 0.15                          	-- can get more from techs
-NDefines.NMilitary.REINFORCE_CHANCE = 0.06 -- To make larger divisions more attractive
+NDefines.NMilitary.REINFORCE_CHANCE = 0.08 -- To make larger divisions more attractive
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 8 -- Number of support companies allowed per division
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 
@@ -492,12 +501,12 @@ NDefines.NNavy.SUPPLY_NEED_FACTOR = 0										-- Changed from vanilla becausee 
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0 								-- Horst has pre-made admirals because admiral grinding is pretty exploity, gamey, and not fun                                
 NDefines.NNavy.GUN_HIT_PROFILES = {
 	240.0, -- heavy attack 80
-	450.0, -- torpedos 145
+	500.0, -- torpedos 145
 	265.0 -- light attack 45
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		3.0,	-- heavy attack
-		7.0,	-- torpedos
+		7.5,	-- torpedos
 		1.5	--  light attack	
 	}
 
@@ -572,7 +581,7 @@ NDefines.NNavy.PRIDE_OF_THE_FLEET_LOST_TEMP_MODIFIER_DURATION = 0			-- duration 
 NDefines.NAir.CARRIER_HOURS_DELAY_AFTER_EACH_COMBAT = 4         	-- how often carrier planes do battle inside naval combat
 NDefines.NNavy.CARRIER_STACK_PENALTY = 6  							-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.09 					-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 12.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NNavy.NAVAL_STRIKE_CARRIER_MULTIPLIER = 15.0              -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 -- EDIT THIS TO REDUCE OUTSIDE AIR INFLUENCE
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.1		-- Max planes that can join a combat comparing to the total strength of the ships
