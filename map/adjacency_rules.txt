@@ -698,3 +698,75 @@ adjacency_rule={
 	icon = 2777
 	offset = { 0 0 0 }
 }
+
+#Mediteranian Strait1
+adjacency_rule={
+	name = "Mediteranian Strait1"
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = { 9994 11969 11773 }
+	icon = 8965
+	offset = { 0 0 0 }
+}
+
+#Mediteranian Strait2
+adjacency_rule={
+	name = "Mediteranian Strait2"
+	contested =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = no
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = { 6891 3838 11804 9909 }
+	icon = 5555
+	offset = { 0 0 0 }
+}
