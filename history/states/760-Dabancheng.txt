@@ -27,6 +27,9 @@ state={
 		victory_points = {
 			7859 30 
 		}
+		victory_points = {
+			1861 1
+		}
 		add_core_of = AST
 		add_core_of = NZL
 
