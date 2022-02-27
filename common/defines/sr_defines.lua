@@ -22,7 +22,7 @@ NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 -- VANILLA 1      Multiplier 
 NDefines.NMilitary.SOFT_ATTACK_TARGETING_FACTOR = 1.0		-- 1.0 How much we care about potential soft attacks when evaluating priority combat target
 NDefines.NMilitary.HARD_ATTACK_TARGETING_FACTOR = 100.0		-- 1.2 How much we care about potential hard attacks when evaluating priority combat target
 
-NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 0.00	-- how much enemy combat width we are allowed to engage per width of our own
+NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 1.00	-- how much enemy combat width we are allowed to engage per width of our own
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.90			--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 
 NDefines.NMilitary.COMBAT_STACKING_START = 3						-- vanilla is 8 -- at what nr of divisions stacking penalty starts
@@ -637,6 +637,8 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_AFTER_DAYS = 5							-- Convoy starts re
 NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04						-- How much efficiency regains every day.
 NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.04								-- To avoid complete 0% efficiency, set the lower limit.
 NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.125                             	-- base % of convoys that get interceptedy
+
+NDefines.NNavy.DETECTION_CHANCE_MULT_BASE = 0.05 -- 0.1 base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines. 
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 6.0	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
