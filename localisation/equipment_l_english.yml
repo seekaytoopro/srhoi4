@@ -3857,3 +3857,8 @@ GER_light_tank_destroyer_equipment_1:0 "Panzerjager I"
  HOL_amphibious_mechanized_equipment_2:1 "DAF MC-143 Amfibie"
  HOL_amphibious_mechanized_equipment_2_short:1 "DAF MC-143"
  EQUIPMENT_MODULE_NOT_ALLOWED:0 "§RUnavailable§!"
+
+ EQ_MOD_CAT_tank_medium_main_armament_3_TITLE:0 "Advanced Medium Armaments"
+ EQ_MOD_CAT_tank_heavy_main_armament_3_TITLE:0 "Advanced Heavy Armaments"
+ EQ_MOD_CAT_tank_medium_turret_type_3_TITLE:0 "Advanced Medium Turrets"
+ tank_medium_3_fixed_superstructure_turret:0 "Advanced Medium Fixed Superstructure"

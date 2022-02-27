@@ -546,6 +546,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type
 					tank_medium_turret_type
+					tank_medium_turret_type_3
 				}
 			}
 
@@ -849,7 +850,7 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_2
 		priority = 2000
-		module_slots = inherit
+		# module_slots = inherit
 		build_cost_ic = 16
 		maximum_speed = 4
 		reliability = 1.3
@@ -862,6 +863,86 @@ equipments = {
 		resources = {
 			steel = 3
 			chromium = 2
+		}
+
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					tank_medium_main_armament
+					tank_medium_main_armament_3
+					tank_heavy_main_armament
+					tank_heavy_main_armament_3
+					tank_flamethrower
+				}
+			}
+
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_medium_turret_type
+					tank_heavy_turret_type
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+					tank_radio_module
+				}
+			}
 		}
 	}
 

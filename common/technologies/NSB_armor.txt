@@ -489,6 +489,7 @@ technologies = {
 			auto_loader
 			tank_high_velocity_cannon_1
 			tank_high_velocity_cannon_2
+			tank_medium_3_fixed_superstructure_turret
 			tank_high_velocity_cannon_3
 		}
 		path = {
@@ -734,6 +735,7 @@ technologies = {
 			auto_loader
 			tank_high_velocity_cannon_1
 			tank_high_velocity_cannon_2
+			tank_medium_3_fixed_superstructure_turret
 			tank_high_velocity_cannon_3
 		}
 		path = {
