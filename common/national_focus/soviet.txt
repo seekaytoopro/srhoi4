@@ -3539,7 +3539,7 @@ focus = {
 	
 			completion_reward = {
 				add_to_variable = { SOV_the_red_army_army_org_regain = 0.1 }
-				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.04 }
+				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.05 }
 				custom_effect_tooltip = SOV_rehabilitated_military_SR_tt
 				# add_ideas = rehabilitated_military_focus
 			}
@@ -3558,7 +3558,7 @@ focus = {
 	
 			completion_reward = {
 				# add_ideas = nkvd
-				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.04 }
+				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.05 }
 				custom_effect_tooltip = SOV_swap_to_political_advisors_SR_tt
 				
 			}
@@ -3580,7 +3580,7 @@ focus = {
 			available_if_capitulated = yes
 	
 			completion_reward = {
-				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.04 }
+				add_to_variable = { SOV_the_red_army_land_reinforce_rate = 0.05 }
 				custom_effect_tooltip = SOV_keep_commissars_organization_SR_tt
 				# swap_ideas = {
 				# 	remove_idea = nkvd
