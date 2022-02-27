@@ -4,6 +4,8 @@ name="STATE_721"
 manpower = 455604
 state_category = pastoral
 history={
+	owner = SWE
+	add_core_of = SWE
 buildings = {
 infrastructure = 3
 }
