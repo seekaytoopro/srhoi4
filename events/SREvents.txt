@@ -51,6 +51,10 @@ country_event = {
 						type = industrial_complex
 						level = 2
 					}
+					remove_building = {
+						type = dockyard
+						level = 2
+					}
 				}
 			}
 		}
