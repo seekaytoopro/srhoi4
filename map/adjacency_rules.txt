@@ -337,10 +337,6 @@ adjacency_rule =
 	
 	icon = 5407	
 	offset = { -11.0 0.0 -1.0 }
-	is_disabled = {
-		tag = USA
-		date<1942.6.1
-	}
 }
 
 #Aden Strait
