@@ -1,0 +1,17 @@
+soundeffect =
+{
+	name = "superev_ww2"
+	sounds = {
+		sound = "super_ww2"
+	}
+	volume = 0.75
+}
+
+soundeffect =
+{
+	name = "superev_barbarossa"
+	sounds = {
+		sound = "super_barbarossa"
+	}
+	volume = 2
+}

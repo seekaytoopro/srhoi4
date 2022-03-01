@@ -1,0 +1,8 @@
+category = {
+	name = "Super Events"
+	soundeffects = {
+		superev_ww2
+		superev_barbarossa
+	}
+	compressor = master_compressor
+}
