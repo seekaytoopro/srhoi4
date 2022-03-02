@@ -1,6 +1,36 @@
 
 foreign_politics = {
 
+	ENG_Commonwealth_Rearmorment = {
+		icon = GFX_decision_category_border_war
+		
+		ai_will_do = { factor = 0 }
+		
+		cost = 0
+		fire_only_once = yes						
+		available = { 		
+			GER = {
+				has_completed_focus = GER_demand_sudetenland
+			}
+		}
+		visible = { 
+			tag = ENG
+		}
+		
+		complete_effect = {
+			CAN = {
+					add_timed_idea = {
+						idea = allied_rearmament days = 365 
+					}
+				}
+			SAF = {
+					add_timed_idea = {
+						idea = allied_rearmament days = 365 
+				}
+			}
+		}
+	}
+
 	ENG_HomeDefenseArmy_Deployment = {
 			
 		icon = GFX_decision_category_border_war
