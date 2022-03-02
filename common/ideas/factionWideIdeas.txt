@@ -99,7 +99,7 @@ ideas = {
 				# artillery_brigade = { max_strength = 9 }
 				# anti_tank_brigade = { max_strength = 3 }
 				# anti_air_brigade = { max_strength = 6 }
-				# land_reinforce_rate = 0.10
+				land_reinforce_rate = 0.10
 				supply_node_range = 0.075
 				army_strength_factor = 0.30
 			}
