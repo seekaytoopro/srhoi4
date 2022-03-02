@@ -12,6 +12,7 @@ foreign_politics = {
 			GER = {
 				has_completed_focus = GER_demand_sudetenland
 			}
+			date < 1940.1.1
 		}
 		visible = { 
 			tag = ENG
