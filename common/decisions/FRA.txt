@@ -193,7 +193,7 @@ operations = {
 			}
 		}
 		visible = { 
-			tag = ENG
+			tag = FRA
 		}
 		
 		complete_effect = {
