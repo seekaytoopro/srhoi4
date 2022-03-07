@@ -14,8 +14,9 @@ NDefines.NBuildings.RADAR_INTEL_EFFECT = 160			-- Province covered by radar incr
 NDefines.NTechnology.USE_BONUS_REGRET_TIMER = 10						-- Number of days the player has to regret using a limited tech bonus
 
 
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus when retreating
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.45                   -- speed bonus when retreating
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.30                -- speed bonus when withdrawing
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.33		-- speed impact at 0 org.
 
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 5 		-- VANILLA 1     Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 -- VANILLA 1      Multiplier on TotalStrength when determining the combat value of a division
