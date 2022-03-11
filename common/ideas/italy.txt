@@ -171,12 +171,16 @@ ideas = {
 
 			removal_cost = -1
 
-			research_bonus = {
-				land_doctrine = 0.05
+			modifier = {
+				research_speed_factor = 0.05
+				# experience
 			}
-			research_bonus = {
-				air_doctrine = 0.05
-			}				
+			# research_bonus = {
+			# 	land_doctrine = 0.05
+			# }
+			# research_bonus = {
+			# 	air_doctrine = 0.05
+			# }				
 		}
 	}
 		
