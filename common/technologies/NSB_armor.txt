@@ -299,9 +299,9 @@ technologies = {
 			tank_heavy_howitzer
 			tank_heavy_cannon_2
 			tank_anti_air_cannon_2
-			tank_high_velocity_cannon_m2
-			tank_high_velocity_cannon_h2
-			tank_high_velocity_cannon_l2
+			# tank_high_velocity_cannon_3
+			# tank_high_velocity_cannon_2
+			tank_high_velocity_cannon
 			tank_super_heavy_cannon_2
 		}
 		enable_equipments = {
