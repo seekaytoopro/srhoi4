@@ -1662,7 +1662,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = ITA_air_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2093,6 +2093,15 @@ focus_tree = {
 			every_country = { limit = { the_axis = yes } add_ideas = axis_victory_in_egypt }
 			custom_effect_tooltip = "
 			This idea will be cancelled if the Allies retake Egypt!"
+
+			159 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 			# ITA = { add_ideas = axis_victory_in_egypt }
 			# GER = { add_ideas = axis_victory_in_egypt }
 			# SPR = { add_ideas = axis_victory_in_egypt }
@@ -2140,6 +2149,15 @@ focus_tree = {
 			}
 			custom_effect_tooltip = "
 			This idea will be cancelled if the Allies retake Egypt!"
+
+			159 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 	

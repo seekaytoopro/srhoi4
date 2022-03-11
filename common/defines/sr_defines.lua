@@ -14,8 +14,9 @@ NDefines.NBuildings.RADAR_INTEL_EFFECT = 160			-- Province covered by radar incr
 NDefines.NTechnology.USE_BONUS_REGRET_TIMER = 10						-- Number of days the player has to regret using a limited tech bonus
 
 
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.40                   -- speed bonus when retreating
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25                -- speed bonus when withdrawing
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.45                   -- speed bonus when retreating
+NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.30                -- speed bonus when withdrawing
+NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.33		-- speed impact at 0 org.
 
 NDefines.NMilitary.COMBAT_VALUE_ORG_IMPORTANCE = 5 		-- VANILLA 1     Multiplier on TotalOrganisation when determining the combat value of a division
 NDefines.NMilitary.COMBAT_VALUE_STR_IMPORTANCE = 0 -- VANILLA 1      Multiplier on TotalStrength when determining the combat value of a division
@@ -550,6 +551,13 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 	--NDefines.NNavy.AGGRESSION_HEAVY_GUN_EFFICIENCY_ON_HEAVY_SHIPS = 2.0 -- ratio for scoring for different gun types against heavy ships
 	--NDefines.NNavy.AGGRESSION_TORPEDO_EFFICIENCY_ON_HEAVY_SHIPS = 0.1   -- ratio for scoring for different gun types against heavy ships
 	
+-- Spotting defines
+NDefines.NNavy.DETECTION_CHANCE_MULT_BASE = 0.05 -- 0.1 base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines. 
+NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.2
+NDefines.NNavy.SPOTTING_SPEED_MULT_FOR_RUNNING_AWAY = 1.5 -- task forces that does not want to engage will reduce enemy spotting rate every hour by speed diff mult this ratio 
+NDefines.NNavy.SPOTTING_MULTIPLIER_FOR_SURFACE = 0.1 -- task force surface spotting value is multiplied by this and added to spotting percentage every hour 
+-- End of Spotting defines
+
 
 --Defines to make it a positioning meme mod
 NDefines.NNavy.BASE_POSITIONING = 1.0
@@ -566,8 +574,6 @@ NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.35  			-- AA pen
 
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0 	-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0
-
-NDefines.NNavy.SPOTTING_ENEMY_SPOTTING_MULTIPLIER_FOR_RUNNING_AWAY = 0.1
 
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 800
 -- LESSON LEARNED, NO MORE PFU DEFINES
@@ -639,7 +645,6 @@ NDefines.NNavy.CONVOY_EFFICIENCY_REGAIN_BASE_SPEED = 0.04						-- How much effic
 NDefines.NNavy.CONVOY_EFFICIENCY_MIN_VALUE = 0.04								-- To avoid complete 0% efficiency, set the lower limit.
 NDefines.NNavy.CONVOY_ATTACK_BASE_FACTOR = 0.125                             	-- base % of convoys that get interceptedy
 
-NDefines.NNavy.DETECTION_CHANCE_MULT_BASE = 0.05 -- 0.1 base multiplier value for detection chance. Later the chance is an average between our detection and enemy visibility, mult by surface/sub detection chance in the following defines. 
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 6.0	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
@@ -664,12 +669,6 @@ NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.006								-- Balancing value to co
 
 NDefines.NNavy.CONVOY_HIT_PROFILE = 120.0  									-- convoys has this contant hit profile
 NDefines.NNavy.CONVOY_SINKING_SPILLOVER = 1.5                 				-- Damaged convoys roll for if they sink in the end of combat by accumulating the damage. This scales that chance.
-
---NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 15.00						-- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
---NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 6.0	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
---NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 15.0 	-- same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
---NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 2.4  --(0.75) same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
---NDefines.NNavy.SPOTTING_SPEED_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 0.12 -- (0.05) same as SPOTTING_SPEED_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00		
 
