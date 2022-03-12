@@ -487,7 +487,7 @@ technologies = {
 			# tank_heavy_cannon_3
 			tank_anti_air_cannon_3
 			auto_loader
-			tank_high_velocity_cannon_1
+			tank_high_velocity_cannon
 			tank_high_velocity_cannon_2
 			tank_medium_3_fixed_superstructure_turret
 			tank_high_velocity_cannon_3
@@ -650,6 +650,7 @@ technologies = {
 			tank_medium_cannon_2
 			tank_rocket_launcher
 			tank_heavy_cannon_2
+			tank_high_velocity_cannon
 			tank_anti_air_cannon_2
 		}
 
