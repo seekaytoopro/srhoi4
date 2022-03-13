@@ -475,6 +475,17 @@ equipments = {
 			steel = 2
 			tungsten = 1
 		}
+		default_modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = wet_ammo_storage
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
+		}
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -499,7 +510,7 @@ equipments = {
 		default_modules = {
 			main_armament_slot = tank_medium_cannon_2
 			turret_type_slot = tank_medium_three_man_tank_turret
-			suspension_type_slot = tank_torsion_bar_suspension
+			suspension_type_slot = tank_interleaved_suspension
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_2
@@ -606,6 +617,17 @@ equipments = {
 					tank_radio_module
 				}
 			}
+		}
+		default_modules = {
+			main_armament_slot = tank_high_velocity_cannon_2
+			turret_type_slot = tank_medium_turret_type_3
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
 		}
 	}
 
@@ -763,11 +785,15 @@ equipments = {
 		# 	count < 2
 		# }
 		default_modules = {
-			main_armament_slot = empty
-			turret_type_slot = tank_heavy_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
+			main_armament_slot = tank_heavy_cannon
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
 		}
 
 		fuel_consumption = 0
@@ -840,6 +866,17 @@ equipments = {
 		resources = {
 			steel = 3
 			chromium = 1
+		}
+		default_modules = {
+			main_armament_slot = tank_heavy_cannon_2
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = easy_maintenance
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
 		}
 	}
 
@@ -943,6 +980,17 @@ equipments = {
 					tank_radio_module
 				}
 			}
+		}
+		default_modules = {
+			main_armament_slot = tank_high_velocity_cannon_3
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_interleaved_suspension
+			armor_type_slot = tank_welded_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = extra_ammo_storage
+			special_type_slot_4 = secondary_turret_small_cannon
 		}
 	}
 
