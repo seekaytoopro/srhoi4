@@ -4,17 +4,18 @@ state={
 	name="STATE_801" # Split
 	manpower = 205800
 
-	state_category = rural
+	state_category = wasteland #rural
 
 
 	history={
-		owner = YUG
+		owner = CRO
 		victory_points = {
 			3924 3
 		}
+		# add_extra_state_shared_building_slots = 3
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
+			# arms_factory = 3
 		}
 		#add_core_of = CRO
 		add_core_of = YUG

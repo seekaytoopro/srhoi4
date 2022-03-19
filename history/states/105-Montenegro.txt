@@ -9,11 +9,12 @@ state={
 		victory_points = {
 			9809 3
 		}
-		owner = YUG
+		owner = CRO
+		# add_extra_state_shared_building_slots = 3
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			dockyard = 1
+			# industrial_complex = 2
+			# dockyard = 1
 			9809 = {
 				naval_base = 1
 
@@ -29,5 +30,5 @@ state={
 	}
 	manpower=895500
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category= wasteland #rural
 }

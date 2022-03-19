@@ -4,11 +4,12 @@ state={
 	name="STATE_107"
 
 	history={
-		owner = YUG
+		owner = CRO
+		# add_extra_state_shared_building_slots = 9
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 3
-			arms_factory = 6
+			# industrial_complex = 3
+			# arms_factory = 6
 			air_base = 5
 
 		}
@@ -24,5 +25,5 @@ state={
 	}
 	manpower=1679121
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category= wasteland #large_city
 }

@@ -2405,14 +2405,59 @@ focus_tree = {
 				# YUG = { set_equipment_fraction = 0.0 }
 				GRE = { set_equipment_fraction = 0.0 }
 			}
+
+			# Adding factories and resetting state level
+			45 = { set_state_category = town 
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+		 	}
+			102 = { set_state_category = rural 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+		 	}
+			105 = { set_state_category = rural 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				add_building_construction = { type = dockyard level = 1 instant_build = yes }
+		 	}
+			106 = { set_state_category = rural 
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+		 	}
+			107 = { set_state_category = large_city 
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 6 instant_build = yes }
+		 	}
+			108 = { set_state_category = town 
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 4 instant_build = yes }
+		 	}
+			801 = { set_state_category = rural 
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+		 	}
+			802 = { set_state_category = large_town 
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+				add_building_construction = { type = arms_factory level = 5 instant_build = yes }
+		 	}
+			764 = { set_state_category = rural 
+				add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+		 	}
+			############################################
+
 			# ITA = { annex_country = { target = YUG	transfer_troops = no } }
 			ITA = { annex_country = { target = GRE transfer_troops = no } }
+			ITA = {
+				transfer_state = 802 transfer_state = 801 transfer_state = 105
+				transfer_state = 108 transfer_state = 107
+			}
 			GER = { transfer_state = 102 }
 			# handles When germany has annexed hungary, so they get vojvodina
 			hidden_effect = { GER = { transfer_state = 45 } }
-			if = { limit = {country_exists = BUL } BUL = { transfer_state = 184 transfer_state = 106 } }
+			if = { limit = {country_exists = BUL }
+				BUL = { transfer_state = 184 transfer_state = 106 } 
+				# Bulgaria has been annexed by Italy/Romania
+				else = { ITA = { transfer_state = 106 } } }
 			if = { limit = {country_exists = HUN } HUN = { transfer_state = 45 } }
-			if = { limit = {country_exists = ROM } ROM = { transfer_state = 764 } 764 = { add_core_of = ROM } }
+			if = { limit = {country_exists = ROM } 
+				ROM = { transfer_state = 764 } 764 = { add_core_of = ROM }
+				# Romania has been annexed by italy
+				else = { ITA = { transfer_state = 764 } } }
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 }
 				set_province_name = { id = 619 name = "Újvidék" }

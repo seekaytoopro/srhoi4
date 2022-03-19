@@ -8,7 +8,7 @@ state={
 	state_category = town
 	
 	history={
-		owner = YUG
+		owner = CRO
 		victory_points = {
 			11899 5 
 		}
@@ -20,6 +20,7 @@ state={
 			# industrial_complex = 1
 			air_base = 2
 		}
+		add_core_of = CRO
 		add_core_of = YUG
 	}
 

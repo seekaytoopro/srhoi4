@@ -6,11 +6,12 @@ state={
 		victory_points = {
 			9602 3
 		}
-		owner = YUG
+		owner = CRO
+		# add_extra_state_shared_building_slots = 6
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 4
+			# industrial_complex = 2
+			# arms_factory = 4
 		}
 		add_core_of = YUG
 	}
@@ -20,5 +21,5 @@ state={
 	}
 	manpower=1733000
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category= wasteland #town
 }

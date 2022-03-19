@@ -75,7 +75,7 @@ on_actions = {
 					}
 					ITA = { transfer_state = 32 transfer_state = 21 transfer_state = 460 
 					transfer_state = 513 transfer_state = 459 transfer_state = 514 }
-					}
+					# }
 					# ITA = {
 					# 	set_country_flag = case_anton
 					# }

@@ -4,17 +4,18 @@ state=
 	name="STATE_102"
 	manpower = 645800
 	
-	state_category = rural
+	state_category = wasteland #rural
 	
 	history =
 	{
-		owner = YUG
+		# add_extra_state_shared_building_slots = 2
+		owner = CRO
 		victory_points = {
 			596 1 
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			# industrial_complex = 2
 		}
 		add_core_of = YUG
 	}
