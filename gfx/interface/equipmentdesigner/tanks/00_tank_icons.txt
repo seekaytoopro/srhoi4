@@ -3837,7 +3837,7 @@ ROM = {
 	}
 }
 
-YUG = {
+CRO = {
 	light_tank_chassis = {
 		pool = {
 			icons = {

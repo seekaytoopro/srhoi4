@@ -2173,7 +2173,7 @@ focus_tree = {
 			factor = 1
 		}
 
-		bypass = {NOT = { country_exists = YUG }}
+		# bypass = {NOT = { country_exists = YUG }}
 
 		completion_reward = {
 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
@@ -2402,10 +2402,10 @@ focus_tree = {
 		completion_reward = {	
 			add_threat = 7
 			hidden_effect = { 
-				YUG = { set_equipment_fraction = 0.0 }
+				# YUG = { set_equipment_fraction = 0.0 }
 				GRE = { set_equipment_fraction = 0.0 }
 			}
-			ITA = { annex_country = { target = YUG	transfer_troops = no } }
+			# ITA = { annex_country = { target = YUG	transfer_troops = no } }
 			ITA = { annex_country = { target = GRE transfer_troops = no } }
 			GER = { transfer_state = 102 }
 			# handles When germany has annexed hungary, so they get vojvodina

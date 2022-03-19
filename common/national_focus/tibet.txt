@@ -309,8 +309,6 @@ focus_tree = {
 		available_if_capitulated = yes
 	
 		completion_reward = {
-		if = { limit = { YUG = { is_ai = no}} YUG = { set_rule = { can_send_volunteers = yes }}
-  }
 		# IRQ = { set_rule = { can_join_factions = no }}
 		USA = { set_rule = { can_join_factions = no }}
 		GRE = { set_rule = { can_join_factions = no }}

@@ -143,7 +143,7 @@ startup_ideas = {
 	if = { limit = { NOR = { is_ai = yes } } NOR = { add_ideas = no_production set_equipment_fraction = 0.0 } }
 	if = { limit = { IRE = { is_ai = yes } } IRE = { add_ideas = no_production set_equipment_fraction = 0.0 } }
 	BEL = { add_ideas = no_production }  GRE = { add_ideas = no_production } #ALB = { add_ideas = no_production }
-	HOL = { add_ideas = no_production }  YUG = { add_ideas = no_production } CHI = { add_ideas = no_production }
+	HOL = { add_ideas = no_production }  CHI = { add_ideas = no_production }
 	DEN = { add_ideas = no_production }  LAT = { add_ideas = no_production } SWE = { add_ideas = no_production }
 	CZE = { add_ideas = no_production }  AUS = { add_ideas = no_production } POL = { add_ideas = no_production }
 	PER = { add_ideas = no_production }

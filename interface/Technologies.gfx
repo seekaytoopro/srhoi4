@@ -7036,5 +7036,222 @@ spriteTypes = {
 			name = "GFX_JAP_amphibious_tank_chassis_medium"
 			texturefile = "gfx/interface/technologies/jap_amphibious_tank_1.dds"
 		}
+
+		### Yugoslavia
+	
+	SpriteType = {
+		name = "GFX_CRO_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/yug_infantry_weapons1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/yug_motorised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/yug_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/yug_mechanised_infantry2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/yug_mechanised_infantry3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_motorised_equipment_medium"
+		texturefile = "gfx/interface/technologies/yug_motorised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/yug_motorised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/yug_basic_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/yug_improved_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/yug_advanced_infantry_weapons.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/yug_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/yug_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_fighter0_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter_0.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_fighter1_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_fighter2_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_fighter3_medium"
+		texturefile = "gfx/interface/technologies/yug_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/yug_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_CAS1_medium"
+		texturefile = "gfx/interface/technologies/yug_cas1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_CAS2_medium"
+		texturefile = "gfx/interface/technologies/yug_cas2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_CAS3_medium"
+		texturefile = "gfx/interface/technologies/yug_cas3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/yug_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/yug_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CRO_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/yug_naval_bomber3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_adv_heavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_adv_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_adv_main_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_basic_heavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_basic_main_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_gwtank_medium"
+		texturefile = "gfx/interface/technologies/yug_gwtank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_imp_heavy_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_imp_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_imp_main_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_main_battle_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_CRO_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/yug_superheavy_tank.dds"
+	}
 	
 }

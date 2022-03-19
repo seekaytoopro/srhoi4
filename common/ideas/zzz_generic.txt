@@ -97,37 +97,35 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-			no_training = {
-            allowed = {
-                always = no
-            }
-	available = {
-		NOT = {
-		OR = {
-		AND = { tag = BUL BUL = { is_ai = no }}
-		AND = { tag = NOR GER = { has_completed_focus = GER_demand_sudetenland }}		
-		AND = { tag = NOR NOR = { is_ai = no }}		
-		AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }
-		AND = { tag = CHI CHI = { is_ai = no }}		
-		AND = { tag = HOL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = BEL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = DEN GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = POL GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = POR GER = { has_completed_focus = GER_demand_sudetenland }}
-		AND = { tag = GRE ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
-		AND = { tag = YUG ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
-		AND = { tag = YUG YUG = { is_ai = no }}
-		}	
-		}
-		}
-            removal_cost = -1
-            picture = neutrality_idea
+		no_training = {
+			allowed = {
+				always = no
+			}
+			available = {
+				NOT = {
+					OR = {
+						AND = { tag = BUL BUL = { is_ai = no }}
+						AND = { tag = NOR GER = { has_completed_focus = GER_demand_sudetenland }}		
+						AND = { tag = NOR NOR = { is_ai = no }}		
+						AND = { tag = CHI JAP = { has_completed_focus = JAP_liaison_conference } }
+						AND = { tag = CHI CHI = { is_ai = no }}		
+						AND = { tag = HOL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = BEL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = DEN GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = POL GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = POR GER = { has_completed_focus = GER_demand_sudetenland }}
+						AND = { tag = GRE ITA = { has_completed_focus = ITA_slovenia_dalmatia_claims }}
+					}	
+				}
+			}
+			removal_cost = -1
+			picture = neutrality_idea
 
-            modifier = {
+			modifier = {
 				training_time_factor = 100
 				conscription_factor  = -2
 				ai_join_ally_desire_factor = -1000
-            }
+			}
 		}
 	
 	war_plan_silver = {
@@ -1301,7 +1299,7 @@ ideas = {
 					limit = {
 						has_dlc = "Death or Dishonor"
 					}
-					NOT = { tag = ROM } NOT = { tag = YUG }
+					NOT = { tag = ROM }
 				}
 				NOT = {
 					AND = {
@@ -1335,12 +1333,6 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = medium_aircraft_manufacturer limit = 1 }
 				}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { tag = YUG }
-				}
 				NOT = {
 					AND = {
 						OR = { tag = CHI  tag = MAN  }
@@ -1373,12 +1365,6 @@ ideas = {
 				NOT = {
 					has_available_idea_with_traits = { idea = heavy_aircraft_manufacturer limit = 1 }
 				}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-					}
-					NOT = { tag = YUG }
-				}
 				NOT = {
 					AND = {
 						OR = { tag = CHI tag = MAN  }
@@ -1407,7 +1393,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = YUG tag = EFR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = CAN tag = ROM tag = EFR } }
 				NOT = {
 					has_available_idea_with_traits = { idea = naval_aircraft_manufacturer limit = 1 }
 				}

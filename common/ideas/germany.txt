@@ -209,7 +209,7 @@ ideas = {
 	}
 	
 		
-		integrated_war_economies_yugoslavia = { 
+		integrated_war_economies_croatia = { 
 		
 		
 			allowed = {
@@ -224,7 +224,7 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 							targeted_modifier = {
-				tag = YUG
+				tag = CRO
 				trade_cost_for_target_factor = -0.6
 			}
 	}

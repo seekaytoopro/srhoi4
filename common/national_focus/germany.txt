@@ -1738,9 +1738,7 @@ focus_tree = {
 			hidden_effect = {
 				add_political_power = 150
 				GER = {	remove_resource_rights = 724 add_state_core = 85 }
-				# if = { limit = { YUG = { is_ai = no } }  
-				# 	ITA =  { set_autonomy = { target = YUG autonomy_state = autonomy_satellite } } 
-				# }
+
 				ENG = { add_war_support = 0.1 }
 				FRA = { add_war_support = 0.1 }
 				SAF = {	country_event = tfv_south_africa.133 }

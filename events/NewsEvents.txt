@@ -3317,22 +3317,19 @@ news_event = {
 	fire_for_sender = no
 
 	#Those are Yugoslavian lands, not Italian!
-	option = {
-		name = news.192.a
-		trigger = {
-			tag = YUG
-		}
-	}
+	# option = {
+	# 	name = news.192.a
+	# 	trigger = {
+	# 		tag = YUG
+	# 	}
+	# }
 
 	#They are upsetting the already fragile balance in the region.
 	option = {
 		name = news.192.b
 		trigger = {
 			NOT = {
-				OR = {
-					tag = YUG
-					tag = ITA
-				}
+				tag = ITA
 			}
 			NOT = {
 				has_government = fascism
@@ -3345,10 +3342,7 @@ news_event = {
 		name = news.192.c
 		trigger = {
 			NOT = {
-				OR = {
-					tag = YUG
-					tag = ITA
-				}
+				tag = ITA
 			}
 			has_government = fascism
 		}
@@ -4632,74 +4626,74 @@ news_event = {
 	}
 }
 
-#Yugoslavia Claims Bulgaria
-news_event = {
-	id = news.325
-	title = news.325.t
-	desc = news.325.desc
-	picture = GFX_news_event_generic_parliament
+# #Yugoslavia Claims Bulgaria
+# news_event = {
+# 	id = news.325
+# 	title = news.325.t
+# 	desc = news.325.desc
+# 	picture = GFX_news_event_generic_parliament
 	
-	major = yes
+# 	major = yes
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = {
-		name = news.325.a
-		trigger = {
-			TAG = YUG
-		}
-	}
-	option = {
-		name = news.325.b
-		trigger = {
-			TAG = BUL
-		}
-	}
-	option = {
-		name = news.325.c
-		trigger = { 
-			NOT = {
-				TAG = YUG
-				TAG = BUL
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = news.325.a
+# 		trigger = {
+# 			TAG = YUG
+# 		}
+# 	}
+# 	option = {
+# 		name = news.325.b
+# 		trigger = {
+# 			TAG = BUL
+# 		}
+# 	}
+# 	option = {
+# 		name = news.325.c
+# 		trigger = { 
+# 			NOT = {
+# 				TAG = YUG
+# 				TAG = BUL
+# 			}
+# 		}
+# 	}
+# }
 
 
-#Yugoslavia Claims Macedonia
-news_event = {
-	id = news.327
-	title = news.327.t
-	desc = news.327.desc
-	picture = GFX_news_event_generic_parliament
+# #Yugoslavia Claims Macedonia
+# news_event = {
+# 	id = news.327
+# 	title = news.327.t
+# 	desc = news.327.desc
+# 	picture = GFX_news_event_generic_parliament
 	
-	major = yes
+# 	major = yes
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
-	option = {
-		name = news.327.a
-		trigger = {
-			TAG = YUG
-		}
-	}
-	option = {
-		name = news.327.b
-		trigger = {
-			TAG = GRE
-		}
-	}
-	option = {
-		name = news.327.c
-		trigger = { 
-			NOT = {
-				TAG = YUG
-				TAG = GRE
-			}
-		}
-	}
-}
+# 	option = {
+# 		name = news.327.a
+# 		trigger = {
+# 			TAG = YUG
+# 		}
+# 	}
+# 	option = {
+# 		name = news.327.b
+# 		trigger = {
+# 			TAG = GRE
+# 		}
+# 	}
+# 	option = {
+# 		name = news.327.c
+# 		trigger = { 
+# 			NOT = {
+# 				TAG = YUG
+# 				TAG = GRE
+# 			}
+# 		}
+# 	}
+# }
 
 #Icelandic Independence
 news_event = {

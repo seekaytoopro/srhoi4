@@ -1267,7 +1267,7 @@ focus_tree = {
 				if = { limit = { country_exists = BUL }	BUL = { add_ideas = JAP_no_license }	}		
 				SOV = { add_ideas = JAP_no_license }
 				HUN = { add_ideas = JAP_no_license }
-				if = { limit = { country_exists = YUG } YUG = { add_ideas = JAP_no_license }	}
+				if = { limit = { country_exists = CRO } CRO = { add_ideas = JAP_no_license }	}
 			} 
 		}
 	}
