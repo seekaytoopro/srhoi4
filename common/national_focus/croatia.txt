@@ -11,545 +11,14 @@
 	}
 	
 	default = no
-	
-	
-		focus = {
-		id = cro_army_effort
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
-		y = 0
-		cost = 10
 
-		available_if_capitulated = yes
-		
-		available = { NOT = { CRO = { has_capitulated = yes }}}
-		
-		
-
-		completion_reward = {
-			army_experience = 50
-			# add_tech_bonus = {
-			# 	name = land_doc_bonus
-			# 	bonus = 1.0
-			# 	uses = 1
-			# 	category = land_doctrine
-			# }
-		}
-	}
-
-	focus = {
-		id = cro_equipment_effort
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = cro_army_effort }
-		x = -1
-		y = 1
-		relative_position_id = cro_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = cro_motorization_effort
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = cro_army_effort }
-		bypass = { has_tech = motorised_infantry }
-		x = 1
-		y = 1
-		relative_position_id = cro_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-		
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				bonus = 3.0
-				technology = motorised_infantry
-			}
-		}
-	}
-
-	focus = {
-		id = cro_doctrine_effort
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = cro_army_effort }
-		x = 0
-		y = 2
-		relative_position_id = cro_army_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			army_experience = 50
-			# add_tech_bonus = {
-			# 	name = land_doc_bonus
-			# 	bonus = 1.0
-			# 	uses = 1
-			# 	category = land_doctrine
-			# }
-		}
-	}
-
-	focus = {
-		id = cro_equipment_effort_2
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = cro_equipment_effort }
-		x = 0
-		y = 2
-		relative_position_id = cro_equipment_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = cro_mechanization_effort
-		icon = GFX_goal_generic_build
-		prerequisite = { focus = cro_motorization_effort }
-		x = 0
-		y = 2
-		relative_position_id = cro_motorization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = motorized_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = motorized_equipment
-			}
-		}
-	}
-
-	focus = {
-		id = cro_doctrine_effort_2
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = cro_doctrine_effort }
-		x = 0
-		y = 2
-		relative_position_id = cro_doctrine_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			army_experience = 50
-			# add_tech_bonus = {
-			# 	name = land_doc_bonus
-			# 	bonus = 1.0
-			# 	uses = 1
-			# 	category = land_doctrine
-			# }
-		}
-	}
-
-	focus = {
-		id = cro_equipment_effort_3
-		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = cro_equipment_effort_2 }
-		x = 0
-		y = 2
-		relative_position_id = cro_equipment_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-		
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				ahead_reduction = 2
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-	}
-
-	focus = {
-		id = cro_armor_effort
-		icon = GFX_goal_generic_armys
-		prerequisite = { focus = cro_mechanization_effort }
-		x = 0
-		y = 2
-		relative_position_id = cro_mechanization_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 0.5
-				uses = 1
-				technology = basic_medium_tank_chassis
-			}
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 2	
-				uses = 1
-				technology = improved_medium_tank_chassis
-				technology = improved_heavy_tank_chassis
-				technology = advanced_light_tank_chassis
-				technology = advanced_medium_tank_chassis
-				technology = advanced_heavy_tank_chassis
-			}
-		}
-	}
-
-	focus = {
-		id = cro_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = cro_equipment_effort_3 }
-		prerequisite = { focus = cro_doctrine_effort_2 }
-		prerequisite = { focus = cro_armor_effort }
-		x = 1
-		y = 1
-		relative_position_id = cro_equipment_effort_3
-		cost = 10
-
-		available_if_capitulated = yes
-
-				available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		
-		completion_reward = {
-			add_ideas = special_forces
-			add_tech_bonus = {
-				name = special_forces_bonus
-				bonus = 1.0
-				uses = 1
-				technology = paratroopers
-				technology = paratroopers2
-				technology = marines
-				technology = marines2
-				technology = tech_mountaineers
-				technology = tech_mountaineers2
-			}
-		}
-	}
-
-	focus = {
-		id = cro_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 3
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		available = { NOT = { CRO = { has_capitulated = yes }}}
-
-		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = air_doc_bonus
-				bonus = 1.0
-				uses = 3
-				category = air_doctrine
-			}
-		}
-	}
-
-	focus = {
-		id = cro_industrial_effort
-		icon = GFX_goal_generic_production
-		x = 5
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				technology = advanced_machine_tools
-				technology = flexible_line
-				technology = assembly_line_production
-				technology = streamlined_line
-				technology = concentrated_industry3
-				technology = concentrated_industry4
-				technology = concentrated_industry5
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-				instant_build = yes
-			}
-		}
-	}
-
-	focus = {
-		id = cro_construction_effort
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = cro_industrial_effort }
-		x = -1
-		y = 1
-		relative_position_id = cro_industrial_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-		
-		ai_will_do = {
-			factor = 2
-		}
-
-
-		completion_reward = {
-		add_offsite_building = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-		}
-	}
-
-	focus = {
-		id = cro_production_effort
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = cro_industrial_effort }
-		x = 1
-		y = 1
-		relative_position_id = cro_industrial_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2			
-		}
-
-
-		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-		}
-	}
-
-	focus = {
-		id = cro_construction_effort_2
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = cro_construction_effort }
-		x = 0
-		y = 1
-		relative_position_id = cro_construction_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-
-		completion_reward = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-		}
-	}
-
-	focus = {
-		id = cro_production_effort_2
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = cro_production_effort }
-		x = 0
-		y = 1
-		relative_position_id = cro_production_effort
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}	
-
-		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-		}
-	}
-
-
-	focus = {
-		id = cro_production_effort_3
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = cro_production_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = cro_production_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-
-		complete_tooltip = {
-	
-		}		
-
-		completion_reward = {
-				add_offsite_building = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-		}
-	}
-
-
-	focus = {
-		id = cro_construction_effort_3
-		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = cro_construction_effort_2 }
-		x = 0
-		y = 1
-		relative_position_id = cro_construction_effort_2
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-		
-		}
-
-		complete_tooltip = {
-	
-		}
-
-		completion_reward = {
-				add_offsite_building = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-		}
-	}
-
-
-	focus = {
-		id = cro_secret_weapons
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = cro_construction_effort_3 }
-		x = 0
-		y = 1
-		relative_position_id = cro_construction_effort_3
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 2
-				category = electronics
-				category = rocketry
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0.25
-				always = yes
-			}
-		}
-	}
-
-	focus = {
-		id = cro_political_effort
-		icon = GFX_goal_generic_demand_territory
-		x = 7
-		y = 0
-		cost = 10
-
-		available_if_capitulated = yes
-
-
-		
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
+	continuous_focus_position = { x = 50 y = 1400 }
 	
 	focus = {
 		id = CRO_emergency_powers_to_pavlec
 		icon = GFX_goal_generic_demand_territory
-		x = 15
-		y = 0
+		x = 11
+		y = 5
 		offset = {
 			x = 0
 			y = 0
@@ -594,7 +63,7 @@
 	focus = {
 		id = CRO_the_national_revolution
 		icon = GFX_focus_generic_strike_at_democracy1
-		x = -5
+		x = 0
 		y = 1
 		offset = {
 			x = 0
@@ -1140,7 +609,7 @@
 	focus = {
 		id = CRO_the_national_bureau_of_statistics
 		icon = GFX_focus_generic_treaty
-		x = -2
+		x = -4
 		y = 1
 		offset = {
 			x = 0
@@ -1166,7 +635,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_research_slot = 1
+			# add_research_slot = 1
 			add_ideas = { FRA_national_bureau_of_statistics }
 		}
 	}
@@ -1192,65 +661,21 @@
 			
 		}
 		
-		bypass = {
-			num_of_military_factories > 34
-		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = { FRA_rebuild_the_military }
-							add_offsite_building = { type = arms_factory level = 6 }
-
-		}
-	}
-	focus = {
-		id = CRO_finish_the_naval_buildup
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = -2
-		y = 2
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_rebuild_the_military
-		}
-		relative_position_id = CRO_rebuild_the_military
-		
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		completion_reward = {
-			navy_experience = 50
-			random_owned_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_core_of = ROOT
-					is_coastal = yes
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
+			109 = {
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
-					type = dockyard
-					level = 2
+					type = arms_factory
+					level = 3
 					instant_build = yes
 				}
 			}
+			
+
 		}
 	}
 	focus = {
@@ -1323,42 +748,1672 @@
 			# }
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	###############################
+	##### MAIN POLITICAL ######
+	###############################
+
 	focus = {
-		id = CRO_modernize_the_airforce
-		icon = GFX_goal_generic_air_doctrine
-		x = 2
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = CRO_rebuild_the_military
-		}
-		relative_position_id = CRO_rebuild_the_military
-		
-		cost = 5
+		id = YUG_friendship_treaty_with_italy
+		icon = GFX_goal_generic_improve_relations
+		x = 7
+		y = 0
+
+		cost = 10
+
 		ai_will_do = {
-			factor = 1
+			factor = 80
 		}
+
 		available = {
-			
+			is_ai = no
 		}
-		
+
 		bypass = {
 
 		}
+
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
 		completion_reward = {
-			add_tech_bonus = {
-				name = CRO_modernize_the_airforce
-				category = air_doctrine
-				bonus = 1
-				uses = 3
+			ITA = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+				}
+			}
+			add_political_power = 120
+		}
+	}
+
+	
+	focus = {
+		id = YUG_attract_foreign_capital
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = YUG_friendship_treaty_with_italy }
+		x = 0
+		y = 1
+		relative_position_id = YUG_friendship_treaty_with_italy
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = HUN_interventionism
+		}
+	}
+
+
+	
+	focus = {
+		id = YUG_invite_german_military_mission
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = YUG_attract_foreign_capital  }
+		x = 0
+		y = 1
+		relative_position_id = YUG_attract_foreign_capital
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			GER = { has_completed_focus = GER_integrate_war_economies }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = HUN_interventionism_2
+				remove_idea = HUN_interventionism
 			}
 		}
 	}
+
+
+	############################
+	######### INDUSTRY #########
+	############################
+
+	focus = {
+		id = YUG_industrialization_program
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				technology = advanced_machine_tools
+				technology = flexible_line
+				technology = assembly_line_production
+				technology = streamlined_line
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = concentrated_industry5
+			}
+		}
+	}	
+
+	focus = {
+		id = YUG_expand_the_mining_industry
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = YUG_industrialization_program }
+		x = 0
+		y = 1
+		relative_position_id = YUG_industrialization_program
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			109 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = SAF_expand_the_mining_industry
+				bonus = 1.0
+				uses = 1
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_rare_minerals_exploitation
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = YUG_expand_the_mining_industry }
+		x = 3
+		y = 1
+		relative_position_id = YUG_expand_the_mining_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+			has_full_control_of_state = 109
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+
+			if = {
+				limit = {
+					has_full_control_of_state = 109
+				}
+				109 = {
+					add_resource = {
+						type = tungsten
+						amount = 16
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_develop_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = YUG_expand_the_mining_industry }
+		x = -1
+		y = 1
+		relative_position_id = YUG_expand_the_mining_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			103 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_expand_the_university_of_zagreb
+		icon = GFX_focus_research
+		prerequisite = { focus = CRO_expand_artillery_arsenals focus = YUG_develop_civilian_industry }
+		x = 0
+		y = 3
+		relative_position_id = YUG_industrialization_program
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+			#is_ai = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = cro_secret_weapons
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
+		x = -2
+		y = 1
+		relative_position_id = YUG_expand_the_university_of_zagreb
+		cost = 10
+
+		available_if_capitulated = yes
+
+
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 2
+				category = electronics
+				category = rocketry
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = CRO_croatian_rail_network
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = YUG_expand_the_university_of_zagreb }
+		x = 0
+		y = 1
+		relative_position_id = YUG_expand_the_university_of_zagreb
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CRO_develop_bosnia
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = CRO_croatian_rail_network }
+		x = 0
+		y = 1
+		relative_position_id = CRO_croatian_rail_network
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			104 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_develop_slovenian_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = CRO_croatian_rail_network }
+		x = 0
+		y = 4
+		relative_position_id = YUG_develop_civilian_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+		
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 102 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CRO_expand_artillery_arsenals
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = YUG_expand_the_mining_industry }
+		x = 1
+		y = 1
+		relative_position_id = YUG_expand_the_mining_industry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			109 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = CRO_bosnian_steel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = CRO_croatian_rail_network }
+		x = 2
+		y = 0
+		relative_position_id = CRO_develop_bosnia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+			has_full_control_of_state = 104
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			104 = {
+				add_resource = {
+					type = steel
+					amount = 24
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CRO_expand_university_of_sarajevo
+		icon = GFX_focus_research
+		prerequisite = { focus = CRO_croatian_rail_network }
+		x = 0
+		y = 4
+		relative_position_id = CRO_expand_artillery_arsenals
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = YUG_central_management
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = CRO_expand_university_of_sarajevo }
+		prerequisite = { focus = YUG_develop_slovenian_industry }
+		x = 0
+		y = 2
+		relative_position_id = CRO_develop_bosnia
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = ROM_local_development
+		}
+	}
+
+	focus = {
+		id = YUG_expand_the_sarajevo_arsenals
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = YUG_central_management }
+		x = 0
+		y = 1
+		relative_position_id = YUG_central_management
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 10000
+		}
+
+		available = {
+			has_full_control_of_state = 104
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			104 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	
+	############################
+	######## AIR FORCE #########
+	############################
+
+	focus = {
+		id = YUG_modernize_the_air_force
+		icon = GFX_goal_generic_air_doctrine
+		x = 21
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+			modifier = {
+				factor = 1.2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		air_experience = 50
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_local_developers
+		icon = GFX_goal_generic_air_production
+		prerequisite = { focus = YUG_modernize_the_air_force }
+		x = 0
+		y = 1
+		relative_position_id = YUG_modernize_the_air_force
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+				air_experience = 50
+			add_ideas = HUN_indigenous_designs #emergency fix
+		}
+	}
+
+	focus = {
+		id = YUG_ikarus
+		icon = GFX_focus_YUG_ikarus
+		prerequisite = { focus = YUG_local_developers }
+		x = -2
+		y = 1
+		relative_position_id = YUG_local_developers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+						air_experience = 25
+			custom_effect_tooltip = YUG_designer_tt
+
+			109 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_rogozarski
+		icon = GFX_focus_YUG_rogozarski
+		prerequisite = { focus = YUG_local_developers }
+		x = 0
+		y = 1
+		relative_position_id = YUG_local_developers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+								air_experience = 25
+			custom_effect_tooltip = YUG_designer_tt
+			109 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_zmaj
+		icon = GFX_focus_YUG_zmaj
+		prerequisite = { focus = YUG_local_developers }
+		x = 2
+		y = 1
+		relative_position_id = YUG_local_developers
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+								air_experience = 25
+			custom_effect_tooltip = YUG_designer_tt
+			109 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_the_ik_3
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = YUG_ikarus focus = YUG_rogozarski focus = YUG_zmaj }
+		x = 0
+		y = 2
+		relative_position_id = YUG_local_developers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_the_ik_3
+				bonus = 3.0
+				uses = 1
+				category = cas_bomber
+				category = tactical_bomber
+				category = light_fighter
+				category = cat_heavy_fighter
+			}
+		}
+	}
+
+	############################
+	######## LAND FORCE ########
+	############################
+
+	focus = {
+		id = YUG_army_modernization
+		icon = GFX_goal_generic_army_doctrines
+		x = 15
+		y = 0
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+			modifier = {
+				factor = 1.2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = YUG_motorize_the_cavalry
+		icon = GFX_goal_generic_cavalry
+		prerequisite = { focus = YUG_army_modernization }
+		x = -4
+		y = 1
+		relative_position_id =  YUG_army_modernization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 1.2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		has_tech = motorised_infantry 
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+ set_technology = { motorised_infantry = 1 } 		
+	}
+	}
+
+	focus = {
+		id = YUG_motorized_logistics
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = YUG_motorize_the_cavalry }
+		x = -2
+		y = 1
+		relative_position_id = YUG_motorize_the_cavalry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 1.2
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_motorized_logistics
+				bonus = 1.0
+				uses = 2
+				category = hospital_tech
+				category = logistics_tech
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_armored_cavalry
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = YUG_motorize_the_cavalry }
+		x = 0
+		y = 1
+		relative_position_id = YUG_motorize_the_cavalry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+			modifier = {
+				factor = 1.5
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_armored_cavalry
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_modern_tanks
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = YUG_armored_cavalry }
+		x = 0
+		y = 2
+		relative_position_id = YUG_motorize_the_cavalry
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 25
+			modifier = {
+				factor = 3
+				is_in_faction_with = GER
+			}
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_medium_tank_chassis
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 2	
+				uses = 1
+				technology = improved_medium_tank_chassis
+				technology = improved_heavy_tank_chassis
+				technology = advanced_light_tank_chassis
+				technology = advanced_medium_tank_chassis
+				technology = advanced_heavy_tank_chassis
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_small_arms
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = YUG_army_modernization }
+		x = 0
+		y = 1
+		relative_position_id = YUG_army_modernization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_small_arms
+				bonus = 1.00
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_artillery_regiments
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = YUG_small_arms }
+		x = 0
+		y = 1
+		relative_position_id = YUG_small_arms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_domestic_artillery_production
+				bonus = 1.00
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_anti_tank_defenses
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = YUG_artillery_regiments }
+		x = 0
+		y = 2
+		relative_position_id = YUG_small_arms
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 60
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_anti_tank_defenses
+				bonus = 3.0
+				uses = 1
+				category = cat_anti_tank
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_mountain_brigades
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = YUG_army_modernization }
+		x = 2
+		y = 1
+		relative_position_id = YUG_army_modernization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_mountain_brigades
+				bonus = 3.0
+				uses = 1
+				category = mountaineers_tech
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_motorized_recon_companies
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = YUG_motorized_logistics }
+		x = 0
+		y = 1
+		relative_position_id = YUG_motorized_logistics
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_motorized_recon_companies
+				bonus = 3.0
+				uses = 1
+				category = recon_tech
+			}
+		}
+	}
+
+	
+	
+	focus = {
+		id = YUG_independent_engineer_regiments
+		icon = GFX_goal_generic_production
+		prerequisite = { focus = YUG_motorized_recon_companies}
+		x = 0
+		y = 1
+		relative_position_id = YUG_motorized_recon_companies
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = YUG_independent_engineer_regiments
+				bonus = 3.0
+				uses = 1
+				category = engineers_tech
+			}
+		}
+	}
+	
+	focus = {
+		id = cro_special_forces
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = YUG_mountain_brigades }
+		x = 0
+		y = 1
+		relative_position_id = YUG_mountain_brigades
+		cost = 10
+
+		available_if_capitulated = yes
+
+				available = { NOT = { CRO = { has_capitulated = yes }}}
+
+		
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+	focus = {
+		id = YUG_army_maneuvers
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = YUG_motorize_the_cavalry }
+		x = -2
+		y = 2
+		relative_position_id = YUG_army_modernization
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 75
+		}
+	}
+
+	focus = {
+		id = YUG_supremacy_of_offense
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = YUG_army_maneuvers }
+		x = 0
+		y = 1
+		relative_position_id = YUG_army_maneuvers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 30
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			army_experience = 100
+		}
+	}
+
+	focus = {
+		id = CRO_artillery
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = YUG_anti_tank_defenses }
+		x = 0
+		y = 1
+		relative_position_id = YUG_anti_tank_defenses
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 70
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 1.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	############################
+	######## BOAT FORCE ########
+	############################
+
+	focus = {
+		id = YUG_expand_the_split_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = YUG_industrialization_program }
+		relative_position_id = YUG_industrialization_program
+		x = 2
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		available = {
+			has_full_control_of_state = 103
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			103 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+
 
 }
