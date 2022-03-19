@@ -73,6 +73,9 @@ on_actions = {
 						activate_mission = GER_defeat_dday
 						annex_country = { target = EFR transfer_troops = no }
 					}
+					ITA = { 
+						transfer_state = 460 transfer_state = 513 transfer_state = 459
+					}
 					# ITA = {
 					# 	set_country_flag = case_anton
 					# }
