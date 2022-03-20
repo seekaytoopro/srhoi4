@@ -333,6 +333,9 @@ sub_units = {
 			infantry_equipment = 200
 		}
 
+		desert = {
+			movement = 0.2
+		}
 		marsh = {
 			attack = 0.1
 			movement = 0.1
@@ -387,6 +390,9 @@ sub_units = {
 	
 		need = {
 			infantry_equipment = 200
+		}
+		desert = {
+			movement = 0.2
 		}
 
 		jungle = {
@@ -447,6 +453,9 @@ sub_units = {
 			infantry_equipment = 200
 		}
 
+		desert = {
+			movement = 0.2
+		}
 		urban = {
 			attack = 0.20
 			movement = 0.1
@@ -506,12 +515,12 @@ sub_units = {
 		desert = {
 			attack = 0.15
 			defence = 0.1
-			movement = 0.3
+			movement = 0.35
 		}
 		deep_desert = {
 			attack = 0.15
 			defence = 0.1
-			movement = 0.3
+			movement = 0.35
 		}
 		amphibious = {
 			attack = 0.20
