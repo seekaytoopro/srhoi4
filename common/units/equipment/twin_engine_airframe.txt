@@ -167,7 +167,7 @@ equipments = {
 		air_attack = 1.5
 		air_defence = 2.63
 		air_bombing = 13
-		air_ground_attack = 15
+		air_ground_attack = 7.5
 		
 		build_cost_ic = 108
 		resources = {
@@ -193,7 +193,7 @@ equipments = {
 		air_attack = 4.5
 		air_defence = 2.98
 		air_bombing = 16
-		air_ground_attack = 20
+		air_ground_attack = 10
 		
 		build_cost_ic = 117
 		resources = {
@@ -219,7 +219,7 @@ equipments = {
 		air_attack = 5.5
 		air_defence = 3.47
 		air_bombing = 19
-		air_ground_attack = 25
+		air_ground_attack = 12.5
 		
 		build_cost_ic = 126
 		resources = {
