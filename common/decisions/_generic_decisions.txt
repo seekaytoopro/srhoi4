@@ -424,7 +424,7 @@ operations = {
 
 		icon = GFX_decision_generic_ignite_civil_war
 		allowed = {
-			has_dlc = "Waking the Tiger"
+			# has_dlc = "Waking the Tiger"
 		}
 		
 			allowed = { 
@@ -577,7 +577,7 @@ operations = {
 
 		icon = GFX_decision_generic_ignite_civil_war
 		allowed = {
-			has_dlc = "Waking the Tiger"
+			# has_dlc = "Waking the Tiger"
 			
 		}
 		available = {
@@ -733,7 +733,7 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 365
+		days_remove = 90
 	
 		cost = 120
 	
@@ -831,12 +831,12 @@ special_projects = {
 	
 		fire_only_once = no
 	
-		days_remove = 180
+		days_remove = 60
 	
-		cost = 400
+		cost = 100
 	
 		modifier = {
-			civilian_factory_use = 25
+			civilian_factory_use = 15
 		}
 	
 		remove_effect = {
