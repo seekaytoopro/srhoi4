@@ -79,7 +79,7 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 
 operations = {
 
-	GER_make_allies_declare_on_NORWAY = {
+	GER_make_allies_declare_on_SOV = {
 		icon = generic_prepare_civil_war
 			
 		allowed = { tag = GER }
@@ -88,14 +88,14 @@ operations = {
 					
 		visible = {
 				GER = {
-					has_completed_focus = GER_weserubung 
+					has_completed_focus = GER_ussr_war_goal 
 				}
 		}
 		
 		available = {
 			is_ai = no
 				GER = {
-					has_completed_focus = GER_weserubung 
+					has_completed_focus = GER_ussr_war_goal 
 				}
 		}
 		
