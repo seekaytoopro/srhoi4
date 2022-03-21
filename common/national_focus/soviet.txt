@@ -1116,26 +1116,38 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-				# add_offsite_building = { type = industrial_complex level = 10 }
-				# hidden_effect = {
-				# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
-				# }
-				# SOV_barb_debuff_level_up = yes
-				# if = {
-				# 	limit = {
-				# 		check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
-				# 	}
-				# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
-				# }
-				# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
-	
-				# hidden_effect = {
-				# 	activate_mission = SOV_barb_debuff_mission
-				# }
+			custom_effect_tooltip = "Penalty from Officer Corp Purged Reduced
+			"
+			add_to_variable = { SOV_barb_debuff_max_dig_in = 2 }
+			add_to_variable = { SOV_barb_debuff_army_org_factor = 0.10 }
+			add_to_variable = { SOV_barb_debuff_army_attack_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_army_defence_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_max_planning = 0.25 }
 
-				add_timed_idea = { idea = shattered_retreat days = 75 }
+			add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.075 }
+			add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.075 }
+			add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = -0.075 }
+			# add_offsite_building = { type = industrial_complex level = 10 }
+			# hidden_effect = {
+			# 	set_variable = { SOV_extend_barb_debuff_days = days_mission_timeout@SOV_barb_debuff_mission }
+			# }
+			# SOV_barb_debuff_level_up = yes
+			# if = {
+			# 	limit = {
+			# 		check_variable = { var = SOV_barb_debuff_counter value = 15 compare = less_than }
+			# 	}
+			# 	set_variable = { var = SOV_barb_debuff_counter value = 10 }
+			# }
+			# add_to_variable = { var = SOV_barb_debuff_counter value = 10 }
 
-				custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
+			# hidden_effect = {
+			# 	activate_mission = SOV_barb_debuff_mission
+			# }
+
+			add_timed_idea = { idea = shattered_retreat days = 75 }
+
+			custom_effect_tooltip = SOV_desperate_measures_decisions_unlocked_tt
 		}
 	}
 
@@ -1160,6 +1172,19 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		completion_reward = {
+			custom_effect_tooltip = "Penalty from Officer Corp Purged Reduced
+		"
+			add_to_variable = { SOV_barb_debuff_max_dig_in = 1.5 }
+			add_to_variable = { SOV_barb_debuff_army_org_factor = 0.05 }
+			# add_to_variable = { SOV_barb_debuff_army_attack_factor = 0.025 }
+			# add_to_variable = { SOV_barb_debuff_army_defence_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_max_planning = 0.15 }
+
+			add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.075 }
+			add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.025 }
+			add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.075 }
+			add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = -0.075 }
+
 			custom_effect_tooltip = "Will spawn 2 fully equipped heavy tanks, and a significant number of infantry divisions
 			"
 
@@ -1515,6 +1540,23 @@ focus = {
 	continue_if_invalid = yes
 
 	completion_reward = {
+		custom_effect_tooltip = "Penalty from Officer Corp Purged Reduced
+		"
+		add_to_variable = { SOV_barb_debuff_max_dig_in = 1.5 }
+		add_to_variable = { SOV_barb_debuff_army_org_factor = 0.075 }
+		add_to_variable = { SOV_barb_debuff_army_attack_factor = 0.025 }
+		add_to_variable = { SOV_barb_debuff_army_defence_factor = 0.025 }
+		add_to_variable = { SOV_barb_debuff_max_planning = 0.1 }
+
+		add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.1 }
+		add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.025 }
+		add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.075 }
+		add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = -0.1 }
+
+		# add_to_variable = { SOV_barb_debuff_air_superiority_efficiency = 0.1 }
+		# add_to_variable = { SOV_barb_debuff_army_bonus_air_superiority_factor = 0.1 }
+		# add_to_variable = { SOV_barb_debuff_air_intercept_efficiency = 0.1 }
+		# add_to_variable = { SOV_barb_debuff_enemy_army_bonus_air_superiority_factor = 0.1 }
 
 		hidden_effect = {
 			set_technology = { masterful_blitz = 1 popup = no }
