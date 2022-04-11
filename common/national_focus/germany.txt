@@ -3168,6 +3168,10 @@ focus_tree = {
 							special_type_slot_3 = extra_ammo_storage
 							special_type_slot_4 = wet_ammo_storage
 						}
+						upgrades={
+							tank_nsb_engine_upgrade=5
+							# tank_nsb_armor_upgrade=5
+						}
 					}
 					load_oob = "GER_barbarossa_heavies"
 					add_equipment_to_stockpile = { type = heavy_tank_chassis_2 amount = 300 }
