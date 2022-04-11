@@ -3197,9 +3197,13 @@ technologies = {
 		}
 		category_artillery = {
 			max_strength = 5.0
+			max_organisation = 25
+			default_morale = 0.20
 		}
 		category_light_infantry = {
 			max_strength = -6.0
+			max_organisation = 25
+			default_morale = 0.20
 		}
 
 		doctrine = yes
@@ -3224,9 +3228,13 @@ technologies = {
 		}
 		category_artillery = {
 			max_strength = -5.0
+			max_organisation = -25
+			default_morale = -0.20
 		}
 		category_light_infantry = {
 			max_strength = 6.0
+			max_organisation = -25
+			default_morale = -0.20
 		}
 
 		doctrine = yes
