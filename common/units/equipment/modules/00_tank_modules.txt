@@ -784,7 +784,7 @@ equipment_modules = {
 		forbid_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 15.5
+			soft_attack = 19.5
 			hard_attack = 6.4
 			ap_attack = 35
 			build_cost_ic = 2.5
@@ -805,10 +805,30 @@ equipment_modules = {
 		parent = tank_small_cannon
 		forbid_equipment_type = artillery
 		add_stats = {
-			soft_attack = 21.84
+			soft_attack = 23.84
 			hard_attack = 9.6
 			ap_attack = 60
 			build_cost_ic = 3.25
+			maximum_speed = -0.2
+			reliability = -0.1
+		}
+		xp_cost = 0
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 5
+		}
+	}
+	tank_small_cannon_3 = {
+		abbreviation = "sc3"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		parent = tank_small_cannon_2
+		forbid_equipment_type = artillery
+		add_stats = {
+			soft_attack = 27.84
+			hard_attack = 12.5
+			ap_attack = 75
+			build_cost_ic = 3.6
 			maximum_speed = -0.2
 			reliability = -0.1
 		}
@@ -828,7 +848,7 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 27.48
+			soft_attack = 30.48
 			hard_attack = 15
 			ap_attack = 90
 			build_cost_ic = 4.00

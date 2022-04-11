@@ -102,6 +102,6 @@ tank_close_support_gun:0 "Close Support Gun"
  light_tank_flame_equipment_4:0 "Light Flame Tank IV"
 
 
-tank_high_velocity_cannon_1:0 "Advanced Small Cannon"
+tank_high_velocity_cannon:0 "Advanced Small Cannon"
 tank_high_velocity_cannon_2:0 "Advanced Medium Cannon"
 tank_high_velocity_cannon_3:0 "Advanced Heavy Cannon"
