@@ -83,7 +83,9 @@ technologies = {
 			light_armor
 			medium_armor
 			heavy_armor
-			
+			light_flame_tank
+			medium_flame_tank
+			heavy_flame_tank
 		}
 		on_research_complete_limit = {
 			NOT = {	has_template_containing_unit = light_armor }
@@ -280,11 +282,6 @@ technologies = {
 	}
 
 	advanced_light_tank_chassis = { #Leopard
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
 
 		enable_equipment_modules = {
 			easy_maintenance
@@ -390,11 +387,6 @@ technologies = {
 
 
 	improved_medium_tank_chassis = { #Panzer IV
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
 		enable_equipments = {
 			medium_tank_chassis_2
 			medium_tank_destroyer_chassis_2
@@ -630,11 +622,6 @@ technologies = {
 	}
 
 	improved_heavy_tank_chassis = { #Tiger
-		enable_subunits = {
-			light_flame_tank
-			medium_flame_tank
-			heavy_flame_tank
-		}
 		enable_equipments = {
 			heavy_tank_chassis_2
 			heavy_tank_destroyer_chassis_2
