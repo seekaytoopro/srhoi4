@@ -641,7 +641,7 @@ equipment_modules = {
 		forbid_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 12
+			soft_attack = 16
 			build_cost_ic = 0.5
 			reliability = -0.05
 		}
