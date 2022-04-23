@@ -91,6 +91,9 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			539 = { set_compliance = 100 }
+			772 = { set_compliance = 100 }
+			773 = { set_compliance = 100 }
 		            680 = { add_extra_state_shared_building_slots = 1 }
             677 = { add_extra_state_shared_building_slots = 1 }
 			   459 = {
@@ -698,6 +701,7 @@ if = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			army_experience = 100
 			add_offsite_building = { type = arms_factory level = 4 }
 			# add_ideas =  FRA_charles_de_gaulle
 			add_tech_bonus = {
@@ -760,12 +764,19 @@ if = {
 			# 	uses = 2
 			# 	bonus = 1.5
 			# }
-			army_experience = 15
+			army_experience = 20
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
 				bonus = 2.25
 				uses = 1
 				technology = improved_heavy_tank_chassis
+			}
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -799,8 +810,15 @@ if = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 10
 			add_ideas =  FRA_firepower 
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -816,7 +834,14 @@ if = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_ideas = { special_forces }
 			add_tech_bonus = {
 				name = FRA_fusiliers_marine
@@ -854,7 +879,14 @@ if = {
 				uses = 5
 				bonus = 1.5
 			}
-			army_experience = 30
+			army_experience = 40
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -872,6 +904,14 @@ if = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.00
@@ -917,6 +957,13 @@ if = {
 
 		completion_reward = {
 			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_ideas = FRA_motorized_focus
 						add_tech_bonus = {
 				name = FRA_mechanized_focus
@@ -940,6 +987,13 @@ if = {
 
 		completion_reward = {
 			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_ideas = FRA_infantry_focus
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -962,6 +1016,14 @@ if = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.00
@@ -1007,6 +1069,13 @@ if = {
 			add_idea = FRA_victors_of_wwi2
 			}
 			army_experience = 10
+			16 = { add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 			# add_tech_bonus = {
 			# 	name = FRA_army_reform
 			# 	bonus = 1.0
@@ -1134,6 +1203,7 @@ if = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 		remove_ideas = FRA_inefficient_economy_2
+		remove_ideas = FRA_full_employment
 		}
 	}
 

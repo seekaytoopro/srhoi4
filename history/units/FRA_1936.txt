@@ -561,7 +561,25 @@ units = {
 		start_equipment_factor = 0.01
 	}
 	division = {
+		location = 521
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
 		location = 2172
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 2172
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 2136
 		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -608,6 +626,120 @@ units = {
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
+	division = {
+		location = 9523
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 7500
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 7500
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6545
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 6545
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9505
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9505
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 551
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 551
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11732
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 11732
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9725
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9725
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3506
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 3506
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9490
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9490
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9434
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 9434
+		division_template = "14/4's won't stop tanks, you need AT for hard attack, and need defense in depth, the forest-line will break pretty quickly"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
 	# division = {
 	# 	location = 11420
 	# 	division_template = "Division Légère Mécanique"
@@ -664,6 +796,18 @@ units = {
 	}
 	division = {
 		location = 3447
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 7500
+		division_template = "Mediums"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.01
+	}
+	division = {
+		location = 7500
 		division_template = "Mediums"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
