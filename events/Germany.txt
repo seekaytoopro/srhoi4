@@ -525,7 +525,7 @@ country_event = {
 			name = armor_bonus
 			bonus = 1.0
 			uses = 1
-			ahead_reduction = 0.5
+			ahead_reduction = 0.25
 			#technology = advanced_light_tank
 			technology = improved_medium_tank_chassis
 		}
