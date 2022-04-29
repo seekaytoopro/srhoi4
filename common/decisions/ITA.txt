@@ -110,6 +110,14 @@ foreign_politics = {
 			}
 			ITA = { activate_mission = battle_of_north_africa_mission }
 			hidden_effect = {
+				# Allied cope because nobody ever has a stockpile
+				CAN = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
+				if { limit = { country_exists = SAF }
+					SAF = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
+					
+				} else {
+					CAN = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
+				}
 				every_country = {
 					limit = { the_axis = yes }
 					add_timed_idea = { idea = battle_of_north_africa_axis days = 365 }
