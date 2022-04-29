@@ -552,6 +552,7 @@ ideas = {
 			}
 			modifier = {
 				supply_consumption_factor = -0.05
+				army_strength_factor = 0.10
 				# no_supply_grace =  32
 				#air_cas_present_factor = 0.15
 				# production_speed_air_base_factor=0.20
@@ -633,6 +634,10 @@ ideas = {
 				always = no
 			}
 
+			cancel = {
+				FRA = { has_capitulated  = yes }
+			}
+
 			allowed_civil_war = {
 				has_government = fascism
 			}
@@ -642,6 +647,10 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_acquire_tanks
+
+			modifier = {
+				army_strength_factor = 0.10
+			}
 
 			targeted_modifier = {
 				tag = FRA

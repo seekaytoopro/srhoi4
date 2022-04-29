@@ -279,6 +279,7 @@ country_event = {
 			}
 			FRF = {
 				add_ideas = renault_frf
+				add_ideas = limited_exports
 			}
 			FRF = {
 				inherit_technology = FRA

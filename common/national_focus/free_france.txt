@@ -20,7 +20,7 @@ focus_tree = {
 		icon = GFX_france_nine
 		x = 6
 		y = 0
-		cost = 3
+		cost = 0.1
 
 		available_if_capitulated = yes
 
@@ -42,7 +42,7 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = FRF }
 			add_equipment_to_stockpile = { type = anti_air_equipment_1 amount = 500 producer = FRF }
 			add_equipment_to_stockpile = { type = anti_tank_equipment_1  amount = 500 producer = FRF }
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 500 producer = FRF }
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 1000 producer = FRF }
 			add_popularity = {
 				popularity = 0.15
 				ideology = democratic
@@ -71,7 +71,7 @@ focus_tree = {
 					tank_nsb_armor_upgrade=5
 				}
 			}
-			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 }
+			add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 600 }
 			custom_effect_tooltip = "    "
 			# custom_effect_tooltip = FRF_tank_spawn
 			custom_effect_tooltip = "Will spawn 4 fully equipped Medium Tanks"
