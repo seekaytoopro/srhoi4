@@ -269,6 +269,7 @@ NDefines.NCountry.STARTING_COMMAND_POWER = 50.0
 ---------------------------------------------------------------
 --HORST/SR AIR REWORK - VANILLA INTERACTIONS; HALVED PLANE COUNT--
 ---------------------------------------------------------------
+NDefines.NAir.CAPACITY_PENALTY=  0.869
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 0.50   -- WAS 3, halved because plane counts halved. CAS has received a 100% increase in ground attack so the overall damage should still be vanilla.
 ---------------------------------------------------------------
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100						 -- WAS 200, decreased because plane IC doubled | Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
