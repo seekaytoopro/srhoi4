@@ -3195,15 +3195,15 @@ technologies = {
 	}
 
 	battle_of_north_africa_tech = {
-		mechanized = {
-			max_strength = 7.0
-		}
-		motorized = {
-			max_strength = 7.0
-		}	
-		amphibious_mechanized = {
-			max_strength = 7.0
-		}
+		# mechanized = {
+		# 	max_strength = 7.0
+		# }
+		# motorized = {
+		# 	max_strength = 7.0
+		# }	
+		# amphibious_mechanized = {
+		# 	max_strength = 7.0
+		# }
 		category_tanks = {
 			max_strength = 1.0
 		}
