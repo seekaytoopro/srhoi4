@@ -1062,8 +1062,8 @@ focus_tree = {
 		}	
 		completion_reward = {
 			SOV = { country_event = { id = germany.75 days = 1 } }
-			SOV = { add_timed_idea = { idea = SOV_soviet_german_trade_agreement days = 365 } }
-			GER = { add_timed_idea = { idea = SOV_soviet_german_trade_agreement days = 365 } }
+			# SOV = { add_timed_idea = { idea = SOV_soviet_german_trade_agreement days = 365 } }
+			# GER = { add_timed_idea = { idea = SOV_soviet_german_trade_agreement days = 365 } }
 			
 			add_tech_bonus = {
 				name = GER_soviet_treaty
