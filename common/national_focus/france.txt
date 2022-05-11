@@ -1088,7 +1088,6 @@ if = {
 				uses = 1
 				technology = advanced_medium_tank_chassis
 				technology = advanced_heavy_tank_chassis
-				technology = super_heavy
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = FRA_AMX

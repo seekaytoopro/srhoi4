@@ -112,10 +112,10 @@ foreign_politics = {
 			hidden_effect = {
 				# Allied cope because nobody ever has a stockpile
 				CAN = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
-				if { limit = { country_exists = SAF }
+				if = { limit = { country_exists = SAF }
 					SAF = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
 					
-				} else {
+				} else = {
 					CAN = { add_equipment_to_stockpile = { type = medium_tank_chassis_2 amount = 300 } }
 				}
 				every_country = {
