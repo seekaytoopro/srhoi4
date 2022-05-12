@@ -474,7 +474,6 @@ country_event = {
 		every_state = { limit = { is_core_of = SAF }
 			add_core_of = CAN
 		}
-		CAN = { annex_country = { target = SAF transfer_troops = yes } }
 		SAF = { 
 			every_unit_leader = {
 				 set_nationality = CAN
@@ -482,7 +481,9 @@ country_event = {
 			 transfer_navy = {
 				 target = CAN
 			 }
-		 }
+		}
+		CAN = { annex_country = { target = SAF transfer_troops = yes } }
+		
 	}
 	option = {
 		name = "Reconsider..."
