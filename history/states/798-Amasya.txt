@@ -11,6 +11,11 @@ state={
 			air_base = 2
 			9915 = { naval_base = 1 }
 		}
+
+		victory_points = {
+			11999 1 # Aswan 
+		}
+
 		victory_points = {
 			11792 100 
 		}

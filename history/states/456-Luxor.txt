@@ -11,8 +11,12 @@ state={
 			air_base = 4
 
 		}
+		
 		victory_points = {
-			11999 1 
+			12071 1 # Luxor
+		}
+		victory_points = {
+			12044 1 # Asyut
 		}
 		victory_points = {
 			1080 200 
