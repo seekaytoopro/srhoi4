@@ -249,7 +249,7 @@ NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5 -- (4.5)
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.0013 -- (0.005)
 NDefines.NMilitary.LAND_COMBAT_FORT_DAMAGE_CHANCE = 8		-- (5) chance to get a hit to damage on forts. (out of 100)
 
-NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04 -- (0.1)
+NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.05 -- (0.1)
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.05
 
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
