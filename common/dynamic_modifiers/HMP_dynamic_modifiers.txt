@@ -13,3 +13,11 @@ japanese_resistance = {
 	
 	compliance_gain = -0.10
 }
+
+battle_of_north_africa_planning = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_tur_kurdish_rebellion
+	
+	max_planning_factor = battle_of_north_africa_planning_mult
+}

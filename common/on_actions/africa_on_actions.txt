@@ -1,5 +1,6 @@
 on_actions = {
 	on_startup = {
+		# set_variable = { battle_of_north_africa_planning_mult = -1.0 }
 		effect = {
 			#Custom North Africa state array -> Make africa longer and more fun?
 			458 = { add_to_array = { global.north_africa_state_array = THIS } }
@@ -29,6 +30,7 @@ on_actions = {
 				add_province_modifier = { static_modifiers = { battle_of_north_africa } 
 					province = { all_provinces = yes }  
 				}
+				# add_dynamic_modifier = { modifier = battle_of_north_africa_planning }
 				# if = {
 				# 	limit = {
 				# 		air_base > 1
